@@ -18,10 +18,6 @@ type envTestSuite struct {
 	kafkaConsumerGroupIDKey         string
 	kafkaCreds                      string
 	kafkaCredsKey                   string
-	kafkaAutoOffsetReset            string
-	kafkaAutoOffsetResetKey         string
-	kafkaMaxPollIntervalKey         string
-	kafkaMaxPollInterval            int
 	maxFailCount                    string
 	maxFailCountKey                 string
 	topicArticleDelete              string
@@ -77,12 +73,8 @@ func (s *envTestSuite) SetupSuite() {
 	s.kafkaBootstrapServers = "localhost:8001"
 	s.kafkaConsumerGroupIDKey = "KAFKA_CONSUMER_GROUP_ID"
 	s.kafkaConsumerGroupID = "unique"
-	s.kafkaAutoOffsetReset = "earliest"
-	s.kafkaAutoOffsetResetKey = "KAFKA_AUTO_OFFSET_RESET"
 	s.kafkaCredsKey = "KAFKA_CREDS"
 	s.kafkaCreds = `{"username":"admin","password":"123456"}`
-	s.kafkaMaxPollIntervalKey = "KAFKA_MAX_POLL_INTERVAL"
-	s.kafkaMaxPollInterval = 0
 	s.maxFailCountKey = "MAX_FAIL_COUNT"
 	s.maxFailCount = "1"
 	s.topicArticleDeleteKey = "TOPIC_ARTICLE_DELETE"
@@ -98,7 +90,7 @@ func (s *envTestSuite) SetupSuite() {
 	s.topicArticleUpdateDeadLetterKey = "TOPIC_ARTICLE_UPDATE_DEAD_LETTER"
 	s.topicArticleUpdateDeadLetter = "local.structured-data.article-update-dead-letter.v1"
 
-	s.topics = `{"version":["v1"],"service_name":"structured-data","location":"local"}`
+	s.topics = `{"version":"v1","service_name":"structured-data","location":"local"}`
 	s.topicsKey = "TOPICS"
 	s.topicArticleBulkKey = "TOPIC_ARTICLE_BULK"
 	s.topicArticleBulk = "local.bulk-ingestion.articles.v1"
@@ -143,7 +135,6 @@ func (s *envTestSuite) SetupTest() {
 	os.Setenv(s.kafkaBootstrapServersKey, s.kafkaBootstrapServers)
 	os.Setenv(s.kafkaConsumerGroupIDKey, s.kafkaConsumerGroupID)
 	os.Setenv(s.kafkaCredsKey, s.kafkaCreds)
-	os.Setenv(s.kafkaAutoOffsetResetKey, s.kafkaAutoOffsetReset)
 	os.Setenv(s.maxFailCountKey, s.maxFailCount)
 
 	os.Setenv(s.topicsKey, s.topics)
@@ -184,8 +175,6 @@ func (s *envTestSuite) TestNew() {
 	s.Assert().NoError(err)
 	s.Assert().NotNil(env)
 	s.Assert().Equal(s.kafkaBootstrapServers, env.KafkaBootstrapServers)
-	s.Assert().Equal(s.kafkaAutoOffsetReset, env.KafkaAutoOffsetReset)
-	s.Assert().Equal(s.kafkaMaxPollInterval, env.KafkaMaxPollInterval)
 
 	max, err := strconv.Atoi(s.maxFailCount)
 	s.Assert().NoError(err)

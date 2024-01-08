@@ -76,15 +76,12 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 		)
 
 		if err != nil {
-			log.Error("wmf api error",
-				log.Any("name", pld.Name),
-				log.Any("revision", pld.Version.Identifier),
-				log.Any("project", dtb),
-				log.Any("event_id", pld.Event.Identifier),
-				log.Any("error", err),
-			)
-
 			if aggregate.IsNonFatalErr(err) {
+				log.Error(err, log.Tip("non-fatal error with page, revision, and html getters"),
+					log.Any("name", pld.Name),
+					log.Any("revision", pld.Version.Identifier),
+					log.Any("project", dtb),
+				)
 				return nil
 			}
 
@@ -92,15 +89,8 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 		}
 
 		if err := agg.GetPageHTMLError(); err != nil {
-			log.Error("wmf page html api error",
-				log.Any("name", pld.Name),
-				log.Any("revision", pld.Version.Identifier),
-				log.Any("project", dtb),
-				log.Any("event_id", pld.Event.Identifier),
-				log.Any("error", err),
-			)
-
 			if aggregate.IsNonFatalErr(err) {
+				log.Error(err)
 				return nil
 			}
 
@@ -112,9 +102,7 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 				"page is missing",
 				log.Any("name", pld.Name),
 				log.Any("url", pld.IsPartOf.URL),
-				log.Any("event_id", pld.Event.Identifier),
 			)
-
 			return nil
 		}
 
@@ -138,14 +126,12 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 			)
 
 			if err != nil {
-				log.Warn("wmf score api error",
+				log.Error(err, log.Tip("score api call failed"),
 					log.Any("name", ttl),
 					log.Any("revision", pld.Version.Identifier),
 					log.Any("project", dtb),
 					log.Any("language", pld.InLanguage.Identifier),
 					log.Any("namespace", pld.Namespace.Identifier),
-					log.Any("event_id", pld.Event.Identifier),
-					log.Any("error", err),
 				)
 			}
 		}
@@ -173,14 +159,11 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 			}
 
 			if err != nil && !strings.Contains(err.Error(), "language with the given code not found") {
-				log.Warn("text processor call failed",
+				log.Error(
+					err,
+					log.Tip("text processor call failed"),
 					log.Any("name", pld.Name),
 					log.Any("url", pld.IsPartOf.URL),
-					log.Any("revision", pld.Version.Identifier),
-					log.Any("language", pld.InLanguage.Identifier),
-					log.Any("namespace", pld.Namespace.Identifier),
-					log.Any("event_id", pld.Event.Identifier),
-					log.Any("error", err),
 				)
 			}
 		}
@@ -199,14 +182,9 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 			abs, err = p.Parser.GetAbstract(doc.Selection)
 
 			if err != nil {
-				log.Warn("abstract processing failed",
+				log.Error(err, log.Tip("abstract processing failed"),
 					log.Any("name", pld.Name),
 					log.Any("url", pld.IsPartOf.URL),
-					log.Any("revision", pld.Version.Identifier),
-					log.Any("language", pld.InLanguage.Identifier),
-					log.Any("namespace", pld.Namespace.Identifier),
-					log.Any("event_id", pld.Event.Identifier),
-					log.Any("error", err),
 				)
 			}
 		}
@@ -252,15 +230,10 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 			})
 
 			if err != nil {
-				log.Warn(
-					"content integrity call failed",
+				log.Error(
+					log.Tip("content integrity call failed"),
 					log.Any("name", pld.Name),
 					log.Any("url", pld.IsPartOf.URL),
-					log.Any("revision", pld.Version.Identifier),
-					log.Any("language", pld.InLanguage.Identifier),
-					log.Any("namespace", pld.Namespace.Identifier),
-					log.Any("event_id", pld.Event.Identifier),
-					log.Any("error", err),
 				)
 			}
 		}
@@ -303,10 +276,10 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 		if dur := dtn.Sub(*pld.Event.DateCreated); pld.Event.FailCount == 0 && dur.Milliseconds() > p.Env.LatencyThresholdMS {
 			log.Warn("latency threshold exceeded",
 				log.Any("name", pld.Name),
-				log.Any("url", pld.IsPartOf.URL),
-				log.Any("revision", pld.Version.Identifier),
-				log.Any("language", pld.InLanguage.Identifier),
-				log.Any("namespace", pld.Namespace.Identifier),
+				log.Any("project", pld.Namespace),
+				log.Any("URL", pld.URL),
+				log.Any("identifier", pld.Identifier),
+				log.Any("version", pld.Version.Identifier),
 				log.Any("duration", dur.Milliseconds()),
 			)
 		}
@@ -338,8 +311,8 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 			Image(agg.GetPageOriginalImage(), agg.GetPageThumbnailImage()).
 			Build()
 
-		tcs, err := p.Env.Topics.
-			GetNames(pld.IsPartOf.Identifier, agg.GetPageNs())
+		tpc, err := p.Env.Topics.
+			GetName(pld.IsPartOf.Identifier, agg.GetPageNs())
 
 		if err != nil {
 			return err
@@ -348,19 +321,16 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 		mgs := []*schema.Message{
 			{
 				Config: schema.ConfigArticle,
+				Topic:  tpc,
+				Value:  art,
+				Key:    key,
+			},
+			{
+				Config: schema.ConfigArticle,
 				Topic:  p.Env.TopicArticles,
 				Value:  art,
 				Key:    key,
 			},
-		}
-
-		for _, tpc := range tcs {
-			mgs = append(mgs, &schema.Message{
-				Config: schema.ConfigArticle,
-				Topic:  tpc,
-				Value:  art,
-				Key:    key,
-			})
 		}
 
 		return p.Stream.Produce(ctx, mgs...)

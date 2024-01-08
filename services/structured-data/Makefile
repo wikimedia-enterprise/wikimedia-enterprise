@@ -4,16 +4,16 @@
 # Makefile targets #
 ####################
 up:
-	docker compose up -d
+	docker-compose up -d
 
 down:
-	docker compose down
+	docker-compose down
 
 stop:
-	docker compose stop
+	docker-compose stop
 
 build:
-	docker compose up -d --build
+	docker-compose up -d --build
 
 test:
 	go test ./... -v

@@ -110,9 +110,7 @@ func (s *handlerTestSuite) SetupSuite() {
 	s.ctx = context.Background()
 	s.prs = &handler.Parameters{
 		Env: &env.Environment{
-			Topics: &schema.Topics{
-				Versions: []string{"v1"},
-			},
+			Topics: &schema.Topics{},
 		},
 		Stream:     str,
 		Aggregator: agg,

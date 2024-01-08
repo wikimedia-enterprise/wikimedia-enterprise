@@ -61,13 +61,5 @@ func NewConsumer(env *env.Environment) (*kafka.Consumer, error) {
 		cfg["sasl.password"] = env.KafkaCreds.Password
 	}
 
-	if len(env.KafkaAutoOffsetReset) > 0 {
-		cfg["auto.offset.reset"] = env.KafkaAutoOffsetReset
-	}
-
-	if env.KafkaMaxPollInterval > 0 {
-		cfg["max.poll.interval.ms"] = env.KafkaMaxPollInterval
-	}
-
 	return kafka.NewConsumer(&cfg)
 }

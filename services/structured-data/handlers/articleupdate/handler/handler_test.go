@@ -154,10 +154,8 @@ func (s *handlerTestSuite) SetupSuite() {
 	s.ctx = context.Background()
 	s.prs = &handler.Parameters{
 		Env: &env.Environment{
-			TopicArticles: "local.articles.v1",
-			Topics: &schema.Topics{
-				Versions: []string{"v1"},
-			},
+			TopicArticles:       "local.articles.v1",
+			Topics:              &schema.Topics{},
 			BreakingNewsEnabled: s.bne,
 		},
 		Text:       wpg,

@@ -34,7 +34,7 @@ This example logs the message `"Hello, world!"` with the additional context `foo
 ```go
 package main
 
-import "wikimedia-enterprise/general/log"
+import "my-package/submodules/log"
 
 func main() {
   log.Info("Hello, world!", log.Any("foo", "bar"))
