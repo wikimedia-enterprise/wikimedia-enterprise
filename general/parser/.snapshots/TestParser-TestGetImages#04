@@ -1,0 +1,30 @@
+([]*parser.Image) (len=4) {
+  (*parser.Image)({
+    ContentUrl: (string) (len=122) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Alpine_skiing_pictogram.svg/40px-Alpine_skiing_pictogram.svg.png",
+    AlternativeText: (string) "",
+    Caption: (string) "",
+    Height: (int) 40,
+    Width: (int) 40
+  }),
+  (*parser.Image)({
+    ContentUrl: (string) (len=91) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/AJ_Ginnis.png/280px-AJ_Ginnis.png",
+    AlternativeText: (string) (len=59) "Image illustrative de l’article Alexandros Ioannis Ginnis",
+    Caption: (string) "",
+    Height: (int) 280,
+    Width: (int) 280
+  }),
+  (*parser.Image)({
+    ContentUrl: (string) (len=134) "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Silver_medal_world_centered-2.svg/16px-Silver_medal_world_centered-2.svg.png",
+    AlternativeText: (string) (len=25) "Médaille d'argent, monde",
+    Caption: (string) "",
+    Height: (int) 16,
+    Width: (int) 16
+  }),
+  (*parser.Image)({
+    ContentUrl: (string) (len=134) "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Bronze_medal_world_centered-2.svg/16px-Bronze_medal_world_centered-2.svg.png",
+    AlternativeText: (string) (len=26) "Médaille de bronze, monde",
+    Caption: (string) "",
+    Height: (int) 16,
+    Width: (int) 16
+  })
+}

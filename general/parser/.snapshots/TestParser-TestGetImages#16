@@ -1,0 +1,51 @@
+([]*parser.Image) (len=7) {
+  (*parser.Image)({
+    ContentUrl: (string) (len=127) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Left_cosets_of_Z_2_in_Z_8.svg/220px-Left_cosets_of_Z_2_in_Z_8.svg.png",
+    AlternativeText: (string) "",
+    Caption: (string) (len=335) "G is the group (ℤ/8ℤ, +), the integers mod 8 under addition. The subgroup H contains only 0 and 4. There are four left cosets of H: H itself, 1 + H, 2 + H, and 3 + H (written using additive notation since this is the additive group). Together they partition the entire group G into equal-size, non-overlapping sets. The index is 4.",
+    Height: (int) 220,
+    Width: (int) 220
+  }),
+  (*parser.Image)({
+    ContentUrl: (string) (len=102) "https:https://wikimedia.org/api/rest_v1/media/math/render/svg/c5a509f5701bd6471138b470a79f65334f90813c",
+    AlternativeText: (string) (len=29) "{\\displaystyle |G|=[G:H]|H|.}",
+    Caption: (string) "",
+    Height: (int) 0,
+    Width: (int) 0
+  }),
+  (*parser.Image)({
+    ContentUrl: (string) (len=102) "https:https://wikimedia.org/api/rest_v1/media/math/render/svg/552b636c3fb4518d0283410e9575c7e8aad98482",
+    AlternativeText: (string) (len=98) "{\\displaystyle \\{\\mathbf {x} \\in V\\mid \\mathbf {x} =\\mathbf {a} +\\mathbf {w} ,\\mathbf {w} \\in W\\}}",
+    Caption: (string) "",
+    Height: (int) 0,
+    Width: (int) 0
+  }),
+  (*parser.Image)({
+    ContentUrl: (string) (len=102) "https:https://wikimedia.org/api/rest_v1/media/math/render/svg/ecce62170d92a45fbc86f749382b4733f0306df9",
+    AlternativeText: (string) (len=106) "{\\displaystyle G=\\left\\{{\\begin{bmatrix}a&0\\\\b&1\\end{bmatrix}}\\colon a,b\\in \\mathbb {R} ,a\\neq 0\\right\\},}",
+    Caption: (string) "",
+    Height: (int) 0,
+    Width: (int) 0
+  }),
+  (*parser.Image)({
+    ContentUrl: (string) (len=102) "https:https://wikimedia.org/api/rest_v1/media/math/render/svg/130ca088755fd27b80f35fd2a26ef19e73486388",
+    AlternativeText: (string) (len=96) "{\\displaystyle H=\\left\\{{\\begin{bmatrix}1&0\\\\c&1\\end{bmatrix}}\\colon c\\in \\mathbb {R} \\right\\}.}",
+    Caption: (string) "",
+    Height: (int) 0,
+    Width: (int) 0
+  }),
+  (*parser.Image)({
+    ContentUrl: (string) (len=102) "https:https://wikimedia.org/api/rest_v1/media/math/render/svg/2e82e6410a80c73f61b66b076f5a49739fbfc5f5",
+    AlternativeText: (string) (len=370) "{\\displaystyle {\\begin{aligned}{\\begin{bmatrix}a&0\\\\b&1\\end{bmatrix}}H=&~\\left\\{{\\begin{bmatrix}a&0\\\\b&1\\end{bmatrix}}{\\begin{bmatrix}1&0\\\\c&1\\end{bmatrix}}\\colon c\\in \\mathbb {R} \\right\\}\\\\=&~\\left\\{{\\begin{bmatrix}a&0\\\\b+c&1\\end{bmatrix}}\\colon c\\in \\mathbb {R} \\right\\}\\\\=&~\\left\\{{\\begin{bmatrix}a&0\\\\d&1\\end{bmatrix}}\\colon d\\in \\mathbb {R} \\right\\}.\\end{aligned}}}",
+    Caption: (string) "",
+    Height: (int) 0,
+    Width: (int) 0
+  }),
+  (*parser.Image)({
+    ContentUrl: (string) (len=102) "https:https://wikimedia.org/api/rest_v1/media/math/render/svg/1f2f0b913f08bf4cf526d44d10443237b0d30aeb",
+    AlternativeText: (string) (len=101) "{\\displaystyle T=\\left\\{{\\begin{bmatrix}a&0\\\\0&1\\end{bmatrix}}\\colon a\\in \\mathbb {R} -\\{0\\}\\right\\}}",
+    Caption: (string) "",
+    Height: (int) 0,
+    Width: (int) 0
+  })
+}

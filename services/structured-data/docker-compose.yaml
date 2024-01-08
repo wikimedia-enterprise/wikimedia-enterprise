@@ -1,0 +1,178 @@
+version: "3.9"
+
+services:
+  # Confluent Zookeeper
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - 23181:2181
+
+  # Confluent Kafka broker
+  broker:
+    image: confluentinc/cp-kafka:latest
+    depends_on:
+      - zookeeper
+    ports:
+      - 30092:29092
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: LISTENER_DOCKER_INTERNAL://broker:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: LISTENER_DOCKER_INTERNAL:PLAINTEXT,LISTENER_DOCKER_EXTERNAL:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: LISTENER_DOCKER_INTERNAL
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_MESSAGE_MAX_BYTES: 20971520
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_CONFLUENT_LICENSE_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_CONFLUENT_BALANCER_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_COMPRESSION_TYPE: gzip
+
+  # Kafka topics/messages UI tool
+  kafka-ui:
+    image: provectuslabs/kafka-ui:latest
+    depends_on:
+      - zookeeper
+      - broker
+    ports:
+      - 8180:8080
+    environment:
+      KAFKA_CLUSTERS_0_NAME: local
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: broker:29092
+      KAFKA_CLUSTERS_0_ZOOKEEPER: zookeeper:2181
+      KAFKA_CLUSTERS_0_SCHEMAREGISTRY: http://schemaregistry:8085
+      KAFKA_CLUSTERS_0_SCHEMANAMETEMPLATE: __schemas
+
+  # Confluent schema registry
+  schemaregistry:
+    image: confluentinc/cp-schema-registry:latest
+    depends_on:
+      - zookeeper
+      - broker
+    ports:
+      - 8085:8085
+    environment:
+      SCHEMA_REGISTRY_HOST_NAME: localhost
+      SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: broker:29092
+      SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8085
+      SCHEMA_REGISTRY_SCHEMA_REGISTRY_INTER_INSTANCE_PROTOCOL: http
+      SCHEMA_REGISTRY_LOG4J_ROOT_LOGLEVEL: INFO
+      SCHEMA_REGISTRY_KAFKASTORE_TOPIC: _schemas
+      SCHEMA_REGISTRY_KAFKASTORE_TOPIC_REPLICATION_FACTOR: 2
+      SCHEMA_REGISTRY_DEBUG: 'true'
+
+  # mock service
+  mock:
+    build:
+      context: .
+      dockerfile: submodules/cdtools/docker/mock/Dockerfile
+    depends_on:
+      - broker
+    env_file:
+      - ./.env
+
+  # articlebulk service
+  articlebulk:
+    build:
+      context: .
+      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
+      args:
+        HANDLER: articlebulk
+        BUILD_EXTRA: "True"
+    depends_on:
+      - broker
+    env_file:
+      - ./.env
+    environment:
+      - KAFKA_CONSUMER_GROUP_ID=articlebulk
+
+  # articledelete service
+  articledelete:
+    build:
+      context: .
+      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
+      args:
+        HANDLER: articledelete
+        BUILD_EXTRA: "True"
+    depends_on:
+      - broker
+    env_file:
+      - ./.env
+    environment:
+      - KAFKA_CONSUMER_GROUP_ID=articledelete
+
+  # articledelete error service (Mind the spelling)
+  articledeleterror:
+    build:
+      context: .
+      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
+      args:
+        HANDLER: articledelete
+        BUILD_EXTRA: "True"
+    depends_on:
+      - broker
+    env_file:
+      - ./.env
+    environment:
+      - TOPIC_ARTICLE_DELETE=aws.structured-data.article-delete-error.v1
+      - KAFKA_CONSUMER_GROUP_ID=articledeleterror
+
+  # articleupdate service 
+  articleupdate:
+    build:
+      context: .
+      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
+      args:
+        HANDLER: articleupdate
+        BUILD_EXTRA: "True"
+    depends_on:
+      - broker
+      - textprocessor
+    env_file:
+      - ./.env
+    environment:
+      - KAFKA_CONSUMER_GROUP_ID=articleupdate
+
+  # articleupdate error service (Mind the spelling)
+  articleupdaterror:
+    build:
+      context: .
+      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
+      args:
+        HANDLER: articleupdate
+        BUILD_EXTRA: "True"
+    depends_on:
+      - broker
+    env_file:
+      - ./.env
+    environment:
+      - TOPIC_ARTICLE_UPDATE=aws.structured-data.article-update-error.v1
+      - KAFKA_CONSUMER_GROUP_ID=articleupdateerror
+
+  # articlevisibility service
+  articlevisibility:
+    build:
+      context: .
+      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
+      args:
+        HANDLER: articlevisibility
+        BUILD_EXTRA: "True"
+    depends_on:
+      - broker
+    env_file:
+      - ./.env
+    environment:
+      - KAFKA_CONSUMER_GROUP_ID=articlevisibility
+
+  textprocessor:
+    image: okapis/text-processor:latest
+    ports:
+      - 5050:5050
+    ulimits:
+      nofile:
+        soft: 256000
+        hard: 256000
