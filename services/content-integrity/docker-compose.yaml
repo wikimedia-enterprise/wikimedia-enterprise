@@ -32,10 +32,8 @@ services:
  # mock service
   mock:
     build:
-      context: ./../../.
-      dockerfile: ./docker/mock/Dockerfile
-      args:
-        SOURCE_DIR: ./services/content-integrity
+      context: .
+      dockerfile: submodules/cdtools/docker/mock/Dockerfile
     depends_on:
       broker:
         condition: service_started
@@ -49,7 +47,6 @@ services:
     environment:
       SCHEMA_REGISTRY_URL: http://schemaregistry:8081
       KAFKA_BOOTSTRAP_SERVERS: broker:29092
-
   # Kafka topics/messages UI tool
   kafka-ui:
     image: provectuslabs/kafka-ui:latest
@@ -91,10 +88,8 @@ services:
   # Content Integrity
   content-integrity:
     build:
-      context: ./../../.
-      dockerfile: ./docker/handlers/Dockerfile
-      args:
-        SOURCE_DIR: ./services/content-integrity
+      context: .
+      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
     ports:
       - 5050:5050
       - 12411:12411

@@ -53,15 +53,15 @@ type Environment struct {
 	TopicArticleUpdate                string       `env:"TOPIC_ARTICLE_UPDATE,default=aws.event-bridge.article-update.v1"`
 	TopicArticleMove                  string       `env:"TOPIC_ARTICLE_MOVE,default=aws.event-bridge.article-move.v1"`
 	BreakingNewsKeysExpiration        int          `env:"BREAKING_NEWS_KEYS_EXPIRATION,default=48"`
-	BreakingNewsMandatoryTemplates    List         `env:"BREAKING_NEWS_TEMPLATES,default=[\"Template:Breaking news\"]"`
-	BreakingNewsTemplatesPrefix       List         `env:"BREAKING_NEWS_TEMPLATES_PREFIX,default=[]"`
+	BreakingNewsMandatoryTemplates    List         `env:"BREAKING_NEWS_TEMPLATES,default=[\"Template:Cite news\"]"`
+	BreakingNewsTemplatesPrefix       List         `env:"BREAKING_NEWS_TEMPLATES_PREFIX,default=[\"Template:Current\"]"`
 	BreakingNewsTemplatesPrefixIgnore List         `env:"BREAKING_NEWS_TEMPLATES_PREFIX_IGNORE,default=[]"`
-	BreakingNewsCreatedHours          int          `env:"BREAKING_NEWS_CREATED_HOURS,default=16"`
-	BreakingNewsMovedHours            int          `env:"BREAKING_NEWS_MOVED_HOURS,default=12"`
+	BreakingNewsCreatedHours          int          `env:"BREAKING_NEWS_CREATED_HOURS,default=24"`
+	BreakingNewsMovedHours            int          `env:"BREAKING_NEWS_MOVED_HOURS,default=24"`
 	BreakingNewsUniqueEditors         int          `env:"BREAKING_NEWS_UNIQUE_EDITORS,default=2"`
-	BreakingNewsUniqueEditorsHours    int          `env:"BREAKING_NEWS_UNIQUE_EDITORS_HOURS,default=3"`
-	BreakingNewsEditsHours            int          `env:"BREAKING_NEWS_EDITS_HOURS,default=2"`
-	BreakingNewsEdits                 int          `env:"BREAKING_NEWS_EDITS,default=3"`
+	BreakingNewsUniqueEditorsHours    int          `env:"BREAKING_NEWS_UNIQUE_EDITORS_HOURS,default=1"`
+	BreakingNewsEditsHours            int          `env:"BREAKING_NEWS_EDITS_HOURS,default=1"`
+	BreakingNewsEdits                 int          `env:"BREAKING_NEWS_EDITS,default=10"`
 }
 
 // New initialize new environment configuration.
