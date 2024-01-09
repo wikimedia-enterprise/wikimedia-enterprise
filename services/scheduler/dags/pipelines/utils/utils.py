@@ -1,6 +1,5 @@
 from os import getenv, path
 from json import load
-import re
 from logging import getLogger
 from random import choice
 from time import sleep
@@ -8,8 +7,6 @@ from dns.resolver import query
 from airflow.models import Variable
 from grpc import insecure_channel
 import boto3
-
-logger = getLogger("airflow.task")
 
 
 def get_channel(addr_name):
@@ -19,6 +16,7 @@ def get_channel(addr_name):
     are found in the env variables,
     otherwise returns an insecure channel.
     """
+    logger = getLogger("airflow.task")
 
     # Server target and certificates for mutual TLS.
     addr = getenv(addr_name)
@@ -61,7 +59,7 @@ def get_language(project):
         with open(
             path.join(
                 path.dirname(__file__),
-                "../../../general/config/languages.json",
+                "../../../config/languages.json",
             ),
             "r",
         ) as file:
@@ -81,6 +79,7 @@ def get_namespaces(variable_name="namespaces"):
     Returns:
         list: List of namespaces.
     """
+    logger = getLogger("airflow.task")
 
     try:
         namespaces = Variable.get(variable_name, deserialize_json=True)
@@ -88,7 +87,7 @@ def get_namespaces(variable_name="namespaces"):
         with open(
             path.join(
                 path.dirname(__file__),
-                "../../../general/config/namespaces.json",
+                "../../../config/namespaces.json",
             ),
             "r",
         ) as file:
@@ -111,6 +110,7 @@ def get_projects(variable_name="projects"):
     Returns:
         list: List of projects.
     """
+    logger = getLogger("airflow.task")
     projects = []
 
     try:
@@ -119,7 +119,7 @@ def get_projects(variable_name="projects"):
         with open(
             path.join(
                 path.dirname(__file__),
-                "../../../general/config/random_projects.json",
+                "../../../config/random_projects.json",
             ),
             "r",
         ) as file:
@@ -284,6 +284,8 @@ def ecs_service_set_task_count(ecs_cluster_name, ecs_service_name, desired_count
     """
     result = False
 
+    logger = getLogger("airflow.task")
+
     try:
         # create ecs client
         ecs_client = boto3.client("ecs")
@@ -348,6 +350,8 @@ def verify_ip_addresses_returned_by_dns(dns_name, desired_count, attempts=30, de
 
     result = Result()
 
+    logger = getLogger("airflow.task")
+
     logger.info(
         f"Verification: waiting for dns name {dns_name} to return {desired_count} IPs"
     )
@@ -401,6 +405,7 @@ def get_desired_count(
     Returns:
         The desired count for the service.
     """
+    logger = getLogger("airflow.task")
     desired_count = None
 
     try:
@@ -422,34 +427,3 @@ def get_desired_count(
         f"retrieved desired count {desired_count}, var: {airflow_variable_name}, env: {env_variable_name}")
 
     return default_desired_count if desired_count is None else desired_count
-
-
-def check_domain(domains, email):
-    """Checks an email address for a match with a list of domain regexes.
-    
-    Args:
-        domains (list): Regexes for the domain bit of the email.
-        email (string): Email of the user.
-    
-    Returns:
-        True, if matched.
-    """
-    return match_patterns(domains, email.split('@')[-1])
-
-
-def match_patterns(patterns, value):
-    """Checks a value for a match with a list of regexes.
-
-    Args:
-        patterns (list): Regexes.
-        value (string): value.
-    
-    Returns:
-        True, if matched.
-    """
-    
-    for reg in patterns:
-        if re.match(reg, value):
-            return True
-    
-    return False

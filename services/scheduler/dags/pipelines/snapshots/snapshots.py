@@ -102,7 +102,7 @@ def exports(
             f"Exporting snapshots with since parameter set to `{since}`")
     else:
         logger.info(
-            "Exporting snapshots without since parameter, all articles will be exported"
+            f"Exporting snapshots without since parameter, all articles will be exported"
         )
 
     with insecure_channel(ip_address) as channel:

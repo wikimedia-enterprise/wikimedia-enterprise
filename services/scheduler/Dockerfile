@@ -1,4 +1,4 @@
-FROM apache/airflow:slim-2.8.3-python3.10
+FROM apache/airflow:2.2.5
 
 # Default AirFlow dir
 ARG AIRFLOW_DIR=/opt/airflow
@@ -10,16 +10,16 @@ ENV AIRFLOW_UID=50000 AIRFLOW_GID=0
 WORKDIR /airflow
 
 # Copy and install requirements into /airflow
-COPY ./services/scheduler/requirements.txt .
+COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 # Copy scripts into /airflow
-COPY ./services/scheduler/scripts/ .
+COPY scripts/ .
 
 # Copy dags and plugins directories content into airflow dir
-COPY --chown=airflow:root ./services/scheduler/dags ${AIRFLOW_DIR}/dags
-COPY --chown=airflow:root ./services/scheduler/plugins ${AIRFLOW_DIR}/plugins
-COPY --chown=airflow:root ./general/config ${AIRFLOW_DIR}/general/config
+COPY --chown=airflow:root dags ${AIRFLOW_DIR}/dags
+COPY --chown=airflow:root plugins ${AIRFLOW_DIR}/plugins
+COPY --chown=airflow:root submodules/config ${AIRFLOW_DIR}/submodules/config
 
 # Switch into airflow user and start webserver and scheduler
 USER airflow
