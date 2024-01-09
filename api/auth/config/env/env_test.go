@@ -47,8 +47,6 @@ type envTestSuite struct {
 	groupDownloadLimitKey   string
 	accessPolicy            string
 	accessPolicyKey         string
-	domainDenyList          env.List
-	domainDenyListKey       string
 }
 
 func (s *envTestSuite) SetupSuite() {
@@ -90,8 +88,6 @@ func (s *envTestSuite) SetupSuite() {
 	s.accessPolicy = ""
 	s.prometheusPortKey = "PROMETHEUS_PORT"
 	s.prometheusPort = 101
-	s.domainDenyListKey = "DOMAIN_DENY_LIST"
-	s.domainDenyList = env.List{"example.com", "example.org"}
 }
 
 func (s *envTestSuite) SetupTest() {
@@ -114,7 +110,6 @@ func (s *envTestSuite) SetupTest() {
 	os.Setenv(s.groupDownloadLimitKey, s.groupDownloadLimit)
 	os.Setenv(s.accessPolicyKey, s.accessPolicy)
 	os.Setenv(s.prometheusPortKey, strconv.Itoa(s.prometheusPort))
-	os.Setenv(s.domainDenyListKey, "example.com,example.org")
 }
 
 func (s *envTestSuite) TestNew() {
@@ -135,7 +130,6 @@ func (s *envTestSuite) TestNew() {
 	s.Assert().Equal(s.accessTokensExpHours, env.AccessTokensExpHours)
 	s.Assert().Equal(s.groupDownloadLimit, env.GroupDownloadLimit)
 	s.Assert().Equal(s.prometheusPort, env.PrometheusPort)
-	s.Assert().Equal(s.domainDenyList, env.DomainDenyList)
 	s.Assert().NotNil(env.AccessPolicy.Map)
 }
 
