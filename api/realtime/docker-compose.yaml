@@ -44,10 +44,20 @@ services:
       KAFKA_CLUSTERS_0_SCHEMAREGISTRY: http://schemaregistry:8085
       KAFKA_CLUSTERS_0_SCHEMANAMETEMPLATE: __schemas
 
+  # Swagger API documentation
+  swagger-ui:
+    image: swaggerapi/swagger-ui:latest
+    volumes:
+      - ./submodules/api-openapi-spec/:/var/www/app/docs.yaml
+    ports:
+      - 8030:8080
+    environment:
+      SWAGGER_JSON: /var/www/app/docs.yaml
+
   realtime:
     build:
-      context: ./../../.
-      dockerfile: ./api/realtime/Dockerfile
+      context: .
+      dockerfile: submodules/cdtools/docker/ksqldb_services/Dockerfile
     ports:
       - 4040:4040
     env_file:
@@ -108,10 +118,8 @@ services:
 
   mock:
     build:
-      context: ./../../.
-      dockerfile: ./docker/mock/Dockerfile
-      args:
-        SOURCE_DIR: "./api/realtime"
+      context: .
+      dockerfile: submodules/cdtools/docker/mock/Dockerfile
     depends_on:
       - zookeeper
       - broker

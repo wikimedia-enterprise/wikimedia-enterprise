@@ -99,13 +99,7 @@ func NewHandler(ctx context.Context, p *Parameters) gin.HandlerFunc {
 			return
 		}
 
-		for idx, field := range mdl.Fields {
-			// Escape ksqldb keywords from fields such as namespace
-			for kwd, rpl := range resolver.Keywords {
-				field = strings.ReplaceAll(field, kwd, rpl)
-				mdl.Fields[idx] = field
-			}
-
+		for _, field := range mdl.Fields {
 			name := strings.TrimSuffix(field, ".*")
 
 			if !p.Resolver.HasField(name) {
