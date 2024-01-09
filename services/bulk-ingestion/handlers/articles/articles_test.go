@@ -97,8 +97,7 @@ func (s *articlesTestSuite) SetupSuite() {
 		Stream: str,
 		Client: clt,
 		Env: &env.Environment{
-			TopicArticles:    "articles",
-			NumberOfArticles: 10,
+			TopicArticles: "articles",
 		},
 	}
 }

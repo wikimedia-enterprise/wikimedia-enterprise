@@ -29,8 +29,6 @@ type envTestSuite struct {
 	schemaRegistryCreds      string
 	schemaRegistryCredsKey   string
 	schemaRegistryURLKey     string
-	numberOfArticles         int
-	numberOfArticlesKey      string
 }
 
 func (s *envTestSuite) SetupSuite() {
@@ -52,8 +50,6 @@ func (s *envTestSuite) SetupSuite() {
 	s.schemaRegistryURL = "localhost:2020"
 	s.schemaRegistryCredsKey = "SCHEMA_REGISTRY_CREDS"
 	s.schemaRegistryCreds = `{"username":"reg_admin","password":"654321"}`
-	s.numberOfArticlesKey = "NUMBER_OF_ARTICLES"
-	s.numberOfArticles = 10
 }
 
 func (s *envTestSuite) SetupTest() {
@@ -79,7 +75,6 @@ func (s *envTestSuite) TestNew() {
 	s.Assert().Equal(s.topicLanguages, env.TopicLanguages)
 	s.Assert().Equal(s.topicNamespaces, env.TopicNamespaces)
 	s.Assert().Equal(s.schemaRegistryURL, env.SchemaRegistryURL)
-	s.Assert().Equal(s.numberOfArticles, env.NumberOfArticles)
 
 	creds, err := json.Marshal(env.KafkaCreds)
 	s.Assert().NoError(err)
