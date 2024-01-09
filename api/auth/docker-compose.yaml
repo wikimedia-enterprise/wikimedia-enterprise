@@ -1,0 +1,41 @@
+version: "3.9"
+
+services:
+  # Redis server
+  redis:
+    image: redis:latest
+    ports:
+      - 6379:6379
+    env_file:
+      - ./.env
+
+  # Redis UI tool
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    restart: always
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+    ports:
+      - 9000:8081
+
+  # Swagger API documentation
+  swagger-ui:
+    image: swaggerapi/swagger-ui:latest
+    volumes:
+      - ./docs.yaml:/var/www/app/docs.yaml
+    ports:
+      - 8090:8080
+    environment:
+      SWAGGER_JSON: /var/www/app/docs.yaml
+
+  # Authentication service
+  auth:
+    build:
+      context: .
+      dockerfile: ./submodules/cdtools/docker/handlers/Dockerfile
+    ports:
+      - 4050:4050
+    env_file:
+      - ./.env

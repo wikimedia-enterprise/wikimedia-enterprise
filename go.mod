@@ -13,6 +13,8 @@ require (
 	github.com/bradleyjkemp/cupaloy v2.3.0+incompatible
 	github.com/casbin/casbin/v2 v2.81.0
 	github.com/confluentinc/confluent-kafka-go v1.9.2
+	github.com/dchest/captcha v1.0.0
+	github.com/dchest/uniuri v1.2.0
 	github.com/didip/tollbooth v4.0.2+incompatible
 	github.com/djherbis/buffer v1.2.0
 	github.com/djherbis/nio/v3 v3.0.1
@@ -21,6 +23,7 @@ require (
 	github.com/gin-contrib/zap v0.2.0
 	github.com/gin-gonic/gin v1.9.1
 	github.com/go-redis/redis/v8 v8.11.5
+	github.com/go-redis/redismock/v8 v8.11.5
 	github.com/gocarina/gocsv v0.0.0-20231116093920-b87c2d0e983a
 	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/google/uuid v1.5.0
