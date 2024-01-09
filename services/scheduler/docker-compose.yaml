@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:13
+    env_file: .env
+
+  airflow:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    user: "${AIRFLOW_UID}:0"
+    env_file: .env
+    environment:
+      _AIRFLOW_DB_UPGRADE: "true"
+      _AIRFLOW_WWW_USER_CREATE: "true"
+      _AIRFLOW_WWW_USER_USERNAME: ${AIRFLOW_USERNAME:-airflow}
+      _AIRFLOW_WWW_USER_PASSWORD: ${AIRFLOW_PASSWORD:-airflow}
+      ECS_CLUSTER_NAME: megacluster
+      ECS_SNAPSHOTS_SERVICE_NAME: megaservice
+      ECS_SNAPSHOT_SERVICE_DESIRED_COUNT: 5000
+    ports:
+      - 9090:8080
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./submodules/config:/opt/airflow/submodules/config
+    healthcheck:
+      test: [ "CMD-SHELL", "./healthcheck.sh" ]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+    depends_on:
+      - postgres
