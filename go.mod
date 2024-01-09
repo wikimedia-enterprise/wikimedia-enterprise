@@ -10,9 +10,13 @@ require (
 	github.com/aws/aws-sdk-go v1.49.17
 	github.com/bradleyjkemp/cupaloy v2.3.0+incompatible
 	github.com/confluentinc/confluent-kafka-go v1.9.2
+	github.com/djherbis/buffer v1.2.0
+	github.com/djherbis/nio/v3 v3.0.1
+	github.com/gocarina/gocsv v0.0.0-20231116093920-b87c2d0e983a
 	github.com/google/uuid v1.5.0
 	github.com/hamba/avro/v2 v2.18.0
 	github.com/joho/godotenv v1.5.1
+	github.com/klauspost/pgzip v1.2.6
 	github.com/prometheus/client_golang v1.18.0
 	github.com/protsack-stephan/mediawiki-api-client v1.3.3
 	github.com/redis/go-redis/extra/redisprometheus/v9 v9.0.5
@@ -38,6 +42,7 @@ require (
 	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
+	github.com/klauspost/compress v1.17.4 // indirect
 	github.com/matttproud/golang_protobuf_extensions/v2 v2.0.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
