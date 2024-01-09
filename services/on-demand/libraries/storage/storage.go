@@ -49,13 +49,7 @@ func (s *Storage) Update(ctx context.Context, kdt []byte, etp string, val interf
 		return err
 	}
 
-	v := s.Env.ArticleKeyTypeSuffix
-
-	if v != "" {
-		v = "_" + v
-	}
-
-	loc := fmt.Sprintf("%s%s%s.json", key.Type, v, key.Identifier)
+	loc := fmt.Sprintf("%s%s.json", key.Type, key.Identifier)
 
 	switch etp {
 	case schema.EventTypeCreate, schema.EventTypeUpdate:

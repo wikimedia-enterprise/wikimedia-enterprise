@@ -6,6 +6,8 @@ require (
 	dario.cat/mergo v1.0.0
 	github.com/Netflix/go-env v0.0.0-20220526054621-78278af1949d
 	github.com/PuerkitoBio/goquery v1.8.1
+	github.com/avast/retry-go v3.0.0+incompatible
+	github.com/aws/aws-sdk-go v1.49.17
 	github.com/bradleyjkemp/cupaloy v2.3.0+incompatible
 	github.com/confluentinc/confluent-kafka-go v1.9.2
 	github.com/google/uuid v1.5.0
@@ -34,6 +36,7 @@ require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
+	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/matttproud/golang_protobuf_extensions/v2 v2.0.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
