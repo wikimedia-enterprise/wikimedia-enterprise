@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package contentintegrity;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "./;protos";
+
+// Content Integrity service method definitions
+service ContentIntegrity {
+  rpc GetArticleData(ArticleDataRequest) returns (ArticleDataResponse);
+}
+
+// ArticleDataRequest params needed to make request
+message ArticleDataRequest {
+  int64 identifier = 1;
+  string project = 2;
+  int64 version_identifier = 3;
+  google.protobuf.Timestamp date_modified = 4;
+  repeated string templates = 5;
+  repeated string categories = 6;
+}
+
+// ArticleDataResponse returns the metadata associated with the request in content integrity service
+message ArticleDataResponse {
+    int64 identifier = 1;
+    string project = 2;
+    int64 version_identifier = 3;
+    bool is_breaking_news = 4;
+    int32 number_of_edits = 5;
+    int32 unique_editors_count = 6;
+    optional google.protobuf.Timestamp date_created = 7;
+    optional google.protobuf.Timestamp date_namespace_moved = 8;
+}
+
+

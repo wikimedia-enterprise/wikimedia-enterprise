@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+package textprocessor;
+
+option go_package = "./;textprocessor";
+
+// TextProcessor service method definitions.
+service TextProcessor {
+  rpc GetDictionaryWords(DictionaryRequest) returns (DictionaryResponse);
+  rpc GetNonSafeWords(NonSafeRequest) returns (NonSafeResponse);
+  rpc GetInformalWords(InformalRequest) returns (InformalResponse);
+  rpc GetUpperCaseWords(UppercaseRequest) returns (UppercaseResponse);
+}
+
+// DictionaryRequest request params for GetDictionaryWords.
+message DictionaryRequest {
+  string language = 1;
+  repeated string tokens = 2;
+}
+
+// DictionaryResponse response of GetDictionaryWords.
+message DictionaryResponse {
+  repeated string dictWords = 1;
+  repeated string nonDictWords = 2;
+}
+
+// NonSafeRequest request params for GetNonSafeWords.
+message NonSafeRequest {
+  string language = 1;
+  repeated string tokens = 2;
+}
+
+// NonSafeResponse response of GetNonSafeWords.
+message NonSafeResponse {
+  repeated string nonSafeWords = 1;
+}
+
+// InformalRequest request params for GetInformalWords.
+message InformalRequest {
+  string language = 1;
+  repeated string tokens = 2;
+}
+
+// InformalResponse response of GetInformalWords.
+message InformalResponse {
+  repeated string informalWords = 1;
+}
+
+// UppercaseRequest request params for GetUpperCaseWords.
+message UppercaseRequest {
+  repeated string tokens = 1;
+}
+
+// UppercaseResponse response of GetUpperCaseWords.
+message UppercaseResponse {
+  repeated string uppercaseWords = 1;
+}
