@@ -76,22 +76,10 @@ services:
 
   articles:
     build:
-      context: .
-      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
+      context: ./../../.
+      dockerfile: ./docker/handlers/Dockerfile
       args:
-        HANDLER: articles
-    depends_on:
-      - broker
-      - minio
-    env_file:
-      - ./.env
-
-  versions:
-    build:
-      context: .
-      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
-      args:
-        HANDLER: versions
+        SOURCE_DIR: ./services/on-demand/handlers/articles
     depends_on:
       - broker
       - minio
@@ -100,8 +88,10 @@ services:
 
   mock:
     build:
-      context: .
-      dockerfile: submodules/cdtools/docker/mock/Dockerfile
+      context: ./../../.
+      dockerfile: ./docker/mock/Dockerfile
+      args:
+        SOURCE_DIR: ./services/on-demand
     depends_on:
       - broker
       - schemaregistry
