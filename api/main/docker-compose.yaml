@@ -3,7 +3,9 @@ version: "3.9"
 services:
   # Main application
   main:
-    build: .
+    build:
+      context: ./../../.
+      dockerfile: ./api/main/Dockerfile
     ports:
       - 4060:4060
     env_file:

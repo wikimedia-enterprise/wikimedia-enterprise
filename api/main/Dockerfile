@@ -14,7 +14,7 @@ RUN go mod download
 COPY . .
 
 # Build the binary
-RUN go build -o main *.go
+RUN go build -o main ./api/main/*.go
 
 #############
 # Run stage #
