@@ -1,7 +1,7 @@
 ###############
 # Build stage #
 ###############
-FROM golang:1.18 AS builder
+FROM golang:1.19 AS builder
 
 # Switch to /app dir
 WORKDIR /app
@@ -14,7 +14,7 @@ RUN go mod download
 COPY . .
 
 # Build the binary
-RUN go build -o main *.go
+RUN go build -o main ./api/auth/*.go
 
 #############
 # Run stage #
