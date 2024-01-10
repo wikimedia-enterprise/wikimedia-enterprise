@@ -41,7 +41,3 @@ mock:
 
 example:
 	docker compose up -d --no-deps --build example
-
-protos:
-	protoc --proto_path=submodules/protos --go_out=packages/textprocessor --go-grpc_out=packages/textprocessor --go_opt=paths=source_relative textprocessor.proto
-	protoc --proto_path=submodules/protos --go_out=packages/contentintegrity --go-grpc_out=packages/contentintegrity --go_opt=paths=source_relative contentintegrity.proto

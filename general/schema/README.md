@@ -1,6 +1,6 @@
 # Wikimedia Enterprise Schema
 
-This repository contains schema evolution for the project and used as a submodule in services to make sure schema is consistent across the project.
+This repository contains schema evolution for the project and used as a package in services to make sure schema is consistent across the project.
 
 ## Schema helper:
 

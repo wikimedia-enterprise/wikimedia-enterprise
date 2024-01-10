@@ -4,22 +4,6 @@ Wikimedia Enterprise Parser for Wikipedia HTML API
 
 ## Working with the repository
 
-### Setting up the repo
-
-We are using specific workflow for this repository cuz we always include it as a submodule and never use it as a standalone repo. That's why we have additional steps to make things work. List of steps:
-
-1. Initialize the `go.mod` by running this command:
-
-   ```bash
-   go mod init wikimedia-enterprise/general/parser
-   ```
-
-1. Then initialize the packages by running:
-
-   ```bash
-   go mod tidy
-   ```
-
 ### Unit testing
 
 We are using snapshots library to generate uni tests. If you need to re-generate the snapshots just run. For some reason the snapshot file gets appended to each time we run `UPDATE_SNAPS=true`, this is causing git timeouts in our Gitlab CICD pipeline. We recommend using a ``rm -rf` to delete the old snaps and keep the file size manageable.
