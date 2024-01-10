@@ -56,8 +56,8 @@ services:
 
   realtime:
     build:
-      context: .
-      dockerfile: submodules/cdtools/docker/ksqldb_services/Dockerfile
+      context: ./../../.
+      dockerfile: ./api/realtime/Dockerfile
     ports:
       - 4040:4040
     env_file:
@@ -118,8 +118,10 @@ services:
 
   mock:
     build:
-      context: .
-      dockerfile: submodules/cdtools/docker/mock/Dockerfile
+      context: ./../../.
+      dockerfile: ./docker/mock/Dockerfile
+      args:
+        SOURCE_DIR: "./api/realtime"
     depends_on:
       - zookeeper
       - broker
