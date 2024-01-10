@@ -85,10 +85,10 @@ services:
   # pagecreate service
   pagecreate:
     build:
-      context: .
-      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
+      context: ./../../.
+      dockerfile: ./docker/handlers/Dockerfile
       args:
-        HANDLER: pagecreate
+        SOURCE_DIR: ./services/event-bridge/handlers/pagecreate
     depends_on:
       - broker
       - redis
@@ -100,10 +100,10 @@ services:
   # pagedelete service
   pagedelete:
     build:
-      context: .
-      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
+      context: ./../../.
+      dockerfile: ./docker/handlers/Dockerfile
       args:
-        HANDLER: pagedelete
+        SOURCE_DIR: ./services/event-bridge/handlers/pagedelete
     depends_on:
       - broker
       - redis
@@ -115,10 +115,10 @@ services:
   # pagemove service
   pagemove:
     build:
-      context: .
-      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
+      context: ./../../.
+      dockerfile: ./docker/handlers/Dockerfile
       args:
-        HANDLER: pagemove
+        SOURCE_DIR: ./services/event-bridge/handlers/pagemove
     depends_on:
       - broker
       - redis
@@ -130,10 +130,10 @@ services:
   # revisioncreate service
   revisioncreate:
     build:
-      context: .
-      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
+      context: ./../../.
+      dockerfile: ./docker/handlers/Dockerfile
       args:
-        HANDLER: revisioncreate
+        SOURCE_DIR: ./services/event-bridge/handlers/revisioncreate
     depends_on:
       - broker
       - redis
@@ -145,10 +145,10 @@ services:
   # revisionvisibility service
   revisionvisibility:
     build:
-      context: .
-      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
+      context: ./../../.
+      dockerfile: ./docker/handlers/Dockerfile
       args:
-        HANDLER: revisionvisibility
+        SOURCE_DIR: ./services/event-bridge/handlers/revisionvisibility
     depends_on:
       - broker
       - redis
