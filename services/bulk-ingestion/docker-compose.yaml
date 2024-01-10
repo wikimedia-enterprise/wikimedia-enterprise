@@ -72,8 +72,10 @@ services:
   # Bulk Ingestion service
   bulk:
     build:
-      context: .
-      dockerfile: ./submodules/cdtools/docker/handlers/Dockerfile
+      context: ./../../.
+      dockerfile: ./docker/handlers/Dockerfile
+      args:
+        SOURCE_DIR: ./services/bulk-ingestion
     ports:
       - 50051:50051
     env_file:
