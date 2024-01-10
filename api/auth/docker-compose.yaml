@@ -20,16 +20,6 @@ services:
     ports:
       - 9000:8081
 
-  # Swagger API documentation
-  swagger-ui:
-    image: swaggerapi/swagger-ui:latest
-    volumes:
-      - ./docs.yaml:/var/www/app/docs.yaml
-    ports:
-      - 8090:8080
-    environment:
-      SWAGGER_JSON: /var/www/app/docs.yaml
-
   # Authentication service
   auth:
     build:

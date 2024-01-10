@@ -11,16 +11,6 @@ services:
     env_file:
       - ./.env
 
-  # Swagger API documentation
-  swagger-ui:
-    image: swaggerapi/swagger-ui:latest
-    volumes:
-      - ./submodules/api-openapi-spec/main.yaml:/var/www/app/docs.yaml
-    ports:
-      - 8090:8080
-    environment:
-      SWAGGER_JSON: /var/www/app/docs.yaml
-
   cache:
     image: redis:latest
     ports:
