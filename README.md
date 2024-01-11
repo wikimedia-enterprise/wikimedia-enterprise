@@ -1,11 +1,11 @@
 # Wikimedia Enterprise
 
-This repository hosts the source code for the Wikimedia Enterprise project. It is organized into three main directories:
+This repository contains the source code for the Wikimedia Enterprise project, organized into four main directories:
 
-1. [/api](/api/) - is where the API(s) exposed by the project are located
+1. [/api](/api/) - contains the APIs exposed by the project
 
-1. [/docker](/docker/) - is where the shared `Docker` configuration is stored
+1. [/docker](/docker/) - stores the shared Docker configuration
 
-1. [/general](/general/) - libraries that are shared across the entire project
+1. [/general](/general/) - includes libraries shared across the entire project
 
-1. [/services](/services/) - individual services that are responsible for running the project.
+1. [/services](/services/) - houses the individual services responsible for running the project
