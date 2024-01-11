@@ -59,7 +59,7 @@ def get_language(project):
         with open(
             path.join(
                 path.dirname(__file__),
-                "../../../config/languages.json",
+                "../../../general/config/languages.json",
             ),
             "r",
         ) as file:
@@ -87,7 +87,7 @@ def get_namespaces(variable_name="namespaces"):
         with open(
             path.join(
                 path.dirname(__file__),
-                "../../../config/namespaces.json",
+                "../../../general/config/namespaces.json",
             ),
             "r",
         ) as file:
@@ -119,7 +119,7 @@ def get_projects(variable_name="projects"):
         with open(
             path.join(
                 path.dirname(__file__),
-                "../../../config/random_projects.json",
+                "../../../general/config/random_projects.json",
             ),
             "r",
         ) as file:
