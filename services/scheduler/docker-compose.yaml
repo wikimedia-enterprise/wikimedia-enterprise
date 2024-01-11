@@ -7,8 +7,8 @@ services:
 
   airflow:
     build:
-      context: .
-      dockerfile: ./Dockerfile
+      context: ./../../.
+      dockerfile: ./services/scheduler/Dockerfile
     user: "${AIRFLOW_UID}:0"
     env_file: .env
     environment:
@@ -22,10 +22,10 @@ services:
     ports:
       - 9090:8080
     volumes:
-      - ./dags:/opt/airflow/dags
-      - ./logs:/opt/airflow/logs
-      - ./plugins:/opt/airflow/plugins
-      - ./submodules/config:/opt/airflow/submodules/config
+      - ./services/scheduler/dags:/opt/airflow/dags
+      - ./services/scheduler/logs:/opt/airflow/logs
+      - ./services/scheduler/plugins:/opt/airflow/plugins
+      - ./general/config:/opt/airflow/general/config
     healthcheck:
       test: [ "CMD-SHELL", "./healthcheck.sh" ]
       interval: 10s
