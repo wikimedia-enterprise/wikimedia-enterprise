@@ -1,9 +1,9 @@
 # Wikimedia Enterprise APIs
 
-This directory contains all of the APIs that are exposed by WME.
+This directory houses the APIs exposed by WME:
 
-1. [/main](/api/main/) - 
+1. [/main](/api/main/) - serves data from the object store
 
-1. [/auth](/api/auth/) - 
+2. [/auth](/api/auth/) - handles user authentication and authorization
 
-1. [/realtime](/api/realtime/) - 
+3. [/realtime](/api/realtime/) - provides a real-time feed of changes
