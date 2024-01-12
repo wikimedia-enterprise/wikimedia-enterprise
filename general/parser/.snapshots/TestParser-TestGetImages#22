@@ -1,0 +1,16 @@
+([]*parser.Image) (len=2) {
+  (*parser.Image)({
+    ContentUrl: (string) (len=85) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Ledger.png/200px-Ledger.png",
+    AlternativeText: (string) (len=32) "Early 19th-century German ledger",
+    Caption: (string) "",
+    Height: (int) 200,
+    Width: (int) 200
+  }),
+  (*parser.Image)({
+    ContentUrl: (string) (len=147) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Wachovia_National_Bank_1906_statement.jpg/250px-Wachovia_National_Bank_1906_statement.jpg",
+    AlternativeText: (string) "",
+    Caption: (string) (len=31) "Historical financial statements",
+    Height: (int) 250,
+    Width: (int) 250
+  })
+}

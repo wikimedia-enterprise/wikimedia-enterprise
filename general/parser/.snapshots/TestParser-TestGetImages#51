@@ -1,0 +1,16 @@
+([]*parser.Image) (len=2) {
+  (*parser.Image)({
+    ContentUrl: (string) (len=113) "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Hodgson%27s_Redstart.jpg/290px-Hodgson%27s_Redstart.jpg",
+    AlternativeText: (string) (len=59) "Description de cette image, également commentée ci-après",
+    Caption: (string) "",
+    Height: (int) 290,
+    Width: (int) 290
+  }),
+  (*parser.Image)({
+    ContentUrl: (string) (len=117) "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Status_iucn3.1_LC-fr.svg/244px-Status_iucn3.1_LC-fr.svg.png",
+    AlternativeText: (string) (len=6) "( LC )",
+    Caption: (string) "",
+    Height: (int) 244,
+    Width: (int) 244
+  })
+}

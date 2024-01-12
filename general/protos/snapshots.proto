@@ -1,0 +1,60 @@
+syntax = "proto3";
+
+package snapshots;
+
+option go_package = "./;protos";
+
+// Snapshots service method definitions
+service Snapshots {
+  rpc Export(ExportRequest) returns (ExportResponse);
+  rpc Copy(CopyRequest) returns (CopyResponse);
+  rpc Aggregate(AggregateRequest) returns (AggregateResponse);
+  rpc AggregateCopy(AggregateCopyRequest) returns (AggregateCopyResponse);
+}
+
+// Export io
+message ExportRequest {
+  int32 namespace = 1;
+  int32 workers = 2;
+  string project = 3;
+  string prefix = 4;
+  string language = 5;
+  int64 since = 6;
+  repeated string exclude_events = 7;
+}
+
+message ExportResponse {
+  int32 total = 1;
+  int32 errors = 2;
+}
+
+// Copy io description
+message CopyRequest {
+  int32 workers = 1;
+  repeated string projects = 2;
+  int32 namespace = 3;
+}
+
+message CopyResponse {
+  int32 total = 1;
+  int32 errors = 2;
+}
+
+// Aggregate io description
+message AggregateRequest {
+  string prefix = 1;
+  int64 since = 2;
+}
+
+message AggregateResponse {
+  int32 total = 1;
+  int32 errors = 2;
+}
+
+// Aggregate copy io description
+message AggregateCopyRequest {}
+
+message AggregateCopyResponse {
+  int32 total = 1;
+  int32 errors = 2;
+}

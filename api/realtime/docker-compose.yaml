@@ -1,0 +1,123 @@
+version: "3.9"
+
+services:
+  # Confluent Zookeper
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    ports:
+      - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+
+  # Confluent Kafka broker
+  broker:
+    image: confluentinc/cp-kafka:latest
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: LISTENER_DOCKER_INTERNAL://broker:29092,LISTENER_DOCKER_EXTERNAL://localhost:9392
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: LISTENER_DOCKER_INTERNAL:PLAINTEXT,LISTENER_DOCKER_EXTERNAL:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: LISTENER_DOCKER_INTERNAL
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_MESSAGE_MAX_BYTES: 20971520
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_CONFLUENT_LICENSE_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_CONFLUENT_BALANCER_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+
+  # Kafka topics/messages UI tool
+  kafka-ui:
+    image: provectuslabs/kafka-ui:latest
+    depends_on:
+      - zookeeper
+      - broker
+    ports:
+      - 8280:8080
+    environment:
+      KAFKA_CLUSTERS_0_NAME: local
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: broker:29092
+      KAFKA_CLUSTERS_0_ZOOKEEPER: zookeeper:2181
+      KAFKA_CLUSTERS_0_SCHEMAREGISTRY: http://schemaregistry:8085
+      KAFKA_CLUSTERS_0_SCHEMANAMETEMPLATE: __schemas
+
+  realtime:
+    build:
+      context: ./../../.
+      dockerfile: ./api/realtime/Dockerfile
+    ports:
+      - 4040:4040
+    env_file:
+      - ./.env
+    depends_on:
+      - broker
+      - ksqldb
+
+  cache:
+    image: redis:latest
+    ports:
+      - 6379:6379
+    env_file:
+      - ./.env
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+
+  schemaregistry:
+    image: confluentinc/cp-schema-registry:latest
+    depends_on:
+      - zookeeper
+      - broker
+    ports:
+      - "8085:8085"
+    environment:
+      SCHEMA_REGISTRY_HOST_NAME: schemaregistry
+      SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: broker:29092
+      SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8085
+
+      SCHEMA_REGISTRY_SCHEMA_REGISTRY_INTER_INSTANCE_PROTOCOL: http
+      SCHEMA_REGISTRY_LOG4J_ROOT_LOGLEVEL: INFO
+      SCHEMA_REGISTRY_KAFKASTORE_TOPIC: _schemas
+      SCHEMA_REGISTRY_KAFKASTORE_TOPIC_REPLICATION_FACTOR: 2
+      SCHEMA_REGISTRY_DEBUG: 'true'
+
+  ksqldb:
+    image: confluentinc/ksqldb-server:0.28.2
+    depends_on:
+      - broker
+      - schemaregistry
+    ports:
+      - "8088:8088"
+    environment:
+      KSQL_LISTENERS: http://0.0.0.0:8088
+      KSQL_BOOTSTRAP_SERVERS: broker:29092
+      KSQL_KSQL_LOGGING_PROCESSING_STREAM_AUTO_CREATE: "true"
+      KSQL_KSQL_LOGGING_PROCESSING_TOPIC_AUTO_CREATE: "true"
+      KSQL_MIGRATIONS_CONFIG: /share/ksql-migrations/ksql-migrations.properties
+      # KSQL_KSQL_STREAMS_AUTO_OFFSET_RESET: 'earliest'
+      # ksql.streams.auto.offset.reset
+      KSQL_KSQL_SCHEMA_REGISTRY_URL: http://schemaregistry:8085
+      KSQL_KSQL_QUERY_PULL_TABLE_SCAN_ENABLED: "true"
+      KSQL_KSQL_CONNECT_URL: "http://connect:8083"
+    volumes:
+      - ./ksqldb:/share/ksql-migrations
+
+  mock:
+    build:
+      context: ./../../.
+      dockerfile: ./docker/mock/Dockerfile
+      args:
+        SOURCE_DIR: "./api/realtime"
+    depends_on:
+      - zookeeper
+      - broker
+      - schemaregistry
+    env_file:
+      - ./.env
+    environment:
+      SCHEMA_REGISTRY_URL: http://schemaregistry:8085
+      KAFKA_BOOTSTRAP_SERVERS: broker:29092

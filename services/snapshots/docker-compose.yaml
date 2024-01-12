@@ -1,0 +1,97 @@
+version: "3.9"
+
+services:
+  # Confluent Zookeper
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+
+  # Confluent Kafka broker
+  broker:
+    image: confluentinc/cp-kafka:latest
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: LISTENER_DOCKER_INTERNAL://broker:29092,LISTENER_DOCKER_EXTERNAL://localhost:9392
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: LISTENER_DOCKER_INTERNAL:PLAINTEXT,LISTENER_DOCKER_EXTERNAL:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: LISTENER_DOCKER_INTERNAL
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_MESSAGE_MAX_BYTES: 20971520
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_CONFLUENT_LICENSE_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_CONFLUENT_BALANCER_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+
+  # Kafka topics/messages UI tool
+  kafka-ui:
+    image: provectuslabs/kafka-ui:latest
+    depends_on:
+      - zookeeper
+      - broker
+    ports:
+      - 8380:8080
+    environment:
+      KAFKA_CLUSTERS_0_NAME: local
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: broker:29092
+      KAFKA_CLUSTERS_0_ZOOKEEPER: zookeeper:2181
+      KAFKA_CLUSTERS_0_SCHEMAREGISTRY: http://schemaregistry:8085
+      KAFKA_CLUSTERS_0_SCHEMANAMETEMPLATE: __schemas
+
+  schemaregistry:
+    image: confluentinc/cp-schema-registry:latest
+    depends_on:
+      - zookeeper
+      - broker
+    environment:
+      SCHEMA_REGISTRY_HOST_NAME: schemaregistry
+      SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: broker:29092
+      SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8085
+
+      SCHEMA_REGISTRY_SCHEMA_REGISTRY_INTER_INSTANCE_PROTOCOL: http
+      SCHEMA_REGISTRY_LOG4J_ROOT_LOGLEVEL: INFO
+      SCHEMA_REGISTRY_KAFKASTORE_TOPIC: _schemas
+      SCHEMA_REGISTRY_KAFKASTORE_TOPIC_REPLICATION_FACTOR: 2
+      SCHEMA_REGISTRY_DEBUG: 'true'
+
+  minio:
+    image: minio/minio:latest
+    ports:
+      - 9000:9000
+      - 9100:9100
+    environment:
+      MINIO_ROOT_USER: admin
+      MINIO_ROOT_PASSWORD: password
+    command: server /data --console-address :9100
+
+  # Snapshots service
+  snapshots:
+    build:
+      context: ./../../.
+      dockerfile: ./docker/handlers/Dockerfile
+      args:
+        SOURCE_DIR: ./services/snapshots
+    ports:
+      - 5050:5050
+      - 12411:12411
+    env_file:
+      - ./.env
+    depends_on:
+      - broker
+      - minio
+
+  # Mock generator
+  mock:
+    build:
+      context: ./../../.
+      dockerfile: ./docker/mock/Dockerfile
+      args:
+        SOURCE_DIR: ./services/snapshots
+    depends_on:
+      - broker
+    env_file:
+      - ./.env

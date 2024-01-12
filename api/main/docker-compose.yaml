@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+  # Main application
+  main:
+    build:
+      context: ./../../.
+      dockerfile: ./api/main/Dockerfile
+    ports:
+      - 4060:4060
+    env_file:
+      - ./.env
+
+  cache:
+    image: redis:latest
+    ports:
+      - 6379:6379
+    env_file:
+      - ./.env
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+
+  # MINIO storage server
+  minio:
+    image: minio/minio:latest
+    ports:
+      - 9000:9000
+      - 9202:9202
+    command: server /data --console-address :9202

@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package bulk;
+
+option go_package = "./;protos";
+
+// Bulk service method definitions.
+service Bulk {
+  rpc Projects(ProjectsRequest) returns (ProjectsResponse);
+  rpc Namespaces(NamespacesRequest) returns (NamespacesResponse);
+  rpc Articles(ArticlesRequest) returns (ArticlesResponse);
+}
+
+// ProjectsRequest params needed for projects request.
+message ProjectsRequest {}
+
+// ProjectResponse indicates total events produced.
+message ProjectsResponse {
+  int32 total = 1;
+  int32 errors = 2;
+}
+
+// NamespacesRequest params needed for namespaces request.
+message NamespacesRequest {}
+
+// NamespacesResponse indicates total event produced.
+message NamespacesResponse {
+  int32 total = 1;
+  int32 errors = 2;
+}
+
+// ArticlesRequest params needed for articles request.
+message ArticlesRequest {
+  int32 namespace = 1;
+  string project = 2;
+}
+
+// ArticlesResponse indicates total event produced.
+message ArticlesResponse {
+  int32 total = 1;
+  int32 errors = 2;
+}
