@@ -1,6 +1,7 @@
 package parser
 
 import (
+	"bytes"
 	"crypto/md5"
 	_ "embed"
 	"fmt"
@@ -97,6 +98,7 @@ type parserTestSuite struct {
 	ttl string
 	prs *Parser
 	sel *goquery.Selection
+	cup *cupaloy.Config
 }
 
 func (s *parserTestSuite) SetupSuite() {
@@ -108,6 +110,8 @@ func (s *parserTestSuite) SetupSuite() {
 
 	s.sel = doc.Selection
 	s.prs = &Parser{}
+
+	s.cup = cupaloy.New(cupaloy.SnapshotSubdirectory("zSnapshot"))
 }
 
 func (s *parserTestSuite) sortRelations(rls Relations) {
@@ -121,7 +125,7 @@ func (s *parserTestSuite) TestGetTemplates() {
 
 	s.sortRelations(tps)
 
-	cupaloy.SnapshotT(s.T(), tps)
+	s.cup.SnapshotT(s.T(), tps)
 }
 
 func (s *parserTestSuite) TestGetCategories() {
@@ -129,20 +133,19 @@ func (s *parserTestSuite) TestGetCategories() {
 
 	s.sortRelations(cts)
 
-	cupaloy.SnapshotT(s.T(), cts)
+	s.cup.SnapshotT(s.T(), cts)
 }
 
 func (s *parserTestSuite) TestGetAbstract() {
 	abs, err := s.prs.GetAbstract(s.sel)
 	s.Assert().NoError(err)
 
-	cupaloy.SnapshotT(s.T(), abs)
+	s.cup.SnapshotT(s.T(), abs)
 }
-
 func (s *parserTestSuite) TestGetImages() {
 	ims := s.prs.GetImages(s.sel)
 
-	cupaloy.SnapshotT(s.T(), ims)
+	s.cup.SnapshotT(s.T(), ims)
 }
 
 func (s *parserTestSuite) TestGetText() {
@@ -151,11 +154,109 @@ func (s *parserTestSuite) TestGetText() {
 	_, err := hsh.Write([]byte(s.prs.GetText(s.sel)))
 	s.Assert().NoError(err)
 
-	cupaloy.SnapshotT(s.T(), hsh.Sum(nil))
+	s.cup.SnapshotT(s.T(), hsh.Sum(nil))
+}
+
+func (s *parserTestSuite) TestGetLinks() {
+	lks := s.prs.GetLinks(s.sel, "")
+
+	s.cup.SnapshotT(s.T(), lks)
+}
+
+func (s *parserTestSuite) TestGetInfoBoxes() {
+	ibs := s.prs.GetInfoBoxes(s.sel)
+
+	s.cup.SnapshotT(s.T(), ibs)
+}
+
+func (s *parserTestSuite) TestGetSections() {
+	scs := s.prs.GetSections(s.sel)
+
+	s.cup.SnapshotT(s.T(), scs)
+}
+
+func (s *parserTestSuite) TestReplaceLists() {
+	var b bytes.Buffer
+	before := s.sel.Clone()
+
+	// Replicating the 'replace' code and testing getList
+	s.prs.findFirstLevel(before, "ul, ol, dl").Each(func(_ int, sli *goquery.Selection) {
+		b.Reset()
+		b.WriteString("\n")
+		s.prs.getList(&b, sli.Nodes[0], 1)
+		md := b.String()
+		sli.ReplaceWithHtml(md)
+	})
+
+	beforeHTML, _ := before.Html()
+
+	s.prs.ReplaceLists(s.sel)
+	afterHTML, _ := s.sel.Html()
+
+	s.Assert().Equal(beforeHTML, afterHTML)
 }
 
 func TestParser(t *testing.T) {
 	for _, testCase := range []*parserTestSuite{
+		{
+			ttl: "Body mass index",
+		},
+		{
+			ttl: "Toyota",
+		},
+		{
+			ttl: "Gwen Stefani",
+		},
+		{
+			ttl: "Kane (noble family)",
+		},
+		{
+			ttl: "Free trade agreements of the European Union",
+		},
+		{
+			ttl: "The Futurist",
+		},
+		{
+			ttl: "Zillow",
+		},
+		{
+			ttl: "Google Chrome",
+		},
+		{
+			ttl: "_i_Monday Night Football__i_",
+		},
+		{
+			ttl: "Grimes",
+		},
+		{
+			ttl: "Thesaurus",
+		},
+		{
+			ttl: "Aldi",
+		},
+
+		{
+			ttl: "FetLife",
+		},
+
+		{
+			ttl: "Slogan",
+		},
+		{
+			ttl: "ABC News",
+		},
+		{
+			ttl: "Eurovision Song Contest 2023",
+		},
+		{
+			ttl: "O",
+		},
+		{
+			ttl: "Ciro_Immobile",
+		},
+		{
+			ttl: "Gad_Elmaleh",
+		},
 		{
 			ttl: ".NET_Foundation",
 		},

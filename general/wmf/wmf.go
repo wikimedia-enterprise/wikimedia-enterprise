@@ -402,7 +402,7 @@ func NewClient(ops ...ClientOption) *Client {
 	cl := &Client{
 		HTTPClient:         &http.Client{},
 		HTTPClientLiftWing: &http.Client{},
-		DefaultRetryAfter:  time.Second * 1,
+		DefaultRetryAfter:  time.Second * 5,
 		EnableRetryAfter:   true,
 		DefaultURL:         "https://en.wikipedia.org",
 		LiftWingBaseURL:    "https://api.wikimedia.org/service/lw/inference/v1/models/",
@@ -415,23 +415,28 @@ func NewClient(ops ...ClientOption) *Client {
 		opt(cl)
 	}
 
+	if cl.Tracer == nil {
+		defaultTrace(cl)
+	}
+
 	return cl
 }
 
 // Client all encompassing client for WFM API(s).
 type Client struct {
-	HTTPClient         *http.Client
-	HTTPClientLiftWing *http.Client
-	DefaultURL         string
-	LiftWingBaseURL    string
-	OAuthToken         string
-	DefaultDatabase    string
-	UserAgent          string
-	DefaultRetryAfter  time.Duration
-	EnableRetryAfter   bool
-	projects           map[string]*Project
-	languages          map[string]*Language
-	mutex              sync.Mutex
+	HTTPClient             *http.Client
+	HTTPClientLiftWing     *http.Client
+	DefaultURL             string
+	LiftWingBaseURL        string
+	OAuthToken             string
+	DefaultDatabase        string
+	UserAgent              string
+	DefaultRetryAfter      time.Duration
+	EnableRetryAfter       bool
+	projects               map[string]*Project
+	languages              map[string]*Language
+	projectslanguagesMutex sync.RWMutex
+	Tracer                 func(ctx context.Context, attributes map[string]string) (func(err error, msg string), context.Context)
 }
 
 func (c *Client) init(ctx context.Context) error {
@@ -442,8 +447,8 @@ func (c *Client) init(ctx context.Context) error {
 			return err
 		}
 
-		c.mutex.Lock()
-		defer c.mutex.Unlock()
+		c.projectslanguagesMutex.Lock()
+		defer c.projectslanguagesMutex.Unlock()
 
 		c.projects = map[string]*Project{}
 		c.languages = map[string]*Language{}
@@ -464,11 +469,16 @@ func (c *Client) getProjectURL(ctx context.Context, dtb string) (string, error) 
 		return c.DefaultURL, nil
 	}
 
-	prj, err := c.GetProject(ctx, dtb)
+	end, trx := c.Tracer(ctx, map[string]string{"database": dtb})
+
+	prj, err := c.GetProject(trx, dtb)
 
 	if err != nil {
+		end(err, "project not found")
 		return "", err
 	}
+
+	end(nil, "project found")
 
 	return prj.URL, nil
 }
@@ -515,20 +525,33 @@ func (c *Client) do(clt *http.Client, req *http.Request) (*http.Response, error)
 		return nil, ErrHTTPClientNotFound
 	}
 
+	etr, _ := c.Tracer(req.Context(), map[string]string{"url": req.URL.String()})
+
 	res, err := clt.Do(req)
 
 	if err != nil {
+		etr(err, "request failed")
 		return nil, fmt.Errorf("wmf api call failed for url %s with error %v", req.URL.String(), err)
 	}
 
-	if c.EnableRetryAfter && res.StatusCode == http.StatusTooManyRequests {
+	esu := res.StatusCode >= http.StatusBadGateway && res.StatusCode <= http.StatusGatewayTimeout
+
+	if c.EnableRetryAfter && (res.StatusCode == http.StatusTooManyRequests || esu) {
 		if est, _ := getErrorString(res); len(est) > 0 {
 			log.Println(est)
 		}
 
-		rtv, err := getRetryAfterValue(res, c.DefaultRetryAfter)
+		dly := c.DefaultRetryAfter
+
+		// Wait 150 seconds if WMF API returns 502-504 status code. WMF APIs can block the IP for 5 minutes
+		if esu {
+			dly = 150 * time.Second
+		}
+
+		rtv, err := getRetryAfterValue(res, dly)
 
 		if err != nil {
+			etr(err, "retry-after header not found")
 			return nil, err
 		}
 
@@ -541,12 +564,17 @@ func (c *Client) do(clt *http.Client, req *http.Request) (*http.Response, error)
 		dta, err := getErrorString(res)
 
 		if err != nil {
+			etr(err, "error response not found")
 			return nil, err
 		}
 
-		return nil, fmt.Errorf("wmf api call returned status not 200 or 302 for url %s with error %s", req.URL.String(), dta)
+		rer := fmt.Errorf("wmf api call returned status not 200 or 302 for url %s with error %s", req.URL.String(), dta)
+		etr(rer, "error response")
+
+		return nil, rer
 	}
 
+	etr(nil, "request successful")
 	return res, nil
 }
 
@@ -555,6 +583,17 @@ func (c *Client) do(clt *http.Client, req *http.Request) (*http.Response, error)
 // Such as page ID, title and namespace.
 // In order to use other namespace than 0 use `ops ...func(*url.Values)` and update `apnamespace` property.
 func (c *Client) GetAllPages(ctx context.Context, dtb string, cbk func([]*Page), ops ...func(*url.Values)) error {
+	end, trx := c.Tracer(ctx, map[string]string{"database": dtb})
+
+	var err error
+	defer func() {
+		if err != nil {
+			end(err, "error fetching pages")
+		} else {
+			end(nil, "pages fetched")
+		}
+	}()
+
 	var rsp *Response
 	swg := new(sync.WaitGroup)
 	pgs := make(chan []*Page, 400000)
@@ -588,7 +627,7 @@ func (c *Client) GetAllPages(ctx context.Context, dtb string, cbk func([]*Page),
 			}
 		}
 
-		req, err := c.newActionsRequest(ctx, dtb, bdy)
+		req, err := c.newActionsRequest(trx, dtb, bdy)
 
 		if err != nil {
 			return err
@@ -627,6 +666,17 @@ func (c *Client) GetAllPages(ctx context.Context, dtb string, cbk func([]*Page),
 // GetPages gets a list of pages from actions API by titles (max batch limit is 50) and merges the request from continuation prop.
 // If you need to pass a specific property or update the API request use `ops ...func(*url.Values)` property.
 func (c *Client) GetPages(ctx context.Context, dtb string, tls []string, ops ...func(*url.Values)) (map[string]*Page, error) {
+	end, trx := c.Tracer(ctx, map[string]string{"database": dtb})
+
+	var err error
+	defer func() {
+		if err != nil {
+			end(err, "error fetching pages")
+		} else {
+			end(nil, "pages fetched")
+		}
+	}()
+
 	var rsp *Response
 	pgs := map[string]*Page{}
 	nls := map[string]string{}
@@ -660,7 +710,7 @@ func (c *Client) GetPages(ctx context.Context, dtb string, tls []string, ops ...
 			opt(&bdy)
 		}
 
-		req, err := c.newActionsRequest(ctx, dtb, bdy)
+		req, err := c.newActionsRequest(trx, dtb, bdy)
 
 		if err != nil {
 			return nil, err
@@ -752,6 +802,8 @@ func (c *Client) GetPage(ctx context.Context, dtb string, ttl string, ops ...fun
 // GetPageHTML gets HTML of the page using page title.
 // Request query can be updated using `ops ...func(*url.Values)` property.
 func (c *Client) GetPageHTML(ctx context.Context, dtb string, ttl string, ops ...func(*url.Values)) (string, error) {
+	end, trx := c.Tracer(ctx, map[string]string{"database": dtb, "title": ttl})
+
 	qry := url.Values{}
 
 	for _, opt := range ops {
@@ -759,16 +811,20 @@ func (c *Client) GetPageHTML(ctx context.Context, dtb string, ttl string, ops ..
 	}
 
 	// Switch to the new endpoint after the Content transform team fixes all the bugs
-	// req, err := c.newRESTRequest(ctx, dtb, fmt.Sprintf("w/rest.php/v1/page/%s/html", url.QueryEscape(strings.ReplaceAll(ttl, " ", "_"))), qry)
-	req, err := c.newRESTRequest(ctx, dtb, fmt.Sprintf("api/rest_v1/page/html/%s", url.QueryEscape(strings.ReplaceAll(ttl, " ", "_"))), qry)
+	req, err := c.newRESTRequest(trx, dtb, fmt.Sprintf("w/rest.php/v1/page/%s/html", url.QueryEscape(strings.ReplaceAll(ttl, " ", "_"))), qry)
+
+	// Old restbase endpoint
+	// req, err := c.newRESTRequest(ctx, dtb, fmt.Sprintf("api/rest_v1/page/html/%s", url.QueryEscape(strings.ReplaceAll(ttl, " ", "_"))),
 
 	if err != nil {
+		end(err, "new request failed")
 		return "", err
 	}
 
 	res, err := c.do(c.HTTPClient, req)
 
 	if err != nil {
+		end(err, "page html request failed")
 		return "", err
 	}
 
@@ -776,8 +832,11 @@ func (c *Client) GetPageHTML(ctx context.Context, dtb string, ttl string, ops ..
 	dta, err := io.ReadAll(res.Body)
 
 	if err != nil {
+		end(err, "page html read failed")
 		return "", err
 	}
+
+	end(nil, "page html fetched")
 
 	return string(dta), nil
 }
@@ -821,21 +880,25 @@ func (c *Client) GetPagesHTML(ctx context.Context, dtb string, tls []string, mxc
 // GetPageSummary gets summary of the page using page title.
 // Request query can be updated using `ops ...func(*url.Values)` property.
 func (c *Client) GetPageSummary(ctx context.Context, dtb string, ttl string, ops ...func(*url.Values)) (*PageSummary, error) {
+	end, trx := c.Tracer(ctx, map[string]string{"database": dtb, "title": ttl})
+
 	qry := url.Values{}
 
 	for _, opt := range ops {
 		opt(&qry)
 	}
 
-	req, err := c.newRESTRequest(ctx, dtb, fmt.Sprintf("api/rest_v1/page/summary/%s", url.QueryEscape(strings.ReplaceAll(ttl, " ", "_"))), qry)
+	req, err := c.newRESTRequest(trx, dtb, fmt.Sprintf("api/rest_v1/page/summary/%s", url.QueryEscape(strings.ReplaceAll(ttl, " ", "_"))), qry)
 
 	if err != nil {
+		end(err, "new request failed")
 		return nil, err
 	}
 
 	res, err := c.do(c.HTTPClient, req)
 
 	if err != nil {
+		end(err, "page summary request failed")
 		return nil, err
 	}
 
@@ -843,8 +906,11 @@ func (c *Client) GetPageSummary(ctx context.Context, dtb string, ttl string, ops
 	psm := new(PageSummary)
 
 	if err := json.NewDecoder(res.Body).Decode(psm); err != nil {
+		end(err, "page summary decode failed")
 		return nil, err
 	}
+
+	end(nil, "page summary fetched")
 
 	return psm, nil
 }
@@ -852,6 +918,8 @@ func (c *Client) GetPageSummary(ctx context.Context, dtb string, ttl string, ops
 // GetLanguages gets a list of languages from the Actions API using Site Matrix api.
 // If you need to pass a specific property or update the API request use `ops ...func(*url.Values)` property.
 func (c *Client) GetLanguages(ctx context.Context, dtb string, ops ...func(*url.Values)) ([]*Language, error) {
+	end, trx := c.Tracer(ctx, map[string]string{"database": dtb})
+
 	bdy := url.Values{}
 	bdy.Set("action", "sitematrix")
 	bdy.Set("format", "json")
@@ -861,15 +929,17 @@ func (c *Client) GetLanguages(ctx context.Context, dtb string, ops ...func(*url.
 		opt(&bdy)
 	}
 
-	req, err := c.newActionsRequest(ctx, dtb, bdy)
+	req, err := c.newActionsRequest(trx, dtb, bdy)
 
 	if err != nil {
+		end(err, "new request failed")
 		return nil, err
 	}
 
 	res, err := c.do(c.HTTPClient, req)
 
 	if err != nil {
+		end(err, "languages request failed")
 		return nil, err
 	}
 
@@ -879,7 +949,9 @@ func (c *Client) GetLanguages(ctx context.Context, dtb string, ops ...func(*url.
 	_ = json.NewDecoder(res.Body).Decode(rsp)
 
 	if err := getResponseError(rsp); err != nil {
-		return nil, fmt.Errorf("%s:%v", http.StatusText(res.StatusCode), err)
+		ser := fmt.Errorf("%s:%v", http.StatusText(res.StatusCode), err)
+		end(ser, "response error")
+		return nil, ser
 	}
 
 	lns := []*Language{}
@@ -890,6 +962,8 @@ func (c *Client) GetLanguages(ctx context.Context, dtb string, ops ...func(*url.
 		}
 	}
 
+	end(nil, "languages fetched")
+
 	return lns, nil
 }
 
@@ -898,6 +972,9 @@ func (c *Client) GetLanguage(ctx context.Context, dtb string) (*Language, error)
 	if err := c.init(ctx); err != nil {
 		return nil, err
 	}
+
+	c.projectslanguagesMutex.RLock()
+	defer c.projectslanguagesMutex.RUnlock()
 
 	if lng, ok := c.languages[dtb]; ok {
 		return lng, nil
@@ -908,11 +985,17 @@ func (c *Client) GetLanguage(ctx context.Context, dtb string) (*Language, error)
 
 // GetProjects gets an array of all projects using database name.
 func (c *Client) GetProjects(ctx context.Context, dtb string) ([]*Project, error) {
-	if err := c.init(ctx); err != nil {
+	end, trx := c.Tracer(ctx, map[string]string{"database": dtb})
+
+	if err := c.init(trx); err != nil {
+		end(err, "init failed")
 		return nil, err
 	}
 
 	prl := []*Project{}
+
+	c.projectslanguagesMutex.RLock()
+	defer c.projectslanguagesMutex.RUnlock()
 
 	if dtb == c.DefaultDatabase {
 		for _, prj := range c.projects {
@@ -922,9 +1005,10 @@ func (c *Client) GetProjects(ctx context.Context, dtb string) ([]*Project, error
 		return prl, nil
 	}
 
-	lgs, err := c.GetLanguages(ctx, dtb)
+	lgs, err := c.GetLanguages(trx, dtb)
 
 	if err != nil {
+		end(err, "languages fetch failed")
 		return nil, err
 	}
 
@@ -932,18 +1016,28 @@ func (c *Client) GetProjects(ctx context.Context, dtb string) ([]*Project, error
 		prl = append(prl, lng.Projects...)
 	}
 
+	end(nil, "projects fetched")
+
 	return prl, nil
 }
 
 // GetProject gets a single project using a database name.
 func (c *Client) GetProject(ctx context.Context, dtb string) (*Project, error) {
-	if err := c.init(ctx); err != nil {
+	end, trx := c.Tracer(ctx, map[string]string{"database": dtb})
+
+	if err := c.init(trx); err != nil {
+		end(err, "init failed")
 		return nil, err
 	}
+
+	c.projectslanguagesMutex.RLock()
+	defer c.projectslanguagesMutex.RUnlock()
 
 	if prj, ok := c.projects[dtb]; ok {
 		return prj, nil
 	}
+
+	end(ErrProjectNotFound, "project not found")
 
 	return nil, ErrProjectNotFound
 }
@@ -951,6 +1045,8 @@ func (c *Client) GetProject(ctx context.Context, dtb string) (*Project, error) {
 // GetNamespaces returns a list of namespaces supported by the projects.
 // If you need to pass a specific property or update the API request use `ops ...func(*url.Values)` property.
 func (c *Client) GetNamespaces(ctx context.Context, dtb string, ops ...func(*url.Values)) ([]*Namespace, error) {
+	end, trx := c.Tracer(ctx, map[string]string{"database": dtb})
+
 	bdy := url.Values{}
 	bdy.Set("action", "query")
 	bdy.Set("meta", "siteinfo")
@@ -962,15 +1058,17 @@ func (c *Client) GetNamespaces(ctx context.Context, dtb string, ops ...func(*url
 		opt(&bdy)
 	}
 
-	req, err := c.newActionsRequest(ctx, dtb, bdy)
+	req, err := c.newActionsRequest(trx, dtb, bdy)
 
 	if err != nil {
+		end(err, "new request failed")
 		return nil, err
 	}
 
 	res, err := c.do(c.HTTPClient, req)
 
 	if err != nil {
+		end(err, "namespaces request failed")
 		return nil, err
 	}
 
@@ -978,10 +1076,12 @@ func (c *Client) GetNamespaces(ctx context.Context, dtb string, ops ...func(*url
 	rsp := new(Response)
 
 	if err := json.NewDecoder(res.Body).Decode(rsp); err != nil {
+		end(err, "namespaces decode failed")
 		return nil, err
 	}
 
 	if err := getResponseError(rsp); err != nil {
+		end(err, "response error")
 		return nil, fmt.Errorf("%s:%v", http.StatusText(res.StatusCode), err)
 	}
 
@@ -991,12 +1091,16 @@ func (c *Client) GetNamespaces(ctx context.Context, dtb string, ops ...func(*url
 		nss = append(nss, nsp)
 	}
 
+	end(nil, "namespaces fetched")
+
 	return nss, nil
 }
 
 // GetRandomPages returns a list of random article titles from a project. rnlimit should be between 1 to 500.
 // If you need to pass a specific property or update the API request use `ops ...func(*url.Values)` property.
 func (c *Client) GetRandomPages(ctx context.Context, dtb string, ops ...func(*url.Values)) ([]*Page, error) {
+	end, trx := c.Tracer(ctx, map[string]string{"database": dtb})
+
 	bdy := url.Values{}
 	bdy.Set("action", "query")
 	bdy.Set("format", "json")
@@ -1010,15 +1114,17 @@ func (c *Client) GetRandomPages(ctx context.Context, dtb string, ops ...func(*ur
 		opt(&bdy)
 	}
 
-	req, err := c.newActionsRequest(ctx, dtb, bdy)
+	req, err := c.newActionsRequest(trx, dtb, bdy)
 
 	if err != nil {
+		end(err, "new request failed")
 		return nil, err
 	}
 
 	res, err := c.do(c.HTTPClient, req)
 
 	if err != nil {
+		end(err, "random pages request failed")
 		return nil, err
 	}
 
@@ -1026,14 +1132,19 @@ func (c *Client) GetRandomPages(ctx context.Context, dtb string, ops ...func(*ur
 	rsp := new(Response)
 
 	if err := json.NewDecoder(res.Body).Decode(rsp); err != nil {
+		end(err, "random pages decode failed")
 		return nil, err
 	}
 
 	if rsp.Error != nil {
-		return nil, fmt.Errorf("%s:%v", http.StatusText(res.StatusCode), errors.New(rsp.Error.Info))
+		ser := fmt.Errorf("%s:%v", http.StatusText(res.StatusCode), errors.New(rsp.Error.Info))
+		end(ser, "response error")
+		return nil, ser
 	}
 
 	rns := append([]*Page{}, rsp.Query.Random...)
+
+	end(nil, "random pages fetched")
 
 	return rns, nil
 }
@@ -1041,6 +1152,8 @@ func (c *Client) GetRandomPages(ctx context.Context, dtb string, ops ...func(*ur
 // GetUsers gets a list of users using identifiers and database name.
 // If you need to pass a specific property or update the API request use `ops ...func(*url.Values)` property.
 func (c *Client) GetUsers(ctx context.Context, dtb string, ids []int, ops ...func(*url.Values)) (map[int]*User, error) {
+	end, trx := c.Tracer(ctx, map[string]string{"database": dtb})
+
 	uds := []string{}
 
 	for _, id := range ids {
@@ -1059,15 +1172,17 @@ func (c *Client) GetUsers(ctx context.Context, dtb string, ids []int, ops ...fun
 		opt(&bdy)
 	}
 
-	req, err := c.newActionsRequest(ctx, dtb, bdy)
+	req, err := c.newActionsRequest(trx, dtb, bdy)
 
 	if err != nil {
+		end(err, "new request failed")
 		return nil, err
 	}
 
 	res, err := c.do(c.HTTPClient, req)
 
 	if err != nil {
+		end(err, "users request failed")
 		return nil, err
 	}
 
@@ -1075,11 +1190,14 @@ func (c *Client) GetUsers(ctx context.Context, dtb string, ids []int, ops ...fun
 	rsp := new(Response)
 
 	if err := json.NewDecoder(res.Body).Decode(rsp); err != nil {
+		end(err, "users decode failed")
 		return nil, err
 	}
 
 	if err := getResponseError(rsp); err != nil {
-		return nil, fmt.Errorf("%s:%v", http.StatusText(res.StatusCode), err)
+		ser := fmt.Errorf("%s:%v", http.StatusText(res.StatusCode), err)
+		end(ser, "response error")
+		return nil, ser
 	}
 
 	uss := map[int]*User{}
@@ -1088,36 +1206,47 @@ func (c *Client) GetUsers(ctx context.Context, dtb string, ids []int, ops ...fun
 		uss[usr.UserID] = usr
 	}
 
+	end(nil, "users fetched")
+
 	return uss, nil
 }
 
 // GetUser gets a single user using identifiers and database name.
 // If you need to pass a specific property or update the API request use `ops ...func(*url.Values)` property.
 func (c *Client) GetUser(ctx context.Context, dtb string, id int, ops ...func(*url.Values)) (*User, error) {
-	uss, err := c.GetUsers(ctx, dtb, []int{id}, ops...)
+	end, trx := c.Tracer(ctx, map[string]string{"database": dtb, "id": strconv.Itoa(id)})
+	uss, err := c.GetUsers(trx, dtb, []int{id}, ops...)
 
 	if err != nil {
+		end(err, "users fetch failed")
 		return nil, err
 	}
 
 	if usr, ok := uss[id]; ok {
+		end(nil, "user fetched")
 		return usr, nil
 	}
+
+	end(ErrUserNotFound, "user not found")
 
 	return nil, ErrUserNotFound
 }
 
 // GetScore gets a single score using revision ID, language, model and project.
 func (c *Client) GetScore(ctx context.Context, rev int, lng string, prj string, mdl string) (*Score, error) {
-	req, err := c.newLiftWingRequest(ctx, rev, lng, prj, mdl)
+	end, trx := c.Tracer(ctx, map[string]string{"revision": strconv.Itoa(rev), "language": lng, "project": prj, "model": mdl})
+
+	req, err := c.newLiftWingRequest(trx, rev, lng, prj, mdl)
 
 	if err != nil {
+		end(err, "new request failed")
 		return nil, err
 	}
 
 	res, err := c.do(c.HTTPClientLiftWing, req)
 
 	if err != nil {
+		end(err, "score request failed")
 		return nil, err
 	}
 
@@ -1126,8 +1255,11 @@ func (c *Client) GetScore(ctx context.Context, rev int, lng string, prj string, 
 	scr := &Score{}
 
 	if err := json.NewDecoder(res.Body).Decode(scr); err != nil {
+		end(err, "score decode failed")
 		return nil, err
 	}
+
+	end(nil, "score fetched")
 
 	return scr, nil
 }

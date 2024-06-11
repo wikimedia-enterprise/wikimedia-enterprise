@@ -73,6 +73,10 @@ type allPagesTestSuite struct {
 	pgs map[string]*Page
 }
 
+func mockTracer(context.Context, map[string]string) (func(error, string), context.Context) {
+	return func(error, string) {}, context.Background()
+}
+
 func (s *allPagesTestSuite) SetupSuite() {
 	s.srv = createActionsAPIServer(s.sts, s.pld)
 	s.dtb = "enwiki"
@@ -81,6 +85,7 @@ func (s *allPagesTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
+		Tracer:			 mockTracer,
 	}
 
 	rsp := new(Response)
@@ -172,6 +177,7 @@ func (s *getPagesTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
+		Tracer: 		 mockTracer,
 	}
 
 	if len(s.pld) > 0 {
@@ -243,6 +249,7 @@ func (s *getPageTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
+		Tracer: 		 mockTracer,
 	}
 
 	if len(s.pld) > 0 {
@@ -316,8 +323,7 @@ func (s *getPagesHTMLTestSuite) createServer() {
 
 	for i, ttl := range s.tls {
 		func(ttl string, i int) {
-			// url := fmt.Sprintf("/w/rest.php/v1/page/%s/html", strings.ReplaceAll(ttl, " ", "_"))
-			url := fmt.Sprintf("/api/rest_v1/page/html/%s", strings.ReplaceAll(ttl, " ", "_"))
+			url := fmt.Sprintf("/w/rest.php/v1/page/%s/html", strings.ReplaceAll(ttl, " ", "_"))
 
 			rtr.HandleFunc(url, func(w http.ResponseWriter, r *http.Request) {
 				w.WriteHeader(s.sts[i])
@@ -338,6 +344,7 @@ func (s *getPagesHTMLTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
+		Tracer: 		 mockTracer,
 	}
 }
 
@@ -422,8 +429,7 @@ type getPageHTMLTestSuite struct {
 func (s *getPageHTMLTestSuite) createServer() {
 	rtr := http.NewServeMux()
 
-	// rtr.HandleFunc(fmt.Sprintf("/w/rest.php/v1/page/%s/html", strings.ReplaceAll(s.ttl, " ", "_")), func(w http.ResponseWriter, r *http.Request) {
-	rtr.HandleFunc(fmt.Sprintf("/api/rest_v1/page/html/%s", strings.ReplaceAll(s.ttl, " ", "_")), func(w http.ResponseWriter, r *http.Request) {
+	rtr.HandleFunc(fmt.Sprintf("/w/rest.php/v1/page/%s/html", strings.ReplaceAll(s.ttl, " ", "_")), func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(s.sts)
 		_, _ = w.Write([]byte(s.pld))
 	})
@@ -440,6 +446,7 @@ func (s *getPageHTMLTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
+		Tracer: 		 mockTracer,
 	}
 }
 
@@ -524,6 +531,7 @@ func (s *getPageSummaryTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
+		Tracer: 		 mockTracer,
 	}
 }
 
@@ -587,6 +595,7 @@ func (s *getLanguagesTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
+		Tracer: 		 mockTracer,
 	}
 
 	s.lns = map[string]*Language{}
@@ -664,6 +673,7 @@ func (s *getLanguageTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: "enwiki",
 		HTTPClient:      &http.Client{},
+		Tracer: 		 mockTracer,
 	}
 
 	s.lns = map[string]*Language{}
@@ -747,6 +757,7 @@ func (s *getProjectTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: "enwiki",
 		HTTPClient:      &http.Client{},
+		Tracer: 		 mockTracer,
 	}
 
 	s.prs = map[string]*Project{}
@@ -832,6 +843,7 @@ func (s *getProjectsTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: "enwiki",
 		HTTPClient:      &http.Client{},
+		Tracer: 		 mockTracer,
 	}
 
 	s.prs = []*Project{}
@@ -915,6 +927,7 @@ func (s *getNamespacesTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
+		Tracer: 		 mockTracer,
 	}
 
 	s.rsp = new(Response)
@@ -983,6 +996,7 @@ func (s *getRandomPagesTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
+		Tracer: 		 mockTracer,
 	}
 
 	s.rsp = new(Response)
@@ -1096,6 +1110,7 @@ func (s *getUsersTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
+		Tracer: 		 mockTracer,
 	}
 
 	s.urs = map[int]*User{}
@@ -1174,6 +1189,7 @@ func (s *getUserTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
+		Tracer: 		 mockTracer,
 	}
 
 	s.urs = map[int]*User{}
@@ -1268,6 +1284,7 @@ func (s *retryAfterTestSuite) SetupSuite() {
 		DefaultURL:       s.srv.URL,
 		DefaultDatabase:  "enwiki",
 		EnableRetryAfter: s.era,
+		Tracer: 		  mockTracer,
 	}
 }
 
@@ -1344,6 +1361,7 @@ func (s *getScoreTestSuite) SetupSuite() {
 	s.clt = &Client{
 		HTTPClientLiftWing: &http.Client{},
 		LiftWingBaseURL:    s.srv.URL + "/service/lw/inference/v1/models/",
+		Tracer: 			mockTracer,
 	}
 }
 

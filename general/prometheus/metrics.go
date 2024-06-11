@@ -33,6 +33,20 @@ const (
 	// Redis metrics.
 	RedisReqTtl string = "redis_ttl_rqsts"
 	RedisReqDur string = "redis_rqst_dur"
+
+	// Structured data metrics.
+	SrdTTLErrs    string = "srd_ttl_errs"
+	SrdTTLEvnts   string = "srd_ttl_evnts"
+	SrdTTLEvntsPs string = "srd_ttl_evnts_ps"
+
+	// On-Demand metrics.
+
+	// On Demand Total errors.
+	OdmTtlErrs string = "odm_ttl_errs"
+	// On Demand events.
+	OdmTtlEvents string = "odm_ttl_events"
+	// On Demand Average events per second.
+	OdmTtlEvntsPs string = "odm_ttl_evnts_ps"
 )
 
 // Metrics houses all custom metrics.
@@ -150,6 +164,44 @@ func (m *Metrics) AddEventStreamMetrics() {
 		Name: "event_stream_average_events_per_second",
 		Help: "Average number of events per second.",
 	})
+}
+
+// AddStructuredMetrics adds structured-data stream metrics.
+func (m *Metrics) AddStructuredMetrics() {
+	m.Opts[SrdTTLErrs] = prometheus.NewCounter(prometheus.CounterOpts{
+		Name: "structured_data_total_errors",
+		Help: "Total number of errors",
+	})
+
+	m.Opts[SrdTTLEvnts] = prometheus.NewCounter(prometheus.CounterOpts{
+		Name: "structured_data_total_events",
+		Help: "Total number of events",
+	})
+
+	m.Opts[SrdTTLEvntsPs] = prometheus.NewGauge(prometheus.GaugeOpts{
+		Name: "structured_data_average_events_per_second",
+		Help: "Average number of events per second.",
+	})
+
+}
+
+// AddOnDemandMetrics adds On-demand metrics.
+func (m *Metrics) AddOnDemandMetrics() {
+	m.Opts[OdmTtlErrs] = prometheus.NewCounter(prometheus.CounterOpts{
+		Name: "On_demand_total_errors",
+		Help: "Total number of errors",
+	})
+
+	m.Opts[OdmTtlEvents] = prometheus.NewCounter(prometheus.CounterOpts{
+		Name: "On_demand_total_events",
+		Help: "Total number of events",
+	})
+
+	m.Opts[OdmTtlEvntsPs] = prometheus.NewGauge(prometheus.GaugeOpts{
+		Name: "On_demand_average_events_per_second",
+		Help: "Average number of events per second.",
+	})
+
 }
 
 // AddPerformanceMetrics adds custom perfromance and execution-related metrics.
