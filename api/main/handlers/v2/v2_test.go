@@ -30,6 +30,7 @@ func (s *v2TestSuite) SetupTest() {
 	os.Setenv("ACCESS_MODEL", "id")
 	os.Setenv("ACCESS_POLICY", "secret")
 	os.Setenv("FREE_TIER_GROUP", "group_1")
+	os.Setenv("KEY_TYPE_SUFFIX", "v2")
 
 	gin.SetMode(gin.TestMode)
 	s.rtr = gin.New()

@@ -3,6 +3,7 @@ package env
 
 import (
 	"encoding/csv"
+	"encoding/json"
 	"fmt"
 	"io"
 	"path/filepath"
@@ -107,6 +108,20 @@ func (m *AccessPolicy) UnmarshalEnvironmentValue(data string) (err error) {
 	return nil
 }
 
+// List of Strings from environment variables (JSON Encoded).
+type List []string
+
+// UnmarshalEnvironmentValue called by env package on initialization to unmarshal json value.
+func (t *List) UnmarshalEnvironmentValue(data string) error {
+	_ = json.Unmarshal([]byte(data), t)
+
+	if len(*t) == 0 {
+		*t = strings.Split(data, ",")
+	}
+
+	return nil
+}
+
 // Environment environment variables configuration.
 type Environment struct {
 	AWSRegion              string        `env:"AWS_REGION,required=true"`
@@ -127,6 +142,7 @@ type Environment struct {
 	AccessPolicy           *AccessPolicy `env:"ACCESS_POLICY,required=true"`
 	GroupDownloadLimit     string        `env:"GROUP_DOWNLOAD_LIMIT,required=true"`
 	PrometheusPort         int           `env:"PROMETHEUS_PORT,default=12411"`
+	DomainDenyList         List          `env:"DOMAIN_DENY_LIST,default="`
 }
 
 // New initialize the environment

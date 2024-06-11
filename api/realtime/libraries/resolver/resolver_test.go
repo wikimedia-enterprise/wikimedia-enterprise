@@ -190,18 +190,16 @@ func TestResolver(t *testing.T) {
 				"identifier := model_sub_model->identifier",
 				"in_language := model_sub_model->in_language",
 				"event := model_sub_model->event",
-				") as model_sub_model",
 			},
 			slices: []string{
 				"sub_models",
 			},
 			slicesContain: []string{
-				"TRANSFORM(model_sub_models, (sub_models) => ",
+				"TRANSFORM(model_sub_models, x => ",
 				"STRUCT(",
 				"identifier := sub_models->identifier",
 				"in_language := sub_models->in_language",
 				"event := sub_models->event",
-				")) as model_sub_models",
 			},
 			filters: []resolver.Filter{
 				func(fld *resolver.Field) bool {
@@ -239,10 +237,9 @@ func TestResolver(t *testing.T) {
 				"sub_models",
 			},
 			slicesContain: []string{
-				"TRANSFORM(model_sub_models, (sub_models) => ",
+				"TRANSFORM(model_sub_models, x => ",
 				"STRUCT(",
 				"identifier := sub_models->identifier",
-				")) as model_sub_models",
 			},
 			slicesNotContain: []string{
 				"in_language := model_sub_model->in_language",

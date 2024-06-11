@@ -50,7 +50,7 @@ func TestSlice(t *testing.T) {
 		},
 		{
 			contains: []string{
-				"TRANSFORM(articles_protection, (protection) =>",
+				"TRANSFORM(articles_protection, x =>",
 				"name := protection->name",
 				"type := protection->type",
 				"))",
@@ -78,7 +78,7 @@ func TestSlice(t *testing.T) {
 		},
 		{
 			contains: []string{
-				"TRANSFORM(articles_protection, (protection) => STRUCT(type := protection->type))",
+				"TRANSFORM(articles_protection, x => STRUCT(type := protection->type))",
 			},
 			notContains: []string{
 				"name := protection->name",
@@ -106,10 +106,9 @@ func TestSlice(t *testing.T) {
 		},
 		{
 			contains: []string{
-				"TRANSFORM(articles_protection, (protection) =>",
+				"TRANSFORM(articles_protection, x =>",
 				"name := protection->name",
 				"type := protection->type",
-				")) as articles_protection",
 			},
 			str: &resolver.Struct{
 				Structs: map[string]*resolver.Struct{},

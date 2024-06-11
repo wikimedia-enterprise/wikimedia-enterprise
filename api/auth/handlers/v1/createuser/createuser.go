@@ -9,10 +9,13 @@ import (
 	"fmt"
 	"net/http"
 	"regexp"
+	"strings"
 	"time"
 	"wikimedia-enterprise/api/auth/config/env"
 	"wikimedia-enterprise/general/httputil"
 	"wikimedia-enterprise/general/log"
+
+	"golang.org/x/exp/slices"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
@@ -59,6 +62,14 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 		if found := pvregex.MatchString(mdl.PolicyVersion); !found {
 			log.Error("policy version format is not compatible")
 			httputil.UnprocessableEntity(gcx, errors.New("Policy version format is not compatible!"))
+			return
+		}
+
+		arr := strings.Split(mdl.Email, "@")
+
+		if len(arr) > 1 && slices.Contains(p.Env.DomainDenyList, arr[1]) {
+			log.Error("email domain is in deny list", log.Any("email", mdl.Email))
+			httputil.BadRequest(gcx, errors.New("Email domain is in deny list."))
 			return
 		}
 

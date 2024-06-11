@@ -33,16 +33,9 @@ func (s *Slice) GetSql(filter Filter) string {
 		return ""
 	}
 
-	if s.Struct.IsRoot {
-		return fmt.Sprintf("TRANSFORM(%[1]s, (%[2]s) => STRUCT(%[3]s)) as %[4]s",
-			s.Struct.Field.Path,
-			s.Struct.Field.Name,
-			strings.TrimSuffix(sql, ", "),
-			s.Struct.Field.Path)
-	}
-
-	return fmt.Sprintf("TRANSFORM(%[1]s, (%[2]s) => STRUCT(%[3]s))",
+	return fmt.Sprintf("TRANSFORM(%[1]s, x => STRUCT(%[2]s)) as %[3]s",
 		s.Struct.Field.Path,
+		strings.ReplaceAll(strings.TrimSuffix(sql, ", "), s.Struct.Field.Path, "x"),
 		s.Struct.Field.Name,
-		strings.TrimSuffix(sql, ", "))
+	)
 }

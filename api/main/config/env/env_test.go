@@ -11,42 +11,44 @@ import (
 
 type envTestSuite struct {
 	suite.Suite
-	serverPortKey          string
-	serverPort             string
-	serverModeKey          string
-	serverMode             string
-	AWSRegionKey           string
-	AWSRegion              string
-	AWSIDKey               string
-	AWSID                  string
-	AWSKeyKey              string
-	AWSKey                 string
-	AWSURLKey              string
-	AWSURL                 string
-	AWSBucketKey           string
-	AWSBucket              string
-	CognitoClientIdKey     string
-	CognitoClientId        string
-	CognitoClientSecretKey string
-	CognitoClientSecret    string
-	RedisAddr              string
-	RedisAddrKey           string
-	RedisPassword          string
-	RedisPasswordKey       string
-	AccessModel            string
-	AccessModelKey         string
-	AccessPolicy           string
-	AccessPolicyKey        string
-	IPAllowList            string
-	IPAllowListKey         string
-	FreeTierGroup          string
-	FreeTierGroupKey       string
-	PrometheusPortKey      string
-	PrometheusPort         int
-	DescriptionEnabledKey  string
-	DescriptionEnabled     bool
-	SectionsEnabledKey     string
-	SectionsEnabled        bool
+	serverPortKey           string
+	serverPort              string
+	serverModeKey           string
+	serverMode              string
+	AWSRegionKey            string
+	AWSRegion               string
+	AWSIDKey                string
+	AWSID                   string
+	AWSKeyKey               string
+	AWSKey                  string
+	AWSURLKey               string
+	AWSURL                  string
+	AWSBucketKey            string
+	AWSBucket               string
+	CognitoClientIdKey      string
+	CognitoClientId         string
+	CognitoClientSecretKey  string
+	CognitoClientSecret     string
+	RedisAddr               string
+	RedisAddrKey            string
+	RedisPassword           string
+	RedisPasswordKey        string
+	AccessModel             string
+	AccessModelKey          string
+	AccessPolicy            string
+	AccessPolicyKey         string
+	IPAllowList             string
+	IPAllowListKey          string
+	FreeTierGroup           string
+	FreeTierGroupKey        string
+	PrometheusPortKey       string
+	PrometheusPort          int
+	DescriptionEnabledKey   string
+	DescriptionEnabled      bool
+	SectionsEnabledKey      string
+	SectionsEnabled         bool
+	ArticleKeyTypeSuffix    string
+	ArticleKeyTypeSuffixKey string
 }
 
 func (s *envTestSuite) SetupSuite() {
@@ -86,6 +88,8 @@ func (s *envTestSuite) SetupSuite() {
 	s.DescriptionEnabled = true
 	s.SectionsEnabledKey = "SECTIONS_ENABLED"
 	s.SectionsEnabled = true
+	s.ArticleKeyTypeSuffixKey = "KEY_TYPE_SUFFIX"
+	s.ArticleKeyTypeSuffix = "v2"
 }
 
 func (s *envTestSuite) SetupTest() {
@@ -105,6 +109,7 @@ func (s *envTestSuite) SetupTest() {
 	os.Setenv(s.IPAllowListKey, s.IPAllowList)
 	os.Setenv(s.FreeTierGroupKey, s.FreeTierGroup)
 	os.Setenv(s.PrometheusPortKey, strconv.Itoa(s.PrometheusPort))
+	os.Setenv(s.ArticleKeyTypeSuffixKey, s.ArticleKeyTypeSuffix)
 }
 
 func (s *envTestSuite) TestNew() {
@@ -130,6 +135,7 @@ func (s *envTestSuite) TestNew() {
 	s.Assert().NotNil(env.AccessModel.Path)
 	s.Assert().NotNil(env.AccessPolicy.Path)
 	s.Assert().NotNil(env.IPAllowList)
+	s.Assert().Equal(s.ArticleKeyTypeSuffix, env.ArticleKeyTypeSuffix)
 }
 
 func TestEnv(t *testing.T) {
