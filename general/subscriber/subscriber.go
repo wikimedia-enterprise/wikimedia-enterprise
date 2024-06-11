@@ -10,7 +10,6 @@ import (
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/twmb/murmur3"
-	"go.uber.org/dig"
 )
 
 // DefaultNumberOfWorkers defines the default number of workers to use.
@@ -56,6 +55,9 @@ type Config struct {
 	// FlushTimeoutMs represents the flush timeout for messages in milliseconds.
 	// This is specifically exit flush, meaning time to clear the messages.
 	FlushTimeoutMs int
+
+	// Tracer is a function that injects the tracer into a Client.
+	Tracer func(ctx context.Context, attributes map[string]string) (func(err error, msg string), context.Context)
 }
 
 // CreateWorker creates a worker goroutine and returns a channel for sending messages to it.
@@ -88,12 +90,34 @@ func (c *Config) PushEvent(msg *kafka.Message, err error) {
 // Handler is a function that processes a Kafka message.
 type Handler func(ctx context.Context, msg *kafka.Message) error
 
+type ConsumerInterface interface {
+	SubscribeTopics(topics []string, config kafka.RebalanceCb) error
+	ReadMessage(timeout time.Duration) (*kafka.Message, error)
+	Close() error
+}
+
+type ProducerInterface interface {
+	Flush(timeoutMs int) int
+	Close()
+}
+
 // Subscriber is a struct used to subscribe to Kafka topics.
 // This struct uses dependency injection to find consumer and producer.
+type SubscriberInterface interface {
+	Subscribe(ctx context.Context, hdl Handler, cfg *Config) error
+}
+
+// New creates a new Subscriber instance.
+func New(consumer *kafka.Consumer, producer *kafka.Producer) *Subscriber {
+	return &Subscriber{
+		Consumer: consumer,
+		Producer: producer,
+	}
+}
+
 type Subscriber struct {
-	dig.In
-	Consumer *kafka.Consumer
-	Producer *kafka.Producer `optional:"true"`
+	Consumer ConsumerInterface
+	Producer ProducerInterface `optional:"true"`
 }
 
 // Subscribe subscribes to Kafka topics and handles incoming messages.
@@ -136,9 +160,25 @@ func (s *Subscriber) Subscribe(ctx context.Context, hdl Handler, cfg *Config) er
 			defer swg.Done()
 
 			for msg := range mgs {
+				// Tracer is enabled, so we need to create a new context.
+				if cfg.Tracer != nil {
+					end, trx := cfg.Tracer(ctx, nil)
+					if err := hdl(trx, msg); err != nil {
+						cfg.PushEvent(msg, err)
+						end(err, "error processing message")
+					} else {
+						end(nil, "message processed")
+					}
+
+					continue
+				}
+
+				// Tracer is disabled
 				if err := hdl(ctx, msg); err != nil {
 					cfg.PushEvent(msg, err)
+
 				}
+
 			}
 		}(wks[i])
 	}

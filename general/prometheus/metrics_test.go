@@ -35,6 +35,14 @@ func (m *metricsTestSuite) TestAddMetrics() {
 	m.mts.AddPerformanceMetrics()
 	m.Assert().NotEmpty(m.mts.Opts[Duration])
 	m.Assert().NotEmpty(m.mts.Opts[TtlErrs])
+
+	m.mts.AddStructuredMetrics()
+	m.Assert().NotEmpty(m.mts.Opts[SrdTTLErrs])
+	m.Assert().NotEmpty(m.mts.Opts[SrdTTLEvnts])
+
+	m.mts.AddOnDemandMetrics()
+	m.Assert().NotEmpty(m.mts.Opts[OdmTtlErrs])
+	m.Assert().NotEmpty(m.mts.Opts[OdmTtlEvents])
 }
 
 func TestMetrics(t *testing.T) {

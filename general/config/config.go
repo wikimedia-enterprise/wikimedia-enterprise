@@ -16,7 +16,7 @@ var languagesConfig []byte
 //go:embed namespaces.json
 var namespacesConfig []byte
 
-//go:embed partitions.csv
+//go:embed partitions_v2.csv
 var partitionsConfig []byte
 
 // ProjectsGetter interface to expose GetProjects method.
