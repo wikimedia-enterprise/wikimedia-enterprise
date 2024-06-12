@@ -77,7 +77,9 @@ func (s *handlerTestSuite) SetupSuite() {
 		Stream: pdm,
 		API:    apm,
 		Env: &env.Environment{
-			Topics: &schema.Topics{},
+			Topics: &schema.Topics{
+				Versions: []string{"v1"},
+			},
 		},
 	}
 }
@@ -116,6 +118,9 @@ func TestHandler(t *testing.T) {
 				Namespace: &schema.Namespace{
 					Identifier: 0,
 				},
+				InLanguage: &schema.Language{
+					Identifier: "en",
+				},
 				Version: &schema.Version{Identifier: 1},
 			},
 			euk: errors.New("key unmarshal failed"),
@@ -134,6 +139,9 @@ func TestHandler(t *testing.T) {
 				Namespace: &schema.Namespace{
 					Identifier: 0,
 				},
+				InLanguage: &schema.Language{
+					Identifier: "en",
+				},
 				Version: &schema.Version{Identifier: 1},
 			},
 			euv: errors.New("value unmarshal failed"),
@@ -151,6 +159,9 @@ func TestHandler(t *testing.T) {
 				},
 				Namespace: &schema.Namespace{
 					Identifier: 0,
+				},
+				InLanguage: &schema.Language{
+					Identifier: "en",
 				},
 				Version: &schema.Version{Identifier: 1},
 				Event:   schema.NewEvent(schema.EventTypeDelete),
@@ -171,6 +182,9 @@ func TestHandler(t *testing.T) {
 				},
 				Namespace: &schema.Namespace{
 					Identifier: 0,
+				},
+				InLanguage: &schema.Language{
+					Identifier: "en",
 				},
 				Version: &schema.Version{Identifier: 1},
 				Event:   schema.NewEvent(schema.EventTypeDelete),
@@ -196,6 +210,9 @@ func TestHandler(t *testing.T) {
 				Namespace: &schema.Namespace{
 					Identifier: 0,
 				},
+				InLanguage: &schema.Language{
+					Identifier: "en",
+				},
 				Version: &schema.Version{Identifier: 1},
 				Event:   schema.NewEvent(schema.EventTypeDelete),
 			},
@@ -218,6 +235,9 @@ func TestHandler(t *testing.T) {
 				},
 				Namespace: &schema.Namespace{
 					Identifier: 0,
+				},
+				InLanguage: &schema.Language{
+					Identifier: "en",
 				},
 				Version: &schema.Version{Identifier: 1},
 				Event:   schema.NewEvent(schema.EventTypeDelete),
@@ -247,6 +267,9 @@ func TestHandler(t *testing.T) {
 				},
 				Namespace: &schema.Namespace{
 					Identifier: 0,
+				},
+				InLanguage: &schema.Language{
+					Identifier: "en",
 				},
 				Version: &schema.Version{
 					Identifier: 1,

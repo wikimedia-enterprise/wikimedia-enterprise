@@ -4,16 +4,16 @@
 # Makefile targets #
 ####################
 up:
-	docker-compose up -d
+	docker compose up -d
 
 down:
-	docker-compose down
+	docker compose down
 
 stop:
-	docker-compose stop
+	docker compose stop
 
 build:
-	docker-compose up -d --build
+	docker compose up -d --build
 
 test:
 	go test ./... -v
@@ -41,3 +41,7 @@ mock:
 
 example:
 	docker compose up -d --no-deps --build example
+
+protos:
+	protoc --proto_path=submodules/protos --go_out=packages/textprocessor --go-grpc_out=packages/textprocessor --go_opt=paths=source_relative textprocessor.proto
+	protoc --proto_path=submodules/protos --go_out=packages/contentintegrity --go-grpc_out=packages/contentintegrity --go_opt=paths=source_relative contentintegrity.proto

@@ -1,4 +1,4 @@
-FROM apache/airflow:2.2.5
+FROM apache/airflow:slim-2.8.3-python3.10
 
 # Default AirFlow dir
 ARG AIRFLOW_DIR=/opt/airflow

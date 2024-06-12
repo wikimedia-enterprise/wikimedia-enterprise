@@ -33,6 +33,8 @@ type envTestSuite struct {
 	AWSKey                   string
 	AWSIDKey                 string
 	AWSID                    string
+	ArticleKeyTypeSuffixKey  string
+	ArticleKeyTypeSuffix     string
 }
 
 func (s *envTestSuite) SetupSuite() {
@@ -58,6 +60,8 @@ func (s *envTestSuite) SetupSuite() {
 	s.AWSKey = "diff_key"
 	s.AWSIDKey = "AWS_ID"
 	s.AWSID = "diff_id"
+	s.ArticleKeyTypeSuffixKey = "KEY_TYPE_SUFFIX"
+	s.ArticleKeyTypeSuffix = "v2"
 }
 
 func (s *envTestSuite) SetupTest() {
@@ -72,6 +76,7 @@ func (s *envTestSuite) SetupTest() {
 	os.Setenv(s.AWSBucketKey, s.AWSBucket)
 	os.Setenv(s.AWSKeyKey, s.AWSKey)
 	os.Setenv(s.AWSIDKey, s.AWSID)
+	os.Setenv(s.ArticleKeyTypeSuffixKey, s.ArticleKeyTypeSuffix)
 }
 
 func (s *envTestSuite) TestNew() {
@@ -87,6 +92,8 @@ func (s *envTestSuite) TestNew() {
 	s.Assert().Equal(s.AWSBucket, env.AWSBucket)
 	s.Assert().Equal(s.AWSKey, env.AWSKey)
 	s.Assert().Equal(s.AWSID, env.AWSID)
+
+	s.Assert().Equal(s.ArticleKeyTypeSuffix, env.ArticleKeyTypeSuffix)
 
 	creds, err := json.Marshal(env.KafkaCreds)
 	s.Assert().NoError(err)

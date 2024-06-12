@@ -43,8 +43,8 @@ func NewArticleDelete(p *Parameters) subscriber.Handler {
 		}
 
 		dtb := art.IsPartOf.Identifier
-		tpc, err := p.Env.Topics.
-			GetName(dtb, art.Namespace.Identifier)
+		tcs, err := p.Env.Topics.
+			GetNames(dtb, art.Namespace.Identifier)
 
 		if err != nil {
 			return err
@@ -76,10 +76,11 @@ func NewArticleDelete(p *Parameters) subscriber.Handler {
 		if dur := dtn.Sub(*art.Event.DateCreated); dur.Milliseconds() > p.Env.LatencyThresholdMS {
 			log.Warn("latency threshold exceeded",
 				log.Any("name", art.Name),
-				log.Any("project", art.Namespace),
-				log.Any("URL", art.URL),
-				log.Any("identifier", art.Identifier),
-				log.Any("version", art.Version.Identifier),
+				log.Any("url", art.URL),
+				log.Any("revision", art.Version.Identifier),
+				log.Any("language", art.InLanguage.Identifier),
+				log.Any("namespace", art.Namespace.Identifier),
+				log.Any("event_id", art.Event.Identifier),
 				log.Any("duration", dur.Milliseconds()),
 			)
 		}
@@ -91,12 +92,15 @@ func NewArticleDelete(p *Parameters) subscriber.Handler {
 				Value:  art,
 				Key:    key,
 			},
-			{
+		}
+
+		for _, tpc := range tcs {
+			mgs = append(mgs, &schema.Message{
 				Config: schema.ConfigArticle,
 				Topic:  tpc,
 				Value:  art,
 				Key:    key,
-			},
+			})
 		}
 
 		if err == wmf.ErrPageNotFound {
@@ -114,10 +118,12 @@ func NewArticleDelete(p *Parameters) subscriber.Handler {
 		// a pge.Title should be in the redirects array
 		if pge != nil && strings.ToLower(pge.Title) != ntl {
 			lgf := []log.Field{
-				log.Any("identifier", art.Identifier),
-				log.Any("version_identifier", art.Version.Identifier),
 				log.Any("name", art.Name),
 				log.Any("url", art.URL),
+				log.Any("revision", art.Version.Identifier),
+				log.Any("language", art.InLanguage.Identifier),
+				log.Any("namespace", art.Namespace.Identifier),
+				log.Any("event_id", art.Event.Identifier),
 			}
 
 			for _, red := range pge.Redirects {

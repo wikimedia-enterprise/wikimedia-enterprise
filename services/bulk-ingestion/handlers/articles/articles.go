@@ -48,7 +48,7 @@ func Handler(ctx context.Context, p *Parameters, req *pb.ArticlesRequest) (*pb.A
 	}
 
 	cbk := func(pgs []*wmf.Page) {
-		for _, cpg := range chunk(pgs, 50) {
+		for _, cpg := range chunk(pgs, p.Env.NumberOfArticles) {
 			nms := []string{}
 
 			for _, pge := range cpg {
