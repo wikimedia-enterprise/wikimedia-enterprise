@@ -84,7 +84,7 @@ func (s *storageTestSuite) SetupSuite() {
 	s.str = new(streamMock)
 	s.str.On("Unmarshal", s.kdt, s.key).Return(s.ser)
 
-	loc := fmt.Sprintf("%s%s.json", s.key.Type, s.key.Identifier)
+	loc := fmt.Sprintf("%s%s%s.json", s.key.Type, "", s.key.Identifier)
 	s.s3a = new(s3APIMock)
 	s.s3a.On("PutObjectWithContext", s.env.AWSBucket, loc).Return(s.uer)
 	s.s3a.On("DeleteObjectWithContext", s.env.AWSBucket, loc).Return(s.der)

@@ -36,6 +36,8 @@ type Environment struct {
 	KafkaBootstrapServers        string         `env:"KAFKA_BOOTSTRAP_SERVERS,required=true"`
 	KafkaConsumerGroupID         string         `env:"KAFKA_CONSUMER_GROUP_ID,required=true"`
 	KafkaCreds                   *Credentials   `env:"KAFKA_CREDS"`
+	KafkaAutoOffsetReset         string         `env:"KAFKA_AUTO_OFFSET_RESET"`
+	KafkaMaxPollInterval         int            `env:"KAFKA_MAX_POLL_INTERVAL"` // Max ms interval allowed between two polls by a consumer
 	SchemaRegistryURL            string         `env:"SCHEMA_REGISTRY_URL,required=true"`
 	SchemaRegistryCreds          *Credentials   `env:"SCHEMA_REGISTRY_CREDS"`
 	Topics                       *schema.Topics `env:"TOPICS,default={}"`
