@@ -142,6 +142,18 @@ func TestNewHandler(t *testing.T) {
 			sts: http.StatusUnprocessableEntity,
 		},
 		{
+			pld: `{"filters":[{"field":"string","value":1}]}`,
+			sts: http.StatusUnprocessableEntity,
+		},
+		{
+			pld: `{"filters":[{"field":"name","value":1}]}`,
+			sts: http.StatusUnprocessableEntity,
+		},
+		{
+			pld: `{"filters":[{"field":"identifier","value":1}]}`,
+			sts: http.StatusOK,
+		},
+		{
 			pld: `{"parts":[0,1], "offsets":{"0":100, "1":101, "2":100, "3":50}}`,
 			sts: http.StatusOK,
 		},

@@ -5,13 +5,12 @@ each invoked on the manual basis.
 from datetime import timedelta, datetime
 from airflow import DAG, AirflowException
 from airflow.operators.python import PythonOperator
+from airflow.models import Variable
 from pipelines.utils.utils import (
     get_secret_value,
     get_channel,
     get_namespaces,
     get_projects,
-    get_batch_size,
-    chunks,
     get_desired_count,
     ecs_service_set_task_count,
     verify_ip_addresses_returned_by_dns,
@@ -72,9 +71,8 @@ def articles(projects, namespaces):
                         )
                     )
 
-                    logger.info(
-                        f"Finished an `articles` job for project: `{project}` in namespace: `{namespace}` with total: `{res.total}` and errors: `{res.errors}`\n"
-                    )
+                    logger.info(f"Finished an `articles` job for project: `{project}` \
+                                in namespace: `{namespace}` with total: `{res.total}` and errors: `{res.errors}`\n")
         return
 
     return articles
@@ -328,7 +326,9 @@ def monitor_article_bulk_service():
         sasl_plain_username=credentials["username"],
         sasl_plain_password=credentials["password"],
     )
-    group_id = "structured-data-articlebulk"
+    
+    # Kafka consumer group id
+    group_id = Variable.get('consumer_group_id', default_var="structured-data-articlebulk-v2")
 
     while True:
         state = get_consumer_group_state(kafka_admin, group_id)
@@ -351,7 +351,7 @@ def monitor_article_bulk_service():
         logger.info(f"Consumer lag is `{consumer_lag}`")
 
         if consumer_lag == 0:
-            logger.info(f"Zero consumer lag reached, continuing with the task")
+            logger.info("Zero consumer lag reached, continuing with the task")
             break
 
         logger.info(

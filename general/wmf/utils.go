@@ -1,6 +1,7 @@
 package wmf
 
 import (
+	"context"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -59,4 +60,12 @@ func getErrorString(res *http.Response) (string, error) {
 
 		return r
 	}, string(dta))), nil
+}
+
+func defaultTrace(c *Client) {
+	c.Tracer = func (context context.Context, attributes map[string]string) (func(err error, msg string), context.Context) {
+		return func(err error, msg string) {
+			fmt.Print("tracing not enabled")
+		}, context
+	}
 }

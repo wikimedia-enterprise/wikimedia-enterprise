@@ -33,7 +33,7 @@ var (
 	spaceBeforePunctuationLatin    = regexp.MustCompile(`(\s|&nbsp;)([,.!?])(\s|&nbsp;|<\/)`)
 	spacesAroundParenthesis        = regexp.MustCompile(`(\s*\()\s+|\s+(\))`)
 	allInOneEmpty                  = regexp.MustCompile(`\p{C}|\[[^\]]+\]|•`)
-	allInOneSpace                  = regexp.MustCompile(`\s+|&#160;|&nbsp;|\p{Zs}| `)
+	allInOneSpace                  = regexp.MustCompile(`\s+|&#160;|&nbsp;|\p{Zs}| `)
 	allInOneDelimiter              = regexp.MustCompile(`\s+([:;：；, ，、])`)
 
 	// Specific nodes to remove for abstract
