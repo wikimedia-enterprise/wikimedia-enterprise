@@ -82,10 +82,6 @@ func NewGroup(con *dig.Container, rtr *gin.Engine) (*gin.RouterGroup, error) {
 			} {
 				npt := fmt.Sprintf("/%s/:name", ent)
 
-				if len(pms.Env.ArticleKeyTypeSuffix) > 0 {
-					ent = fmt.Sprintf("%s_%s", ent, pms.Env.ArticleKeyTypeSuffix)
-				}
-
 				v2.GET(npt, cmw, proxy.NewGetLargeEntities(&pms.Proxy, ent, proxy.DefaultModifiers...))
 				v2.POST(npt, cmw, proxy.NewGetLargeEntities(&pms.Proxy, ent, proxy.DefaultModifiers...))
 
