@@ -19,7 +19,6 @@ type Params struct {
 	Env    *env.Environment
 	Proxy  proxy.Params
 	Capper httputil.CapByRedis
-	SOCK   proxy.SOCKModifier
 }
 
 // NewGroup creates new router group for the API.
@@ -81,13 +80,8 @@ func NewGroup(con *dig.Container, rtr *gin.Engine) (*gin.RouterGroup, error) {
 				"articles",
 			} {
 				npt := fmt.Sprintf("/%s/:name", ent)
-
 				v2.GET(npt, cmw, proxy.NewGetLargeEntities(&pms.Proxy, ent, proxy.DefaultModifiers...))
 				v2.POST(npt, cmw, proxy.NewGetLargeEntities(&pms.Proxy, ent, proxy.DefaultModifiers...))
-
-				pth := "/structured-contents/:name"
-				v2.GET(pth, cmw, proxy.NewGetLargeEntities(&pms.Proxy, ent, new(proxy.FilterModifier), &pms.SOCK))
-				v2.POST(pth, cmw, proxy.NewGetLargeEntities(&pms.Proxy, ent, new(proxy.FilterModifier), &pms.SOCK))
 			}
 		}),
 	} {
