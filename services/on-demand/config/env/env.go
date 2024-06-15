@@ -51,6 +51,7 @@ type Environment struct {
 	AWSID                 string       `env:"AWS_ID"`
 	NumberOfWorkers       int          `env:"NUMBER_OF_WORKERS,default=15"`
 	EventChannelSize      int          `env:"EVENT_CHANNEL_SIZE,default=1000000"`
+	ArticleKeyTypeSuffix  string       `env:"KEY_TYPE_SUFFIX"`
 }
 
 // New initialize the environment

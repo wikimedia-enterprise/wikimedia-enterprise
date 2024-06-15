@@ -132,26 +132,27 @@ func (m *AccessPolicy) UnmarshalEnvironmentValue(data string) (err error) {
 
 // Environment environment variables configuration.
 type Environment struct {
-	AWSRegion           string               `env:"AWS_REGION,required=true"`
-	AWSID               string               `env:"AWS_ID,required=true"`
-	AWSKey              string               `env:"AWS_KEY,required=true"`
-	ServerMode          string               `env:"SERVER_MODE,default=release"`
-	ServerPort          string               `env:"SERVER_PORT,default=4060"`
-	AWSURL              string               `env:"AWS_URL"`
-	AWSBucket           string               `env:"AWS_BUCKET,required=true"`
-	CognitoClientID     string               `env:"COGNITO_CLIENT_ID,required=true"`
-	CognitoClientSecret string               `env:"COGNITO_CLIENT_SECRET,required=true"`
-	RedisAddr           string               `env:"REDIS_ADDR,required=true"`
-	RedisPassword       string               `env:"REDIS_PASSWORD,required=true"`
-	AccessModel         *AccessModel         `env:"ACCESS_MODEL,required=true"`
-	AccessPolicy        *AccessPolicy        `env:"ACCESS_POLICY,required=true"`
-	RateLimitsByGroup   *httputil.Limiter    `env:"RATE_LIMITS_BY_GROUP"`
-	CapConfig           *httputil.CapConfig  `env:"CAP_CONFIGURATION"`
-	IPAllowList         httputil.IPAllowList `env:"IP_ALLOW_LIST"`
-	FreeTierGroup       string               `env:"FREE_TIER_GROUP,default=group_1"`
-	PrometheusPort      int                  `env:"PROMETHEUS_PORT,default=12411"`
-	DescriptionEnabled  bool                 `env:"DESCRIPTION_ENABLED,default=true"`
-	SectionsEnabled     bool                 `env:"SECTIONS_ENABLED,default=true"`
+	AWSRegion            string               `env:"AWS_REGION,required=true"`
+	AWSID                string               `env:"AWS_ID,required=true"`
+	AWSKey               string               `env:"AWS_KEY,required=true"`
+	ServerMode           string               `env:"SERVER_MODE,default=release"`
+	ServerPort           string               `env:"SERVER_PORT,default=4060"`
+	AWSURL               string               `env:"AWS_URL"`
+	AWSBucket            string               `env:"AWS_BUCKET,required=true"`
+	CognitoClientID      string               `env:"COGNITO_CLIENT_ID,required=true"`
+	CognitoClientSecret  string               `env:"COGNITO_CLIENT_SECRET,required=true"`
+	RedisAddr            string               `env:"REDIS_ADDR,required=true"`
+	RedisPassword        string               `env:"REDIS_PASSWORD,required=true"`
+	AccessModel          *AccessModel         `env:"ACCESS_MODEL,required=true"`
+	AccessPolicy         *AccessPolicy        `env:"ACCESS_POLICY,required=true"`
+	RateLimitsByGroup    *httputil.Limiter    `env:"RATE_LIMITS_BY_GROUP"`
+	CapConfig            *httputil.CapConfig  `env:"CAP_CONFIGURATION"`
+	IPAllowList          httputil.IPAllowList `env:"IP_ALLOW_LIST"`
+	FreeTierGroup        string               `env:"FREE_TIER_GROUP,default=group_1"`
+	PrometheusPort       int                  `env:"PROMETHEUS_PORT,default=12411"`
+	DescriptionEnabled   bool                 `env:"DESCRIPTION_ENABLED,default=true"`
+	SectionsEnabled      bool                 `env:"SECTIONS_ENABLED,default=true"`
+	ArticleKeyTypeSuffix string               `env:"KEY_TYPE_SUFFIX"`
 }
 
 // New initialize the environment

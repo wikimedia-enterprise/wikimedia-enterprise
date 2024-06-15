@@ -43,6 +43,7 @@ type Environment struct {
 	AWSBucket             string       `env:"AWS_BUCKET"`
 	AWSKey                string       `env:"AWS_KEY"`
 	AWSID                 string       `env:"AWS_ID"`
+	NumberOfArticles      int          `env:"NUMBER_OF_ARTICLES,default=10"` // Max number of articles in one article-names message
 }
 
 // TLSEnabled checks if TLS enabled in current environment.

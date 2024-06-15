@@ -9,6 +9,7 @@ import (
 	"io"
 	"net/http"
 	"strconv"
+	"sync"
 
 	"github.com/hamba/avro/v2"
 )
@@ -20,6 +21,26 @@ var ErrNoAVRO = errors.New("AVRO schema not set")
 const (
 	SchemaTypeAVRO = "AVRO"
 )
+
+// Parser wrapper to make `avro.Parse` function thread safe.
+// More info here https://pkg.go.dev/github.com/hamba/avro/v2#Parser.
+type Parser struct {
+	mutex sync.Mutex
+}
+
+// Parse schema string into avro schema.
+// Safe to call from multiple goroutines,
+// blocks if another thread is parsing the schema.
+func (p *Parser) Parse(sch string) (avro.Schema, error) {
+	p.mutex.Lock()
+	defer p.mutex.Unlock()
+	return avro.Parse(sch)
+}
+
+// This is an instance of the `Parser`.
+// Used from multiple goroutines due to the non-thread safety of the `avro.Parse` function.
+// P.S. This is not an ideal solution, but it's simple and it works.
+var parser = new(Parser)
 
 // SubjectCreator is the interface to wrap default CreateSubject method for unit testing.
 type SubjectCreator interface {
@@ -79,7 +100,7 @@ type Schema struct {
 // Parse parse current registry schema into avro.
 func (s *Schema) Parse() error {
 	var err error
-	s.AVRO, err = avro.Parse(s.Schema)
+	s.AVRO, err = parser.Parse(s.Schema)
 	return err
 }
 

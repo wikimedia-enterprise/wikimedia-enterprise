@@ -3,8 +3,10 @@ package handler
 import (
 	"context"
 	"fmt"
-	"log"
+	"time"
+
 	"strings"
+	"wikimedia-enterprise/general/log"
 	"wikimedia-enterprise/general/parser"
 	"wikimedia-enterprise/general/schema"
 	"wikimedia-enterprise/general/subscriber"
@@ -12,6 +14,7 @@ import (
 	"wikimedia-enterprise/services/structured-data/libraries/aggregate"
 	"wikimedia-enterprise/services/structured-data/packages/abstract"
 	"wikimedia-enterprise/services/structured-data/packages/builder"
+	"wikimedia-enterprise/services/structured-data/packages/exponential"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/confluentinc/confluent-kafka-go/kafka"
@@ -39,6 +42,13 @@ func NewArticleBulk(p *Parameters) subscriber.Handler {
 			return err
 		}
 
+		// Introducing gradual delay for failed events processing
+		// based on the exponential backoff.
+		if pld.Event != nil && pld.Event.FailCount > 0 {
+			epn := exponential.GetNth(uint(pld.Event.FailCount+1), uint(p.Env.BackOffBase))
+			time.Sleep(time.Duration(epn) * time.Second)
+		}
+
 		tls := pld.Names
 		dtb := pld.IsPartOf.Identifier
 		ags := map[string]*aggregate.Aggregation{}
@@ -51,6 +61,12 @@ func NewArticleBulk(p *Parameters) subscriber.Handler {
 		)
 
 		if err != nil {
+			log.Error("wmf api error",
+				log.Any("articles queried concurrently", len(tls)),
+				log.Any("project", dtb),
+				log.Any("error", err),
+			)
+
 			return err
 		}
 
@@ -58,12 +74,23 @@ func NewArticleBulk(p *Parameters) subscriber.Handler {
 
 		for _, agg := range ags {
 			if err := agg.GetPageHTMLError(); err != nil {
-				log.Println(err)
+				log.Warn("wmf page html api error",
+					log.Any("name", agg.GetPageTitle()),
+					log.Any("project", dtb),
+					log.Any("error", err),
+				)
+
 				continue
 			}
 
 			if agg.GetPageMissing() {
-				log.Printf("page '%s/wiki/%s' is missing\n", pld.IsPartOf.URL, agg.GetPageTitle())
+				log.Warn(
+					"page is missing",
+					log.Any("name", agg.GetPageTitle()),
+					log.Any("project", dtb),
+					log.Any("url", pld.IsPartOf.URL),
+				)
+
 				continue
 			}
 
@@ -81,11 +108,10 @@ func NewArticleBulk(p *Parameters) subscriber.Handler {
 				abs, err = p.Parser.GetAbstract(doc.Selection)
 
 				if err != nil {
-					log.Printf(
-						"abstract processing for page '%s/wiki/%s' failed with error '%s'\n",
-						pld.IsPartOf.URL,
-						agg.GetPageTitle(),
-						err,
+					log.Warn("abstract processing failed",
+						log.Any("name", agg.GetPageTitle()),
+						log.Any("url", pld.IsPartOf.URL),
+						log.Any("error", err),
 					)
 				}
 			}
@@ -145,20 +171,20 @@ func NewArticleBulk(p *Parameters) subscriber.Handler {
 				Type:       schema.KeyTypeArticle,
 			}
 
-			tpc, err := p.Env.Topics.GetName(dtb, agg.GetPageNs())
+			tcs, err := p.Env.Topics.GetNames(dtb, agg.GetPageNs())
 
 			if err != nil {
 				return err
 			}
 
-			msg := &schema.Message{
-				Config: schema.ConfigArticle,
-				Topic:  tpc,
-				Value:  art,
-				Key:    key,
+			for _, tpc := range tcs {
+				mgs = append(mgs, &schema.Message{
+					Config: schema.ConfigArticle,
+					Topic:  tpc,
+					Value:  art,
+					Key:    key,
+				})
 			}
-
-			mgs = append(mgs, msg)
 		}
 
 		return p.Stream.Produce(ctx, mgs...)
