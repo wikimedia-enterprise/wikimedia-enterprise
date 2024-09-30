@@ -5,7 +5,9 @@ import (
 	"fmt"
 	"net/url"
 	"time"
+	"wikimedia-enterprise/general/log"
 	"wikimedia-enterprise/general/schema"
+	"wikimedia-enterprise/general/tracing"
 	"wikimedia-enterprise/services/event-bridge/config/env"
 	"wikimedia-enterprise/services/event-bridge/libraries/langid"
 	"wikimedia-enterprise/services/event-bridge/packages/filter"
@@ -25,6 +27,7 @@ type Parameters struct {
 	Producer   schema.Producer
 	Dictionary langid.Dictionarer
 	Env        *env.Environment
+	Tracer     tracing.Tracer
 }
 
 // Pagedelete parses a pagedelete event, creates a kafka message based on article schema, writes to TopicEventBridgeArticleDelete topic, and stores the processed event timestamp.
@@ -35,7 +38,19 @@ func PageDelete(ctx context.Context, p *Parameters, fr *filter.Filter) func(evt 
 		}
 
 		article := new(schema.Article)
-		article.Event = schema.NewEvent(schema.EventTypeDelete)
+		sev := schema.NewEvent(schema.EventTypeDelete)
+		article.Event = sev
+
+		end, trx := p.Tracer.StartTrace(ctx, "page-delete", map[string]string{"event.id": sev.Identifier})
+		var err error
+		defer func() {
+			if err != nil {
+				end(err, fmt.Sprintf("error processing page-delete event with id %s", sev.Identifier))
+			} else {
+				end(nil, fmt.Sprintf("page-delete event with id %s processed", sev.Identifier))
+			}
+		}()
+
 		article.Name = evt.Data.PageTitle
 		article.Identifier = evt.Data.PageID
 		article.Namespace = &schema.Namespace{
@@ -61,6 +76,13 @@ func PageDelete(ctx context.Context, p *Parameters, fr *filter.Filter) func(evt 
 		url, err := url.QueryUnescape(evt.Data.Meta.URI)
 
 		if err != nil {
+			log.Error(
+				"error unescaping url",
+				log.Any("url", evt.Data.Meta.URI),
+				log.Any("event_id", article.Event.Identifier),
+				log.Any("error", err),
+			)
+
 			return err
 		}
 
@@ -68,13 +90,22 @@ func PageDelete(ctx context.Context, p *Parameters, fr *filter.Filter) func(evt 
 
 		langid, err := p.Dictionary.GetLanguage(ctx, evt.Data.Database)
 		if err != nil {
+			log.Error(
+				"dictionary get language error",
+				log.Any("database", evt.Data.Database),
+				log.Any("event_id", article.Event.Identifier),
+				log.Any("error", err),
+			)
+
 			return err
 		}
 		article.InLanguage = &schema.Language{
 			Identifier: langid,
 		}
 
-		err = p.Producer.Produce(ctx, &schema.Message{
+		hds := tracing.NewHeadersCarrier().InjectContext(trx)
+
+		err = p.Producer.Produce(trx, &schema.Message{
 			Config: schema.ConfigArticle,
 			Topic:  p.Env.TopicArticleDelete,
 			Value:  article,
@@ -82,12 +113,19 @@ func PageDelete(ctx context.Context, p *Parameters, fr *filter.Filter) func(evt 
 				Identifier: fmt.Sprintf("/%s/%s", article.IsPartOf.Identifier, article.Name),
 				Type:       schema.KeyTypeArticle,
 			},
+			Headers: hds,
 		})
 
 		if err != nil {
+			log.Error(
+				"producer produce error",
+				log.Any("revision", article.Version.Identifier),
+				log.Any("error", err),
+			)
+
 			return err
 		}
 
-		return p.Redis.Set(ctx, LastEventTimeKey, evt.Data.Meta.Dt, time.Hour*24).Err()
+		return p.Redis.Set(trx, LastEventTimeKey, evt.Data.Meta.Dt, time.Hour*24).Err()
 	}
 }

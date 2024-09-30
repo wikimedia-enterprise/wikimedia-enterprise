@@ -2,6 +2,7 @@ package env_test
 
 import (
 	"encoding/json"
+	"fmt"
 	"os"
 	"testing"
 	"wikimedia-enterprise/services/event-bridge/config/env"
@@ -22,6 +23,9 @@ type envTestSuite struct {
 	topicArticleCreateKey           string
 	topicArticleMoveKey             string
 	topicArticleVisibilityChangeKey string
+	OTELCollectorAddrKey            string
+	TracingSamplingRateKey          string
+	ServiceNameKey                  string
 	kafkaBootstrapServers           string
 	kafkaCreds                      string
 	redisAddr                       string
@@ -33,6 +37,11 @@ type envTestSuite struct {
 	topicArticleCreate              string
 	topicArticleMove                string
 	topicArticleVisibilityChange    string
+	OTELCollectorAddr               string
+	TracingSamplingRate             float64
+	ServiceName                     string
+	OutputTopics                    string
+	OutputTopicsKey                 string
 }
 
 func (s *envTestSuite) SetupSuite() {
@@ -58,6 +67,14 @@ func (s *envTestSuite) SetupSuite() {
 	s.schemaRegistryURL = "localhost:300"
 	s.schemaRegistryCredsKey = "SCHEMA_REGISTRY_CREDS"
 	s.schemaRegistryCreds = `{"username":"reg_admin","password":"654321"}`
+	s.OTELCollectorAddrKey = "OTEL_COLLECTOR_ADDR"
+	s.OTELCollectorAddr = "collector:4317"
+	s.TracingSamplingRateKey = "TRACING_SAMPLING_RATE"
+	s.TracingSamplingRate = 0.1
+	s.ServiceNameKey = "SERVICE_NAME"
+	s.ServiceName = "event-bridge.service"
+	s.OutputTopics = "{\"version\":[\"v1\"],\"service_name\":\"event-bridge\",\"location\":\"local\"}"
+	s.OutputTopicsKey = "OUTPUT_TOPICS"
 }
 
 func (s *envTestSuite) SetupTest() {
@@ -72,6 +89,10 @@ func (s *envTestSuite) SetupTest() {
 	os.Setenv(s.redisPasswordKey, s.redisPassword)
 	os.Setenv(s.schemaRegistryURLKey, s.schemaRegistryURL)
 	os.Setenv(s.schemaRegistryCredsKey, s.schemaRegistryCreds)
+	os.Setenv(s.OTELCollectorAddrKey, s.OTELCollectorAddr)
+	os.Setenv(s.TracingSamplingRateKey, fmt.Sprintf("%f", s.TracingSamplingRate))
+	os.Setenv(s.ServiceNameKey, s.ServiceName)
+	os.Setenv(s.OutputTopicsKey, s.OutputTopics)
 }
 
 func (s *envTestSuite) TestNew() {
@@ -95,6 +116,14 @@ func (s *envTestSuite) TestNew() {
 	creds, err = json.Marshal(env.SchemaRegistryCreds)
 	s.Assert().NoError(err)
 	s.Assert().Equal(s.schemaRegistryCreds, string(creds))
+
+	s.Assert().Equal(s.OTELCollectorAddr, env.OTELCollectorAddr)
+	s.Assert().Equal(s.TracingSamplingRate, env.TracingSamplingRate)
+	s.Assert().Equal(s.ServiceName, env.ServiceName)
+
+	tps, err := json.Marshal(env.OutputTopics)
+	s.Assert().NoError(err)
+	s.Assert().Equal(s.OutputTopics, string(tps))
 }
 
 func TestEnv(t *testing.T) {

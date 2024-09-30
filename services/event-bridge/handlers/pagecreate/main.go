@@ -69,6 +69,8 @@ func main() {
 			}
 		}()
 
+		go sh.Shutdown()
+
 		sh.Wait(prod)
 	})
 
