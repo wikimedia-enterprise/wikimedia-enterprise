@@ -3,6 +3,7 @@ package env_test
 import (
 	"encoding/json"
 	"os"
+	"strconv"
 	"testing"
 	"wikimedia-enterprise/services/on-demand/config/env"
 
@@ -35,6 +36,16 @@ type envTestSuite struct {
 	AWSID                    string
 	ArticleKeyTypeSuffixKey  string
 	ArticleKeyTypeSuffix     string
+	TracingGrpcHostKey       string
+	TracingGrpcHost          string
+	TracingGrpcPortKey       string
+	TracingGrpcPort          string
+	TracingSamplingRateKey   string
+	TracingSamplingRate      float64
+	ServiceNameKey           string
+	ServiceName              string
+	PrometheusPort           int
+	PrometheusPortKey        string
 }
 
 func (s *envTestSuite) SetupSuite() {
@@ -62,6 +73,16 @@ func (s *envTestSuite) SetupSuite() {
 	s.AWSID = "diff_id"
 	s.ArticleKeyTypeSuffixKey = "KEY_TYPE_SUFFIX"
 	s.ArticleKeyTypeSuffix = "v2"
+	s.TracingGrpcHostKey = "OTEL_COLLECTOR_ADDR"
+	s.TracingGrpcHost = "collector"
+	s.TracingGrpcPortKey = "TRACING_GRPC_PORT"
+	s.TracingGrpcPort = "4317"
+	s.TracingSamplingRateKey = "TRACING_SAMPLING_RATE"
+	s.TracingSamplingRate = 0.1
+	s.ServiceNameKey = "SERVICE_NAME"
+	s.ServiceName = "on-demand.service"
+	s.PrometheusPortKey = "PROMETHEUS_PORT"
+	s.PrometheusPort = 12411
 }
 
 func (s *envTestSuite) SetupTest() {
@@ -77,6 +98,11 @@ func (s *envTestSuite) SetupTest() {
 	os.Setenv(s.AWSKeyKey, s.AWSKey)
 	os.Setenv(s.AWSIDKey, s.AWSID)
 	os.Setenv(s.ArticleKeyTypeSuffixKey, s.ArticleKeyTypeSuffix)
+	os.Setenv(s.TracingGrpcHostKey, s.TracingGrpcHost)
+	os.Setenv(s.TracingSamplingRateKey, strconv.FormatFloat(s.TracingSamplingRate, 'f', -1, 64))
+	os.Setenv(s.TracingGrpcPortKey, s.TracingGrpcPort)
+	os.Setenv(s.ServiceNameKey, s.ServiceName)
+	os.Setenv(s.PrometheusPortKey, strconv.Itoa(s.PrometheusPort))
 }
 
 func (s *envTestSuite) TestNew() {
@@ -90,8 +116,13 @@ func (s *envTestSuite) TestNew() {
 	s.Assert().Equal(s.AWSURL, env.AWSURL)
 	s.Assert().Equal(s.AWSRegion, env.AWSRegion)
 	s.Assert().Equal(s.AWSBucket, env.AWSBucket)
-	s.Assert().Equal(s.AWSKey, env.AWSKey)
 	s.Assert().Equal(s.AWSID, env.AWSID)
+	s.Assert().Equal(s.AWSKey, env.AWSKey)
+	s.Assert().Equal(s.TracingGrpcHost, env.TracingGrpcHost)
+	s.Assert().Equal(s.TracingGrpcPort, env.TracingGrpcPort)
+	s.Assert().Equal(s.TracingSamplingRate, env.TracingSamplingRate)
+	s.Assert().Equal(s.ServiceName, env.ServiceName)
+	s.Assert().Equal(s.PrometheusPort, env.PrometheusPort)
 
 	s.Assert().Equal(s.ArticleKeyTypeSuffix, env.ArticleKeyTypeSuffix)
 

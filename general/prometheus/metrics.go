@@ -35,18 +35,33 @@ const (
 	RedisReqDur string = "redis_rqst_dur"
 
 	// Structured data metrics.
-	SrdTTLErrs    string = "srd_ttl_errs"
-	SrdTTLEvnts   string = "srd_ttl_evnts"
-	SrdTTLEvntsPs string = "srd_ttl_evnts_ps"
+	// Structured data total errors
+	SDTtlErrs string = "sd_ttl_errs"
+	// Structured data total events
+	SDTtlEvnts string = "sd_ttl_evnts"
+	// Structured data average events per second
+	SDTtlEvntsPs string = "sd_ttl_evnts_ps"
+
+	// Structured contents metrics
+	// Structured contents total errors
+	SCTtlErrs string = "sc_ttl_errs"
+	// Structured contents total events
+	SCTtlEvents string = "sc_ttl_events"
+	// Structured contents average events per second
+	SCTtlEvntsPs string = "sc_ttl_evnts_ps"
 
 	// On-Demand metrics.
-
 	// On Demand Total errors.
 	OdmTtlErrs string = "odm_ttl_errs"
 	// On Demand events.
 	OdmTtlEvents string = "odm_ttl_events"
 	// On Demand Average events per second.
 	OdmTtlEvntsPs string = "odm_ttl_evnts_ps"
+
+	// Commons metrics
+	CommonsTtlErrs    string = "commons_ttl_errs"
+	CommonsTtlEvents  string = "commons_ttl_events"
+	CommonsTtlEvntsPs string = "commons_ttl_evnts_ps"
 )
 
 // Metrics houses all custom metrics.
@@ -166,23 +181,58 @@ func (m *Metrics) AddEventStreamMetrics() {
 	})
 }
 
-// AddStructuredMetrics adds structured-data stream metrics.
-func (m *Metrics) AddStructuredMetrics() {
-	m.Opts[SrdTTLErrs] = prometheus.NewCounter(prometheus.CounterOpts{
+// AddStructuredDataMetrics adds structured-data metrics.
+func (m *Metrics) AddStructuredDataMetrics() {
+	m.Opts[SDTtlErrs] = prometheus.NewCounter(prometheus.CounterOpts{
 		Name: "structured_data_total_errors",
 		Help: "Total number of errors",
 	})
 
-	m.Opts[SrdTTLEvnts] = prometheus.NewCounter(prometheus.CounterOpts{
+	m.Opts[SDTtlEvnts] = prometheus.NewCounter(prometheus.CounterOpts{
 		Name: "structured_data_total_events",
 		Help: "Total number of events",
 	})
 
-	m.Opts[SrdTTLEvntsPs] = prometheus.NewGauge(prometheus.GaugeOpts{
+	m.Opts[SDTtlEvntsPs] = prometheus.NewGauge(prometheus.GaugeOpts{
 		Name: "structured_data_average_events_per_second",
 		Help: "Average number of events per second.",
 	})
+}
 
+// AddStructuredContentsMetrics adds structured contents metrics.
+func (m *Metrics) AddStructuredContentsMetrics() {
+	m.Opts[SCTtlErrs] = prometheus.NewCounter(prometheus.CounterOpts{
+		Name: "structured_contents_total_errors",
+		Help: "Total number of errors",
+	})
+
+	m.Opts[SCTtlEvents] = prometheus.NewCounter(prometheus.CounterOpts{
+		Name: "structured_contents_total_events",
+		Help: "Total number of events",
+	})
+
+	m.Opts[SCTtlEvntsPs] = prometheus.NewGauge(prometheus.GaugeOpts{
+		Name: "structured_contents_average_events_per_second",
+		Help: "Average number of events per second.",
+	})
+}
+
+// AddStructuredContentsMetrics adds structured contents metrics.
+func (m *Metrics) AddCommonsMetrics() {
+	m.Opts[CommonsTtlErrs] = prometheus.NewCounter(prometheus.CounterOpts{
+		Name: "commons_total_errors",
+		Help: "Total number of errors",
+	})
+
+	m.Opts[CommonsTtlEvents] = prometheus.NewCounter(prometheus.CounterOpts{
+		Name: "commons_total_events",
+		Help: "Total number of events",
+	})
+
+	m.Opts[CommonsTtlEvntsPs] = prometheus.NewGauge(prometheus.GaugeOpts{
+		Name: "commons_average_events_per_second",
+		Help: "Average number of events per second.",
+	})
 }
 
 // AddOnDemandMetrics adds On-demand metrics.
@@ -201,7 +251,6 @@ func (m *Metrics) AddOnDemandMetrics() {
 		Name: "On_demand_average_events_per_second",
 		Help: "Average number of events per second.",
 	})
-
 }
 
 // AddPerformanceMetrics adds custom perfromance and execution-related metrics.
