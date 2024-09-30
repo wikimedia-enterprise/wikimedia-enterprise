@@ -39,12 +39,18 @@ type PartitionsGetter interface {
 	GetPartitions(string, int) []int
 }
 
+// StructuredProjectsGetter interface to expose GetStructuredProjects method.
+type StructuredProjectsGetter interface {
+	GetStructuredProjects() []string
+}
+
 // API exposes full config API under a single interface.
 type API interface {
 	ProjectsGetter
 	LanguageGetter
 	NamespacesGetter
 	PartitionsGetter
+	StructuredProjectsGetter
 }
 
 // Partition struct to represent project partitions configuration.
@@ -63,6 +69,7 @@ func New() (API, error) {
 		languages:  map[string]string{},
 		namespaces: []int{},
 		partitions: map[string]map[int][]int{},
+		structured: []string{},
 	}
 
 	if err := json.Unmarshal(projectsConfig, &cfg.projects); err != nil {
@@ -109,6 +116,7 @@ type Config struct {
 	languages  map[string]string
 	namespaces []int
 	partitions map[string]map[int][]int
+	structured []string
 }
 
 // GetProjects get list of projects form configuration.
@@ -129,4 +137,9 @@ func (c *Config) GetNamespaces() []int {
 // GetPartitions returns a list of partitions for a given project.
 func (c *Config) GetPartitions(dtb string, nid int) []int {
 	return c.partitions[dtb][nid]
+}
+
+// GetStructuredProjects returns a lost of structured projects.
+func (c *Config) GetStructuredProjects() []string {
+	return c.structured
 }

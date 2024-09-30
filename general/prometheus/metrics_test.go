@@ -36,9 +36,20 @@ func (m *metricsTestSuite) TestAddMetrics() {
 	m.Assert().NotEmpty(m.mts.Opts[Duration])
 	m.Assert().NotEmpty(m.mts.Opts[TtlErrs])
 
-	m.mts.AddStructuredMetrics()
-	m.Assert().NotEmpty(m.mts.Opts[SrdTTLErrs])
-	m.Assert().NotEmpty(m.mts.Opts[SrdTTLEvnts])
+	m.mts.AddStructuredDataMetrics()
+	m.Assert().NotEmpty(m.mts.Opts[SDTtlErrs])
+	m.Assert().NotEmpty(m.mts.Opts[SDTtlEvnts])
+	m.Assert().NotEmpty(m.mts.Opts[SDTtlEvntsPs])
+
+	m.mts.AddStructuredContentsMetrics()
+	m.Assert().NotEmpty(m.mts.Opts[SCTtlErrs])
+	m.Assert().NotEmpty(m.mts.Opts[SCTtlEvents])
+	m.Assert().NotEmpty(m.mts.Opts[SCTtlEvntsPs])
+
+	m.mts.AddCommonsMetrics()
+	m.Assert().NotEmpty(m.mts.Opts[CommonsTtlErrs])
+	m.Assert().NotEmpty(m.mts.Opts[CommonsTtlEvents])
+	m.Assert().NotEmpty(m.mts.Opts[CommonsTtlEvntsPs])
 
 	m.mts.AddOnDemandMetrics()
 	m.Assert().NotEmpty(m.mts.Opts[OdmTtlErrs])

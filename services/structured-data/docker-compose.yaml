@@ -68,10 +68,8 @@ services:
   # mock service
   mock:
     build:
-      context: ./../../.
-      dockerfile: ./docker/mock/Dockerfile
-      args:
-        SOURCE_DIR: ./services/structured-data
+      context: .
+      dockerfile: submodules/cdtools/docker/mock/Dockerfile
     depends_on:
       - broker
     env_file:
@@ -80,10 +78,11 @@ services:
   # articlebulk service
   articlebulk:
     build:
-      context: ./../../.
-      dockerfile: ./docker/handlers/Dockerfile
+      context: .
+      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
       args:
-        SOURCE_DIR: ./services/structured-data/handlers/articlebulk
+        HANDLER: articlebulk
+        BUILD_EXTRA: "True"
     depends_on:
       - broker
     env_file:
@@ -94,10 +93,11 @@ services:
   # articledelete service
   articledelete:
     build:
-      context: ./../../.
-      dockerfile: ./docker/handlers/Dockerfile
+      context: .
+      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
       args:
-        SOURCE_DIR: ./services/structured-data/handlers/articledelete
+        HANDLER: articledelete
+        BUILD_EXTRA: "True"
     depends_on:
       - broker
     env_file:
@@ -108,10 +108,11 @@ services:
   # articledelete error service (Mind the spelling)
   articledeleterror:
     build:
-      context: ./../../.
-      dockerfile: ./docker/handlers/Dockerfile
+      context: .
+      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
       args:
-        SOURCE_DIR: ./services/structured-data/handlers/articledelete
+        HANDLER: articledelete
+        BUILD_EXTRA: "True"
     depends_on:
       - broker
     env_file:
@@ -123,10 +124,11 @@ services:
   # articleupdate service 
   articleupdate:
     build:
-      context: ./../../.
-      dockerfile: ./docker/handlers/Dockerfile
+      context: .
+      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
       args:
-        SOURCE_DIR: ./services/structured-data/handlers/articleupdate
+        HANDLER: articleupdate
+        BUILD_EXTRA: "True"
     depends_on:
       - broker
       - textprocessor
@@ -138,10 +140,11 @@ services:
   # articleupdate error service (Mind the spelling)
   articleupdaterror:
     build:
-      context: ./../../.
-      dockerfile: ./docker/handlers/Dockerfile
+      context: .
+      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
       args:
-        SOURCE_DIR: ./services/structured-data/handlers/articleupdate
+        HANDLER: articleupdate
+        BUILD_EXTRA: "True"
     depends_on:
       - broker
     env_file:
@@ -153,10 +156,11 @@ services:
   # articlevisibility service
   articlevisibility:
     build:
-      context: ./../../.
-      dockerfile: ./docker/handlers/Dockerfile
+      context: .
+      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
       args:
-        SOURCE_DIR: ./services/structured-data/handlers/articlevisibility
+        HANDLER: articlevisibility
+        BUILD_EXTRA: "True"
     depends_on:
       - broker
     env_file:

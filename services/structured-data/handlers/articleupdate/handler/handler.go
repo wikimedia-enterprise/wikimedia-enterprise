@@ -7,8 +7,10 @@ import (
 	"time"
 	"wikimedia-enterprise/general/log"
 	"wikimedia-enterprise/general/parser"
+	pr "wikimedia-enterprise/general/prometheus"
 	"wikimedia-enterprise/general/schema"
 	"wikimedia-enterprise/general/subscriber"
+	"wikimedia-enterprise/general/tracing"
 	"wikimedia-enterprise/services/structured-data/config/env"
 	"wikimedia-enterprise/services/structured-data/libraries/aggregate"
 	"wikimedia-enterprise/services/structured-data/libraries/text"
@@ -33,6 +35,8 @@ type Parameters struct {
 	Aggregator aggregate.Aggregator
 	Parser     parser.API
 	Integrity  pb.ContentIntegrityClient
+	Tracer     tracing.Tracer
+	Metrics    *pr.Metrics
 }
 
 // NewArticleUpdate will produce an article schema message, along with its version.
@@ -45,16 +49,29 @@ type Parameters struct {
 // If the mediawiki API call fails, it produces to the error or dead letter topic based on the fail count.
 func NewArticleUpdate(p *Parameters) subscriber.Handler {
 	return func(ctx context.Context, msg *kafka.Message) error {
+		hcr := tracing.NewHeadersCarrier()
+		hcr.FromKafkaHeaders(msg.Headers)
+		hcx := hcr.ExtractContext(ctx)
+
+		end, trx := p.Tracer.StartTrace(hcx, "article-update", map[string]string{})
+		var err error
+		defer func() {
+			if err != nil {
+				end(err, "error processing article-update event")
+			} else {
+				end(nil, "article-update event processed")
+			}
+		}()
 
 		key := new(schema.Key)
 
-		if err := p.Stream.Unmarshal(ctx, msg.Key, key); err != nil {
+		if err := p.Stream.Unmarshal(trx, msg.Key, key); err != nil {
 			return err
 		}
 
 		pld := new(schema.Article)
 
-		if err := p.Stream.Unmarshal(ctx, msg.Value, pld); err != nil {
+		if err := p.Stream.Unmarshal(trx, msg.Value, pld); err != nil {
 			return err
 		}
 
@@ -68,8 +85,8 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 		dtb := pld.IsPartOf.Identifier
 		agg := new(aggregate.Aggregation)
 		ttl := strings.ReplaceAll(pld.Name, "_", " ")
-		err := p.Aggregator.GetAggregation(
-			ctx, dtb, ttl, agg,
+		err = p.Aggregator.GetAggregation(
+			trx, dtb, ttl, agg,
 			aggregate.WithPages(2, 1),
 			aggregate.WithRevisions(1),
 			aggregate.WithPagesHTML(1),
@@ -120,7 +137,7 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 
 		if agg.Page.LastRevID != pld.Version.Identifier {
 			err := p.Aggregator.GetAggregation(
-				ctx, dtb, pld.Name, agg,
+				trx, dtb, pld.Name, agg,
 				aggregate.WithUser(pld.Name, agg.GetCurrentRevisionUserID()),
 			)
 
@@ -133,7 +150,7 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 		if pld.Namespace.Identifier == 0 && strings.HasSuffix(dtb, "wiki") && pld.PreviousVersion.Identifier != 0 {
 			mdl := "revertrisk"
 			err := p.Aggregator.GetAggregation(
-				ctx, dtb, ttl, agg,
+				trx, dtb, ttl, agg,
 				aggregate.WithScore(agg.GetPageLastRevID(), pld.InLanguage.Identifier, ttl, mdl, dtb),
 			)
 
@@ -153,7 +170,7 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 		var dff *schema.Diff
 		crc := agg.GetCurrentRevisionContent()
 		if p.Env.EnableDiffs && agg.GetPreviousRevision() != nil {
-			tcx, cnc := context.WithTimeout(ctx, 200*time.Millisecond)
+			tcx, cnc := context.WithTimeout(trx, 200*time.Millisecond)
 			defer cnc()
 
 			cws, pws, err := p.Text.GetWordsPair(tcx,
@@ -242,7 +259,7 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 
 		// add is breaking news to version
 		if p.Env.BreakingNewsEnabled {
-			aci, err = p.Integrity.GetArticleData(ctx, &pb.ArticleDataRequest{
+			aci, err = p.Integrity.GetArticleData(trx, &pb.ArticleDataRequest{
 				Identifier:        int64(agg.GetPageID()),
 				Project:           dtb,
 				VersionIdentifier: int64(agg.GetPageLastRevID()),
@@ -345,24 +362,28 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 			return err
 		}
 
+		hds := tracing.NewHeadersCarrier().InjectContext(trx)
+
 		mgs := []*schema.Message{
 			{
-				Config: schema.ConfigArticle,
-				Topic:  p.Env.TopicArticles,
-				Value:  art,
-				Key:    key,
+				Config:  schema.ConfigArticle,
+				Topic:   p.Env.TopicArticles,
+				Value:   art,
+				Key:     key,
+				Headers: hds,
 			},
 		}
 
 		for _, tpc := range tcs {
 			mgs = append(mgs, &schema.Message{
-				Config: schema.ConfigArticle,
-				Topic:  tpc,
-				Value:  art,
-				Key:    key,
+				Config:  schema.ConfigArticle,
+				Topic:   tpc,
+				Value:   art,
+				Key:     key,
+				Headers: hds,
 			})
 		}
 
-		return p.Stream.Produce(ctx, mgs...)
+		return p.Stream.Produce(trx, mgs...)
 	}
 }

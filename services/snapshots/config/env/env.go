@@ -27,6 +27,7 @@ func (kc *Credentials) UnmarshalEnvironmentValue(data string) error {
 type Environment struct {
 	KafkaBootstrapServers string         `env:"KAFKA_BOOTSTRAP_SERVERS,required=true"`
 	KafkaCreds            *Credentials   `env:"KAFKA_CREDS"`
+	KafkaAutoOffsetReset  string         `env:"KAFKA_AUTO_OFFSET_RESET"`
 	Topics                *schema.Topics `env:"TOPICS,default={}"`
 	SchemaRegistryURL     string         `env:"SCHEMA_REGISTRY_URL,required=true"`
 	SchemaRegistryCreds   *Credentials   `env:"SCHEMA_REGISTRY_CREDS"`
@@ -48,7 +49,12 @@ type Environment struct {
 	UploadPartSize        int            `env:"UPLOAD_PART_SIZE,default=100000000"`
 	UploadConcurrency     int            `env:"UPLOAD_CONCURRENCY,default=10"`
 	// FreeTierGroup is a group to create monthly snapshots copy for.
-	FreeTierGroup string `env:"FREE_TIER_GROUP,default=group_1"`
+	FreeTierGroup       string  `env:"FREE_TIER_GROUP,default=group_1"`
+	OTELCollectorAddr   string  `env:"OTEL_COLLECTOR_ADDR,default=collector:4317"`
+	TracingSamplingRate float64 `env:"TRACING_SAMPLING_RATE,default=0.1"`
+	ServiceName         string  `env:"SERVICE_NAME,default=snapshot.service"`
+	ChunkWorkers        int     `env:"CHUNK_WORKERS,default=4"`
+	LineLimit           int     `env:"LINE_LIMIT,default=5000"`
 }
 
 // TLSEnabled checks if TLS enabled in current environment.

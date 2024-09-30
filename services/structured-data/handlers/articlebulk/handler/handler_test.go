@@ -73,6 +73,20 @@ func (m *parserMock) GetAbstract(_ *goquery.Selection) (string, error) {
 	return m.Called().String(0), nil
 }
 
+type TracerMock struct{}
+
+func (t *TracerMock) Trace(ctx context.Context, _ map[string]string) (func(err error, msg string), context.Context) {
+	return func(err error, msg string) {}, ctx
+}
+
+func (t *TracerMock) Shutdown(ctx context.Context) error {
+	return nil
+}
+
+func (t *TracerMock) StartTrace(ctx context.Context, _ string, _ map[string]string) (func(err error, msg string), context.Context) {
+	return func(err error, msg string) {}, ctx
+}
+
 type handlerTestSuite struct {
 	suite.Suite
 	ctx  context.Context
@@ -117,6 +131,7 @@ func (s *handlerTestSuite) SetupSuite() {
 		Stream:     str,
 		Aggregator: agg,
 		Parser:     prs,
+		Tracer:     &TracerMock{},
 	}
 }
 

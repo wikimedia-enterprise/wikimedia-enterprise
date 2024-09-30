@@ -64,6 +64,10 @@ type Environment struct {
 	NoindexTemplatePatterns      List           `env:"NOINDEX_TEMPLATE_PATTERNS,default=[]"`
 	NoindexCategoryPatterns      List           `env:"NOINDEX_CATEGORY_PATTERNS,default=[]"`
 	LatencyThresholdMS           int64          `env:"LATENCY_THRESHOLD_MS,default=500"`
+	TracingGRPCHost              string         `env:"OTEL_COLLECTOR_ADDR,default=collector"`
+	TracingSamplingRate          float64        `env:"TRACING_SAMPLING_RATE,default=0.1"`
+	ServiceName                  string         `env:"SERVICE_NAME,default=structured-data.service"`
+	PrometheusPort               int            `env:"PROMETHEUS_PORT,defaut=12411"`
 }
 
 // New initialize the environment

@@ -12,39 +12,39 @@ import (
 	"wikimedia-enterprise/services/snapshots/config/env"
 	"wikimedia-enterprise/services/snapshots/handlers/aggregate"
 	pb "wikimedia-enterprise/services/snapshots/handlers/protos"
+	"wikimedia-enterprise/services/snapshots/libraries/s3tracerproxy"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 	"github.com/aws/aws-sdk-go/service/s3"
-	"github.com/aws/aws-sdk-go/service/s3/s3iface"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
 )
 
 type s3Mock struct {
 	mock.Mock
-	s3iface.S3API
+	s3tracerproxy.S3TracerProxy
 }
 
 func (s *s3Mock) ListObjectsV2PagesWithContext(_ aws.Context, inp *s3.ListObjectsV2Input, cb func(*s3.ListObjectsV2Output, bool) bool, opt ...request.Option) error {
-	arg := s.Called(inp)
+	args := s.Called(inp)
 	out := &s3.ListObjectsV2Output{}
 
-	if kys, ok := arg.Get(0).([]string); ok {
-		for _, key := range kys {
+	if keys, ok := args.Get(0).([]string); ok {
+		for _, key := range keys {
 			out.Contents = append(out.Contents, &s3.Object{
-				Key: &key,
+				Key: aws.String(key),
 			})
 		}
 	}
 
 	cb(out, true)
-	return arg.Error(1)
+	return args.Error(1)
 }
 
 func (s *s3Mock) GetObjectWithContext(_ aws.Context, inp *s3.GetObjectInput, _ ...request.Option) (*s3.GetObjectOutput, error) {
-	arg := s.Called(inp)
-	data, err := json.Marshal(arg.Get(1))
+	args := s.Called(inp)
+	data, err := json.Marshal(args.Get(0))
 
 	if err != nil {
 		return nil, err
@@ -54,12 +54,12 @@ func (s *s3Mock) GetObjectWithContext(_ aws.Context, inp *s3.GetObjectInput, _ .
 		Body: io.NopCloser(bytes.NewReader(data)),
 	}
 
-	return out, arg.Error(1)
+	return out, args.Error(1)
 }
 
 func (s *s3Mock) PutObjectWithContext(_ aws.Context, inp *s3.PutObjectInput, _ ...request.Option) (*s3.PutObjectOutput, error) {
-	arg := s.Called(inp.Key, inp.Bucket)
-	return nil, arg.Error(0)
+	args := s.Called(inp.Key, inp.Bucket)
+	return &s3.PutObjectOutput{}, args.Error(0)
 }
 
 type handlerTestSuite struct {
@@ -86,7 +86,11 @@ func (s *handlerTestSuite) SetupSuite() {
 		FreeTierGroup: "group_1",
 	}
 
-	prx := "snapshots"
+	s.req = &pb.AggregateRequest{
+		Prefix: "snapshots",
+	}
+
+	prx := s.env.Prefix
 
 	if len(s.req.Prefix) > 0 {
 		prx = s.req.Prefix
@@ -102,13 +106,30 @@ func (s *handlerTestSuite) SetupSuite() {
 	}
 	s.err = errors.New("handler test err")
 
-	for i, key := range s.kys {
-		s.kys[i] = key
+	s.kys = []string{
+		fmt.Sprintf("%s/enwiki.json", prx),
+		fmt.Sprintf("%s/afwikibooks.json", prx),
+	}
+
+	for _, key := range s.kys {
 		s.gns = append(s.gns, &s3.GetObjectInput{
 			Bucket: aws.String(s.env.AWSBucket),
 			Key:    aws.String(key),
 		})
 	}
+
+	s.hls = []*schema.Project{
+		{
+			Identifier: "enwiki",
+			Size:       &schema.Size{Value: 1},
+		},
+		{
+			Identifier: "afwikibooks",
+			Size:       &schema.Size{Value: 1},
+		},
+	}
+
+	s.res = &pb.AggregateResponse{Total: 2}
 }
 
 func (s *handlerTestSuite) SetupTest() {
@@ -130,11 +151,11 @@ func (s *handlerTestSuite) TestHandler() {
 
 	res, err := s.hdl.Aggregate(s.ctx, s.req)
 	s.Assert().NoError(err)
-	s.Assert().Equal(res, s.res)
+	s.Assert().Equal(s.res, res)
 }
 
 func (s *handlerTestSuite) TestHandlerListErr() {
-	s.s3m.On("ListObjectsV2PagesWithContext", s.lin).Return(s.kys, s.err)
+	s.s3m.On("ListObjectsV2PagesWithContext", s.lin).Return(nil, s.err)
 
 	res, err := s.hdl.Aggregate(s.ctx, s.req)
 	s.Assert().Equal(s.err, err)
@@ -156,23 +177,5 @@ func (s *handlerTestSuite) TestHandlerPutErr() {
 }
 
 func TestHandler(t *testing.T) {
-	for _, testCase := range []*handlerTestSuite{
-		{
-			req: &pb.AggregateRequest{
-				Prefix: "snapshots",
-			},
-			res: &pb.AggregateResponse{Total: 2},
-			kys: []string{"snapshots/%s/enwiki.json", "snapshots/%s/afwikibooks.json"},
-			hls: []*schema.Project{
-				{
-					Identifier: "enwiki",
-				},
-				{
-					Identifier: "afwikibooks",
-				},
-			},
-		},
-	} {
-		suite.Run(t, testCase)
-	}
+	suite.Run(t, new(handlerTestSuite))
 }

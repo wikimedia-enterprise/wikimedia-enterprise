@@ -43,6 +43,7 @@ type Marshaler interface {
 // Unmarshaler is an interface that wraps default Unmarshal method for unit testing.
 type Unmarshaler interface {
 	Unmarshal(ctx context.Context, data []byte, v interface{}) error
+	UnmarshalNoCache(ctx context.Context, data []byte, v interface{}) error
 }
 
 // MarshalUnmarshaler is an interface that wraps default Unmarshal and Marshal methods for unit testing.
@@ -78,6 +79,7 @@ type Message struct {
 	Value     interface{}
 	KeyConfig *Config
 	Config    *Config
+	Headers   []kafka.Header
 }
 
 // NewHelper creates new instance of the schema helper.
@@ -198,22 +200,38 @@ func (h *Helper) Marshal(ctx context.Context, topic string, cfg *Config, v inter
 
 // Unmarshal gets schema by id and decodes it into struct.
 func (h *Helper) Unmarshal(ctx context.Context, data []byte, v interface{}) error {
+	return h.unmarshal(ctx, data, v, false)
+}
+
+// Unmarshal gets schema by id and decodes it into struct, with avro cache disabled.
+func (h *Helper) UnmarshalNoCache(ctx context.Context, data []byte, v interface{}) error {
+	return h.unmarshal(ctx, data, v, true)
+}
+
+// Unmarshal gets schema by id and decodes it into struct, allowing to enable or disable avro caching.
+func (h *Helper) unmarshal(ctx context.Context, data []byte, v interface{}, dch bool) error {
 	sch, err := h.Get(ctx, GetID(data))
 
 	if err != nil {
 		return err
 	}
 
-	cfg := avro.Config{
-		// Modify max slice size to 20MB.
-		// This is needed to decode large messages.
-		MaxByteSliceSize: 1024 * 1024 * 20,
-	}
-	api := cfg.Freeze() // getting a new instance of the api
+	var api avro.API
 
 	if cfg, exs := h.configs.Load(sch.ID); exs {
 		api = cfg.(avro.API) // using cached api
 	} else {
+		cfg := avro.Config{
+			// Modify max slice size to 20MB.
+			// This is needed to decode large messages.
+			MaxByteSliceSize: 1024 * 1024 * 20,
+
+			// Disabling avro caching, this is needed for snaphshots.
+			// Due to multiple writes overtime and different avro schemas.
+			DisableCaching: dch,
+		}
+		api = cfg.Freeze() // getting a new instance of the api
+
 		h.configs.Store(sch.ID, api) // caching api
 	}
 
@@ -274,8 +292,9 @@ func (h *Helper) Produce(ctx context.Context, msgs ...*Message) error {
 				Topic:     &msg.Topic,
 				Partition: *msg.Partition,
 			},
-			Key:   key,
-			Value: val,
+			Key:     key,
+			Value:   val,
+			Headers: msg.Headers,
 		})
 	}
 

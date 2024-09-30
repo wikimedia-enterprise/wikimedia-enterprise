@@ -2,9 +2,15 @@
 
 Implementation of [Apache AirFlow](https://airflow.apache.org/).
 
-The Scheduler will consume `diffs` and `bulk` services through their gRPC endpoints.
+The Scheduler will consume `snapshots` and `bulk-ingestion` services through their gRPC endpoints.
 
 ## Getting Started
+
+1. Init and update `git` submodules by running:
+
+   ```bash
+   git submodule update --init --remote --recursive
+   ```
 
 1. Create `.env` file in the project root with the following content:
 
@@ -25,11 +31,18 @@ The Scheduler will consume `diffs` and `bulk` services through their gRPC endpoi
    BATCHES_SERVICE_ADDR=host.docker.internal:5050
    BULK_INGESTION_SERVICE_ADDR=host.docker.internal:50051
    SNAPSHOTS_SERVICE_ADDR=host.docker.internal:5050
-
+   AWS_DEFAULT_REGION=us-east-1
+   COGNITO_USER_POOL_ID=tesd_pool_id   
+   
    # For enabling mutual TLS.
    ROOT_CERTS=
    PRIVATE_KEY=
    CERT_CHAIN=
+
+   # Redis configuration
+   REDIS_ADDR=host.docker.internal
+   REDIS_PORT=6379
+   REDIS_PASSWORD=
    ```
 
    Make sure the PostgreSQL credentials match the credentials in the `AIRFLOW__CORE__SQL_ALCHEMY_CONN` variable.
@@ -42,7 +55,7 @@ The Scheduler will consume `diffs` and `bulk` services through their gRPC endpoi
    docker compose up
    ```
 
-1. Navigate to http://localhost:9000/
+1. Navigate to http://localhost:9090/
 
 1. Log in into AirFlow web UI
 
@@ -58,22 +71,22 @@ The Scheduler will consume `diffs` and `bulk` services through their gRPC endpoi
 
 - It is recommended for you to create a virtual environment to manage development dependencies:
 
-  ```bash
-  python -m venv .venv
-  ```
+   ```bash
+   python -m venv .venv
+   ```
 
-  This will create a Python virtual environment in the `.venv` directory, that you can activate by running:
+   This will create a Python virtual environment in the `.venv` directory, that you can activate by running:
 
-  ```bash
-  source .venv/bin/activate # for shell, bash, zsh, etc...
-  source .venv/bin/activate.fish # for fish
-  ```
+   ```bash
+   source .venv/bin/activate # for shell, bash, zsh, etc...
+   source .venv/bin/activate.fish # for fish
+   ```
 
-  To deactivate the Python environment, run:
+   To deactivate the Python environment, run:
 
-  ```bash
-  deactivate
-  ```
+   ```bash
+   deactivate
+   ```
 
 - Code style for this project follows [PEP 8](https://www.python.org/dev/peps/pep-0008/) styling guide. To integrate these tools into your development environment run the following, while the virtual environment is activated:
 
@@ -85,7 +98,7 @@ The Scheduler will consume `diffs` and `bulk` services through their gRPC endpoi
 
   ```bash
   black --exclude=protos dags/pipelines/ # for formatting
-  flake8 --exclude=protos dags/pipelines/ --max-line-length 160 # for linting
+  flake8 --exclude dags/pipelines/protos/ --max-line-length 160 --extend-ignore=W293,W291,W391,E203 # for linting
   ```
 
   VSCode also provides integration with these tools with the [`Python` extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python). To enable them, install the extension, and add the following to your VSCode settings:
@@ -107,9 +120,10 @@ The Scheduler will consume `diffs` and `bulk` services through their gRPC endpoi
 
 1. If you need to attach log only to one service you can run (`airflow` is a service name, look into `docker-compose.yaml` for list of services):
 
-   ```bash
-   docker-compose logs -f airflow
-   ```
+    ```bash
+    docker-compose logs -f airflow
+    ```
+
 
 ### Protocol Buffers
 

@@ -2,6 +2,7 @@
 DAG for bulk injection service. Contains Project, Namespace and Arctiles tasks
 each invoked on the manual basis.
 """
+
 from datetime import timedelta, datetime
 from airflow import DAG, AirflowException
 from airflow.operators.python import PythonOperator
@@ -71,8 +72,10 @@ def articles(projects, namespaces):
                         )
                     )
 
-                    logger.info(f"Finished an `articles` job for project: `{project}` \
-                                in namespace: `{namespace}` with total: `{res.total}` and errors: `{res.errors}`\n")
+                    logger.info(
+                        f"Finished an `articles` job for project: `{project}` \
+                                in namespace: `{namespace}` with total: `{res.total}` and errors: `{res.errors}`\n"
+                    )
         return
 
     return articles
@@ -123,7 +126,7 @@ def get_bulk_ingestion_desired_count():
     return get_desired_count(
         env_variable_name="ECS_BULK_INGESTION_SERVICE_DESIRED_COUNT",
         airflow_variable_name="desired_count_bulk_ingestion",
-        default_desired_count=1
+        default_desired_count=1,
     )
 
 
@@ -166,8 +169,7 @@ def enable_bulk_ingestion_service():
     )
 
     if not result:
-        raise AirflowException(
-            f"Failure during service {ecs_service_name} update")
+        raise AirflowException(f"Failure during service {ecs_service_name} update")
     return
 
 
@@ -195,13 +197,10 @@ def disable_bulk_ingestion_service():
             "Refusing to proceed: mandatory environment variables are not set"
         )
 
-    result = ecs_service_set_task_count(
-        ecs_cluster_name, ecs_service_name, 0
-    )
+    result = ecs_service_set_task_count(ecs_cluster_name, ecs_service_name, 0)
 
     if not result:
-        raise AirflowException(
-            f"Failure during service {ecs_service_name} update")
+        raise AirflowException(f"Failure during service {ecs_service_name} update")
     return
 
 
@@ -225,7 +224,7 @@ def get_article_bulk_desired_count():
     return get_desired_count(
         env_variable_name="ECS_ARTICLE_BULK_SERVICE_DESIRED_COUNT",
         airflow_variable_name="desired_count_article_bulk",
-        default_desired_count=5
+        default_desired_count=5,
     )
 
 
@@ -248,8 +247,7 @@ def enable_article_bulk_service():
     )
 
     if not result:
-        raise AirflowException(
-            f"Failure during service {ecs_service_name} update")
+        raise AirflowException(f"Failure during service {ecs_service_name} update")
     return
 
 
@@ -284,8 +282,7 @@ def get_consumer_group_state(kafka_admin, group_id):
     Returns:
         str: consumer group state ('Stable', 'Empty', 'Dead', 'PreparingRebalance', 'CompletingRebalance')
     """
-    consumer_groups = kafka_admin.describe_consumer_groups(group_ids=[
-                                                           group_id])
+    consumer_groups = kafka_admin.describe_consumer_groups(group_ids=[group_id])
     if len(consumer_groups) > 0:
         return consumer_groups[0].state
 
@@ -297,7 +294,7 @@ def monitor_article_bulk_service():
     Monitor article bulk service to see how much data was processed and still needs to be processed.
     The monitoring is happening using consumer group `messages behind` property.
     """
-    credentials_raw = get_secret_value(getenv('KAFKA_CREDS_SECRET_NAME'))
+    credentials_raw = get_secret_value(getenv("KAFKA_CREDS_SECRET_NAME"))
 
     if len(credentials_raw) == 0:
         raise AirflowException(
@@ -326,9 +323,11 @@ def monitor_article_bulk_service():
         sasl_plain_username=credentials["username"],
         sasl_plain_password=credentials["password"],
     )
-    
+
     # Kafka consumer group id
-    group_id = Variable.get('consumer_group_id', default_var="structured-data-articlebulk-v2")
+    group_id = Variable.get(
+        "consumer_group_id", default_var="structured-data-articlebulk-v2"
+    )
 
     while True:
         state = get_consumer_group_state(kafka_admin, group_id)
@@ -337,16 +336,17 @@ def monitor_article_bulk_service():
 
         if state == "Stable":
             logger.info(
-                f"Consumer group `{group_id}` reached a `{state}` state, continuing with the task")
+                f"Consumer group `{group_id}` reached a `{state}` state, continuing with the task"
+            )
             break
 
         logger.info(
-            "Group is not `Stable`, not ready to proceed, waiting for 15 seconds before retrying")
+            "Group is not `Stable`, not ready to proceed, waiting for 15 seconds before retrying"
+        )
         sleep(15)
 
     while True:
-        consumer_lag = calculate_consumption_lag(
-            kafka_admin, kafka_consumer, group_id)
+        consumer_lag = calculate_consumption_lag(kafka_admin, kafka_consumer, group_id)
 
         logger.info(f"Consumer lag is `{consumer_lag}`")
 
@@ -354,8 +354,7 @@ def monitor_article_bulk_service():
             logger.info("Zero consumer lag reached, continuing with the task")
             break
 
-        logger.info(
-            "Consumer lag is not zero, waiting for 15 seconds before retrying")
+        logger.info("Consumer lag is not zero, waiting for 15 seconds before retrying")
         sleep(15)
     return
 
@@ -372,13 +371,10 @@ def disable_article_bulk_service():
             "Refusing to proceed: mandatory environment variables are not set"
         )
 
-    result = ecs_service_set_task_count(
-        ecs_cluster_name, ecs_service_name, 0
-    )
+    result = ecs_service_set_task_count(ecs_cluster_name, ecs_service_name, 0)
 
     if not result:
-        raise AirflowException(
-            f"Failure during service {ecs_service_name} update")
+        raise AirflowException(f"Failure during service {ecs_service_name} update")
     return
 
 

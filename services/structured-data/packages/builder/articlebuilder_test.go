@@ -21,12 +21,13 @@ const (
 
 type articleBuilderTestSuite struct {
 	suite.Suite
+	rdm     *rand.Rand
 	builder *builder.ArticleBuilder
 }
 
 // SetupTest initializes the article builder and seeds a random number generator.
 func (s *articleBuilderTestSuite) SetupTest() {
-	rand.Seed(time.Now().UnixNano())
+	s.rdm = rand.New(rand.NewSource(time.Now().UnixNano()))
 	s.builder = builder.NewArticleBuilder(wikiURL)
 }
 
@@ -73,7 +74,7 @@ func (s *articleBuilderTestSuite) TestDatePreviouslyModified() {
 }
 
 func (s *articleBuilderTestSuite) TestIdentifier() {
-	id := rand.Int()
+	id := s.rdm.Int()
 	article := s.builder.Identifier(id).Build()
 
 	s.Assert().Equal(id, article.Identifier)
@@ -218,7 +219,7 @@ func (s *articleBuilderTestSuite) TestProtection() {
 
 func (s *articleBuilderTestSuite) TestVersion() {
 	version := &schema.Version{
-		Identifier: rand.Intn(100000),
+		Identifier: s.rdm.Intn(100000),
 		Comment:    "Test comment",
 	}
 
@@ -227,7 +228,7 @@ func (s *articleBuilderTestSuite) TestVersion() {
 }
 
 func (s *articleBuilderTestSuite) TestPreviousVersion() {
-	previousRevID := rand.Intn(100000)
+	previousRevID := s.rdm.Intn(100000)
 	previousRevContent := "some content"
 
 	article := s.builder.PreviousVersion(previousRevID, previousRevContent).Build()

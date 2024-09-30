@@ -3,11 +3,16 @@ package main
 import (
 	"context"
 	"log"
+	"os"
+	"os/signal"
+	"syscall"
 	"wikimedia-enterprise/general/schema"
 	"wikimedia-enterprise/general/subscriber"
 	"wikimedia-enterprise/services/structured-data/config/env"
 	"wikimedia-enterprise/services/structured-data/handlers/articlebulk/handler"
 	"wikimedia-enterprise/services/structured-data/packages/container"
+
+	pr "wikimedia-enterprise/general/prometheus"
 )
 
 func main() {
@@ -19,7 +24,10 @@ func main() {
 		log.Panic(err)
 	}
 
-	app := func(env *env.Environment, rtr schema.Retryer, sbs subscriber.Subscriber, pms handler.Parameters) error {
+	sgs := make(chan os.Signal, 1)
+	signal.Notify(sgs, os.Interrupt, syscall.SIGTERM)
+
+	app := func(env *env.Environment, rtr schema.Retryer, sbs *subscriber.Subscriber, pms handler.Parameters) error {
 		ctx := context.Background()
 		hdl := handler.NewArticleBulk(&pms)
 		scf := &subscriber.Config{
@@ -28,8 +36,12 @@ func main() {
 			NumberOfWorkers: env.NumberOfWorkers,
 		}
 
+		pms.Metrics.AddStructuredDataMetrics()
+
 		go func() {
 			for evt := range scf.Events {
+				pms.Metrics.Inc(pr.SDTtlErrs)
+
 				if evt.Message == nil {
 					log.Println(evt.Error)
 				}
@@ -48,6 +60,24 @@ func main() {
 						log.Println(err)
 					}
 				}
+			}
+		}()
+
+		go func() {
+			<-sgs
+			err := pms.Tracer.Shutdown(ctx)
+
+			if err != nil {
+				log.Println(err)
+			}
+		}()
+
+		go func() {
+			if err := pr.Run(pr.Parameters{
+				Port:    pms.Env.PrometheusPort,
+				Metrics: pms.Metrics,
+			}); err != nil {
+				log.Println(err)
 			}
 		}()
 

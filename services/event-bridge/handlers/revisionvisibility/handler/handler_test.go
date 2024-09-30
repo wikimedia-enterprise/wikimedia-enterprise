@@ -17,6 +17,8 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
 	eventstream "github.com/wikimedia-enterprise/wmf-event-stream-sdk-go"
+
+	kaf "github.com/confluentinc/confluent-kafka-go/kafka"
 )
 
 var errHandlerTest = errors.New("handler test error")
@@ -64,6 +66,20 @@ func (d *handlerIdentifiersMock) GetLanguage(_ context.Context, dbname string) (
 	args := d.Called(dbname)
 
 	return args.Get(0).(string), args.Error(1)
+}
+
+type TracerMock struct{}
+
+func (t *TracerMock) Trace(ctx context.Context, _ map[string]string) (func(err error, msg string), context.Context) {
+	return func(err error, msg string) {}, ctx
+}
+
+func (t *TracerMock) Shutdown(ctx context.Context) error {
+	return nil
+}
+
+func (t *TracerMock) StartTrace(ctx context.Context, _ string, _ map[string]string) (func(err error, msg string), context.Context) {
+	return func(err error, msg string) {}, ctx
 }
 
 type handlerTestSuite struct {
@@ -139,6 +155,7 @@ func (s *handlerTestSuite) SetupTest() {
 			Identifier: fmt.Sprintf("/%s/%s", article.IsPartOf.Identifier, article.Name),
 			Type:       schema.KeyTypeArticle,
 		},
+		Headers: []kaf.Header{},
 	}
 
 	s.ctx = context.Background()
@@ -150,6 +167,7 @@ func (s *handlerTestSuite) SetupTest() {
 		Redis:      s.redis,
 		Dictionary: s.dictionary,
 		Env:        s.env,
+		Tracer:     &TracerMock{},
 	}
 }
 
