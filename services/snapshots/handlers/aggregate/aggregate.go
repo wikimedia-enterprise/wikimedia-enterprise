@@ -5,25 +5,25 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"log"
 	"strings"
 	"time"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/s3"
-	"github.com/aws/aws-sdk-go/service/s3/s3iface"
 	"go.uber.org/dig"
 
+	"wikimedia-enterprise/general/log"
 	"wikimedia-enterprise/general/schema"
 	"wikimedia-enterprise/services/snapshots/config/env"
 	pb "wikimedia-enterprise/services/snapshots/handlers/protos"
+	"wikimedia-enterprise/services/snapshots/libraries/s3tracerproxy"
 )
 
 // Handler represents dependency injection and logic for the aggregate handler.
 type Handler struct {
 	dig.In
 	Env *env.Environment
-	S3  s3iface.S3API
+	S3  s3tracerproxy.S3TracerProxy
 }
 
 // Aggregate goes through the snapshots and creates an aggregation for API call listings.
@@ -41,6 +41,11 @@ func (h *Handler) Aggregate(ctx context.Context, req *pb.AggregateRequest) (*pb.
 			prx,
 			time.Unix(0, req.GetSince()*int64(time.Millisecond)).Format("2006-01-02"),
 		)
+	}
+
+	// if snapshot_identifier is present, append it to the key
+	if req.GetSnapshot() != "" {
+		key = fmt.Sprintf("%s/%s", key, req.GetSnapshot())
 	}
 
 	kys := []*string{}
@@ -74,7 +79,10 @@ func (h *Handler) Aggregate(ctx context.Context, req *pb.AggregateRequest) (*pb.
 		})
 
 		if err != nil {
-			log.Println(err.Error())
+			log.Error(
+				err.Error(),
+				log.Any("key", key),
+			)
 			continue
 		}
 
@@ -82,7 +90,10 @@ func (h *Handler) Aggregate(ctx context.Context, req *pb.AggregateRequest) (*pb.
 
 		if err := json.NewDecoder(out.Body).Decode(snp); err != nil {
 			_ = out.Body.Close()
-			log.Println(err.Error())
+			log.Error(
+				err.Error(),
+				log.Any("key", key),
+			)
 			res.Errors++
 			continue
 		}
@@ -93,7 +104,11 @@ func (h *Handler) Aggregate(ctx context.Context, req *pb.AggregateRequest) (*pb.
 			dta, err := json.Marshal(snp)
 
 			if err != nil {
-				log.Println(err.Error())
+				log.Error(
+					err.Error(),
+					log.Any("key", key),
+				)
+
 				res.Errors++
 				continue
 			}
@@ -102,14 +117,21 @@ func (h *Handler) Aggregate(ctx context.Context, req *pb.AggregateRequest) (*pb.
 		}
 	}
 
-	pin := &s3.PutObjectInput{
-		Bucket: aws.String(h.Env.AWSBucket),
-		Key:    aws.String(fmt.Sprintf("aggregations/%s/%s.ndjson", key, prx)),
-		Body:   strings.NewReader(strings.Trim(hrs, "\n")),
-	}
+	if len(hrs) > 0 {
+		pin := &s3.PutObjectInput{
+			Bucket: aws.String(h.Env.AWSBucket),
+			Key:    aws.String(fmt.Sprintf("aggregations/%s/%s.ndjson", key, prx)),
+			Body:   strings.NewReader(strings.Trim(hrs, "\n")),
+		}
 
-	if _, err := h.S3.PutObjectWithContext(ctx, pin); err != nil {
-		return nil, err
+		if _, err := h.S3.PutObjectWithContext(ctx, pin); err != nil {
+			return nil, err
+		}
+	} else {
+		log.Info(
+			"no metadata found to aggregate",
+			log.Any("key", key),
+		)
 	}
 
 	return res, nil

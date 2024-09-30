@@ -13,12 +13,13 @@ import (
 // versionBuilderTestSuite is the test suite for the VersionBuilder
 type versionBuilderTestSuite struct {
 	suite.Suite
+	rdm     *rand.Rand
 	builder *builder.VersionBuilder
 }
 
 func (s *versionBuilderTestSuite) SetupTest() {
 	// Seed random generator
-	rand.Seed(time.Now().UnixNano())
+	s.rdm = rand.New(rand.NewSource(time.Now().UnixNano()))
 
 	s.builder = builder.NewVersionBuilder()
 }
@@ -34,7 +35,7 @@ func (s *versionBuilderTestSuite) TestNewVersionBuilder() {
 }
 
 func (s *versionBuilderTestSuite) TestIdentifier() {
-	id := rand.Int()
+	id := s.rdm.Int()
 	version := s.builder.Identifier(id).Build()
 
 	s.Assert().Equal(id, version.Identifier)
@@ -94,9 +95,9 @@ func (s *versionBuilderTestSuite) TestScores() {
 
 func (s *versionBuilderTestSuite) TestEditor() {
 	editor := &schema.Editor{
-		Identifier: rand.Int(),
+		Identifier: s.rdm.Int(),
 		Name:       "Citation Bot",
-		EditCount:  rand.Int(),
+		EditCount:  s.rdm.Int(),
 	}
 
 	version := s.builder.Editor(editor).Build()

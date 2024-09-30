@@ -12,7 +12,7 @@ import (
 
 // New creates new instance of WordsPairGetter for dependency injection.
 func New(env *env.Environment) (WordsPairGetter, error) {
-	cnn, err := grpc.Dial(env.TextProcessorURL, grpc.WithTransportCredentials(insecure.NewCredentials()))
+	cnn, err := grpc.NewClient(env.TextProcessorURL, grpc.WithTransportCredentials(insecure.NewCredentials()))
 
 	if err != nil {
 		return nil, err

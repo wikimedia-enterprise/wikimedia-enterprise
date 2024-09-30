@@ -7,8 +7,10 @@ import (
 	"strings"
 	"time"
 	"wikimedia-enterprise/general/log"
+	pr "wikimedia-enterprise/general/prometheus"
 	"wikimedia-enterprise/general/schema"
 	"wikimedia-enterprise/general/subscriber"
+	"wikimedia-enterprise/general/tracing"
 	"wikimedia-enterprise/general/wmf"
 	"wikimedia-enterprise/services/structured-data/config/env"
 
@@ -20,25 +22,40 @@ import (
 // Parameters is a dependency injection params for the handler.
 type Parameters struct {
 	dig.In
-	Stream schema.UnmarshalProducer
-	Env    *env.Environment
-	API    wmf.API
+	Stream  schema.UnmarshalProducer
+	Env     *env.Environment
+	API     wmf.API
+	Tracer  tracing.Tracer
+	Metrics *pr.Metrics
 }
 
 // NewArticleDelete verifies that the page was deleted.
 // If the mediawiki API call fails, it produces to the error or dead letter topic based on the fail count.
 func NewArticleDelete(p *Parameters) subscriber.Handler {
 	return func(ctx context.Context, msg *kafka.Message) error {
+		hcr := tracing.NewHeadersCarrier()
+		hcr.FromKafkaHeaders(msg.Headers)
+		hcx := hcr.ExtractContext(ctx)
+
+		end, trx := p.Tracer.StartTrace(hcx, "article-delete", map[string]string{})
+		var err error
+		defer func() {
+			if err != nil {
+				end(err, "error processing article-delete event")
+			} else {
+				end(nil, "article-delete event processed")
+			}
+		}()
 
 		key := new(schema.Key)
 
-		if err := p.Stream.Unmarshal(ctx, msg.Key, key); err != nil {
+		if err := p.Stream.Unmarshal(trx, msg.Key, key); err != nil {
 			return err
 		}
 
 		art := new(schema.Article)
 
-		if err := p.Stream.Unmarshal(ctx, msg.Value, art); err != nil {
+		if err := p.Stream.Unmarshal(trx, msg.Value, art); err != nil {
 			return err
 		}
 
@@ -60,7 +77,7 @@ func NewArticleDelete(p *Parameters) subscriber.Handler {
 			"wbeulimit",
 		}
 
-		pge, err := p.API.GetPage(ctx, art.IsPartOf.Identifier, art.Name, func(v *url.Values) {
+		pge, err := p.API.GetPage(trx, art.IsPartOf.Identifier, art.Name, func(v *url.Values) {
 			for _, prp := range pdl {
 				v.Del(prp)
 			}
@@ -85,30 +102,34 @@ func NewArticleDelete(p *Parameters) subscriber.Handler {
 			)
 		}
 
+		hds := tracing.NewHeadersCarrier().InjectContext(trx)
+
 		mgs := []*schema.Message{
 			{
-				Config: schema.ConfigArticle,
-				Topic:  p.Env.TopicArticles,
-				Value:  art,
-				Key:    key,
+				Config:  schema.ConfigArticle,
+				Topic:   p.Env.TopicArticles,
+				Value:   art,
+				Key:     key,
+				Headers: hds,
 			},
 		}
 
 		for _, tpc := range tcs {
 			mgs = append(mgs, &schema.Message{
-				Config: schema.ConfigArticle,
-				Topic:  tpc,
-				Value:  art,
-				Key:    key,
+				Config:  schema.ConfigArticle,
+				Topic:   tpc,
+				Value:   art,
+				Key:     key,
+				Headers: hds,
 			})
 		}
 
 		if err == wmf.ErrPageNotFound {
-			return p.Stream.Produce(ctx, mgs...)
+			return p.Stream.Produce(trx, mgs...)
 		}
 
 		if pge != nil && pge.Missing {
-			return p.Stream.Produce(ctx, mgs...)
+			return p.Stream.Produce(trx, mgs...)
 		}
 
 		// normalize title for comparison
@@ -129,7 +150,7 @@ func NewArticleDelete(p *Parameters) subscriber.Handler {
 			for _, red := range pge.Redirects {
 				if strings.ToLower(red.Title) == ntl {
 					log.Info("redirect left behind after page-move", lgf...)
-					return p.Stream.Produce(ctx, mgs...)
+					return p.Stream.Produce(trx, mgs...)
 				}
 			}
 

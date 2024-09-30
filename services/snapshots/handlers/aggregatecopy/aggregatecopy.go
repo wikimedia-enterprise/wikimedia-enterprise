@@ -8,18 +8,18 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/s3"
-	"github.com/aws/aws-sdk-go/service/s3/s3iface"
 	"go.uber.org/dig"
 
 	"wikimedia-enterprise/services/snapshots/config/env"
 	pb "wikimedia-enterprise/services/snapshots/handlers/protos"
+	s3tracerproxy "wikimedia-enterprise/services/snapshots/libraries/s3tracerproxy"
 )
 
 // Handler represents dependency injection and logic for the aggregate copy handler.
 type Handler struct {
 	dig.In
 	Env *env.Environment
-	S3  s3iface.S3API
+	S3  s3tracerproxy.S3TracerProxy
 }
 
 // AggregateCopy copies project snapshots aggregated metadata.

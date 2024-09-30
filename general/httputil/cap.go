@@ -3,13 +3,20 @@ package httputil
 import (
 	"context"
 	"encoding/json"
+	"errors"
 	"fmt"
+	"slices"
+	"strings"
 
 	"github.com/gin-gonic/gin"
 	"github.com/go-redis/redis/v8"
 	"go.uber.org/dig"
+)
 
-	"golang.org/x/exp/slices"
+// Errors for cap config.
+var (
+	ErrMissingPaths  = errors.New("prefix group provided but missing paths in cap config")
+	ErrMissingGroups = errors.New("user groups missing in cap config")
 )
 
 // Capper is an interface that defines the Check method, which is used to check
@@ -44,7 +51,7 @@ func (c *CapByRedis) Check(ctx context.Context, idr string, lmt int) (bool, erro
 		return true, nil
 	}
 
-	if cnt > lmt {
+	if cnt >= lmt {
 		return false, nil
 	}
 
@@ -56,29 +63,41 @@ func (c *CapByRedis) Check(ctx context.Context, idr string, lmt int) (bool, erro
 }
 
 // CapConfig is a struct that holds the configuration for the request capper.
+// The purpose of PrefixGroup and Paths is to provide limits per set of paths.
+// Some paths together have a limit. For example, on-demand APIs (/articles, /structured-contents) have a combined limit of 10K.
+// So, for PrefixGroup `ondemand`, the relevant paths are `articles` and `structured-contents`.
+// The cap config can be used without PrefixGroup and Paths. In this case, the cap is applied universally to all paths
+// if one of the config group matches with the user group.
+// More valid examples of CapConfig:
+// {PrefixGroup: "cap:ondemand", Paths: []string{"articles", "structured-contents"}, Limit: 100000, Groups: []string{"group-a", "group-b"}}
+// {Limit: 10000000000, Groups: []string{ "group-c"}}
 type CapConfig struct {
-	Prefix string   `json:"prefix,omitempty"`
-	Limit  int      `json:"limit"`
-	Groups []string `json:"groups"`
+	Paths       []string `json:"paths,omitempty"`
+	PrefixGroup string   `json:"prefix_group,omitempty"`
+	Limit       int      `json:"limit"`
+	Groups      []string `json:"groups"`
+}
+
+// CapConfigWrapper is a type that wraps a slice of CapConfig structs and
+type CapConfigWrapper []*CapConfig
+
+func New(cap []*CapConfig) CapConfigWrapper {
+	return CapConfigWrapper(cap)
 }
 
 // UnmarshalEnvironmentValue is a method of CapConfig that unmarshals the
 // configuration data from a string.
-func (c *CapConfig) UnmarshalEnvironmentValue(dta string) error {
-	if c == nil {
-		c = new(CapConfig)
-	}
-
-	return json.Unmarshal([]byte(dta), c)
+func (c *CapConfigWrapper) UnmarshalEnvironmentValue(dta string) error {
+	return json.Unmarshal([]byte(dta), &c)
 }
 
 // Cap is a function that returns a Gin middleware that limits the number of
 // requests that can be made by a user. The middleware uses the given Capper
 // implementation and configuration to check whether a request can be processed
 // or not.
-func Cap(cpr Capper, cfg *CapConfig) gin.HandlerFunc {
+func Cap(cpr Capper, cfg CapConfigWrapper) gin.HandlerFunc {
 	return func(gcx *gin.Context) {
-		if cpr == nil || cfg == nil {
+		if cpr == nil || len(cfg) == 0 {
 			gcx.Next()
 			return
 		}
@@ -99,18 +118,49 @@ func Cap(cpr Capper, cfg *CapConfig) gin.HandlerFunc {
 
 		grp := usr.GetGroup()
 
-		if len(cfg.Groups) > 0 && !slices.Contains(cfg.Groups, grp) {
+		idr := fmt.Sprintf("user:%s", usr.GetUsername()) // If no PrefixGroup is provided, the identifier will be prefix group-agnostic
+		// for example user:userx
+		var cnt, lmt int
+
+		for _, c := range cfg {
+			if len(c.Groups) == 0 {
+				AbortWithInternalServerError(gcx, ErrMissingGroups)
+				return
+			}
+
+			if !slices.Contains(c.Groups, grp) {
+				cnt++
+				continue
+			}
+
+			switch lpg := len(c.PrefixGroup); {
+
+			case lpg > 0: // Path specific limiting
+				if len(c.Paths) == 0 {
+					AbortWithInternalServerError(gcx, ErrMissingPaths)
+					return
+				}
+
+				for _, pth := range c.Paths {
+					if strings.Contains(gcx.Request.URL.Path, pth) {
+						idr = fmt.Sprintf("%s:%s", c.PrefixGroup, idr) // If PrefixGroup is provided, the identifier will be prefix group-specific
+						lmt = c.Limit                                  // for example cap:ondemand:user:userx
+						break
+					}
+				}
+
+			default: // Path-agnostic limiting
+				lmt = c.Limit
+			}
+		}
+
+		// If no rules match then the allow request
+		if cnt == len(cfg) {
 			gcx.Next()
 			return
 		}
 
-		idr := fmt.Sprintf("user:%s", usr.GetUsername())
-
-		if len(cfg.Prefix) > 0 {
-			idr = fmt.Sprintf("%s:%s", cfg.Prefix, idr)
-		}
-
-		isa, err := cpr.Check(gcx.Request.Context(), idr, cfg.Limit)
+		isa, err := cpr.Check(gcx.Request.Context(), idr, lmt)
 
 		if err != nil {
 			AbortWithInternalServerError(gcx, err)

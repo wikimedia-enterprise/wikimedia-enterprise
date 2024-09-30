@@ -7,18 +7,18 @@ import (
 	"wikimedia-enterprise/services/snapshots/config/env"
 	"wikimedia-enterprise/services/snapshots/handlers/aggregatecopy"
 	pb "wikimedia-enterprise/services/snapshots/handlers/protos"
+	"wikimedia-enterprise/services/snapshots/libraries/s3tracerproxy"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 	"github.com/aws/aws-sdk-go/service/s3"
-	"github.com/aws/aws-sdk-go/service/s3/s3iface"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
 )
 
 type s3Mock struct {
 	mock.Mock
-	s3iface.S3API
+	s3tracerproxy.S3TracerProxy
 }
 
 func (m *s3Mock) CopyObjectWithContext(_ aws.Context, _ *s3.CopyObjectInput, _ ...request.Option) (*s3.CopyObjectOutput, error) {
