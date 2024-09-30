@@ -12,10 +12,11 @@ import (
 type editorBuilderTestSuite struct {
 	suite.Suite
 	builder *builder.EditorBuilder
+	rdm     *rand.Rand
 }
 
 func (s *editorBuilderTestSuite) SetupTest() {
-	rand.Seed(time.Now().UnixNano())
+	s.rdm = rand.New(rand.NewSource(time.Now().UnixNano()))
 	s.builder = builder.NewEditorBuilder()
 }
 
@@ -27,7 +28,7 @@ func (s *editorBuilderTestSuite) TestNewEditorBuilder() {
 }
 
 func (s *editorBuilderTestSuite) TestIdentifier() {
-	id := rand.Int()
+	id := s.rdm.Int()
 	editor := s.builder.Identifier(id).Build()
 
 	s.Assert().Equal(id, editor.Identifier)
@@ -41,7 +42,7 @@ func (s *editorBuilderTestSuite) TestName() {
 }
 
 func (s *editorBuilderTestSuite) TestIsAnonymous() {
-	isAnonymous := rand.Float32() < 0.5
+	isAnonymous := s.rdm.Float32() < 0.5
 	editor := s.builder.IsAnonymous(isAnonymous).Build()
 
 	s.Assert().Equal(isAnonymous, editor.IsAnonymous)
@@ -61,7 +62,7 @@ func (s *editorBuilderTestSuite) TestDateStartedNilDate() {
 }
 
 func (s *editorBuilderTestSuite) TestEditCount() {
-	editCount := rand.Int()
+	editCount := s.rdm.Int()
 	editor := s.builder.EditCount(editCount).Build()
 
 	s.Assert().Equal(editCount, editor.EditCount)

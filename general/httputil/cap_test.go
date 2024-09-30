@@ -86,12 +86,12 @@ func TestCapByRedis(t *testing.T) {
 			idr: "test",
 			alw: true,
 			cnt: 1,
-			lmt: 1,
+			lmt: 2,
 		},
 		{
 			idr: "test",
 			alw: false,
-			cnt: 11,
+			cnt: 10,
 			lmt: 10,
 		},
 		{
@@ -112,16 +112,21 @@ func TestCapByRedis(t *testing.T) {
 			idr: "test",
 			cnt: 1,
 			lmt: 2,
-			ger: redis.Nil,
-			ser: ter,
+			ier: ter,
 			err: ter,
 		},
 		{
-			idr: "test",
+			idr: "cap:test:user:test",
 			cnt: 1,
 			lmt: 2,
 			ier: ter,
 			err: ter,
+		},
+		{
+			idr: "cap:test:user:test2",
+			alw: true,
+			cnt: 2,
+			lmt: 3,
 		},
 	} {
 		suite.Run(t, testCase)
@@ -132,8 +137,8 @@ type capMock struct {
 	mock.Mock
 }
 
-func (m *capMock) Check(_ context.Context, idr string, lmt int) (bool, error) {
-	ags := m.Called(idr, lmt)
+func (m *capMock) Check(_ context.Context, _ string, _ int) (bool, error) {
+	ags := m.Called()
 
 	return ags.Bool(0), ags.Error(1)
 }
@@ -145,7 +150,7 @@ type capTestSuite struct {
 	lmt int
 	alw bool
 	err error
-	cfg *CapConfig
+	cfg CapConfigWrapper
 	usr *User
 	cmk *capMock
 	srv *httptest.Server
@@ -158,6 +163,7 @@ func (s *capTestSuite) createServer() http.Handler {
 	rtr.Use(func(gcx *gin.Context) {
 		gcx.Set("user", s.usr)
 	})
+
 	rtr.GET("/test", Cap(s.cmk, s.cfg), func(gcx *gin.Context) {
 		gcx.Status(http.StatusOK)
 	})
@@ -167,8 +173,7 @@ func (s *capTestSuite) createServer() http.Handler {
 
 func (s *capTestSuite) SetupSuite() {
 	s.cmk = new(capMock)
-	s.cmk.On("Check", s.idr, s.lmt).Return(s.alw, s.err)
-
+	s.cmk.On("Check").Return(s.alw, s.err)
 	s.srv = httptest.NewServer(s.createServer())
 }
 
@@ -198,33 +203,39 @@ func TestCap(t *testing.T) {
 				Username: "test",
 				Groups:   []string{"group_2"},
 			},
-			cfg: &CapConfig{
-				Limit:  10,
-				Groups: []string{"group_1"},
+			cfg: []*CapConfig{
+				{
+					Limit:  10,
+					Groups: []string{"group_1"},
+				},
 			},
 			idr: "user:test",
 			lmt: 10,
 		},
 		{
-			sts: http.StatusOK,
+			sts: http.StatusTooManyRequests,
 			usr: &User{
 				Username: "test",
 				Groups:   []string{"group_2"},
 			},
-			cfg: &CapConfig{
-				Limit:  10,
-				Groups: []string{"group_2"},
+			cfg: []*CapConfig{
+				{
+					Limit:  10,
+					Groups: []string{"group_2"},
+				},
 			},
 			idr: "user:test",
-			lmt: 10,
-			alw: true,
+			lmt: 11,
+			alw: false,
 		},
 		{
 			sts: http.StatusUnauthorized,
 			usr: nil,
-			cfg: &CapConfig{
-				Limit:  10,
-				Groups: []string{"group_2"},
+			cfg: []*CapConfig{
+				{
+					Limit:  10,
+					Groups: []string{"group_2"},
+				},
 			},
 			idr: "user:test",
 			lmt: 10,
@@ -236,9 +247,11 @@ func TestCap(t *testing.T) {
 				Username: "test",
 				Groups:   []string{"group_2"},
 			},
-			cfg: &CapConfig{
-				Limit:  10,
-				Groups: []string{"group_2"},
+			cfg: []*CapConfig{
+				{
+					Limit:  10,
+					Groups: []string{"group_2"},
+				},
 			},
 			idr: "user:test",
 			lmt: 10,
@@ -250,14 +263,134 @@ func TestCap(t *testing.T) {
 				Username: "test",
 				Groups:   []string{"group_2"},
 			},
-			cfg: &CapConfig{
-				Limit:  10,
-				Groups: []string{"group_2"},
+			cfg: []*CapConfig{
+				{
+					Limit:  10,
+					Groups: []string{"group_2"},
+				},
 			},
 			idr: "user:test",
 			lmt: 10,
 			alw: false,
 			err: errors.New("this is a test error"),
+		},
+		{
+			sts: http.StatusInternalServerError,
+			usr: &User{
+				Username: "test",
+				Groups:   []string{"group_2"},
+			},
+			cfg: []*CapConfig{
+				{
+					Limit:  10,
+					Groups: []string{"group_2"},
+				},
+			},
+			idr: "user:test",
+			lmt: 10,
+			alw: false,
+			err: errors.New("this is a test error"),
+		},
+		{
+			sts: http.StatusInternalServerError,
+			usr: &User{
+				Username: "test",
+				Groups:   []string{"group_1"},
+			},
+			cfg: []*CapConfig{
+				{
+					Limit: 10,
+				},
+			},
+			idr: "cap:test:user:test",
+			lmt: 5,
+			alw: true,
+			err: ErrMissingGroups,
+		},
+		{
+			sts: http.StatusInternalServerError,
+			usr: &User{
+				Username: "test",
+				Groups:   []string{"group_1"},
+			},
+			cfg: []*CapConfig{
+				{
+					Limit:       10,
+					PrefixGroup: "ondemand",
+					Groups:      []string{"group_1"},
+				},
+			},
+			idr: "cap:test:user:test",
+			lmt: 5,
+			alw: true,
+			err: ErrMissingPaths,
+		},
+		{
+			sts: http.StatusOK,
+			usr: &User{
+				Username: "test",
+				Groups:   []string{"group_1"},
+			},
+			cfg: []*CapConfig{
+				{
+					Limit:       10,
+					Groups:      []string{"group_1"},
+					PrefixGroup: "cap:ondemand",
+					Paths:       []string{"test"},
+				},
+				{
+					Limit:  19,
+					Groups: []string{"group_2"},
+				},
+			},
+			idr: "cap:test:user:test",
+			lmt: 5,
+			alw: true,
+			err: nil,
+		},
+		{
+			sts: http.StatusTooManyRequests,
+			usr: &User{
+				Username: "test",
+				Groups:   []string{"group_1"},
+			},
+			cfg: []*CapConfig{
+				{
+					Limit:       10,
+					Groups:      []string{"group_1"},
+					PrefixGroup: "cap:ondemand",
+					Paths:       []string{"test"},
+				},
+				{
+					Limit:  19,
+					Groups: []string{"group_2"},
+				},
+			},
+			idr: "cap:test:user:test",
+			lmt: 50,
+			alw: false,
+			err: nil,
+		},
+		{
+			sts: http.StatusOK,
+			usr: &User{
+				Username: "test2",
+				Groups:   []string{"group_2"},
+			},
+			cfg: []*CapConfig{
+				{
+					Limit:  100,
+					Groups: []string{"group_3"},
+				},
+				{
+					Limit:  10,
+					Groups: []string{"group_1"},
+				},
+			},
+			idr: "user:test2",
+			lmt: 1000,
+			alw: true,
+			err: nil,
 		},
 	} {
 		suite.Run(t, testCase)

@@ -7,7 +7,9 @@ import (
 	"wikimedia-enterprise/services/snapshots/config/env"
 	"wikimedia-enterprise/services/snapshots/libraries/kafka"
 	"wikimedia-enterprise/services/snapshots/libraries/s3api"
+	"wikimedia-enterprise/services/snapshots/libraries/s3tracerproxy"
 	"wikimedia-enterprise/services/snapshots/libraries/stream"
+	trc "wikimedia-enterprise/services/snapshots/libraries/tracer"
 	"wikimedia-enterprise/services/snapshots/libraries/uploader"
 
 	"go.uber.org/dig"
@@ -21,6 +23,8 @@ func New() (*dig.Container, error) {
 		cnt.Provide(env.New),
 		cnt.Provide(uploader.New),
 		cnt.Provide(s3api.New),
+		cnt.Provide(trc.NewAPI),
+		cnt.Provide(s3tracerproxy.NewStorageTrace),
 		cnt.Provide(stream.New),
 		cnt.Provide(kafka.NewPool),
 		cnt.Provide(config.New),

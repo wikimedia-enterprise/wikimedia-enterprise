@@ -8,8 +8,10 @@ import (
 	"strings"
 	"wikimedia-enterprise/general/log"
 	"wikimedia-enterprise/general/parser"
+	pr "wikimedia-enterprise/general/prometheus"
 	"wikimedia-enterprise/general/schema"
 	"wikimedia-enterprise/general/subscriber"
+	"wikimedia-enterprise/general/tracing"
 	"wikimedia-enterprise/services/structured-data/config/env"
 	"wikimedia-enterprise/services/structured-data/libraries/aggregate"
 	"wikimedia-enterprise/services/structured-data/packages/abstract"
@@ -28,6 +30,8 @@ type Parameters struct {
 	Stream     schema.UnmarshalProducer
 	Aggregator aggregate.Aggregator
 	Parser     parser.API
+	Tracer     tracing.Tracer
+	Metrics    *pr.Metrics
 }
 
 // NewArticleBulk will produce an articles schema messages for all article titles consumed from a kafka message
@@ -36,9 +40,22 @@ type Parameters struct {
 // and build an article schema instance with the latest data available.
 func NewArticleBulk(p *Parameters) subscriber.Handler {
 	return func(ctx context.Context, msg *kafka.Message) error {
+		hcr := tracing.NewHeadersCarrier()
+		hcr.FromKafkaHeaders(msg.Headers)
+		hcx := hcr.ExtractContext(ctx)
+		end, trx := p.Tracer.StartTrace(hcx, "article-bulk", map[string]string{})
+		var err error
+		defer func() {
+			if err != nil {
+				end(err, "error processing article-bulk event")
+			} else {
+				end(nil, "article-bulk event processed")
+			}
+		}()
+
 		pld := new(schema.ArticleNames)
 
-		if err := p.Stream.Unmarshal(ctx, msg.Value, pld); err != nil {
+		if err := p.Stream.Unmarshal(trx, msg.Value, pld); err != nil {
 			return err
 		}
 
@@ -53,8 +70,8 @@ func NewArticleBulk(p *Parameters) subscriber.Handler {
 		dtb := pld.IsPartOf.Identifier
 		ags := map[string]*aggregate.Aggregation{}
 
-		err := p.Aggregator.GetAggregations(
-			ctx, dtb, tls, ags,
+		err = p.Aggregator.GetAggregations(
+			trx, dtb, tls, ags,
 			aggregate.WithPages(1, len(tls)),
 			// aggregate.WithRevisions(len(tls)),
 			aggregate.WithPagesHTML(len(tls)),
@@ -177,16 +194,19 @@ func NewArticleBulk(p *Parameters) subscriber.Handler {
 				return err
 			}
 
+			hds := tracing.NewHeadersCarrier().InjectContext(hcx)
+
 			for _, tpc := range tcs {
 				mgs = append(mgs, &schema.Message{
-					Config: schema.ConfigArticle,
-					Topic:  tpc,
-					Value:  art,
-					Key:    key,
+					Config:  schema.ConfigArticle,
+					Topic:   tpc,
+					Value:   art,
+					Key:     key,
+					Headers: hds,
 				})
 			}
 		}
 
-		return p.Stream.Produce(ctx, mgs...)
+		return p.Stream.Produce(hcx, mgs...)
 	}
 }

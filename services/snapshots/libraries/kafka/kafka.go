@@ -177,6 +177,10 @@ func NewPool(env *env.Environment) ConsumerGetter {
 		cfg["sasl.password"] = env.KafkaCreds.Password
 	}
 
+	if len(env.KafkaAutoOffsetReset) > 0 {
+		cfg["auto.offset.reset"] = env.KafkaAutoOffsetReset
+	}
+
 	return &Pool{
 		Config: &cfg,
 	}

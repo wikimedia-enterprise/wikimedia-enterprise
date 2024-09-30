@@ -68,8 +68,16 @@ type envTestSuite struct {
 	noindexTemplatePatterns         env.List
 	noindexCategoryPatternsKey      string
 	noindexCategoryPatterns         env.List
-	LatencyThresholdMS              int64
-	LatencyThresholdKey             string
+	latencyThresholdMS              int64
+	latencyThresholdKey             string
+	serviceName                     string
+	serviceNameKey                  string
+	tracingGRPCHost                 string
+	tracingGRPCHostKey              string
+	tracingSamplingRate             float64
+	tracingSamplingRateKey          string
+	prometheusPort                  int
+	prometheusPortKey               string
 }
 
 func (s *envTestSuite) SetupSuite() {
@@ -135,8 +143,17 @@ func (s *envTestSuite) SetupSuite() {
 	s.noindexTemplatePatterns = env.List{"noindex"}
 	s.noindexCategoryPatternsKey = "NOINDEX_CATEGORY_PATTERNS"
 	s.noindexCategoryPatterns = env.List{"noindex"}
-	s.LatencyThresholdKey = "LATENCY_THRESHOLD_MS"
-	s.LatencyThresholdMS = 500
+	s.latencyThresholdKey = "LATENCY_THRESHOLD_MS"
+	s.latencyThresholdMS = 500
+
+	s.serviceName = "structured-data.service"
+	s.serviceNameKey = "SERVICE_NAME"
+	s.tracingGRPCHost = "collector"
+	s.tracingGRPCHostKey = "OTEL_COLLECTOR_ADDR"
+	s.tracingSamplingRate = 0.1
+	s.tracingSamplingRateKey = "TRACING_SAMPLING_RATE"
+	s.prometheusPort = 12411
+	s.prometheusPortKey = "PROMETHEUS_PORT"
 }
 
 func (s *envTestSuite) SetupTest() {
@@ -168,7 +185,7 @@ func (s *envTestSuite) SetupTest() {
 	os.Setenv(s.contentintegrityURLKey, s.contentintegrityURL)
 	os.Setenv(s.breakingNewsEnabledKey, strconv.FormatBool(s.breakingNewsEnabled))
 	os.Setenv(s.oauthTokenKey, s.oauthToken)
-	os.Setenv(s.LatencyThresholdKey, strconv.FormatInt(s.LatencyThresholdMS, 10))
+	os.Setenv(s.latencyThresholdKey, strconv.FormatInt(s.latencyThresholdMS, 10))
 
 	tmp, err := json.Marshal(s.noindexTemplatePatterns)
 	s.Assert().NoError(err)
@@ -177,6 +194,12 @@ func (s *envTestSuite) SetupTest() {
 	ctg, err := json.Marshal(s.noindexCategoryPatterns)
 	s.Assert().NoError(err)
 	os.Setenv(s.noindexCategoryPatternsKey, string(ctg))
+
+	os.Setenv(s.serviceNameKey, s.serviceName)
+	os.Setenv(s.tracingGRPCHostKey, s.tracingGRPCHost)
+	os.Setenv(s.tracingSamplingRateKey, strconv.FormatFloat(s.tracingSamplingRate, 'f', -1, 64))
+
+	os.Setenv(s.prometheusPortKey, strconv.Itoa(s.prometheusPort))
 }
 
 func (s *envTestSuite) TestNew() {
@@ -203,7 +226,7 @@ func (s *envTestSuite) TestNew() {
 	s.Assert().Equal(s.textProcessorURL, env.TextProcessorURL)
 	s.Assert().Equal(s.enableDiffs, env.EnableDiffs)
 	s.Assert().Equal(s.numberOfWorkers, env.NumberOfWorkers)
-	s.Assert().Equal(s.LatencyThresholdMS, env.LatencyThresholdMS)
+	s.Assert().Equal(s.latencyThresholdMS, env.LatencyThresholdMS)
 
 	creds, err := json.Marshal(env.KafkaCreds)
 	s.Assert().NoError(err)
@@ -223,6 +246,10 @@ func (s *envTestSuite) TestNew() {
 
 	s.Assert().Equal(s.noindexTemplatePatterns, env.NoindexTemplatePatterns)
 	s.Assert().Equal(s.noindexCategoryPatterns, env.NoindexCategoryPatterns)
+
+	s.Assert().Equal(s.serviceName, env.ServiceName)
+	s.Assert().Equal(s.tracingGRPCHost, env.TracingGRPCHost)
+	s.Assert().Equal(s.tracingSamplingRate, env.TracingSamplingRate)
 }
 
 func TestEnv(t *testing.T) {

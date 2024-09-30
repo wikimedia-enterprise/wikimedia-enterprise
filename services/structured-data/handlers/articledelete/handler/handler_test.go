@@ -48,6 +48,20 @@ func (m *apiMock) GetPage(_ context.Context, dtb string, ttl string, _ ...func(*
 	return ags.Get(0).(*wmf.Page), ags.Error(1)
 }
 
+type TracerMock struct{}
+
+func (t *TracerMock) Trace(ctx context.Context, _ map[string]string) (func(err error, msg string), context.Context) {
+	return func(err error, msg string) {}, ctx
+}
+
+func (t *TracerMock) StartTrace(ctx context.Context, _ string, _ map[string]string) (func(err error, msg string), context.Context) {
+	return func(err error, msg string) {}, ctx
+}
+
+func (t *TracerMock) Shutdown(ctx context.Context) error {
+	return nil
+}
+
 type handlerTestSuite struct {
 	suite.Suite
 	ctx context.Context
@@ -81,6 +95,7 @@ func (s *handlerTestSuite) SetupSuite() {
 				Versions: []string{"v1"},
 			},
 		},
+		Tracer: &TracerMock{},
 	}
 }
 

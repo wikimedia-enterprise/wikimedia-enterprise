@@ -63,6 +63,16 @@ type PagesHTMLGetter interface {
 	GetPagesHTML(ctx context.Context, dtb string, tls []string, mxc int, ops ...func(*url.Values)) map[string]*PageHTML
 }
 
+// GetRevisionHTML interface to expose method that gets single page HTML content.
+type RevisionHTMLGetter interface {
+	GetRevisionHTML(ctx context.Context, dtb string, rid string, ops ...func(*url.Values)) (string, error)
+}
+
+// GetRevisionsHTML interface to expose method that gets a list page HTML content concurrently.
+type RevisionsHTMLGetter interface {
+	GetRevisionsHTML(ctx context.Context, dtb string, rvs []string, mxc int, ops ...func(*url.Values)) map[string]*PageHTML
+}
+
 // LanguagesGetter interface to expose method that gets list of available languages using database name.
 type LanguagesGetter interface {
 	GetLanguages(ctx context.Context, dtb string, ops ...func(*url.Values)) ([]*Language, error)
@@ -113,6 +123,11 @@ type PageSummaryGetter interface {
 	GetPageSummary(ctx context.Context, dtb string, ttl string, ops ...func(*url.Values)) (*PageSummary, error)
 }
 
+// FileDownloader interface to download files from commons.
+type FileDownloader interface {
+	DownloadFile(ctx context.Context, url string, ops ...func(*http.Request)) ([]byte, error)
+}
+
 // API interface fot the whole API client.
 type API interface {
 	AllPagesGetter
@@ -120,6 +135,8 @@ type API interface {
 	PageGetter
 	PagesHTMLGetter
 	PageHTMLGetter
+	RevisionHTMLGetter
+	RevisionsHTMLGetter
 	LanguagesGetter
 	LanguageGetter
 	ProjectGetter
@@ -128,6 +145,7 @@ type API interface {
 	UserGetter
 	ScoreGetter
 	PageSummaryGetter
+	FileDownloader
 }
 
 // Response generic structure for Actions API response.
@@ -232,6 +250,32 @@ type Normalization struct {
 	To          string `json:"to,omitempty"`
 }
 
+// Ext common representation of a extmetadata.
+type Ext struct {
+	Value string `json:"value"`
+}
+
+// ExtMetadata representation of collection of extmetadata.
+type ExtMetadata struct {
+	LicenseShortName *Ext `json:"LicenseShortName"`
+	LicenseUrl       *Ext `json:"LicenseUrl"`
+}
+
+// ImageinfoElement representation of imageinfo data in Actions API.
+type ImageinfoElement struct {
+	Timestamp      *time.Time   `json:"timestamp"`
+	User           string       `json:"user"`
+	UserID         int          `json:"userid"`
+	Size           int64        `json:"size"`
+	Width          int          `json:"width"`
+	Height         int          `json:"height"`
+	Mime           string       `json:"mime"`
+	Url            string       `json:"url"`
+	DescriptionUrl string       `json:"descriptionurl"`
+	Sha1           string       `json:"sha1"`
+	ExtMetadata    *ExtMetadata `json:"extmetadata"`
+}
+
 // Page represent page data response in Actions API.
 type Page struct {
 	PageID               int                       `json:"pageid,omitempty"`
@@ -261,6 +305,7 @@ type Page struct {
 	Flagged              *Flagged                  `json:"flagged"`
 	Original             *Image                    `json:"original,omitempty"`
 	Thumbnail            *Image                    `json:"thumbnail,omitempty"`
+	Imageinfo            []*ImageinfoElement       `json:"imageinfo"`
 }
 
 // WbEntityUsage represents wikibase entity usage for the page.
@@ -316,9 +361,10 @@ type User struct {
 
 // PageHTML representation of concurrent HTML API response.
 type PageHTML struct {
-	Title   string `json:"title"`
-	Content string `json:"content"`
-	Error   error  `json:"error"`
+	Title    string `json:"title"`
+	Content  string `json:"content"`
+	Revision string `json:"revision,omitempty"`
+	Error    error  `json:"error"`
 }
 
 // Titles represents title properties for page summary.
@@ -538,7 +584,7 @@ func (c *Client) do(clt *http.Client, req *http.Request) (*http.Response, error)
 
 	if c.EnableRetryAfter && (res.StatusCode == http.StatusTooManyRequests || esu) {
 		if est, _ := getErrorString(res); len(est) > 0 {
-			log.Println(est)
+			log.Printf("wmf api returned 502-504 or 429 for request %s with error %s\nabout to retry\n", req.URL.String(), est)
 		}
 
 		dly := c.DefaultRetryAfter
@@ -560,7 +606,7 @@ func (c *Client) do(clt *http.Client, req *http.Request) (*http.Response, error)
 		return c.do(clt, req)
 	}
 
-	if res.StatusCode != http.StatusOK && res.StatusCode != http.StatusFound {
+	if res.StatusCode != http.StatusOK && res.StatusCode != http.StatusFound && res.StatusCode != http.StatusPartialContent {
 		dta, err := getErrorString(res)
 
 		if err != nil {
@@ -568,7 +614,7 @@ func (c *Client) do(clt *http.Client, req *http.Request) (*http.Response, error)
 			return nil, err
 		}
 
-		rer := fmt.Errorf("wmf api call returned status not 200 or 302 for url %s with error %s", req.URL.String(), dta)
+		rer := fmt.Errorf("wmf api call returned status not 200, 206 or 302 for url %s with error %s", req.URL.String(), dta)
 		etr(rer, "error response")
 
 		return nil, rer
@@ -810,7 +856,6 @@ func (c *Client) GetPageHTML(ctx context.Context, dtb string, ttl string, ops ..
 		opt(&qry)
 	}
 
-	// Switch to the new endpoint after the Content transform team fixes all the bugs
 	req, err := c.newRESTRequest(trx, dtb, fmt.Sprintf("w/rest.php/v1/page/%s/html", url.QueryEscape(strings.ReplaceAll(ttl, " ", "_"))), qry)
 
 	// Old restbase endpoint
@@ -872,6 +917,80 @@ func (c *Client) GetPagesHTML(ctx context.Context, dtb string, tls []string, mxc
 	for i := 0; i < tln; i++ {
 		phm := <-out
 		rsp[phm.Title] = phm
+	}
+
+	return rsp
+}
+
+// GetRevisionHTML gets HTML of the page using page revision Id.
+// Request query can be updated using `ops ...func(*url.Values)` property.
+func (c *Client) GetRevisionHTML(ctx context.Context, dtb string, rid string, ops ...func(*url.Values)) (string, error) {
+	end, trx := c.Tracer(ctx, map[string]string{"database": dtb, "revisionId": rid})
+
+	qry := url.Values{}
+
+	for _, opt := range ops {
+		opt(&qry)
+	}
+
+	req, err := c.newRESTRequest(trx, dtb, fmt.Sprintf("w/rest.php/v1/revision/%s/html", url.QueryEscape(rid)), qry)
+
+	if err != nil {
+		end(err, "new request failed")
+		return "", err
+	}
+
+	res, err := c.do(c.HTTPClient, req)
+
+	if err != nil {
+		end(err, "page html request failed")
+		return "", err
+	}
+
+	defer res.Body.Close()
+	dta, err := io.ReadAll(res.Body)
+
+	if err != nil {
+		end(err, "page html read failed")
+		return "", err
+	}
+
+	end(nil, "page html fetched")
+
+	return string(dta), nil
+}
+
+// GetRevisionsHTML makes concurrent requests to get HTML of the pages.
+// Parameter `mxc int` - is responsible for max amount concurrent requests.
+func (c *Client) GetRevisionsHTML(ctx context.Context, dtb string, rvs []string, mxc int, ops ...func(*url.Values)) map[string]*PageHTML {
+	aln := len(rvs)
+	que := make(chan string, aln)
+	out := make(chan *PageHTML, aln)
+
+	for i := 0; i < mxc; i++ {
+		go func() {
+			for rid := range que {
+				cnt, err := c.GetRevisionHTML(ctx, dtb, rid, ops...)
+
+				out <- &PageHTML{
+					Revision: rid,
+					Content:  cnt,
+					Error:    err,
+				}
+			}
+		}()
+	}
+
+	for _, rid := range rvs {
+		que <- rid
+	}
+
+	close(que)
+	rsp := map[string]*PageHTML{}
+
+	for i := 0; i < aln; i++ {
+		phm := <-out
+		rsp[phm.Revision] = phm
 	}
 
 	return rsp
@@ -1292,4 +1411,56 @@ func (c *Client) newLiftWingRequest(ctx context.Context, rev int, lng string, pr
 	req.Header.Set("User-Agent", c.UserAgent)
 	req.Header.Set("Authorization", fmt.Sprintf("Bearer %s", c.OAuthToken))
 	return req, nil
+}
+
+// DownloadFile downloads a file from Wikimedia Commons using the provided file full url path.
+// Optional ops can be used to set headers like Range or other request parameters.
+func (c *Client) DownloadFile(ctx context.Context, urp string, ops ...func(*http.Request)) ([]byte, error) {
+	end, trx := c.Tracer(ctx, map[string]string{"database": "commonswiki"})
+	var err error
+	defer func() {
+		if err != nil {
+			end(err, "error downloading file")
+		} else {
+			end(nil, "file downloaded")
+		}
+	}()
+
+	pur, err := url.Parse(urp)
+
+	if err != nil {
+		return nil, err
+	}
+
+	pur.RawPath = pur.EscapedPath()
+
+	req, err := http.NewRequestWithContext(trx, http.MethodGet, pur.String(), nil)
+
+	if err != nil {
+		return nil, err
+	}
+
+	// NewRequestWithContext decodes the url. We need to use the original url to retrieve the file.
+	req.URL = pur
+	req.Header.Set("User-Agent", c.UserAgent)
+
+	for _, opt := range ops {
+		opt(req)
+	}
+
+	res, err := c.do(c.HTTPClient, req)
+
+	if err != nil {
+		return nil, err
+	}
+
+	defer res.Body.Close()
+
+	dta, err := io.ReadAll(res.Body)
+
+	if err != nil {
+		return nil, err
+	}
+
+	return dta, nil
 }

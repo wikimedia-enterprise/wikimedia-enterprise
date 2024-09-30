@@ -2,22 +2,27 @@ package export_test
 
 import (
 	"context"
-	"crypto/md5"
+	"crypto/md5" // #nosec G501
+	"encoding/json"
 	"errors"
+
 	"fmt"
 	"io"
+	"reflect"
 	"testing"
+	"time"
+
 	"wikimedia-enterprise/general/config"
 	"wikimedia-enterprise/general/schema"
 	"wikimedia-enterprise/services/snapshots/config/env"
 	"wikimedia-enterprise/services/snapshots/handlers/export"
 	pb "wikimedia-enterprise/services/snapshots/handlers/protos"
 	libkafka "wikimedia-enterprise/services/snapshots/libraries/kafka"
+	"wikimedia-enterprise/services/snapshots/libraries/s3tracerproxy"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
 	"github.com/aws/aws-sdk-go/service/s3"
-	"github.com/aws/aws-sdk-go/service/s3/s3iface"
 	"github.com/aws/aws-sdk-go/service/s3/s3manager"
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 	nbf "github.com/djherbis/buffer"
@@ -72,8 +77,8 @@ type consumerMock struct {
 	libkafka.Consumer
 }
 
-func (m *consumerMock) ReadAll(_ context.Context, snc int, tpc string, pts []int, _ func(msg *kafka.Message) error) error {
-	ags := m.Called(snc, tpc, pts)
+func (m *consumerMock) ReadAll(_ context.Context, snc int, tpc string, pts []int, cb func(msg *kafka.Message) error) error {
+	ags := m.Called(snc, tpc, pts, cb)
 	return ags.Error(0)
 }
 
@@ -102,14 +107,18 @@ type uploaderMock struct {
 func (m *uploaderMock) Upload(uin *s3manager.UploadInput, _ ...func(*s3manager.Uploader)) (*s3manager.UploadOutput, error) {
 	ags := m.Called(*uin.Key)
 
-	_, _ = io.ReadAll(uin.Body)
+	_, err := io.ReadAll(uin.Body)
+	if err != nil {
+		fmt.Printf("error in Upload reading body: %v\n", err)
+		return nil, err
+	}
 
 	return nil, ags.Error(0)
 }
 
 type s3Mock struct {
 	mock.Mock
-	s3iface.S3API
+	s3tracerproxy.S3TracerProxy
 }
 
 func (m *s3Mock) HeadObjectWithContext(_ aws.Context, hin *s3.HeadObjectInput, _ ...request.Option) (*s3.HeadObjectOutput, error) {
@@ -136,6 +145,24 @@ func (c *configMock) GetPartitions(dtb string, nid int) []int {
 	return c.Called(dtb, nid).Get(0).([]int)
 }
 
+func (c *configMock) GetStructuredProjects() []string {
+	return c.Called().Get(0).([]string)
+}
+
+type mockUnmarshaler struct {
+	mock.Mock
+}
+
+func (m *mockUnmarshaler) Unmarshal(ctx context.Context, data []byte, v interface{}) error {
+	args := m.Called(ctx, data, v)
+	return args.Error(0)
+}
+
+func (m *mockUnmarshaler) UnmarshalNoCache(ctx context.Context, data []byte, v interface{}) error {
+	args := m.Called(ctx, data, v)
+	return args.Error(0)
+}
+
 type handlerTestSuite struct {
 	suite.Suite
 	ctx context.Context
@@ -146,57 +173,124 @@ type handlerTestSuite struct {
 	snc int
 	pts []int
 	sps [][]int
+	stp []string
 	ecr error
 	eur error
 	era error
 	eho error
 	epo error
+	mss []*kafka.Message
+	unm *mockUnmarshaler
 }
 
 func (s *handlerTestSuite) SetupSuite() {
 	cfm := new(configMock)
 	cfm.On("GetPartitions", s.req.GetProject(), int(s.req.GetNamespace())).Return(s.pts)
-
+	cfm.On("GetStructuredProjects").Return(s.stp)
 	csr := new(consumerMock)
 	csr.On("Close").Return(nil)
 
+	idr := fmt.Sprintf("%s_namespace_%d", s.req.Project, s.req.Namespace)
+
+	pol := new(poolMock)
+	upr := new(uploaderMock)
+	s3m := new(s3Mock)
+
+	s.mss = []*kafka.Message{
+		{
+			Value:     []byte(`{"name": "Test Article 1", "abstract": "This is test content 1"}`),
+			Timestamp: time.Now().Add(-time.Hour),
+		},
+		{
+			Value:     []byte(`{"name": "Test Article 2", "abstract": "This is test content 2"}`),
+			Timestamp: time.Now().Add(-30 * time.Minute),
+		},
+	}
 	for _, pts := range s.sps {
-		csr.On("ReadAll", s.snc, s.tpc, pts).Return(s.era)
+		csr.On("ReadAll", s.snc, s.tpc, pts, mock.Anything).Return(s.era).Run(func(args mock.Arguments) {
+			callback := args.Get(3).(func(*kafka.Message) error)
+			for _, msg := range s.mss {
+				if err := callback(msg); err != nil {
+					return
+				}
+			}
+		})
 	}
 
-	idr := fmt.Sprintf("%s_namespace_%d", s.req.Project, s.req.Namespace)
-	pol := new(poolMock)
 	pol.On("GetConsumer", fmt.Sprintf("_%s", idr)).
 		Return(csr, s.ecr)
 
-	upr := new(uploaderMock)
 	upr.On("Upload", fmt.Sprintf("/%s.tar.gz", idr)).
 		Return(s.eur)
 
-	s3m := new(s3Mock)
+	if s.req.EnableChunking {
+		for i := 0; i < 20; i++ {
+			s3m.On("PutObjectWithContext", fmt.Sprintf("chunks/%s/chunk_%d.tar.gz", idr, i)).
+				Return(s.eur)
+			s3m.On("PutObjectWithContext", fmt.Sprintf("chunks/%s/chunk_%d.json", idr, i)).
+				Return(s.eur)
+		}
+	}
+
 	s3m.On("HeadObjectWithContext", fmt.Sprintf("/%s.tar.gz", idr)).
 		Return(s.eho)
 	s3m.On("PutObjectWithContext", fmt.Sprintf("/%s.json", idr)).
 		Return(s.epo)
 
 	tps := new(schema.Topics)
+
 	s.Assert().NoError(
 		tps.UnmarshalEnvironmentValue(""),
 	)
+
+	s.unm = new(mockUnmarshaler)
+	s.unm.On("Unmarshal", mock.Anything, mock.Anything, mock.Anything).Return(nil).Run(func(args mock.Arguments) {
+		data := args.Get(1).([]byte)
+		obj := args.Get(2)
+
+		objType := reflect.TypeOf(obj)
+		if objType == nil {
+			s.Assert().Fail("unexpected nil in Unmarshal cbk")
+		}
+
+		objValue := reflect.ValueOf(obj)
+		if objValue.Kind() != reflect.Ptr {
+			s.Assert().Fail("unexpected non-pointer type in Unmarshal cbk")
+		}
+
+		switch objType.Elem().Name() {
+		case "Article":
+			v, ok := obj.(*schema.Article)
+			if !ok {
+				s.Assert().Fail("unexpected Article type in Unmarshal cbk")
+			}
+			err := json.Unmarshal(data, v)
+			if err != nil {
+				s.Assert().Fail("unexpected Article error in Unmarshal cbk")
+			}
+		default:
+			s.Assert().Fail("unexpected type Article in Unmarshal cbk")
+		}
+	})
 
 	s.hdr = &export.Handler{
 		Env: &env.Environment{
 			Topics:         tps,
 			PipeBufferSize: 1024,
+			ChunkWorkers:   3,
 		},
 		Cfg:      cfm,
 		Uploader: upr,
 		Pool:     pol,
 		S3:       s3m,
+		Stream:   s.unm,
 	}
 }
 
 func (s *handlerTestSuite) TestExport() {
+	s.hdr.Env.PipeBufferSize = 64
+	s.hdr.Env.BufferSize = 16
+
 	res, err := s.hdr.Export(s.ctx, s.req)
 
 	if s.ecr != nil {
@@ -216,6 +310,7 @@ func (s *handlerTestSuite) TestExport() {
 }
 
 func TestHandler(t *testing.T) {
+	stp := []string{"enwiki", "eswiki", "frwiki"}
 	for _, testCase := range []*handlerTestSuite{
 		{
 			req: &pb.ExportRequest{
@@ -223,6 +318,7 @@ func TestHandler(t *testing.T) {
 				Language: "en",
 			},
 			pts: []int{20, 40},
+			stp: stp,
 			tpc: "aws.structured-data.enwiki-articles-compacted.v1",
 			ecr: errors.New("could not get a consumer"),
 		},
@@ -233,6 +329,7 @@ func TestHandler(t *testing.T) {
 			},
 			pts: []int{20, 40},
 			sps: [][]int{{20}, {40}},
+			stp: stp,
 			tpc: "aws.structured-data.enwiki-articles-compacted.v1",
 			eur: errors.New("upload failed"),
 		},
@@ -244,6 +341,7 @@ func TestHandler(t *testing.T) {
 			},
 			pts: []int{20, 40},
 			sps: [][]int{{20}, {40}},
+			stp: stp,
 			tpc: "aws.structured-data.enwiki-articles-compacted.v1",
 			era: errors.New("read all error"),
 		},
@@ -268,6 +366,7 @@ func TestHandler(t *testing.T) {
 			res: &pb.ExportResponse{},
 			pts: []int{20, 40},
 			sps: [][]int{{20}, {40}},
+			stp: stp,
 			tpc: "aws.structured-data.enwiki-articles-compacted.v1",
 			epo: errors.New("put object error"),
 		},
@@ -277,10 +376,38 @@ func TestHandler(t *testing.T) {
 				Project:   "enwiki",
 				Language:  "en",
 			},
-			res: &pb.ExportResponse{},
+			res: &pb.ExportResponse{Total: 4},
 			pts: []int{20, 40},
 			sps: [][]int{{20}, {40}},
+			stp: stp,
 			tpc: "aws.structured-data.enwiki-articles-compacted.v1",
+		},
+		{
+			req: &pb.ExportRequest{
+				Namespace:      0,
+				Project:        "enwiki",
+				Language:       "en",
+				EnableChunking: true,
+			},
+			res: &pb.ExportResponse{Total: 4},
+			pts: []int{20, 40},
+			sps: [][]int{{20}, {40}},
+			stp: stp,
+			tpc: "aws.structured-data.enwiki-articles-compacted.v1",
+		},
+		{
+			req: &pb.ExportRequest{
+				Namespace:      0,
+				Project:        "dewiki",
+				Language:       "de",
+				Type:           "article",
+				EnableChunking: true,
+			},
+			res: &pb.ExportResponse{Total: 8},
+			pts: []int{20, 40, 60, 80},
+			sps: [][]int{{20}, {40}, {60}, {80}},
+			stp: stp,
+			tpc: "aws.structured-data.dewiki-articles-compacted.v1",
 		},
 	} {
 		suite.Run(t, testCase)

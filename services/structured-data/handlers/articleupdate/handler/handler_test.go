@@ -3,6 +3,7 @@ package handler_test
 import (
 	"context"
 	"errors"
+	"net/url"
 	"testing"
 	"time"
 	"wikimedia-enterprise/general/parser"
@@ -101,6 +102,36 @@ func (i *integrityMock) GetArticleData(_ context.Context, _ *pb.ArticleDataReque
 	return res, ags.Error(1)
 }
 
+type protectedAPIMock struct {
+	mock.Mock
+	wmf.API
+}
+
+func (m *protectedAPIMock) GetPage(ctx context.Context, dtb string, ttl string, ops ...func(*url.Values)) (*wmf.Page, error) {
+	ags := m.Called(dtb, ttl)
+
+	pge := ags.Get(0)
+	if pge == nil {
+		return nil, ags.Error(1)
+	} else {
+		return pge.(*wmf.Page), ags.Error(1)
+	}
+}
+
+type TracerMock struct{}
+
+func (t *TracerMock) Trace(ctx context.Context, _ map[string]string) (func(err error, msg string), context.Context) {
+	return func(err error, msg string) {}, ctx
+}
+
+func (t *TracerMock) StartTrace(ctx context.Context, _ string, _ map[string]string) (func(err error, msg string), context.Context) {
+	return func(err error, msg string) {}, ctx
+}
+
+func (t *TracerMock) Shutdown(ctx context.Context) error {
+	return nil
+}
+
 type handlerTestSuite struct {
 	suite.Suite
 	ctx context.Context
@@ -151,6 +182,11 @@ func (s *handlerTestSuite) SetupSuite() {
 	itg := new(integrityMock)
 	itg.On("GetArticleData").Return(s.ibn, s.ebn)
 
+	wmk := new(protectedAPIMock)
+
+	rev := &wmf.Revision{Slots: &wmf.Slots{Main: &wmf.Main{Content: "BOYL"}}}
+	wmk.On("GetPage", mock.Anything, mock.Anything, mock.Anything).Return(&wmf.Page{Revisions: []*wmf.Revision{rev}}, nil)
+
 	s.ctx = context.Background()
 	s.prs = &handler.Parameters{
 		Env: &env.Environment{
@@ -165,6 +201,7 @@ func (s *handlerTestSuite) SetupSuite() {
 		Aggregator: agg,
 		Parser:     prs,
 		Integrity:  itg,
+		Tracer:     &TracerMock{},
 	}
 }
 

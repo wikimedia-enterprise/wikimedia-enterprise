@@ -85,7 +85,7 @@ func (s *allPagesTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
-		Tracer:			 mockTracer,
+		Tracer:          mockTracer,
 	}
 
 	rsp := new(Response)
@@ -177,7 +177,7 @@ func (s *getPagesTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
-		Tracer: 		 mockTracer,
+		Tracer:          mockTracer,
 	}
 
 	if len(s.pld) > 0 {
@@ -249,7 +249,7 @@ func (s *getPageTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
-		Tracer: 		 mockTracer,
+		Tracer:          mockTracer,
 	}
 
 	if len(s.pld) > 0 {
@@ -344,7 +344,7 @@ func (s *getPagesHTMLTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
-		Tracer: 		 mockTracer,
+		Tracer:          mockTracer,
 	}
 }
 
@@ -446,7 +446,7 @@ func (s *getPageHTMLTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
-		Tracer: 		 mockTracer,
+		Tracer:          mockTracer,
 	}
 }
 
@@ -499,6 +499,91 @@ func TestGetPageHTML(t *testing.T) {
 	}
 }
 
+type getRevisionHTMLTestSuite struct {
+	suite.Suite
+	ctx context.Context
+	srv *httptest.Server
+	clt *Client
+	hse bool
+	dtb string
+	pld string
+	sts int
+	rid string
+}
+
+func (s *getRevisionHTMLTestSuite) createServer() {
+	rtr := http.NewServeMux()
+
+	rtr.HandleFunc(fmt.Sprintf("/w/rest.php/v1/page/%s/html", strings.ReplaceAll(s.rid, " ", "_")), func(w http.ResponseWriter, r *http.Request) {
+		w.WriteHeader(s.sts)
+		_, _ = w.Write([]byte(s.pld))
+	})
+
+	s.srv = httptest.NewServer(rtr)
+}
+
+func (s *getRevisionHTMLTestSuite) SetupSuite() {
+	s.createServer()
+
+	s.dtb = "enwiki"
+	s.ctx = context.Background()
+	s.clt = &Client{
+		DefaultURL:      s.srv.URL,
+		DefaultDatabase: s.dtb,
+		HTTPClient:      &http.Client{},
+		Tracer:          mockTracer,
+	}
+}
+
+func (s *getRevisionHTMLTestSuite) TearDownSuite() {
+	s.srv.Close()
+}
+
+func (s *getRevisionHTMLTestSuite) TestGetRevisionHTML() {
+	htm, err := s.clt.GetPageHTML(s.ctx, s.dtb, s.rid)
+
+	if err == nil {
+		s.Assert().Equal(s.pld, htm)
+	} else {
+		s.Assert().Empty(htm)
+	}
+
+	if s.hse {
+		s.Assert().Error(err)
+	} else {
+		s.Assert().NoError(err)
+	}
+}
+
+func TestGetRevisionHTML(t *testing.T) {
+	for _, testCase := range []*getRevisionHTMLTestSuite{
+		{
+			sts: http.StatusOK,
+			rid: "1234567",
+			pld: "<p>...html goes here...</p>",
+		},
+		{
+			sts: http.StatusFound,
+			rid: "2345678",
+			pld: "<p>...html goes here...</p>",
+		},
+		{
+			sts: http.StatusNotFound,
+			rid: "Not Found",
+			pld: `{
+				"type":"https://mediawiki.org/wiki/HyperSwitch/errors/not_found",
+				"title":"Not found.",
+				"method":"get",
+				"detail":"Page or revision not found.",
+				"uri":"/en.wikipedia.org/v1/page/html/Sadsd"
+			}`,
+			hse: true,
+		},
+	} {
+		suite.Run(t, testCase)
+	}
+}
+
 type getPageSummaryTestSuite struct {
 	suite.Suite
 	ctx context.Context
@@ -531,7 +616,7 @@ func (s *getPageSummaryTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
-		Tracer: 		 mockTracer,
+		Tracer:          mockTracer,
 	}
 }
 
@@ -595,7 +680,7 @@ func (s *getLanguagesTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
-		Tracer: 		 mockTracer,
+		Tracer:          mockTracer,
 	}
 
 	s.lns = map[string]*Language{}
@@ -673,7 +758,7 @@ func (s *getLanguageTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: "enwiki",
 		HTTPClient:      &http.Client{},
-		Tracer: 		 mockTracer,
+		Tracer:          mockTracer,
 	}
 
 	s.lns = map[string]*Language{}
@@ -757,7 +842,7 @@ func (s *getProjectTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: "enwiki",
 		HTTPClient:      &http.Client{},
-		Tracer: 		 mockTracer,
+		Tracer:          mockTracer,
 	}
 
 	s.prs = map[string]*Project{}
@@ -843,7 +928,7 @@ func (s *getProjectsTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: "enwiki",
 		HTTPClient:      &http.Client{},
-		Tracer: 		 mockTracer,
+		Tracer:          mockTracer,
 	}
 
 	s.prs = []*Project{}
@@ -927,7 +1012,7 @@ func (s *getNamespacesTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
-		Tracer: 		 mockTracer,
+		Tracer:          mockTracer,
 	}
 
 	s.rsp = new(Response)
@@ -996,7 +1081,7 @@ func (s *getRandomPagesTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
-		Tracer: 		 mockTracer,
+		Tracer:          mockTracer,
 	}
 
 	s.rsp = new(Response)
@@ -1110,7 +1195,7 @@ func (s *getUsersTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
-		Tracer: 		 mockTracer,
+		Tracer:          mockTracer,
 	}
 
 	s.urs = map[int]*User{}
@@ -1189,7 +1274,7 @@ func (s *getUserTestSuite) SetupSuite() {
 		DefaultURL:      s.srv.URL,
 		DefaultDatabase: s.dtb,
 		HTTPClient:      &http.Client{},
-		Tracer: 		 mockTracer,
+		Tracer:          mockTracer,
 	}
 
 	s.urs = map[int]*User{}
@@ -1284,7 +1369,7 @@ func (s *retryAfterTestSuite) SetupSuite() {
 		DefaultURL:       s.srv.URL,
 		DefaultDatabase:  "enwiki",
 		EnableRetryAfter: s.era,
-		Tracer: 		  mockTracer,
+		Tracer:           mockTracer,
 	}
 }
 
@@ -1361,7 +1446,7 @@ func (s *getScoreTestSuite) SetupSuite() {
 	s.clt = &Client{
 		HTTPClientLiftWing: &http.Client{},
 		LiftWingBaseURL:    s.srv.URL + "/service/lw/inference/v1/models/",
-		Tracer: 			mockTracer,
+		Tracer:             mockTracer,
 	}
 }
 
@@ -1397,6 +1482,86 @@ func TestGetScore(t *testing.T) {
 			mdl: "revertrisk",
 			lng: "en",
 			err: errors.New("400 Bad Request:invalidstatuscode"),
+		},
+	} {
+		suite.Run(t, testCase)
+	}
+}
+
+func createCommonsServer(sts int, pld []byte) *httptest.Server {
+	rtr := http.NewServeMux()
+
+	rtr.HandleFunc("/commons", func(w http.ResponseWriter, r *http.Request) {
+		w.WriteHeader(sts)
+		if sts == http.StatusOK || sts == http.StatusPartialContent {
+			_, _ = w.Write(pld)
+		} else {
+			_, _ = w.Write([]byte("invalid status code"))
+		}
+	})
+
+	return httptest.NewServer(rtr)
+}
+
+type downloadFileTestSuite struct {
+	suite.Suite
+	ctx context.Context
+	clt *Client
+	srv *httptest.Server
+	sts int
+	pld []byte
+	ops func(*http.Request)
+	url string
+	err error
+}
+
+func (s *downloadFileTestSuite) SetupSuite() {
+	s.ctx = context.Background()
+	s.srv = createCommonsServer(s.sts, s.pld)
+	s.clt = &Client{
+		DefaultURL: s.srv.URL,
+		HTTPClient: &http.Client{},
+		Tracer:     mockTracer,
+	}
+}
+
+func (s *downloadFileTestSuite) TearDownSuite() {
+	s.srv.Close()
+}
+
+func (s *downloadFileTestSuite) TestDownload() {
+	s.url = s.srv.URL + "/commons"
+
+	rsp, err := s.clt.DownloadFile(s.ctx, s.url, s.ops)
+
+	if s.err != nil {
+		s.Assert().Error(err)
+		s.Assert().Contains(err.Error(), s.err.Error())
+	} else {
+		s.Assert().NoError(err)
+		s.Assert().Equal(s.pld, rsp)
+	}
+}
+
+func TestDownloadFile(t *testing.T) {
+	for _, testCase := range []*downloadFileTestSuite{
+		{
+			sts: http.StatusOK,
+			pld: []byte("test payload"),
+			err: nil,
+			ops: func(r *http.Request) {},
+		},
+		{
+			sts: http.StatusPartialContent,
+			pld: []byte("test payload"),
+			ops: func(r *http.Request) { r.Header.Set("Range", "bytes=0-99") },
+			err: nil,
+		},
+		{
+			sts: http.StatusInternalServerError,
+			pld: nil,
+			err: errors.New("500 Internal Server Error"),
+			ops: func(r *http.Request) {},
 		},
 	} {
 		suite.Run(t, testCase)

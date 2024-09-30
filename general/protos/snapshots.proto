@@ -10,6 +10,7 @@ service Snapshots {
   rpc Copy(CopyRequest) returns (CopyResponse);
   rpc Aggregate(AggregateRequest) returns (AggregateResponse);
   rpc AggregateCopy(AggregateCopyRequest) returns (AggregateCopyResponse);
+  rpc AggregateCommons(AggregateCommonsRequest) returns (AggregateCommonsResponse);
 }
 
 // Export io
@@ -21,6 +22,8 @@ message ExportRequest {
   string language = 5;
   int64 since = 6;
   repeated string exclude_events = 7;
+  string type = 8;
+  bool enable_chunking = 9;
 }
 
 message ExportResponse {
@@ -44,6 +47,7 @@ message CopyResponse {
 message AggregateRequest {
   string prefix = 1;
   int64 since = 2;
+  string snapshot = 3;
 }
 
 message AggregateResponse {
@@ -55,6 +59,18 @@ message AggregateResponse {
 message AggregateCopyRequest {}
 
 message AggregateCopyResponse {
+  int32 total = 1;
+  int32 errors = 2;
+}
+
+
+// Aggregate commons io description
+message AggregateCommonsRequest {
+  string prefix = 1;
+  string time_period = 2;
+}
+
+message AggregateCommonsResponse {
   int32 total = 1;
   int32 errors = 2;
 }

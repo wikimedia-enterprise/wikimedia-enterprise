@@ -12,4 +12,5 @@ type Snapshot struct {
 	InLanguage   *Language  `json:"in_language,omitempty"`
 	Namespace    *Namespace `json:"namespace,omitempty"`
 	Size         *Size      `json:"size,omitempty"`
+	Chunks       []string   `json:"chunks,omitempty"`
 }

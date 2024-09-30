@@ -8,10 +8,10 @@ import (
 
 	"wikimedia-enterprise/services/snapshots/config/env"
 	pb "wikimedia-enterprise/services/snapshots/handlers/protos"
+	"wikimedia-enterprise/services/snapshots/libraries/s3tracerproxy"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/s3"
-	"github.com/aws/aws-sdk-go/service/s3/s3iface"
 	"go.uber.org/dig"
 )
 
@@ -25,7 +25,7 @@ const maxUploadSizeBytes = 4294967296
 type Handler struct {
 	dig.In
 	Env *env.Environment
-	S3  s3iface.S3API
+	S3  s3tracerproxy.S3TracerProxy
 }
 
 // Copy copies project snapshots and metadata.

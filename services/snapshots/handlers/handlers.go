@@ -3,6 +3,7 @@ package handlers
 import (
 	"context"
 	"wikimedia-enterprise/services/snapshots/handlers/aggregate"
+	"wikimedia-enterprise/services/snapshots/handlers/aggregatecommons"
 	"wikimedia-enterprise/services/snapshots/handlers/aggregatecopy"
 	"wikimedia-enterprise/services/snapshots/handlers/copy"
 	"wikimedia-enterprise/services/snapshots/handlers/export"
@@ -15,10 +16,11 @@ import (
 type Server struct {
 	pb.UnimplementedSnapshotsServer `optional:"true"`
 	dig.In
-	Exporter        export.Handler
-	Copier          copy.Handler
-	Aggregator      aggregate.Handler
-	AggregateCopier aggregatecopy.Handler
+	Exporter         export.Handler
+	Copier           copy.Handler
+	Aggregator       aggregate.Handler
+	AggregateCopier  aggregatecopy.Handler
+	CommonsAgregator aggregatecommons.Handler
 }
 
 // Export triggers export handler.
@@ -39,4 +41,9 @@ func (s Server) Aggregate(ctx context.Context, req *pb.AggregateRequest) (*pb.Ag
 // AggregateCopy triggers aggregatecopy handler.
 func (s Server) AggregateCopy(ctx context.Context, req *pb.AggregateCopyRequest) (*pb.AggregateCopyResponse, error) {
 	return s.AggregateCopier.AggregateCopy(ctx, req)
+}
+
+// AggregateCommons triggers aggregatecommons handler.
+func (s Server) AggregateCommons(ctx context.Context, req *pb.AggregateCommonsRequest) (*pb.AggregateCommonsResponse, error) {
+	return s.CommonsAgregator.AggregateCommons(ctx, req)
 }

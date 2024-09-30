@@ -11,7 +11,7 @@ import (
 
 // New creates new instance of ContentIntegrityClient for dependency injection.
 func New(env *env.Environment) (pb.ContentIntegrityClient, error) {
-	cnn, err := grpc.Dial(env.ContentIntegrityURL, grpc.WithTransportCredentials(insecure.NewCredentials()))
+	cnn, err := grpc.NewClient(env.ContentIntegrityURL, grpc.WithTransportCredentials(insecure.NewCredentials()))
 
 	if err != nil {
 		return nil, err

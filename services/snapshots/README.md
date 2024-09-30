@@ -1,10 +1,16 @@
-# Wikimedia Enterprise Snapshots
+# Snapshots Service
 
-Generates snapshots for Wikimedia Enterprise API(s).
+Description goes here...
 
 ## Getting started
 
 Need to make sure that `go`, `docker` and `docker-compose` are installed on your machine.
+
+1. Init `git` sub-modules by running:
+
+   ```bash
+   git submodule update --init --remote --recursive
+   ```
 
 1. Create `.env` file in the project root with following content:
 
@@ -83,4 +89,13 @@ Need to make sure that `go`, `docker` and `docker-compose` are installed on your
 
    ```bash
    golangci-lint run
+   ```
+
+1. For dubugging the gPRC server, you may install and use the following gRPC client
+
+   ```bash
+   $ go install github.com/fullstorydev/grpcui/cmd/grpcui@latest
+   # Start a grpc client to grpc server @ <host>:<port>, with a pointer to a proto file. You can use web UI client then.
+   $ grpcui -plaintext -proto submodules/protos/snapshots.proto localhost:5050
+   gRPC Web UI available at http://127.0.0.1:60551/...
    ```
