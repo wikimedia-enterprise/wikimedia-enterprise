@@ -52,6 +52,11 @@ type Environment struct {
 	NumberOfWorkers       int          `env:"NUMBER_OF_WORKERS,default=15"`
 	EventChannelSize      int          `env:"EVENT_CHANNEL_SIZE,default=1000000"`
 	ArticleKeyTypeSuffix  string       `env:"KEY_TYPE_SUFFIX"`
+	TracingGrpcHost       string       `env:"OTEL_COLLECTOR_ADDR,default=collector"`
+	TracingGrpcPort       string       `env:"TRACING_GRPC_PORT,default=4317"`
+	TracingSamplingRate   float64      `env:"TRACING_SAMPLING_RATE,default=0.1"`
+	ServiceName           string       `env:"SERVICE_NAME,default=on-demand.service"`
+	PrometheusPort        int          `env:"PROMETHEUS_PORT,defaut=12411"`
 }
 
 // New initialize the environment

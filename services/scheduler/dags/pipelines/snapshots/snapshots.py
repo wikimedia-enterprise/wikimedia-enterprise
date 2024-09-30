@@ -2,6 +2,7 @@
 DAG for Snapshots services. Contains Export and Aggregate tasks
 each invoked on an daily basis.
 """
+
 from os import getenv
 from datetime import timedelta, datetime
 from airflow import DAG
@@ -48,6 +49,8 @@ dag_args = dict(
     catchup=False,
     default_args=dict(provide_context=True),
 )
+
+chunking_enabled = int(Variable.get("chunking_enabled", default_var=True))
 
 
 def get_since():
@@ -98,8 +101,7 @@ def exports(
     since = get_since()
 
     if since > 0:
-        logger.info(
-            f"Exporting snapshots with since parameter set to `{since}`")
+        logger.info(f"Exporting snapshots with since parameter set to `{since}`")
     else:
         logger.info(
             "Exporting snapshots without since parameter, all articles will be exported"
@@ -119,6 +121,8 @@ def exports(
                         language=get_language(project),
                         exclude_events=exclude_events,
                         since=since,
+                        type="article",
+                        enable_chunking=chunking_enabled,
                     )
                 )
 
@@ -135,7 +139,7 @@ def copy(
     """
     Calls Snapshots service Copy API for a ns, and a set of projects.
     """
-    if datetime.day == 1 or run_copy():
+    if datetime.day in [2, 21] or run_copy():
         # get shared context
         shared_shared_context = kwargs["ti"]
 
@@ -168,8 +172,7 @@ def copy(
                 )
 
                 res = SnapshotsStub(channel).Copy(
-                    CopyRequest(workers=workers, projects=projects,
-                                namespace=namespace)
+                    CopyRequest(workers=workers, projects=projects, namespace=namespace)
                 )
 
                 logger.info(
@@ -194,10 +197,7 @@ def aggregate():
         res = stub.Aggregate(AggregateRequest())
 
         logger.info(
-            "Finished the `aggregate` job with total: `{total}` and errors: `{errors}`\n".format(
-                total=res.total,
-                errors=res.errors,
-            )
+            f"Finished the `aggregate` job with total: `{res.total}` and errors: `{res.errors}`"
         )
 
     return
@@ -207,7 +207,7 @@ def aggregate_copy(datetime):
     """
     Call Snapshots service AggregateCopy API to copy aggregated metadata of snapshots.
     """
-    if datetime.day == 1 or run_copy():
+    if datetime.day in [2, 21] or run_copy():
         with get_channel(addr_name) as channel:
             logger.info("Starting the `aggregate copy` job")
 
@@ -215,10 +215,7 @@ def aggregate_copy(datetime):
             res = stub.AggregateCopy(AggregateCopyRequest())
 
             logger.info(
-                "Finished the `aggregate copy` job with total: `{total}` and errors: `{errors}`\n".format(
-                    total=res.total,
-                    errors=res.errors,
-                )
+                f"Finished the `aggregate copy` job with total: `{res.total}` and errors: `{res.errors}`"
             )
     else:
         logger.info("Not the first of the month. Skipping aggregate copy task.")
@@ -245,8 +242,7 @@ def enable_snapshots_service():
         )
 
     if not result:
-        raise AirflowException(
-            f"Failure during service {ecs_service_name} update")
+        raise AirflowException(f"Failure during service {ecs_service_name} update")
 
     return result
 
@@ -288,6 +284,35 @@ def verify_snapshots_service():
     return {"resolved_ips": result.ips}
 
 
+def aggregate_chunks(projects, namespaces):
+    """
+    Call Snapshots service Aggregate API to generate aggregates of chunks of each snapshot.
+    """
+    if chunking_enabled:
+        with get_channel(addr_name) as channel:
+            for project in projects:
+                for namespace in namespaces:
+                    logger.info(
+                        f"Starting a `chunk aggregation` job for project: '{project}' in namespace: '{namespace}'"
+                    )
+                    stub = SnapshotsStub(channel)
+                    res = stub.Aggregate(
+                        AggregateRequest(
+                            prefix="chunks", snapshot=f"{project}_namespace_{namespace}"
+                        )
+                    )
+
+                    logger.info(
+                        f"Finished a `chunk aggregation` job for project: `{project}` in namespace: "
+                        f"`{namespace}` with total: `{res.total}` and errors: `{res.errors}`"
+                    )
+
+    else:
+        logger.info("Chunking not enabled. Skipping aggregate chunk task.")
+
+    return
+
+
 with DAG(**dag_args) as dag:
     task_aggregate = PythonOperator(
         task_id="aggregate",
@@ -309,8 +334,6 @@ with DAG(**dag_args) as dag:
         trigger_rule=TriggerRule.ALL_DONE,
         execution_timeout=timedelta(seconds=30),
     )
-    # set order after the aggregation job
-    task_disable_snapshots.set_upstream(task_aggregate_copy)
 
     # enable service in ECS
     task_enable_snapshots = PythonOperator(
@@ -340,7 +363,9 @@ with DAG(**dag_args) as dag:
     workers = get_copy_workers()
     exclude_events = get_exclude_events()
 
-    for task_number, chunk in enumerate(chunks(projects, get_batch_size(variable_name="batch_size_snapshots"))):
+    for task_number, chunk in enumerate(
+        chunks(projects, get_batch_size(variable_name="batch_size_snapshots"))
+    ):
         # opkwargs are used to provide parameters + context on top
         # https://stackoverflow.com/questions/67623479/use-kwargs-and-context-simultaniauly-on-airflow
         task_export = PythonOperator(
@@ -352,6 +377,7 @@ with DAG(**dag_args) as dag:
                 exclude_events=exclude_events,
                 runner=next(runners_ids),
                 verification_job_name="verify_snapshots_service",
+                enable_chunking=chunking_enabled,
             ),
             execution_timeout=timedelta(days=7),
         )
@@ -379,3 +405,17 @@ with DAG(**dag_args) as dag:
         task_aggregate.set_upstream(task_copy)
 
     task_aggregate_copy.set_upstream(task_aggregate)
+
+    task_aggregate_chunks = PythonOperator(
+        task_id="aggregate_chunks",
+        python_callable=aggregate_chunks,
+        execution_timeout=timedelta(days=2),
+        op_kwargs=dict(
+            projects=projects,
+            namespaces=namespaces,
+        ),
+    )
+    
+    task_aggregate_chunks.set_upstream(task_aggregate_copy)
+    
+    task_disable_snapshots.set_upstream(task_aggregate_chunks)

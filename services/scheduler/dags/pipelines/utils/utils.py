@@ -34,7 +34,8 @@ def get_channel(addr_name):
 
     ip_addr = "{ip}:{port}".format(
         # choosing random record to simulate load balancer
-        ip=choice(ips), port=port
+        ip=choice(ips),
+        port=port,
     )
 
     logger.info(
@@ -61,7 +62,7 @@ def get_language(project):
         with open(
             path.join(
                 path.dirname(__file__),
-                "../../../general/config/languages.json",
+                "../../../submodules/config/languages.json",
             ),
             "r",
         ) as file:
@@ -88,15 +89,14 @@ def get_namespaces(variable_name="namespaces"):
         with open(
             path.join(
                 path.dirname(__file__),
-                "../../../general/config/namespaces.json",
+                "../../../submodules/config/namespaces.json",
             ),
             "r",
         ) as file:
             namespaces = load(file)
 
     logger.info(
-        "Got namespaces configuration: `{namespaces}`".format(
-            namespaces=namespaces)
+        "Got namespaces configuration: `{namespaces}`".format(namespaces=namespaces)
     )
 
     return namespaces
@@ -119,14 +119,13 @@ def get_projects(variable_name="projects"):
         with open(
             path.join(
                 path.dirname(__file__),
-                "../../../general/config/random_projects.json",
+                "../../../submodules/config/random_projects.json",
             ),
             "r",
         ) as file:
             projects = load(file)
 
-    logger.info("Got projects configuration: `{projects}`".format(
-        projects=projects))
+    logger.info("Got projects configuration: `{projects}`".format(projects=projects))
 
     return projects
 
@@ -191,7 +190,7 @@ def run_copy():
 
 def chunks(lst, n):
     """Return successive n-sized chunks from list."""
-    return [lst[i: i + n] for i in range(0, len(lst), n)]
+    return [lst[i : i + n] for i in range(0, len(lst), n)]
 
 
 def get_addr_and_port(addr):
@@ -321,8 +320,8 @@ def get_secret_value(secret_id):
 
     response = secret_client.get_secret_value(SecretId=secret_id)
 
-    if 'SecretString' in response:
-        return response['SecretString']
+    if "SecretString" in response:
+        return response["SecretString"]
 
     return ""
 
@@ -371,8 +370,7 @@ def verify_ip_addresses_returned_by_dns(dns_name, desired_count, attempts=30, de
         else:
             if attempt == attempts:
                 # verification has failed
-                logger.error(
-                    f"Verification has failed after {attempts} attempts")
+                logger.error(f"Verification has failed after {attempts} attempts")
                 break
             else:
                 # wait a bit more
@@ -383,9 +381,10 @@ def verify_ip_addresses_returned_by_dns(dns_name, desired_count, attempts=30, de
 
 
 def get_desired_count(
-        env_variable_name="ECS_SNAPSHOT_SERVICE_DESIRED_COUNT",
-        airflow_variable_name="desired_count_snapshots",
-        default_desired_count=3):
+    env_variable_name="ECS_SNAPSHOT_SERVICE_DESIRED_COUNT",
+    airflow_variable_name="desired_count_snapshots",
+    default_desired_count=3,
+):
     """
     Retrieves the desired count for a service from either an Airflow Variable or an environment variable.
     If both sources fail to provide a value, returns a default desired count.
@@ -408,7 +407,8 @@ def get_desired_count(
     except Exception:
         desired_count = None
         logger.info(
-            f"failed to retrieve desired count from airflow {airflow_variable_name} ")
+            f"failed to retrieve desired count from airflow {airflow_variable_name} "
+        )
 
     if desired_count is None:
         try:
@@ -416,25 +416,27 @@ def get_desired_count(
         except Exception:
             desired_count = None
             logger.info(
-                f"failed to retrieve desired count from env {env_variable_name} ")
+                f"failed to retrieve desired count from env {env_variable_name} "
+            )
 
     logger.info(
-        f"retrieved desired count {desired_count}, var: {airflow_variable_name}, env: {env_variable_name}")
+        f"retrieved desired count {desired_count}, var: {airflow_variable_name}, env: {env_variable_name}"
+    )
 
     return default_desired_count if desired_count is None else desired_count
 
 
 def check_domain(domains, email):
     """Checks an email address for a match with a list of domain regexes.
-    
+
     Args:
         domains (list): Regexes for the domain bit of the email.
         email (string): Email of the user.
-    
+
     Returns:
         True, if matched.
     """
-    return match_patterns(domains, email.split('@')[-1])
+    return match_patterns(domains, email.split("@")[-1])
 
 
 def match_patterns(patterns, value):
@@ -443,13 +445,13 @@ def match_patterns(patterns, value):
     Args:
         patterns (list): Regexes.
         value (string): value.
-    
+
     Returns:
         True, if matched.
     """
-    
+
     for reg in patterns:
         if re.match(reg, value):
             return True
-    
+
     return False

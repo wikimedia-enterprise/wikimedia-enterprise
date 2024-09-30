@@ -2,6 +2,7 @@
 DAG for Batches generation services. Contains Export and Aggregate tasks
 each invoked on an hourly basis.
 """
+
 from datetime import timedelta, datetime, time
 from airflow import DAG
 from airflow.operators.python import PythonOperator
@@ -40,8 +41,7 @@ def get_start_of_day_timestamp():
     this is because we want to run the whole previous day at 00:00:00 to avoid data loss.
     """
     return int(
-        datetime.combine(datetime.now() - timedelta(minutes=55),
-                         time.min).timestamp()
+        datetime.combine(datetime.now() - timedelta(minutes=55), time.min).timestamp()
         * 1000
     )
 
@@ -53,12 +53,10 @@ def exports(projects, namespaces, ip_address):
 
     def export():
         logger.info(
-            "Got namespaces configuration: `{namespaces}`".format(
-                namespaces=namespaces)
+            "Got namespaces configuration: `{namespaces}`".format(namespaces=namespaces)
         )
         logger.info(
-            "Got projects configuration: `{projects}`\n".format(
-                projects=projects)
+            "Got projects configuration: `{projects}`\n".format(projects=projects)
         )
         logger.info(
             "Trying to get channel on ip address `{ip_address}`\n".format(
@@ -86,7 +84,9 @@ def exports(projects, namespaces, ip_address):
                             project=project,
                             namespace=namespace,
                             language=get_language(project),
+                            enable_chunking=False
                         )
+                        
                     )
 
                     logger.info(
@@ -146,8 +146,7 @@ with DAG(
         task_export = PythonOperator(
             task_id="export_{task_number}".format(task_number=task_number),
             python_callable=exports(
-                projects=chunk, namespaces=namespaces, ip_address=next(
-                    ip_addresses)
+                projects=chunk, namespaces=namespaces, ip_address=next(ip_addresses)
             ),
             execution_timeout=timedelta(hours=3),
         )

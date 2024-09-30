@@ -7,8 +7,8 @@ services:
 
   airflow:
     build:
-      context: ./../../.
-      dockerfile: ./services/scheduler/Dockerfile
+      context: .
+      dockerfile: ./Dockerfile
     user: "${AIRFLOW_UID}:0"
     env_file: .env
     environment:
@@ -17,15 +17,19 @@ services:
       _AIRFLOW_WWW_USER_USERNAME: ${AIRFLOW_USERNAME:-airflow}
       _AIRFLOW_WWW_USER_PASSWORD: ${AIRFLOW_PASSWORD:-airflow}
       ECS_CLUSTER_NAME: megacluster
+
       ECS_SNAPSHOTS_SERVICE_NAME: megaservice
       ECS_SNAPSHOT_SERVICE_DESIRED_COUNT: 5000
+
+      ECS_STRUCTURED_SNAPSHOTS_SERVICE_NAME: megaservice_structured
+      ECS_STRUCTURED_SNAPSHOT_SERVICE_DESIRED_COUNT: 5000
     ports:
       - 9090:8080
     volumes:
-      - ./services/scheduler/dags:/opt/airflow/dags
-      - ./services/scheduler/logs:/opt/airflow/logs
-      - ./services/scheduler/plugins:/opt/airflow/plugins
-      - ./general/config:/opt/airflow/general/config
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./submodules/config:/opt/airflow/submodules/config
     healthcheck:
       test: [ "CMD-SHELL", "./healthcheck.sh" ]
       interval: 10s
@@ -33,3 +37,25 @@ services:
       retries: 10
     depends_on:
       - postgres
+      - redis
+
+  redis:
+    image: redis:alpine3.20
+    container_name: redis
+    ports:
+      - 6379:6379
+    volumes:
+      - redis_data:/data
+
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: redis-commander
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+    ports:
+      - 8081:8081
+    depends_on:
+      - redis
+
+volumes:
+  redis_data:
