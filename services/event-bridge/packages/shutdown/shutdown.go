@@ -2,10 +2,13 @@ package shutdown
 
 import (
 	"context"
+	"fmt"
 	"os"
 	"os/signal"
 	"sync"
 	"syscall"
+
+	"wikimedia-enterprise/general/tracing"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 )
@@ -17,6 +20,7 @@ type Helper struct {
 	cancel  context.CancelFunc
 	signals chan os.Signal
 	wg      *sync.WaitGroup
+	Tracer  tracing.Tracer
 }
 
 func NewHelper(ctx context.Context) *Helper {
@@ -62,5 +66,15 @@ func (h *Helper) Wait(p *kafka.Producer) {
 				break
 			}
 		}
+	}
+}
+
+// Shutdown will wait for an interrupt signal and then shutdown pending resources.
+func (h *Helper) Shutdown() {
+	<-h.signals
+	err := h.Tracer.Shutdown(h.ctx)
+
+	if err != nil {
+		fmt.Print(err)
 	}
 }

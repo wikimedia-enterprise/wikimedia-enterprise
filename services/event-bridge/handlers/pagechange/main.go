@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 	pr "wikimedia-enterprise/general/prometheus"
-	"wikimedia-enterprise/services/event-bridge/handlers/pagemove/handler"
+	"wikimedia-enterprise/services/event-bridge/handlers/pagechange/handler"
 	"wikimedia-enterprise/services/event-bridge/packages/container"
 	"wikimedia-enterprise/services/event-bridge/packages/filter"
 	"wikimedia-enterprise/services/event-bridge/packages/shutdown"
@@ -42,10 +42,10 @@ func main() {
 		}
 
 		wg := sh.WG()
-		hl := handler.PageMove(ctx, &p, fr)
+		hl := handler.PageChange(ctx, &p, fr)
 		stream := eventstream.
 			NewClient().
-			PageMove(sh.Ctx(), since, func(evt *eventstream.PageMove) error {
+			PageChange(sh.Ctx(), since, func(evt *eventstream.PageChange) error {
 				prommet.Inc(pr.EsTtlEvents, "")
 				wg.Add(1)
 				defer wg.Done()

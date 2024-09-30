@@ -13,6 +13,7 @@ import (
 	"wikimedia-enterprise/services/event-bridge/libraries/langid"
 	"wikimedia-enterprise/services/event-bridge/packages/filter"
 
+	kaf "github.com/confluentinc/confluent-kafka-go/kafka"
 	redis "github.com/redis/go-redis/v9"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
@@ -45,7 +46,7 @@ func (p *handlerProducerMock) Produce(_ context.Context, msgs ...*schema.Message
 		switch m := msg.Value.(type) {
 		case *schema.Article:
 			if m.Event == nil {
-				return fmt.Errorf("empty envent field")
+				return fmt.Errorf("empty event field")
 			}
 
 			m.Event = nil
@@ -64,6 +65,20 @@ func (d *handlerIdentifiersMock) GetLanguage(_ context.Context, dbname string) (
 	args := d.Called(dbname)
 
 	return args.Get(0).(string), args.Error(1)
+}
+
+type TracerMock struct{}
+
+func (t *TracerMock) Trace(ctx context.Context, _ map[string]string) (func(err error, msg string), context.Context) {
+	return func(err error, msg string) {}, ctx
+}
+
+func (t *TracerMock) Shutdown(ctx context.Context) error {
+	return nil
+}
+
+func (t *TracerMock) StartTrace(ctx context.Context, _ string, _ map[string]string) (func(err error, msg string), context.Context) {
+	return func(err error, msg string) {}, ctx
 }
 
 type handlerTestSuite struct {
@@ -120,7 +135,6 @@ func (s *handlerTestSuite) SetupTest() {
 			DateStarted: &s.evt.Data.Performer.UserRegistrationDt,
 		},
 	}
-
 	article.URL = url
 
 	s.msg = &schema.Message{
@@ -131,6 +145,7 @@ func (s *handlerTestSuite) SetupTest() {
 			Identifier: fmt.Sprintf("/%s/%s", article.IsPartOf.Identifier, article.Name),
 			Type:       schema.KeyTypeArticle,
 		},
+		Headers: []kaf.Header{},
 	}
 
 	s.ctx = context.Background()
@@ -142,6 +157,7 @@ func (s *handlerTestSuite) SetupTest() {
 		Redis:      s.redis,
 		Env:        s.env,
 		Dictionary: s.dictionary,
+		Tracer:     &TracerMock{},
 	}
 }
 

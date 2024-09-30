@@ -5,7 +5,9 @@ import (
 	"fmt"
 	"net/url"
 	"time"
+	"wikimedia-enterprise/general/log"
 	"wikimedia-enterprise/general/schema"
+	"wikimedia-enterprise/general/tracing"
 	"wikimedia-enterprise/services/event-bridge/config/env"
 	"wikimedia-enterprise/services/event-bridge/libraries/langid"
 	"wikimedia-enterprise/services/event-bridge/packages/filter"
@@ -22,6 +24,7 @@ type Parameters struct {
 	Producer   schema.Producer
 	Env        *env.Environment
 	Dictionary langid.Dictionarer
+	Tracer     tracing.Tracer
 }
 
 // LastEventTimeKey is the redis key where the latest event will be stored.
@@ -36,6 +39,17 @@ func PageCreate(ctx context.Context, p *Parameters, fr *filter.Filter) func(evt 
 
 		art := new(schema.Article)
 		art.Event = schema.NewEvent(schema.EventTypeCreate)
+
+		end, trx := p.Tracer.StartTrace(ctx, "page-create", map[string]string{"event.identifier": art.Event.Identifier})
+		var err error
+		defer func() {
+			if err != nil {
+				end(err, fmt.Sprintf("error processing page-create event with id %s", art.Event.Identifier))
+			} else {
+				end(nil, fmt.Sprintf("page-create event with id %s processed", art.Event.Identifier))
+			}
+		}()
+
 		art.Identifier = evt.Data.PageID
 		art.Name = evt.Data.PageTitle
 		art.DateCreated = &evt.Data.RevTimestamp
@@ -71,6 +85,13 @@ func PageCreate(ctx context.Context, p *Parameters, fr *filter.Filter) func(evt 
 		lng, err := p.Dictionary.GetLanguage(ctx, evt.Data.Database)
 
 		if err != nil {
+			log.Error(
+				"dictionary get language error",
+				log.Any("database", evt.Data.Database),
+				log.Any("event_id", art.Event.Identifier),
+				log.Any("error", err),
+			)
+
 			return err
 		}
 
@@ -81,12 +102,21 @@ func PageCreate(ctx context.Context, p *Parameters, fr *filter.Filter) func(evt 
 		url, err := url.QueryUnescape(evt.Data.Meta.URI)
 
 		if err != nil {
+			log.Error(
+				"url query unescape error",
+				log.Any("event_id", art.Event.Identifier),
+				log.Any("error", err),
+				log.Any("url", evt.Data.Meta.URI),
+			)
+
 			return err
 		}
 
 		art.URL = url
 
-		err = p.Producer.Produce(ctx, &schema.Message{
+		hds := tracing.NewHeadersCarrier().InjectContext(trx)
+
+		err = p.Producer.Produce(trx, &schema.Message{
 			Config: schema.ConfigArticle,
 			Topic:  p.Env.TopicArticleCreate,
 			Value:  art,
@@ -94,9 +124,17 @@ func PageCreate(ctx context.Context, p *Parameters, fr *filter.Filter) func(evt 
 				Identifier: fmt.Sprintf("/%s/%s", art.IsPartOf.Identifier, art.Name),
 				Type:       schema.KeyTypeArticle,
 			},
+			Headers: hds,
 		})
 
 		if err != nil {
+			log.Error(
+				"producer produce error",
+				log.Any("event_id", art.Event.Identifier),
+				log.Any("revision", art.Version.Identifier),
+				log.Any("error", err),
+			)
+
 			return err
 		}
 

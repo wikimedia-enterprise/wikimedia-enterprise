@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"path/filepath"
 	"runtime"
+	"wikimedia-enterprise/general/schema"
 
 	env "github.com/Netflix/go-env"
 	"github.com/joho/godotenv"
@@ -22,20 +23,32 @@ func (c *Credentials) UnmarshalEnvironmentValue(data string) error {
 	return json.Unmarshal([]byte(data), c)
 }
 
+// List of Strings from environment variables (JSON Encoded).
+type List []string
+
+// UnmarshalEnvironmentValue called by env package on initialization to unmarshal json value.
+func (l *List) UnmarshalEnvironmentValue(data string) error {
+	return json.Unmarshal([]byte(data), l)
+}
+
 // Environment environment variables configuration.
 type Environment struct {
-	KafkaBootstrapServers        string       `env:"KAFKA_BOOTSTRAP_SERVERS,required=true"`
-	KafkaCreds                   *Credentials `env:"KAFKA_CREDS"`
-	RedisAddr                    string       `env:"REDIS_ADDR,required=true"`
-	RedisPassword                string       `env:"REDIS_PASSWORD"`
-	SchemaRegistryURL            string       `env:"SCHEMA_REGISTRY_URL,required=true"`
-	SchemaRegistryCreds          *Credentials `env:"SCHEMA_REGISTRY_CREDS"`
-	TopicArticleDelete           string       `env:"TOPIC_ARTICLE_DELETE,default=aws.event-bridge.article-delete.v1"`
-	TopicArticleUpdate           string       `env:"TOPIC_ARTICLE_UPDATE,default=aws.event-bridge.article-update.v1"`
-	TopicArticleCreate           string       `env:"TOPIC_ARTICLE_CREATE,default=aws.event-bridge.article-create.v1"`
-	TopicArticleMove             string       `env:"TOPIC_ARTICLE_MOVE,default=aws.event-bridge.article-move.v1"`
-	TopicArticleVisibilityChange string       `env:"TOPIC_ARTICLE_VISIBILITY_CHANGE,default=aws.event-bridge.article-visibility-change.v1"`
-	PrometheusPort               int          `env:"PROMETHEUS_PORT,defaut=12411"`
+	KafkaBootstrapServers        string         `env:"KAFKA_BOOTSTRAP_SERVERS,required=true"`
+	KafkaCreds                   *Credentials   `env:"KAFKA_CREDS"`
+	RedisAddr                    string         `env:"REDIS_ADDR,required=true"`
+	RedisPassword                string         `env:"REDIS_PASSWORD"`
+	SchemaRegistryURL            string         `env:"SCHEMA_REGISTRY_URL,required=true"`
+	SchemaRegistryCreds          *Credentials   `env:"SCHEMA_REGISTRY_CREDS"`
+	TopicArticleDelete           string         `env:"TOPIC_ARTICLE_DELETE,default=aws.event-bridge.article-delete.v1"`
+	TopicArticleUpdate           string         `env:"TOPIC_ARTICLE_UPDATE,default=aws.event-bridge.article-update.v1"`
+	TopicArticleCreate           string         `env:"TOPIC_ARTICLE_CREATE,default=aws.event-bridge.article-create.v1"`
+	TopicArticleMove             string         `env:"TOPIC_ARTICLE_MOVE,default=aws.event-bridge.article-move.v1"`
+	TopicArticleVisibilityChange string         `env:"TOPIC_ARTICLE_VISIBILITY_CHANGE,default=aws.event-bridge.article-visibility-change.v1"`
+	PrometheusPort               int            `env:"PROMETHEUS_PORT,defaut=12411"`
+	OTELCollectorAddr            string         `env:"OTEL_COLLECTOR_ADDR,default=collector:4317"`
+	TracingSamplingRate          float64        `env:"TRACING_SAMPLING_RATE,default=0.1"`
+	ServiceName                  string         `env:"SERVICE_NAME,default=event-bridge.service"`
+	OutputTopics                 *schema.Topics `env:"OUTPUT_TOPICS,default={}"`
 }
 
 // New initialize the environment.

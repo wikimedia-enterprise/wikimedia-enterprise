@@ -6,7 +6,9 @@ import (
 	"net/url"
 	"time"
 
+	"wikimedia-enterprise/general/log"
 	"wikimedia-enterprise/general/schema"
+	"wikimedia-enterprise/general/tracing"
 	"wikimedia-enterprise/services/event-bridge/config/env"
 	"wikimedia-enterprise/services/event-bridge/libraries/langid"
 	"wikimedia-enterprise/services/event-bridge/packages/filter"
@@ -24,6 +26,7 @@ type Parameters struct {
 	Producer   schema.Producer
 	Dictionary langid.Dictionarer
 	Env        *env.Environment
+	Tracer     tracing.Tracer
 }
 
 // LastEventTimeKey the redis key where the latest event time will be stored
@@ -36,9 +39,20 @@ func RevisionVisibility(ctx context.Context, p *Parameters, fr *filter.Filter) f
 			return nil
 		}
 
+		sev := schema.NewEvent(schema.EventTypeVisibilityChange)
+		end, trx := p.Tracer.StartTrace(ctx, "revision-visibility", map[string]string{"event": "revision-create"})
+		var err error
+		defer func() {
+			if err != nil {
+				end(err, fmt.Sprintf("error processing revision-visibilty event with id %s", sev.Identifier))
+			} else {
+				end(nil, fmt.Sprintf("revision-visibilty event with id %s processed", sev.Identifier))
+			}
+		}()
+
 		// build data according to our defined schema
 		article := new(schema.Article)
-		article.Event = schema.NewEvent(schema.EventTypeVisibilityChange)
+		article.Event = sev
 		article.Identifier = evt.Data.PageID
 		article.Name = evt.Data.PageTitle
 		article.DateModified = &evt.Data.RevTimestamp
@@ -70,10 +84,18 @@ func RevisionVisibility(ctx context.Context, p *Parameters, fr *filter.Filter) f
 			Identifier: evt.Data.PageNamespace,
 		}
 
-		langid, err := p.Dictionary.GetLanguage(ctx, evt.Data.Database)
+		langid, err := p.Dictionary.GetLanguage(trx, evt.Data.Database)
 		if err != nil {
+			log.Error(
+				"dictionary get language error",
+				log.Any("database", evt.Data.Database),
+				log.Any("event_id", article.Event.Identifier),
+				log.Any("error", err),
+			)
+
 			return err
 		}
+
 		article.InLanguage = &schema.Language{
 			Identifier: langid,
 		}
@@ -81,12 +103,21 @@ func RevisionVisibility(ctx context.Context, p *Parameters, fr *filter.Filter) f
 		url, err := url.QueryUnescape(evt.Data.Meta.URI)
 
 		if err != nil {
+			log.Error(
+				"error unescaping url",
+				log.Any("url", evt.Data.Meta.URI),
+				log.Any("event_id", article.Event.Identifier),
+				log.Any("error", err),
+			)
+
 			return err
 		}
 
 		article.URL = url
 
-		err = p.Producer.Produce(ctx, &schema.Message{
+		hds := tracing.NewHeadersCarrier().InjectContext(trx)
+
+		err = p.Producer.Produce(trx, &schema.Message{
 			Config: schema.ConfigArticle,
 			Topic:  p.Env.TopicArticleVisibilityChange,
 			Value:  article,
@@ -94,12 +125,19 @@ func RevisionVisibility(ctx context.Context, p *Parameters, fr *filter.Filter) f
 				Identifier: fmt.Sprintf("/%s/%s", article.IsPartOf.Identifier, article.Name),
 				Type:       schema.KeyTypeArticle,
 			},
+			Headers: hds,
 		})
 
 		if err != nil {
+			log.Error(
+				"producer produce error",
+				log.Any("error", err),
+				log.Any("revision", article.Version.Identifier),
+			)
+
 			return err
 		}
 
-		return p.Redis.Set(ctx, LastEventTimeKey, evt.Data.Meta.Dt, time.Hour*24).Err()
+		return p.Redis.Set(trx, LastEventTimeKey, evt.Data.Meta.Dt, time.Hour*24).Err()
 	}
 }

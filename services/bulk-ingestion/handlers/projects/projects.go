@@ -117,7 +117,8 @@ func Handler(ctx context.Context, p *Parameters, req *pb.ProjectsRequest) (*pb.P
 {"identifier":"wikiquote","name":"Wikiquote","description":"Quotes across your favorite books, movies, authors, and more."}
 {"identifier":"wikisource","name":"Wikisource","description":"The free digital library."}
 {"identifier":"wikivoyage","name":"Wikivoyage","description":"The ultimate worldwide travel guide."}
-{"identifier":"wiktionary","name":"Wiktionary","description":"A dictionary for over 170 languages."}`
+{"identifier":"wiktionary","name":"Wiktionary","description":"A dictionary for over 170 languages."}
+{"identifier":"wikiversity","name":"Wikiversity","description":"Free learning resources."}`
 
 	scn := bufio.NewScanner(strings.NewReader(cds))
 
