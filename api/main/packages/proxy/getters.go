@@ -3,6 +3,7 @@ package proxy
 import (
 	"errors"
 	"fmt"
+	"strings"
 	"wikimedia-enterprise/general/httputil"
 
 	"github.com/gin-gonic/gin"
@@ -10,10 +11,12 @@ import (
 
 // Errors for the getters.
 var (
-	ErrEmptyIdentifier = errors.New("identifier is empty")
-	ErrEmptyDate       = errors.New("date is empty")
-	ErrWrongUserType   = errors.New("user is of a wrong type")
-	ErrUnauthorized    = errors.New("user not found in the context")
+	ErrEmptyIdentifier      = errors.New("identifier is empty")
+	ErrEmptyChunkIdentifier = errors.New("chunk identifier is empty")
+	ErrEmptyFilename        = errors.New("filename is empty")
+	ErrEmptyDate            = errors.New("date is empty")
+	ErrWrongUserType        = errors.New("user is of a wrong type")
+	ErrUnauthorized         = errors.New("user not found in the context")
 )
 
 // ByGroupGetterBase allows to get user from request context.
@@ -50,6 +53,16 @@ type EntitiesGetter struct {
 
 // GetPath returns path for multiple entities.
 func (e *EntitiesGetter) GetPath(gcx *gin.Context) (string, error) {
+	if strings.Contains(e.URL, "chunks") {
+		idn := gcx.Param("identifier")
+
+		if len(idn) == 0 {
+			return "", ErrEmptyIdentifier
+		}
+
+		return fmt.Sprintf("aggregations/%[1]s/%[2]s/%[1]s.ndjson", e.URL, idn), nil
+	}
+
 	return fmt.Sprintf("aggregations/%[1]s/%[1]s.ndjson", e.URL), nil
 }
 
@@ -73,7 +86,40 @@ func (e *EntityGetter) GetPath(gcx *gin.Context) (string, error) {
 		return "", ErrEmptyIdentifier
 	}
 
+	// Resolve s3 key for chunk metadata
+	if strings.Contains(e.URL, "chunk") {
+		cdn := gcx.Param("chunkIdentifier")
+
+		if len(cdn) == 0 {
+			return "", ErrEmptyChunkIdentifier
+		}
+
+		sps := strings.Split(cdn, "_")
+
+		return fmt.Sprintf("%s/%s/%s.json", e.URL, idn, fmt.Sprintf("chunk_%s", sps[len(sps)-1])), nil
+	}
+
 	return fmt.Sprintf("%s/%s.json", e.URL, idn), nil
+}
+
+// NewFileGetter creates new file getter instance.
+func NewFileGetter() *FileGetter {
+	return &FileGetter{}
+}
+
+// FileGetter this is a path getter for a single file metadata.
+type FileGetter struct {
+}
+
+// GetPath returns path for single file metadata by filename.
+func (e *FileGetter) GetPath(gcx *gin.Context) (string, error) {
+	fln := gcx.Param("filename")
+
+	if len(fln) == 0 {
+		return "", ErrEmptyFilename
+	}
+
+	return fmt.Sprintf("commons/pages/%s.json", strings.ReplaceAll(fln, " ", "_")), nil
 }
 
 // NewEntityDownloader creates new instance of entity downloader.
@@ -96,7 +142,40 @@ func (e *EntityDownloader) GetPath(gcx *gin.Context) (string, error) {
 		return "", ErrEmptyIdentifier
 	}
 
+	// Resolve s3 key for chunk tar
+	if strings.Contains(e.URL, "chunk") {
+		cdn := gcx.Param("chunkIdentifier")
+
+		if len(cdn) == 0 {
+			return "", ErrEmptyChunkIdentifier
+		}
+
+		sps := strings.Split(cdn, "_")
+
+		return fmt.Sprintf("%s/%s/%s.tar.gz", e.URL, idn, fmt.Sprintf("chunk_%s", sps[len(sps)-1])), nil
+	}
+
 	return fmt.Sprintf("%s/%s.tar.gz", e.URL, idn), nil
+}
+
+// NewFileDownloader creates new instance of a file downloader.
+func NewFileDownloader() *FileDownloader {
+	return &FileDownloader{}
+}
+
+// FileDownloader gives the ability to provide download path fo single file.
+type FileDownloader struct {
+}
+
+// GetPath returns a s3 bucket location for a file or error.
+func (e *FileDownloader) GetPath(gcx *gin.Context) (string, error) {
+	fln := gcx.Param("filename")
+
+	if len(fln) == 0 {
+		return "", ErrEmptyFilename
+	}
+
+	return fmt.Sprintf("commons/files/%s", strings.ReplaceAll(fln, " ", "_")), nil
 }
 
 // NewDateEntitiesGetter returns DateEntitiesGetter structure.

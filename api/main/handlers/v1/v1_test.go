@@ -29,6 +29,7 @@ func (s *v1TestSuite) SetupTest() {
 	os.Setenv("COGNITO_CLIENT_SECRET", "secret")
 	os.Setenv("ACCESS_MODEL", "id")
 	os.Setenv("ACCESS_POLICY", "secret")
+	os.Setenv("CAP_CONFIGURATION", `[{"prefix_group":"ondemand", "paths": ["articles", "structured-contents"], "limit":1000000000, "groups":["free", "basic", "premium"]},{"limit":200000,"groups":["some-group"]}]`)
 
 	gin.SetMode(gin.TestMode)
 	s.rtr = gin.New()

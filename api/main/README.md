@@ -6,6 +6,12 @@ Main API service implements the v2 APIs for /codes, /languages, /namespaces, /pr
 
 Need to make sure that `go`, `docker` and `docker-compose` is installed on your machine.
 
+1. Update and init git submodules:
+
+   ```bash
+   git submodule update --init --remote --recursive
+   ```
+
 1. Create `.env` file in the project root with following content:
 
    ```bash
@@ -22,6 +28,7 @@ Need to make sure that `go`, `docker` and `docker-compose` is installed on your 
    ACCESS_MODEL=
    ACCESS_POLICY=
    FreeTierGroup=group_1
+   CAP_CONFIGURATION='[{"prefix_group":"cap:ondemand", "paths": ["articles", "structured-contents"], "limit":1000000000, "groups":["free", "basic", "premium"]},{"limit":200000,"groups":["some-group"]}]'
    ```
 
 1. Start the application by running:
@@ -48,6 +55,17 @@ Need to make sure that `go`, `docker` and `docker-compose` is installed on your 
    docker-compose logs -f main
    ```
 
+1. To test the main API locally without authentication, comment the following line from `main.go` and add the following line.
+
+    ```golang
+      // rtr.Use(httputil.IPAuth(*p.Env.IPAllowList))
+      // rtr.Use(httputil.Auth(httputil.NewAuthParams(p.Env.CognitoClientID, p.Cache, p.Provider)))
+		rtr.Use(func(gcx *gin.Context) {
+			gcx.Set("user", &httputil.User{Username: "someuser",
+				Groups: []string{"__replace_this_with_appropriate_group__"}})
+			gcx.Next()
+		})
+    ```
 1. Run unit tests:
 
    ```bash

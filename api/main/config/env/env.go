@@ -42,6 +42,15 @@ g, group_1, snapshots
 g, group_2, snapshots
 g, group_3, snapshots
 
+p, structured-snapshots, /v2/snapshots/structured-contents, GET
+p, structured-snapshots, /v2/snapshots/structured-contents, POST
+p, structured-snapshots, /v2/snapshots/structured-contents/:identifier, GET
+p, structured-snapshots, /v2/snapshots/structured-contents/:identifier, POST
+p, structured-snapshots, /v2/snapshots/structured-contents/:identifier/download, GET
+p, structured-snapshots, /v2/snapshots/structured-contents/:identifier/download, HEAD
+g, group_2, structured-snapshots
+g, group_3, structured-snapshots
+
 p, batches, /v1/diffs/download/*, GET
 p, batches, /v1/diffs/download/*, HEAD
 p, batches, /v1/diffs/meta/*, GET
@@ -54,8 +63,8 @@ p, batches, /v2/batches/:date/:identifier/download, HEAD
 g, group_2, batches
 g, group_3, batches
 
-p, beta, /v2/structured-contents/:name, GET
-p, beta, /v2/structured-contents/:name, POST
+p, beta, /v2/structured-contents/*, GET
+p, beta, /v2/structured-contents/*, POST
 g, group_2, beta
 g, group_3, beta
 
@@ -78,11 +87,25 @@ p, meta, /v2/namespaces, GET
 p, meta, /v2/namespaces, POST
 p, meta, /v2/namespaces/:identifier, GET
 p, meta, /v2/namespaces/:identifier, POST
-p, meta, /v2/articles/:name, GET
-p, meta, /v2/articles/:name, POST
+p, meta, /v2/articles/*, GET
+p, meta, /v2/articles/*, POST
 g, group_1, meta
 g, group_2, meta
-g, group_3, meta`
+g, group_3, meta
+
+p, chunks, /v2/snapshots/:identifier/chunks, GET
+p, chunks, /v2/snapshots/:identifier/chunks, POST
+p, chunks, /v2/snapshots/:identifier/chunks/:chunkIdentifier, GET
+p, chunks, /v2/snapshots/:identifier/chunks/:chunkIdentifier, POST
+p, chunks, /v2/snapshots/:identifier/chunks/:chunkIdentifier/download, GET
+p, chunks, /v2/snapshots/:identifier/chunks/:chunkIdentifier/download, HEAD
+g, group_2, chunks
+g, group_3, chunks
+
+p, files, /v2/files/:filename, GET
+p, files, /v2/files/:filename, POST
+p, files, /v2/files/:filename/download, GET
+g, group_3, files`
 
 func unmarshalAccess(dta string, fnm string, cnt string) (string, error) {
 	f, err := os.CreateTemp("/tmp", fnm)
@@ -132,27 +155,27 @@ func (m *AccessPolicy) UnmarshalEnvironmentValue(data string) (err error) {
 
 // Environment environment variables configuration.
 type Environment struct {
-	AWSRegion            string               `env:"AWS_REGION,required=true"`
-	AWSID                string               `env:"AWS_ID,required=true"`
-	AWSKey               string               `env:"AWS_KEY,required=true"`
-	ServerMode           string               `env:"SERVER_MODE,default=release"`
-	ServerPort           string               `env:"SERVER_PORT,default=4060"`
-	AWSURL               string               `env:"AWS_URL"`
-	AWSBucket            string               `env:"AWS_BUCKET,required=true"`
-	CognitoClientID      string               `env:"COGNITO_CLIENT_ID,required=true"`
-	CognitoClientSecret  string               `env:"COGNITO_CLIENT_SECRET,required=true"`
-	RedisAddr            string               `env:"REDIS_ADDR,required=true"`
-	RedisPassword        string               `env:"REDIS_PASSWORD,required=true"`
-	AccessModel          *AccessModel         `env:"ACCESS_MODEL,required=true"`
-	AccessPolicy         *AccessPolicy        `env:"ACCESS_POLICY,required=true"`
-	RateLimitsByGroup    *httputil.Limiter    `env:"RATE_LIMITS_BY_GROUP"`
-	CapConfig            *httputil.CapConfig  `env:"CAP_CONFIGURATION"`
-	IPAllowList          httputil.IPAllowList `env:"IP_ALLOW_LIST"`
-	FreeTierGroup        string               `env:"FREE_TIER_GROUP,default=group_1"`
-	PrometheusPort       int                  `env:"PROMETHEUS_PORT,default=12411"`
-	DescriptionEnabled   bool                 `env:"DESCRIPTION_ENABLED,default=true"`
-	SectionsEnabled      bool                 `env:"SECTIONS_ENABLED,default=true"`
-	ArticleKeyTypeSuffix string               `env:"KEY_TYPE_SUFFIX"`
+	AWSRegion            string                     `env:"AWS_REGION,required=true"`
+	AWSID                string                     `env:"AWS_ID,required=true"`
+	AWSKey               string                     `env:"AWS_KEY,required=true"`
+	ServerMode           string                     `env:"SERVER_MODE,default=release"`
+	ServerPort           string                     `env:"SERVER_PORT,default=4060"`
+	AWSURL               string                     `env:"AWS_URL"`
+	AWSBucket            string                     `env:"AWS_BUCKET,required=true"`
+	CognitoClientID      string                     `env:"COGNITO_CLIENT_ID,required=true"`
+	CognitoClientSecret  string                     `env:"COGNITO_CLIENT_SECRET,required=true"`
+	RedisAddr            string                     `env:"REDIS_ADDR,required=true"`
+	RedisPassword        string                     `env:"REDIS_PASSWORD,required=true"`
+	AccessModel          *AccessModel               `env:"ACCESS_MODEL,required=true"`
+	AccessPolicy         *AccessPolicy              `env:"ACCESS_POLICY,required=true"`
+	RateLimitsByGroup    *httputil.Limiter          `env:"RATE_LIMITS_BY_GROUP"`
+	CapConfig            *httputil.CapConfigWrapper `env:"CAP_CONFIGURATION"`
+	IPAllowList          *httputil.IPAllowList      `env:"IP_ALLOW_LIST"`
+	FreeTierGroup        string                     `env:"FREE_TIER_GROUP,default=group_1"`
+	PrometheusPort       int                        `env:"PROMETHEUS_PORT,default=12411"`
+	DescriptionEnabled   bool                       `env:"DESCRIPTION_ENABLED,default=true"`
+	SectionsEnabled      bool                       `env:"SECTIONS_ENABLED,default=true"`
+	ArticleKeyTypeSuffix string                     `env:"KEY_TYPE_SUFFIX"`
 }
 
 // New initialize the environment

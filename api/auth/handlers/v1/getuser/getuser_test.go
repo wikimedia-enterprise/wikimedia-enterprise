@@ -27,9 +27,11 @@ type getuserHandlerTestSuite struct {
 	url string
 	unm string
 	ugs []string
-	rqc int
+	rdc int
+	rsc int
 	pth []env.AccessPath
-	gdl int
+	sdl int
+	odl int
 }
 
 func (s *getuserHandlerTestSuite) SetupSuite() {
@@ -52,7 +54,13 @@ func (s *getuserHandlerTestSuite) createServer() http.Handler {
 	s.cmd.Set(
 		context.Background(),
 		fmt.Sprintf("cap:ondemand:user:%s:count", s.unm),
-		s.rqc,
+		s.rdc,
+		0,
+	)
+	s.cmd.Set(
+		context.Background(),
+		fmt.Sprintf("cap:snapshot:user:%s:count", s.unm),
+		s.rsc,
 		0,
 	)
 
@@ -67,7 +75,8 @@ func (s *getuserHandlerTestSuite) createServer() http.Handler {
 	})
 	router.GET(s.url, getuser.NewHandler(&getuser.Parameters{
 		Env: &env.Environment{
-			GroupDownloadLimit: strconv.Itoa(s.gdl),
+			OndemandLimit: strconv.Itoa(s.odl),
+			SnapshotLimit: strconv.Itoa(s.sdl),
 			AccessPolicy: &env.AccessPolicy{
 				Map: map[string][]env.AccessPath{
 					s.ugs[0]: s.pth,
@@ -95,8 +104,10 @@ func (s *getuserHandlerTestSuite) TestGetUserHandler() {
 	s.Assert().Equal(http.StatusOK, resp.StatusCode)
 	s.Assert().Equal(s.unm, tr.Username)
 	s.Assert().Equal(s.ugs, tr.Groups)
-	s.Assert().Equal(s.rqc, tr.RequestsCount)
-	s.Assert().Equal(s.gdl, tr.DownloadLimit)
+	s.Assert().Equal(s.rdc, tr.OndemandRequestsCount)
+	s.Assert().Equal(s.odl, tr.OndemandLimit)
+	s.Assert().Equal(s.rsc, tr.SnapshotRequestsCount)
+	s.Assert().Equal(s.sdl, tr.SnapshotLimit)
 	s.Assert().Equal(s.pth, tr.Apis)
 }
 
@@ -104,11 +115,13 @@ func TestCaptcha(t *testing.T) {
 	for _, testCase := range []*getuserHandlerTestSuite{
 		{
 			unm: "username",
-			rqc: 5,
+			rdc: 5,
+			rsc: 10,
 			ugs: []string{
 				"group_1",
 			},
-			gdl: 10000,
+			odl: 10000,
+			sdl: 10000,
 			pth: []env.AccessPath{
 				{
 					Path:   "/path-1",

@@ -140,7 +140,8 @@ type Environment struct {
 	IPRange                string        `env:"IP_RANGE"`
 	CognitoCacheExpiration int           `env:"COGNITO_CACHE_EXPIRATION,default=300"`
 	AccessPolicy           *AccessPolicy `env:"ACCESS_POLICY,required=true"`
-	GroupDownloadLimit     string        `env:"GROUP_DOWNLOAD_LIMIT,required=true"`
+	OndemandLimit          string        `env:"ONDEMAND_LIMIT,default=5000"`
+	SnapshotLimit          string        `env:"SNAPSHOT_LIMIT,default=15"`
 	PrometheusPort         int           `env:"PROMETHEUS_PORT,default=12411"`
 	DomainDenyList         List          `env:"DOMAIN_DENY_LIST,default="`
 }

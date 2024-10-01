@@ -43,8 +43,10 @@ type envTestSuite struct {
 	cognitoCacheExp         int
 	ipRangeKey              string
 	ipRange                 string
-	groupDownloadLimit      string
-	groupDownloadLimitKey   string
+	ondemandLimit           string
+	ondemandLimitKey        string
+	snapshotLimit           string
+	snapshotLimitKey        string
 	accessPolicy            string
 	accessPolicyKey         string
 	domainDenyList          env.List
@@ -82,10 +84,10 @@ func (s *envTestSuite) SetupSuite() {
 	s.cognitoCacheExp = 300
 	s.ipRangeKey = "IP_RANGE"
 	s.ipRange = "127.0.0.0-127.0.0.1"
-	s.groupDownloadLimitKey = "GROUP_DOWNLOAD_LIMIT"
-	s.groupDownloadLimit = "1"
-	s.groupDownloadLimitKey = "GROUP_DOWNLOAD_LIMIT"
-	s.groupDownloadLimit = "1"
+	s.ondemandLimitKey = "ONDEMAND_LIMIT"
+	s.ondemandLimit = "5000"
+	s.snapshotLimitKey = "SNAPSHOT_LIMIT"
+	s.snapshotLimit = "15"
 	s.accessPolicyKey = "ACCESS_POLICY"
 	s.accessPolicy = ""
 	s.prometheusPortKey = "PROMETHEUS_PORT"
@@ -111,7 +113,8 @@ func (s *envTestSuite) SetupTest() {
 	os.Setenv(s.accessTokensExpHoursKey, strconv.FormatInt(s.accessTokensExpHours, 10))
 	os.Setenv(s.cognitoCacheExpKey, strconv.Itoa(s.cognitoCacheExp))
 	os.Setenv(s.ipRangeKey, s.ipRange)
-	os.Setenv(s.groupDownloadLimitKey, s.groupDownloadLimit)
+	os.Setenv(s.ondemandLimitKey, s.ondemandLimit)
+	os.Setenv(s.snapshotLimitKey, s.snapshotLimit)
 	os.Setenv(s.accessPolicyKey, s.accessPolicy)
 	os.Setenv(s.prometheusPortKey, strconv.Itoa(s.prometheusPort))
 	os.Setenv(s.domainDenyListKey, "example.com,example.org")
@@ -133,7 +136,8 @@ func (s *envTestSuite) TestNew() {
 	s.Assert().Equal(s.redisPassword, env.RedisPassword)
 	s.Assert().Equal(s.maxAccessTokens, env.MaxAccessTokens)
 	s.Assert().Equal(s.accessTokensExpHours, env.AccessTokensExpHours)
-	s.Assert().Equal(s.groupDownloadLimit, env.GroupDownloadLimit)
+	s.Assert().Equal(s.ondemandLimit, env.OndemandLimit)
+	s.Assert().Equal(s.snapshotLimit, env.SnapshotLimit)
 	s.Assert().Equal(s.prometheusPort, env.PrometheusPort)
 	s.Assert().Equal(s.domainDenyList, env.DomainDenyList)
 	s.Assert().NotNil(env.AccessPolicy.Map)

@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"embed"
 	"fmt"
 	"net/http"
 	"time"
@@ -18,11 +19,18 @@ import (
 	v1 "wikimedia-enterprise/api/main/handlers/v1"
 	v2 "wikimedia-enterprise/api/main/handlers/v2"
 	"wikimedia-enterprise/api/main/handlers/v2/status"
+	"wikimedia-enterprise/api/main/packages/api-openapi-spec/ui"
 	"wikimedia-enterprise/api/main/packages/container"
 	"wikimedia-enterprise/api/main/packages/shutdown"
 	"wikimedia-enterprise/general/httputil"
 	"wikimedia-enterprise/general/log"
 )
+
+//go:embed packages/api-openapi-spec/ui/*
+var ufs embed.FS
+
+//go:embed packages/api-openapi-spec/main.yaml
+var dcs []byte
 
 type Params struct {
 	dig.In
@@ -56,7 +64,9 @@ func main() {
 		rtr.Use(httputil.CORS())
 		rtr.NoRoute(httputil.NoRoute())
 		rtr.GET("/v2/status", status.NewHandler())
-		rtr.Use(httputil.IPAuth(p.Env.IPAllowList))
+		rtr.GET("/spec/spec.yaml", ui.File(dcs))
+		rtr.StaticFS("/docs/", ui.FS(ufs))
+		rtr.Use(httputil.IPAuth(*p.Env.IPAllowList))
 		rtr.Use(httputil.Auth(httputil.NewAuthParams(p.Env.CognitoClientID, p.Cache, p.Provider)))
 		rtr.Use(httputil.Metrics(p.Recorder))
 		rtr.Use(httputil.RBAC(httputil.CasbinRBACAuthorizer(p.Enforcer)))

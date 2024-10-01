@@ -24,11 +24,13 @@ type Parameters struct {
 
 // Response structure represents response data format.
 type Response struct {
-	Groups        []string         `json:"groups"`
-	RequestsCount int              `json:"requests_count"`
-	DownloadLimit int              `json:"download_limit"`
-	Username      string           `json:"username"`
-	Apis          []env.AccessPath `json:"apis"`
+	Groups                []string         `json:"groups"`
+	OndemandRequestsCount int              `json:"ondemand_requests_count"`
+	OndemandLimit         int              `json:"ondemand_limit"`
+	SnapshotRequestsCount int              `json:"snapshot_requests_count"`
+	SnapshotLimit         int              `json:"snapshot_limit"`
+	Username              string           `json:"username"`
+	Apis                  []env.AccessPath `json:"apis"`
 }
 
 // NewHandler creates new getuser HTTP handler.
@@ -56,13 +58,26 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 			return
 		}
 
-		rqc, err := p.Redis.Get(
+		rdc, err := p.Redis.Get(
 			gcx,
 			fmt.Sprintf("cap:ondemand:user:%s:count", usr.Username),
 		).Int()
 
 		if err == redis.Nil {
-			rqc = 0
+			rdc = 0
+		} else if err != nil {
+			log.Error(err, log.Tip("problem getting user from redis"))
+			httputil.InternalServerError(gcx, err)
+			return
+		}
+
+		rsc, err := p.Redis.Get(
+			gcx,
+			fmt.Sprintf("cap:snapshot:user:%s:count", usr.Username),
+		).Int()
+
+		if err == redis.Nil {
+			rsc = 0
 		} else if err != nil {
 			log.Error(err, log.Tip("problem getting user from redis"))
 			httputil.InternalServerError(gcx, err)
@@ -84,14 +99,18 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 			aps = append(aps, p.Env.AccessPolicy.Map["*"]...)
 		}
 
-		dwl, _ := strconv.Atoi(p.Env.GroupDownloadLimit)
+		odl, _ := strconv.Atoi(p.Env.OndemandLimit)
+		snl, _ := strconv.Atoi(p.Env.SnapshotLimit)
 
 		r := new(Response)
 		r.Username = usr.Username
 		r.Groups = gps
-		r.RequestsCount = rqc
+		r.OndemandRequestsCount = rdc
+		r.SnapshotRequestsCount = rsc
+		r.OndemandLimit = odl
+		r.SnapshotLimit = snl
 		r.Apis = aps
-		r.DownloadLimit = dwl
+
 		gcx.JSON(http.StatusOK, r)
 	}
 }

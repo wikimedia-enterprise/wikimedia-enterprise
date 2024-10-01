@@ -37,6 +37,8 @@ type envTestSuite struct {
 	AccessModelKey          string
 	AccessPolicy            string
 	AccessPolicyKey         string
+	CapConfig               string
+	CapConfigKey            string
 	IPAllowList             string
 	IPAllowListKey          string
 	FreeTierGroup           string
@@ -78,6 +80,8 @@ func (s *envTestSuite) SetupSuite() {
 	s.AccessModel = "model content"
 	s.AccessPolicyKey = "ACCESS_POLICY"
 	s.AccessPolicy = "policy content"
+	s.CapConfigKey = "CAP_CONFIGURATION"
+	s.CapConfig = "[{\"groups\": [\"group_1\"], \"limit\": 10}, {\"groups\": [\"group_2\"], \"limit\": 20}]"
 	s.IPAllowListKey = "IP_ALLOW_LIST"
 	s.IPAllowList = "[{\"ip_range\": {\"start\": \"192.168.0.1\", \"end\": \"192.168.0.10\"}, \"user\": {\"username\": \"user1\", \"groups\": [\"group_1\"]}}, {\"ip_range\": {\"start\": \"192.168.1.1\", \"end\": \"192.168.1.10\"}, \"user\": {\"username\": \"user2\", \"groups\": [\"group_2\"]}}]"
 	s.FreeTierGroupKey = "FREE_TIER_GROUP"
@@ -106,6 +110,7 @@ func (s *envTestSuite) SetupTest() {
 	os.Setenv(s.RedisPasswordKey, s.RedisPassword)
 	os.Setenv(s.AccessModelKey, s.AccessModel)
 	os.Setenv(s.AccessPolicyKey, s.AccessPolicy)
+	os.Setenv(s.CapConfigKey, s.CapConfig)
 	os.Setenv(s.IPAllowListKey, s.IPAllowList)
 	os.Setenv(s.FreeTierGroupKey, s.FreeTierGroup)
 	os.Setenv(s.PrometheusPortKey, strconv.Itoa(s.PrometheusPort))
@@ -132,6 +137,7 @@ func (s *envTestSuite) TestNew() {
 	s.Assert().Equal(s.PrometheusPort, env.PrometheusPort)
 	s.Assert().Equal(s.DescriptionEnabled, env.DescriptionEnabled)
 	s.Assert().Equal(s.SectionsEnabled, env.SectionsEnabled)
+	s.Assert().NotNil(env.CapConfig)
 	s.Assert().NotNil(env.AccessModel.Path)
 	s.Assert().NotNil(env.AccessPolicy.Path)
 	s.Assert().NotNil(env.IPAllowList)

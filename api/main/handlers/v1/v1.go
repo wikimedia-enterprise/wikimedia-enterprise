@@ -33,7 +33,7 @@ func NewGroup(con *dig.Container, rtr *gin.Engine) (*gin.RouterGroup, error) {
 			v1.GET(fmt.Sprintf("/%s", ent), proxy.NewGetEntities(&pms.Proxy, proxy.NewEntitiesGetter(ent)))
 		}
 
-		cmw := httputil.Cap(&pms.Capper, pms.Env.CapConfig)
+		cmw := httputil.Cap(&pms.Capper, *pms.Env.CapConfig)
 		v1.GET("/pages/meta/:project/*name", cmw, legacy.NewGetPageHandler(&pms.Legacy))
 
 		v1.GET("/diffs/meta/:date/:namespace", legacy.NewListDiffsHandler(&pms.Legacy))
@@ -43,7 +43,7 @@ func NewGroup(con *dig.Container, rtr *gin.Engine) (*gin.RouterGroup, error) {
 
 		v1.GET("/exports/meta/:namespace", legacy.NewListExportsHandler(&pms.Legacy))
 		v1.GET("/exports/meta/:namespace/:project", legacy.NewGetExportHandler(&pms.Legacy))
-		v1.HEAD("/exports/download/:namespace/:project", legacy.NewHeadExportHandler(&pms.Legacy))
-		v1.GET("/exports/download/:namespace/:project", legacy.NewDownloadExportHandler(&pms.Legacy))
+		v1.HEAD("/exports/download/:namespace/:project", cmw, legacy.NewHeadExportHandler(&pms.Legacy))
+		v1.GET("/exports/download/:namespace/:project", cmw, legacy.NewDownloadExportHandler(&pms.Legacy))
 	})
 }
