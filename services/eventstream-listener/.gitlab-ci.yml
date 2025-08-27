@@ -1,0 +1,14 @@
+include:
+  - project: 'wikimedia-enterprise/general/cdtools'
+    ref: main
+    file: '/ci/goapp_latest.yml'
+  - project: 'wikimedia-enterprise/general/cdtools'
+    ref: main
+    file: '/ci/deploy/prep_argocd.yml'
+
+stages:
+  - test
+  - analyses
+  - build
+  - push
+  - app-restart
