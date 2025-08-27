@@ -62,3 +62,7 @@ for project in "${services_projects[@]}"; do
 
     cd -
 done
+
+# Make sure to remove .git from subrepositories, otherwise git will think they are
+# submodules but they are not indexed as such.
+find . -mindepth 2 -type d -name .git -exec rm -rf {} +
