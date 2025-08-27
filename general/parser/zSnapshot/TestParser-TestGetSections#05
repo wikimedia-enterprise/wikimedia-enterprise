@@ -1,0 +1,128 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=8) "Abstract",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=26) "The Futurist may refer to:",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=4) "list",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=6) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=62) "The Futurist (magazine), published by the World Future Society",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/The_Futurist_(magazine)",
+                Text: (string) (len=23) "The Futurist (magazine)",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=34) "The Futurist (Shellac album), 1997",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/The_Futurist_(Shellac_album)",
+                Text: (string) (len=28) "The Futurist (Shellac album)",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=44) "The Futurist (Robert Downey Jr. album), 2004",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=68) "https://en.wikipedia.org/wiki/The_Futurist_(Robert_Downey_Jr._album)",
+                Text: (string) (len=38) "The Futurist (Robert Downey Jr. album)",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=81) "\"The Futurist Manifesto \", a 1909 essay by Italian poet Filippo Tommaso Marinetti",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Futurist_Manifesto",
+                Text: (string) (len=18) "Futurist Manifesto",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=51) "The Futurist Cinema, Liverpool, a cinema in England",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/The_Futurist_Cinema,_Liverpool",
+                Text: (string) (len=30) "The Futurist Cinema, Liverpool",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=48) "Futurist Theatre in Scarborough, North Yorkshire",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Futurist_Theatre",
+                Text: (string) (len=16) "Futurist Theatre",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

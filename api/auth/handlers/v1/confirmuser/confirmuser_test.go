@@ -72,6 +72,9 @@ func (s *confirmUserTestSuite) SetupSuite() {
 	s.in.SetUsername(s.mod.Username)
 	s.in.SetClientId(s.env.CognitoClientID)
 	s.in.SetConfirmationCode(s.mod.ConfirmationCode)
+	s.in.ClientMetadata = map[string]*string{
+		"username": aws.String(s.unm),
+	}
 
 	h := hmac.New(sha256.New, []byte(s.env.CognitoSecret))
 	if _, err := h.Write([]byte(fmt.Sprintf("%s%s", s.mod.Username, s.env.CognitoClientID))); err != nil {

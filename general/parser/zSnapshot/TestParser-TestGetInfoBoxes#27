@@ -1,0 +1,1016 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=15) "Infobox country",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) (len=62) "Republic of Azerbaijan Azərbaycan Respublikası (Azerbaijani)",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=15) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=20) "Flag National emblem",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=2) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=113) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Azerbaijan.svg/125px-Flag_of_Azerbaijan.svg.png",
+                AlternativeText: (string) (len=134) "Three equally sized horizontal bands of blue, red, and green, with a white crescent and an eight-pointed star centered in the red band",
+                Caption: (string) "",
+                Height: (int) 125,
+                Width: (int) 125
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=116) "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Emblem_of_Azerbaijan.svg/85px-Emblem_of_Azerbaijan.svg.png",
+                AlternativeText: (string) (len=29) "National emblem of Azerbaijan",
+                Caption: (string) "",
+                Height: (int) 85,
+                Width: (int) 85
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Flag_of_Azerbaijan",
+                Text: (string) (len=4) "Flag",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/National_emblem_of_Azerbaijan",
+                Text: (string) (len=15) "National emblem",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=49) "Anthem: Azərbaycan marşı \"March of Azerbaijan\"",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Azərbaycan_marşı",
+                Text: (string) (len=19) "Azərbaycan marşı",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=121) "Location of Azerbaijan (green) with territory controlled by the self-proclaimed Republic of Artsakh shown in light green.",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=2) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=179) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Azerbaijan_-_Location_Map_%282013%29_-_AZE_-_UNOCHA.svg/250px-Azerbaijan_-_Location_Map_%282013%29_-_AZE_-_UNOCHA.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 250,
+                Width: (int) 250
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=155) "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Azerbaijan_with_Nagorno_Karabakh_region.svg/250px-Azerbaijan_with_Nagorno_Karabakh_region.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 250,
+                Width: (int) 250
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Republic_of_Artsakh",
+                Text: (string) (len=19) "Republic of Artsakh",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/Azerbaijan#cite_note-region-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=24) "Capital and largest city",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=62) "Baku 40°23′43″N 49°52′56″E / 40.39528°N 49.88222°E",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=34) "https://en.wikipedia.org/wiki/Baku",
+                Text: (string) (len=4) "Baku",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=100) "https://geohack.toolforge.org/geohack.php?pagename=Azerbaijan&params=40_23_43_N_49_52_56_E_type:city",
+                Text: (string) (len=57) "40°23′43″N 49°52′56″E / 40.39528°N 49.88222°E",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=18) "Official languages",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "Azerbaijani",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Azerbaijani_language",
+                Text: (string) (len=11) "Azerbaijani",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Azerbaijan#cite_note-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=18) "Minority languages",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "See full list",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Languages_of_Azerbaijan",
+                Text: (string) (len=13) "See full list",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=20) "Ethnic groups (2009)",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=7) {
+              (string) (len=21) "  - 91.6% Azerbaijani",
+              (string) (len=15) "  - 2.0% Lezgin",
+              (string) (len=17) "  - 1.4% Armenian",
+              (string) (len=16) "  - 1.3% Russian",
+              (string) (len=15) "  - 1.3% Talysh",
+              (string) (len=15) "  - 2.4% others",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Ethnic_group",
+                Text: (string) (len=13) "Ethnic groups",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/Azerbaijan#cite_note-auto-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Religion (2021)",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=7) {
+              (string) (len=15) "  - 96.2% Islam",
+              (string) (len=21) "  - —60% Shia Islam",
+              (string) (len=22) "  - —40% Sunni Islam",
+              (string) (len=21) "  - 2.4% Christianity",
+              (string) (len=20) "  - 1.3% No religion",
+              (string) (len=14) "  - 0.1% Other",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Azerbaijan#cite_note-4",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Demonym(s)",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=2) {
+              (string) (len=22) "  - Azerbaijani, Azeri",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Demonym",
+                Text: (string) (len=10) "Demonym(s)",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Government",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=34) "Unitary semi-presidential republic",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Politics_of_Azerbaijan",
+                Text: (string) (len=10) "Government",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Unitary_state",
+                Text: (string) (len=7) "Unitary",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Semi-presidential_system",
+                Text: (string) (len=17) "semi-presidential",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Republic",
+                Text: (string) (len=8) "republic",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=64) "https://en.wikipedia.org/wiki/Azerbaijan#cite_note-LaPorte2016-5",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "President",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Ilham Aliyev",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/President_of_Azerbaijan",
+                Text: (string) (len=9) "President",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Ilham_Aliyev",
+                Text: (string) (len=12) "Ilham Aliyev",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Vice President",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "Mehriban Aliyeva",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/Vice_President_of_Azerbaijan",
+                Text: (string) (len=14) "Vice President",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Mehriban_Aliyeva",
+                Text: (string) (len=16) "Mehriban Aliyeva",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Prime Minister",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "Ali Asadov",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/Prime_Minister_of_Azerbaijan",
+                Text: (string) (len=14) "Prime Minister",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Ali_Asadov",
+                Text: (string) (len=10) "Ali Asadov",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=25) "National Assembly Speaker",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "Sahiba Gafarova",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=76) "https://en.wikipedia.org/wiki/Speaker_of_the_National_Assembly_of_Azerbaijan",
+                Text: (string) (len=25) "National Assembly Speaker",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Sahiba_Gafarova",
+                Text: (string) (len=15) "Sahiba Gafarova",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Legislature",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "National Assembly",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/National_Assembly_(Azerbaijan)",
+                Text: (string) (len=17) "National Assembly",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=9) "Formation",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=4) {
+          (*parser.Part)({
+            Name: (string) (len=19) "Democratic Republic",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "28 May 1918",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/Azerbaijan_Democratic_Republic",
+                Text: (string) (len=19) "Democratic Republic",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=25) "Soviet Socialist Republic",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "28 April 1920",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=66) "https://en.wikipedia.org/wiki/Azerbaijan_Soviet_Socialist_Republic",
+                Text: (string) (len=25) "Soviet Socialist Republic",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=30) "Independence from Soviet Union",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=4) {
+              (string) (len=29) "  - 30 August 1991 (declared)",
+              (string) (len=34) "  - 18 October 1991 (independence)",
+              (string) (len=32) "  - 25 December 1991 (completed)",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Soviet_Union",
+                Text: (string) (len=12) "Soviet Union",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=20) "Constitution adopted",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "12 November 1995",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Constitution_of_Azerbaijan",
+                Text: (string) (len=12) "Constitution",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=4) "Area",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) (len=5) "Total",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=34) "86,600 km 2 (33,400 sq mi) (112th)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=72) "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area",
+                Text: (string) (len=5) "112th",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Water (%)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=3) "1.6",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=10) "Population",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=17) {
+          (*parser.Part)({
+            Name: (string) (len=13) "2022 estimate",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "10,353,296 (90th)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Azerbaijan#cite_note-6",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=78) "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population",
+                Text: (string) (len=4) "90th",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Density",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=29) "117/km 2 (303.0/sq mi) (99th)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=86) "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population_density",
+                Text: (string) (len=4) "99th",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "GDP (PPP)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "2023 estimate",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Gross_domestic_product",
+                Text: (string) (len=3) "GDP",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Purchasing_power_parity",
+                Text: (string) (len=3) "PPP",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Total",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "$189.8 billion (79th)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=94) "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/11px-Increase2.svg.png",
+                AlternativeText: (string) (len=8) "Increase",
+                Caption: (string) "",
+                Height: (int) 11,
+                Width: (int) 11
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=75) "https://en.wikipedia.org/wiki/Azerbaijan#cite_note-World_Economic_Outlook-7",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)",
+                Text: (string) (len=4) "79th",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Per capita",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "$18,310 (87th)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=94) "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/11px-Increase2.svg.png",
+                AlternativeText: (string) (len=8) "Increase",
+                Caption: (string) "",
+                Height: (int) 11,
+                Width: (int) 11
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=75) "https://en.wikipedia.org/wiki/Azerbaijan#cite_note-World_Economic_Outlook-7",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)_per_capita",
+                Text: (string) (len=4) "87th",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "GDP (nominal)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "2023 estimate",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Gross_domestic_product",
+                Text: (string) (len=3) "GDP",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Total",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=20) "$71.2 billion (82nd)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=94) "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/11px-Increase2.svg.png",
+                AlternativeText: (string) (len=8) "Increase",
+                Caption: (string) "",
+                Height: (int) 11,
+                Width: (int) 11
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=75) "https://en.wikipedia.org/wiki/Azerbaijan#cite_note-World_Economic_Outlook-7",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=64) "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)",
+                Text: (string) (len=4) "82nd",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Per capita",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "$6,872 (88th)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=94) "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/11px-Increase2.svg.png",
+                AlternativeText: (string) (len=8) "Increase",
+                Caption: (string) "",
+                Height: (int) 11,
+                Width: (int) 11
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=75) "https://en.wikipedia.org/wiki/Azerbaijan#cite_note-World_Economic_Outlook-7",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=75) "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)_per_capita",
+                Text: (string) (len=4) "88th",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Gini (2008)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "33.7 medium",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=110) "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Increase_Negative.svg/11px-Increase_Negative.svg.png",
+                AlternativeText: (string) (len=17) "Negative increase",
+                Caption: (string) "",
+                Height: (int) 11,
+                Width: (int) 11
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Gini_coefficient",
+                Text: (string) (len=4) "Gini",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/Azerbaijan#cite_note-wb-gini-8",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "HDI (2021)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "0.745 high · 91st",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=94) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Decrease2.svg/11px-Decrease2.svg.png",
+                AlternativeText: (string) (len=8) "Decrease",
+                Caption: (string) "",
+                Height: (int) 11,
+                Width: (int) 11
+              })
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Human_Development_Index",
+                Text: (string) (len=3) "HDI",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/Azerbaijan#cite_note-UNHDR-9",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=74) "https://en.wikipedia.org/wiki/List_of_countries_by_Human_Development_Index",
+                Text: (string) (len=4) "91st",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Currency",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "Manat (₼) (AZN)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Azerbaijani_manat",
+                Text: (string) (len=5) "Manat",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/ISO_4217",
+                Text: (string) (len=3) "AZN",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Time zone",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "UTC +4 (AZT)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Coordinated_Universal_Time",
+                Text: (string) (len=3) "UTC",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Azerbaijan_Time",
+                Text: (string) (len=3) "AZT",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Date format",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "dd.mm.yyyy (CE)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Common_Era",
+                Text: (string) (len=2) "CE",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Driving side",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=5) "right",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic",
+                Text: (string) (len=12) "Driving side",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Calling code",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "+994",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=61) "https://en.wikipedia.org/wiki/Telephone_numbers_in_Azerbaijan",
+                Text: (string) (len=12) "Calling code",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=61) "https://en.wikipedia.org/wiki/Telephone_numbers_in_Azerbaijan",
+                Text: (string) (len=4) "+994",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "ISO 3166 code",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=2) "AZ",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/ISO_3166",
+                Text: (string) (len=13) "ISO 3166 code",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/ISO_3166-2:AZ",
+                Text: (string) (len=2) "AZ",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Internet TLD",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=3) ".az",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/Country_code_top-level_domain",
+                Text: (string) (len=12) "Internet TLD",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=33) "https://en.wikipedia.org/wiki/.az",
+                Text: (string) (len=3) ".az",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

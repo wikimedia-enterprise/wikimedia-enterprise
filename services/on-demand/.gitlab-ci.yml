@@ -1,0 +1,88 @@
+include:
+  - project: "wikimedia-enterprise/general/cdtools"
+    ref: main
+    file: "/ci/go_multiple_apps.yml"
+  - project: "wikimedia-enterprise/general/cdtools"
+    ref: main
+    file: "/ci/deploy/prep_argocd.yml"
+
+stages:
+  - test
+  - analyses
+  - build
+  - deploy
+  - app-restart
+
+
+#---------------------
+# Service definitions
+#---------------------
+.articles:
+  variables:
+    HANDLER: articles
+    ECR_REPO: $ECR_REPO_ARTICLES
+    IMAGE_NAME: $IMAGE_NAME_ARTICLES
+    SERVICE_NAME: $SERVICE_NAME_ARTICLES
+    DEPENDANT_SERVICES: $DEPENDANT_SERVICES_ARTICLES
+
+.structured:
+  variables:
+    HANDLER: structured
+    ECR_REPO: $ECR_REPO_STRUCTURED
+    IMAGE_NAME: $IMAGE_NAME_STRUCTURED
+    SERVICE_NAME: $SERVICE_NAME_STRUCTURED
+    DEPENDANT_SERVICES: $DEPENDANT_SERVICES_STRUCTURED
+
+#-----------------
+# Build Stage Jobs
+#-----------------
+build:dev:articles:
+  extends:
+    - .articles
+    - .build_dev
+
+build:dev:structured:
+  extends:
+    - .structured
+    - .build_dev
+
+build:prod:articles:
+  extends:
+    - .articles
+    - .build_prod
+
+build:prod:structured:
+  extends:
+    - .structured
+    - .build_prod
+
+#-----------------
+# Deploy Jobs DEV
+#-----------------
+deploy:dev:articles:
+  extends:
+    - .articles
+    - .deploy_dev
+
+deploy:dev:structured:
+  extends:
+    - .structured
+    - .deploy_dev
+
+
+#-----------------
+# Deploy Jobs PROD
+#-----------------
+deploy:prod:articles:
+  extends:
+    - .articles
+    - .deploy_prod
+  # needs:
+  #   - build:articles
+
+deploy:prod:structured:
+  extends:
+    - .structured
+    - .deploy_prod
+  # needs:
+  #   - build:articles

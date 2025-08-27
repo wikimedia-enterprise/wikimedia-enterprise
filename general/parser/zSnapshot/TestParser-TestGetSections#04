@@ -1,0 +1,178 @@
+([]*parser.Part) (len=3) {
+  (*parser.Part)({
+    Name: (string) (len=8) "Abstract",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=538) "The European Union has concluded free trade agreements (FTAs) and other agreements with a trade component with many countries worldwide and is negotiating with many others. The European Union negotiates free trade deals on behalf of all of its member states, as the member states have granted the EU has an \"exclusive competence\" to conclude trade agreements. Even so, member states' governments control every step of the process (via the Council of the European Union, whose members are national ministers from each national government):",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/European_Union",
+            Text: (string) (len=14) "European Union",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=45) "https://en.wikipedia.org/wiki/Free_trade_area",
+            Text: (string) (len=21) "free trade agreements",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=59) "https://en.wikipedia.org/wiki/Council_of_the_European_Union",
+            Text: (string) (len=29) "Council of the European Union",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=51) "https://en.wikipedia.org/wiki/Minister_(government)",
+            Text: (string) (len=9) "ministers",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=4) "list",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=4) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=117) "Before negotiations start, member states' governments (via the Council of Ministers) approve the negotiating mandate;",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=166) "During negotiations, member states' governments are regularly briefed on the progress of negotiations and can update the negotiations mandate or suspend negotiations;",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=106) "Upon conclusion of negotiations, member states' governments decide whether the agreement should be signed;",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=281) "After approval from the European Parliament and (in case the agreement covers areas other than trade such as investment protection) upon ratification in each member state parliament, member states' governments decide whether the agreement should be concluded and enter into effect.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/European_Parliament",
+                Text: (string) (len=19) "European Parliament",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=10) "Competence",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=491) "The European Court of Justice has held that investor-state arbitration provisions (including a dedicated tribunal planned by some free trade agreements) falls under competency shared between European Union and its member states and that for this reason, the ratification of such mixed agreements should be approved by the EU as well as by each of the union's member states. This court decision has resulted in a new architecture of external trade negotiations which will have two components:",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=41) "https://en.wikipedia.org/wiki/Arbitration",
+            Text: (string) (len=11) "arbitration",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=4) "list",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=101) "a free trade agreement - related exclusively to trade matters - which can be adopted at the EU level;",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=150) "an investment agreement - containing investment, arbitration and other non-trade provisions - which needs to be ratified by the member states as well.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=19) "Impact to consumers",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=279) "One study found that the trade agreements that the EU implemented over the period 1993-2013 have, on average, increased the quality of imported goods by 7% and therefore \"lowered quality-adjusted prices by close to 7%,\" without having much of an impact on the non-adjusted price.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

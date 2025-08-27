@@ -1,0 +1,23 @@
+([]*parser.Image) (len=3) {
+  (*parser.Image)({
+    ContentUrl: (string) (len=96) "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/FetLife_logo.svg/100px-FetLife_logo.svg.png",
+    AlternativeText: (string) (len=32) "FetLife logo, a heart with horns",
+    Caption: (string) "",
+    Height: (int) 100,
+    Width: (int) 100
+  }),
+  (*parser.Image)({
+    ContentUrl: (string) (len=102) "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/FetLife_user_page.png/255px-FetLife_user_page.png",
+    AlternativeText: (string) (len=23) "John Kopanas' user page",
+    Caption: (string) "",
+    Height: (int) 255,
+    Width: (int) 255
+  }),
+  (*parser.Image)({
+    ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png",
+    AlternativeText: (string) "",
+    Caption: (string) "",
+    Height: (int) 50,
+    Width: (int) 50
+  })
+}

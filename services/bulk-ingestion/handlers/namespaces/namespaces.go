@@ -11,8 +11,9 @@ import (
 	"wikimedia-enterprise/services/bulk-ingestion/config/env"
 	pb "wikimedia-enterprise/services/bulk-ingestion/handlers/protos"
 
-	"wikimedia-enterprise/general/schema"
-	"wikimedia-enterprise/general/wmf"
+	"wikimedia-enterprise/services/bulk-ingestion/submodules/config"
+	"wikimedia-enterprise/services/bulk-ingestion/submodules/schema"
+	"wikimedia-enterprise/services/bulk-ingestion/submodules/wmf"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/s3"
@@ -28,6 +29,7 @@ type Parameters struct {
 	API    wmf.API
 	S3     s3iface.S3API
 	Env    *env.Environment
+	Cfg    config.NamespacesMetadataGetter
 }
 
 // Handler gets all the projects by calling mediawiki actions API. Then, it gets all the namespaces for each project
@@ -40,12 +42,11 @@ func Handler(ctx context.Context, p *Parameters, req *pb.NamespacesRequest) (*pb
 		return nil, err
 	}
 
-	dcs := map[int]string{
-		0:  "The main namespace, article namespace, or mainspace is the namespace of Wikipedia that contains the encyclopedia proper—that is, where 'live' Wikipedia articles reside.",
-		6:  "The File namespace is a namespace consisting of administration pages in which all of Wikipedia's media content resides. On Wikipedia, all media filenames begin with the prefix File:, including data files for images, video clips, or audio clips, including document length clips; or MIDI files (a small file of computer music instructions).",
-		10: "The Template namespace on Wikipedia is used to store templates, which contain Wiki markup intended for inclusion on multiple pages, usually via transclusion. Although the Template namespace is used for storing most templates, it is possible to transclude and substitute from other namespaces, and so some template pages are placed in other namespaces, such as the User namespace.",
-		14: "Categories are intended to group together pages on similar subjects. They are implemented by a MediaWiki feature that adds any page with a text like [[Category:XYZ]] in its wiki markup to the automated listing that is the category with name XYZ. Categories help readers to find, and navigate around, a subject area, to see pages sorted by title, and to thus find article relationships.",
+	dcs := map[int]string{}
+	for ns, mtd := range p.Cfg.GetNamespacesMetadata() {
+		dcs[ns] = mtd.Description
 	}
+
 	mgs := []*schema.Message{}
 	nns := new(strings.Builder)
 

@@ -1,0 +1,214 @@
+([]*parser.Part) (len=4) {
+  (*parser.Part)({
+    Name: (string) (len=8) "Abstract",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=66) "A letra O (ô ou ó) é a décima quinta letra do alfabeto latino.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=45) "https://pt.wikipedia.org/wiki/Alfabeto_latino",
+            Text: (string) (len=15) "alfabeto latino",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=9) "História",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=402) "Tem sua origem no ain dos fenícios que era representado pelo desenho de um olho (ain em fenício). Os gregos possuíam duas versões para a letra: o ómega (O mega é literalmente \"O grande\" em grego) que era usado para representar o som de o longo, e o ómicron (O micron, \"O pequeno\") usado para designar o som de o breve. Desde seu surgimento, a letra O manteve sua forma aproximada de um círculo.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=6) {
+          (*parser.Link)({
+            URL: (string) (len=39) "https://pt.wikipedia.org/wiki/Fenícios",
+            Text: (string) (len=9) "fenícios",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://pt.wikipedia.org/wiki/Língua_fenícia",
+            Text: (string) (len=8) "fenício",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=36) "https://pt.wikipedia.org/wiki/Gregos",
+            Text: (string) (len=6) "gregos",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=32) "https://pt.wikipedia.org/wiki/Ω",
+            Text: (string) (len=6) "ómega",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=32) "https://pt.wikipedia.org/wiki/Ο",
+            Text: (string) (len=8) "ómicron",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=38) "https://pt.wikipedia.org/wiki/Círculo",
+            Text: (string) (len=8) "círculo",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=20) "Fonética e códigos",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=187) "Em português, a letra O pode ter os valores fonéticos (semicerrada), como em b o lo; (semiaberta), como em c o bra; como em pat o, ou (semicerrada nasal), como em oraç õ es ou on tem.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=48) "https://pt.wikipedia.org/wiki/Língua_portuguesa",
+            Text: (string) (len=10) "português",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=39) "https://pt.wikipedia.org/wiki/Fonética",
+            Text: (string) (len=10) "fonéticos",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=12) "Significados",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=4) "list",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=6) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=49) "Em química, O é símbolo do elemento oxigênio;",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://pt.wikipedia.org/wiki/Química",
+                Text: (string) (len=8) "química",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://pt.wikipedia.org/wiki/Oxigênio",
+                Text: (string) (len=9) "oxigênio",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=222) "Em português, o pode ser: Artigo definido masculino singular; Pronome pessoal oblíquo da terceira pessoa do singular; Pronome demonstrativo equivalente a \"aquele\"; Com acento agudo (ó), interjeição usada em vocativos.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://pt.wikipedia.org/wiki/Língua_portuguesa",
+                Text: (string) (len=10) "português",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=35) "Artigo definido masculino singular;",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=56) "Pronome pessoal oblíquo da terceira pessoa do singular;",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=45) "Pronome demonstrativo equivalente a \"aquele\";",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=56) "Com acento agudo (ó), interjeição usada em vocativos.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

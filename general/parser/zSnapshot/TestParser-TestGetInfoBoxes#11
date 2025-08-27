@@ -1,0 +1,396 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=15) "Infobox company",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) (len=4) "Aldi",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=14) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=29) "Aldi Süd and Aldi Nord logos",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=2) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=93) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/ALDI_SUD.svg/100px-ALDI_SUD.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) (len=29) "Aldi Süd and Aldi Nord logos",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=121) "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/AldiNord-WorldwideLogo.svg/115px-AldiNord-WorldwideLogo.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) (len=29) "Aldi Süd and Aldi Nord logos",
+                Height: (int) 115,
+                Width: (int) 115
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=25) "Aldi in Sparta, Wisconsin",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=109) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Aldi_grocery_store.jpg/220px-Aldi_grocery_store.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) (len=25) "Aldi in Sparta, Wisconsin",
+                Height: (int) 220,
+                Width: (int) 220
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Sparta,_Wisconsin",
+                Text: (string) (len=17) "Sparta, Wisconsin",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Company type",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "Private",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Privately_held_company",
+                Text: (string) (len=7) "Private",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Industry",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Retail",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Retail",
+                Text: (string) (len=6) "Retail",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Founded",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=85) "10 July 1946 (split in two parts in 1960, renamed to Aldi Nord and Aldi Süd in 1962)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Aldi#cite_note-founded-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Founders",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "Karl and Theo Albrecht",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Karl_Albrecht",
+                Text: (string) (len=4) "Karl",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Theo_Albrecht",
+                Text: (string) (len=13) "Theo Albrecht",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Headquarters",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=56) "Essen, Germany (Aldi Nord) Mülheim, Germany (Aldi Süd)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Essen",
+                Text: (string) (len=5) "Essen",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Germany",
+                Text: (string) (len=7) "Germany",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Mülheim",
+                Text: (string) (len=8) "Mülheim",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=19) "Number of locations",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "12,596 (2022)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Area served",
+            Type: (string) (len=4) "list",
+            Value: (string) (len=36) "United States Australia China Europe",
+            Values: ([]string) (len=5) {
+              (string) "",
+              (string) (len=85) "                                  - United KingdomIrelandVisegrád Group (Hungary and",
+              (string) (len=55) "                                    Poland)FranceIberia",
+              (string) (len=143) "                                    (Except For Andorra And Gibraltar)ItalyGermanySwitzerlandDenmarkAustriaNetherlandsBelgiumLuxembourgSlovenia",
+              (string) (len=28) "                            "
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/United_States",
+                Text: (string) (len=13) "United States",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Australia",
+                Text: (string) (len=9) "Australia",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/China",
+                Text: (string) (len=5) "China",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Europe",
+                Text: (string) (len=6) "Europe",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Products",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=4) {
+              (string) "",
+              (string) (len=45) "                                  - Groceries",
+              (string) (len=50) "                                  - Consumer goods",
+              (string) (len=28) "                            "
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Revenue",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=64) "Aldi Nord: € 27 billion (2022) Aldi Süd: €76 billion (2022)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=2) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=94) "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/11px-Increase2.svg.png",
+                AlternativeText: (string) (len=8) "Increase",
+                Caption: (string) "",
+                Height: (int) 11,
+                Width: (int) 11
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=94) "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Increase2.svg/11px-Increase2.svg.png",
+                AlternativeText: (string) (len=8) "Increase",
+                Caption: (string) "",
+                Height: (int) 11,
+                Width: (int) 11
+              })
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=34) "https://en.wikipedia.org/wiki/Euro",
+                Text: (string) (len=3) "€",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Aldi#cite_note-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Aldi#cite_note-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=19) "Number of employees",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=50) "Aldi Nord: 72,811 (2022) Aldi Süd: 201,361 (2022)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Aldi#cite_note-4",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Aldi#cite_note-5",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Subsidiaries",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=98) "Trader Joe's (Aldi Nord) Hofer (Aldi Süd) Winn-Dixie (Aldi Süd) Harveys Supermarkets (Aldi Süd)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Subsidiary",
+                Text: (string) (len=12) "Subsidiaries",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Trader_Joe's",
+                Text: (string) (len=12) "Trader Joe's",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Winn-Dixie",
+                Text: (string) (len=10) "Winn-Dixie",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Harveys_Supermarkets",
+                Text: (string) (len=20) "Harveys Supermarkets",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Website",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "aldi.com aldi.us aldi.de",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=15) "http://aldi.com",
+                Text: (string) (len=8) "aldi.com",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=14) "http://aldi.us",
+                Text: (string) (len=7) "aldi.us",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=14) "http://aldi.de",
+                Text: (string) (len=7) "aldi.de",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

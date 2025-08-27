@@ -2,13 +2,15 @@
 package changepassword
 
 import (
+	"errors"
 	"net/http"
 
 	"wikimedia-enterprise/api/auth/config/env"
-	"wikimedia-enterprise/general/httputil"
-	"wikimedia-enterprise/general/log"
+	"wikimedia-enterprise/api/auth/submodules/httputil"
+	"wikimedia-enterprise/api/auth/submodules/log"
 
 	"github.com/aws/aws-sdk-go/aws"
+	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/service/cognitoidentityprovider"
 	"github.com/aws/aws-sdk-go/service/cognitoidentityprovider/cognitoidentityprovideriface"
 	"github.com/gin-gonic/gin"
@@ -29,14 +31,19 @@ type Request struct {
 	ProposedPassword string `json:"proposed_password" form:"proposed_password" binding:"required,min=6,max=256"`
 }
 
+var (
+	// Here, "internal" means the error is on our side (Wikimedia Enterprise), not necessarily in the auth API server.
+	internalErr = errors.New("Internal error, please try again later.")
+)
+
 // NewHandler creates a new handler function for change password endpoint.
 func NewHandler(p *Parameters) gin.HandlerFunc {
 	return func(gcx *gin.Context) {
 		req := new(Request)
 
 		if err := gcx.ShouldBind(req); err != nil {
-			log.Error(err, log.Tip("problem binding request input to change password struct"))
-			httputil.UnprocessableEntity(gcx, err)
+			log.Error(err, log.Tip("problem binding request input to change password struct"), log.Any("url", gcx.Request.URL.String()))
+			httputil.UnprocessableEntity(gcx, internalErr)
 			return
 		}
 
@@ -47,8 +54,19 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 		})
 
 		if err != nil {
-			log.Error(err, log.Tip("problem change password was unauthorized"))
-			httputil.Unauthorized(gcx, err)
+			if awsErr, ok := err.(awserr.Error); ok {
+				log.Error("password change AWS error", log.Any("error", err))
+				switch awsErr.Code() {
+				case cognitoidentityprovider.ErrCodeNotAuthorizedException, cognitoidentityprovider.ErrCodeInvalidPasswordException, cognitoidentityprovider.ErrCodeUserNotFoundException:
+					httputil.Unauthorized(gcx, errors.New("Incorrect username or password."))
+				default:
+					httputil.InternalServerError(gcx, internalErr)
+				}
+				return
+			}
+
+			log.Error("password change unknown error", log.Any("error", err))
+			httputil.InternalServerError(gcx, internalErr)
 			return
 		}
 

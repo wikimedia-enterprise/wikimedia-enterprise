@@ -5,6 +5,7 @@ import (
 	"testing"
 	"time"
 	"wikimedia-enterprise/api/realtime/libraries/resolver"
+	"wikimedia-enterprise/api/realtime/submodules/schema"
 
 	"github.com/stretchr/testify/suite"
 )
@@ -20,13 +21,13 @@ type resolverSubModelMock struct {
 }
 
 type resolverModelMock struct {
-	TableName        struct{}              `json:"-" ksql:"model"`
-	Identifier       int                   `json:"identifier,omitempty" avro:"identifier"`
-	ParentIdentifier int                   `json:"parent_identifier,omitempty" avro:"parent_identifier"`
-	Comment          string                `json:"comment,omitempty" avro:"comment"`
-	SubModel         *selectSubModelMock   `json:"sub_model,omitempty" avro:"sub_model"`
-	DateStarted      *time.Time            `json:"date_started,omitempty" avro:"date_started"`
-	SubModels        []*selectSubModelMock `json:"sub_models,omitempty" avro:"sub_models"`
+	TableName        struct{}                `json:"-" ksql:"model"`
+	Identifier       int                     `json:"identifier,omitempty" avro:"identifier"`
+	ParentIdentifier int                     `json:"parent_identifier,omitempty" avro:"parent_identifier"`
+	Comment          string                  `json:"comment,omitempty" avro:"comment"`
+	SubModel         *resolverSubModelMock   `json:"sub_model,omitempty" avro:"sub_model"`
+	DateStarted      *time.Time              `json:"date_started,omitempty" avro:"date_started"`
+	SubModels        []*resolverSubModelMock `json:"sub_models,omitempty" avro:"sub_models"`
 }
 
 type newResolverTestSuite struct {
@@ -71,6 +72,68 @@ func TestNew(t *testing.T) {
 	}
 }
 
+type newResolversTestSuite struct {
+	suite.Suite
+	models map[string]interface{}
+	fn     func(r *resolver.Resolver)
+}
+
+func (s *newResolversTestSuite) TestNewResolvers() {
+	resolvers, err := resolver.NewResolvers(s.models, s.fn)
+	s.Assert().NoError(err)
+	s.Assert().Equal(len(resolvers), len(s.models))
+}
+
+func TestNewResolvers(t *testing.T) {
+	for _, testCase := range []*newResolversTestSuite{
+		{
+			models: map[string]interface{}{
+				"article": new(resolverModelMock),
+				"entity":  new(resolverModelMock),
+			},
+		},
+		{
+			models: map[string]interface{}{},
+		},
+		{
+			models: map[string]interface{}{
+				"article":    new(resolverModelMock),
+				"entity":     new(resolverModelMock),
+				"structured": new(resolverModelMock),
+			},
+			fn: func(r *resolver.Resolver) {
+				r.Keywords = map[string]string{
+					"keyword": "`keyword`",
+				}
+			},
+		},
+	} {
+		suite.Run(t, testCase)
+	}
+}
+
+type getSchemaTestSuite struct {
+	suite.Suite
+}
+
+func (s *getSchemaTestSuite) TestGetSchema() {
+	resolvers, err := resolver.NewResolvers(map[string]interface{}{
+		schema.KeyTypeArticle: new(schema.Article),
+	})
+
+	s.Assert().NoError(err)
+
+	out := resolvers.GetSchema("articles")
+	s.Assert().IsType(new(schema.Article), out)
+
+	out = resolvers.GetSchema("unknown")
+	s.Assert().Nil(out)
+}
+
+func TestGetSchema(t *testing.T) {
+	suite.Run(t, new(getSchemaTestSuite))
+}
+
 type resolverTestSuite struct {
 	suite.Suite
 	model             interface{}
@@ -80,7 +143,6 @@ type resolverTestSuite struct {
 	slices            []string
 	filters           []resolver.Filter
 	fieldsContain     []string
-	fieldsNotContain  []string
 	structsContain    []string
 	structsNotContain []string
 	slicesContain     []string
@@ -127,42 +189,6 @@ func (s *resolverTestSuite) TestHasStruct() {
 
 	for _, slc := range s.slices {
 		s.Assert().False(s.rvr.HasStruct(slc))
-	}
-}
-
-func (s *resolverTestSuite) TestGetFieldsSql() {
-	sql := s.rvr.GetFieldsSql(s.filters...)
-
-	for _, statement := range s.fieldsContain {
-		s.Assert().Contains(sql, statement)
-	}
-
-	for _, statement := range s.fieldsNotContain {
-		s.Assert().NotContains(sql, statement)
-	}
-}
-
-func (s *resolverTestSuite) TestGetStructsSql() {
-	sql := s.rvr.GetSlicesSql(s.filters...)
-
-	for _, statement := range s.slicesContain {
-		s.Assert().Contains(sql, statement)
-	}
-
-	for _, statement := range s.slicesNotContain {
-		s.Assert().NotContains(sql, statement)
-	}
-}
-
-func (s *resolverTestSuite) TestGetSlicesSql() {
-	sql := s.rvr.GetStructsSql(s.filters...)
-
-	for _, statement := range s.structsContain {
-		s.Assert().Contains(sql, statement)
-	}
-
-	for _, statement := range s.structsNotContain {
-		s.Assert().NotContains(sql, statement)
 	}
 }
 

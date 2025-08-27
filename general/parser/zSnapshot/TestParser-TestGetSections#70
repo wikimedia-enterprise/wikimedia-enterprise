@@ -1,0 +1,138 @@
+([]*parser.Part) (len=3) {
+  (*parser.Part)({
+    Name: (string) (len=8) "Abstract",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=20) "Phoenicurus hodgsoni",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=106) "Le Rougequeue de Hodgson (Phoenicurus hodgsoni) est une espèce d' oiseaux de la famille des Muscicapidae.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=37) "https://fr.wikipedia.org/wiki/Espèce",
+            Text: (string) (len=7) "espèce",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=36) "https://fr.wikipedia.org/wiki/Oiseau",
+            Text: (string) (len=7) "oiseaux",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://fr.wikipedia.org/wiki/Famille_(biologie)",
+            Text: (string) (len=7) "famille",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://fr.wikipedia.org/wiki/Muscicapidae",
+            Text: (string) (len=12) "Muscicapidae",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=12) "Répartition",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=146) "Son aire s'étend à travers le centre de la Chine, le Yunnan, l'est du Tibet, le nord du Népal, le Sikkim, le Bhoutan et le nord de la Birmanie.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=7) {
+          (*parser.Link)({
+            URL: (string) (len=35) "https://fr.wikipedia.org/wiki/Chine",
+            Text: (string) (len=5) "Chine",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=36) "https://fr.wikipedia.org/wiki/Yunnan",
+            Text: (string) (len=6) "Yunnan",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=35) "https://fr.wikipedia.org/wiki/Tibet",
+            Text: (string) (len=5) "Tibet",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=36) "https://fr.wikipedia.org/wiki/Népal",
+            Text: (string) (len=6) "Népal",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=36) "https://fr.wikipedia.org/wiki/Sikkim",
+            Text: (string) (len=6) "Sikkim",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://fr.wikipedia.org/wiki/Bhoutan",
+            Text: (string) (len=7) "Bhoutan",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=38) "https://fr.wikipedia.org/wiki/Birmanie",
+            Text: (string) (len=8) "Birmanie",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=7) "Habitat",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=34) "Il habite les forêts tempérées.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

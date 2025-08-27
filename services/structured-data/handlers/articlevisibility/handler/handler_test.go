@@ -5,9 +5,9 @@ import (
 	"errors"
 	"testing"
 	"time"
-	"wikimedia-enterprise/general/schema"
 	"wikimedia-enterprise/services/structured-data/config/env"
 	"wikimedia-enterprise/services/structured-data/handlers/articlevisibility/handler"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/stretchr/testify/mock"
@@ -36,6 +36,20 @@ func (m *unmarshalProducerMock) Produce(_ context.Context, mgs ...*schema.Messag
 	return m.Called(len(mgs)).Error(0)
 }
 
+type TracerMock struct{}
+
+func (t *TracerMock) Trace(ctx context.Context, _ map[string]string) (func(err error, msg string), context.Context) {
+	return func(err error, msg string) {}, ctx
+}
+
+func (t *TracerMock) StartTrace(ctx context.Context, _ string, _ map[string]string) (func(err error, msg string), context.Context) {
+	return func(err error, msg string) {}, ctx
+}
+
+func (t *TracerMock) Shutdown(ctx context.Context) error {
+	return nil
+}
+
 type handlerTestSuite struct {
 	suite.Suite
 	ctx context.Context
@@ -59,6 +73,7 @@ func (s *handlerTestSuite) SetupSuite() {
 	s.pms = &handler.Parameters{
 		Stream: pdm,
 		Env:    new(env.Environment),
+		Tracer: &TracerMock{},
 	}
 }
 
@@ -100,6 +115,9 @@ func TestHandler(t *testing.T) {
 				InLanguage: &schema.Language{
 					Identifier: "en",
 				},
+				Namespace: &schema.Namespace{
+					Identifier: 0,
+				},
 				Version: &schema.Version{
 					Identifier: 100,
 					Editor: &schema.Editor{
@@ -128,6 +146,9 @@ func TestHandler(t *testing.T) {
 				InLanguage: &schema.Language{
 					Identifier: "en",
 				},
+				Namespace: &schema.Namespace{
+					Identifier: 0,
+				},
 				Version: &schema.Version{
 					Identifier: 100,
 					Editor: &schema.Editor{
@@ -155,6 +176,9 @@ func TestHandler(t *testing.T) {
 				},
 				InLanguage: &schema.Language{
 					Identifier: "en",
+				},
+				Namespace: &schema.Namespace{
+					Identifier: 0,
 				},
 				Version: &schema.Version{
 					Identifier: 100,

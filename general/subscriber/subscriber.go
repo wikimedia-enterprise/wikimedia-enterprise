@@ -4,12 +4,21 @@ import (
 	"context"
 	"os"
 	"os/signal"
+	"strconv"
 	"sync"
 	"syscall"
 	"time"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
+	"github.com/prometheus/client_golang/prometheus"
 	"github.com/twmb/murmur3"
+)
+
+var (
+	workerChannelPending = prometheus.NewGaugeVec(prometheus.GaugeOpts{
+		Name: "subscriber_worker_channel_pending",
+		Help: "Number of messages in the input channel for each worker",
+	}, []string{"worker"})
 )
 
 // DefaultNumberOfWorkers defines the default number of workers to use.
@@ -56,8 +65,8 @@ type Config struct {
 	// This is specifically exit flush, meaning time to clear the messages.
 	FlushTimeoutMs int
 
-	// Tracer is a function that injects the tracer into a Client.
-	Tracer func(ctx context.Context, attributes map[string]string) (func(err error, msg string), context.Context)
+	// RebalanceCb will be invoked by Kafka when a subscribed topic is rebalanced.
+	RebalanceCb kafka.RebalanceCb
 }
 
 // CreateWorker creates a worker goroutine and returns a channel for sending messages to it.
@@ -85,6 +94,10 @@ func (c *Config) PushEvent(msg *kafka.Message, err error) {
 			Message: msg,
 		}
 	}
+}
+
+func RegisterMetrics(registerer prometheus.Registerer) error {
+	return registerer.Register(workerChannelPending)
 }
 
 // Handler is a function that processes a Kafka message.
@@ -139,7 +152,7 @@ func (s *Subscriber) Subscribe(ctx context.Context, hdl Handler, cfg *Config) er
 		cfg.FlushTimeoutMs = DefaultFlushTimeoutMs
 	}
 
-	if err := s.Consumer.SubscribeTopics(cfg.Topics, nil); err != nil {
+	if err := s.Consumer.SubscribeTopics(cfg.Topics, cfg.RebalanceCb); err != nil {
 		return err
 	}
 
@@ -153,32 +166,20 @@ func (s *Subscriber) Subscribe(ctx context.Context, hdl Handler, cfg *Config) er
 	swg.Add(cfg.NumberOfWorkers)
 
 	// Create and start worker goroutines.
+	pendingPerWorker := map[int]prometheus.Gauge{}
 	for i := 0; i < cfg.NumberOfWorkers; i++ {
 		wks[i] = cfg.CreateWorker()
+		pendingPerWorker[i] = workerChannelPending.WithLabelValues(strconv.Itoa(i))
 
 		go func(mgs chan *kafka.Message) {
 			defer swg.Done()
 
 			for msg := range mgs {
-				// Tracer is enabled, so we need to create a new context.
-				if cfg.Tracer != nil {
-					end, trx := cfg.Tracer(ctx, nil)
-					if err := hdl(trx, msg); err != nil {
-						cfg.PushEvent(msg, err)
-						end(err, "error processing message")
-					} else {
-						end(nil, "message processed")
-					}
-
-					continue
-				}
-
-				// Tracer is disabled
 				if err := hdl(ctx, msg); err != nil {
 					cfg.PushEvent(msg, err)
-
 				}
 
+				continue
 			}
 		}(wks[i])
 	}
@@ -230,6 +231,7 @@ func (s *Subscriber) Subscribe(ctx context.Context, hdl Handler, cfg *Config) er
 
 			// Send the message to the appropriate worker channel
 			wks[wid] <- msg
+			pendingPerWorker[wid].Set(float64(len(wks[wid])))
 		}
 	}
 }

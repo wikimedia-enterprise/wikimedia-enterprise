@@ -16,7 +16,7 @@ func Marshal(id int, sch avro.Schema, v interface{}) ([]byte, error) {
 	}
 
 	idb := make([]byte, 4)
-	binary.BigEndian.PutUint32(idb, uint32(id))
+	binary.BigEndian.PutUint32(idb, uint32(id)) // #nosec G115: False positive — uint32 cast is safe as input values are within uint32 range.
 
 	return append(append(append([]byte{}, byte(0)), idb...), data...), nil
 }

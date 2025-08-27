@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"wikimedia-enterprise/general/schema"
 	"wikimedia-enterprise/services/bulk-ingestion/packages/container"
+	"wikimedia-enterprise/services/bulk-ingestion/submodules/schema"
 
 	"github.com/stretchr/testify/suite"
 )

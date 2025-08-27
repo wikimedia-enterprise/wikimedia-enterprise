@@ -2,8 +2,8 @@ package tracing
 
 import (
 	"context"
-	"wikimedia-enterprise/general/tracing"
 	"wikimedia-enterprise/services/structured-data/config/env"
+	"wikimedia-enterprise/services/structured-data/submodules/tracing"
 )
 
 // NewAPI creates a new tracing API.

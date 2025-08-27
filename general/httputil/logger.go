@@ -21,9 +21,20 @@ func Logger(lgr *zap.Logger, ops ...func(cfg *ginzap.Config)) gin.HandlerFunc {
 				unm = "anonymous"
 			}
 
-			return []zapcore.Field{
+			// Initialize log fields with username
+			logFields := []zapcore.Field{
 				zap.Any("username", unm),
 			}
+
+			// Retrieve the request body or set a default
+			body, exists := gcx.Get("request_body")
+			requestBody := ""
+			if exists {
+				requestBody = string(body.([]byte))
+			}
+			logFields = append(logFields, zap.String("request_body", requestBody))
+
+			return logFields
 		},
 	}
 

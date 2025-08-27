@@ -3,7 +3,7 @@ package metrics
 
 import (
 	"wikimedia-enterprise/api/auth/config/env"
-	"wikimedia-enterprise/general/httputil"
+	"wikimedia-enterprise/api/auth/submodules/httputil"
 )
 
 // New creates new instance of metrics recorder API.

@@ -3,7 +3,6 @@
 package container
 
 import (
-	"wikimedia-enterprise/general/subscriber"
 	"wikimedia-enterprise/services/on-demand/config/env"
 	"wikimedia-enterprise/services/on-demand/libraries/kafka"
 	pr "wikimedia-enterprise/services/on-demand/libraries/prometheus"
@@ -11,6 +10,7 @@ import (
 	"wikimedia-enterprise/services/on-demand/libraries/storage"
 	"wikimedia-enterprise/services/on-demand/libraries/stream"
 	trc "wikimedia-enterprise/services/on-demand/libraries/tracing"
+	"wikimedia-enterprise/services/on-demand/submodules/subscriber"
 
 	"go.uber.org/dig"
 )

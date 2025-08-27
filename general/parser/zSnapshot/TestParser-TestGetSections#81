@@ -1,0 +1,582 @@
+([]*parser.Part) (len=3) {
+  (*parser.Part)({
+    Name: (string) (len=8) "Abstract",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=347) "Yoshua Bengio OC FRS FRSC (born March 5, 1964) is a Canadian computer scientist, most noted for his work on artificial neural networks and deep learning. He is a professor at the Department of Computer Science and Operations Research at the Université de Montréal and scientific director of the Montreal Institute for Learning Algorithms (MILA).",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=8) {
+          (*parser.Link)({
+            URL: (string) (len=45) "https://en.wikipedia.org/wiki/Order_of_Canada",
+            Text: (string) (len=2) "OC",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=57) "https://en.wikipedia.org/wiki/Fellow_of_the_Royal_Society",
+            Text: (string) (len=3) "FRS",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=67) "https://en.wikipedia.org/wiki/Fellow_of_the_Royal_Society_of_Canada",
+            Text: (string) (len=4) "FRSC",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/Computer_scientist",
+            Text: (string) (len=18) "computer scientist",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=56) "https://en.wikipedia.org/wiki/Artificial_neural_networks",
+            Text: (string) (len=26) "artificial neural networks",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Deep_learning",
+            Text: (string) (len=13) "deep learning",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=54) "https://en.wikipedia.org/wiki/Université_de_Montréal",
+            Text: (string) (len=24) "Université de Montréal",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=72) "https://en.wikipedia.org/wiki/Montreal_Institute_for_Learning_Algorithms",
+            Text: (string) (len=42) "Montreal Institute for Learning Algorithms",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=240) "Bengio received the 2018 ACM A.M. Turing Award, together with Geoffrey Hinton and Yann LeCun, for their work in deep learning. Bengio, Hinton, and LeCun, are sometimes referred to as the \"Godfathers of AI\" and \"Godfathers of Deep Learning\".",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=5) {
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Turing_Award",
+            Text: (string) (len=21) "ACM A.M. Turing Award",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=45) "https://en.wikipedia.org/wiki/Geoffrey_Hinton",
+            Text: (string) (len=15) "Geoffrey Hinton",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/Yann_LeCun",
+            Text: (string) (len=10) "Yann LeCun",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=45) "https://en.wikipedia.org/wiki/Geoffrey_Hinton",
+            Text: (string) (len=6) "Hinton",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/Yann_LeCun",
+            Text: (string) (len=5) "LeCun",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=24) "Early life and education",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=246) "Bengio was born in France to a Jewish family who immigrated to France from Morocco, and then immigrated again to Canada. He received his BScience (electrical engineering), MEng (computer science) and PhD (computer science) from McGill University.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=5) {
+          (*parser.Link)({
+            URL: (string) (len=36) "https://en.wikipedia.org/wiki/France",
+            Text: (string) (len=6) "France",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://en.wikipedia.org/wiki/Bachelor_of_Science",
+            Text: (string) (len=8) "BScience",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=34) "https://en.wikipedia.org/wiki/MEng",
+            Text: (string) (len=4) "MEng",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=33) "https://en.wikipedia.org/wiki/PhD",
+            Text: (string) (len=3) "PhD",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/McGill_University",
+            Text: (string) (len=17) "McGill University",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=68) "Bengio is the brother of Samy Bengio, who was a scientist at Google.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=41) "https://en.wikipedia.org/wiki/Samy_Bengio",
+            Text: (string) (len=11) "Samy Bengio",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=36) "https://en.wikipedia.org/wiki/Google",
+            Text: (string) (len=6) "Google",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=395) "The Bengio brothers lived in Morocco for a year during their father's military service in Morocco. His father, Carlo Bengio, was a pharmacist who wrote theatre pieces and ran a Sephardic theatrical troupe in Montreal that played Judeo-Arabic pieces. His mother, Célia Moreno, is also an artist who played in one of the major theatre scenes of Morocco that was run by Tayeb Seddiki in the 1970s.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=51) "https://en.wikipedia.org/wiki/Judeo-Arabic_dialects",
+            Text: (string) (len=12) "Judeo-Arabic",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Tayeb_Saddiki",
+            Text: (string) (len=13) "Tayeb Seddiki",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=19) "Career and research",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=6) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=358) "After his PhD, Bengio was a postdoctoral fellow at MIT (supervised by Michael I. Jordan) and AT&T Bell Labs. Bengio has been a faculty member at the Université de Montréal since 1993, heads the MILA (Montreal Institute for Learning Algorithms) and is co-director of the Learning in Machines & Brains project of the Canadian Institute for Advanced Research.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=8) {
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Postdoctoral",
+            Text: (string) (len=12) "postdoctoral",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=36) "https://en.wikipedia.org/wiki/Fellow",
+            Text: (string) (len=6) "fellow",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=33) "https://en.wikipedia.org/wiki/MIT",
+            Text: (string) (len=3) "MIT",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/Michael_I._Jordan",
+            Text: (string) (len=17) "Michael I. Jordan",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=39) "https://en.wikipedia.org/wiki/Bell_Labs",
+            Text: (string) (len=14) "AT&T Bell Labs",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=54) "https://en.wikipedia.org/wiki/Université_de_Montréal",
+            Text: (string) (len=24) "Université de Montréal",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=72) "https://en.wikipedia.org/wiki/Montreal_Institute_for_Learning_Algorithms",
+            Text: (string) (len=42) "Montreal Institute for Learning Algorithms",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=70) "https://en.wikipedia.org/wiki/Canadian_Institute_for_Advanced_Research",
+            Text: (string) (len=40) "Canadian Institute for Advanced Research",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=325) "Along with Geoffrey Hinton and Yann LeCun, Bengio is considered by Cade Metz as one of the three people most responsible for the advancement of deep learning during the 1990s and 2000s. Among the computer scientists with an h-index of at least 100, Bengio is the one with the most recent citations per day, according to MILA.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=45) "https://en.wikipedia.org/wiki/Geoffrey_Hinton",
+            Text: (string) (len=15) "Geoffrey Hinton",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/Yann_LeCun",
+            Text: (string) (len=10) "Yann LeCun",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/H-index",
+            Text: (string) (len=7) "h-index",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=750) "In October 2016, Bengio co-founded Element AI, a Montreal -based artificial intelligence incubator that turns AI research into real-world business applications. Having failed to develop marketable products and losing several partnerships, by 2020 the company was running out of money and options and announced its sale to American software company ServiceNow in November. The sale will see largely Canadian taxpayer funded intellectual property exported to the United States, contrary to Bengio's desire to found Element AI as a Canadian company to rival the world's tech giants. Bengio will stay employed as an advisor while the vast majority of employees were terminated with their stock options voided and cancelled with no value in lieu provided.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=6) {
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/Element_AI",
+            Text: (string) (len=10) "Element AI",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=38) "https://en.wikipedia.org/wiki/Montreal",
+            Text: (string) (len=8) "Montreal",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://en.wikipedia.org/wiki/Artificial_intelligence",
+            Text: (string) (len=23) "artificial intelligence",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/Business_incubator",
+            Text: (string) (len=9) "incubator",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/ServiceNow",
+            Text: (string) (len=10) "ServiceNow",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/United_States",
+            Text: (string) (len=13) "United States",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=253) "In May 2017, Bengio announced that he was joining Montreal-based legal tech startup Botler AI, as a strategy adviser. Bengio currently serves as scientific and technical advisor for Recursion Pharmaceuticals and scientific advisor for Valence Discovery.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=61) "https://en.wikipedia.org/wiki/Botler_AI?action=edit&redlink=1",
+            Text: (string) (len=9) "Botler AI",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) (len=18) "Awards and honours",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=256) "In 2017, Bengio was named an Officer of the Order of Canada. The same year, he was nominated Fellow of the Royal Society of Canada and received the Marie-Victorin Quebec Prize. Together with Geoffrey Hinton and Yann LeCun, Bengio won the 2018 Turing Award.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=6) {
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/Officer_of_the_Order_of_Canada",
+                Text: (string) (len=30) "Officer of the Order of Canada",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=67) "https://en.wikipedia.org/wiki/Fellow_of_the_Royal_Society_of_Canada",
+                Text: (string) (len=37) "Fellow of the Royal Society of Canada",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Prix_Marie-Victorin",
+                Text: (string) (len=27) "Marie-Victorin Quebec Prize",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Geoffrey_Hinton",
+                Text: (string) (len=15) "Geoffrey Hinton",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Yann_LeCun",
+                Text: (string) (len=10) "Yann LeCun",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Turing_Award",
+                Text: (string) (len=12) "Turing Award",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=205) "In 2020 he was elected a Fellow of the Royal Society. In 2022 he received the Princess of Asturias Award in the category \"Scientific Research\" with his peers Yann LeCun, Geoffrey Hinton and Demis Hassabis.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/Fellow_of_the_Royal_Society",
+                Text: (string) (len=27) "Fellow of the Royal Society",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/Princess_of_Asturias_Awards",
+                Text: (string) (len=26) "Princess of Asturias Award",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Yann_LeCun",
+                Text: (string) (len=10) "Yann LeCun",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Geoffrey_Hinton",
+                Text: (string) (len=15) "Geoffrey Hinton",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Demis_Hassabis",
+                Text: (string) (len=14) "Demis Hassabis",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=12) "Publications",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=5) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=164) "Ian Goodfellow, Yoshua Bengio and Aaron Courville: Deep Learning (Adaptive Computation and Machine Learning), MIT Press, Cambridge (USA), 2016. ISBN 978-0262035613.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+                    Text: (string) (len=4) "ISBN",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=64) "https://en.wikipedia.org/wiki/Special:BookSources/978-0262035613",
+                    Text: (string) (len=14) "978-0262035613",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=224) "Léon Bottou, Patrick Haffner, Paul G. Howard, Patrice Simard, Yoshua Bengio, Yann LeCun: High Quality Document Image Compression with DjVu, In: Journal of Electronic Imaging, Band 7, 1998, S. 410–425 doi: 10.1117/1.482609",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=3) {
+                  (*parser.Link)({
+                    URL: (string) (len=51) "http://yann.lecun.com/exdb/publis/pdf/bottou-98.pdf",
+                    Text: (string) (len=49) "High Quality Document Image Compression with DjVu",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+                    Text: (string) (len=3) "doi",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=34) "https://doi.org/10.1117%2F1.482609",
+                    Text: (string) (len=16) "10.1117/1.482609",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=265) "Bengio, Yoshua; Schuurmans, Dale; Lafferty, John; Williams, Chris K. I. and Culotta, Aron (eds.), Advances in Neural Information Processing Systems 22 (NIPS'22), December 7th–10th, 2009, Vancouver, BC, Neural Information Processing Systems (NIPS) Foundation, 2009",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=133) "Y. Bengio, Dong-Hyun Lee, Jorg Bornschein, Thomas Mesnard, Zhouhan Lin: Towards Biologically Plausible Deep Learning, arXiv.org, 2016",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=32) "https://arxiv.org/abs/1502.04156",
+                    Text: (string) (len=44) "Towards Biologically Plausible Deep Learning",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=195) "Bengio contributed one chapter to Architects of Intelligence: The Truth About AI from the People Building it, Packt Publishing, 2018, ISBN 978-1-78-913151-2, by the American futurist Martin Ford.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=3) {
+                  (*parser.Link)({
+                    URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+                    Text: (string) (len=4) "ISBN",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-1-78-913151-2",
+                    Text: (string) (len=17) "978-1-78-913151-2",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=50) "https://en.wikipedia.org/wiki/Martin_Ford_(author)",
+                    Text: (string) (len=11) "Martin Ford",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

@@ -5,9 +5,9 @@ import (
 	"errors"
 	"strings"
 	"time"
-	"wikimedia-enterprise/general/log"
 	"wikimedia-enterprise/services/content-integrity/config/env"
 	"wikimedia-enterprise/services/content-integrity/libraries/collector"
+	"wikimedia-enterprise/services/content-integrity/submodules/log"
 
 	"go.uber.org/dig"
 	"golang.org/x/exp/slices"

@@ -29,12 +29,12 @@ type Environment struct {
 	KafkaCreds            *Credentials `env:"KAFKA_CREDS"`
 	SchemaRegistryURL     string       `env:"SCHEMA_REGISTRY_URL,required=true"`
 	SchemaRegistryCreds   *Credentials `env:"SCHEMA_REGISTRY_CREDS"`
-	MediawikiClientURL    string       `env:"MEDIAWIKI_CLIENT_URL,default=https://en.wikipedia.org/"`
 	TopicProjects         string       `env:"TOPIC_PROJECTS,default=aws.bulk-ingestion.projects.v1"`
 	TopicLanguages        string       `env:"TOPIC_LANGUAGES,default=aws.bulk-ingestion.languages.v1"`
 	TopicNamespaces       string       `env:"TOPIC_NAMESPACES,default=aws.bulk-ingestion.namespaces.v1"`
 	TopicArticles         string       `env:"TOPIC_ARTICLES,default=aws.bulk-ingestion.article-names.v1"`
 	DefaultProject        string       `env:"DEFAULT_PROJECT,default=enwiki"`
+	DefaultURL            string       `env:"DEFAULT_URL,default=https://en.wikipedia.org"`
 	InternalRootCAPem     string       `env:"INTERNAL_ROOT_CA_PEM"`
 	TLSCertPem            string       `env:"TLS_CERT_PEM"`
 	TLSPrivateKeyPem      string       `env:"TLS_PRIVATE_KEY_PEM"`

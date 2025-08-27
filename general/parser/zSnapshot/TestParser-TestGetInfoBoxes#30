@@ -1,0 +1,849 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=18) "Infobox settlement",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=7) {
+      (*parser.Part)({
+        Name: (string) (len=9) "Brasília",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=15) "Federal capital",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=12) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=70) "Região Administrativa de Brasília Administrative Region of Brasília",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=178) "Monumental Axis seen from the TV Tower Metropolitan Cathedral Alvorada Palace Juscelino Kubitschek bridge National Congress of Brazil Panoramic view of the Pilot Plan of Brasilia",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=6) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=133) "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Planalto_Central_%28cropped%29.jpg/268px-Planalto_Central_%28cropped%29.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 268,
+                Width: (int) 268
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=121) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Catedral1_Rodrigo_Marfan.jpg/132px-Catedral1_Rodrigo_Marfan.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 132,
+                Width: (int) 132
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=129) "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Palacio_da_Alvorada_Exterior.JPG/132px-Palacio_da_Alvorada_Exterior.JPG",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 132,
+                Width: (int) 132
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=109) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Brasilia_JK_Bridge.jpg/123px-Brasilia_JK_Bridge.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 123,
+                Width: (int) 123
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=173) "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Congresso_Nacional_do_Brasil_em_noite_de_lua_cheia.jpg/141px-Congresso_Nacional_do_Brasil_em_noite_de_lua_cheia.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 141,
+                Width: (int) 141
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/BSB_02_2013_Eixo_Monumental_5884.JPG/268px-BSB_02_2013_Eixo_Monumental_5884.JPG",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 268,
+                Width: (int) 268
+              })
+            },
+            Links: ([]*parser.Link) (len=7) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Monumental_Axis",
+                Text: (string) (len=15) "Monumental Axis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Brasilia_TV_Tower",
+                Text: (string) (len=8) "TV Tower",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Cathedral_of_Brasília",
+                Text: (string) (len=22) "Metropolitan Cathedral",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Palácio_da_Alvorada",
+                Text: (string) (len=15) "Alvorada Palace",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/Juscelino_Kubitschek_bridge",
+                Text: (string) (len=27) "Juscelino Kubitschek bridge",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/National_Congress_of_Brazil",
+                Text: (string) (len=27) "National Congress of Brazil",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/History_of_Brasília",
+                Text: (string) (len=22) "Pilot Plan of Brasilia",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Flag Seal",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=2) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=159) "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Bandeira_do_Distrito_Federal_%28Brasil%29.svg/100px-Bandeira_do_Distrito_Federal_%28Brasil%29.svg.png",
+                AlternativeText: (string) (len=17) "Flag of Brasília",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=164) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Bras%C3%A3o_do_Distrito_Federal_%28Brasil%29.svg/86px-Bras%C3%A3o_do_Distrito_Federal_%28Brasil%29.svg.png",
+                AlternativeText: (string) (len=26) "Official seal of Brasília",
+                Caption: (string) "",
+                Height: (int) 86,
+                Width: (int) 86
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=54) "Nicknames: Capital Federal, BSB, Capital da Esperança",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=56) "Motto(s): \"Venturis ventis\"(Latin) \"To the coming winds\"",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Latin_language",
+                Text: (string) (len=5) "Latin",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=32) "Location in the Federal District",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=141) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Distrito_Federal_RA_Plano_Piloto.svg/250px-Distrito_Federal_RA_Plano_Piloto.svg.png",
+                AlternativeText: (string) (len=32) "Location in the Federal District",
+                Caption: (string) "",
+                Height: (int) 250,
+                Width: (int) 250
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=64) "Brasília Location in Brazil Brasília Brasília (South America)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=4) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=113) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Relief_Map_of_Brazil.jpg/250px-Relief_Map_of_Brazil.jpg",
+                AlternativeText: (string) (len=30) "Brasília is located in Brazil",
+                Caption: (string) "",
+                Height: (int) 250,
+                Width: (int) 250
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=89) "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Red_pog.svg/6px-Red_pog.svg.png",
+                AlternativeText: (string) (len=9) "Brasília",
+                Caption: (string) "",
+                Height: (int) 6,
+                Width: (int) 6
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=149) "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/South_America_laea_relief_location_map.jpg/250px-South_America_laea_relief_location_map.jpg",
+                AlternativeText: (string) (len=37) "Brasília is located in South America",
+                Caption: (string) "",
+                Height: (int) 250,
+                Width: (int) 250
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=89) "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Red_pog.svg/6px-Red_pog.svg.png",
+                AlternativeText: (string) (len=9) "Brasília",
+                Caption: (string) "",
+                Height: (int) 6,
+                Width: (int) 6
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=141) "Coordinates: 15°47′38″S 47°52′58″W / 15.79389°S 47.88278°W Coordinates: 15°47′38″S 47°52′58″W / 15.79389°S 47.88278°W",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=125) "https://geohack.toolforge.org/geohack.php?pagename=Bras%C3%ADlia&params=15_47_38_S_47_52_58_W_region:BR-DF_type:city(4300000)",
+                Text: (string) (len=57) "15°47′38″S 47°52′58″W / 15.79389°S 47.88278°W",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/Geographic_coordinate_system",
+                Text: (string) (len=11) "Coordinates",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=125) "https://geohack.toolforge.org/geohack.php?pagename=Bras%C3%ADlia&params=15_47_38_S_47_52_58_W_region:BR-DF_type:city(4300000)",
+                Text: (string) (len=57) "15°47′38″S 47°52′58″W / 15.79389°S 47.88278°W",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Country",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Brazil",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=99) "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 22,
+                Width: (int) 22
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Brazil",
+                Text: (string) (len=6) "Brazil",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Region",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Central-West",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Regions_of_Brazil",
+                Text: (string) (len=6) "Region",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/Central-West_Region,_Brazil",
+                Text: (string) (len=12) "Central-West",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "District",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "Federal District",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/States_of_Brazil",
+                Text: (string) (len=8) "District",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Federal_District_(Brazil)",
+                Text: (string) (len=16) "Federal District",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Founded",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "21 April 1960",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=4) "Area",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) (len=15) "Federal capital",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=28) "5,802 km 2 (2,240.164 sq mi)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Federal_capital",
+                Text: (string) (len=15) "Federal capital",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Elevation",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "1,172 m (3,845 ft)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=17) "Population (2017)",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) (len=7) "Density",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=29) "480.827/km 2 (1,245.34/sq mi)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Urban",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "3,039,444",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Urban_area",
+                Text: (string) (len=5) "Urban",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=74) "https://en.wikipedia.org/wiki/Brasília#cite_note-Codeplan,_PDAD-DF_2011-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Brasília#cite_note-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Metro",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "4,291,577 (3rd) (4th)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Metropolitan_area",
+                Text: (string) (len=5) "Metro",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=68) "https://en.wikipedia.org/wiki/List_of_cities_in_Brazil_by_population",
+                Text: (string) (len=3) "3rd",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Brasília#cite_note-pop-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=66) "https://en.wikipedia.org/wiki/List_of_metropolitan_areas_in_Brazil",
+                Text: (string) (len=3) "4th",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=34) "population of the Federal District",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Federal_District_(Brazil)",
+                Text: (string) (len=16) "Federal District",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Demonym",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "Brasiliense",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Demonym",
+                Text: (string) (len=7) "Demonym",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=3) "GDP",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) (len=4) "Year",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "2015 estimate",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Total",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "$65.338 billion (8th)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=80) "https://en.wikipedia.org/wiki/List_of_Brazilian_states_by_gross_domestic_product",
+                Text: (string) (len=3) "8th",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Per capita",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "$21,779 (1st)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=80) "https://en.wikipedia.org/wiki/List_of_Brazilian_states_by_gross_domestic_product",
+                Text: (string) (len=3) "1st",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=3) "HDI",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=6) {
+          (*parser.Part)({
+            Name: (string) (len=4) "Year",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "2014",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Time zone",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "UTC−03:00 (BRT)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Time_zone",
+                Text: (string) (len=9) "Time zone",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/UTC−03:00",
+                Text: (string) (len=11) "UTC−03:00",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Time_in_Brazil",
+                Text: (string) (len=3) "BRT",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Postal code",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "70000-000",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Area code",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "+55 61",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Telephone_numbering_plan",
+                Text: (string) (len=9) "Area code",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "HDI (2010)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "0.824 – very high",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Human_Development_Index",
+                Text: (string) (len=3) "HDI",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Brasília#cite_note-4",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Website",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=38) "www.brasilia.df.gov.br (in Portuguese)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=29) "http://www.brasilia.df.gov.br",
+                Text: (string) (len=22) "www.brasilia.df.gov.br",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=26) "UNESCO World Heritage Site",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=6) {
+          (*parser.Part)({
+            Name: (string) (len=13) "Official name",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Brasilia",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Type",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Cultural",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Criteria",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=5) "i, iv",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Designated",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "1987 (11th session)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/World_Heritage_Committee",
+                Text: (string) (len=7) "session",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Reference no.",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=3) "445",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=34) "https://whc.unesco.org/en/list/445",
+                Text: (string) (len=3) "445",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Region",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=31) "Latin America and the Caribbean",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=75) "https://en.wikipedia.org/wiki/List_of_World_Heritage_Sites_in_South_America",
+                Text: (string) (len=31) "Latin America and the Caribbean",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

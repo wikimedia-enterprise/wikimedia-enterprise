@@ -8,7 +8,7 @@ import (
 	"wikimedia-enterprise/api/auth/libraries/cognito"
 	"wikimedia-enterprise/api/auth/libraries/metrics"
 	"wikimedia-enterprise/api/auth/libraries/redis"
-	"wikimedia-enterprise/general/log"
+	"wikimedia-enterprise/api/auth/submodules/log"
 
 	"go.uber.org/dig"
 )

@@ -8,7 +8,7 @@ import (
 	"syscall"
 	"time"
 
-	"wikimedia-enterprise/general/log"
+	"wikimedia-enterprise/api/auth/submodules/log"
 )
 
 // Helper is an auxiliary struct which exposes the Wait method

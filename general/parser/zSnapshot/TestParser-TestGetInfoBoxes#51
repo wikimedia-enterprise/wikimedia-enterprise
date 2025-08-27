@@ -1,0 +1,1165 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) (len=10) "Kaori Icho",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=25) "Icho at the 2008 Olympics",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=93) "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Kaori_Icho.jpg/220px-Kaori_Icho.jpg",
+                AlternativeText: (string) (len=14) "Kaori Icho.jpg",
+                Caption: (string) (len=25) "Icho at the 2008 Olympics",
+                Height: (int) 220,
+                Width: (int) 220
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=25) "/wiki/File:Kaori_Icho.jpg",
+                Text: (string) "",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=93) "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Kaori_Icho.jpg/220px-Kaori_Icho.jpg",
+                    AlternativeText: (string) (len=14) "Kaori Icho.jpg",
+                    Caption: (string) "",
+                    Height: (int) 220,
+                    Width: (int) 220
+                  })
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=20) "Personal information",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) (len=11) "Native name",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "伊調馨",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Nationality",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Japanese",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Born",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=46) "13 June 1984 (age 39) Hachinohe, Aomori, Japan",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=23) "/wiki/Hachinohe,_Aomori",
+                Text: (string) (len=17) "Hachinohe, Aomori",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Height",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=25) "166 cm (5 ft 5 in) (2016)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Weight",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "61 kg (134 lb) (2016)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=5) "Sport",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) (len=7) "Country",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=5) "Japan",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Sport",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Wrestling",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=15) "/wiki/Wrestling",
+                Text: (string) (len=9) "Wrestling",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Event(s)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Freestyle",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=25) "/wiki/Freestyle_wrestling",
+                Text: (string) (len=9) "Freestyle",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Club",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "Sogho Security Services",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Coached by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "Kazuhito Sakae",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=20) "/wiki/Kazuhito_Sakae",
+                Text: (string) (len=14) "Kazuhito Sakae",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=755) "Medal record Women's freestyle wrestling Representing Japan Event 1 st 2 nd 3 rd Olympic Games 4 – – World Championships 10 – – Asian Games 1 1 – Golden Grand Prix Ivan Yarygin – 1 – Total 15 2 0 Olympic Games 2004 Athens 63 kg 2008 Beijing 63 kg 2012 London 63 kg 2016 Rio de Janeiro 58 kg World Championships 2002 Chalkida 63 kg 2003 New York 63 kg 2005 Budapest 63 kg 2006 Guangzhou 63 kg 2007 Baku 63 kg 2010 Moscow 63 kg 2011 Istanbul 63 kg 2013 Budapest 63 kg 2014 Tashkent 58 kg 2015 Las Vegas 58 kg Asian Games 2002 Busan 63 kg 2006 Doha 63 kg Golden Grand Prix Ivan Yarygin 2016 Krasnoyarsk 58 kg Asian Wrestling Championships 2004 Tokyo 63 kg 2005 Wuhan 63 kg 2007 Bishkek 63 kg 2008 Jeju 63 kg 2011 Tashkent 63 kg 2019 Xi'an 57 kg",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=36) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=27) "Women's freestyle wrestling",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=25) "/wiki/Freestyle_wrestling",
+                Text: (string) (len=19) "freestyle wrestling",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "Representing Japan",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=97) "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/23px-Flag_of_Japan.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 23,
+                Width: (int) 23
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=11) "/wiki/Japan",
+                Text: (string) (len=5) "Japan",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=20) "Event 1 st 2 nd 3 rd",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "Olympic Games 4 – –",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=26) "/wiki/Summer_Olympic_Games",
+                Text: (string) (len=13) "Olympic Games",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=30) "World Championships 10 – –",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=35) "/wiki/World_Wrestling_Championships",
+                Text: (string) (len=19) "World Championships",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "Asian Games 1 1 –",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=17) "/wiki/Asian_Games",
+                Text: (string) (len=11) "Asian Games",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=40) "Golden Grand Prix Ivan Yarygin – 1 –",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=41) "/wiki/Golden_Grand_Prix_Ivan_Yarygin_2016",
+                Text: (string) (len=30) "Golden Grand Prix Ivan Yarygin",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Total 15 2 0",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Olympic Games",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=128) "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Olympic_rings_without_rims.svg/80px-Olympic_rings_without_rims.svg.png",
+                AlternativeText: (string) (len=30) "Olympic rings without rims.svg",
+                Caption: (string) "",
+                Height: (int) 80,
+                Width: (int) 80
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=38) "/wiki/Wrestling_at_the_Summer_Olympics",
+                Text: (string) (len=13) "Olympic Games",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "/wiki/File:Olympic_rings_without_rims.svg",
+                Text: (string) "",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=128) "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Olympic_rings_without_rims.svg/80px-Olympic_rings_without_rims.svg.png",
+                    AlternativeText: (string) (len=30) "Olympic rings without rims.svg",
+                    Caption: (string) "",
+                    Height: (int) 80,
+                    Width: (int) 80
+                  })
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "2004 Athens 63 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=26) "/wiki/2004_Summer_Olympics",
+                Text: (string) (len=11) "2004 Athens",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=79) "/wiki/Wrestling_at_the_2004_Summer_Olympics_%E2%80%93_Women%27s_freestyle_63_kg",
+                Text: (string) (len=5) "63 kg",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "2008 Beijing 63 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=26) "/wiki/2008_Summer_Olympics",
+                Text: (string) (len=12) "2008 Beijing",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=79) "/wiki/Wrestling_at_the_2008_Summer_Olympics_%E2%80%93_Women%27s_freestyle_63_kg",
+                Text: (string) (len=5) "63 kg",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "2012 London 63 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=26) "/wiki/2012_Summer_Olympics",
+                Text: (string) (len=11) "2012 London",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=79) "/wiki/Wrestling_at_the_2012_Summer_Olympics_%E2%80%93_Women%27s_freestyle_63_kg",
+                Text: (string) (len=5) "63 kg",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=25) "2016 Rio de Janeiro 58 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=26) "/wiki/2016_Summer_Olympics",
+                Text: (string) (len=19) "2016 Rio de Janeiro",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=79) "/wiki/Wrestling_at_the_2016_Summer_Olympics_%E2%80%93_Women%27s_freestyle_58_kg",
+                Text: (string) (len=5) "58 kg",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "World Championships",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=35) "/wiki/World_Wrestling_Championships",
+                Text: (string) (len=19) "World Championships",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "2002 Chalkida 63 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "/wiki/2002_World_Wrestling_Championships",
+                Text: (string) (len=13) "2002 Chalkida",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "2003 New York 63 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "/wiki/2003_World_Wrestling_Championships",
+                Text: (string) (len=13) "2003 New York",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "2005 Budapest 63 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "/wiki/2005_World_Wrestling_Championships",
+                Text: (string) (len=13) "2005 Budapest",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=20) "2006 Guangzhou 63 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "/wiki/2006_World_Wrestling_Championships",
+                Text: (string) (len=14) "2006 Guangzhou",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "2007 Baku 63 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "/wiki/2007_World_Wrestling_Championships",
+                Text: (string) (len=9) "2007 Baku",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "2010 Moscow 63 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=40) "/wiki/2010_World_Wrestling_Championships",
+                Text: (string) (len=11) "2010 Moscow",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "/wiki/2010_World_Wrestling_Championships_%E2%80%93_Women%27s_freestyle_63_kg",
+                Text: (string) (len=5) "63 kg",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "2011 Istanbul 63 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=40) "/wiki/2011_World_Wrestling_Championships",
+                Text: (string) (len=13) "2011 Istanbul",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "/wiki/2011_World_Wrestling_Championships_%E2%80%93_Women%27s_freestyle_63_kg",
+                Text: (string) (len=5) "63 kg",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "2013 Budapest 63 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=40) "/wiki/2013_World_Wrestling_Championships",
+                Text: (string) (len=13) "2013 Budapest",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "/wiki/2013_World_Wrestling_Championships_%E2%80%93_Women%27s_freestyle_63_kg",
+                Text: (string) (len=5) "63 kg",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "2014 Tashkent 58 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=40) "/wiki/2014_World_Wrestling_Championships",
+                Text: (string) (len=13) "2014 Tashkent",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "/wiki/2014_World_Wrestling_Championships_%E2%80%93_Women%27s_freestyle_58_kg",
+                Text: (string) (len=5) "58 kg",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=20) "2015 Las Vegas 58 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=40) "/wiki/2015_World_Wrestling_Championships",
+                Text: (string) (len=14) "2015 Las Vegas",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "/wiki/2015_World_Wrestling_Championships_%E2%80%93_Women%27s_freestyle_58_kg",
+                Text: (string) (len=5) "58 kg",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "Asian Games",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=17) "/wiki/Asian_Games",
+                Text: (string) (len=11) "Asian Games",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "2002 Busan 63 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=142) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Silver_medal_icon_%28S_initial%29.svg/16px-Silver_medal_icon_%28S_initial%29.svg.png",
+                AlternativeText: (string) (len=29) "Silver medal – second place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=39) "/wiki/Wrestling_at_the_2002_Asian_Games",
+                Text: (string) (len=10) "2002 Busan",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=75) "/wiki/Wrestling_at_the_2002_Asian_Games_%E2%80%93_Women%27s_freestyle_63_kg",
+                Text: (string) (len=5) "63 kg",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "2006 Doha 63 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=39) "/wiki/Wrestling_at_the_2006_Asian_Games",
+                Text: (string) (len=9) "2006 Doha",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=75) "/wiki/Wrestling_at_the_2006_Asian_Games_%E2%80%93_Women%27s_freestyle_63_kg",
+                Text: (string) (len=5) "63 kg",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=30) "Golden Grand Prix Ivan Yarygin",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=18) "/wiki/Ivan_Yarygin",
+                Text: (string) (len=12) "Ivan Yarygin",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "2016 Krasnoyarsk 58 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=142) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Silver_medal_icon_%28S_initial%29.svg/16px-Silver_medal_icon_%28S_initial%29.svg.png",
+                AlternativeText: (string) (len=29) "Silver medal – second place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=41) "/wiki/Golden_Grand_Prix_Ivan_Yarygin_2016",
+                Text: (string) (len=16) "2016 Krasnoyarsk",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=29) "Asian Wrestling Championships",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=35) "/wiki/Asian_Wrestling_Championships",
+                Text: (string) (len=29) "Asian Wrestling Championships",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "2004 Tokyo 63 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "/wiki/2004_Asian_Wrestling_Championships",
+                Text: (string) (len=10) "2004 Tokyo",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "2005 Wuhan 63 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "/wiki/2005_Asian_Wrestling_Championships",
+                Text: (string) (len=10) "2005 Wuhan",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "2007 Bishkek 63 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "/wiki/2007_Asian_Wrestling_Championships",
+                Text: (string) (len=12) "2007 Bishkek",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "2008 Jeju 63 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "/wiki/2008_Asian_Wrestling_Championships",
+                Text: (string) (len=9) "2008 Jeju",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "2011 Tashkent 63 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "/wiki/2011_Asian_Wrestling_Championships",
+                Text: (string) (len=13) "2011 Tashkent",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "2019 Xi'an 57 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=142) "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Bronze_medal_icon_%28B_initial%29.svg/16px-Bronze_medal_icon_%28B_initial%29.svg.png",
+                AlternativeText: (string) (len=28) "Bronze medal – third place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "/wiki/2019_Asian_Wrestling_Championships",
+                Text: (string) (len=10) "2019 Xi'an",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

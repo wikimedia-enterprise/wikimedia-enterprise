@@ -12,7 +12,7 @@ services:
 
   # Confluent Kafka broker
   broker:
-    image: confluentinc/cp-kafka:latest
+    image: confluentinc/cp-kafka:7.6.0
     depends_on:
       - zookeeper
     ports:
@@ -76,10 +76,12 @@ services:
 
   articles:
     build:
-      context: ./../../.
-      dockerfile: ./docker/handlers/Dockerfile
+      context: .
+      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
       args:
-        SOURCE_DIR: ./services/on-demand/handlers/articles
+        HANDLER: articles
+    ports:
+      - "12411:12411"
     depends_on:
       - broker
       - minio
@@ -88,10 +90,8 @@ services:
 
   mock:
     build:
-      context: ./../../.
-      dockerfile: ./docker/mock/Dockerfile
-      args:
-        SOURCE_DIR: ./services/on-demand
+      context: .
+      dockerfile: submodules/cdtools/docker/mock/Dockerfile
     depends_on:
       - broker
       - schemaregistry

@@ -6,14 +6,58 @@ import (
 	"errors"
 	"fmt"
 	"reflect"
-	"strings"
+	"wikimedia-enterprise/api/realtime/submodules/log"
+	"wikimedia-enterprise/api/realtime/submodules/schema"
 )
 
-// ErrNoKSQLTag happens if you are trying to resolve field with empty `ksql` tag in TableName field.
-var ErrNoKSQLTag = errors.New("no ksql tag in TableName")
+var (
+	// ErrNoKSQLTag happens if you are trying to resolve field with empty `ksql` tag in TableName field.
+	ErrNoKSQLTag = errors.New("no ksql tag in TableName")
 
-// ErrNoTableName happens when to TableName field was specified for the struct.
-var ErrNoTableName = errors.New("no TableName field found")
+	// ErrNoTableName happens when to TableName field was specified for the struct.
+	ErrNoTableName = errors.New("no TableName field found")
+
+	// ErrSchemaTypeNotDefined happens when resolver is unaware of this schema type.
+	ErrSchemaTypeNotDefined = errors.New("resolver is unaware of this schema type")
+)
+
+// NewResolvers returns multiple schema resolver.
+// Example: {"article": *Resolver, "entity": *Resolver, "structured": *Resolver}
+func NewResolvers(schemas map[string]interface{}, ops ...func(r *Resolver)) (Resolvers, error) {
+	resolvers := make(Resolvers)
+
+	for key, schema := range schemas {
+		r, err := New(schema, ops...)
+
+		if err != nil {
+			return nil, err
+		}
+
+		resolvers[key] = r
+	}
+
+	return resolvers, nil
+}
+
+// Resolvers maintain multiple schema resolver.
+// Example: {"article": *Resolver, "entity": *Resolver, "structured": *Resolver}
+type Resolvers map[string]*Resolver
+
+// GetSchema returns schema corresponding to the schema key.
+func (rs Resolvers) GetSchema(key string) any {
+	if _, ok := rs[key]; !ok {
+		log.Error(ErrSchemaTypeNotDefined)
+		return nil
+	}
+
+	// Update this to include structured, entity
+	switch key {
+	case schema.KeyTypeArticle:
+		return new(schema.Article)
+	}
+
+	return nil
+}
 
 // New creates new resolver instance.
 func New(v interface{}, ops ...func(r *Resolver)) (*Resolver, error) {
@@ -25,7 +69,9 @@ func New(v interface{}, ops ...func(r *Resolver)) (*Resolver, error) {
 	}
 
 	for _, opt := range ops {
-		opt(r)
+		if opt != nil {
+			opt(r)
+		}
 	}
 
 	rv := reflect.ValueOf(v)
@@ -62,6 +108,7 @@ type Resolver struct {
 	Fields   map[string]*Field
 	Structs  map[string]*Struct
 	Slices   map[string]*Slice
+	Keywords map[string]string
 	HasJoins bool
 }
 
@@ -88,48 +135,6 @@ func (r *Resolver) HasSlice(name string) bool {
 	return ok
 }
 
-// GetFieldsSQL generate SQL query for fields.
-func (r *Resolver) GetFieldsSql(filters ...Filter) string {
-	sql := ""
-	fr := GetFilter(filters...)
-
-	for name, fld := range r.Struct.Fields {
-		if _, ok := r.Struct.Structs[name]; !ok && fr(fld) {
-			sql += fmt.Sprintf("%s, ", fld.Path)
-		}
-	}
-
-	return strings.TrimSuffix(sql, ", ")
-}
-
-// GetStructsSQL generate SQL query for structs.
-func (r *Resolver) GetStructsSql(filters ...Filter) string {
-	sql := ""
-	fr := GetFilter(filters...)
-
-	for _, str := range r.Struct.Structs {
-		if val := str.GetSql(fr); len(val) > 0 {
-			sql += fmt.Sprintf("%s, ", val)
-		}
-	}
-
-	return strings.TrimSuffix(sql, ", ")
-}
-
-// GetSlicesSql generate SQL query for slices.
-func (r *Resolver) GetSlicesSql(filters ...Filter) string {
-	sql := ""
-	fr := GetFilter(filters...)
-
-	for _, slc := range r.Struct.Slices {
-		if val := slc.GetSql(fr); len(val) > 0 {
-			sql += fmt.Sprintf("%s, ", val)
-		}
-	}
-
-	return strings.TrimSuffix(sql, ", ")
-}
-
 func (r *Resolver) validate(rv reflect.Value) error {
 	if rv.Kind() != reflect.Ptr || rv.IsNil() {
 		return fmt.Errorf("non pointer reference for '%s'", rv.Type().String())
@@ -145,7 +150,7 @@ func (r *Resolver) resolve(rv reflect.Value, par *Struct) error {
 
 	for i, rf := range reflect.VisibleFields(rv.Type().Elem()) {
 		if name := rf.Tag.Get("avro"); len(name) > 0 {
-			fld := NewField(name, par, rv.Elem().Field(i))
+			fld := NewField(name, rf.Name, par, rv.Elem().Field(i), r.Keywords)
 			r.Fields[fld.FullName] = fld
 
 			if rf.Type.Kind() == reflect.Ptr && rf.Type.Elem().Kind() == reflect.Struct &&

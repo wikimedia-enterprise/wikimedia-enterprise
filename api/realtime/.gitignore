@@ -1,0 +1,32 @@
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# env
+.env
+
+# volumes
+.storage
+
+# builds
+/main
+/firehose
+/gin-bin
+
+# docker
+docker-compose.override.yaml
+
+# test
+.test*

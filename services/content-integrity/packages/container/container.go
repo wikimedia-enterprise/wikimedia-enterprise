@@ -9,7 +9,9 @@ import (
 	"wikimedia-enterprise/services/content-integrity/libraries/kafka"
 	"wikimedia-enterprise/services/content-integrity/libraries/redis"
 	"wikimedia-enterprise/services/content-integrity/libraries/stream"
+	"wikimedia-enterprise/services/content-integrity/submodules/subscriber"
 
+	k "github.com/confluentinc/confluent-kafka-go/kafka"
 	"go.uber.org/dig"
 )
 
@@ -22,6 +24,10 @@ func New() (*dig.Container, error) {
 		cnt.Provide(redis.NewClient),
 		cnt.Provide(collector.NewArticle),
 		cnt.Provide(kafka.NewConsumer),
+		cnt.Provide(func() *k.Producer {
+			return nil
+		}),
+		cnt.Provide(subscriber.New),
 		cnt.Provide(stream.New),
 		cnt.Provide(integrity.New),
 	} {

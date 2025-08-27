@@ -4,6 +4,8 @@ package log
 import (
 	"log"
 	"os"
+	"sort"
+	"time"
 
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
@@ -29,7 +31,6 @@ func GetZap() *zap.Logger {
 // initialize logger during package initialization
 func init() {
 	lgr, err := New()
-
 	if err != nil {
 		log.Panic(err)
 	}
@@ -68,6 +69,13 @@ func Fatal(msg any, fds ...Field) {
 	logger.Fatal(msg, fds...)
 }
 
+// Panic logs a message with the "panic" severity level.
+// It takes a message and zero or more fields.
+// Also it will panic.
+func Panic(msg any, fds ...Field) {
+	logger.Panic(msg, fds...)
+}
+
 // Sync calls the underlying Core's Sync method, flushing any buffered log
 // entries. Applications should take care to call Sync before exiting.
 func Sync() error {
@@ -99,6 +107,11 @@ type FatalLogger interface {
 	Fatal(msg any, fds ...Field)
 }
 
+// PanicLogger is an interface for logging messages with the "panic" severity level.
+type PanicLogger interface {
+	Panic(msg any, fds ...Field)
+}
+
 // Synchronizer is an interface that exposes Sync() method.
 type Synchronizer interface {
 	Sync() error
@@ -111,6 +124,7 @@ type Logger interface {
 	DebugLogger
 	ErrorLogger
 	FatalLogger
+	PanicLogger
 	Synchronizer
 }
 
@@ -152,14 +166,96 @@ func New() (Logger, error) {
 		cfg.Level.SetLevel(zap.InfoLevel)
 	}
 
-	// Build the logger with a caller skip of 2, which causes the logger to report the line number of the calling function.
-	lgr, err := cfg.Build(zap.AddCallerSkip(2))
+	var lgr *zap.Logger
+	var err error
+
+	// Split logging config is experimental, this can be used to disable it.
+	if os.Getenv("DISABLE_SPLIT_LOGGING") != "" {
+		lgr, err = BuildDefaultLogger(cfg)
+	} else {
+		lgr, err = BuildSplitLogger(cfg)
+	}
 
 	if err != nil {
 		return nil, err
 	}
 
 	return &Log{zap: lgr}, nil
+}
+
+// BuildSplitLogger returns a logger built using the default zap.Config.Build method. Sends all logs to stderr.
+func BuildDefaultLogger(cfg zap.Config) (*zap.Logger, error) {
+	// Build the logger with a caller skip of 2, which causes the logger to report the line number of the calling function.
+	return cfg.Build(zap.AddCallerSkip(2))
+}
+
+// BuildSplitLogger returns a logger that sends some logs to stdout and some to stderr.
+func BuildSplitLogger(cfg zap.Config) (*zap.Logger, error) {
+	warnAndUp := zap.LevelEnablerFunc(func(lvl zapcore.Level) bool {
+		return lvl >= zapcore.WarnLevel && cfg.Level.Enabled(lvl)
+	})
+	lessThanWarn := zap.LevelEnablerFunc(func(lvl zapcore.Level) bool {
+		return lvl < zapcore.WarnLevel && cfg.Level.Enabled(lvl)
+	})
+	encoder := zapcore.NewJSONEncoder(cfg.EncoderConfig)
+	core := zapcore.NewTee(
+		zapcore.NewCore(encoder, zapcore.Lock(os.Stderr), warnAndUp),
+		zapcore.NewCore(encoder, zapcore.Lock(os.Stdout), lessThanWarn),
+	)
+
+	opts, err := buildCfgOptions(cfg)
+	if err != nil {
+		return nil, err
+	}
+	logger := zap.New(core, opts...)
+
+	// Build the logger with a caller skip of 2, which causes the logger to report the line number of the calling function.
+	logger = logger.WithOptions(zap.AddCallerSkip(2))
+	return logger, nil
+}
+
+// buildCfgOptions replicates the internal zap.config.buildOptions(), which we can't use if we want to split
+// logs into stdout and stderr.
+func buildCfgOptions(cfg zap.Config) ([]zap.Option, error) {
+	// Sink for internal logger errors
+	errSink, _, err := zap.Open("stderr")
+	if err != nil {
+		return nil, err
+	}
+	opts := []zap.Option{zap.ErrorOutput(errSink)}
+
+	opts = append(opts, zap.AddCaller())
+
+	if scfg := cfg.Sampling; scfg != nil {
+		opts = append(opts, zap.WrapCore(func(core zapcore.Core) zapcore.Core {
+			var samplerOpts []zapcore.SamplerOption
+			if scfg.Hook != nil {
+				samplerOpts = append(samplerOpts, zapcore.SamplerHook(scfg.Hook))
+			}
+			return zapcore.NewSamplerWithOptions(
+				core,
+				time.Second,
+				cfg.Sampling.Initial,
+				cfg.Sampling.Thereafter,
+				samplerOpts...,
+			)
+		}))
+	}
+
+	if len(cfg.InitialFields) > 0 {
+		fs := make([]Field, 0, len(cfg.InitialFields))
+		keys := make([]string, 0, len(cfg.InitialFields))
+		for k := range cfg.InitialFields {
+			keys = append(keys, k)
+		}
+		sort.Strings(keys)
+		for _, k := range keys {
+			fs = append(fs, Any(k, cfg.InitialFields[k]))
+		}
+		opts = append(opts, zap.Fields(fs...))
+	}
+
+	return opts, nil
 }
 
 // Log is a struct that holds a logger implementation.
@@ -196,6 +292,13 @@ func (l *Log) Error(msg any, fds ...Field) {
 // Also it will exit the program with `1“ exit code.
 func (l *Log) Fatal(msg any, fds ...Field) {
 	l.zap.Fatal(getMessage(msg), fds...)
+}
+
+// Fatal logs a message with the "panic" severity level.
+// It takes a message and zero or more fields.
+// Also it will panic.
+func (l *Log) Panic(msg any, fds ...Field) {
+	l.zap.Panic(getMessage(msg), fds...)
 }
 
 // Sync calls the underlying Core's Sync method, flushing any buffered log

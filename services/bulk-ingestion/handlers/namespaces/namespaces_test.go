@@ -5,10 +5,11 @@ import (
 	"fmt"
 	"net/url"
 	"testing"
-	"wikimedia-enterprise/general/schema"
-	"wikimedia-enterprise/general/wmf"
 	"wikimedia-enterprise/services/bulk-ingestion/config/env"
 	pb "wikimedia-enterprise/services/bulk-ingestion/handlers/protos"
+	"wikimedia-enterprise/services/bulk-ingestion/submodules/config"
+	"wikimedia-enterprise/services/bulk-ingestion/submodules/schema"
+	"wikimedia-enterprise/services/bulk-ingestion/submodules/wmf"
 
 	"github.com/aws/aws-sdk-go/aws/request"
 	"github.com/aws/aws-sdk-go/service/s3"
@@ -64,6 +65,12 @@ type namespaceTestSuite struct {
 	params        namespaces.Parameters
 }
 
+type mockConfig struct{}
+
+func (c mockConfig) GetNamespacesMetadata() map[int]config.NamespaceMetadata {
+	return nil
+}
+
 func (p *namespaceTestSuite) SetupSuite() {
 	p.ctx = context.Background()
 	str := &unmarshalProducerMock{}
@@ -80,6 +87,7 @@ func (p *namespaceTestSuite) SetupSuite() {
 	s3Init := &S3API{}
 	s3Init.On("PutObjectWithContext", mock.Anything).Return(&s3.PutObjectOutput{}, p.s3Err)
 	p.stream = str
+	cfg := mockConfig{}
 
 	p.params = namespaces.Parameters{
 		Stream: p.stream,
@@ -88,7 +96,8 @@ func (p *namespaceTestSuite) SetupSuite() {
 			TopicNamespaces: "aws.bulk-ingestion.namespaces.v1",
 			DefaultProject:  "enwiki",
 		},
-		S3: s3Init,
+		S3:  s3Init,
+		Cfg: cfg,
 	}
 }
 

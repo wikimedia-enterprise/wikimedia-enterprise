@@ -1,0 +1,23 @@
+([]*parser.Image) (len=3) {
+  (*parser.Image)({
+    ContentUrl: (string) (len=113) "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/ABC_News_logo_2021.svg/220px-ABC_News_logo_2021.svg.png",
+    AlternativeText: (string) "",
+    Caption: (string) "",
+    Height: (int) 220,
+    Width: (int) 220
+  }),
+  (*parser.Image)({
+    ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Information_icon4.svg/20px-Information_icon4.svg.png",
+    AlternativeText: (string) "",
+    Caption: (string) "",
+    Height: (int) 20,
+    Width: (int) 20
+  }),
+  (*parser.Image)({
+    ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png",
+    AlternativeText: (string) "",
+    Caption: (string) "",
+    Height: (int) 50,
+    Width: (int) 50
+  })
+}

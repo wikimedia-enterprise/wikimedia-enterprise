@@ -1,0 +1,6 @@
+*     # ignore everything
+!*/   # unignores anything that is a directory
+!*.*  # unignores all files with an extension
+
+.env
+docker-compose.override.yaml

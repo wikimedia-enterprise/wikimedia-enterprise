@@ -6,14 +6,15 @@ import (
 	"net/url"
 	"testing"
 	"time"
-	"wikimedia-enterprise/general/parser"
-	"wikimedia-enterprise/general/schema"
-	"wikimedia-enterprise/general/wmf"
 	"wikimedia-enterprise/services/structured-data/config/env"
 	"wikimedia-enterprise/services/structured-data/handlers/articleupdate/handler"
 	"wikimedia-enterprise/services/structured-data/libraries/aggregate"
 	"wikimedia-enterprise/services/structured-data/libraries/text"
 	pb "wikimedia-enterprise/services/structured-data/packages/contentintegrity"
+	"wikimedia-enterprise/services/structured-data/packages/protected"
+	"wikimedia-enterprise/services/structured-data/submodules/parser"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
+	"wikimedia-enterprise/services/structured-data/submodules/wmf"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/confluentinc/confluent-kafka-go/kafka"
@@ -140,6 +141,7 @@ type handlerTestSuite struct {
 	key *schema.Key
 	val *schema.Article
 	agg *aggregate.Aggregation
+	env *env.Environment
 	eku error
 	evu error
 	eag error
@@ -170,6 +172,7 @@ func (s *handlerTestSuite) SetupSuite() {
 
 	agg := new(aggregatorMock)
 	agg.On("GetAggregation", s.val.IsPartOf.Identifier, s.val.Name).Return(s.agg, s.eag)
+	agg.On("GetAggregation", s.val.IsPartOf.Identifier, "100").Return(s.agg, s.eag)
 
 	wpg := new(wordsPairGetterMock)
 	wpg.On("GetWordsPair", s.cts, s.prt).Return(s.wds, s.wds, s.ewp)
@@ -187,6 +190,8 @@ func (s *handlerTestSuite) SetupSuite() {
 	rev := &wmf.Revision{Slots: &wmf.Slots{Main: &wmf.Main{Content: "BOYL"}}}
 	wmk.On("GetPage", mock.Anything, mock.Anything, mock.Anything).Return(&wmf.Page{Revisions: []*wmf.Revision{rev}}, nil)
 
+	ptd := protected.New(wmk)
+
 	s.ctx = context.Background()
 	s.prs = &handler.Parameters{
 		Env: &env.Environment{
@@ -201,6 +206,7 @@ func (s *handlerTestSuite) SetupSuite() {
 		Aggregator: agg,
 		Parser:     prs,
 		Integrity:  itg,
+		Protected:  ptd,
 		Tracer:     &TracerMock{},
 	}
 }
@@ -259,6 +265,14 @@ func TestHandler(t *testing.T) {
 				},
 				Event: schema.NewEvent(schema.EventTypeDelete),
 			},
+			agg: &aggregate.Aggregation{
+				Page: &wmf.Page{
+					LastRevID: 100,
+				},
+				PageHTML: &wmf.PageHTML{
+					Content: "Special:Redirect/revision/100",
+				},
+			},
 			eku: errors.New("key unmarshal error"),
 			bne: false,
 		},
@@ -294,6 +308,14 @@ func TestHandler(t *testing.T) {
 					Identifier: 0,
 				},
 				Event: schema.NewEvent(schema.EventTypeUpdate),
+			},
+			agg: &aggregate.Aggregation{
+				Page: &wmf.Page{
+					LastRevID: 100,
+				},
+				PageHTML: &wmf.PageHTML{
+					Content: "Special:Redirect/revision/100",
+				},
 			},
 			eku: errors.New("key unmarshal error"),
 			bne: true,
@@ -332,6 +354,14 @@ func TestHandler(t *testing.T) {
 					Identifier: 99,
 				},
 				Event: schema.NewEvent(schema.EventTypeUpdate),
+			},
+			agg: &aggregate.Aggregation{
+				Page: &wmf.Page{
+					LastRevID: 100,
+				},
+				PageHTML: &wmf.PageHTML{
+					Content: "Special:Redirect/revision/100",
+				},
 			},
 			eku: errors.New("key unmarshal error"),
 			bne: true,
@@ -405,7 +435,14 @@ func TestHandler(t *testing.T) {
 				},
 				Event: schema.NewEvent(schema.EventTypeUpdate),
 			},
-			agg: &aggregate.Aggregation{},
+			agg: &aggregate.Aggregation{
+				Page: &wmf.Page{
+					LastRevID: 100,
+				},
+				PageHTML: &wmf.PageHTML{
+					Content: "Special:Redirect/revision/100",
+				},
+			},
 			eag: errors.New("aggregation query error"),
 		},
 		{
@@ -442,7 +479,11 @@ func TestHandler(t *testing.T) {
 			},
 			agg: &aggregate.Aggregation{
 				Page: &wmf.Page{
-					Missing: true,
+					Missing:   true,
+					LastRevID: 100,
+				},
+				PageHTML: &wmf.PageHTML{
+					Content: "Special:Redirect/revision/100",
 				},
 			},
 		},
@@ -480,7 +521,9 @@ func TestHandler(t *testing.T) {
 				Event: schema.NewEvent(schema.EventTypeUpdate),
 			},
 			agg: &aggregate.Aggregation{
-				Page: &wmf.Page{},
+				Page: &wmf.Page{
+					LastRevID: 100,
+				},
 				PageHTML: &wmf.PageHTML{
 					Error: errors.New("html page missing"),
 				},
@@ -520,7 +563,12 @@ func TestHandler(t *testing.T) {
 				Event: schema.NewEvent(schema.EventTypeUpdate),
 			},
 			agg: &aggregate.Aggregation{
-				Page: &wmf.Page{},
+				Page: &wmf.Page{
+					LastRevID: 100,
+				},
+				PageHTML: &wmf.PageHTML{
+					Content: "Special:Redirect/revision/100",
+				},
 			},
 			cts: []string{},
 			prt: []string{},
@@ -574,12 +622,22 @@ func TestHandler(t *testing.T) {
 			},
 			agg: &aggregate.Aggregation{
 				Page: &wmf.Page{
+					LastRevID: 100,
 					Revisions: []*wmf.Revision{
 						{},
 						{},
 					},
 				},
+				PageHTML: &wmf.PageHTML{
+					Content: "Special:Redirect/revision/100",
+				},
 			},
+			env: &env.Environment{
+				ReferenceNeedLanguagesFilter: true,
+				ReferenceNeedLanguages:       []string{},
+				LiftwingTimeoutMs:            5000,
+			},
+
 			cts: []string{},
 			prt: []string{},
 			wds: &text.Words{},
@@ -633,10 +691,14 @@ func TestHandler(t *testing.T) {
 			},
 			agg: &aggregate.Aggregation{
 				Page: &wmf.Page{
+					LastRevID: 100,
 					Revisions: []*wmf.Revision{
 						{},
 						{},
 					},
+				},
+				PageHTML: &wmf.PageHTML{
+					Content: "Special:Redirect/revision/100",
 				},
 			},
 			cts: []string{},

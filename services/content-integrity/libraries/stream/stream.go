@@ -4,8 +4,8 @@ package stream
 import (
 	"fmt"
 	"strings"
-	"wikimedia-enterprise/general/schema"
 	"wikimedia-enterprise/services/content-integrity/config/env"
+	"wikimedia-enterprise/services/content-integrity/submodules/schema"
 )
 
 // New creates new schema helper for dependency injection.

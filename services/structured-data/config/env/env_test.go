@@ -30,7 +30,7 @@ type envTestSuite struct {
 	topicArticleDeleteErrorKey      string
 	topicArticleDeleteDeadLetter    string
 	topicArticleDeleteDeadLetterKey string
-	topicArticleUpdate              string
+	topicArticleUpdate              env.List
 	topicArticleUpdateKey           string
 	topicArticleUpdateError         string
 	topicArticleUpdateErrorKey      string
@@ -78,6 +78,14 @@ type envTestSuite struct {
 	tracingSamplingRateKey          string
 	prometheusPort                  int
 	prometheusPortKey               string
+	liftwingTimeoutMSKey            string
+	liftwingTimeoutMS               int
+	referenceNeedLanguagesKey       string
+	referenceNeedLanguages          env.List
+	referenceNeedLanguagesFilter    bool
+	referenceNeedLanguagesFilterKey string
+	logLevelKey                     string
+	logLevel                        string
 }
 
 func (s *envTestSuite) SetupSuite() {
@@ -100,7 +108,7 @@ func (s *envTestSuite) SetupSuite() {
 	s.topicArticleDeleteDeadLetterKey = "TOPIC_ARTICLE_DELETE_DEAD_LETTER"
 	s.topicArticleDeleteDeadLetter = "local.structured-data.article-delete-dead-letter.v1"
 	s.topicArticleUpdateKey = "TOPIC_ARTICLE_UPDATE"
-	s.topicArticleUpdate = "local.event-bridge.article-update.v1"
+	s.topicArticleUpdate = env.List{"local.event-bridge.article-update.v1"}
 	s.topicArticleUpdateErrorKey = "TOPIC_ARTICLE_UPDATE_ERROR"
 	s.topicArticleUpdateError = "local.structured-data.article-update-error.v1"
 	s.topicArticleUpdateDeadLetterKey = "TOPIC_ARTICLE_UPDATE_DEAD_LETTER"
@@ -154,6 +162,15 @@ func (s *envTestSuite) SetupSuite() {
 	s.tracingSamplingRateKey = "TRACING_SAMPLING_RATE"
 	s.prometheusPort = 12411
 	s.prometheusPortKey = "PROMETHEUS_PORT"
+	s.liftwingTimeoutMSKey = "LIFTWING_TIMEOUT_MS"
+	s.liftwingTimeoutMS = 1000
+	s.referenceNeedLanguagesKey = "REFERENCE_NEED_LANGUAGES"
+	s.referenceNeedLanguages = env.List{"fa", "it", "zh", "ru", "pt", "es", "ja", "de", "fr", "en"}
+	s.referenceNeedLanguagesFilterKey = "REFERENCE_NEED_LANGUAGES_FILTER"
+	s.referenceNeedLanguagesFilter = true
+	s.logLevelKey = "LOG_LEVEL"
+	s.logLevel = "debug"
+
 }
 
 func (s *envTestSuite) SetupTest() {
@@ -167,7 +184,6 @@ func (s *envTestSuite) SetupTest() {
 	os.Setenv(s.topicArticleDeleteKey, s.topicArticleDelete)
 	os.Setenv(s.topicArticleDeleteErrorKey, s.topicArticleDeleteError)
 	os.Setenv(s.topicArticleDeleteDeadLetterKey, s.topicArticleDeleteDeadLetter)
-	os.Setenv(s.topicArticleUpdateKey, s.topicArticleUpdate)
 	os.Setenv(s.topicArticleUpdateErrorKey, s.topicArticleUpdateError)
 	os.Setenv(s.topicArticleUpdateDeadLetterKey, s.topicArticleUpdateDeadLetter)
 	os.Setenv(s.topicArticleBulkKey, s.topicArticleBulk)
@@ -187,7 +203,11 @@ func (s *envTestSuite) SetupTest() {
 	os.Setenv(s.oauthTokenKey, s.oauthToken)
 	os.Setenv(s.latencyThresholdKey, strconv.FormatInt(s.latencyThresholdMS, 10))
 
-	tmp, err := json.Marshal(s.noindexTemplatePatterns)
+	tmp, err := json.Marshal(s.topicArticleUpdate)
+	s.Assert().NoError(err)
+	os.Setenv(s.topicArticleUpdateKey, string(tmp))
+
+	tmp, err = json.Marshal(s.noindexTemplatePatterns)
 	s.Assert().NoError(err)
 	os.Setenv(s.noindexTemplatePatternsKey, string(tmp))
 
@@ -200,6 +220,13 @@ func (s *envTestSuite) SetupTest() {
 	os.Setenv(s.tracingSamplingRateKey, strconv.FormatFloat(s.tracingSamplingRate, 'f', -1, 64))
 
 	os.Setenv(s.prometheusPortKey, strconv.Itoa(s.prometheusPort))
+	os.Setenv(s.liftwingTimeoutMSKey, strconv.Itoa(s.liftwingTimeoutMS))
+	ctg, err = json.Marshal(s.referenceNeedLanguages)
+	s.Assert().NoError(err)
+	os.Setenv(s.referenceNeedLanguagesKey, string(ctg))
+	os.Setenv(s.referenceNeedLanguagesFilterKey, strconv.FormatBool(s.referenceNeedLanguagesFilter))
+	os.Setenv(s.logLevelKey, s.logLevel)
+
 }
 
 func (s *envTestSuite) TestNew() {
@@ -250,6 +277,10 @@ func (s *envTestSuite) TestNew() {
 	s.Assert().Equal(s.serviceName, env.ServiceName)
 	s.Assert().Equal(s.tracingGRPCHost, env.TracingGRPCHost)
 	s.Assert().Equal(s.tracingSamplingRate, env.TracingSamplingRate)
+	s.Assert().Equal(s.liftwingTimeoutMS, env.LiftwingTimeoutMs)
+	s.Assert().Equal(s.referenceNeedLanguages, env.ReferenceNeedLanguages)
+	s.Assert().Equal(s.referenceNeedLanguagesFilter, env.ReferenceNeedLanguagesFilter)
+	s.Assert().Equal(s.logLevel, env.LogLevel)
 }
 
 func TestEnv(t *testing.T) {

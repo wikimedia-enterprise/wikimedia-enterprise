@@ -1,10 +1,16 @@
-# Wikimedia Enterprise Authentication API
+# Authentication API service
 
 This service exposes API endpoints for managing login and tokens. In the current implementation, for each API call, a call is made to AWS cognito service that performs the actual authentication management.
 
 ### Getting started:
 
 Need to make sure that `go`, `docker` and `docker-compose` is installed on your machine.
+
+1. Update and init git submodules:
+
+   ```bash
+   git submodule update --init --remote --recursive
+   ```
 
 1. Create `.env` file in the project root with following content:
 
@@ -17,11 +23,10 @@ Need to make sure that `go`, `docker` and `docker-compose` is installed on your 
    SERVER_MODE=release
    SERVER_PORT=4050
    COGNITO_USER_POOL_ID=user-pool
-   COGNITO_USER_GROUP=free-tier
+   COGNITO_USER_GROUP=free-tier # for create-user
    REDIS_ADDR=redis:6379
    REDIS_PASSWORD=password
    ACCESS_POLICY=policy-csv
-   GROUP_DOWNLOAD_LIMIT=10000
    ```
 
 1. Start the application by running:

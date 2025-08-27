@@ -8,11 +8,12 @@ import (
 	"fmt"
 	"io"
 	"testing"
-	"wikimedia-enterprise/general/schema"
+	"time"
 	"wikimedia-enterprise/services/snapshots/config/env"
 	"wikimedia-enterprise/services/snapshots/handlers/aggregate"
 	pb "wikimedia-enterprise/services/snapshots/handlers/protos"
 	"wikimedia-enterprise/services/snapshots/libraries/s3tracerproxy"
+	"wikimedia-enterprise/services/snapshots/submodules/schema"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
@@ -78,10 +79,10 @@ type handlerTestSuite struct {
 	err error
 }
 
-func (s *handlerTestSuite) SetupSuite() {
+func (s *handlerTestSuite) SetupTest() {
 	s.ctx = context.Background()
 	s.env = &env.Environment{
-		AWSBucket:     "wme-data",
+		AWSBucket:     "wme-primary",
 		Prefix:        "snapshots",
 		FreeTierGroup: "group_1",
 	}
@@ -90,12 +91,7 @@ func (s *handlerTestSuite) SetupSuite() {
 		Prefix: "snapshots",
 	}
 
-	prx := s.env.Prefix
-
-	if len(s.req.Prefix) > 0 {
-		prx = s.req.Prefix
-	}
-
+	prx := s.req.Prefix
 	s.lin = &s3.ListObjectsV2Input{
 		Bucket: aws.String(s.env.AWSBucket),
 		Prefix: aws.String(prx),
@@ -111,6 +107,7 @@ func (s *handlerTestSuite) SetupSuite() {
 		fmt.Sprintf("%s/afwikibooks.json", prx),
 	}
 
+	s.gns = []*s3.GetObjectInput{}
 	for _, key := range s.kys {
 		s.gns = append(s.gns, &s3.GetObjectInput{
 			Bucket: aws.String(s.env.AWSBucket),
@@ -130,9 +127,7 @@ func (s *handlerTestSuite) SetupSuite() {
 	}
 
 	s.res = &pb.AggregateResponse{Total: 2}
-}
 
-func (s *handlerTestSuite) SetupTest() {
 	s.s3m = new(s3Mock)
 	s.hdl = &aggregate.Handler{
 		S3:  s.s3m,
@@ -174,6 +169,236 @@ func (s *handlerTestSuite) TestHandlerPutErr() {
 	res, err := s.hdl.Aggregate(s.ctx, s.req)
 	s.Assert().Equal(s.err, err)
 	s.Assert().Nil(res)
+}
+
+func (s *handlerTestSuite) TestHandlerGetObjectErr() {
+	s.s3m.On("ListObjectsV2PagesWithContext", s.lin).Return(s.kys, nil)
+
+	// Simulate error on GetObject
+	s.s3m.On("GetObjectWithContext", s.gns[0]).Return(nil, s.err)
+	s.s3m.On("GetObjectWithContext", s.gns[1]).Return(s.hls[1], nil)
+
+	s.s3m.On("PutObjectWithContext", s.pin.Key, s.pin.Bucket).Return(nil)
+
+	res, err := s.hdl.Aggregate(s.ctx, s.req)
+	s.Assert().NoError(err)
+	s.Assert().Equal(int32(2), res.Total)
+}
+
+func (s *handlerTestSuite) TestHandlerDecodeErr() {
+	s.s3m.On("ListObjectsV2PagesWithContext", s.lin).Return(s.kys, nil)
+
+	// Invalid JSON (force decoder error)
+	invalid := "invalid-json"
+	s.s3m.On("GetObjectWithContext", s.gns[0]).Return(invalid, nil)
+	s.s3m.On("GetObjectWithContext", s.gns[1]).Return(s.hls[1], nil)
+
+	s.s3m.On("PutObjectWithContext", s.pin.Key, s.pin.Bucket).Return(nil)
+
+	res, err := s.hdl.Aggregate(s.ctx, s.req)
+	s.Assert().NoError(err)
+	s.Assert().Equal(int32(2), res.Total)
+	s.Assert().Equal(int32(1), res.Errors)
+}
+
+func (s *handlerTestSuite) TestHandlerMarshalErr() {
+	s.s3m.On("ListObjectsV2PagesWithContext", s.lin).Return(s.kys, nil)
+
+	// Create a struct with a channel, which cannot be marshalled
+	type InvalidSnapshot struct {
+		schema.Snapshot
+		Ch chan int `json:"ch"`
+	}
+
+	invalid := &InvalidSnapshot{
+		Snapshot: schema.Snapshot{
+			Identifier: "enwiki",
+			Size:       &schema.Size{Value: 1},
+		},
+		Ch: make(chan int),
+	}
+
+	s.s3m.On("GetObjectWithContext", s.gns[0]).Return(invalid, nil)
+	s.s3m.On("GetObjectWithContext", s.gns[1]).Return(s.hls[1], nil)
+
+	s.s3m.On("PutObjectWithContext", s.pin.Key, s.pin.Bucket).Return(nil)
+
+	res, err := s.hdl.Aggregate(s.ctx, s.req)
+	s.Assert().NoError(err)
+	s.Assert().Equal(int32(2), res.Total)
+	s.Assert().Equal(int32(0), res.Errors)
+}
+
+func (s *handlerTestSuite) TestHandlerNoMetadataInfo() {
+	s.s3m.On("ListObjectsV2PagesWithContext", s.lin).Return([]string{}, nil)
+
+	res, err := s.hdl.Aggregate(s.ctx, s.req)
+	s.Assert().NoError(err)
+	s.Assert().Equal(int32(0), res.Total)
+	s.Assert().Equal(int32(0), res.Errors)
+}
+
+func (s *handlerTestSuite) TestHandlerPrefixFallback() {
+	s.req.Prefix = "" // Force fallback to h.Env.Prefix
+
+	s.s3m.On("ListObjectsV2PagesWithContext", s.lin).Return(s.kys, nil)
+
+	for i, inp := range s.gns {
+		s.s3m.On("GetObjectWithContext", inp).Return(s.hls[i], nil)
+	}
+
+	s.s3m.On("PutObjectWithContext", s.pin.Key, s.pin.Bucket).Return(nil)
+
+	res, err := s.hdl.Aggregate(s.ctx, s.req)
+	s.Assert().NoError(err)
+	s.Assert().Equal(s.res, res)
+}
+
+func (s *handlerTestSuite) TestHandlerSinceAndBatchesKey() {
+	s.req.Prefix = "batches"
+	s.req.Since = 1711641600000 // Any positive value
+
+	expectedKey := fmt.Sprintf("batches/%s",
+		time.Unix(0, s.req.Since*int64(time.Millisecond)).Format("2006-01-02"),
+	)
+	s.lin.Prefix = aws.String(expectedKey)
+	s.pin.Key = aws.String(fmt.Sprintf("aggregations/%s/%s.ndjson", expectedKey, "batches"))
+	s.kys = []string{
+		fmt.Sprintf("%s/enwiki.json", expectedKey),
+	}
+	s.gns = []*s3.GetObjectInput{
+		{
+			Bucket: aws.String(s.env.AWSBucket),
+			Key:    aws.String(s.kys[0]),
+		},
+	}
+
+	s.hls = []*schema.Project{
+		{
+			Identifier: "enwiki",
+			Size:       &schema.Size{Value: 1},
+		},
+	}
+
+	s.res = &pb.AggregateResponse{Total: 1}
+
+	s.s3m.On("ListObjectsV2PagesWithContext", s.lin).Return(s.kys, nil)
+	s.s3m.On("GetObjectWithContext", s.gns[0]).Return(s.hls[0], nil)
+	s.s3m.On("PutObjectWithContext", s.pin.Key, s.pin.Bucket).Return(nil)
+
+	res, err := s.hdl.Aggregate(s.ctx, s.req)
+	s.Assert().NoError(err)
+	s.Assert().Equal(s.res, res)
+}
+
+func (s *handlerTestSuite) TestHandlerSinceAndBatchesKeyWithNewDiffs() {
+	s.req.Prefix = "batches"
+	s.req.Since = 1711641600000 // Any positive value
+
+	expectedKey := fmt.Sprintf("batches/%s",
+		time.Unix(0, s.req.Since*int64(time.Millisecond)).Format("2006-01-02"),
+	)
+	s.lin.Prefix = aws.String(expectedKey)
+	s.pin.Key = aws.String(fmt.Sprintf("aggregations/%s/%s.ndjson", expectedKey, "batches"))
+	s.kys = []string{
+		fmt.Sprintf("%s/enwiki.json", expectedKey),
+		// Include hourly folder, for new diffs rollout.
+		fmt.Sprintf("%s/01/enwiki.json", expectedKey),
+	}
+	s.gns = []*s3.GetObjectInput{
+		{
+			Bucket: aws.String(s.env.AWSBucket),
+			Key:    aws.String(s.kys[0]),
+		},
+	}
+
+	s.hls = []*schema.Project{
+		{
+			Identifier: "enwiki",
+			Size:       &schema.Size{Value: 1},
+		},
+	}
+
+	s.res = &pb.AggregateResponse{Total: 1}
+
+	s.s3m.On("ListObjectsV2PagesWithContext", s.lin).Return(s.kys, nil)
+	s.s3m.On("GetObjectWithContext", s.gns[0]).Return(s.hls[0], nil)
+	s.s3m.On("PutObjectWithContext", s.pin.Key, s.pin.Bucket).Return(nil)
+
+	res, err := s.hdl.Aggregate(s.ctx, s.req)
+	s.Assert().NoError(err)
+	s.Assert().Equal(s.res, res)
+}
+
+func (s *handlerTestSuite) TestHandlerSinceAndBatchesKeyForDiffs() {
+	s.req.Since = 1711641600000 // Any positive value
+	date := time.Unix(0, s.req.Since*int64(time.Millisecond))
+
+	expectedKey := fmt.Sprintf("batches/%s", date.Format("2006-01-02/15"))
+	s.req.Prefix = expectedKey
+	s.lin.Prefix = aws.String(expectedKey)
+	s.pin.Key = aws.String(fmt.Sprintf("aggregations/%s/%s.ndjson", expectedKey, "batches"))
+	s.kys = []string{
+		fmt.Sprintf("%s/enwiki.json", expectedKey),
+	}
+	s.gns = []*s3.GetObjectInput{
+		{
+			Bucket: aws.String(s.env.AWSBucket),
+			Key:    aws.String(s.kys[0]),
+		},
+	}
+
+	s.hls = []*schema.Project{
+		{
+			Identifier: "enwiki",
+			Size:       &schema.Size{Value: 1},
+		},
+	}
+
+	s.res = &pb.AggregateResponse{Total: 1}
+
+	s.s3m.On("ListObjectsV2PagesWithContext", s.lin).Return(s.kys, nil)
+	s.s3m.On("GetObjectWithContext", s.gns[0]).Return(s.hls[0], nil)
+	s.s3m.On("PutObjectWithContext", s.pin.Key, s.pin.Bucket).Return(nil)
+
+	res, err := s.hdl.Aggregate(s.ctx, s.req)
+	s.Assert().NoError(err)
+	s.Assert().Equal(s.res, res)
+}
+
+func (s *handlerTestSuite) TestHandlerSnapshotKey() {
+	s.req.Snapshot = "my-snapshot"
+	s.req.Since = 0
+
+	expectedKey := fmt.Sprintf("%s/%s", s.req.Prefix, s.req.Snapshot)
+	s.lin.Prefix = aws.String(expectedKey)
+	s.pin.Key = aws.String(fmt.Sprintf("aggregations/%s/%s.ndjson", expectedKey, s.req.Prefix))
+	s.kys = []string{
+		fmt.Sprintf("%s/enwiki.json", expectedKey),
+	}
+	s.gns = []*s3.GetObjectInput{
+		{
+			Bucket: aws.String(s.env.AWSBucket),
+			Key:    aws.String(s.kys[0]),
+		},
+	}
+
+	s.hls = []*schema.Project{
+		{
+			Identifier: "enwiki",
+			Size:       &schema.Size{Value: 1},
+		},
+	}
+
+	s.res = &pb.AggregateResponse{Total: 1}
+
+	s.s3m.On("ListObjectsV2PagesWithContext", s.lin).Return(s.kys, nil)
+	s.s3m.On("GetObjectWithContext", s.gns[0]).Return(s.hls[0], nil)
+	s.s3m.On("PutObjectWithContext", s.pin.Key, s.pin.Bucket).Return(nil)
+
+	res, err := s.hdl.Aggregate(s.ctx, s.req)
+	s.Assert().NoError(err)
+	s.Assert().Equal(s.res, res)
 }
 
 func TestHandler(t *testing.T) {

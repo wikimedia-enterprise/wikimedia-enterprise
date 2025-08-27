@@ -1,0 +1,16 @@
+([]*parser.Image) (len=2) {
+  (*parser.Image)({
+    ContentUrl: (string) (len=107) "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Kane_coat_of_arms.jpg/220px-Kane_coat_of_arms.jpg",
+    AlternativeText: (string) "",
+    Caption: (string) (len=18) "Kane coat of arms.",
+    Height: (int) 220,
+    Width: (int) 220
+  }),
+  (*parser.Image)({
+    ContentUrl: (string) (len=89) "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Kane_Ulv.JPG/150px-Kane_Ulv.JPG",
+    AlternativeText: (string) "",
+    Caption: (string) (len=47) "Coat of arms on a Norwegian tombstone from 1616",
+    Height: (int) 150,
+    Width: (int) 150
+  })
+}

@@ -12,7 +12,7 @@ services:
 
   # Confluent Kafka broker
   broker:
-    image: confluentinc/cp-kafka:latest
+    image: confluentinc/cp-kafka:7.3.1
     depends_on:
       - zookeeper
     environment:
@@ -44,17 +44,26 @@ services:
       KAFKA_CLUSTERS_0_SCHEMAREGISTRY: http://schemaregistry:8085
       KAFKA_CLUSTERS_0_SCHEMANAMETEMPLATE: __schemas
 
+  # Swagger API documentation
+  swagger-ui:
+    image: swaggerapi/swagger-ui:latest
+    volumes:
+      - ./submodules/api-openapi-spec/:/var/www/app/docs.yaml
+    ports:
+      - 8030:8080
+    environment:
+      SWAGGER_JSON: /var/www/app/docs.yaml
+
   realtime:
     build:
-      context: ./../../.
-      dockerfile: ./api/realtime/Dockerfile
+      context: .
+      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
     ports:
       - 4040:4040
     env_file:
       - ./.env
     depends_on:
       - broker
-      - ksqldb
 
   cache:
     image: redis:latest
@@ -85,33 +94,10 @@ services:
       SCHEMA_REGISTRY_KAFKASTORE_TOPIC_REPLICATION_FACTOR: 2
       SCHEMA_REGISTRY_DEBUG: 'true'
 
-  ksqldb:
-    image: confluentinc/ksqldb-server:0.28.2
-    depends_on:
-      - broker
-      - schemaregistry
-    ports:
-      - "8088:8088"
-    environment:
-      KSQL_LISTENERS: http://0.0.0.0:8088
-      KSQL_BOOTSTRAP_SERVERS: broker:29092
-      KSQL_KSQL_LOGGING_PROCESSING_STREAM_AUTO_CREATE: "true"
-      KSQL_KSQL_LOGGING_PROCESSING_TOPIC_AUTO_CREATE: "true"
-      KSQL_MIGRATIONS_CONFIG: /share/ksql-migrations/ksql-migrations.properties
-      # KSQL_KSQL_STREAMS_AUTO_OFFSET_RESET: 'earliest'
-      # ksql.streams.auto.offset.reset
-      KSQL_KSQL_SCHEMA_REGISTRY_URL: http://schemaregistry:8085
-      KSQL_KSQL_QUERY_PULL_TABLE_SCAN_ENABLED: "true"
-      KSQL_KSQL_CONNECT_URL: "http://connect:8083"
-    volumes:
-      - ./ksqldb:/share/ksql-migrations
-
   mock:
     build:
-      context: ./../../.
-      dockerfile: ./docker/mock/Dockerfile
-      args:
-        SOURCE_DIR: "./api/realtime"
+      context: .
+      dockerfile: submodules/cdtools/docker/mock/Dockerfile
     depends_on:
       - zookeeper
       - broker

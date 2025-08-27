@@ -2,7 +2,7 @@ package builder
 
 import (
 	"time"
-	"wikimedia-enterprise/general/schema"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
 )
 
 var (

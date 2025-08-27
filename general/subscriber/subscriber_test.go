@@ -4,13 +4,10 @@ import (
 	"context"
 	"errors"
 	"os"
-	"syscall"
 	"testing"
 	"time"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
 )
 
@@ -56,271 +53,58 @@ func TestConfig(t *testing.T) {
 	}
 }
 
-type MockConsumer struct {
-	mock.Mock
-}
-
-func (m *MockConsumer) SubscribeTopics(topics []string, handle kafka.RebalanceCb) error {
-	args := m.Called(topics, handle)
-	return args.Error(0)
-}
-
-func (m *MockConsumer) ReadMessage(timeout time.Duration) (*kafka.Message, error) {
-	args := m.Called(timeout)
-	if args.Get(0) == nil {
-		return nil, args.Error(1)
-	}
-
-	return args.Get(0).(*kafka.Message), nil
-}
-
-func (m *MockConsumer) Close() error {
-	args := m.Called()
-	return args.Error(0)
-}
-
-type MockProducer struct {
-	mock.Mock
-}
-
-func (m *MockProducer) Flush(timeoutMs int) int {
-	args := m.Called(timeoutMs)
-	return args.Int(0)
-}
-
-func (m *MockProducer) Close() {
-	m.Called()
-}
-
-type SubscriberTestSuite struct {
+type subscriberTestSuite struct {
 	suite.Suite
-	mockConsumer *MockConsumer
-	mockProducer *MockProducer
-	cfg          *Config
-	subscriber   *Subscriber
-	handler      Handler
+	tps []string
+	prr *kafka.Producer
+	cns *kafka.Consumer
+	ctx context.Context
+	hdl Handler
+	evs chan *Event
 }
 
-func (s *SubscriberTestSuite) SetupTest() {
-	s.mockConsumer = new(MockConsumer)
-	s.mockProducer = new(MockProducer)
+func (s *subscriberTestSuite) SetupTest() {
+	s.ctx = context.Background()
+	s.tps = []string{"test"}
+	s.evs = make(chan *Event, 100000)
 
-	s.cfg = &Config{
-		Topics:             []string{"test-topic"},
-		Events:             make(chan *Event),
-		NumberOfWorkers:    1,
-		MessagesChannelCap: 1,
-		ReadTimeout:        5000 * time.Millisecond,
-		FlushTimeoutMs:     200,
-	}
+	prr, err := kafka.NewProducer(&kafka.ConfigMap{})
+	s.Assert().NoError(err)
+	s.prr = prr
 
-	s.handler = func(ctx context.Context, msg *kafka.Message) error {
+	cns, err := kafka.NewConsumer(&kafka.ConfigMap{
+		"group.id": "test",
+	})
+	s.Assert().NoError(err)
+	s.cns = cns
+
+	s.hdl = func(ctx context.Context, msg *kafka.Message) error {
 		return nil
 	}
+}
 
-	s.subscriber = &Subscriber{
-		Consumer: s.mockConsumer,
-		Producer: s.mockProducer,
+func (s *subscriberTestSuite) TestSubscribe() {
+	sbr := Subscriber{
+		Producer: s.prr,
+		Consumer: s.cns,
 	}
 
-	s.mockConsumer.On("SubscribeTopics", s.cfg.Topics, mock.Anything).Return(nil)
-}
-
-func (s *SubscriberTestSuite) TearDownTest() {
-	s.mockConsumer.ExpectedCalls = nil
-	s.mockProducer.ExpectedCalls = nil
-}
-
-func (s *SubscriberTestSuite) TestNew() {
-	s.Assert().NotNil(New(new(kafka.Consumer), new(kafka.Producer)))
-	s.Assert().NotNil(New(new(kafka.Consumer), nil))
-}
-
-func (s *SubscriberTestSuite) TestSubscribeNoTracer() {
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
-	defer cancel()
-
-	s.mockConsumer.On("ReadMessage", mock.AnythingOfType("time.Duration")).Return(&kafka.Message{
-		TopicPartition: kafka.TopicPartition{Topic: &s.cfg.Topics[0], Partition: 0},
-		Key:            []byte("key"),
-		Value:          []byte("value"),
-	}, nil).Once()
-	s.mockConsumer.On("ReadMessage", mock.AnythingOfType("time.Duration")).Return(nil, kafka.NewError(kafka.ErrTimedOut, "timeout", false)).Once()
-
 	go func() {
-		err := s.subscriber.Subscribe(ctx, s.handler, s.cfg)
-		assert.NoError(s.T(), err)
+		time.Sleep(time.Second * 1)
+		prc, err := os.FindProcess(os.Getpid())
+		s.Assert().NoError(err)
+		s.Assert().NoError(prc.Signal(os.Interrupt))
 	}()
 
-	go func() {
-		time.Sleep(100 * time.Millisecond)
-		process, _ := os.FindProcess(os.Getpid())
-		err := process.Signal(syscall.SIGTERM)
-
-		assert.NoError(s.T(), err)
-	}()
-
-	// Give some time for cleanup
-	time.Sleep(200 * time.Millisecond)
-
-	s.mockConsumer.AssertExpectations(s.T())
-	s.mockProducer.AssertExpectations(s.T())
-}
-
-func (s *SubscriberTestSuite) TestSubscribeWithTracer() {
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
-	defer cancel()
-
-	tracerCalled := false
-	endCalled := false
-
-	s.cfg.Tracer = func(ctx context.Context, attributes map[string]string) (func(err error, msg string), context.Context) {
-		tracerCalled = true
-		return func(err error, msg string) {
-			endCalled = true
-			if err == nil {
-				assert.Equal(s.T(), "message processed", msg)
-			} else {
-				assert.Equal(s.T(), "error processing message", msg)
-			}
-		}, ctx
+	pms := &Config{
+		Topics: s.tps,
+		Events: s.evs,
 	}
 
-	s.mockConsumer.On("ReadMessage", mock.AnythingOfType("time.Duration")).Return(&kafka.Message{
-		TopicPartition: kafka.TopicPartition{Topic: &s.cfg.Topics[0], Partition: 0},
-		Key:            []byte("key"),
-		Value:          []byte("value"),
-	}, nil).Once()
-	s.mockConsumer.On("ReadMessage", mock.AnythingOfType("time.Duration")).Return(nil, kafka.NewError(kafka.ErrTimedOut, "timeout", false)).Maybe()
-
-	go func() {
-		err := s.subscriber.Subscribe(ctx, s.handler, s.cfg)
-		assert.NoError(s.T(), err)
-	}()
-
-	go func() {
-		time.Sleep(100 * time.Millisecond)
-		process, _ := os.FindProcess(os.Getpid())
-		err := process.Signal(syscall.SIGTERM)
-
-		if err != nil {
-			assert.NoError(s.T(), err)
-		}
-	}()
-
-	// Give some time for cleanup
-	time.Sleep(200 * time.Millisecond)
-	assert.True(s.T(), tracerCalled)
-	assert.True(s.T(), endCalled)
-
-	s.mockConsumer.AssertExpectations(s.T())
-	s.mockProducer.AssertExpectations(s.T())
+	s.Assert().NoError(sbr.Subscribe(s.ctx, s.hdl, pms))
+	s.Zero(len(s.evs))
 }
 
-func (s *SubscriberTestSuite) TestSubscribeTracerHandlerSuccess() {
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
-	defer cancel()
-
-	tracerCalled := false
-	endCalled := false
-
-	s.cfg.Tracer = func(ctx context.Context, attributes map[string]string) (func(err error, msg string), context.Context) {
-		tracerCalled = true
-		return func(err error, msg string) {
-			endCalled = true
-			assert.Nil(s.T(), err)
-			assert.Equal(s.T(), "message processed", msg)
-		}, ctx
-	}
-
-	s.handler = func(ctx context.Context, msg *kafka.Message) error {
-		return nil
-	}
-
-	s.mockConsumer.On("ReadMessage", mock.AnythingOfType("time.Duration")).Return(&kafka.Message{
-		TopicPartition: kafka.TopicPartition{Topic: &s.cfg.Topics[0], Partition: 0},
-		Key:            []byte("key"),
-		Value:          []byte("value"),
-	}, nil).Once()
-	s.mockConsumer.On("ReadMessage", mock.AnythingOfType("time.Duration")).Return(nil, kafka.NewError(kafka.ErrTimedOut, "timeout", false)).Maybe()
-
-	go func() {
-		err := s.subscriber.Subscribe(ctx, s.handler, s.cfg)
-		assert.NoError(s.T(), err)
-	}()
-
-	go func() {
-		time.Sleep(100 * time.Millisecond)
-		process, _ := os.FindProcess(os.Getpid())
-		err := process.Signal(syscall.SIGTERM)
-
-		if err != nil {
-			assert.NoError(s.T(), err)
-		}
-	}()
-
-	// Give some time for cleanup
-	time.Sleep(200 * time.Millisecond)
-
-	assert.True(s.T(), tracerCalled)
-	assert.True(s.T(), endCalled)
-
-	s.mockConsumer.AssertExpectations(s.T())
-	s.mockProducer.AssertExpectations(s.T())
-}
-
-func (s *SubscriberTestSuite) TestSubscribeTracerHandlerError() {
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
-	defer cancel()
-
-	tracerCalled := false
-	endCalled := false
-
-	s.cfg.Tracer = func(ctx context.Context, attributes map[string]string) (func(err error, msg string), context.Context) {
-		tracerCalled = true
-		return func(err error, msg string) {
-			endCalled = true
-			assert.NotNil(s.T(), err)
-			assert.Equal(s.T(), "error processing message", msg)
-		}, ctx
-	}
-
-	s.handler = func(ctx context.Context, msg *kafka.Message) error {
-		return errors.New("handler error")
-	}
-
-	s.mockConsumer.On("ReadMessage", mock.AnythingOfType("time.Duration")).Return(&kafka.Message{
-		TopicPartition: kafka.TopicPartition{Topic: &s.cfg.Topics[0], Partition: 0},
-		Key:            []byte("key"),
-		Value:          []byte("value"),
-	}, nil).Once()
-	s.mockConsumer.On("ReadMessage", mock.AnythingOfType("time.Duration")).Return(nil, kafka.NewError(kafka.ErrTimedOut, "timeout", false)).Maybe()
-
-	go func() {
-		err := s.subscriber.Subscribe(ctx, s.handler, s.cfg)
-		assert.NoError(s.T(), err)
-	}()
-
-	go func() {
-		time.Sleep(100 * time.Millisecond)
-		process, _ := os.FindProcess(os.Getpid())
-		err := process.Signal(syscall.SIGTERM)
-
-		if err != nil {
-			assert.NoError(s.T(), err)
-		}
-	}()
-
-	// Give some time for cleanup
-	time.Sleep(200 * time.Millisecond)
-
-	assert.True(s.T(), tracerCalled)
-	assert.False(s.T(), endCalled)
-
-	s.mockConsumer.AssertExpectations(s.T())
-	s.mockProducer.AssertExpectations(s.T())
-}
-
-func TestSubscriberTestSuite(t *testing.T) {
-	suite.Run(t, new(SubscriberTestSuite))
+func TestSubscriber(t *testing.T) {
+	suite.Run(t, new(subscriberTestSuite))
 }

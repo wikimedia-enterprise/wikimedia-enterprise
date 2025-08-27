@@ -4,7 +4,7 @@ import (
 	"testing"
 	"wikimedia-enterprise/api/realtime/config/env"
 	"wikimedia-enterprise/api/realtime/libraries/metrics"
-	"wikimedia-enterprise/general/httputil"
+	"wikimedia-enterprise/api/realtime/submodules/httputil"
 
 	"github.com/stretchr/testify/suite"
 )

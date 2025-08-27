@@ -10,8 +10,8 @@ import (
 	"net/http"
 	"time"
 	"wikimedia-enterprise/api/auth/config/env"
-	"wikimedia-enterprise/general/httputil"
-	"wikimedia-enterprise/general/log"
+	"wikimedia-enterprise/api/auth/submodules/httputil"
+	"wikimedia-enterprise/api/auth/submodules/log"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/cognitoidentityprovider"
@@ -42,14 +42,19 @@ type Response struct {
 	ExpiresIn   int    `json:"expires_in,omitempty"`
 }
 
+var (
+	// Here, "internal" means the error is on our side (Wikimedia Enterprise), not necessarily in the auth API server.
+	internalErr = errors.New("Internal error, please try again later.")
+)
+
 // NewHandler makes a access token refresh.
 func NewHandler(p *Parameters) gin.HandlerFunc {
 	return func(gcx *gin.Context) {
 		req := new(Request)
 
 		if err := gcx.ShouldBind(req); err != nil {
-			log.Error(err, log.Tip("problem binding request input in token refresh model v1"))
-			httputil.UnprocessableEntity(gcx, err)
+			log.Error(err, log.Tip("problem binding request input in token refresh model v1"), log.Any("url", gcx.Request.URL.String()))
+			httputil.UnprocessableEntity(gcx, internalErr)
 			return
 		}
 
@@ -59,12 +64,12 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 
 		if err != nil {
 			log.Error(err, log.Tip("problem in token refresh with redis read scard v1"))
-			httputil.InternalServerError(gcx, err)
+			httputil.InternalServerError(gcx, internalErr)
 			return
 		}
 
 		if card >= p.Env.MaxAccessTokens {
-			httputil.ToManyRequests(gcx, errors.New("refresh tokens limit has been exceeded"))
+			httputil.ToManyRequests(gcx, errors.New("Refresh tokens limit has been exceeded."))
 			return
 		}
 
@@ -75,7 +80,7 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 
 		if _, err := hmac.Write([]byte(fmt.Sprintf("%s%s", req.Username, p.Env.CognitoClientID))); err != nil {
 			log.Error(err, log.Tip("problem in token refresh with writing user and cognito client id v1"))
-			httputil.InternalServerError(gcx, err)
+			httputil.InternalServerError(gcx, internalErr)
 			return
 		}
 
@@ -90,7 +95,7 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 
 		if err != nil {
 			log.Error(err, log.Tip("problem in token refresh user unauthorized v1"))
-			httputil.Unauthorized(gcx, err)
+			httputil.Unauthorized(gcx, errors.New("Unauthorized."))
 			return
 		}
 
@@ -102,13 +107,13 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 
 		if err := p.Redis.SAdd(gcx.Request.Context(), key, *out.AuthenticationResult.AccessToken).Err(); err != nil {
 			log.Error(err, log.Tip("problem in token refresh adding redis token v1"))
-			httputil.InternalServerError(gcx, err)
+			httputil.InternalServerError(gcx, internalErr)
 			return
 		}
 
 		if card == 0 {
 			if err := p.Redis.Expire(gcx.Request.Context(), key, time.Second*60*60*time.Duration(p.Env.AccessTokensExpHours)).Err(); err != nil {
-				httputil.InternalServerError(gcx, err)
+				httputil.InternalServerError(gcx, internalErr)
 				return
 			}
 		}

@@ -1,0 +1,201 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=26) "Infobox character encoding",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) (len=8) "ISO 2022",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=7) {
+          (*parser.Part)({
+            Name: (string) (len=11) "Language(s)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Various.",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Standard",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=45) "ISO/IEC 2022, ECMA-35, ANSI X3.41, JIS X 0202",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Classification",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=68) "Stateful system of encodings (with stateless pre-configured subsets)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/State_(computer_science)",
+                Text: (string) (len=8) "Stateful",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Character_encoding",
+                Text: (string) (len=9) "encodings",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=20) "Transforms / Encodes",
+            Type: (string) (len=4) "list",
+            Value: (string) (len=41) "US-ASCII and, depending on implementation",
+            Values: ([]string) (len=11) {
+              (string) (len=11) "  - GB 2312",
+              (string) (len=14) "  - JIS X 0201",
+              (string) (len=14) "  - JIS X 0208",
+              (string) (len=14) "  - JIS X 0212",
+              (string) (len=14) "  - JIS X 0213",
+              (string) (len=13) "  - KS X 1001",
+              (string) (len=13) "  - CNS 11643",
+              (string) (len=15) "  - ISO/IEC 646",
+              (string) (len=24) "  - ISO/IEC 8859 / 10367",
+              (string) (len=18) "  - Various others",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/US-ASCII",
+                Text: (string) (len=8) "US-ASCII",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Succeeded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "ISO/IEC 10646 (Unicode)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/ISO/IEC_10646",
+                Text: (string) (len=13) "ISO/IEC 10646",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Unicode",
+                Text: (string) (len=7) "Unicode",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=25) "Other related encoding(s)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=98) "Stateful subsets: ISO-2022-JP, ISO-2022-CN, ISO-2022-KR Pre-configured versions: ISO/IEC 4873, EUC",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/ISO-2022-JP",
+                Text: (string) (len=11) "ISO-2022-JP",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/ISO-2022-CN",
+                Text: (string) (len=11) "ISO-2022-CN",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/ISO-2022-KR",
+                Text: (string) (len=11) "ISO-2022-KR",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/ISO/IEC_4873",
+                Text: (string) (len=12) "ISO/IEC 4873",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Extended_Unix_Code",
+                Text: (string) (len=3) "EUC",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=5) "v t e",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=65) "https://en.wikipedia.org/wiki/Template:Infobox_character_encoding",
+                Text: (string) (len=1) "v",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=70) "https://en.wikipedia.org/wiki/Template_talk:Infobox_character_encoding",
+                Text: (string) (len=1) "t",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=90) "https://en.wikipedia.org/w/index.php?title=Template:Infobox_character_encoding&action=edit",
+                Text: (string) (len=1) "e",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

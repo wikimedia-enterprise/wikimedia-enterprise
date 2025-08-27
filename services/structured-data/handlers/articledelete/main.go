@@ -2,38 +2,48 @@ package main
 
 import (
 	"context"
-	"log"
 	"os"
 	"os/signal"
 	"syscall"
-	"wikimedia-enterprise/general/schema"
-	"wikimedia-enterprise/general/subscriber"
 	"wikimedia-enterprise/services/structured-data/config/env"
 	"wikimedia-enterprise/services/structured-data/handlers/articledelete/handler"
+	"wikimedia-enterprise/services/structured-data/libraries/health"
 	"wikimedia-enterprise/services/structured-data/packages/container"
+	"wikimedia-enterprise/services/structured-data/submodules/log"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
+	"wikimedia-enterprise/services/structured-data/submodules/subscriber"
 
-	pr "wikimedia-enterprise/general/prometheus"
+	pr "wikimedia-enterprise/services/structured-data/submodules/prometheus"
+
+	"github.com/confluentinc/confluent-kafka-go/kafka"
 )
 
 func main() {
-	log.SetFlags(log.LstdFlags | log.Llongfile)
-
 	cnt, err := container.New()
 
 	if err != nil {
-		log.Panic(err)
+		log.Fatal(err)
 	}
 
 	sgs := make(chan os.Signal, 1)
 	signal.Notify(sgs, os.Interrupt, syscall.SIGTERM)
 
-	app := func(env *env.Environment, rtr schema.Retryer, sbs *subscriber.Subscriber, pms handler.Parameters) error {
+	app := func(env *env.Environment, rtr schema.Retryer, sbs *subscriber.Subscriber, pms handler.Parameters, consumer *kafka.Consumer, producer *kafka.Producer) error {
 		ctx := context.Background()
 		hdl := handler.NewArticleDelete(&pms)
+
+		producerTopics := []string{env.TopicArticles, env.TopicArticleDeleteError, env.TopicArticleDeleteDeadLetter}
+		cancel, rebalanceCb, err := health.SetUpHealthChecks(producerTopics, ctx, env, producer, consumer)
+		if err != nil {
+			log.Fatal(err)
+		}
+		defer cancel()
+
 		scf := &subscriber.Config{
 			Events:          make(chan *subscriber.Event, env.EventChannelSize),
 			Topics:          []string{env.TopicArticleDelete},
 			NumberOfWorkers: env.NumberOfWorkers,
+			RebalanceCb:     rebalanceCb,
 		}
 
 		pms.Metrics.AddStructuredDataMetrics()
@@ -43,7 +53,7 @@ func main() {
 				pms.Metrics.Inc(pr.SDTtlErrs)
 
 				if evt.Message == nil {
-					log.Println(evt.Error)
+					log.Error(evt.Error)
 				}
 
 				if evt.Message != nil {
@@ -57,7 +67,7 @@ func main() {
 					}
 
 					if err := rtr.Retry(ctx, rms); err != nil {
-						log.Println(err)
+						log.Error(err)
 					}
 				}
 			}
@@ -68,7 +78,7 @@ func main() {
 			err := pms.Tracer.Shutdown(ctx)
 
 			if err != nil {
-				log.Println(err)
+				log.Error(err)
 			}
 		}()
 
@@ -77,7 +87,7 @@ func main() {
 				Port:    pms.Env.PrometheusPort,
 				Metrics: pms.Metrics,
 			}); err != nil {
-				log.Println(err)
+				log.Error(err)
 			}
 		}()
 
@@ -86,6 +96,6 @@ func main() {
 	}
 
 	if err := cnt.Invoke(app); err != nil {
-		log.Panic(err)
+		log.Fatal(err)
 	}
 }

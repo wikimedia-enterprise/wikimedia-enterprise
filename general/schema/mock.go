@@ -5,6 +5,7 @@ import (
 	"context"
 	"encoding/json"
 	"io"
+	"log"
 	"os"
 	"reflect"
 
@@ -53,6 +54,9 @@ type Mock struct {
 func (m *Mock) Run(ctx context.Context, tps ...*MockTopic) error {
 	for _, tpc := range tps {
 		scn := bufio.NewScanner(tpc.Reader)
+		buf := make([]byte, 0, 64*1024)
+		scn.Buffer(buf, 5*1024*1024)
+
 		var key *Key
 
 		for scn.Scan() {
@@ -87,6 +91,8 @@ func (m *Mock) Run(ctx context.Context, tps ...*MockTopic) error {
 					}
 					mss = append(mss, msg)
 				}
+
+				log.Println("producing..." + key.Identifier)
 
 				if err := m.Producer.Produce(ctx, mss...); err != nil {
 					return err

@@ -152,7 +152,8 @@ func (s *tokenrevokeTestSuite) TestRevokeError() {
 
 	data, err := io.ReadAll(res.Body)
 	s.Assert().NoError(err)
-	s.Assert().Contains(string(data), tokenrevokeTestErrMsg)
+	s.Assert().Contains(string(data), "Unauthorized")
+	s.Assert().NotContains(string(data), tokenrevokeTestErrMsg)
 }
 
 func (s *tokenrevokeTestSuite) TestTokenRevokeRedisError() {

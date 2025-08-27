@@ -17,7 +17,6 @@ var (
 	ErrConfigNotSet          = errors.New("config not set")
 	ErrTopicErrorNotSet      = errors.New("topic for error messages not set")
 	ErrTopicDeadLetterNotSet = errors.New("topic for dead letter messages not set")
-	ErrErrMaxFailCountNotSet = errors.New("max fail count not set")
 	ErrErrNotSet             = errors.New("error message not set")
 )
 
@@ -61,10 +60,6 @@ func (r *Retry) Retry(ctx context.Context, rms *RetryMessage) error {
 
 	if len(rms.TopicDeadLetter) == 0 {
 		return ErrTopicDeadLetterNotSet
-	}
-
-	if rms.MaxFailCount == 0 {
-		return ErrErrMaxFailCountNotSet
 	}
 
 	if rms.Error == nil {

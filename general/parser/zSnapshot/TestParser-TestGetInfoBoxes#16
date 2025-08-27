@@ -1,0 +1,337 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=10) "Info/Letra",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=11) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=3) "O o",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "ó, ô",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=70) "O A letra nas versões de fôrma e cursiva, minúsculas e maiúsculas.",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=91) "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Latin_O.svg/100px-Latin_O.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) (len=1) "O",
+                Height: (int) 100,
+                Width: (int) 100
+              })
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://pt.wikipedia.org/wiki/Ficheiro:Latin_O.svg",
+                Text: (string) (len=1) "O",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=91) "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Latin_O.svg/100px-Latin_O.svg.png",
+                    AlternativeText: (string) "",
+                    Caption: (string) "",
+                    Height: (int) 100,
+                    Width: (int) 100
+                  })
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://pt.wikipedia.org/wiki/Letra_de_fôrma",
+                Text: (string) (len=6) "fôrma",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://pt.wikipedia.org/wiki/Letra_cursiva",
+                Text: (string) (len=7) "cursiva",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=54) "https://pt.wikipedia.org/wiki/Caixa_alta_e_caixa_baixa",
+                Text: (string) (len=25) "minúsculas e maiúsculas",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=18) "Sistema de escrita",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=44) "alfabeto latino, alfabeto latino básico ISO",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://pt.wikipedia.org/wiki/Alfabeto_latino",
+                Text: (string) (len=15) "alfabeto latino",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://pt.wikipedia.org/wiki/Alfabeto_latino_básico_ISO",
+                Text: (string) (len=27) "alfabeto latino básico ISO",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=29) "Representações alternativas",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=26) "Alfabeto fonético da OTAN",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=5) "oscar",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://pt.wikipedia.org/wiki/Alfabeto_fonético_da_OTAN",
+                Text: (string) (len=26) "Alfabeto fonético da OTAN",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Código Morse",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "–––",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://pt.wikipedia.org/wiki/Código_Morse",
+                Text: (string) (len=13) "Código Morse",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=68) "https://upload.wikimedia.org/wikipedia/commons/4/41/O_morse_code.ogg",
+                Text: (string) (len=9) "–––",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=46) "Código internacional de navegação marítima",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=46) "Código internacional de navegação marítima",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=94) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/ICS_Oscar.svg/50px-ICS_Oscar.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 50,
+                Width: (int) 50
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=76) "https://pt.wikipedia.org/wiki/Código_internacional_de_navegação_marítima",
+                Text: (string) (len=46) "Código internacional de navegação marítima",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=52) "https://pt.wikipedia.org/wiki/Ficheiro:ICS_Oscar.svg",
+                Text: (string) "",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=94) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/ICS_Oscar.svg/50px-ICS_Oscar.svg.png",
+                    AlternativeText: (string) "",
+                    Caption: (string) "",
+                    Height: (int) 50,
+                    Width: (int) 50
+                  })
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=18) "Telégrafo óptico",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "Telégrafo óptico",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=106) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Semaphore_Oscar.svg/50px-Semaphore_Oscar.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 50,
+                Width: (int) 50
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://pt.wikipedia.org/wiki/Telégrafo_óptico",
+                Text: (string) (len=18) "Telégrafo óptico",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=58) "https://pt.wikipedia.org/wiki/Ficheiro:Semaphore_Oscar.svg",
+                Text: (string) "",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=106) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Semaphore_Oscar.svg/50px-Semaphore_Oscar.svg.png",
+                    AlternativeText: (string) "",
+                    Caption: (string) "",
+                    Height: (int) 50,
+                    Width: (int) 50
+                  })
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Braille",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "Braille",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=94) "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Braille_O.svg/50px-Braille_O.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 50,
+                Width: (int) 50
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=37) "https://pt.wikipedia.org/wiki/Braille",
+                Text: (string) (len=7) "Braille",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=52) "https://pt.wikipedia.org/wiki/Ficheiro:Braille_O.svg",
+                Text: (string) "",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=94) "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Braille_O.svg/50px-Braille_O.svg.png",
+                    AlternativeText: (string) "",
+                    Caption: (string) "",
+                    Height: (int) 50,
+                    Width: (int) 50
+                  })
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=29) "Alfabeto manual estadunidense",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=29) "Alfabeto manual estadunidense",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=106) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sign_language_O.svg/50px-Sign_language_O.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 50,
+                Width: (int) 50
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=57) "https://pt.wikipedia.org/wiki/Língua_de_sinais_americana",
+                Text: (string) (len=29) "Alfabeto manual estadunidense",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=58) "https://pt.wikipedia.org/wiki/Ficheiro:Sign_language_O.svg",
+                Text: (string) "",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=106) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sign_language_O.svg/50px-Sign_language_O.svg.png",
+                    AlternativeText: (string) "",
+                    Caption: (string) "",
+                    Height: (int) 50,
+                    Width: (int) 50
+                  })
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

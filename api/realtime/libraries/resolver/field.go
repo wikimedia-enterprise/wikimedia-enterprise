@@ -6,17 +6,8 @@ import (
 	"strings"
 )
 
-// Keywords check if field is not keyword.
-// TODO: Replace this logic, we need to make sure
-// that braces and capital letters are being put
-// on all field names, but that's complicated solution
-// so will put that in backlog for now.
-var Keywords = map[string]string{
-	"namespace": "`NAMESPACE`",
-}
-
-// NewField create new field resolver.
-func NewField(name string, par *Struct, value reflect.Value) *Field {
+// NewField create new field resolver. For ksqldb handler, we need to handle some keywords passed via argument keywords.
+func NewField(name string, goName string, par *Struct, value reflect.Value, keywords map[string]string) *Field {
 	parent := ""
 
 	if par.Field != nil {
@@ -27,7 +18,7 @@ func NewField(name string, par *Struct, value reflect.Value) *Field {
 	// in case when field belongs to a table this is not needed
 	// cuz there is no direct use of the keyword
 	if len(par.Table) == 0 {
-		if rpl, ok := Keywords[name]; ok {
+		if rpl, ok := keywords[name]; ok {
 			name = rpl
 		}
 	}
@@ -36,6 +27,7 @@ func NewField(name string, par *Struct, value reflect.Value) *Field {
 
 	return &Field{
 		Name:     name,
+		GoName:   goName,
 		FullName: fullName,
 		Path:     strings.TrimPrefix(fmt.Sprintf("%s_%s", par.Table, strings.ReplaceAll(fullName, ".", "->")), "_"),
 		Value:    value,
@@ -44,8 +36,9 @@ func NewField(name string, par *Struct, value reflect.Value) *Field {
 
 // Field keeps track and maps ksqldb to API field names.
 type Field struct {
-	Name     string
-	FullName string
-	Path     string
+	Name     string // from json (or avro tag) e.g., identifier
+	GoName   string // struct field name e.g., Identifier
+	FullName string // with dot notation e.g, version.editor.identifier
+	Path     string // with -> notation e.g., version->editor->identifier
 	Value    reflect.Value
 }

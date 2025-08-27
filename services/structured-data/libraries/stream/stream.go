@@ -4,14 +4,14 @@ package stream
 import (
 	"fmt"
 	"strings"
-	"wikimedia-enterprise/general/schema"
 	"wikimedia-enterprise/services/structured-data/config/env"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 )
 
 // New creates new schema helper for dependency injection.
-func New(env *env.Environment, prod *kafka.Producer) schema.UnmarshalProducer {
+func NewHelper(env *env.Environment, prod *kafka.Producer) schema.UnmarshalProducer {
 	url := env.SchemaRegistryURL
 
 	if !strings.HasPrefix(url, "http") {

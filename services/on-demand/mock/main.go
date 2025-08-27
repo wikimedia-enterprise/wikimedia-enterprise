@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 	"runtime"
-	"wikimedia-enterprise/general/schema"
+	"wikimedia-enterprise/services/on-demand/submodules/schema"
 )
 
 func main() {

@@ -108,7 +108,7 @@ func (s *ksqldbTestSuite) TestPushCtx() {
 
 	err := client.Push(ctx, &QueryRequest{SQL: s.sql}, func(hr *HeaderRow, row Row) error { return nil })
 	s.Assert().Error(err)
-	s.Assert().Equal(context.DeadlineExceeded, err)
+	s.Assert().Contains(err.Error(), context.DeadlineExceeded.Error())
 }
 
 // TestPull performes Pull method testing.

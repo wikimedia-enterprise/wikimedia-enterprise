@@ -5,6 +5,8 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"log"
+	"regexp"
 	"slices"
 	"strings"
 
@@ -15,9 +17,19 @@ import (
 
 // Errors for cap config.
 var (
-	ErrMissingPaths  = errors.New("prefix group provided but missing paths in cap config")
-	ErrMissingGroups = errors.New("user groups missing in cap config")
+	ErrNoCapsConfigured = errors.New("no caps configured, this is only OK in local development")
+	ErrMissingProducts  = errors.New("prefix group provided but missing Products in cap config")
+	ErrMissingGroups    = errors.New("user groups missing in cap config")
 )
+
+// Compile the regex patterns for different Products (snapshots, articles, chunks)
+var ProductsPatterns = map[string]*regexp.Regexp{
+	"snapshots":            regexp.MustCompile(`/v2/snapshots/([^/]+)/download`),
+	"structured-snapshots": regexp.MustCompile(`/v2/snapshots/structured-contents/([^/]+)/download`),
+	"articles":             regexp.MustCompile(`/v2/articles/([^/]+)`),
+	"structured-contents":  regexp.MustCompile(`/v2/structured-contents/([^/]+)`),
+	"chunks":               regexp.MustCompile(`/v2/snapshots/([^/]+)/chunks/([^/]+)/download`),
+}
 
 // Capper is an interface that defines the Check method, which is used to check
 // whether a request can be processed or not.
@@ -63,32 +75,55 @@ func (c *CapByRedis) Check(ctx context.Context, idr string, lmt int) (bool, erro
 }
 
 // CapConfig is a struct that holds the configuration for the request capper.
-// The purpose of PrefixGroup and Paths is to provide limits per set of paths.
-// Some paths together have a limit. For example, on-demand APIs (/articles, /structured-contents) have a combined limit of 10K.
-// So, for PrefixGroup `ondemand`, the relevant paths are `articles` and `structured-contents`.
-// The cap config can be used without PrefixGroup and Paths. In this case, the cap is applied universally to all paths
+// The purpose of PrefixGroup and Products is to provide limits per set of Products.
+// Some Products together have a limit. For example, on-demand APIs (/articles, /structured-contents) have a combined limit of 10K.
+// So, for PrefixGroup `ondemand`, the relevant Products are `articles` and `structured-contents`.
+// The cap config can be used without PrefixGroup and Products. In this case, the cap is applied universally to all Products
 // if one of the config group matches with the user group.
 // More valid examples of CapConfig:
-// {PrefixGroup: "cap:ondemand", Paths: []string{"articles", "structured-contents"}, Limit: 100000, Groups: []string{"group-a", "group-b"}}
+// {PrefixGroup: "cap:ondemand", Products: []string{"articles", "structured-contents"}, Limit: 100000, Groups: []string{"group-a", "group-b"}}
 // {Limit: 10000000000, Groups: []string{ "group-c"}}
 type CapConfig struct {
 	Paths       []string `json:"paths,omitempty"`
+	Products    []string `json:"products,omitempty"`
 	PrefixGroup string   `json:"prefix_group,omitempty"`
 	Limit       int      `json:"limit"`
 	Groups      []string `json:"groups"`
 }
 
-// CapConfigWrapper is a type that wraps a slice of CapConfig structs and
+// CapConfigWrapper is a type that wraps a slice of CapConfig structs
 type CapConfigWrapper []*CapConfig
 
 func New(cap []*CapConfig) CapConfigWrapper {
 	return CapConfigWrapper(cap)
 }
 
-// UnmarshalEnvironmentValue is a method of CapConfig that unmarshals the
-// configuration data from a string.
+// Validate performs validation checks on the CapConfigWrapper
+func (c *CapConfigWrapper) Validate() error {
+	for i, cfg := range *c {
+		// Check for missing groups
+		if len(cfg.Groups) == 0 {
+			return fmt.Errorf("config at index %d: %w", i, ErrMissingGroups)
+		}
+
+		// Check for missing products
+		if len(cfg.PrefixGroup) > 0 && len(cfg.Products) == 0 {
+			return fmt.Errorf("config at index %d: %w", i, ErrMissingProducts)
+		}
+	}
+
+	return nil
+}
+
+// UnmarshalEnvironmentValue is a method of CapConfigWrapper that unmarshals the
+// configuration data from a string and validates it.
 func (c *CapConfigWrapper) UnmarshalEnvironmentValue(dta string) error {
-	return json.Unmarshal([]byte(dta), &c)
+	if err := json.Unmarshal([]byte(dta), &c); err != nil {
+		return err
+	}
+
+	// Validate the configuration after unmarshalling
+	return c.Validate()
 }
 
 // Cap is a function that returns a Gin middleware that limits the number of
@@ -96,8 +131,13 @@ func (c *CapConfigWrapper) UnmarshalEnvironmentValue(dta string) error {
 // implementation and configuration to check whether a request can be processed
 // or not.
 func Cap(cpr Capper, cfg CapConfigWrapper) gin.HandlerFunc {
+	// Log warning if no caps are configured (should only occur in development)
+	if len(cfg) == 0 {
+		log.Println(ErrNoCapsConfigured)
+	}
+
 	return func(gcx *gin.Context) {
-		if cpr == nil || len(cfg) == 0 {
+		if cpr == nil {
 			gcx.Next()
 			return
 		}
@@ -120,42 +160,38 @@ func Cap(cpr Capper, cfg CapConfigWrapper) gin.HandlerFunc {
 
 		idr := fmt.Sprintf("user:%s", usr.GetUsername()) // If no PrefixGroup is provided, the identifier will be prefix group-agnostic
 		// for example user:userx
-		var cnt, lmt int
+		var requestConfig *CapConfig
+		var lmt int
 
 		for _, c := range cfg {
-			if len(c.Groups) == 0 {
-				AbortWithInternalServerError(gcx, ErrMissingGroups)
-				return
-			}
-
 			if !slices.Contains(c.Groups, grp) {
-				cnt++
 				continue
 			}
 
 			switch lpg := len(c.PrefixGroup); {
+			case lpg > 0: // Products specific limiting
+			OUTER:
+				for _, prd := range c.Products {
+					for products, pattern := range ProductsPatterns {
+						if !strings.Contains(prd, products) || !pattern.MatchString(gcx.Request.URL.Path) {
+							continue
+						}
 
-			case lpg > 0: // Path specific limiting
-				if len(c.Paths) == 0 {
-					AbortWithInternalServerError(gcx, ErrMissingPaths)
-					return
-				}
-
-				for _, pth := range c.Paths {
-					if strings.Contains(gcx.Request.URL.Path, pth) {
+						requestConfig = c
+						lmt = c.Limit
 						idr = fmt.Sprintf("%s:%s", c.PrefixGroup, idr) // If PrefixGroup is provided, the identifier will be prefix group-specific
-						lmt = c.Limit                                  // for example cap:ondemand:user:userx
-						break
+						break OUTER
 					}
 				}
 
-			default: // Path-agnostic limiting
+			default: // Products agnostic limiting
+				requestConfig = c
 				lmt = c.Limit
 			}
 		}
 
-		// If no rules match then the allow request
-		if cnt == len(cfg) {
+		// If no rules match then allow the request
+		if requestConfig == nil {
 			gcx.Next()
 			return
 		}

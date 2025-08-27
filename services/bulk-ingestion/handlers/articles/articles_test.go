@@ -8,11 +8,11 @@ import (
 	"strconv"
 	"strings"
 	"testing"
-	"wikimedia-enterprise/general/schema"
-	"wikimedia-enterprise/general/wmf"
 	"wikimedia-enterprise/services/bulk-ingestion/config/env"
 	"wikimedia-enterprise/services/bulk-ingestion/handlers/articles"
 	pb "wikimedia-enterprise/services/bulk-ingestion/handlers/protos"
+	"wikimedia-enterprise/services/bulk-ingestion/submodules/schema"
+	"wikimedia-enterprise/services/bulk-ingestion/submodules/wmf"
 
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"

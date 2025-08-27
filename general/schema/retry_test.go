@@ -112,18 +112,6 @@ func TestRetry(t *testing.T) {
 				Config:          ConfigArticle,
 				TopicError:      "local.error.v1",
 				TopicDeadLetter: "local.dead-letter.v1",
-				Message: &kafka.Message{
-					Key:   []byte("key"),
-					Value: []byte("val"),
-				},
-			},
-			ert: ErrErrMaxFailCountNotSet,
-		},
-		{
-			rms: &RetryMessage{
-				Config:          ConfigArticle,
-				TopicError:      "local.error.v1",
-				TopicDeadLetter: "local.dead-letter.v1",
 				MaxFailCount:    1,
 				Message: &kafka.Message{
 					Key:   []byte("key"),

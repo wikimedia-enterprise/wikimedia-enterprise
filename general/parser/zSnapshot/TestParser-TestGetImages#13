@@ -1,0 +1,16 @@
+([]*parser.Image) (len=2) {
+  (*parser.Image)({
+    ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png",
+    AlternativeText: (string) "",
+    Caption: (string) "",
+    Height: (int) 50,
+    Width: (int) 50
+  }),
+  (*parser.Image)({
+    ContentUrl: (string) (len=189) "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/%22Keep_FDA_Off_The_Farm%22_%28FDA_140%29_%288205957369%29.jpg/220px-%22Keep_FDA_Off_The_Farm%22_%28FDA_140%29_%288205957369%29.jpg",
+    AlternativeText: (string) "",
+    Caption: (string) (len=178) "In 1995, FDA's assertion of authority to regulate tobacco drew heavy opposition from the tobacco industry, which erupted into lawsuits and slogans urging \"Keep FDA Off the Farm.\"",
+    Height: (int) 220,
+    Width: (int) 220
+  })
+}

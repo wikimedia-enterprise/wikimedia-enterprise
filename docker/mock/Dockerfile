@@ -1,9 +1,7 @@
 ###############
 # Build stage #
 ###############
-FROM golang:1.19 AS builder
-
-ARG SOURCE_DIR
+FROM golang:1.22 AS builder
 
 # Switch to /app dir
 WORKDIR /app
@@ -15,10 +13,8 @@ RUN go mod download
 # Copy the project files
 COPY . .
 
-ENV SOURCE_DIR=${SOURCE_DIR}
-
 # Build the binary
-RUN go build -o main ${SOURCE_DIR}/mock/*.go
+RUN go build -o main mock/*.go
 
 # Set the binary as the CMD of the container
 CMD ["./main"]

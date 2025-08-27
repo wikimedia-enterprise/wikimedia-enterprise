@@ -62,6 +62,11 @@ var ConfigEvent = &Config{
 					}
 				],
 				"default": null
+			},
+			{
+				"name": "is_internal_message",
+				"type": ["null", "boolean"],
+				"default": null
 			}
 		]
 	}`,
@@ -83,11 +88,13 @@ type Event struct {
 	DatePublished *time.Time `json:"date_published,omitempty" avro:"date_published"`
 	Partition     *int       `json:"partition,omitempty"`
 	Offset        *int64     `json:"offset,omitempty"`
+	IsInternal    *bool      `json:"-" avro:"is_internal_message"`
 }
 
 // NewEvent returns an instance of Event struct with the passed eventType and other default values.
 func NewEvent(eventType string) *Event {
 	dtn := time.Now().UTC()
+	isInternal := false
 
 	return &Event{
 		Identifier:    uuid.New().String(),
@@ -95,6 +102,7 @@ func NewEvent(eventType string) *Event {
 		DateCreated:   &dtn,
 		DatePublished: &dtn,
 		FailCount:     0,
+		IsInternal:    &isInternal,
 	}
 }
 
@@ -104,4 +112,8 @@ func (e *Event) SetDatePublished(dtp *time.Time) {
 
 func (e *Event) SetType(typ string) {
 	e.Type = typ
+}
+
+func (e *Event) SetIdentifier(id string) {
+	e.Identifier = id
 }

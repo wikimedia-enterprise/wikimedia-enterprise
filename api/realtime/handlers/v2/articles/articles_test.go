@@ -1,183 +1,227 @@
 package articles_test
 
 import (
+	"bufio"
+	"bytes"
 	"context"
-	"errors"
-	"fmt"
-	"io"
+	"encoding/json"
 	"net/http"
 	"net/http/httptest"
 	"strings"
 	"testing"
-	"wikimedia-enterprise/api/realtime/config/env"
-	"wikimedia-enterprise/api/realtime/handlers/v2/articles"
-	"wikimedia-enterprise/api/realtime/libraries/resolver"
-	"wikimedia-enterprise/general/ksqldb"
-	"wikimedia-enterprise/general/schema"
+	"time"
 
+	"github.com/aws/aws-sdk-go/aws"
+	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
+
+	"wikimedia-enterprise/api/realtime/config/env"
+	articles "wikimedia-enterprise/api/realtime/handlers/v2/articles"
+	libkafka "wikimedia-enterprise/api/realtime/libraries/kafka"
+	"wikimedia-enterprise/api/realtime/libraries/resolver"
+	"wikimedia-enterprise/api/realtime/submodules/schema"
 )
 
-type ksqldbMock struct {
+// mockConsumer implements ReadAllCloser for testing.
+type mockConsumer struct {
 	mock.Mock
-	ksqldb.PushPuller
+	msgData []byte
 }
 
-func (s *ksqldbMock) Push(_ context.Context, _ *ksqldb.QueryRequest, _ func(qrw *ksqldb.HeaderRow, row ksqldb.Row) error) error {
-	ags := s.Called()
+func (m *mockConsumer) ReadAll(ctx context.Context, params *libkafka.ReadParams, topic string, partitions []int, cb func(msg *kafka.Message) error) error {
+	ags := m.Called(ctx, params, topic, partitions, cb)
 	return ags.Error(0)
 }
 
-type modelTestSuite struct {
-	suite.Suite
-	mdl *articles.Model
-}
-
-func (s *modelTestSuite) SetupSuite() {
-	s.mdl = new(articles.Model)
-	s.mdl.Parts = []int{0, 1}
-	s.mdl.SetPartitions(50, 10)
-}
-
-func (s *modelTestSuite) TestGetPartitions() {
-	s.NotEmpty(s.mdl.GetPartitions())
-	s.Equal(
-		[]int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9},
-		s.mdl.GetPartitions())
-}
-
-func (s *modelTestSuite) TestPartitionsContain() {
-	s.True(s.mdl.PartitionsContain(0))
-	s.True(s.mdl.PartitionsContain(1))
-	s.True(s.mdl.PartitionsContain(2))
-	s.True(s.mdl.PartitionsContain(4))
-	s.True(s.mdl.PartitionsContain(9))
-}
-
-func (s *modelTestSuite) TestGetFormattedPartitions() {
-	s.Equal("0,1,2,3,4,5,6,7,8,9", s.mdl.GerFormattedPartitions())
-}
-
-func TestModel(t *testing.T) {
-	suite.Run(t, new(modelTestSuite))
-}
-
-type articlesTestSuite struct {
-	suite.Suite
-	pms *articles.Parameters
-	ctx context.Context
-	srv *httptest.Server
-	pld string
-	sts int
-	ker error
-}
-
-func (s *articlesTestSuite) createServer() http.Handler {
-	gin.SetMode(gin.TestMode)
-	rtr := gin.New()
-
-	rtr.POST("/articles", articles.NewHandler(s.ctx, s.pms))
-
-	return rtr
-}
-
-func (s *articlesTestSuite) SetupSuite() {
-	rvr, err := resolver.New(new(schema.Article))
-	s.Assert().NoError(err)
-
-	s.ctx = context.Background()
-
-	kdb := new(ksqldbMock)
-	kdb.On("Push").Return(s.ker)
-
-	s.pms = &articles.Parameters{
-		Resolver: rvr,
-		KSQLDB:   kdb,
-		Env: &env.Environment{
-			MaxParts:   2,
-			Partitions: 4,
-		},
+func (m *mockConsumer) SetPartitionOffsets(topic string, partitions []int, params *libkafka.ReadParams) ([]kafka.TopicPartition, error) {
+	tps := make([]kafka.TopicPartition, len(partitions))
+	for i, p := range partitions {
+		tps[i] = kafka.TopicPartition{Topic: &topic, Partition: int32(p), Offset: kafka.OffsetEnd}
 	}
-
-	s.srv = httptest.NewServer(s.createServer())
+	return tps, nil
 }
 
-func (s *articlesTestSuite) TearDownSuite() {
+func (m *mockConsumer) Close() error {
+	return m.Called().Error(0)
+}
+
+// mockConsumerGetter returns the same mockConsumer instance.
+type mockConsumerGetter struct {
+	consumer libkafka.ReadAllCloser
+	mock.Mock
+}
+
+func (m *mockConsumerGetter) GetConsumer(_ string) (libkafka.ReadAllCloser, error) {
+	ags := m.Called()
+	return ags.Get(0).(libkafka.ReadAllCloser), nil
+}
+
+type mockUnmarshaler struct{}
+
+func (u *mockUnmarshaler) Unmarshal(_ context.Context, data []byte, v any) error {
+	return json.Unmarshal(data, v)
+}
+
+func (u *mockUnmarshaler) UnmarshalNoCache(ctx context.Context, data []byte, v interface{}) error {
+	return nil
+}
+
+type handlerTestSuite struct {
+	suite.Suite
+	srv        *httptest.Server
+	readAllErr error
+	getConErr  error
+	closeErr   error
+	reqParams  *articles.Model
+	status     int
+	topic      string
+	partitions []int
+	msg        []byte
+	unmar      schema.Unmarshaler
+}
+
+func (s *handlerTestSuite) SetupSuite() {
+	gin.SetMode(gin.TestMode)
+	s.unmar = new(mockUnmarshaler)
+}
+
+func (s *handlerTestSuite) TearDownSuite() {
 	s.srv.Close()
 }
 
-func (s *articlesTestSuite) TestNewHandler() {
-	res, err := http.Post(fmt.Sprintf("%s/articles", s.srv.URL), "application/json", strings.NewReader(s.pld))
+func (s *handlerTestSuite) TestNewHandler() {
+	testArticle := schema.Article{Name: "TestArticle"}
+	var err error
+	s.msg, err = json.Marshal(testArticle)
+	s.Require().NoError(err)
+	mc := &mockConsumer{msgData: s.msg}
+	cg := &mockConsumerGetter{consumer: mc}
+
+	mc.On("ReadAll", mock.Anything, mock.Anything, s.topic, mock.Anything, mock.Anything).Run(func(args mock.Arguments) {
+		cb := args.Get(4).(func(*kafka.Message) error)
+
+		msg := &kafka.Message{
+			TopicPartition: kafka.TopicPartition{
+				Topic:     aws.String(s.topic),
+				Partition: 0,
+				Offset:    123,
+			},
+			Value: s.msg,
+		}
+
+		_ = cb(msg)
+	}).Return(s.readAllErr)
+
+	mc.On("Close").Return(s.closeErr)
+	cg.On("GetConsumer", mock.Anything).Return(mc, s.getConErr)
+
+	rvs, err := resolver.NewResolvers(map[string]interface{}{schema.KeyTypeArticle: new(schema.Article)})
+	s.Require().NoError(err)
+
+	pms := &articles.Parameters{
+		Consumers: cg,
+		Resolvers: rvs,
+		Env: &env.Environment{
+			MaxParts:                10,
+			Partitions:              10,
+			ArticleChannelSize:      1,
+			ThrottlingMsgsPerSecond: 10,
+			Workers:                 1,
+		},
+		Unmarshaler: s.unmar,
+	}
+
+	h := articles.NewHandler(context.Background(), pms, s.topic, schema.KeyTypeArticle)
+	rtr := gin.New()
+	rtr.POST("/articles", h)
+	s.srv = httptest.NewServer(rtr)
+
+	payload, err := json.Marshal(s.reqParams)
 	s.Assert().NoError(err)
+	req, err := http.NewRequest("POST", s.srv.URL+"/articles", bytes.NewReader(payload))
+	s.Require().NoError(err)
+	req.Header.Set("Content-Type", "application/json")
+	req.Header.Set("Accept", "application/x-ndjson")
+
+	client := &http.Client{Timeout: time.Second * 5}
+	res, err := client.Do(req)
+	s.Require().NoError(err)
 	defer res.Body.Close()
 
-	dta, err := io.ReadAll(res.Body)
-	s.Assert().NoError(err)
+	s.Equal(s.status, res.StatusCode)
 
-	if s.ker != nil {
-		s.Assert().Equal(s.sts, res.StatusCode)
-		s.Assert().Contains(string(dta), s.ker.Error())
-	} else {
-		s.Assert().Equal(s.sts, res.StatusCode)
+	if s.status == 200 {
+		scanner := bufio.NewScanner(res.Body)
+		for scanner.Scan() {
+			line := scanner.Text()
+			if strings.TrimSpace(line) == "" {
+				continue
+			}
+			var got schema.Article
+			s.Require().NoError(json.Unmarshal([]byte(line), &got))
+			s.Equal("TestArticle", got.Name)
+		}
 	}
 }
 
-func TestNewHandler(t *testing.T) {
-	for _, testCase := range []*articlesTestSuite{
+func TestHandler(t *testing.T) {
+	for _, tc := range []*handlerTestSuite{
 		{
-			sts: http.StatusOK,
+			status:     200,
+			topic:      "test",
+			partitions: []int{0},
 		},
 		{
-			sts: http.StatusInternalServerError,
-			ker: errors.New("ksqldb not available"),
+			status:    422,
+			reqParams: &articles.Model{Fields: []string{"version"}},
 		},
 		{
-			pld: `{"since":"string"}`,
-			sts: http.StatusUnprocessableEntity,
+			status:    422,
+			reqParams: &articles.Model{Fields: []string{"not_found"}},
 		},
 		{
-			pld: `{"fields":["string"]}`,
-			sts: http.StatusUnprocessableEntity,
+			status: 200,
+			reqParams: &articles.Model{Filters: []resolver.RequestFilter{
+				{Field: "is_part_of.identifier", Value: "enwiki"},
+				{Field: "event.type", Value: "update"},
+				{Field: "version.noindex", Value: false},
+				{Field: "namespace.identifier", Value: 0},
+			}},
 		},
 		{
-			pld: `{"filters":[{"field":"string","value":1}]}`,
-			sts: http.StatusUnprocessableEntity,
+			status: 422,
+			reqParams: &articles.Model{Filters: []resolver.RequestFilter{
+				{Field: "is_part_of", Value: "enwiki"},
+			}},
 		},
 		{
-			pld: `{"filters":[{"field":"name","value":1}]}`,
-			sts: http.StatusUnprocessableEntity,
+			status: 422,
+			reqParams: &articles.Model{Filters: []resolver.RequestFilter{
+				{Field: "is_part_of.identifier", Value: 0},
+			}},
 		},
 		{
-			pld: `{"filters":[{"field":"identifier","value":1}]}`,
-			sts: http.StatusOK,
+			status: 422,
+			reqParams: &articles.Model{Filters: []resolver.RequestFilter{
+				{Field: "categories", Value: "foo"},
+			}},
 		},
 		{
-			pld: `{"parts":[0,1], "offsets":{"0":100, "1":101, "2":100, "3":50}}`,
-			sts: http.StatusOK,
+			status: 422,
+			reqParams: &articles.Model{Since: time.Now(),
+				Parts: []int{0}},
 		},
 		{
-			pld: `{"parts":[1], "since_per_partition":{"0":"2023-06-19T19:43:44.52Z"}}`,
-			sts: http.StatusOK,
-		},
-		{
-			pld: `{"parts":[1], "since":"2023-06-19T19:43:44.52Z"}`,
-			sts: http.StatusUnprocessableEntity,
-		},
-		{
-			pld: `{"parts":[0], "since_per_partition":{"0":"2023-06-19T19:43:44.52Z"}, "offsets":{"0":100, "1":101, "2":100, "3":50}}`,
-			sts: http.StatusUnprocessableEntity,
-		},
-		{
-			pld: `{"parts":[0,2], "offsets":{"0":100, "1":101, "2":100, "3":50}}`,
-			sts: http.StatusUnprocessableEntity,
-		},
-		{
-			pld: `{"parts":[0,1], "offsets":{"0":100, "1":101, "2":100, "3":50, "4":50}}`,
-			sts: http.StatusUnprocessableEntity,
+			status: 422,
+			reqParams: &articles.Model{
+				Parts:             []int{0},
+				Offsets:           map[int]int64{0: 0},
+				SincePerPartition: map[int]time.Time{0: time.Now()},
+			},
 		},
 	} {
-		suite.Run(t, testCase)
+		suite.Run(t, tc)
 	}
 }

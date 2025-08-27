@@ -32,11 +32,30 @@ var ConfigScores = &Config{
 					"ProbabilityScore"
 				],
 				"default": null
+			},
+			{
+				"name": "referencerisk",
+				"type": [
+					"null",
+					"ReferenceRiskData"
+				],
+				"default": null
+			},
+			{
+				"name": "referenceneed",
+				"type": [
+					"null",
+					"ReferenceNeedData"
+				],
+				"default": null
 			}
+
 		]
 	}`,
 	References: []*Config{
 		ConfigProbabilityScore,
+		ConfigReferenceNeedData,
+		ConfigReferenceRiskData,
 	},
 	Reflection: Scores{},
 }
@@ -49,9 +68,11 @@ func NewScoresSchema() (avro.Schema, error) {
 // Scores ORES scores representation, has nothing on https://schema.org/, it's a custom dataset.
 // For more info https://ores.wikimedia.org/.
 type Scores struct {
-	Damaging   *ProbabilityScore `json:"damaging,omitempty" avro:"damaging"`
-	GoodFaith  *ProbabilityScore `json:"goodfaith,omitempty" avro:"goodfaith"`
-	RevertRisk *ProbabilityScore `json:"revertrisk,omitempty" avro:"revertrisk"`
+	Damaging      *ProbabilityScore  `json:"damaging,omitempty" avro:"damaging"`
+	GoodFaith     *ProbabilityScore  `json:"goodfaith,omitempty" avro:"goodfaith"`
+	RevertRisk    *ProbabilityScore  `json:"revertrisk,omitempty" avro:"revertrisk"`
+	ReferenceRisk *ReferenceRiskData `json:"referencerisk,omitempty" avro:"referencerisk"`
+	ReferenceNeed *ReferenceNeedData `json:"referenceneed,omitempty" avro:"referenceneed"`
 }
 
 // Probability numeric probability values form ORES models.

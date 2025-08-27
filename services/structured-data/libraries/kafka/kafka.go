@@ -14,7 +14,6 @@ func NewProducer(env *env.Environment) (*kafka.Producer, error) {
 		"bootstrap.servers":      env.KafkaBootstrapServers,
 		"compression.type":       "gzip",
 		"message.max.bytes":      "20971520",
-		"go.batch.producer":      true,
 		"queue.buffering.max.ms": 10,
 		// "go.delivery.reports":    false,
 	}

@@ -14,9 +14,9 @@ type licenseTestSuite struct {
 
 func (s *licenseTestSuite) SetupTest() {
 	s.license = &License{
-		Name:       "Creative Commons Attribution Share Alike 3.0 Unported",
-		Identifier: "CC-BY-SA-3.0",
-		URL:        "https://creativecommons.org/licenses/by-sa/3.0/",
+		Name:       "Creative Commons Attribution-ShareAlike License 4.0",
+		Identifier: "CC-BY-SA-4.0",
+		URL:        "https://creativecommons.org/licenses/by-sa/4.0/",
 	}
 }
 

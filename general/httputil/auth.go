@@ -43,6 +43,7 @@ type AuthClaims struct {
 	ClientID string   `json:"client_id"`
 	ISS      string   `json:"iss"`
 	Groups   []string `json:"cognito:groups"`
+	Sub      string   `json:"sub"`
 }
 
 // Auth middleware for cognito authentication through Authorization Bearer Token
@@ -100,6 +101,7 @@ func Auth(p *AuthParams) gin.HandlerFunc {
 			}
 
 			user.SetGroups(claims.Groups)
+			user.Sub = claims.Sub
 
 			return key.RSA256()
 		})
@@ -137,6 +139,7 @@ func Auth(p *AuthParams) gin.HandlerFunc {
 			}
 
 			user.SetUsername(usr.Username)
+			// Important: `usr` only has `Username` set, don't override the other data in `user` that we obtained from parsing the token.
 			data, err := json.Marshal(user)
 
 			if err != nil {

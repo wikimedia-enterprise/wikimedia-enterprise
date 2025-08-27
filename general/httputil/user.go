@@ -25,6 +25,8 @@ func NewUser(gcx *gin.Context) *User {
 type User struct {
 	Username string   `json:"username,omitempty"`
 	Groups   []string `json:"groups,omitempty"`
+	// UUID assigned by Cognito
+	Sub string `json:"sub,omitempty"`
 }
 
 // GetUsername returns the user's username.

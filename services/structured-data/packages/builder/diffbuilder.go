@@ -2,7 +2,7 @@ package builder
 
 import (
 	"strings"
-	"wikimedia-enterprise/general/schema"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
 )
 
 // getLongestRepeatedCharacter returns the length of the largest

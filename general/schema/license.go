@@ -4,9 +4,9 @@ import "github.com/hamba/avro/v2"
 
 // Content license, default values.
 const (
-	LicenseIdentifier = "CC-BY-SA-3.0"
-	LicenseName       = "Creative Commons Attribution Share Alike 3.0 Unported"
-	LicenseURL        = "https://creativecommons.org/licenses/by-sa/3.0/"
+	LicenseIdentifier = "CC-BY-SA-4.0"
+	LicenseName       = "Creative Commons Attribution-ShareAlike License 4.0"
+	LicenseURL        = "https://creativecommons.org/licenses/by-sa/4.0/"
 )
 
 // ConfigLicense schema configuration for License.

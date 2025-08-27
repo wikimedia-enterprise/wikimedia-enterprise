@@ -2,8 +2,8 @@ package tracer
 
 import (
 	"context"
-	"wikimedia-enterprise/general/tracing"
 	"wikimedia-enterprise/services/snapshots/config/env"
+	"wikimedia-enterprise/services/snapshots/submodules/tracing"
 )
 
 func NewAPI(env *env.Environment) (tracing.Tracer, error) {

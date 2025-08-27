@@ -1,0 +1,1262 @@
+([]*parser.Part) (len=9) {
+  (*parser.Part)({
+    Name: (string) (len=8) "Abstract",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=516) "In mathematics, specifically group theory, a subgroup H of a group G may be used to decompose the underlying set of G into disjoint, equal-size subsets called cosets. There are left cosets and right cosets. Cosets (both left and right) have the same number of elements (cardinality) as does H. Furthermore, H itself is both a left coset and a right coset. The number of left cosets of H in G is equal to the number of right cosets of H in G. This common value is called the index of H in G and is usually denoted by.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=9) {
+          (*parser.Link)({
+            URL: (string) (len=41) "https://en.wikipedia.org/wiki/Mathematics",
+            Text: (string) (len=11) "mathematics",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Group_theory",
+            Text: (string) (len=12) "group theory",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=38) "https://en.wikipedia.org/wiki/Subgroup",
+            Text: (string) (len=8) "subgroup",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://en.wikipedia.org/wiki/Group_(mathematics)",
+            Text: (string) (len=5) "group",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/Set_(mathematics)",
+            Text: (string) (len=3) "set",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Disjoint_sets",
+            Text: (string) (len=8) "disjoint",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=36) "https://en.wikipedia.org/wiki/Subset",
+            Text: (string) (len=7) "subsets",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=41) "https://en.wikipedia.org/wiki/Cardinality",
+            Text: (string) (len=11) "cardinality",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://en.wikipedia.org/wiki/Index_of_a_subgroup",
+            Text: (string) (len=5) "index",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=478) "Cosets are a basic tool in the study of groups; for example, they play a central role in Lagrange's theorem that states that for any finite group G, the number of elements of every subgroup H of G divides the number of elements of G. Cosets of a particular type of subgroup (a normal subgroup) can be used as the elements of another group called a quotient group or factor group. Cosets also appear in other areas of mathematics such as vector spaces and error-correcting codes.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=6) {
+          (*parser.Link)({
+            URL: (string) (len=63) "https://en.wikipedia.org/wiki/Lagrange's_theorem_(group_theory)",
+            Text: (string) (len=18) "Lagrange's theorem",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Finite_group",
+            Text: (string) (len=12) "finite group",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=45) "https://en.wikipedia.org/wiki/Normal_subgroup",
+            Text: (string) (len=15) "normal subgroup",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/Quotient_group",
+            Text: (string) (len=30) "quotient group or factor group",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Vector_space",
+            Text: (string) (len=13) "vector spaces",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=51) "https://en.wikipedia.org/wiki/Error-correcting_code",
+            Text: (string) (len=22) "error-correcting codes",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=10) "Definition",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=5) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=307) "Let H be a subgroup of the group G whose operation is written multiplicatively (juxtaposition denotes the group operation). Given an element g of G, the left cosets of H in G are the sets obtained by multiplying each element of H by a fixed element g of G (where g is the left factor). In symbols these are,",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=97) "The right cosets are defined similarly, except that the element g is now a right factor, that is,",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=225) "As g varies through the group, it would appear that many cosets (right or left) would be generated. Nevertheless, it turns out that any two left cosets (respectively right cosets) are either disjoint or are identical as sets.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=152) "If the group operation is written additively, as is often the case when the group is abelian, the notation used changes to g + H or H + g, respectively.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Abelian_group",
+            Text: (string) (len=7) "abelian",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) (len=13) "First example",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=10) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=203) "Let G be the dihedral group of order six. Its elements may be represented by { I, a, a, b, ab, a b }. In this group, a = b = I and ba = a b. This is enough information to fill in the entire Cayley table:",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Dihedral_group_of_order_6",
+                Text: (string) (len=27) "dihedral group of order six",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Cayley_table",
+                Text: (string) (len=12) "Cayley table",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=68) "Let T be the subgroup { I, b }. The (distinct) left cosets of T are:",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=3) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=18) "IT = T = { I, b },",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=19) "aT = { a, ab }, and",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=17) "a T = { a, a b }.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=277) "Since all the elements of G have now appeared in one of these cosets, generating any more can not give new cosets, since a new coset would have to have an element in common with one of these and therefore be identical to one of these cosets. For instance, abT = { ab, a } = aT.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=26) "The right cosets of T are:",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=3) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=18) "TI = T = { I, b },",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=32) "Ta = { a, ba } = { a, a b }, and",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=27) "Ta = { a, ba } = { a, ab }.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=67) "In this example, except for T, no left coset is also a right coset.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=228) "Let H be the subgroup { I, a, a }. The left cosets of H are IH = H and bH = { b, ba, ba }. The right cosets of H are HI = H and Hb = { b, ab, a b } = { b, ba, ba }. In this case, every left coset of H is also a right coset of H.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=102) "Let H be a subgroup of a group G and suppose that g, g ∈ G. The following statements are equivalent:",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=5) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=9) "g H = g H",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Hg = Hg",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=11) "g H ⊂ g H",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=9) "g ∈ g H",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=9) "g g ∈ H",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=10) "Properties",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=7) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=279) "The disjointness of non-identical cosets is a result of the fact that if x belongs to gH then gH = xH. For if x ∈ gH then there must exist an a ∈ H such that ga = x. Thus xH = (ga) H = g (aH). Moreover, since H is a group, left multiplication by a is a bijection, and aH = H.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=147) "Thus every element of G belongs to exactly one left coset of the subgroup H, and H is itself a left coset (and the one that contains the identity).",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=669) "Two elements being in the same left coset also provide a natural equivalence relation. Define two elements of G, x and y, to be equivalent with respect to the subgroup H if xH = yH (or equivalently if x y belongs to H). The equivalence classes of this relation are the left cosets of H. As with any set of equivalence classes, they form a partition of the underlying set. A coset representative is a representative in the equivalence class sense. A set of representatives of all the cosets is called a transversal. There are other types of equivalence relations in a group, such as conjugacy, that form different classes which do not have the properties discussed here.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=5) {
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Equivalence_relation",
+            Text: (string) (len=20) "equivalence relation",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://en.wikipedia.org/wiki/Equivalence_classes",
+            Text: (string) (len=19) "equivalence classes",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=52) "https://en.wikipedia.org/wiki/Partition_(set_theory)",
+            Text: (string) (len=9) "partition",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=58) "https://en.wikipedia.org/wiki/Representative_(mathematics)",
+            Text: (string) (len=14) "representative",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=57) "https://en.wikipedia.org/wiki/Transversal_(combinatorics)",
+            Text: (string) (len=11) "transversal",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=41) "Similar statements apply to right cosets.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=302) "If G is an abelian group, then g + H = H + g for every subgroup H of G and every element g of G. For general groups, given an element g and a subgroup H of a group G, the right coset of H with respect to g is also the left coset of the conjugate subgroup g Hg with respect to g, that is, Hg = g (g Hg).",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Abelian_group",
+            Text: (string) (len=13) "abelian group",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/Conjugate_subgroup",
+            Text: (string) (len=18) "conjugate subgroup",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) (len=16) "Normal subgroups",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=319) "A subgroup N of a group G is a normal subgroup of G if and only if for all elements g of G the corresponding left and right cosets are equal, that is, gN = Ng. This is the case for the subgroup H in the first example above. Furthermore, the cosets of N in G form a group called the quotient group or factor group G / N.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Normal_subgroup",
+                Text: (string) (len=15) "normal subgroup",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Quotient_group",
+                Text: (string) (len=30) "quotient group or factor group",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=435) "If H is not normal in G, then its left cosets are different from its right cosets. That is, there is an a in G such that no element b satisfies aH = Hb. This means that the partition of G into the left cosets of H is a different partition than the partition of G into right cosets of H. This is illustrated by the subgroup T in the first example above. (Some cosets may coincide. For example, if a is in the center of G, then aH = Ha.)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Normal_subgroup",
+                Text: (string) (len=6) "normal",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Center_(group_theory)",
+                Text: (string) (len=6) "center",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=277) "On the other hand, if the subgroup N is normal the set of all cosets forms a group called the quotient group G / N with the operation ∗ defined by (aN) ∗ (bN) = abN. Since every right coset is a left coset, there is no need to distinguish \"left cosets\" from \"right cosets\".",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=19) "Index of a subgroup",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=336) "Every left or right coset of H has the same number of elements (or cardinality in the case of an infinite H) as H itself. Furthermore, the number of left cosets is equal to the number of right cosets and is known as the index of H in G, written as. Lagrange's theorem allows us to compute the index in the case where G and H are finite:",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Cardinality",
+                Text: (string) (len=11) "cardinality",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Infinity",
+                Text: (string) (len=8) "infinite",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=63) "https://en.wikipedia.org/wiki/Lagrange's_theorem_(group_theory)",
+                Text: (string) (len=18) "Lagrange's theorem",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=107) "This equation also holds in the case where the groups are infinite, although the meaning may be less clear.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=13) "More examples",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) (len=8) "Integers",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=592) "Let G be the additive group of the integers, Z = ({..., −2, −1, 0, 1, 2,...}, +) and H the subgroup (3 Z, +) = ({..., −6, −3, 0, 3, 6,...}, +). Then the cosets of H in G are the three sets 3 Z, 3 Z + 1, and 3 Z + 2, where 3 Z + a = {..., −6 + a, −3 + a, a, 3 + a, 6 + a,...}. These three sets partition the set Z, so there are no other right cosets of H. Due to the commutivity of addition H + 1 = 1 + H and H + 2 = 2 + H. That is, every left coset of H is also a right coset, so H is a normal subgroup. (The same argument shows that every subgroup of an Abelian group is normal.)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Additive_group",
+                Text: (string) (len=14) "additive group",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Commutivity",
+                Text: (string) (len=11) "commutivity",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=627) "This example may be generalized. Again let G be the additive group of the integers, Z = ({..., −2, −1, 0, 1, 2,...}, +), and now let H the subgroup (m Z, +) = ({..., −2 m, − m, 0, m, 2 m,...}, +), where m is a positive integer. Then the cosets of H in G are the m sets m Z, m Z + 1,..., m Z + (m − 1), where m Z + a = {..., −2 m + a, − m + a, a, m + a, 2 m + a,...}. There are no more than m cosets, because m Z + m = m (Z + 1) = m Z. The coset (m Z + a, +) is the congruence class of a modulo m. The subgroup m Z is normal in Z, and so, can be used to form the quotient group Z / m Z the group of integers mod m.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Modular_arithmetic",
+                Text: (string) (len=16) "congruence class",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Integers_mod_n",
+                Text: (string) (len=14) "integers mod m",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=7) "Vectors",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=287) "Another example of a coset comes from the theory of vector spaces. The elements (vectors) of a vector space form an abelian group under vector addition. The subspaces of the vector space are subgroups of this group. For a vector space V, a subspace W, and a fixed vector a in V, the sets",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Vector_space",
+                Text: (string) (len=13) "vector spaces",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Abelian_group",
+                Text: (string) (len=13) "abelian group",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Vector_addition",
+                Text: (string) (len=15) "vector addition",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Linear_subspace",
+                Text: (string) (len=9) "subspaces",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Subgroups",
+                Text: (string) (len=9) "subgroups",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=476) "are called affine subspaces, and are cosets (both left and right, since the group is abelian). In terms of 3-dimensional geometric vectors, these affine subspaces are all the \"lines\" or \"planes\" parallel to the subspace, which is a line or plane going through the origin. For example, consider the plane R. If m is a line through the origin O, then m is a subgroup of the abelian group R. If P is in R, then the coset P + m is a line m ′ parallel to m and passing through P.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Affine_subspace",
+                Text: (string) (len=16) "affine subspaces",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Euclidean_space",
+                Text: (string) (len=9) "geometric",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Parallel_(geometry)",
+                Text: (string) (len=8) "parallel",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Plane_(geometry)",
+                Text: (string) (len=5) "plane",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=8) "Matrices",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=46) "Let G be the multiplicative group of matrices,",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=24) "and the subgroup H of G,",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=48) "For a fixed element of G consider the left coset",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=140) "That is, the left cosets consist of all the matrices in G having the same upper-left entry. This subgroup H is normal in G, but the subgroup",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=19) "is not normal in G.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=27) "As orbits of a group action",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=316) "A subgroup H of a group G can be used to define an action of H on G in two natural ways. A right action, G × H → G given by (g, h) → gh or a left action, H × G → G given by (h, g) → hg. The orbit of g under the right action is the left coset gH, while the orbit under the left action is the right coset Hg.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Group_action",
+            Text: (string) (len=6) "action",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Orbit_(group_theory)",
+            Text: (string) (len=5) "orbit",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=7) "History",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=382) "The concept of a coset dates back to Galois 's work of 1830–31. He introduced a notation but did not provide a name for the concept. The term \"co-set\" appears for the first time in 1910 in a paper by G. A. Miller in the Quarterly Journal of Mathematics (vol. 41, p. 382). Various other terms have been used including the German Nebengruppen (Weber) and conjugate group (Burnside).",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=36) "https://en.wikipedia.org/wiki/Galois",
+            Text: (string) (len=6) "Galois",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://en.wikipedia.org/wiki/Eduard_Ritter_von_Weber",
+            Text: (string) (len=5) "Weber",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/William_Burnside",
+            Text: (string) (len=8) "Burnside",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=609) "Galois was concerned with deciding when a given polynomial equation was solvable by radicals. A tool that he developed was in noting that a subgroup H of a group of permutations G induced two decompositions of G (what we now call left and right cosets). If these decompositions coincided, that is, if the left cosets are the same as the right cosets, then there was a way to reduce the problem to one of working over H instead of G. Camille Jordan in his commentaries on Galois's work in 1865 and 1869 elaborated on these ideas and defined normal subgroups as we have above, although he did not use this term.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=49) "https://en.wikipedia.org/wiki/Polynomial_equation",
+            Text: (string) (len=19) "polynomial equation",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Solvable_by_radicals",
+            Text: (string) (len=20) "solvable by radicals",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=41) "https://en.wikipedia.org/wiki/Permutation",
+            Text: (string) (len=12) "permutations",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/Camille_Jordan",
+            Text: (string) (len=14) "Camille Jordan",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=227) "Calling the coset gH the left coset of g with respect to H, while most common today, has not been universally true in the past. For instance, Hall (1959) would call gH a right coset, emphasizing the subgroup being on the right.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=51) "https://en.wikipedia.org/wiki/Coset#CITEREFHall1959",
+            Text: (string) (len=11) "Hall (1959)",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=33) "An application from coding theory",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=1609) "A binary linear code is an n -dimensional subspace C of an m -dimensional vector space V over the binary field GF(2). As V is an additive abelian group, C is a subgroup of this group. Codes can be used to correct errors that can occur in transmission. When a codeword (element of C) is transmitted some of its bits may be altered in the process and the task of the receiver is to determine the most likely codeword that the corrupted received word could have started out as. This procedure is called decoding and if only a few errors are made in transmission it can be done effectively with only a very few mistakes. One method used for decoding uses an arrangement of the elements of V (a received word could be any element of V) into a standard array. A standard array is a coset decomposition of V put into tabular form in a certain way. Namely, the top row of the array consists of the elements of C, written in any order, except that the zero vector should be written first. Then, an element of V with a minimal number of ones that does not already appear in the top row is selected and the coset of C containing this element is written as the second row (namely, the row is formed by taking the sum of this element with each element of C directly above it). This element is called a coset leader and there may be some choice in selecting it. Now the process is repeated, a new vector with a minimal number of ones that does not already appear is selected as a new coset leader and the coset of C containing it is the next row. The process ends when all the vectors of V have been sorted into the cosets.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/Standard_array",
+            Text: (string) (len=14) "standard array",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Coset_leader",
+            Text: (string) (len=12) "coset leader",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=152) "An example of a standard array for the 2-dimensional code C = {00000, 01101, 10110, 11011} in the 5-dimensional space V (with 32 vectors) is as follows:",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=529) "The decoding procedure is to find the received word in the table and then add to it the coset leader of the row it is in. Since in binary arithmetic adding is the same operation as subtracting, this always results in an element of C. In the event that the transmission errors occurred in precisely the non-zero positions of the coset leader the result will be the right codeword. In this example, if a single error occurs, the method will always correct it, since all possible coset leaders with a single one appear in the array.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=574) "Syndrome decoding can be used to improve the efficiency of this method. It is a method of computing the correct coset (row) that a received word will be in. For an n -dimensional code C in an m -dimensional binary vector space, a parity check matrix is an (m − n) × m matrix H having the property that x H = 0 if and only if x is in C. The vector x H is called the syndrome of x, and by linearity, every vector in the same coset will have the same syndrome. To decode, the search is now reduced to finding the coset leader that has the same syndrome as the received word.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/Syndrome_decoding",
+            Text: (string) (len=17) "Syndrome decoding",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://en.wikipedia.org/wiki/Parity_check_matrix",
+            Text: (string) (len=19) "parity check matrix",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/If_and_only_if",
+            Text: (string) (len=14) "if and only if",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=39) "https://en.wikipedia.org/wiki/Linearity",
+            Text: (string) (len=9) "linearity",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=13) "Double cosets",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=271) "Given two subgroups, H and K (which need not be distinct) of a group G, the double cosets of H and K in G are the sets of the form HgK = { hgk: h an element of H, k an element of K }. These are the left cosets of K and right cosets of H when H = 1 and K = 1 respectively.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=133) "Two double cosets HxK and HyK are either disjoint or identical. The set of all double cosets for fixed H and K form a partition of G.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=176) "A double coset HxK contains the complete right cosets of H (in G) of the form Hxk, with k an element of K and the complete left cosets of K (in G) of the form hxK, with h in H.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) (len=8) "Notation",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=140) "Let G be a group with subgroups H and K. Several authors working with these sets have developed a specialized notation for their work, where",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=4) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=62) "G / H denotes the set of left cosets { gH: g in G } of H in G.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=63) "H \\ G denotes the set of right cosets { Hg: g in G } of H in G.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=120) "K \\ G / H denotes the set of double cosets { KgH: g in G } of H and K in G, sometimes referred to as double coset space.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=71) "G // H denotes the double coset space H \\ G / H of the subgroup H in G.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=17) "More applications",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=4) "list",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=4) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=91) "Cosets of Q in R are used in the construction of Vitali sets, a type of non-measurable set.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Vitali_set",
+                Text: (string) (len=11) "Vitali sets",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Non-measurable_set",
+                Text: (string) (len=18) "non-measurable set",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=53) "Cosets are central in the definition of the transfer.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Transfer_(group_theory)",
+                Text: (string) (len=8) "transfer",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=142) "Cosets are important in computational group theory. For example, Thistlethwaite's algorithm for solving Rubik's Cube relies heavily on cosets.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=91) "https://en.wikipedia.org/wiki/Optimal_solutions_for_Rubik's_Cube#Thistlethwaite's_algorithm",
+                Text: (string) (len=26) "Thistlethwaite's algorithm",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Rubik's_Cube",
+                Text: (string) (len=12) "Rubik's Cube",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=233) "In geometry, a Clifford–Klein form is a double coset space Γ\\ G / H, where G is a reductive Lie group, H is a closed subgroup, and Γ is a discrete subgroup (of G) that acts properly discontinuously on the homogeneous space G / H.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Clifford–Klein_form",
+                Text: (string) (len=21) "Clifford–Klein form",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Reductive_Lie_group",
+                Text: (string) (len=19) "reductive Lie group",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Properly_discontinuously",
+                Text: (string) (len=24) "properly discontinuously",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Homogeneous_space",
+                Text: (string) (len=17) "homogeneous space",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

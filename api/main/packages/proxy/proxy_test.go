@@ -9,11 +9,13 @@ import (
 	"net/http"
 	"net/http/httptest"
 	"strconv"
+	"strings"
 	"testing"
 	"time"
 	"wikimedia-enterprise/api/main/config/env"
 	"wikimedia-enterprise/api/main/packages/proxy"
-	"wikimedia-enterprise/general/config"
+	"wikimedia-enterprise/api/main/submodules/config"
+	"wikimedia-enterprise/api/main/submodules/httputil"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/client/metadata"
@@ -28,6 +30,8 @@ import (
 type s3Mock struct {
 	mock.Mock
 	s3iface.S3API
+
+	beforePresignFn func(*request.Request) error
 }
 
 func (m *s3Mock) SelectObjectContentWithContext(_ aws.Context, sip *s3.SelectObjectContentInput, _ ...request.Option) (*s3.SelectObjectContentOutput, error) {
@@ -39,6 +43,7 @@ func (m *s3Mock) GetObjectRequest(sip *s3.GetObjectInput) (*request.Request, *s3
 	m.Called(*sip.Bucket, *sip.Key)
 
 	req := request.New(aws.Config{}, metadata.ClientInfo{}, request.Handlers{}, nil, &request.Operation{}, nil, nil)
+	req.Operation.BeforePresignFn = m.beforePresignFn
 
 	return req, nil
 }
@@ -147,6 +152,7 @@ type testProxyGetSuite struct {
 	ctx context.Context
 	exp string
 	bkt string
+	bkc string
 	key string
 	err error
 }
@@ -164,7 +170,8 @@ func (s *testProxyGetSuite) SetupSuite() {
 	s.err = errors.New("test suite error")
 	s.ctx = context.Background()
 	s.env = &env.Environment{
-		AWSBucket: s.bkt,
+		AWSBucket:        s.bkt,
+		AWSBucketCommons: s.bkc,
 	}
 }
 
@@ -214,18 +221,97 @@ func TestProxyGet(t *testing.T) {
 		{
 			hdl: proxy.NewGetEntities,
 			bkt: "test",
-			exp: "SELECT * FROM S3Object as main",
+			exp: "SELECT * FROM S3Object as s",
 			key: "/agregations/hourlys/2022-08-14.ndjson",
 		},
 		{
 			hdl: proxy.NewGetEntity,
 			bkt: "test",
-			exp: "SELECT * FROM S3Object as main",
+			exp: "SELECT * FROM S3Object as s",
 			key: "/agregations/hourlys/2022-08-14.ndjson",
 		},
 	} {
 		suite.Run(t, testCase)
 	}
+}
+
+type floatFilterCastSuite struct {
+	suite.Suite
+	srv *httptest.Server
+	pgt *pgMock
+	str *s3Mock
+	env *env.Environment
+	par *proxy.Params
+	key string
+	bkt string
+	err error
+}
+
+func (s *floatFilterCastSuite) SetupTest() {
+	s.err = errors.New("mocked select error")
+	s.key = "/agregations/hourlys/2022-08-14.ndjson"
+	s.bkt = "test-bucket"
+
+	s.env = &env.Environment{AWSBucket: s.bkt}
+	s.pgt = new(pgMock)
+	s.str = new(s3Mock)
+	s.par = &proxy.Params{Env: s.env, S3: s.str}
+}
+
+func (s *floatFilterCastSuite) setupRouterWithFilter(expectedSQLContains string) {
+	s.pgt.On("GetPath").Return(s.key, nil)
+	s.str.On("SelectObjectContentWithContext", s.bkt, s.key, mock.MatchedBy(func(sql string) bool {
+		return strings.Contains(sql, expectedSQLContains)
+	})).Return(s.err)
+
+	router := gin.New()
+	router.POST("/agregations/hourlys/2022-08-14.ndjson", proxy.NewGetEntities(s.par, s.pgt))
+	s.srv = httptest.NewServer(router)
+}
+
+func (s *floatFilterCastSuite) TearDownTest() {
+	if s.srv != nil {
+		s.srv.Close()
+	}
+}
+
+func (s *floatFilterCastSuite) runRequestAndCheckError(payload string) {
+	body := bytes.NewBuffer([]byte(payload))
+
+	req, err := http.NewRequest(http.MethodPost, s.srv.URL+"/agregations/hourlys/2022-08-14.ndjson", body)
+	s.Require().NoError(err)
+	req.Header.Set("Content-Type", "application/json")
+
+	resp, err := http.DefaultClient.Do(req)
+	s.Require().NoError(err)
+	defer resp.Body.Close()
+
+	s.Equal(http.StatusInternalServerError, resp.StatusCode)
+
+	data, err := io.ReadAll(resp.Body)
+	s.Require().NoError(err)
+	s.Contains(string(data), s.err.Error())
+}
+
+func (s *floatFilterCastSuite) TestFloat64NamespaceCastsToInt() {
+	s.setupRouterWithFilter(`CAST(s."namespace"."identifier" AS INT) = 10`)
+
+	s.runRequestAndCheckError(`{
+		"filters": [{"field": "namespace.identifier", "value": 10.0}]
+	}`)
+}
+
+func (s *floatFilterCastSuite) TestFloat64FieldUsesGreaterThanComparison() {
+	s.setupRouterWithFilter(`s."score" > 8.500000`)
+
+	s.runRequestAndCheckError(`{
+		"fields": ["score"],
+		"filters": [{"field": "score", "value": 8.5}]
+	}`)
+}
+
+func TestFloatFilterCastSuite(t *testing.T) {
+	suite.Run(t, new(floatFilterCastSuite))
 }
 
 type testProxyDownloadSuite struct {
@@ -239,6 +325,7 @@ type testProxyDownloadSuite struct {
 	ctx context.Context
 	pth string
 	bkt string
+	bkc string
 	key string
 	err error
 }
@@ -247,7 +334,8 @@ func (s *testProxyDownloadSuite) SetupSuite() {
 	s.err = errors.New("test error")
 	s.ctx = context.Background()
 	s.env = &env.Environment{
-		AWSBucket: s.bkt,
+		AWSBucket:        s.bkt,
+		AWSBucketCommons: s.bkc,
 	}
 }
 
@@ -272,6 +360,12 @@ func (s *testProxyDownloadSuite) createServer() http.Handler {
 	gin.SetMode(gin.TestMode)
 
 	rtr := gin.New()
+	rtr.Use(func(ctx *gin.Context) {
+		ctx.Set("user", &httputil.User{
+			Sub: "actual-sub",
+		})
+		ctx.Next()
+	})
 	rtr.GET(s.pth, proxy.NewGetDownload(s.par, s.pgt))
 
 	return rtr
@@ -297,15 +391,28 @@ func (s *testProxyDownloadSuite) TestProxyGetDownloadRedirect() {
 	req, err := http.NewRequest(http.MethodGet, fmt.Sprintf("%s%s", s.srv.URL, s.pth), nil)
 	s.Assert().NoError(err)
 
+	presigned := false
+	s.str.beforePresignFn = func(r *request.Request) error {
+		presigned = true
+		s.Assert().Equal("actual-sub", r.HTTPRequest.URL.Query().Get("sub"))
+		return nil
+	}
 	res, err := s.clt.Do(req)
 	s.Assert().NoError(err)
 	s.Assert().Equal(http.StatusTemporaryRedirect, res.StatusCode)
+	s.Assert().True(presigned)
+
+	// Assert that the usage tracking parameter is preserved
+	loc, err := res.Location()
+	s.Assert().NoError(err)
+	s.Assert().Equal("actual-sub", loc.Query().Get("sub"))
 }
 
 func TestProxyDownload(t *testing.T) {
 	for _, testCase := range []*testProxyDownloadSuite{
 		{
 			bkt: "test",
+			bkc: "commons",
 			key: "/hourlys/2022-08-14/dewiki_namespace_0.tar.gz",
 		},
 	} {
@@ -438,24 +545,26 @@ func (m *pltMock) GetLanguage(dtb string) string {
 
 type getLargeEntitiesTestSuite struct {
 	suite.Suite
-	sts int
-	pth string
-	ent string
-	nme string
-	prs []string
-	lgs []string
-	ets []string
-	bkt string
-	pts *proxy.Params
-	srv *httptest.Server
-	erg error
+	sts               int
+	pth               string
+	ent               string
+	nme               string
+	prs               []string
+	lgs               []string
+	ets               []string
+	bkt               string
+	pts               *proxy.Params
+	srv               *httptest.Server
+	erg               error
+	expectedS3Paths   []string
+	useHashedPrefixes bool
 }
 
 func (s *getLargeEntitiesTestSuite) createServer() http.Handler {
 	gin.SetMode(gin.TestMode)
 
 	rtr := gin.New()
-	rtr.GET(fmt.Sprintf("%s/:name", s.pth), proxy.NewGetLargeEntities(s.pts, s.ent))
+	rtr.GET(fmt.Sprintf("%s/*name", s.pth), proxy.NewGetLargeEntities(s.pts, s.ent))
 
 	return rtr
 }
@@ -470,7 +579,7 @@ func (s *getLargeEntitiesTestSuite) SetupSuite() {
 		cfm.On("GetLanguage", prg).Return(s.lgs[i])
 
 		for _, ent := range s.ets {
-			s3m.On("GetObjectWithContext", s.bkt, fmt.Sprintf("%s/%s/%s.json", s.ent, prg, s.nme)).
+			s3m.On("GetObjectWithContext", s.bkt, s.expectedS3Paths[i]).
 				Return(&s3.GetObjectOutput{Body: io.NopCloser(bytes.NewReader([]byte(ent)))}, s.erg)
 		}
 	}
@@ -479,7 +588,8 @@ func (s *getLargeEntitiesTestSuite) SetupSuite() {
 		Cfg: cfm,
 		S3:  s3m,
 		Env: &env.Environment{
-			AWSBucket: s.bkt,
+			AWSBucket:         s.bkt,
+			UseHashedPrefixes: s.useHashedPrefixes,
 		},
 	}
 
@@ -506,25 +616,39 @@ func (s *getLargeEntitiesTestSuite) TestNewGetLargeEntities() {
 func TestNewGetLargeEntities(t *testing.T) {
 	for _, testCase := range []*getLargeEntitiesTestSuite{
 		{
-			sts: http.StatusOK,
-			pth: "/articles",
-			ent: "articles",
-			nme: "Earth",
-			bkt: "wme-data",
-			ets: []string{`{"name":"Earth"}`, `{"name":"Earth"}`},
-			prs: []string{"enwiki", "plwiki"},
-			lgs: []string{"en", "pl"},
+			sts:             http.StatusOK,
+			pth:             "/articles",
+			ent:             "articles",
+			nme:             "Earth",
+			bkt:             "wme-primary",
+			ets:             []string{`{"name":"Earth"}`, `{"name":"Earth"}`},
+			prs:             []string{"enwiki", "plwiki"},
+			lgs:             []string{"en", "pl"},
+			expectedS3Paths: []string{"articles/enwiki/Earth.json", "articles/plwiki/Earth.json"},
 		},
 		{
-			sts: http.StatusNotFound,
-			pth: "/articles",
-			ent: "articles",
-			nme: "Earth",
-			bkt: "wme-data",
-			ets: []string{`{"status":404,"message":"Not Found"}`},
-			prs: []string{"enwiki", "plwiki"},
-			lgs: []string{"en", "pl"},
-			erg: errors.New("not found"),
+			sts:               http.StatusOK,
+			pth:               "/articles",
+			ent:               "articles",
+			nme:               "Earth",
+			bkt:               "wme-primary",
+			ets:               []string{`{"name":"Earth"}`, `{"name":"Earth"}`},
+			prs:               []string{"enwiki", "plwiki"},
+			lgs:               []string{"en", "pl"},
+			useHashedPrefixes: true,
+			expectedS3Paths:   []string{"articles/enwiki/5/5c/Earth.json", "articles/plwiki/5/5c/Earth.json"},
+		},
+		{
+			sts:             http.StatusNotFound,
+			pth:             "/articles",
+			ent:             "articles",
+			nme:             "Earth",
+			bkt:             "wme-primary",
+			ets:             []string{`{"status":404,"message":"Not Found"}`},
+			prs:             []string{"enwiki", "plwiki"},
+			lgs:             []string{"en", "pl"},
+			erg:             errors.New("not found"),
+			expectedS3Paths: []string{"articles/enwiki/Earth.json", "articles/plwiki/Earth.json"},
 		},
 	} {
 		suite.Run(t, testCase)

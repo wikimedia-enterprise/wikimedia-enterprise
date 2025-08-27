@@ -8,7 +8,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/s3"
 	s3API "github.com/aws/aws-sdk-go/service/s3/s3iface"
 
-	trc "wikimedia-enterprise/general/tracing"
+	trc "wikimedia-enterprise/services/snapshots/submodules/tracing"
 )
 
 // S3TracerProxy is an interface that defines the methods that are to be traced for s3.
@@ -22,6 +22,7 @@ type S3TracerProxy interface {
 	CreateMultipartUploadWithContext(context.Context, *s3.CreateMultipartUploadInput, ...request.Option) (*s3.CreateMultipartUploadOutput, error)
 	CopyObjectWithContext(context.Context, *s3.CopyObjectInput, ...request.Option) (*s3.CopyObjectOutput, error)
 	ListObjectsV2PagesWithContext(context.Context, *s3.ListObjectsV2Input, func(*s3.ListObjectsV2Output, bool) bool, ...request.Option) error
+	DeleteObjectsWithContext(ctx context.Context, input *s3.DeleteObjectsInput, opts ...request.Option) (*s3.DeleteObjectsOutput, error)
 }
 
 // StorageTrace is a struct that wraps the S3API interface and the TracerInterface interface.
@@ -171,4 +172,19 @@ func NewStorageTrace(api s3API.S3API, tracer trc.Tracer) S3TracerProxy {
 		s3tracerproxy: api,
 		tracer:        &tracer,
 	}
+}
+
+// DeleteObjectsWithContext wraps the DeleteObjectsWithContext method of the S3API interface.
+func (tr *StorageTrace) DeleteObjectsWithContext(ctx context.Context, input *s3.DeleteObjectsInput, opt ...request.Option) (*s3.DeleteObjectsOutput, error) {
+	var (
+		ctt context.Context
+		end func(error, string)
+	)
+
+	if tr.tracer != nil {
+		end, ctt = (*tr.tracer).Trace(ctx, map[string]string{"method": "DeleteObjectsWithContext", "bucket": *input.Bucket})
+		defer end(nil, "finished DeleteObjectsWithContext")
+	}
+
+	return tr.s3tracerproxy.DeleteObjectsWithContext(ctt, input, opt...)
 }

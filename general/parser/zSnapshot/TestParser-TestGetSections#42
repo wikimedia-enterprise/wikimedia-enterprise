@@ -1,0 +1,360 @@
+([]*parser.Part) (len=3) {
+  (*parser.Part)({
+    Name: (string) (len=8) "Abstract",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=340) "The terms foobar (/ ˈ f uː b ɑːr /), foo, bar, baz, and others are used as metasyntactic variables and placeholder names in computer programming or computer-related documentation. They have been used to name entities such as variables, functions, and commands whose exact identity is unimportant and serve only to demonstrate a concept.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=7) {
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Help:IPA/English",
+            Text: (string) (len=20) "/ ˈ f uː b ɑːr /",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=52) "https://en.wikipedia.org/wiki/Metasyntactic_variable",
+            Text: (string) (len=23) "metasyntactic variables",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Placeholder_name",
+            Text: (string) (len=17) "placeholder names",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Computer_programming",
+            Text: (string) (len=20) "computer programming",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=57) "https://en.wikipedia.org/wiki/Variable_(computer_science)",
+            Text: (string) (len=9) "variables",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=57) "https://en.wikipedia.org/wiki/Function_(computer_science)",
+            Text: (string) (len=9) "functions",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://en.wikipedia.org/wiki/Command_(computing)",
+            Text: (string) (len=8) "commands",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=21) "History and etymology",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=5) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=130) "It is possible that foobar is a playful allusion to the World War II -era military slang FUBAR (Fucked Up Beyond All Recognition).",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=38) "https://en.wikipedia.org/wiki/Allusion",
+            Text: (string) (len=8) "allusion",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/World_War_II",
+            Text: (string) (len=12) "World War II",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=64) "https://en.wikipedia.org/wiki/List_of_military_slang_terms#FUBAR",
+            Text: (string) (len=5) "FUBAR",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=493) "According to an Internet Engineering Task Force RFC, the word FOO originated as a nonsense word with its earliest documented use in the 1930s comic Smokey Stover by Bill Holman. Holman states that he used the word due to having seen it on the bottom of a jade Chinese figurine in San Francisco Chinatown, purportedly signifying \"good luck\". If true, this is presumably related to the Chinese word fu (\" 福 \", sometimes transliterated foo, as in foo dog), which can mean happiness or blessing.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=8) {
+          (*parser.Link)({
+            URL: (string) (len=61) "https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force",
+            Text: (string) (len=31) "Internet Engineering Task Force",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Request_for_Comments",
+            Text: (string) (len=3) "RFC",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Nonsense_word",
+            Text: (string) (len=13) "nonsense word",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Smokey_Stover",
+            Text: (string) (len=13) "Smokey Stover",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=54) "https://en.wikipedia.org/wiki/Bill_Holman_(cartoonist)",
+            Text: (string) (len=11) "Bill Holman",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=54) "https://en.wikipedia.org/wiki/Chinatown,_San_Francisco",
+            Text: (string) (len=23) "San Francisco Chinatown",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/Fu_(character)",
+            Text: (string) (len=2) "fu",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=52) "https://en.wikipedia.org/wiki/Chinese_guardian_lions",
+            Text: (string) (len=7) "foo dog",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=1302) "The first known use of the terms in print in a programming context appears in a 1965 edition of MIT's Tech Engineering News. The use of foo in a programming context is generally credited to the Tech Model Railroad Club (TMRC) of MIT from circa 1960. In the complex model system, there were scram switches located at numerous places around the room that could be thrown if something undesirable was about to occur, such as a train moving at full power towards an obstruction. Another feature of the system was a digital clock on the dispatch board. When someone hit a scram switch, the clock stopped and the display was replaced with the word \"FOO\"; at TMRC the scram switches are, therefore, called \"Foo switches\". Because of this, an entry in the 1959 Dictionary of the TMRC Language went something like this: \"FOO: The first syllable of the misquoted sacred chant phrase ' foo mane padme hum.' Our first obligation is to keep the foo counters turning.\" One book describing the MIT train room describes two buttons by the door labeled \"foo\" and \"bar\". These were general-purpose buttons and were often repurposed for whatever fun idea the MIT hackers had at the time, hence the adoption of foo and bar as general-purpose variable names. An entry in the Abridged Dictionary of the TMRC Language states:",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=5) {
+          (*parser.Link)({
+            URL: (string) (len=51) "https://en.wikipedia.org/wiki/Tech_Engineering_News",
+            Text: (string) (len=21) "Tech Engineering News",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=54) "https://en.wikipedia.org/wiki/Tech_Model_Railroad_Club",
+            Text: (string) (len=24) "Tech Model Railroad Club",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=67) "https://en.wikipedia.org/wiki/Massachusetts_Institute_of_Technology",
+            Text: (string) (len=3) "MIT",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/Scram",
+            Text: (string) (len=5) "scram",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/Om_mani_padme_hum",
+            Text: (string) (len=18) "foo mane padme hum",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=131) "Multiflush: stop-all-trains-button. Next best thing to the red door button. Also called FOO. Displays \"FOO\" on the clock when used.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=297) "Foobar was used as a variable name in the Fortran code of Colossal Cave Adventure (1977 Crowther and Woods version). The variable FOOBAR was used to contain the player's progress in saying the magic phrase \"Fee Fie Foe Foo\". Intel also used the term foo in their programming documentation in 1978.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/Fortran",
+            Text: (string) (len=7) "Fortran",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://en.wikipedia.org/wiki/Colossal_Cave_Adventure",
+            Text: (string) (len=23) "Colossal Cave Adventure",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/Intel",
+            Text: (string) (len=5) "Intel",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=19) "Examples in culture",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=4) "list",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=6) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=40) "Foo Camp is an annual hacker convention.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Foo_Camp",
+                Text: (string) (len=8) "Foo Camp",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Hacker_convention",
+                Text: (string) (len=17) "hacker convention",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=63) "BarCamp, an international network of user-generated conferences",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/BarCamp",
+                Text: (string) (len=7) "BarCamp",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=308) "During the United States v. Microsoft Corp. trial, some evidence was presented that Microsoft had tried to use the Web Services Interoperability organization (WS-I) as a means to stifle competition, including e-mails in which top executives including Bill Gates referred to the WS-I using the codename \"foo\".",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=69) "https://en.wikipedia.org/wiki/United_States_v._Microsoft_Corp._(2001)",
+                Text: (string) (len=32) "United States v. Microsoft Corp.",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/Web_Services_Interoperability",
+                Text: (string) (len=29) "Web Services Interoperability",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Bill_Gates",
+                Text: (string) (len=10) "Bill Gates",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=30) "Foobar2000 is an audio player.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Foobar2000",
+                Text: (string) (len=10) "Foobar2000",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=64) "Google uses a web tool called \"foobar\" to recruit new employees.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=92) "The Foo Bar is a pub in the Leiden University's faculty of Mathematics and Computer Science.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

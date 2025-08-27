@@ -3,73 +3,118 @@ package resolver_test
 import (
 	"testing"
 	"wikimedia-enterprise/api/realtime/libraries/resolver"
+	"wikimedia-enterprise/api/realtime/submodules/schema"
 
 	"github.com/stretchr/testify/suite"
 )
 
 type filterTestSuite struct {
 	suite.Suite
-	filters []resolver.Filter
+	res     *resolver.Resolver
+	filters []resolver.RequestFilter
+	art     *schema.Article
+	result  bool
 }
 
-func (s *filterTestSuite) TestGetFilter() {
-	fr := resolver.GetFilter(s.filters...)
+func (s *filterTestSuite) SetupTest() {
+	var err error
+	s.res, err = resolver.New(new(schema.Article))
 
-	if len(s.filters) == 0 {
-		s.Assert().True(fr(new(resolver.Field)))
-	}
+	s.Assert().NoError(err)
+	s.Assert().NotNil(s.res)
+}
 
-	if len(s.filters) > 0 {
-		result := false
+func (s *filterTestSuite) TestNewValueFilter() {
+	s.Assert().NotNil(s.res.NewValueFilter(s.filters))
+}
 
-		for _, fr := range s.filters {
-			if ok := fr(new(resolver.Field)); ok {
-				result = true
-				break
-			}
-		}
+func (s *filterTestSuite) TestShouldKeep() {
+	vf := s.res.NewValueFilter(s.filters)
 
-		s.Assert().Equal(result, fr(new(resolver.Field)))
-	}
+	s.Equal(s.result, vf(s.art))
 }
 
 func TestFilter(t *testing.T) {
 	for _, testCase := range []*filterTestSuite{
 		{
-			filters: []resolver.Filter{
-				func(fld *resolver.Field) bool {
-					return false
-				},
+			filters: []resolver.RequestFilter{
+				{Field: "is_part_of.identifier", Value: "enwiki"},
+				{Field: "event.type", Value: "update"},
+				{Field: "version.noindex", Value: false},
+				{Field: "namespace.identifier", Value: 0},
 			},
+			art: &schema.Article{
+				IsPartOf:  &schema.Project{Identifier: "enwiki"},
+				Event:     &schema.Event{Type: "update"},
+				Version:   &schema.Version{Noindex: false},
+				Namespace: &schema.Namespace{Identifier: 0},
+			},
+			result: true,
 		},
 		{
-			filters: []resolver.Filter{
-				func(fld *resolver.Field) bool {
-					return false
-				},
-				func(fld *resolver.Field) bool {
-					return true
-				},
+			filters: []resolver.RequestFilter{
+				{Field: "is_part_of.identifier", Value: "enwiki"},
+				{Field: "event.type", Value: "update"},
+				{Field: "version.noindex", Value: false},
+				{Field: "namespace.identifier", Value: 0},
 			},
+			art: &schema.Article{
+				IsPartOf:  &schema.Project{Identifier: "frwiki"},
+				Event:     &schema.Event{Type: "update"},
+				Version:   &schema.Version{Noindex: false},
+				Namespace: &schema.Namespace{Identifier: 0},
+			},
+			result: false,
 		},
 		{
-			filters: []resolver.Filter{
-				func(fld *resolver.Field) bool {
-					return false
-				},
-				func(fld *resolver.Field) bool {
-					return true
-				},
-				func(fld *resolver.Field) bool {
-					return false
-				},
+			filters: []resolver.RequestFilter{
+				{Field: "is_part_of.identifier", Value: "enwiki"},
+				{Field: "event.type", Value: "update"},
+				{Field: "version.noindex", Value: false},
+				{Field: "namespace.identifier", Value: 0},
 			},
+			art: &schema.Article{
+				IsPartOf:  &schema.Project{Identifier: "frwiki"},
+				Event:     &schema.Event{Type: "delete"},
+				Version:   &schema.Version{Noindex: true},
+				Namespace: &schema.Namespace{Identifier: 6},
+			},
+			result: false,
 		},
 		{
-			filters: []resolver.Filter{},
+			filters: []resolver.RequestFilter{
+				{Field: "is_part_of.identifier", Value: "enwiki"},
+				{Field: "event.type", Value: "update"},
+				{Field: "version.noindex", Value: false},
+				{Field: "namespace.identifier", Value: 0},
+			},
+			art: &schema.Article{
+				IsPartOf: &schema.Project{Identifier: "enwiki"},
+				Event:    &schema.Event{Type: "update"},
+				Version:  &schema.Version{Noindex: false},
+			},
+			result: false,
+		},
+		{
+			filters: []resolver.RequestFilter{},
+			art: &schema.Article{
+				IsPartOf: &schema.Project{Identifier: "enwiki"},
+				Event:    &schema.Event{Type: "update"},
+				Version:  &schema.Version{Noindex: false},
+			},
+			result: true,
+		},
+		{
+			filters: []resolver.RequestFilter{
+				{Field: "is_part_of.identifier", Value: "enwiki"},
+				{Field: "event.type", Value: "update"},
+				{Field: "version.noindex", Value: false},
+				{Field: "namespace.identifier", Value: 0},
+			},
+			art:    &schema.Article{},
+			result: false,
 		},
 	} {
-
 		suite.Run(t, testCase)
 	}
 }

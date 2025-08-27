@@ -5,12 +5,13 @@ import (
 	"crypto/hmac"
 	"crypto/sha256"
 	"encoding/base64"
+	"errors"
 	"fmt"
 	"net/http"
 
 	"wikimedia-enterprise/api/auth/config/env"
-	"wikimedia-enterprise/general/httputil"
-	"wikimedia-enterprise/general/log"
+	"wikimedia-enterprise/api/auth/submodules/httputil"
+	"wikimedia-enterprise/api/auth/submodules/log"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/cognitoidentityprovider"
@@ -33,21 +34,26 @@ type Request struct {
 	ConfirmationCode string `json:"confirmation_code" form:"confirmation_code" binding:"required,min=1,max=2048"`
 }
 
+var (
+	// Here, "internal" means the error is on our side (Wikimedia Enterprise), not necessarily in the auth API server.
+	internalErr = errors.New("Internal error, please try again later.")
+)
+
 // NewHandler creates a new gin handler function for confirm forgot password endpoint.
 func NewHandler(p *Parameters) gin.HandlerFunc {
 	return func(gcx *gin.Context) {
 		req := new(Request)
 
 		if err := gcx.ShouldBind(req); err != nil {
-			log.Error(err, log.Tip("problem binding request input to v1 change password"))
-			httputil.UnprocessableEntity(gcx, err)
+			log.Error(err, log.Tip("problem binding request input to v1 change password"), log.Any("url", gcx.Request.URL.String()))
+			httputil.UnprocessableEntity(gcx, internalErr)
 			return
 		}
 
 		h := hmac.New(sha256.New, []byte(p.Env.CognitoSecret))
 		if _, err := h.Write([]byte(fmt.Sprintf("%s%s", req.Username, p.Env.CognitoClientID))); err != nil {
 			log.Error(err, log.Tip("problem writing username and cognito client id to v1 change password"))
-			httputil.InternalServerError(gcx, err)
+			httputil.InternalServerError(gcx, internalErr)
 			return
 		}
 

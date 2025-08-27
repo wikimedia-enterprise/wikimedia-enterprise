@@ -1,0 +1,316 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=15) "Infobox website",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) (len=28) "IMSLP Petrucci Music Library",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=13) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=115) "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/IMSLP_logo_%282016%29.png/220px-IMSLP_logo_%282016%29.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 220,
+                Width: (int) 220
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=34) "Screenshot IMSLP main page in 2019",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=133) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/IMSLP_December_2019_screenshot.png/300px-IMSLP_December_2019_screenshot.png",
+                AlternativeText: (string) "",
+                Caption: (string) (len=23) "IMSLP main page in 2019",
+                Height: (int) 300,
+                Width: (int) 300
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Homepage",
+                Text: (string) (len=9) "main page",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Type of site",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=29) "Online library of sheet music",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Online_library",
+                Text: (string) (len=14) "Online library",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Sheet_music",
+                Text: (string) (len=11) "sheet music",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Available in",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=34) {
+              (string) "",
+              (string) (len=44) "                                  - Asturian",
+              (string) (len=43) "                                  - Catalan",
+              (string) (len=32) "                                ",
+              (string) (len=43) "                                  - Chinese",
+              (string) (len=32) "                                ",
+              (string) (len=42) "                                  - Danish",
+              (string) (len=32) "                                ",
+              (string) (len=41) "                                  - Dutch",
+              (string) (len=43) "                                  - English",
+              (string) (len=32) "                                ",
+              (string) (len=42) "                                  - French",
+              (string) (len=32) "                                ",
+              (string) (len=42) "                                  - German",
+              (string) (len=32) "                                ",
+              (string) (len=41) "                                  - Greek",
+              (string) (len=43) "                                  - Italian",
+              (string) (len=32) "                                ",
+              (string) (len=44) "                                  - Japanese",
+              (string) (len=42) "                                  - Korean",
+              (string) (len=32) "                                ",
+              (string) (len=46) "                                  - Macedonian",
+              (string) (len=42) "                                  - Polish",
+              (string) (len=32) "                                ",
+              (string) (len=46) "                                  - Portuguese",
+              (string) (len=43) "                                  - Russian",
+              (string) (len=32) "                                ",
+              (string) (len=43) "                                  - Spanish",
+              (string) (len=32) "                                ",
+              (string) (len=43) "                                  - Swedish",
+              (string) (len=32) "                                ",
+              (string) (len=43) "                                  - Turkish",
+              (string) (len=32) "                                ",
+              (string) (len=28) "                            "
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Headquarters",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Canada",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Canada",
+                Text: (string) (len=6) "Canada",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Owner",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=38) "Project Petrucci LLC (private company)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Created by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=26) "Edward W. Guo (Feldmahler)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=83) "https://en.wikipedia.org/wiki/International_Music_Score_Library_Project#cite_note-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=3) "URL",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=30) "imslp.org; petruccilibrary.org",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=16) "http://imslp.org",
+                Text: (string) (len=9) "imslp.org",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=26) "http://petruccilibrary.org",
+                Text: (string) (len=19) "petruccilibrary.org",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Commercial",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "Yes (subscription)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Registration",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=61) "Optional (required for contributing and unconstrained access)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Launched",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=72) "February 16, 2006 (website) July 10, 2018 (iOS) March 28, 2019 (Android)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Website",
+                Text: (string) (len=7) "website",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=106) "https://en.wikipedia.org/wiki/International_Music_Score_Library_Project#cite_note-IMSLP_on_the_App_Store-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/App_Store_(iOS)",
+                Text: (string) (len=3) "iOS",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=99) "https://en.wikipedia.org/wiki/International_Music_Score_Library_Project#cite_note-play.google.com-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=69) "https://en.wikipedia.org/wiki/Android_(operating_system)#Applications",
+                Text: (string) (len=7) "Android",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Current status",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Active",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Content licence",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=57) "Creative Commons Attribution-ShareAlike 4.0 International",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=87) "https://en.wikipedia.org/wiki/Creative_Commons_Attribution-ShareAlike_4.0_International",
+                Text: (string) (len=57) "Creative Commons Attribution-ShareAlike 4.0 International",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

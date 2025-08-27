@@ -1,0 +1,1002 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=16) "Infobox software",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) (len=13) "Google Chrome",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=9) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=29) "Logo used since February 2022",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=153) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/120px-Google_Chrome_icon_%28February_2022%29.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) (len=29) "Logo used since February 2022",
+                Height: (int) 120,
+                Width: (int) 120
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=35) "Google Chrome running on Windows 11",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=144) "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Google_Chrome_on_Windows_10_screenshot.png/220px-Google_Chrome_on_Windows_10_screenshot.png",
+                AlternativeText: (string) "",
+                Caption: (string) (len=35) "Google Chrome running on Windows 11",
+                Height: (int) 220,
+                Width: (int) 220
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Windows_11",
+                Text: (string) (len=10) "Windows 11",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Developer(s)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Google",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Programmer",
+                Text: (string) (len=12) "Developer(s)",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Google",
+                Text: (string) (len=6) "Google",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Initial release",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=177) "Windows XP Beta / September 2, 2008 Windows XP 1.0 / December 11, 2008 macOS, Linux Preview / June 4, 2009 macOS, Linux Beta / December 8, 2009 Multi platform 5.0 / May 25, 2010",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Windows XP",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "Beta / September 2, 2008",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Windows XP",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "1.0 / December 11, 2008",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "macOS, Linux",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "Preview / June 4, 2009",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "macOS, Linux",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "Beta / December 8, 2009",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Multi platform",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "5.0 / May 25, 2010",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=17) "Stable release(s)",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=6) {
+          (*parser.Part)({
+            Name: (string) (len=21) "Windows, macOS, Linux",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=34) "124.0.6367.118/119 / 30 April 2024",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=4) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                Caption: (string) "",
+                Height: (int) 10,
+                Width: (int) 10
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                Caption: (string) "",
+                Height: (int) 10,
+                Width: (int) 10
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                Caption: (string) "",
+                Height: (int) 10,
+                Width: (int) 10
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                Caption: (string) "",
+                Height: (int) 10,
+                Width: (int) 10
+              })
+            },
+            Links: ([]*parser.Link) (len=9) {
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-ff98990c75f14391c2de1d69f44d8a7f7b47650c-v11-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                    AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                    Caption: (string) "",
+                    Height: (int) 10,
+                    Width: (int) 10
+                  })
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-355a1a439f29aa6898cee46d0a4d71e5caa0862a-v11-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                    AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                    Caption: (string) "",
+                    Height: (int) 10,
+                    Width: (int) 10
+                  })
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-617a80f3fe8502e5879e1fe6a802fab3263972dd-v11-4",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                    AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                    Caption: (string) "",
+                    Height: (int) 10,
+                    Width: (int) 10
+                  })
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-ff98990c75f14391c2de1d69f44d8a7f7b47650c-v11-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                    AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                    Caption: (string) "",
+                    Height: (int) 10,
+                    Width: (int) 10
+                  })
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=21) "Windows, macOS, Linux",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=34) "124.0.6367.118/119 / 30 April 2024",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                Caption: (string) "",
+                Height: (int) 10,
+                Width: (int) 10
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-ff98990c75f14391c2de1d69f44d8a7f7b47650c-v11-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                    AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                    Caption: (string) "",
+                    Height: (int) 10,
+                    Width: (int) 10
+                  })
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=27) "Windows Server 2012/2012 R2",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=34) "109.0.5414.165 / 13 September 2023",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Android",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=30) "124.0.6367.113 / 30 April 2024",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                Caption: (string) "",
+                Height: (int) 10,
+                Width: (int) 10
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-355a1a439f29aa6898cee46d0a4d71e5caa0862a-v11-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                    AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                    Caption: (string) "",
+                    Height: (int) 10,
+                    Width: (int) 10
+                  })
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=3) "iOS",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=27) "124.0.6367.111 / 2 May 2024",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                Caption: (string) "",
+                Height: (int) 10,
+                Width: (int) 10
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-617a80f3fe8502e5879e1fe6a802fab3263972dd-v11-4",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                    AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                    Caption: (string) "",
+                    Height: (int) 10,
+                    Width: (int) 10
+                  })
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=24) "Extended Support Release",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=30) "124.0.6367.118 / 30 April 2024",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                Caption: (string) "",
+                Height: (int) 10,
+                Width: (int) 10
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-ff98990c75f14391c2de1d69f44d8a7f7b47650c-v11-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                    AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                    Caption: (string) "",
+                    Height: (int) 10,
+                    Width: (int) 10
+                  })
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=18) "Preview release(s)",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=13) {
+          (*parser.Part)({
+            Name: (string) (len=21) "Windows, macOS, Linux",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=29) "125.0.6422.14 / 24 April 2024",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=3) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                Caption: (string) "",
+                Height: (int) 10,
+                Width: (int) 10
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                Caption: (string) "",
+                Height: (int) 10,
+                Width: (int) 10
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                Caption: (string) "",
+                Height: (int) 10,
+                Width: (int) 10
+              })
+            },
+            Links: ([]*parser.Link) (len=6) {
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-179767f5453028e8e9d14aa3f720547722e42935-v11-5",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                    AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                    Caption: (string) "",
+                    Height: (int) 10,
+                    Width: (int) 10
+                  })
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-bcc71be8e396c324bb10c226fa5e8d74ac11b871-v11-6",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                    AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                    Caption: (string) "",
+                    Height: (int) 10,
+                    Width: (int) 10
+                  })
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-e6d4bc107c4409469a00efc51dba58b7a3df284b-v11-7",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                    AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                    Caption: (string) "",
+                    Height: (int) 10,
+                    Width: (int) 10
+                  })
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=21) "Windows, macOS, Linux",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=29) "125.0.6422.14 / 24 April 2024",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                Caption: (string) "",
+                Height: (int) 10,
+                Width: (int) 10
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-179767f5453028e8e9d14aa3f720547722e42935-v11-5",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                    AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                    Caption: (string) "",
+                    Height: (int) 10,
+                    Width: (int) 10
+                  })
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Android",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=29) "125.0.6422.14 / 24 April 2024",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                Caption: (string) "",
+                Height: (int) 10,
+                Width: (int) 10
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-bcc71be8e396c324bb10c226fa5e8d74ac11b871-v11-6",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                    AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                    Caption: (string) "",
+                    Height: (int) 10,
+                    Width: (int) 10
+                  })
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=3) "iOS",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=26) "125.0.6422.21 / 2 May 2024",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                Caption: (string) "",
+                Height: (int) 10,
+                Width: (int) 10
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-e6d4bc107c4409469a00efc51dba58b7a3df284b-v11-7",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png",
+                    AlternativeText: (string) (len=21) "Edit this on Wikidata",
+                    Caption: (string) "",
+                    Height: (int) 10,
+                    Width: (int) 10
+                  })
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Written in",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=67) "C, C++, Assembly, HTML, Java (Android app only), JavaScript, Python",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=10) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/C_(programming_language)",
+                Text: (string) (len=1) "C",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=33) "https://en.wikipedia.org/wiki/C++",
+                Text: (string) (len=3) "C++",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Assembly_language",
+                Text: (string) (len=8) "Assembly",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://en.wikipedia.org/wiki/HTML",
+                Text: (string) (len=4) "HTML",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/Java_(programming_language)",
+                Text: (string) (len=4) "Java",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/JavaScript",
+                Text: (string) (len=10) "JavaScript",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/Python_(programming_language)",
+                Text: (string) (len=6) "Python",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-8",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-9",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-10",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Engines",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=43) "Blink (WebKit on iOS), V8 JavaScript engine",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Software_engine",
+                Text: (string) (len=7) "Engines",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Blink_(browser_engine)",
+                Text: (string) (len=5) "Blink",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/WebKit",
+                Text: (string) (len=6) "WebKit",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/V8_JavaScript_engine",
+                Text: (string) (len=20) "V8 JavaScript engine",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=16) "Operating system",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=7) {
+              (string) (len=29) "  - Android Oreo or later[11]",
+              (string) (len=12) "  - ChromeOS",
+              (string) (len=23) "  - iOS 15 or later[12]",
+              (string) (len=9) "  - Linux",
+              (string) (len=24) "  - macOS 10.15 or later",
+              (string) (len=23) "  - Windows 10 or later",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Operating_system",
+                Text: (string) (len=16) "Operating system",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Platform",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=29) "IA-32, x86-64, ARMv7, ARMv8-A",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Computing_platform",
+                Text: (string) (len=8) "Platform",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/IA-32",
+                Text: (string) (len=5) "IA-32",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/X86-64",
+                Text: (string) (len=6) "x86-64",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/ARMv7",
+                Text: (string) (len=5) "ARMv7",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/ARMv8-A",
+                Text: (string) (len=7) "ARMv8-A",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Included with",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=3) {
+              (string) (len=25) "  - Android Oreo or later",
+              (string) (len=12) "  - ChromeOS",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Available in",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "47 languages",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-13",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Type",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=27) "Web browser, mobile browser",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=75) "https://en.wikipedia.org/wiki/Software_categories#Categorization_approaches",
+                Text: (string) (len=4) "Type",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Web_browser",
+                Text: (string) (len=11) "Web browser",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Mobile_browser",
+                Text: (string) (len=14) "mobile browser",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "License",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=53) "Proprietary freeware, based on open source components",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Software_license",
+                Text: (string) (len=7) "License",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Proprietary_software",
+                Text: (string) (len=11) "Proprietary",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Freeware",
+                Text: (string) (len=8) "freeware",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-TOS-14",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-15",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Website",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "www.google.com",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=22) "https://www.google.com",
+                Text: (string) (len=14) "www.google.com",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

@@ -5,11 +5,12 @@ import (
 	"crypto/hmac"
 	"crypto/sha256"
 	"encoding/base64"
+	"errors"
 	"fmt"
 	"net/http"
 	"wikimedia-enterprise/api/auth/config/env"
-	"wikimedia-enterprise/general/httputil"
-	"wikimedia-enterprise/general/log"
+	"wikimedia-enterprise/api/auth/submodules/httputil"
+	"wikimedia-enterprise/api/auth/submodules/log"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/cognitoidentityprovider"
@@ -40,14 +41,19 @@ type Model struct {
 	NewPassword string `json:"new_password" form:"new_password" binding:"required,min=6,max=255"`
 }
 
+var (
+	// Here, "internal" means the error is on our side (Wikimedia Enterprise), not necessarily in the auth API server.
+	internalErr = errors.New("Internal error, please try again later.")
+)
+
 // NewHandler creates new password required HTTP handler.
 func NewHandler(p *Parameters) gin.HandlerFunc {
 	return func(gcx *gin.Context) {
 		mdl := new(Model)
 
 		if err := gcx.ShouldBind(mdl); err != nil {
-			log.Error(err, log.Tip("problem binding request input to new password model v1"))
-			httputil.UnprocessableEntity(gcx, err)
+			log.Error(err, log.Tip("problem binding request input to new password model v1"), log.Any("url", gcx.Request.URL.String()))
+			httputil.UnprocessableEntity(gcx, internalErr)
 			return
 		}
 
@@ -55,7 +61,7 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 
 		if _, err := h.Write([]byte(fmt.Sprintf("%s%s", mdl.Username, p.Env.CognitoClientID))); err != nil {
 			log.Error(err, log.Tip("problem in new password v1 writing user and cognito client id"))
-			httputil.InternalServerError(gcx, err)
+			httputil.InternalServerError(gcx, internalErr)
 			return
 		}
 
@@ -72,7 +78,7 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 
 		if err != nil {
 			log.Error(err, log.Tip("problem in new password v1 user unauthorized"))
-			httputil.Unauthorized(gcx, err)
+			httputil.Unauthorized(gcx, errors.New("Unauthorized."))
 			return
 		}
 

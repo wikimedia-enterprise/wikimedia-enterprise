@@ -4,8 +4,8 @@ import (
 	"math/rand"
 	"testing"
 	"time"
-	"wikimedia-enterprise/general/schema"
 	"wikimedia-enterprise/services/structured-data/packages/builder"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
 
 	"github.com/stretchr/testify/suite"
 )

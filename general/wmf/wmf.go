@@ -73,6 +73,16 @@ type RevisionsHTMLGetter interface {
 	GetRevisionsHTML(ctx context.Context, dtb string, rvs []string, mxc int, ops ...func(*url.Values)) map[string]*PageHTML
 }
 
+// GetPageByRevision interface to expose method that retrieves a single page given a revision ID and database.
+type RevisionGetter interface {
+	GetPageByRevision(ctx context.Context, database string, revid int, ops ...func(*url.Values)) (*Page, error)
+}
+
+// GetAllRevisions interface to expose method that retrieves all revisions for an article given its pageid and database.
+type AllRevisionsGetter interface {
+	GetAllRevisions(ctx context.Context, database string, pageid int, ops ...func(*url.Values)) ([]*Revision, error)
+}
+
 // LanguagesGetter interface to expose method that gets list of available languages using database name.
 type LanguagesGetter interface {
 	GetLanguages(ctx context.Context, dtb string, ops ...func(*url.Values)) ([]*Language, error)
@@ -116,6 +126,8 @@ type UserGetter interface {
 // ScoreGetter interface to expose method that gets a score for a revision.
 type ScoreGetter interface {
 	GetScore(ctx context.Context, rev int, lng string, prj string, mdl string) (*Score, error)
+	GetReferenceNeedScore(ctx context.Context, rev int, lng, prj string) (*ReferenceNeedScore, error)
+	GetReferenceRiskScore(ctx context.Context, rev int, lng, prj string) (*ReferenceRiskScore, error)
 }
 
 // PageSummaryGetter interface to expose method that gets page summary for specific page title.
@@ -123,9 +135,22 @@ type PageSummaryGetter interface {
 	GetPageSummary(ctx context.Context, dtb string, ttl string, ops ...func(*url.Values)) (*PageSummary, error)
 }
 
+// ContributorsGetter interface to expose method that fetches contributors and their counts for a specific page ID.
+type ContributorsGetter interface {
+	// GetContributors fetches contributors to a page, stopping pagination early if maxRegistered is reached (if not nil).
+	GetContributors(ctx context.Context, dtb string, pageid int, maxRegistered *int, ops ...func(*url.Values)) (pages []*Page, fetchedAll bool, err error)
+	// GetContributorsCount fetches the count of contributors to a page, stopping pagination early if maxRegistered is reached (if not nil).
+	GetContributorsCount(ctx context.Context, database string, pageid int, maxRegistered *int, ops ...func(*url.Values)) (*ContributorsCount, error)
+}
+
 // FileDownloader interface to download files from commons.
 type FileDownloader interface {
 	DownloadFile(ctx context.Context, url string, ops ...func(*http.Request)) ([]byte, error)
+}
+
+// FileHeader interface to get file header from commons.
+type FileHeader interface {
+	HeadFile(ctx context.Context, url string, ops ...func(*http.Request)) ([]byte, error)
 }
 
 // API interface fot the whole API client.
@@ -137,6 +162,8 @@ type API interface {
 	PageHTMLGetter
 	RevisionHTMLGetter
 	RevisionsHTMLGetter
+	RevisionGetter
+	AllRevisionsGetter
 	LanguagesGetter
 	LanguageGetter
 	ProjectGetter
@@ -145,17 +172,19 @@ type API interface {
 	UserGetter
 	ScoreGetter
 	PageSummaryGetter
+	ContributorsGetter
 	FileDownloader
+	FileHeader
 }
 
 // Response generic structure for Actions API response.
 type Response struct {
-	BatchComplete bool                 `json:"batchcomplete,omitempty"`
-	Continue      map[string]string    `json:"continue,omitempty"`
-	Query         *Query               `json:"query,omitempty"`
-	Error         *Error               `json:"error,omitempty"`
-	ServedBy      string               `json:"servedby,omitempty"`
-	SiteMatrix    map[string]*Language `json:"sitematrix,omitempty"`
+	BatchComplete bool              `json:"batchcomplete,omitempty"`
+	Continue      map[string]string `json:"continue,omitempty"`
+	Query         *Query            `json:"query,omitempty"`
+	Error         *Error            `json:"error,omitempty"`
+	ServedBy      string            `json:"servedby,omitempty"`
+	SiteMatrix    *SiteMatrix       `json:"sitematrix,omitempty"`
 }
 
 // Error generic structure for Actions API error response.
@@ -278,34 +307,36 @@ type ImageinfoElement struct {
 
 // Page represent page data response in Actions API.
 type Page struct {
-	PageID               int                       `json:"pageid,omitempty"`
-	Title                string                    `json:"title,omitempty"`
-	Ns                   int                       `json:"ns,omitempty"`
-	WbEntityUsage        map[string]*WbEntityUsage `json:"wbentityusage,omitempty"`
-	PageProps            *PageProps                `json:"pageprops,omitempty"`
-	Watchers             int                       `json:"watchers"`
-	ContentModel         string                    `json:"contentmodel"`
-	PageLanguage         string                    `json:"pagelanguage"`
-	PageLanguageHTMLCode string                    `json:"pagelanguagehtmlcode"`
-	PageLanguageDir      string                    `json:"pagelanguagedir"`
-	Touched              *time.Time                `json:"touched"`
-	LastRevID            int                       `json:"lastrevid"`
-	Length               int                       `json:"length"`
-	Missing              bool                      `json:"missing"`
-	Protection           []*Protection             `json:"protection"`
-	RestrictionTypes     []string                  `json:"restrictiontypes"`
-	FullURL              string                    `json:"fullurl"`
-	EditURL              string                    `json:"editurl"`
-	CanonicalURL         string                    `json:"canonicalurl"`
-	DisplayTitle         string                    `json:"displaytitle"`
-	Revisions            []*Revision               `json:"revisions"`
-	Redirects            []*Redirect               `json:"redirects"`
-	Categories           []*Category               `json:"categories"`
-	Templates            []*Template               `json:"templates"`
-	Flagged              *Flagged                  `json:"flagged"`
-	Original             *Image                    `json:"original,omitempty"`
-	Thumbnail            *Image                    `json:"thumbnail,omitempty"`
-	Imageinfo            []*ImageinfoElement       `json:"imageinfo"`
+	PageID                int                       `json:"pageid,omitempty"`
+	Title                 string                    `json:"title,omitempty"`
+	Ns                    int                       `json:"ns,omitempty"`
+	WbEntityUsage         map[string]*WbEntityUsage `json:"wbentityusage,omitempty"`
+	PageProps             *PageProps                `json:"pageprops,omitempty"`
+	Watchers              int                       `json:"watchers"`
+	ContentModel          string                    `json:"contentmodel"`
+	PageLanguage          string                    `json:"pagelanguage"`
+	PageLanguageHTMLCode  string                    `json:"pagelanguagehtmlcode"`
+	PageLanguageDir       string                    `json:"pagelanguagedir"`
+	Touched               *time.Time                `json:"touched"`
+	LastRevID             int                       `json:"lastrevid"`
+	Length                int                       `json:"length"`
+	Missing               bool                      `json:"missing"`
+	Protection            []*Protection             `json:"protection"`
+	RestrictionTypes      []string                  `json:"restrictiontypes"`
+	FullURL               string                    `json:"fullurl"`
+	EditURL               string                    `json:"editurl"`
+	CanonicalURL          string                    `json:"canonicalurl"`
+	DisplayTitle          string                    `json:"displaytitle"`
+	Revisions             []*Revision               `json:"revisions"`
+	Redirects             []*Redirect               `json:"redirects"`
+	Categories            []*Category               `json:"categories"`
+	Templates             []*Template               `json:"templates"`
+	Flagged               *Flagged                  `json:"flagged"`
+	Original              *Image                    `json:"original,omitempty"`
+	Thumbnail             *Image                    `json:"thumbnail,omitempty"`
+	Imageinfo             []*ImageinfoElement       `json:"imageinfo"`
+	AnonymousContributors int                       `json:"anoncontributors"`
+	Contributors          []*User                   `json:"contributors"`
 }
 
 // WbEntityUsage represents wikibase entity usage for the page.
@@ -316,6 +347,54 @@ type WbEntityUsage struct {
 // PageProps represents page properties response in Actions API.
 type PageProps struct {
 	WikiBaseItem string `json:"wikibase_item,omitempty"`
+}
+
+// SiteMatrix represents full sitematrix returned by Actions API.
+type SiteMatrix struct {
+	Count     int `json:"count"`
+	Languages map[string]*Language
+	Specials  []*Project `json:"specials"`
+}
+
+// ContributorsCount contains data about contributors to a page.
+type ContributorsCount struct {
+	AnonymousCount  int
+	RegisteredCount int
+	// If false, RegisteredCount is a lower bound.
+	AllRegisteredIncluded bool
+}
+
+// UnmarshalJSON unmarshal sitematrix especially to handle Languages that has dynamic fields.
+func (sm *SiteMatrix) UnmarshalJSON(data []byte) error {
+	var raw map[string]json.RawMessage
+
+	if err := json.Unmarshal(data, &raw); err != nil {
+		return err
+	}
+
+	sm.Languages = make(map[string]*Language)
+
+	for key, val := range raw {
+		switch key {
+		case "count":
+			if err := json.Unmarshal(val, &sm.Count); err != nil {
+				return err
+			}
+		case "specials":
+			if err := json.Unmarshal(val, &sm.Specials); err != nil {
+				return err
+			}
+		default:
+			var lang Language
+
+			if err := json.Unmarshal(val, &lang); err != nil {
+				return err
+			}
+			sm.Languages[key] = &lang
+		}
+	}
+
+	return nil
 }
 
 // Project represents a project form Site Matrix Actions API call.
@@ -435,6 +514,42 @@ type BooleanProbability struct {
 	False float64 `json:"false"`
 }
 
+// ReferenceNeedScore represents the response structure for the reference-need model
+type ReferenceNeedScore struct {
+	ReferenceNeedScore float64 `json:"reference_need_score"`
+}
+
+// ReferenceRiskScore represents the response structure for the reference-risk model.
+type ReferenceRiskScore struct {
+	ReferenceCount     int                 `json:"reference_count"`
+	SurvivalRatio      *SurvivalRatioData  `json:"survival_ratio,omitempty"`
+	ReferenceRiskScore float64             `json:"reference_risk_score"`
+	References         []*ReferenceDetails `json:"references,omitempty"`
+}
+
+// SurvivalRatioData represents the statistical survival ratio of references in a revision.
+type SurvivalRatioData struct {
+	Min    float64 `json:"min"`
+	Mean   float64 `json:"mean"`
+	Median float64 `json:"median"`
+}
+
+// ReferenceDetails provides detailed information about an individual reference.
+type ReferenceDetails struct {
+	URL            string          `json:"url,omitempty"`
+	DomainName     string          `json:"domain_name,omitempty"`
+	DomainMetadata *DomainMetadata `json:"domain_metadata,omitempty"`
+}
+
+// DomainMetadata contains additional metadata about a reference domain.
+type DomainMetadata struct {
+	PsLabelLocal  *string `json:"ps_label_local,omitempty"`
+	PsLabelEnwiki *string `json:"ps_label_enwiki,omitempty"`
+	SurvivalRatio float64 `json:"survival_ratio"`
+	PageCount     int     `json:"page_count"`
+	EditorsCount  int     `json:"editors_count"`
+}
+
 // NewAPI creates WFM API(s) client under the interface.
 func NewAPI(ops ...ClientOption) API {
 	return NewClient(ops...)
@@ -453,7 +568,7 @@ func NewClient(ops ...ClientOption) *Client {
 		DefaultURL:         "https://en.wikipedia.org",
 		LiftWingBaseURL:    "https://api.wikimedia.org/service/lw/inference/v1/models/",
 		DefaultDatabase:    "enwiki",
-		UserAgent:          "WME/2.0 (https://enterprise.wikimedia.com/; wme_mgmt@wikimedia.org)",
+		UserAgent:          "myuseragent",
 	}
 
 	// Apply optional configurations
@@ -589,9 +704,9 @@ func (c *Client) do(clt *http.Client, req *http.Request) (*http.Response, error)
 
 		dly := c.DefaultRetryAfter
 
-		// Wait 150 seconds if WMF API returns 502-504 status code. WMF APIs can block the IP for 5 minutes
+		// Wait 300 seconds if WMF API returns 502-504 status code. WMF APIs can block the IP for 5 minutes
 		if esu {
-			dly = 150 * time.Second
+			dly = 300 * time.Second
 		}
 
 		rtv, err := getRetryAfterValue(res, dly)
@@ -682,7 +797,11 @@ func (c *Client) GetAllPages(ctx context.Context, dtb string, cbk func([]*Page),
 		res, err := c.do(c.HTTPClient, req)
 
 		if err != nil {
-			return err
+			return fmt.Errorf("URL: %s\nMethod: %s\nHeaders: %v\nQueryParams: %s\nError: %v", req.URL.String(),
+				req.Method,
+				req.Header,
+				bdy.Encode(),
+				err)
 		}
 
 		defer res.Body.Close()
@@ -815,6 +934,12 @@ func (c *Client) GetPages(ctx context.Context, dtb string, tls []string, ops ...
 			// this is handling the infinite loops case when we are using
 			// `rvlimit` property, cuz it will use `rvcontinue` to go through all revisions
 			delete(rsp.Continue, "rvcontinue")
+
+			// This is to handle infinite loops case when we are using
+			// `iilimit` property for commons.wikimedia.org.
+			// The response is malformed. It should not have `iistart` under `continue`
+			// https://phabricator.wikimedia.org/T377035 https://www.mediawiki.org/wiki/API:Continue
+			delete(rsp.Continue, "iistart")
 
 			if _, ok := rsp.Continue["continue"]; ok && len(rsp.Continue) == 1 {
 				break
@@ -996,6 +1121,122 @@ func (c *Client) GetRevisionsHTML(ctx context.Context, dtb string, rvs []string,
 	return rsp
 }
 
+func (c *Client) GetPageByRevision(ctx context.Context, database string, revid int, ops ...func(*url.Values)) (*Page, error) {
+	bdy := url.Values{}
+	bdy.Set("action", "query")
+	bdy.Set("revids", strconv.Itoa(revid))
+	bdy.Set("format", "json")
+	bdy.Set("formatversion", "2")
+	for _, opt := range ops {
+		opt(&bdy)
+	}
+
+	rsp, err := c.sendRequest(ctx, database, bdy)
+	if err != nil {
+		return nil, err
+	}
+
+	return rsp.Query.Pages[0], nil
+}
+
+func (c *Client) sendRequest(ctx context.Context, database string, args url.Values) (*Response, error) {
+	req, err := c.newActionsRequest(ctx, database, args)
+	if err != nil {
+		return nil, fmt.Errorf("error creating request: %w", err)
+	}
+
+	res, err := c.do(c.HTTPClient, req)
+	if err != nil {
+		return nil, fmt.Errorf("URL: %s\nMethod: %s\nHeaders: %v\nQueryParams: %s\nError: %v", req.URL.String(),
+			req.Method,
+			req.Header,
+			args.Encode(),
+			err)
+	}
+
+	defer res.Body.Close()
+	rsp := new(Response)
+
+	if err := json.NewDecoder(res.Body).Decode(rsp); err != nil {
+		return nil, fmt.Errorf("error decoding into JSON: %w", err)
+	}
+
+	if err := getResponseError(rsp); err != nil {
+		return nil, fmt.Errorf("error returned by WMF - %s:%v", http.StatusText(res.StatusCode), err)
+	}
+
+	if len(rsp.Query.Pages) > 0 {
+		return rsp, nil
+	}
+
+	return nil, fmt.Errorf("page not found")
+}
+
+func (c *Client) GetAllRevisions(ctx context.Context, database string, pageid int, ops ...func(*url.Values)) ([]*Revision, error) {
+	var rsp *Response
+
+	var revs []*Revision
+	for {
+		bdy := url.Values{}
+		bdy.Set("action", "query")
+		bdy.Set("prop", "revisions")
+		bdy.Set("pageids", strconv.Itoa(pageid))
+		bdy.Set("rvlimit", "500")
+		bdy.Set("rvorder", "older")
+		bdy.Set("rvprop", "ids|user|timestamp")
+		bdy.Set("format", "json")
+		bdy.Set("formatversion", "2")
+
+		for _, opt := range ops {
+			opt(&bdy)
+		}
+
+		if rsp != nil {
+			for name, val := range rsp.Continue {
+				bdy.Set(name, val)
+			}
+		}
+
+		req, err := c.newActionsRequest(ctx, database, bdy)
+
+		if err != nil {
+			return nil, fmt.Errorf("error creating request: %w", err)
+		}
+
+		res, err := c.do(c.HTTPClient, req)
+
+		if err != nil {
+			return nil, fmt.Errorf("URL: %s\nMethod: %s\nHeaders: %v\nQueryParams: %s\nError: %v", req.URL.String(),
+				req.Method,
+				req.Header,
+				bdy.Encode(),
+				err)
+		}
+
+		defer res.Body.Close()
+		rsp = new(Response)
+
+		if err := json.NewDecoder(res.Body).Decode(rsp); err != nil {
+			return nil, fmt.Errorf("error decoding into JSON: %w", err)
+		}
+
+		if err := getResponseError(rsp); err != nil {
+			return nil, fmt.Errorf("error returned by WMF - %s:%v", http.StatusText(res.StatusCode), err)
+		}
+
+		if len(rsp.Query.Pages) > 0 {
+			page := rsp.Query.Pages[0]
+			revs = append(revs, page.Revisions...)
+		}
+
+		if len(rsp.Continue) == 0 {
+			break
+		}
+	}
+
+	return revs, nil
+}
+
 // GetPageSummary gets summary of the page using page title.
 // Request query can be updated using `ops ...func(*url.Values)` property.
 func (c *Client) GetPageSummary(ctx context.Context, dtb string, ttl string, ops ...func(*url.Values)) (*PageSummary, error) {
@@ -1065,19 +1306,26 @@ func (c *Client) GetLanguages(ctx context.Context, dtb string, ops ...func(*url.
 	defer res.Body.Close()
 	rsp := new(Response)
 
-	_ = json.NewDecoder(res.Body).Decode(rsp)
+	if err := json.NewDecoder(res.Body).Decode(rsp); err != nil {
+		end(err, "decoding response failed")
+		return nil, err
+	}
 
-	if err := getResponseError(rsp); err != nil {
+	if err = getResponseError(rsp); err != nil {
 		ser := fmt.Errorf("%s:%v", http.StatusText(res.StatusCode), err)
 		end(ser, "response error")
 		return nil, ser
 	}
 
 	lns := []*Language{}
+	for _, lng := range rsp.SiteMatrix.Languages {
+		lns = append(lns, lng)
+	}
 
-	for num, lng := range rsp.SiteMatrix {
-		if num != "count" && num != "specials" {
-			lns = append(lns, lng)
+	for _, prj := range rsp.SiteMatrix.Specials {
+		// Include certain special projects, such as commons, wikidata.
+		if prj.DBName == "commonswiki" || prj.DBName == "wikidata" {
+			lns = append(lns, &Language{Projects: []*Project{prj}})
 		}
 	}
 
@@ -1383,26 +1631,94 @@ func (c *Client) GetScore(ctx context.Context, rev int, lng string, prj string, 
 	return scr, nil
 }
 
+// GetReferenceNeedScore fetches the Reference Need Score for a given revision.
+// Returns a ReferenceNeedScore struct or an error if the request fails.
+func (c *Client) GetReferenceNeedScore(ctx context.Context, rev int, lng, prj string) (*ReferenceNeedScore, error) {
+	end, trx := c.Tracer(ctx, map[string]string{
+		"revision": strconv.Itoa(rev),
+		"language": lng,
+		"project":  prj,
+		"model":    "reference-need",
+	})
+
+	req, err := c.newLiftWingRequest(trx, rev, lng, prj, "reference-need")
+	if err != nil {
+		end(err, "new referenceneed request failed")
+		return nil, err
+	}
+
+	res, err := c.do(c.HTTPClientLiftWing, req)
+	if err != nil {
+		end(err, "referenceneed score request failed")
+		return nil, err
+	}
+	defer res.Body.Close()
+
+	var result ReferenceNeedScore
+	if err := json.NewDecoder(res.Body).Decode(&result); err != nil {
+		end(err, "referenceneed score decode failed")
+		return nil, err
+	}
+
+	end(nil, "referenceneed score fetched")
+	return &result, nil
+}
+
+// GetReferenceRiskScore fetches the Reference Risk Score for a given revision.
+// Returns a ReferenceRiskScore struct or an error if the request fails.
+func (c *Client) GetReferenceRiskScore(ctx context.Context, rev int, lng, prj string) (*ReferenceRiskScore, error) {
+	end, trx := c.Tracer(ctx, map[string]string{
+		"revision": strconv.Itoa(rev),
+		"language": lng,
+		"project":  prj,
+		"model":    "reference-risk",
+	})
+
+	req, err := c.newLiftWingRequest(trx, rev, lng, prj, "reference-risk")
+	if err != nil {
+		end(err, "new referencerisk request failed")
+		return nil, err
+	}
+
+	res, err := c.do(c.HTTPClientLiftWing, req)
+	if err != nil {
+		end(err, "referencerisk score request failed")
+		return nil, err
+	}
+	defer res.Body.Close()
+
+	var result ReferenceRiskScore
+	if err := json.NewDecoder(res.Body).Decode(&result); err != nil {
+		end(err, "referencerisk score decode failed")
+		return nil, err
+	}
+
+	end(nil, "referencerisk score fetched")
+	return &result, nil
+}
+
+// newLiftWingRequest constructs an HTTP request for the LiftWing models.
 func (c *Client) newLiftWingRequest(ctx context.Context, rev int, lng string, prj string, mdl string) (*http.Request, error) {
+
 	bdy := map[string]interface{}{
 		"rev_id": rev,
 		"lang":   lng,
 	}
 
-	url := fmt.Sprintf("%s%s-%s:predict", c.LiftWingBaseURL, prj, mdl)
-
-	if mdl == "revertrisk" {
-		url = fmt.Sprintf("%s%s-language-agnostic:predict", c.LiftWingBaseURL, mdl)
+	// Add extended_output parameter for Reference Risk
+	if mdl == "referencerisk" {
+		bdy["extended_output"] = "true"
 	}
 
-	jby, err := json.Marshal(bdy)
+	// Construct URL dynamically
+	url := c.getModelURL(prj, mdl)
 
+	jby, err := json.Marshal(bdy)
 	if err != nil {
 		return nil, err
 	}
 
 	req, err := http.NewRequestWithContext(ctx, http.MethodPost, url, bytes.NewBuffer(jby))
-
 	if err != nil {
 		return nil, err
 	}
@@ -1413,9 +1729,33 @@ func (c *Client) newLiftWingRequest(ctx context.Context, rev int, lng string, pr
 	return req, nil
 }
 
+// getModelURL constructs the appropriate API URL based on the model.
+func (c *Client) getModelURL(prj, mdl string) string {
+	switch mdl {
+	case "revertrisk":
+		return fmt.Sprintf("%s%s-language-agnostic:predict", c.LiftWingBaseURL, mdl)
+	case "reference-risk", "reference-need":
+		return fmt.Sprintf("%s%s:predict", c.LiftWingBaseURL, mdl)
+	default:
+		return fmt.Sprintf("%s%s-%s:predict", c.LiftWingBaseURL, prj, mdl)
+	}
+}
+
 // DownloadFile downloads a file from Wikimedia Commons using the provided file full url path.
 // Optional ops can be used to set headers like Range or other request parameters.
-func (c *Client) DownloadFile(ctx context.Context, urp string, ops ...func(*http.Request)) ([]byte, error) {
+func (c *Client) DownloadFile(ctx context.Context, urlPath string, ops ...func(*http.Request)) ([]byte, error) {
+
+	return c.fileOperation(ctx, urlPath, http.MethodGet, ops...)
+}
+
+// HeadFile does a HEAD call for a file from Wikimedia Commons using the provided file full url path.
+func (c *Client) HeadFile(ctx context.Context, urlPath string, ops ...func(*http.Request)) ([]byte, error) {
+
+	return c.fileOperation(ctx, urlPath, http.MethodHead, ops...)
+}
+
+// fileOperation helper method to allow all operations on a wikimedia file.
+func (c *Client) fileOperation(ctx context.Context, urlPath string, method string, ops ...func(*http.Request)) ([]byte, error) {
 	end, trx := c.Tracer(ctx, map[string]string{"database": "commonswiki"})
 	var err error
 	defer func() {
@@ -1426,22 +1766,22 @@ func (c *Client) DownloadFile(ctx context.Context, urp string, ops ...func(*http
 		}
 	}()
 
-	pur, err := url.Parse(urp)
+	parsedURL, err := url.Parse(urlPath)
 
 	if err != nil {
 		return nil, err
 	}
 
-	pur.RawPath = pur.EscapedPath()
+	parsedURL.RawPath = parsedURL.EscapedPath()
 
-	req, err := http.NewRequestWithContext(trx, http.MethodGet, pur.String(), nil)
+	req, err := http.NewRequestWithContext(trx, method, parsedURL.String(), nil)
 
 	if err != nil {
 		return nil, err
 	}
 
 	// NewRequestWithContext decodes the url. We need to use the original url to retrieve the file.
-	req.URL = pur
+	req.URL = parsedURL
 	req.Header.Set("User-Agent", c.UserAgent)
 
 	for _, opt := range ops {
@@ -1463,4 +1803,73 @@ func (c *Client) DownloadFile(ctx context.Context, urp string, ops ...func(*http
 	}
 
 	return dta, nil
+}
+
+func (c *Client) GetContributors(ctx context.Context, database string, pageid int, maxRegistered *int, ops ...func(*url.Values)) (pages []*Page, fetchedAll bool, err error) {
+	var previousResponse *Response
+	registeredSoFar := 0
+
+	for {
+		bdy := url.Values{}
+		bdy.Set("action", "query")
+		bdy.Set("prop", "contributors")
+		bdy.Set("pageids", strconv.Itoa(pageid))
+		bdy.Set("pclimit", "max")
+		bdy.Set("format", "json")
+		bdy.Set("formatversion", "2")
+		for _, opt := range ops {
+			opt(&bdy)
+		}
+
+		if previousResponse != nil {
+			for key, val := range previousResponse.Continue {
+				bdy.Set(key, val)
+			}
+		}
+
+		var err error
+		previousResponse, err = c.sendRequest(ctx, database, bdy)
+		if err != nil {
+			return nil, false, err
+		}
+
+		pages = append(pages, previousResponse.Query.Pages...)
+
+		if previousResponse.BatchComplete {
+			break
+		}
+
+		if maxRegistered != nil {
+			for _, page := range previousResponse.Query.Pages {
+				registeredSoFar += len(page.Contributors)
+			}
+			if registeredSoFar >= *maxRegistered {
+				break
+			}
+		}
+	}
+
+	return pages, previousResponse.BatchComplete, nil
+}
+
+func (c *Client) GetContributorsCount(ctx context.Context, database string, pageid int, maxRegistered *int, ops ...func(*url.Values)) (*ContributorsCount, error) {
+	pages, fetchedAll, err := c.GetContributors(ctx, database, pageid, maxRegistered, ops...)
+	if err != nil {
+		return nil, err
+	}
+
+	anon := 0
+	reg := 0
+	for _, page := range pages {
+		// Don't add anonymous, every page has the full count.
+		anon = page.AnonymousContributors
+
+		reg += len(page.Contributors)
+	}
+
+	return &ContributorsCount{
+		AnonymousCount:        anon,
+		RegisteredCount:       reg,
+		AllRegisteredIncluded: fetchedAll,
+	}, nil
 }

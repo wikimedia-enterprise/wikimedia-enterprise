@@ -12,11 +12,11 @@ import (
 	"github.com/aws/aws-sdk-go/service/s3"
 	"go.uber.org/dig"
 
-	"wikimedia-enterprise/general/log"
-	"wikimedia-enterprise/general/schema"
 	"wikimedia-enterprise/services/snapshots/config/env"
 	pb "wikimedia-enterprise/services/snapshots/handlers/protos"
 	"wikimedia-enterprise/services/snapshots/libraries/s3tracerproxy"
+	"wikimedia-enterprise/services/snapshots/submodules/log"
+	"wikimedia-enterprise/services/snapshots/submodules/schema"
 )
 
 // Handler represents dependency injection and logic for the aggregate handler.
@@ -36,16 +36,24 @@ func (h *Handler) Aggregate(ctx context.Context, req *pb.AggregateRequest) (*pb.
 
 	key := prx
 
-	if req.GetSince() > 0 {
-		key = fmt.Sprintf("%s/%s",
-			prx,
-			time.Unix(0, req.GetSince()*int64(time.Millisecond)).Format("2006-01-02"),
-		)
-	}
-
 	// if snapshot_identifier is present, append it to the key
 	if req.GetSnapshot() != "" {
 		key = fmt.Sprintf("%s/%s", key, req.GetSnapshot())
+	}
+	outputPath := fmt.Sprintf("aggregations/%s/%s.ndjson", key, prx)
+
+	if req.GetSince() > 0 {
+		if req.GetPrefix() == "batches" {
+			key = fmt.Sprintf("%s/%s",
+				prx,
+				time.Unix(0, req.GetSince()*int64(time.Millisecond)).Format("2006-01-02"),
+			)
+			outputPath = fmt.Sprintf("aggregations/%s/%s.ndjson", key, prx)
+		} else if strings.Index(req.GetPrefix(), "batches") == 0 {
+			// Example: batches/2025-07-02/02
+			key = req.GetPrefix()
+			outputPath = fmt.Sprintf("aggregations/%s/batches.ndjson", key)
+		}
 	}
 
 	kys := []*string{}
@@ -55,7 +63,11 @@ func (h *Handler) Aggregate(ctx context.Context, req *pb.AggregateRequest) (*pb.
 	}
 	gpf := func(out *s3.ListObjectsV2Output, _ bool) bool {
 		for _, cnt := range out.Contents {
-			if strings.HasSuffix(*cnt.Key, ".json") && !strings.Contains(*cnt.Key, h.Env.FreeTierGroup) {
+			withoutPrefix, found := strings.CutPrefix(*cnt.Key, key)
+			withoutPrefix = strings.TrimLeft(withoutPrefix, "/")
+			// Ignore files in sub-paths.
+			isInSubPath := !found || strings.Contains(withoutPrefix, "/")
+			if strings.HasSuffix(*cnt.Key, ".json") && !strings.Contains(*cnt.Key, h.Env.FreeTierGroup) && !isInSubPath {
 				kys = append(kys, cnt.Key)
 			}
 		}
@@ -120,7 +132,7 @@ func (h *Handler) Aggregate(ctx context.Context, req *pb.AggregateRequest) (*pb.
 	if len(hrs) > 0 {
 		pin := &s3.PutObjectInput{
 			Bucket: aws.String(h.Env.AWSBucket),
-			Key:    aws.String(fmt.Sprintf("aggregations/%s/%s.ndjson", key, prx)),
+			Key:    aws.String(outputPath),
 			Body:   strings.NewReader(strings.Trim(hrs, "\n")),
 		}
 

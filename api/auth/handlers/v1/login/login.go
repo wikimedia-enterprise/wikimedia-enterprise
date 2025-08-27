@@ -5,11 +5,12 @@ import (
 	"crypto/hmac"
 	"crypto/sha256"
 	"encoding/base64"
+	"errors"
 	"fmt"
 	"net/http"
 	"wikimedia-enterprise/api/auth/config/env"
-	"wikimedia-enterprise/general/httputil"
-	"wikimedia-enterprise/general/log"
+	"wikimedia-enterprise/api/auth/submodules/httputil"
+	"wikimedia-enterprise/api/auth/submodules/log"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/cognitoidentityprovider"
@@ -41,14 +42,19 @@ type Model struct {
 	Password string `json:"password" form:"password" binding:"required,min=1,max=255"`
 }
 
+var (
+	// Here, "internal" means the error is on our side (Wikimedia Enterprise), not necessarily in the auth API server.
+	internalErr = errors.New("Internal error, please try again later.")
+)
+
 // NewHandler creates new login HTTP handler.
 func NewHandler(p *Parameters) gin.HandlerFunc {
 	return func(gcx *gin.Context) {
 		mdl := new(Model)
 
 		if err := gcx.ShouldBind(mdl); err != nil {
-			log.Error(err, log.Tip("problem binding request input to new login model"))
-			httputil.UnprocessableEntity(gcx, err)
+			log.Error(err, log.Tip("problem binding request input to new login model"), log.Any("url", gcx.Request.URL.String()))
+			httputil.UnprocessableEntity(gcx, internalErr)
 			return
 		}
 
@@ -56,7 +62,7 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 
 		if _, err := h.Write([]byte(fmt.Sprintf("%s%s", mdl.Username, p.Env.CognitoClientID))); err != nil {
 			log.Error(err, log.Tip("problem in login with writing user and cognito client id"))
-			httputil.InternalServerError(gcx, err)
+			httputil.InternalServerError(gcx, internalErr)
 			return
 		}
 
@@ -71,8 +77,8 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 		})
 
 		if err != nil {
-			log.Error(err, log.Tip("problem authentication user during login, unauthorized"))
-			httputil.Unauthorized(gcx, err)
+			log.Error(err, log.Tip("problem authenticating user during login, unauthorized"))
+			httputil.Unauthorized(gcx, errors.New("Incorrect username or password."))
 			return
 		}
 
@@ -82,12 +88,18 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 			rsp.IDToken = *out.AuthenticationResult.IdToken
 			rsp.AccessToken = *out.AuthenticationResult.AccessToken
 			rsp.RefreshToken = *out.AuthenticationResult.RefreshToken
-			rsp.ExpiresIn = int(*out.AuthenticationResult.ExpiresIn)
+
+			if out.AuthenticationResult.ExpiresIn != nil {
+				rsp.ExpiresIn = int(*out.AuthenticationResult.ExpiresIn)
+			}
 		}
 
 		if out.ChallengeName != nil && len(*out.ChallengeName) > 0 {
 			rsp.ChallengeName = *out.ChallengeName
-			rsp.Session = *out.Session
+
+			if out.Session != nil {
+				rsp.Session = *out.Session
+			}
 		}
 
 		gcx.JSON(http.StatusOK, rsp)

@@ -1,4 +1,4 @@
-# Wikimedia Enterprise Realtime API
+# Realtime API
 
 This service exposes API endpoints that allow clients to subscribe to article topics from the structured data service. For each API call, a kafka consumer is created and article event messages are streamed to this consumer.
 
@@ -6,10 +6,18 @@ This service exposes API endpoints that allow clients to subscribe to article to
 
 Need to make sure that `go`, `docker` and `docker-compose` is installed on your machine.
 
+1. Init and update `git` sub-modules by running:
+
+   ```bash
+   git submodule update --init --remote --recursive
+   ```
+
 1. Create `.env` file in the project root with following content:
 
    ```bash
    KSQL_URL=http://ksqldb:8088
+   KAFKA_BOOTSTRAP_SERVERS=broker:29092
+   SCHEMA_REGISTRY_URL=http://schemaregistry:8085
    SERVER_MODE=release
    SERVER_PORT=4040
    AWS_REGION=us-east-1
@@ -17,8 +25,28 @@ Need to make sure that `go`, `docker` and `docker-compose` is installed on your 
    AWS_KEY=some_secret
    COGNITO_CLIENT_ID=your_cognito_id
    COGNITO_CLIENT_SECRET=
-   REDIS_ADDR=
+   REDIS_ADDR=cache:6379
    REDIS_PASSWORD=
+   LOG_LEVEL=debug
+   ACCESS_MODEL="[request_definition]
+   r = sub, obj, act
+
+   [policy_definition]
+   p = sub, obj, act
+
+   [role_definition]
+   g = _, _
+
+   [policy_effect]
+   e = some(where (p.eft == allow))
+
+   [matchers]
+   m = (g(r.sub, p.sub) || keyMatch(r.sub, p.sub)) && keyMatch2(r.obj, p.obj) && regexMatch(r.act, p.act)
+   "
+   ACCESS_POLICY="p, realtime, /v2/articles, GET
+   p, realtime, /v2/articles, POST
+   g, group_3, realtime
+   "
    ```
 
 1. Start the application by running:

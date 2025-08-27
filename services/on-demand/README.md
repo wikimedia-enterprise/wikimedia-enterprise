@@ -6,6 +6,12 @@ Stores each article and version in a structured way, reflects changes from diffe
 
 Need to make sure that `go`, `docker` and `docker-compose` is installed on your machine.
 
+1. Init and update `git` sub-modules by running:
+
+   ```bash
+   git submodule update --init --remote --recursive
+   ```
+
 1. Create `.env` file in the project root with following content:
 
    ```bash
@@ -17,6 +23,7 @@ Need to make sure that `go`, `docker` and `docker-compose` is installed on your 
    AWS_BUCKET=wme-data
    AWS_KEY=password
    AWS_ID=admin
+   TOPIC_ARTICLES=["aws.structured-data.articles.v1"]
    ```
 
 1. Start the application by running:

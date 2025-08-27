@@ -12,7 +12,7 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
 
-	"wikimedia-enterprise/general/tracing"
+	"wikimedia-enterprise/services/snapshots/submodules/tracing"
 )
 
 // MockTracer is a mock implementation of the Tracer interface

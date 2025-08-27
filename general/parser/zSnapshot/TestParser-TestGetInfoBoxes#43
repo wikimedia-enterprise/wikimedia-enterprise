@@ -1,0 +1,1081 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=13) "Infobox river",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) (len=39) "Ganges Ganga (India) Padma (Bangladesh)",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=22) "The Ganges in Varanasi",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=99) "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Varanasiganga.jpg/300px-Varanasiganga.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) (len=22) "The Ganges in Varanasi",
+                Height: (int) 300,
+                Width: (int) 300
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Varanasi",
+                Text: (string) (len=8) "Varanasi",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=99) "Map of the combined drainage basins of the Ganges (yellow), Brahmaputra (violet) and Meghna (green)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Ganges-Brahmaputra-Meghna_basins.jpg/220px-Ganges-Brahmaputra-Meghna_basins.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) (len=99) "Map of the combined drainage basins of the Ganges (yellow), Brahmaputra (violet) and Meghna (green)",
+                Height: (int) 220,
+                Width: (int) 220
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Etymology",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "Ganga (goddess)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Ganga_(goddess)",
+                Text: (string) (len=15) "Ganga (goddess)",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=8) "Location",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) (len=7) "Country",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=39) "India (as Ganga), Bangladesh (as Padma)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/India",
+                Text: (string) (len=5) "India",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Bangladesh",
+                Text: (string) (len=10) "Bangladesh",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Padma",
+                Text: (string) (len=5) "Padma",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Cities",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=669) "Uttarakhand: Rishikesh, Haridwar Uttar Pradesh: Fatehgarh, Bijnor, Kannauj, Bithoor, Kasganj, Kanpur, Allahabad, Mirzapur, Varanasi, Ghazipur, Ballia, Lucknow (Gomti tributary), Farrukhabad, Narora Bihar: Begusarai, Bhagalpur, Patna, Vaishali, Munger, Khagaria, Katihar Madhya Pradesh: Bhopal Jharkhand: Sahibganj West Bengal: Murshidabad, Plassey, Nabadwip, Shantipur, Kolkata, Uttarpara, Baranagar, Diamond Harbour, Haldia, Budge Budge, Howrah, Uluberia, Barrackpore Delhi: (Yamuna) tributary Rajshahi Division: Rajshahi, Pabna, Ishwardi Dhaka Division: Dhaka, Narayanganj, Gazipur, Munshiganj, Faridpur Chittagong Division: Chandpur, Noakhali Barisal Division: Bhola",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=62) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Uttarakhand",
+                Text: (string) (len=11) "Uttarakhand",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Rishikesh",
+                Text: (string) (len=9) "Rishikesh",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Haridwar",
+                Text: (string) (len=8) "Haridwar",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Uttar_Pradesh",
+                Text: (string) (len=13) "Uttar Pradesh",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Fatehgarh",
+                Text: (string) (len=9) "Fatehgarh",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Bijnor",
+                Text: (string) (len=6) "Bijnor",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Kannauj",
+                Text: (string) (len=7) "Kannauj",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Bithoor",
+                Text: (string) (len=7) "Bithoor",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Kasganj",
+                Text: (string) (len=7) "Kasganj",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Kanpur",
+                Text: (string) (len=6) "Kanpur",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Allahabad",
+                Text: (string) (len=9) "Allahabad",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Mirzapur",
+                Text: (string) (len=8) "Mirzapur",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Varanasi",
+                Text: (string) (len=8) "Varanasi",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Ghazipur",
+                Text: (string) (len=8) "Ghazipur",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Ballia",
+                Text: (string) (len=6) "Ballia",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Lucknow",
+                Text: (string) (len=7) "Lucknow",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Gomti_River",
+                Text: (string) (len=5) "Gomti",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Farrukhabad",
+                Text: (string) (len=11) "Farrukhabad",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Narora",
+                Text: (string) (len=6) "Narora",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Bihar",
+                Text: (string) (len=5) "Bihar",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Begusarai",
+                Text: (string) (len=9) "Begusarai",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Bhagalpur",
+                Text: (string) (len=9) "Bhagalpur",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Patna",
+                Text: (string) (len=5) "Patna",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Vaishali_district",
+                Text: (string) (len=8) "Vaishali",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Munger",
+                Text: (string) (len=6) "Munger",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Khagaria",
+                Text: (string) (len=8) "Khagaria",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Katihar",
+                Text: (string) (len=7) "Katihar",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Madhya_Pradesh",
+                Text: (string) (len=14) "Madhya Pradesh",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Bhopal",
+                Text: (string) (len=6) "Bhopal",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Jharkhand",
+                Text: (string) (len=9) "Jharkhand",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Sahibganj",
+                Text: (string) (len=9) "Sahibganj",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/West_Bengal",
+                Text: (string) (len=11) "West Bengal",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Murshidabad",
+                Text: (string) (len=11) "Murshidabad",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Palashi",
+                Text: (string) (len=7) "Plassey",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Nabadwip",
+                Text: (string) (len=8) "Nabadwip",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Shantipur",
+                Text: (string) (len=9) "Shantipur",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Kolkata",
+                Text: (string) (len=7) "Kolkata",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Uttarpara",
+                Text: (string) (len=9) "Uttarpara",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Baranagar",
+                Text: (string) (len=9) "Baranagar",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Diamond_Harbour",
+                Text: (string) (len=15) "Diamond Harbour",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Haldia",
+                Text: (string) (len=6) "Haldia",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Budge_Budge",
+                Text: (string) (len=11) "Budge Budge",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Howrah",
+                Text: (string) (len=6) "Howrah",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Uluberia",
+                Text: (string) (len=8) "Uluberia",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Barrackpore",
+                Text: (string) (len=11) "Barrackpore",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Delhi",
+                Text: (string) (len=5) "Delhi",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Yamuna",
+                Text: (string) (len=6) "Yamuna",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Rajshahi_Division",
+                Text: (string) (len=17) "Rajshahi Division",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Rajshahi",
+                Text: (string) (len=8) "Rajshahi",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Pabna",
+                Text: (string) (len=5) "Pabna",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Ishwardi_Upazila",
+                Text: (string) (len=8) "Ishwardi",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Dhaka_Division",
+                Text: (string) (len=14) "Dhaka Division",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Dhaka",
+                Text: (string) (len=5) "Dhaka",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Narayanganj",
+                Text: (string) (len=11) "Narayanganj",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Gazipur",
+                Text: (string) (len=7) "Gazipur",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Munshiganj_Sadar_Upazila",
+                Text: (string) (len=10) "Munshiganj",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Faridpur,_Bangladesh",
+                Text: (string) (len=8) "Faridpur",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Chittagong_Division",
+                Text: (string) (len=19) "Chittagong Division",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Chandpur_Sadar_Upazila",
+                Text: (string) (len=8) "Chandpur",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Noakhali_Sadar_Upazila",
+                Text: (string) (len=8) "Noakhali",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Barisal_Division",
+                Text: (string) (len=16) "Barisal Division",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Bhola_Sadar_Upazila",
+                Text: (string) (len=5) "Bhola",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=24) "Physical characteristics",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=17) {
+          (*parser.Part)({
+            Name: (string) (len=6) "Source",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=308) "Confluence at Devprayag, Uttarakhand of the Alaknanda river (the source stream in hydrology because of its greater length) and the Bhagirathi river (the source stream in Hindu mythology). The headwaters of the river include: Mandakini, Nandakini, Pindar and the Dhauliganga, all tributaries of the Alaknanda.",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=12) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Devprayag",
+                Text: (string) (len=9) "Devprayag",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Uttarakhand",
+                Text: (string) (len=11) "Uttarakhand",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Alaknanda_River",
+                Text: (string) (len=15) "Alaknanda river",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/River_source",
+                Text: (string) (len=13) "source stream",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Hydrology",
+                Text: (string) (len=9) "hydrology",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Bhagirathi_River",
+                Text: (string) (len=16) "Bhagirathi river",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Hindu_mythology",
+                Text: (string) (len=15) "Hindu mythology",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Mandakini_River",
+                Text: (string) (len=9) "Mandakini",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Nandakini",
+                Text: (string) (len=9) "Nandakini",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Pindar_River",
+                Text: (string) (len=6) "Pindar",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Dhauliganga_River",
+                Text: (string) (len=11) "Dhauliganga",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=66) "https://en.wikipedia.org/wiki/Ganges#cite_note-ganges-britannica-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "location",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=55) "Devprayag, the beginning of the main stem of the Ganges",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Main_stem",
+                Text: (string) (len=9) "main stem",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Mouth",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Bay of Bengal",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/River_mouth",
+                Text: (string) (len=5) "Mouth",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Bay_of_Bengal",
+                Text: (string) (len=13) "Bay of Bengal",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "location",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Ganges Delta",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Ganges_Delta",
+                Text: (string) (len=12) "Ganges Delta",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Length",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "3,200 km (2,000 mi)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=77) "https://en.wikipedia.org/wiki/Ganges#cite_note-FOOTNOTEJainAgarwalSingh2007-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Basin size",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=30) "1,999,000 km 2 (772,000 sq mi)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/Ganges#cite_note-cbsharma-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Discharge",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Discharge",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "location",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=104) "Mouth of the Ganges (Ganges-Brahmaputra-Meghna; Basin size 1,999,000 km 2 (772,000 sq mi), Bay of Bengal",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Ganges_Delta",
+                Text: (string) (len=19) "Mouth of the Ganges",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Bay_of_Bengal",
+                Text: (string) (len=13) "Bay of Bengal",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/Ganges#cite_note-cbsharma-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "average",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=100) "38,129 m 3 /s (1,346,500 cu ft/s) to 43,900 m 3 /s (1,550,000 cu ft/s) 1,389 km 3 /a (44,000 m 3 /s)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=77) "https://en.wikipedia.org/wiki/Ganges#cite_note-FOOTNOTEKumarSinghSharma2005-4",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/Ganges#cite_note-cbsharma-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Discharge",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Discharge",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "location",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=27) "Ganges Delta, Bay of Bengal",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Ganges_Delta",
+                Text: (string) (len=12) "Ganges Delta",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Bay_of_Bengal",
+                Text: (string) (len=13) "Bay of Bengal",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "average",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=31) "18,691 m 3 /s (660,100 cu ft/s)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/Ganges#cite_note-cbsharma-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Discharge",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Discharge",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "location",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "Farakka Barrage",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Farakka_Barrage",
+                Text: (string) (len=15) "Farakka Barrage",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=77) "https://en.wikipedia.org/wiki/Ganges#cite_note-FOOTNOTEKumarSinghSharma2005-4",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "average",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=31) "16,648 m 3 /s (587,900 cu ft/s)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "minimum",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=26) "180 m 3 /s (6,400 cu ft/s)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "maximum",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=33) "70,000 m 3 /s (2,500,000 cu ft/s)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=14) "Basin features",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) (len=11) "Tributaries",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "Tributaries",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "left",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=93) "Ramganga, Garra, Gomti, Ghaghara, Gandak, Burhi Gandak, Koshi, Mahananda, Brahmaputra, Meghna",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=10) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Ramganga",
+                Text: (string) (len=8) "Ramganga",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Garra",
+                Text: (string) (len=5) "Garra",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Gomti_River",
+                Text: (string) (len=5) "Gomti",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Ghaghara_River",
+                Text: (string) (len=8) "Ghaghara",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Gandak_River",
+                Text: (string) (len=6) "Gandak",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Burhi_Gandak_River",
+                Text: (string) (len=12) "Burhi Gandak",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Koshi_River",
+                Text: (string) (len=5) "Koshi",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Mahananda_River",
+                Text: (string) (len=9) "Mahananda",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Brahmaputra_River",
+                Text: (string) (len=11) "Brahmaputra",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Barak_River",
+                Text: (string) (len=6) "Meghna",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "right",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=106) "Yamuna, Tamsa (also called Tons), Karamnasa, Sone, Punpun, Falgu, Kiul, Chandan, Ajoy, Damodar, Rupnarayan",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=10) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Yamuna",
+                Text: (string) (len=6) "Yamuna",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Tamsa_River",
+                Text: (string) (len=5) "Tamsa",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Karmanasa_River",
+                Text: (string) (len=9) "Karamnasa",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Sone_River",
+                Text: (string) (len=4) "Sone",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Punpun_River",
+                Text: (string) (len=6) "Punpun",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Falgu_River",
+                Text: (string) (len=5) "Falgu",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Kiul_River",
+                Text: (string) (len=4) "Kiul",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Chandan_River",
+                Text: (string) (len=7) "Chandan",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://en.wikipedia.org/wiki/Ajoy",
+                Text: (string) (len=4) "Ajoy",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Damodar_River",
+                Text: (string) (len=7) "Damodar",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

@@ -2,7 +2,7 @@ package aggregate
 
 import (
 	"strings"
-	"wikimedia-enterprise/general/wmf"
+	"wikimedia-enterprise/services/structured-data/submodules/wmf"
 )
 
 // IsNotFatalError checks whether an error is a known non-fatal error and returns true if it is.

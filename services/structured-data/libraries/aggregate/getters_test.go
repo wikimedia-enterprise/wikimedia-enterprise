@@ -3,12 +3,14 @@ package aggregate_test
 import (
 	"context"
 	"errors"
+	"fmt"
 	"net/url"
 	"sort"
+	"strings"
 	"testing"
 	"time"
-	"wikimedia-enterprise/general/wmf"
 	"wikimedia-enterprise/services/structured-data/libraries/aggregate"
+	"wikimedia-enterprise/services/structured-data/submodules/wmf"
 
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
@@ -65,15 +67,37 @@ func (m *wmfAPIMock) GetPagesHTML(_ context.Context, dtb string, tls []string, m
 	return ags.Get(0).(map[string]*wmf.PageHTML)
 }
 
+func (m *wmfAPIMock) GetRevisionsHTML(_ context.Context, dtb string, rvs []string, mxc int, _ ...func(*url.Values)) map[string]*wmf.PageHTML {
+	ags := m.Called(dtb, rvs, mxc)
+
+	return ags.Get(0).(map[string]*wmf.PageHTML)
+}
+
 func (m *wmfAPIMock) GetUsers(_ context.Context, dtb string, ids []int, _ ...func(*url.Values)) (map[int]*wmf.User, error) {
 	ags := m.Called(dtb, ids)
 
 	return ags.Get(0).(map[int]*wmf.User), ags.Error(1)
 }
 
-func (m *wmfAPIMock) GetScore(_ context.Context, rvd int, lng string, prj string, mdl string) (*wmf.Score, error) {
-	ags := m.Called(rvd, lng, mdl)
-	return ags.Get(0).(*wmf.Score), ags.Error(1)
+func (m *wmfAPIMock) GetScore(ctx context.Context, rev int, lng, prj, mdl string) (*wmf.Score, error) {
+	ags := m.Called(ctx, rev, lng, prj, mdl)
+
+	var scr *wmf.Score
+	if result := ags.Get(0); result != nil {
+		scr, _ = result.(*wmf.Score)
+	}
+
+	return scr, ags.Error(1)
+}
+
+func (m *wmfAPIMock) GetReferenceRiskScore(ctx context.Context, rev int, lng, prj string) (*wmf.ReferenceRiskScore, error) {
+	args := m.Called(ctx, rev, lng, prj)
+	return args.Get(0).(*wmf.ReferenceRiskScore), args.Error(1)
+}
+
+func (m *wmfAPIMock) GetReferenceNeedScore(ctx context.Context, rev int, lng, prj string) (*wmf.ReferenceNeedScore, error) {
+	args := m.Called(ctx, rev, lng, prj)
+	return args.Get(0).(*wmf.ReferenceNeedScore), args.Error(1)
 }
 
 type pagesGetterTestSuite struct {
@@ -283,6 +307,107 @@ func (s *withPagesHTMLTestSuite) TestWithPagesHTML() {
 
 func TestWithPagesHTML(t *testing.T) {
 	for _, testCase := range []*withPagesHTMLTestSuite{
+		{
+			mxc: 100,
+		},
+		{
+			mxc: 0,
+		},
+	} {
+		suite.Run(t, testCase)
+	}
+}
+
+type revisionsHTMlGetterTestSuite struct {
+	suite.Suite
+	ctx context.Context
+	phg *aggregate.RevisionsHTMLGetter
+	amc *wmfAPIMock
+	phs map[string]*wmf.PageHTML
+	rvs []string
+	dtb string
+	mxc int
+	hse bool
+}
+
+func (s *revisionsHTMlGetterTestSuite) SetupSuite() {
+	s.phg = &aggregate.RevisionsHTMLGetter{
+		MaxConcurrency: s.mxc,
+	}
+	s.amc = new(wmfAPIMock)
+	s.amc.On("GetRevisionsHTML", s.dtb, s.rvs, s.mxc).Return(s.phs)
+
+	s.phg.SetAPI(s.amc)
+}
+
+func (s *revisionsHTMlGetterTestSuite) TestGetData() {
+	dta, err := s.phg.GetData(s.ctx, s.dtb, s.rvs)
+
+	if s.hse {
+		s.Assert().Error(err)
+		s.Assert().Nil(dta)
+	} else {
+		s.Assert().NoError(err)
+		s.Assert().Equal(s.phs, dta)
+	}
+}
+
+func TestRevisionsHTMLGetter(t *testing.T) {
+	for _, testCase := range []*revisionsHTMlGetterTestSuite{
+		{
+			rvs: []string{"1234", "4567"},
+			dtb: "enwiki",
+			phs: map[string]*wmf.PageHTML{
+				"Earth": {},
+				"Ninja": {},
+			},
+			hse: false,
+			mxc: 1,
+		},
+		{
+			rvs: []string{"1234", "4567"},
+			dtb: "enwiki",
+			phs: map[string]*wmf.PageHTML{
+				"Earth": {
+					Error: errors.New("earth error"),
+				},
+				"Ninja": {},
+			},
+			hse: false,
+			mxc: 2,
+		},
+		{
+			rvs: []string{"1234", "4567"},
+			dtb: "enwiki",
+			phs: map[string]*wmf.PageHTML{
+				"Earth": {
+					Error: errors.New("earth error"),
+				},
+				"Ninja": {
+					Error: errors.New("Ninja error"),
+				},
+			},
+			mxc: 3,
+			hse: true,
+		},
+	} {
+		suite.Run(t, testCase)
+	}
+}
+
+type withRevisionsHTMLTestSuite struct {
+	suite.Suite
+	mxc int
+}
+
+func (s *withRevisionsHTMLTestSuite) TestWithRevisionsHTML() {
+	phg := aggregate.WithRevisionsHTML(s.mxc)
+
+	s.Assert().Equal(s.mxc, phg.MaxConcurrency)
+}
+
+func TestWithRevisionsHTML(t *testing.T) {
+	for _, testCase := range []*withRevisionsHTMLTestSuite{
 		{
 			mxc: 100,
 		},
@@ -534,79 +659,306 @@ func TestWithUsers(t *testing.T) {
 	}
 }
 
-type scoresGetterTestSuite struct {
+type scoreGetterTestSuite struct {
 	suite.Suite
-	ctx context.Context
-	agg *aggregate.ScoreGetter
-	amc *wmfAPIMock
-	lng string
-	rvd int
-	mdl string
-	tls []string
-	scr *wmf.Score
-	ser error
+	ctx       context.Context
+	sg        *aggregate.ScoreGetter
+	amc       *wmfAPIMock
+	lng       string
+	mdl       string
+	prj       string
+	revisions map[string]int
+	expected  map[string]*wmf.Score
+	ser       error
 }
 
-func (s *scoresGetterTestSuite) SetupSuite() {
+func (s *scoreGetterTestSuite) SetupSuite() {
 	s.ctx = context.Background()
 	s.amc = new(wmfAPIMock)
-	s.agg = &aggregate.ScoreGetter{
+	s.sg = &aggregate.ScoreGetter{
 		Language:       s.lng,
-		Revision:       map[string]int{s.tls[0]: s.rvd},
+		Revision:       s.revisions,
 		Model:          s.mdl,
+		Project:        s.prj,
 		RequestTimeout: time.Millisecond * 500,
 	}
-
-	s.amc.On("GetScore", s.rvd, s.lng, s.mdl).Return(s.scr, s.ser)
-	s.agg.SetAPI(s.amc)
+	s.sg.API = s.amc
 }
 
-func (s *scoresGetterTestSuite) TestGetData() {
-	scs, err := s.agg.GetData(s.ctx, s.lng, s.tls)
+func (s *scoreGetterTestSuite) TeardownSuite() {
+	s.amc.ExpectedCalls = nil
+}
 
-	if s.ser != nil {
-		s.Assert().Equal(s.ser, err)
-		s.Assert().Nil(scs)
-	} else if scs == nil && s.ser == nil {
-		s.Assert().Equal(s.ser, err)
-		s.Assert().Nil(scs)
-	} else {
-		rsc := map[string]*wmf.Score{}
-
-		for _, ttl := range s.tls {
-			rsc[ttl] = s.scr
+func (s *scoreGetterTestSuite) TestGetData() {
+	// Set up mock expectations for each revision
+	for title, rid := range s.revisions {
+		expectedScore, hasScore := s.expected[title]
+		if hasScore {
+			s.amc.On("GetScore", mock.MatchedBy(func(ctx context.Context) bool { return true }), rid, s.lng, s.prj, s.mdl).Return(expectedScore, nil)
+		} else {
+			s.amc.On("GetScore", mock.MatchedBy(func(ctx context.Context) bool { return true }), rid, s.lng, s.prj, s.mdl).Return(nil, s.ser)
 		}
-
-		s.Assert().Equal(rsc, scs)
 	}
+
+	scs, err := s.sg.GetData(s.ctx, s.lng, nil)
+
+	// If there were expected scores, check the results
+	if s.expected != nil {
+		s.Assert().Equal(s.expected, scs, "Expected scores map does not match actual result")
+	}
+
+	// Verify the error handling
+	if s.ser != nil {
+		s.Assert().Error(err, "Expected an error but got nil")
+		s.Assert().Contains(err.Error(), s.ser.Error(), "Expected error message to match")
+	} else {
+		s.Assert().NoError(err, "Expected no error but got one")
+	}
+
+	// Ensure all expectations are met
+	s.amc.AssertExpectations(s.T())
 }
 
-func TestScoresGetter(t *testing.T) {
-	for _, testCase := range []*scoresGetterTestSuite{
+func (s *scoreGetterTestSuite) TestGetDataWithTimeout() {
+	var cancel context.CancelFunc
+	s.ctx, cancel = context.WithTimeout(context.Background(), 1*time.Nanosecond) // Very short timeout
+	defer cancel()
+
+	for title, rid := range s.revisions {
+		if title == "Mars" { // Simulate timeout for "Mars"
+			s.amc.On("GetScore", mock.MatchedBy(func(ctx context.Context) bool { return true }), rid, s.lng, s.prj, s.mdl).
+				Run(func(args mock.Arguments) { time.Sleep(10 * time.Millisecond) }). // Delay execution
+				Return(nil, context.DeadlineExceeded)
+		} else { // Return a valid response for "Earth"
+			expectedScore := s.expected[title]
+			s.amc.On("GetScore", mock.MatchedBy(func(ctx context.Context) bool { return true }), rid, s.lng, s.prj, s.mdl).
+				Return(expectedScore, nil)
+		}
+	}
+
+	scs, err := s.sg.GetData(s.ctx, s.lng, nil)
+
+	if s.expected != nil {
+		s.Assert().Equal(s.expected, scs, "Expected scores map does not match actual result")
+	}
+
+	if err != nil && !strings.Contains(err.Error(), "API failure") {
+		s.Assert().Contains(err.Error(), context.DeadlineExceeded.Error(), "Expected error to be a deadline exceeded error")
+	} else if err != nil {
+		s.Assert().Contains(err.Error(), "API failure", "Expected error to be an API failure")
+	}
+
+	s.amc.AssertExpectations(s.T())
+}
+
+func TestScoreGetter(t *testing.T) {
+	for _, testCase := range []*scoreGetterTestSuite{
 		{
-			mdl: "revertrisk",
-			lng: "en",
-			rvd: 100,
-			ser: nil,
-			tls: []string{"Earth"},
-			scr: &wmf.Score{
-				Output: &wmf.LiftWingScore{
-					Prediction: false,
-					Probability: &wmf.BooleanProbability{
-						True:  0.1,
-						False: 0.9,
+			mdl:       "revertrisk",
+			lng:       "en",
+			prj:       "wikipedia",
+			revisions: map[string]int{"Earth": 102, "Mars": 101},
+			expected: map[string]*wmf.Score{
+				"Earth": {
+					Output: &wmf.LiftWingScore{
+						Prediction: false,
+						Probability: &wmf.BooleanProbability{
+							True:  0.1,
+							False: 0.9,
+						},
+					},
+				},
+				"Mars": {
+					Output: &wmf.LiftWingScore{
+						Prediction: false,
+						Probability: &wmf.BooleanProbability{
+							True:  0.1,
+							False: 0.9,
+						},
 					},
 				},
 			},
+			ser: nil,
 		},
-		// We want GetData to not return an error for now, not errors. No retries.
 		{
-			mdl: "revertrisk",
+			mdl:       "revertrisk",
+			lng:       "en",
+			prj:       "wikipedia",
+			revisions: map[string]int{"Earth": 102, "Mars": 101},
+			expected:  nil,
+			ser:       context.DeadlineExceeded,
+		},
+		{
+			mdl:       "revertrisk",
+			lng:       "en",
+			prj:       "wikipedia",
+			revisions: map[string]int{"Earth": 102, "Mars": 101},
+			expected:  nil,
+			ser:       errors.New("score: API failure"),
+		},
+		{
+			mdl:       "revertrisk",
+			lng:       "en",
+			prj:       "wikipedia",
+			revisions: map[string]int{"Earth": 103, "Mars": 104},
+			expected: map[string]*wmf.Score{
+				"Earth": {
+					Output: &wmf.LiftWingScore{
+						Prediction: false,
+						Probability: &wmf.BooleanProbability{
+							True:  0.3,
+							False: 0.7,
+						},
+					},
+				},
+			},
+			ser: context.DeadlineExceeded,
+		},
+		{
+			mdl:       "revertrisk",
+			lng:       "en",
+			prj:       "wikipedia",
+			revisions: map[string]int{"Earth": 103, "Mars": 104},
+			expected: map[string]*wmf.Score{
+				"Mars": {
+					Output: &wmf.LiftWingScore{
+						Prediction: false,
+						Probability: &wmf.BooleanProbability{
+							True:  0.5,
+							False: 0.5,
+						},
+					},
+				},
+			},
+			ser: errors.New("score: API failure"),
+		},
+	} {
+		suite.Run(t, testCase)
+	}
+}
+
+type referenceNeedScoreGetterTestSuite struct {
+	suite.Suite
+	ctx context.Context
+	agg *aggregate.ReferenceNeedScoreGetter
+	amc *wmfAPIMock
+	lng string
+	rvd int
+	prj string
+	tls []string
+	scr *wmf.ReferenceNeedScore
+	ser error
+}
+
+func (s *referenceNeedScoreGetterTestSuite) SetupSuite() {
+	s.ctx = context.Background()
+	s.amc = new(wmfAPIMock)
+	// Create the Revision map using the first title in tls.
+	s.agg = &aggregate.ReferenceNeedScoreGetter{
+		Language:       s.lng,
+		Revision:       map[string]int{s.tls[0]: s.rvd},
+		Project:        s.prj,
+		RequestTimeout: time.Millisecond * 500,
+	}
+	// The actual call is: GetReferenceNeedScore(ctx, s.rvd, s.lng, s.prj)
+	s.amc.On("GetReferenceNeedScore", mock.Anything, s.rvd, s.lng, s.prj).Return(s.scr, s.ser)
+	s.agg.SetAPI(s.amc)
+}
+
+func (s *referenceNeedScoreGetterTestSuite) TestGetData() {
+	scs, err := s.agg.GetData(s.ctx, "", nil)
+	if s.ser != nil {
+		s.Assert().Contains(err.Error(), s.ser.Error())
+		s.Assert().Nil(scs)
+	} else {
+		expected := make(map[string]*wmf.ReferenceNeedScore)
+		for _, ttl := range s.tls {
+			expected[ttl] = s.scr
+		}
+		s.Assert().Equal(expected, scs)
+	}
+}
+
+func TestReferenceNeedScoreGetter(t *testing.T) {
+	for _, testCase := range []*referenceNeedScoreGetterTestSuite{
+		{
 			lng: "en",
 			rvd: 100,
-			ser: nil, // We want GetData to not return an error for now. No retries.
-			scr: nil,
+			prj: "wiki",
 			tls: []string{"Earth"},
+			ser: nil,
+			scr: &wmf.ReferenceNeedScore{},
+		},
+		{
+			lng: "fr",
+			rvd: 101,
+			prj: "wiktionary",
+			tls: []string{"Earth"},
+			ser: fmt.Errorf("API error"),
+			scr: nil,
+		},
+	} {
+		suite.Run(t, testCase)
+	}
+}
+
+type referenceRiskScoreGetterTestSuite struct {
+	suite.Suite
+	ctx context.Context
+	agg *aggregate.ReferenceRiskScoreGetter
+	amc *wmfAPIMock
+	lng string
+	rvd int
+	tls []string
+	prj string
+	scr *wmf.ReferenceRiskScore
+	ser error
+}
+
+func (s *referenceRiskScoreGetterTestSuite) SetupSuite() {
+	s.ctx = context.Background()
+	s.amc = new(wmfAPIMock)
+	s.agg = &aggregate.ReferenceRiskScoreGetter{
+		Language:       s.lng,
+		Revision:       map[string]int{s.tls[0]: s.rvd},
+		Project:        s.prj,
+		RequestTimeout: time.Millisecond * 500,
+	}
+	s.amc.On("GetReferenceRiskScore", mock.Anything, s.rvd, s.lng, s.prj).Return(s.scr, s.ser)
+	s.agg.SetAPI(s.amc)
+}
+
+func (s *referenceRiskScoreGetterTestSuite) TestGetData() {
+	scs, err := s.agg.GetData(s.ctx, "", s.tls)
+	if s.ser != nil {
+		s.Assert().Contains(err.Error(), s.ser.Error())
+		s.Assert().Nil(scs)
+	} else {
+		expected := make(map[string]*wmf.ReferenceRiskScore)
+		for _, ttl := range s.tls {
+			expected[ttl] = s.scr
+		}
+		s.Assert().Equal(expected, scs)
+	}
+}
+
+func TestReferenceRiskScoreGetter(t *testing.T) {
+	for _, testCase := range []*referenceRiskScoreGetterTestSuite{
+		{
+			lng: "en",
+			rvd: 102,
+			prj: "wiki",
+			tls: []string{"Earth"},
+			ser: nil,
+			scr: &wmf.ReferenceRiskScore{},
+		},
+		{
+			lng: "es",
+			rvd: 103,
+			prj: "wikiquote",
+			tls: []string{"Earth"},
+			ser: fmt.Errorf("API timeout"),
+			scr: nil,
 		},
 	} {
 		suite.Run(t, testCase)

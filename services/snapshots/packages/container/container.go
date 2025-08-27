@@ -3,7 +3,6 @@
 package container
 
 import (
-	"wikimedia-enterprise/general/config"
 	"wikimedia-enterprise/services/snapshots/config/env"
 	"wikimedia-enterprise/services/snapshots/libraries/kafka"
 	"wikimedia-enterprise/services/snapshots/libraries/s3api"
@@ -11,6 +10,7 @@ import (
 	"wikimedia-enterprise/services/snapshots/libraries/stream"
 	trc "wikimedia-enterprise/services/snapshots/libraries/tracer"
 	"wikimedia-enterprise/services/snapshots/libraries/uploader"
+	"wikimedia-enterprise/services/snapshots/submodules/config"
 
 	"go.uber.org/dig"
 )

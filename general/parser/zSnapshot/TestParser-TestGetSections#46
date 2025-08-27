@@ -1,0 +1,3258 @@
+([]*parser.Part) (len=6) {
+  (*parser.Part)({
+    Name: (string) (len=8) "Abstract",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=328) "ISO/IEC 2022 Information technology—Character code structure and extension techniques, is an ISO / IEC standard (equivalent to the ECMA standard ECMA-35, the ANSI standard ANSI X3.41 and the Japanese Industrial Standard JIS X 0202) in the field of character encoding. Originating in 1971, it was most recently revised in 1994.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=6) {
+          (*parser.Link)({
+            URL: (string) (len=76) "https://en.wikipedia.org/wiki/International_Organization_for_Standardization",
+            Text: (string) (len=3) "ISO",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=71) "https://en.wikipedia.org/wiki/International_Electrotechnical_Commission",
+            Text: (string) (len=3) "IEC",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/Ecma_International",
+            Text: (string) (len=4) "ECMA",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=34) "https://en.wikipedia.org/wiki/ANSI",
+            Text: (string) (len=4) "ANSI",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=58) "https://en.wikipedia.org/wiki/Japanese_Industrial_Standard",
+            Text: (string) (len=28) "Japanese Industrial Standard",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/Character_encoding",
+            Text: (string) (len=18) "character encoding",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=671) "ISO 2022 specifies a general structure which character encodings can conform to, dedicating particular ranges of bytes (0x 00–1F and 0x7F–9F) to be used for non-printing control codes for formatting and in-band instructions (such as line breaks or formatting instructions for text terminals), rather than graphical characters. It also specifies a syntax for escape sequences, multiple-byte sequences beginning with the ESC control code, which can likewise be used for in-band instructions. Specific sets of control codes and escape sequences designed to be used with ISO 2022 include ISO/IEC 6429, portions of which are implemented by ANSI.SYS and terminal emulators.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=8) {
+          (*parser.Link)({
+            URL: (string) (len=41) "https://en.wikipedia.org/wiki/Hexadecimal",
+            Text: (string) (len=2) "0x",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://en.wikipedia.org/wiki/C0_and_C1_control_codes",
+            Text: (string) (len=13) "control codes",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/Newline",
+            Text: (string) (len=11) "line breaks",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Text_terminal",
+            Text: (string) (len=14) "text terminals",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=57) "https://en.wikipedia.org/wiki/C0_and_C1_control_codes#ESC",
+            Text: (string) (len=3) "ESC",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/ISO/IEC_6429",
+            Text: (string) (len=12) "ISO/IEC 6429",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=38) "https://en.wikipedia.org/wiki/ANSI.SYS",
+            Text: (string) (len=8) "ANSI.SYS",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/Terminal_emulator",
+            Text: (string) (len=18) "terminal emulators",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=524) "ISO 2022 itself also defines particular control codes and escape sequences which can be used for switching between different coded character sets (for example, between ASCII and the Japanese JIS X 0208) so as to use multiple in a single document, effectively combining them into a single stateful encoding (a feature less important since the advent of Unicode). It is designed to be usable in both 8-bit environments and 7-bit environments (those where only seven bits are usable in a byte, such as e-mail without 8BITMIME).",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=7) {
+          (*parser.Link)({
+            URL: (string) (len=49) "https://en.wikipedia.org/wiki/Coded_character_set",
+            Text: (string) (len=20) "coded character sets",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/ASCII",
+            Text: (string) (len=5) "ASCII",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0208",
+            Text: (string) (len=10) "JIS X 0208",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=54) "https://en.wikipedia.org/wiki/State_(computer_science)",
+            Text: (string) (len=8) "stateful",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/Unicode",
+            Text: (string) (len=7) "Unicode",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=36) "https://en.wikipedia.org/wiki/E-mail",
+            Text: (string) (len=6) "e-mail",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=38) "https://en.wikipedia.org/wiki/8BITMIME",
+            Text: (string) (len=8) "8BITMIME",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=25) "Encodings and conformance",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=5) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=488) "Writing systems with relatively few characters, such as Greek, Cyrillic, Arabic, or Hebrew, as well as forms of the Latin alphabet using diacritics or letters absent in the ISO Basic Latin alphabet, have historically been represented on computers with different 8- bit, single byte, extended ASCII encodings. Some of these, such as the ISO 8859 series, conform to ISO 2022, while others such as DOS code page 437 do not, usually due to not reserving the bytes 0x80–9F for control codes.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=13) {
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/Writing_system",
+            Text: (string) (len=15) "Writing systems",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Greek_script",
+            Text: (string) (len=5) "Greek",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=38) "https://en.wikipedia.org/wiki/Cyrillic",
+            Text: (string) (len=8) "Cyrillic",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Arabic_script",
+            Text: (string) (len=6) "Arabic",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=45) "https://en.wikipedia.org/wiki/Hebrew_alphabet",
+            Text: (string) (len=6) "Hebrew",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/Latin_alphabet",
+            Text: (string) (len=14) "Latin alphabet",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=39) "https://en.wikipedia.org/wiki/Diacritic",
+            Text: (string) (len=10) "diacritics",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=54) "https://en.wikipedia.org/wiki/ISO_Basic_Latin_alphabet",
+            Text: (string) (len=24) "ISO Basic Latin alphabet",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=33) "https://en.wikipedia.org/wiki/Bit",
+            Text: (string) (len=3) "bit",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=34) "https://en.wikipedia.org/wiki/SBCS",
+            Text: (string) (len=11) "single byte",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/Extended_ASCII",
+            Text: (string) (len=14) "extended ASCII",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=38) "https://en.wikipedia.org/wiki/ISO_8859",
+            Text: (string) (len=8) "ISO 8859",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Code_page_437",
+            Text: (string) (len=17) "DOS code page 437",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=869) "Certain East Asian languages, specifically Chinese, Japanese, and Korean (collectively \" CJK \"), are written using far more characters than the maximum of 256 which can be represented in a single byte, and were first represented on computers with language-specific double-byte encodings or variable-width encodings; some of these (such as the Simplified Chinese encoding GB 2312) conform to ISO 2022, while others (such as the Traditional Chinese encoding Big5) do not. Control codes in ISO 2022 are always represented with a single byte, regardless of the number of bytes used for graphical characters. CJK encodings used in 7-bit environments which use ISO 2022 mechanisms to switch between character sets are often given names starting with \"ISO-2022-\", most notably ISO-2022-JP, although some other CJK encodings such as EUC-JP also make use of ISO 2022 mechanisms.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=13) {
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/East_Asian",
+            Text: (string) (len=10) "East Asian",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Chinese_language",
+            Text: (string) (len=7) "Chinese",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/Japanese_language",
+            Text: (string) (len=8) "Japanese",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=45) "https://en.wikipedia.org/wiki/Korean_language",
+            Text: (string) (len=6) "Korean",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/CJK_characters",
+            Text: (string) (len=3) "CJK",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=34) "https://en.wikipedia.org/wiki/DBCS",
+            Text: (string) (len=21) "double-byte encodings",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://en.wikipedia.org/wiki/Variable-width_encoding",
+            Text: (string) (len=24) "variable-width encodings",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/Simplified_Chinese",
+            Text: (string) (len=18) "Simplified Chinese",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/GB_2312",
+            Text: (string) (len=7) "GB 2312",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://en.wikipedia.org/wiki/Traditional_Chinese",
+            Text: (string) (len=19) "Traditional Chinese",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=34) "https://en.wikipedia.org/wiki/Big5",
+            Text: (string) (len=4) "Big5",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=54) "https://en.wikipedia.org/wiki/ISO/IEC_2022#ISO-2022-JP",
+            Text: (string) (len=11) "ISO-2022-JP",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=36) "https://en.wikipedia.org/wiki/EUC-JP",
+            Text: (string) (len=6) "EUC-JP",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=352) "Since the first 256 code points of Unicode were taken from ISO 8859-1, Unicode inherits the concept of C0 and C1 control codes from ISO 2022, although it adds other non-printing characters besides the ISO 2022 control codes. However, Unicode transformation formats such as UTF-8 generally deviate from the ISO 2022 structure in various ways, including:",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=7) {
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/Code_point",
+            Text: (string) (len=11) "code points",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/Unicode",
+            Text: (string) (len=7) "Unicode",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/ISO_8859-1",
+            Text: (string) (len=10) "ISO 8859-1",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://en.wikipedia.org/wiki/C0_and_C1_control_codes",
+            Text: (string) (len=23) "C0 and C1 control codes",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=56) "https://en.wikipedia.org/wiki/Unicode_control_characters",
+            Text: (string) (len=29) "other non-printing characters",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=59) "https://en.wikipedia.org/wiki/Unicode_transformation_format",
+            Text: (string) (len=30) "Unicode transformation formats",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/UTF-8",
+            Text: (string) (len=5) "UTF-8",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=4) "list",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=153) "Using 8-bit bytes, but not representing the C1 codes in their single-byte forms specified in ISO 2022 (most UTFs, one exception being the obsolete UTF-1)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/UTF-1",
+                Text: (string) (len=5) "UTF-1",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=95) "Representing all characters, including control codes, with multiple bytes (e.g. UTF-16, UTF-32)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/UTF-16",
+                Text: (string) (len=6) "UTF-16",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/UTF-32",
+                Text: (string) (len=6) "UTF-32",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=135) "Mixing bytes with the most significant bit set and unset within the coded representation for a single code point (e.g. UTF-1, GB 18030)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Most_significant_bit",
+                Text: (string) (len=20) "most significant bit",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/GB_18030",
+                Text: (string) (len=8) "GB 18030",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=197) "ISO 2022 escape sequences do, however, exist for switching to and from UTF-8 as a \" coding system different from that of ISO 2022 \", which are supported by certain terminal emulators such as xterm.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=80) "https://en.wikipedia.org/wiki/ISO/IEC_2022#Interaction_with_other_coding_systems",
+            Text: (string) (len=45) "coding system different from that of ISO 2022",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/Terminal_emulator",
+            Text: (string) (len=18) "terminal emulators",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/Xterm",
+            Text: (string) (len=5) "xterm",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=8) "Overview",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) (len=8) "Elements",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=37) "ISO/IEC 2022 specifies the following:",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=5) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=249) "An infrastructure of multiple character sets with particular structures which may be included in a single character encoding system, including multiple graphical character sets and multiple sets of both primary (C0) and secondary (C1) control codes,",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=48) "https://en.wikipedia.org/wiki/Character_encoding",
+                    Text: (string) (len=18) "character encoding",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=53) "https://en.wikipedia.org/wiki/C0_and_C1_control_codes",
+                    Text: (string) (len=45) "primary (C0) and secondary (C1) control codes",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=78) "A format for encoding these sets, assuming that 8 bits are available per byte,",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=203) "A format for encoding these sets in the same encoding system when only 7 bits are available per byte, and a method for transforming any conformant character data to pass through such a 7-bit environment,",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=47) "The general structure of ANSI escape codes, and",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=47) "https://en.wikipedia.org/wiki/ANSI_escape_codes",
+                    Text: (string) (len=17) "ANSI escape codes",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=203) "Specific escape code formats for identifying individual character sets, for announcing the use of particular encoding features or subsets, and for interacting with or switching to other encoding systems.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=13) "Code versions",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=804) "A specific implementation does not have to implement all of the standard; the conformance level and the supported character sets are defined by the implementation. Although many of the mechanisms defined by the ISO/IEC 2022 standard are infrequently used, several established encodings are based on a subset of the ISO/IEC 2022 system. In particular, 7-bit encoding systems using ISO/IEC 2022 mechanisms include ISO-2022-JP (or JIS encoding), which has primarily been used in Japanese-language e-mail. 8-bit encoding systems conforming to ISO/IEC 2022 include ISO/IEC 4873 (ECMA-43), which is in turn conformed to by ISO/IEC 8859, and Extended Unix Code, which is used for East Asian languages. More specialised applications of ISO 2022 include the MARC-8 encoding system used in MARC 21 library records.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=9) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/ISO-2022-JP",
+                Text: (string) (len=11) "ISO-2022-JP",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/JIS_encoding",
+                Text: (string) (len=12) "JIS encoding",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/E-mail",
+                Text: (string) (len=6) "e-mail",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/ISO/IEC_4873",
+                Text: (string) (len=12) "ISO/IEC 4873",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/ISO/IEC_8859",
+                Text: (string) (len=12) "ISO/IEC 8859",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Extended_Unix_Code",
+                Text: (string) (len=18) "Extended Unix Code",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/East_Asia",
+                Text: (string) (len=10) "East Asian",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/MARC-8",
+                Text: (string) (len=6) "MARC-8",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/MARC_21",
+                Text: (string) (len=7) "MARC 21",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=28) "Designation escape sequences",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=532) "The escape sequences for switching to particular character sets or encodings are registered with the ISO-IR registry (except for those set apart for private use, the meanings of which are defined by vendors, or by protocol specifications such as ARIB STD-B24) and follow the patterns defined within the standard. Character encodings making use of these escape sequences require data to be processed sequentially in a forward direction, since the correct interpretation of the data depends on previously encountered escape sequences.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/ISO/IEC_2022#ISO-IR",
+                Text: (string) (len=6) "ISO-IR",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/ARIB_STD_B24_character_set",
+                Text: (string) (len=12) "ARIB STD-B24",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=446) "Specific profiles such as ISO-2022-JP may impose extra conditions, such as that the current character set is reset to US-ASCII before the end of a line. Furthermore, the escape sequences declaring the national character sets may be absent if a specific ISO-2022-based encoding permits or requires this, and dictates that particular national character sets are to be used. For example, ISO-8859-1 states that no defining escape sequence is needed.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=21) "Multi-byte characters",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=624) "To represent large character sets, ISO/IEC 2022 builds on ISO/IEC 646 's property that one seven-bit character will normally define 94 graphic (printable) characters (in addition to space and 33 control characters); if only the C0 control codes (narrowly defined) are excluded, this can be expanded to 96 characters. Using two bytes, it is thus possible to represent up to 8,836 (94×94) characters; and, using three bytes, up to 830,584 (94×94×94) characters. Though the standard defines it, no registered character set uses three bytes (although EUC-TW 's unregistered G2 does, as does the similarly unregistered CCCII).",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/ISO/IEC_646",
+                Text: (string) (len=11) "ISO/IEC 646",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Extended_Unix_Code#EUC-TW",
+                Text: (string) (len=6) "EUC-TW",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/CCCII",
+                Text: (string) (len=5) "CCCII",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=567) "For the two-byte character sets, the code point of each character is normally specified in so-called row-cell or kuten form, which comprises two numbers between 1 and 94 inclusive, specifying a row and cell of that character within the zone. For a three-byte set, an additional plane number is included at the beginning. The escape sequences do not only declare which character set is being used, but also whether the set is single-byte or multi-byte (although not how many bytes it uses if it is multi-byte), and also whether each byte has 94 or 96 permitted values.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Code_point",
+                Text: (string) (len=10) "code point",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Kuten",
+                Text: (string) (len=5) "kuten",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=14) "Code structure",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=12) {
+      (*parser.Part)({
+        Name: (string) (len=25) "Notation and nomenclature",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=349) "ISO/IEC 2022 coding specifies a two-layer mapping between character codes and displayed characters. Escape sequences allow any of a large registry of graphic character sets to be \"designated\" into one of four working sets, named G0 through G3, and shorter control sequences specify the working set that is \"invoked\" to interpret bytes in the stream.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Escape_sequence",
+                Text: (string) (len=16) "Escape sequences",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=687) "Encoding byte values (\"bit combinations\") are often given in column-line notation, where two decimal numbers in the range 00–15 (each corresponding to a single hexadecimal digit) are separated by a slash. Hence, for instance, codes 2/0 (0x20) through 2/15 (0x2F) inclusive may be referred to as \"column 02\". This is the notation used in the ISO/IEC 2022 / ECMA-35 standard itself. They may be described elsewhere using hexadecimal, as is often used in this article, or using the corresponding ASCII characters, although the escape sequences are actually defined in terms of byte values, and the graphic assigned to that byte value may be altered without affecting the control sequence.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/JIS_X_0208#Single_byte_codes",
+                Text: (string) (len=20) "column-line notation",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Hexadecimal",
+                Text: (string) (len=11) "hexadecimal",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=580) "Byte values from the 7-bit ASCII graphic range (hexadecimal 0x20–0x7F), being on the left side of a character code table, are referred to as \"GL\" codes (with \"GL\" standing for \"graphics left\") while bytes from the \"high ASCII\" range (0xA0–0xFF), if available (i.e. in an 8-bit environment), are referred to as the \"GR\" codes (\"graphics right\"). The terms \"CL\" (0x00–0x1F) and \"CR\" (0x80–0x9F) are defined for the control ranges, but the CL range always invokes the primary (C0) controls, whereas the CR range always either invokes the secondary (C1) controls or is unused.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=22) "Fixed coded characters",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=359) "The delete character DEL (0x7F), the escape character ESC (0x1B) and the space character SP (0x20) are designated \"fixed\" coded characters and are always available when G0 is invoked over GL, irrespective of what character sets are designated. They may not be included in graphical character sets, although other sizes or types of whitespace character may be.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Delete_character",
+                Text: (string) (len=16) "delete character",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Escape_character",
+                Text: (string) (len=16) "escape character",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Space_character",
+                Text: (string) (len=15) "space character",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Whitespace_character",
+                Text: (string) (len=20) "whitespace character",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=34) "General syntax of escape sequences",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=217) "Sequences using the ESC (escape) character take the form ESC F, where the ESC character is followed by zero or more intermediate bytes (I) from the range 0x20–0x2F, and one final byte (F) from the range 0x30–0x7E.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=317) "The first I byte, or absence thereof, determines the type of escape sequence; it might, for instance, designate a working set, or denote a single control function. In all types of escape sequences, F bytes in the range 0x30–0x3F are reserved for unregistered private uses defined by prior agreement between parties.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=440) "Control functions from some sets may make use of further bytes following the escape sequence proper. For example, the ISO 6429 control function \" Control Sequence Introducer \", which can be represented using an escape sequence, is followed by zero or more bytes in the range 0x30–0x3F, then zero or more bytes in the range 0x20–0x2F, then by a single byte in the range 0x40–0x7E, the entire sequence being called a \"control sequence\".",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/ISO_6429",
+                Text: (string) (len=8) "ISO 6429",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/ANSI_escape_sequence#CSI",
+                Text: (string) (len=27) "Control Sequence Introducer",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=24) "Graphical character sets",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=167) "Each of the four working sets G0 through G3 may be a 94-character set or a 94 -character multi-byte set. Additionally, G1 through G3 may be a 96- or 96 -character set.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Multi_Byte_Character_Set",
+                Text: (string) (len=14) "multi-byte set",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=478) "In a 96- or 96 -character set, the bytes 0x20 through 0x7F when GL-invoked, or 0xA0 through 0xFF when GR-invoked, are allocated to and may be used by the set. In a 94- or 94 -character set, the bytes 0x20 and 0x7F are not used. When a 96- or 96 -character set is invoked in the GL region, the space and delete characters (codes 0x20 and 0x7F) are not available until a 94- or 94 -character set (such as the G0 set) is invoked in GL. 96-character sets cannot be designated to G0.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=403) "Registration of a set as a 96-character set does not necessarily mean that the 0x20/A0 and 0x7F/FF bytes are actually assigned by the set; some examples of graphical character sets which are registered as 96-sets but do not use those bytes include the G1 set of I.S. 434, the box drawing set from ISO/IEC 10367, and ISO-IR-164 (a subset of the G1 set of ISO-8859-8 with only the letters, used by CCITT).",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/I.S._434",
+                Text: (string) (len=8) "I.S. 434",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/ISO/IEC_10367",
+                Text: (string) (len=13) "ISO/IEC 10367",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/ISO-8859-8",
+                Text: (string) (len=10) "ISO-8859-8",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/CCITT",
+                Text: (string) (len=5) "CCITT",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=20) "Combining characters",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=379) "Characters are expected to be spacing characters, not combining characters, unless specified otherwise by the graphical set in question. ISO 2022 / ECMA-35 also recognizes the use of the backspace and carriage return control characters as means of combining otherwise spacing characters, as well as the CSI sequence \"Graphic Character Combination\" (GCC) (CSI 0x20 (SP) 0x5F (_)).",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/C0_and_C1_control_codes#BS",
+                Text: (string) (len=9) "backspace",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/ANSI_escape_code#CSIsection",
+                Text: (string) (len=12) "CSI sequence",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=462) "Use of the backspace and carriage return in this manner is permitted by ISO/IEC 646 but prohibited by ISO/IEC 4873 / ECMA-43 and by ISO/IEC 8859, on the basis that it leaves the graphical character repertoire undefined. ISO/IEC 4873 / ECMA-43 does, however, permit the use of the GCC function provided that the sequence of characters is kept the same and merely displayed in one space, rather than being over-stamped to form a character with a different meaning.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/ISO/IEC_646",
+                Text: (string) (len=11) "ISO/IEC 646",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/ISO/IEC_4873",
+                Text: (string) (len=12) "ISO/IEC 4873",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/ISO/IEC_8859",
+                Text: (string) (len=12) "ISO/IEC 8859",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=22) "Control character sets",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=142) "Control character sets are classified as \"primary\" or \"secondary\" control code sets, respectively also called \"C0\" and \"C1\" control code sets.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=321) "A C0 control set must contain the ESC (escape) control character at 0x1B (a C0 set containing only ESC is registered as ISO-IR-104), whereas a C1 control set may not contain the escape control whatsoever. Hence, they are entirely separate registrations, with a C0 set being only a C0 set and a C1 set being only a C1 set.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=442) "If codes from the C0 set of ISO 6429 / ECMA-48, i.e. the ASCII control codes, appear in the C0 set, they are required to appear at their ISO 6429 / ECMA-48 locations. Inclusion of transmission control characters in the C0 set, besides the ten included by ISO 6429 / ECMA-48 (namely SOH, STX, ETX, EOT, ENQ, ACK, DLE, NAK, SYN and ETB), or inclusion of any of those ten in the C1 set, is also prohibited by the ISO/IEC 2022 / ECMA-35 standard.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=65) "https://en.wikipedia.org/wiki/C0_and_C1_control_codes#C0_controls",
+                Text: (string) (len=19) "ASCII control codes",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=523) "A C0 control set is invoked over the CL range 0x00 through 0x1F, whereas a C1 control function may be invoked over the CR range 0x80 through 0x9F (in an 8-bit environment) or by using escape sequences (in a 7-bit or 8-bit environment), but not both. Which style of C1 invocation is used must be specified in the definition of the code version. For example, ISO/IEC 4873 specifies CR bytes for the C1 controls which it uses (SS2 and SS3). If necessary, which invocation is used may be communicated using announcer sequences.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/ISO/IEC_4873",
+                Text: (string) (len=12) "ISO/IEC 4873",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/ISO/IEC_2022#Code_structure_announcements",
+                Text: (string) (len=19) "announcer sequences",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=262) "In the latter case, single control functions from the C1 control code set are invoked using \"type Fe\" escape sequences, meaning those where the ESC control character is followed by a byte from columns 04 or 05 (that is to say, ESC 0x40 (@) through ESC 0x5F (_)).",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=23) "Other control functions",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=524) "Additional control functions are assigned to \"type Fs\" escape sequences (in the range ESC 0x60 (`) through ESC 0x7E (~)); these have permanently assigned meanings rather than depending on the C0 or C1 designations. Registration of control functions to type \"Fs\" sequences must be approved by ISO/IEC JTC 1/SC 2. Other single control functions may be registered to type \"3Ft\" escape sequences (in the range ESC 0x23 (#) 0x40 (@) through ESC 0x23 (#) 0x7E (~)), although no \"3Ft\" sequences are currently assigned (as of 2019).",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/ISO/IEC_JTC_1/SC_2",
+                Text: (string) (len=18) "ISO/IEC JTC 1/SC 2",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=73) "The following escape sequences are assigned for single control functions:",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=351) "Escape sequences of type \"Fp\" (ESC 0x30 (0) through ESC 0x3F (?)) or of type \"3Fp\" (ESC 0x23 (#) 0x30 (0) through ESC 0x23 (#) 0x3F (?)) are reserved for single private use control codes, by prior agreement between parties. Several such sequences of both types are used by DEC terminals such as the VT100, and are thus supported by terminal emulators.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/Digital_Equipment_Corporation",
+                Text: (string) (len=3) "DEC",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/VT100",
+                Text: (string) (len=5) "VT100",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Terminal_emulator",
+                Text: (string) (len=18) "terminal emulators",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=15) "Shift functions",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=7) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=271) "By default, GL codes specify G0 characters and GR codes (where available) specify G1 characters; this may be otherwise specified by prior agreement. The set invoked over each area may also be modified with control codes referred to as shifts, as shown in the table below.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=331) "An 8-bit code may have GR codes specifying G1 characters, i.e. with its corresponding 7-bit code using Shift In and Shift Out to switch between the sets (e.g. JIS X 0201), although some instead have GR codes specifying G2 characters, with the corresponding 7-bit code using a single-shift code to access the second set (e.g. T.51).",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Shift_In",
+                Text: (string) (len=8) "Shift In",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Shift_Out",
+                Text: (string) (len=9) "Shift Out",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0201",
+                Text: (string) (len=10) "JIS X 0201",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/ITU_T.51",
+                Text: (string) (len=4) "T.51",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=713) "The codes shown in the table below are the most common encodings of these control codes, conforming to ISO/IEC 6429. The LS2, LS3, LS1R, LS2R and LS3R shifts are registered as single control functions and are always encoded as the escape sequences listed below, whereas the others are part of a C0 or C1 control code set (as shown below, SI (LS0) and SO (LS1) are C0 controls and SS2 and SS3 are C1 controls), meaning that their coding and availability may vary depending on which control sets are designated: they must be present in the designated control sets if their functionality is used. The C1 controls themselves, as mentioned above, may be represented using escape sequences or 8-bit bytes, but not both.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=65) "https://en.wikipedia.org/wiki/C0_and_C1_control_codes#C1_controls",
+                Text: (string) (len=12) "ISO/IEC 6429",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=603) "Alternative encodings of the single-shifts as C0 control codes are available in certain control code sets. For example, SS2 and SS3 are usually available at 0x19 and 0x1D respectively in T.51 and T.61. This coding is currently recommended by ISO/IEC 2022 / ECMA-35 for applications requiring 7-bit single-byte representations of SS2 and SS3, and may also be used for SS2 only, although older code sets with SS2 at 0x1C also exist, and were mentioned as such in an earlier edition of the standard. The 0x8E and 0x8F coding of the single shifts as shown below is mandatory for ISO/IEC 4873 levels 2 and 3.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/ITU_T.51",
+                Text: (string) (len=4) "T.51",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/ITU_T.61",
+                Text: (string) (len=4) "T.61",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/ISO/IEC_4873",
+                Text: (string) (len=12) "ISO/IEC 4873",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=707) "Although officially considered shift codes and named accordingly, single-shift codes are not always viewed as shifts, and they may simply be viewed as prefix bytes (i.e. the first bytes in a multi-byte sequence), since they do not require the encoder to keep the currently active set as state, unlike locking shift codes. In 8-bit environments, either GL or GR, but not both, may be used as the single-shift area. This must be specified in the definition of the code version. For instance, ISO/IEC 4873 specifies GL, whereas packed EUC specifies GR. In 7-bit environments, only GL is used as the single-shift area. If necessary, which single-shift area is used may be communicated using announcer sequences.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/State_(computer_science)",
+                Text: (string) (len=5) "state",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/ISO/IEC_4873",
+                Text: (string) (len=12) "ISO/IEC 4873",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Extended_Unix_Code",
+                Text: (string) (len=10) "packed EUC",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/ISO/IEC_2022#Code_structure_announcements",
+                Text: (string) (len=19) "announcer sequences",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=333) "The names \"locking shift zero\" (LS0) and \"locking shift one\" (LS1) refer to the same pair of C0 control characters (0x0F and 0x0E) as the names \"shift in\" (SI) and \"shift out\" (SO). However, the standard refers to them as LS0 and LS1 when they are used in 8-bit environments and as SI and SO when they are used in 7-bit environments.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=117) "The ISO/IEC 2022 / ECMA-35 standard permits, but discourages, invoking G1, G2 or G3 in both GL and GR simultaneously.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=47) "Registration of graphical and control code sets",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=523) "The ISO International register of coded character sets to be used with escape sequences (ISO-IR) lists graphical character sets, control code sets, single control codes and so forth which have been registered for use with ISO/IEC 2022. The procedure for registering codes and sets with the ISO-IR registry is specified by ISO/IEC 2375. Each registration receives a unique escape sequence, and a unique registry entry number to identify it. For example, the CCITT character set for Simplified Chinese is known as ISO-IR-165.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/ITU-T",
+                Text: (string) (len=5) "CCITT",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Simplified_Chinese",
+                Text: (string) (len=18) "Simplified Chinese",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/ISO-IR-165",
+                Text: (string) (len=10) "ISO-IR-165",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=468) "Registration of coded character sets with the ISO-IR registry identifies the documents specifying the character set or control function associated with an ISO/IEC 2022 non‑private-use escape sequence. This may be a standard document; however, registration does not create a new ISO standard, does not commit the ISO or IEC to adopt it as an international standard, and does not commit the ISO or IEC to add any of its characters to the Universal Coded Character Set.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/Universal_Coded_Character_Set",
+                Text: (string) (len=29) "Universal Coded Character Set",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=647) "ISO-IR registered escape sequences are also used encapsulated in a Formal Public Identifier to identify character sets in SGML (ISO 8879). For example, the string ISO 646-1983//CHARSET International Reference Version (IRV)//ESC 2/5 4/0 can be used to identify the International Reference Version of ISO 646 -1983, and the HTML 4.01 specification uses ISO Registration Number 177//CHARSET ISO/IEC 10646-1:1993 UCS-4 with implementation level 3//ESC 2/5 2/15 4/6 to identify Unicode. The textual representation of the escape sequence, included in the third element of the FPI, will be recognised by SGML implementations for supported character sets.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Formal_Public_Identifier",
+                Text: (string) (len=24) "Formal Public Identifier",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://en.wikipedia.org/wiki/SGML",
+                Text: (string) (len=4) "SGML",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/ISO_646",
+                Text: (string) (len=7) "ISO 646",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://en.wikipedia.org/wiki/HTML",
+                Text: (string) (len=4) "HTML",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=26) "Character set designations",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=8) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=525) "Escape sequences to designate character sets take the form ESC I F. As mentioned above, the intermediate (I) bytes are from the range 0x20–0x2F, and the final (F) byte is from the range 0x30–0x7E. The first I byte (or, for a multi-byte set, the first two) identifies the type of character set and the working set it is to be designated to, whereas the F byte (and any additional I bytes) identify the character set itself, as assigned in the ISO-IR register (or, for the private-use escape sequences, by prior agreement).",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=296) "Additional I bytes may be added before the F byte to extend the F byte range. This is currently only used with 94-character sets, where codes of the form ESC (! F have been assigned. At the other extreme, no multibyte 96-sets have been registered, so the sequences below are strictly theoretical.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=1075) "As with other escape sequence types, the range 0x30–0x3F is reserved for private-use F bytes, in this case for private-use character set definitions (which might include unregistered sets defined by protocols such as ARIB STD-B24 or MARC-8, or vendor-specific sets such as DEC Special Graphics). However, in a graphical set designation sequence, if the second I byte (for a single-byte set) or the third I byte (for a double-byte set) is 0x20 (space), the set denoted is a \" dynamically redefinable character set \" (DRCS) defined by prior agreement, which is also considered private use. A graphical set being considered a DRCS implies that it represents a font of exact glyphs, rather than a set of abstract characters. The manner in which DRCS sets and associated fonts are transmitted, allocated and managed is not stipulated by ISO/IEC 2022 / ECMA-35 itself, although it recommends allocating them sequentially starting with F byte 0x40 (@); however, a manner for transmitting DRCS fonts is defined within some telecommunication protocols such as World System Teletext.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/ARIB_STD_B24_character_set#Sets_and_codes",
+                Text: (string) (len=12) "ARIB STD-B24",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/MARC-8",
+                Text: (string) (len=6) "MARC-8",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/DEC_Special_Graphics",
+                Text: (string) (len=20) "DEC Special Graphics",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=65) "https://en.wikipedia.org/wiki/Dynamically_Redefined_Character_Set",
+                Text: (string) (len=37) "dynamically redefinable character set",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/World_System_Teletext",
+                Text: (string) (len=21) "World System Teletext",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=317) "There are also three special cases for multi-byte codes. The code sequences ESC $ @, ESC $ A, and ESC $ B were all registered when the contemporary version of the standard allowed multi-byte sets only in G0, so must be accepted in place of the sequences ESC $ (@ through ESC $ (B to designate to the G0 character set.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=672) "There are additional (rarely used) features for switching control character sets, but this is a single-level lookup, in that (as noted above) the C0 set is always invoked over CL, and the C1 set is always invoked over CR or by using escape codes. As noted above, it is required that any C0 character set include the ESC character at position 0x1B, so that further changes are possible. The control set designation sequences (as opposed to the graphical set ones) may also be used from within ISO/IEC 10646 (UCS/Unicode), in contexts where processing ANSI escape codes is appropriate, provided that each byte in the sequence is padded to the code unit size of the encoding.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/ISO/IEC_10646",
+                Text: (string) (len=13) "ISO/IEC 10646",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/ANSI_escape_code",
+                Text: (string) (len=17) "ANSI escape codes",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=101) "A table of escape sequence I bytes and the designation or other function which they perform is below.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=483) "Note that the registry of F bytes is independent for the different types. The 94-character graphic set designated by ESC (A through ESC + A is not related in any way to the 96-character set designated by ESC - A through ESC / A. And neither of those is related to the 94 -character set designated by ESC $ (A through ESC $ + A, and so on; the final bytes must be interpreted in context. (Indeed, without any intermediate bytes, ESC A is a way of specifying the C1 control code 0x81.)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=307) "Also note that C0 and C1 control character sets are independent; the C0 control character set designated by ESC! A (which happens to be the NATS control set for newspaper text transmission) is not the same as the C1 control character set designated by ESC \" A (the CCITT attribute control set for Videotex).",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/CCITT",
+                Text: (string) (len=5) "CCITT",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Videotex",
+                Text: (string) (len=8) "Videotex",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=37) "Interaction with other coding systems",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=6) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=95) "The standard also defines a way to specify coding systems that do not follow its own structure.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=575) "A sequence is also defined for returning to ISO/IEC 2022; the registrations which support this sequence as encoded in ISO/IEC 2022 comprise (as of 2019) various Videotex formats, UTF-8, and UTF-1. A second I byte of 0x2F (/) is included in the designation sequences of codes which do not use that byte sequence to return to ISO 2022; they may have their own means to return to ISO 2022 (such as a different or padded sequence) or none at all. All existing registrations of the latter type (as of 2019) are either transparent raw data, Unicode/UCS formats, or subsets thereof.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Videotex",
+                Text: (string) (len=8) "Videotex",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/UTF-8",
+                Text: (string) (len=5) "UTF-8",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/UTF-1",
+                Text: (string) (len=5) "UTF-1",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/Unicode_Transformation_Format",
+                Text: (string) (len=19) "Unicode/UCS formats",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=354) "Of particular interest are the sequences which switch to ISO/IEC 10646 (Unicode) formats which do not follow the ISO/IEC 2022 structure. These include UTF-8 (which does not reserve the range 0x80–0x9F for control characters), its predecessor UTF-1 (which mixes GR and GL bytes in multi-byte codes), and UTF-16 and UTF-32 (which use wider coding units).",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/ISO/IEC_10646",
+                Text: (string) (len=13) "ISO/IEC 10646",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Unicode",
+                Text: (string) (len=7) "Unicode",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=442) "Several codes were also registered for subsets (levels 1 and 2) of UTF-8, UTF-16 and UTF-32, as well as for three levels of UCS-2. However, the only codes currently specified by ISO/IEC 10646 are the level-3 codes for UTF-8, UTF-16 and UTF-32 and the unspecified-level code for UTF-8, with the rest being listed as deprecated. ISO/IEC 10646 stipulates that the big-endian formats of UTF-16 and UTF-32 are designated by their escape sequences.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/UTF-16#History",
+                Text: (string) (len=5) "UCS-2",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Big-endian",
+                Text: (string) (len=10) "big-endian",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=89) "Of the sequences switching to UTF-8, ESC % G is the one supported by, for example, xterm.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Xterm",
+                Text: (string) (len=5) "xterm",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=405) "Although use of a variant of the standard return sequence from UTF-16 and UTF-32 is permitted, the bytes of the escape sequence must be padded to the size of the code unit of the encoding (i.e. 001B 0025 0040 for UTF-16), i.e. the coding of the standard return sequence does not conform exactly to ISO/IEC 2022. For this reason, the designations for UTF-16 and UTF-32 use a without-standard-return syntax.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=28) "Code structure announcements",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=572) "The sequence \"announce code structure\" (ESC SP (0x20) F) is used to announce a specific code structure, or a specific group of ISO 2022 facilities which are used in a particular code version. Although announcements can be combined, certain contradictory combinations (specifically, using locking shift announcements 16–23 with announcements 1, 3 and 4) are prohibited by the standard, as is using additional announcements on top of ISO/IEC 4873 level announcements 12–14 (which fully specify the permissible structural features). Announcement sequences are as follows:",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/ISO/IEC_4873",
+                Text: (string) (len=12) "ISO/IEC 4873",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=26) "ISO/IEC 2022 code versions",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=6) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=644) "Six 7-bit ISO 2022 code versions (ISO-2022-CN, ISO-2022-CN-EXT, ISO-2022-JP, ISO-2022-JP-1, ISO-2022-JP-2 and ISO-2022-KR) are defined by IETF RFCs, of which ISO-2022-JP and ISO-2022-KR have been extensively used in the past. A number of other variants are defined by vendors, including IBM. Although UTF-8 is the preferred encoding in HTML5, legacy content in ISO-2022-JP remains sufficiently widespread that the WHATWG encoding standard retains support for it, in contrast to mapping ISO-2022-KR, ISO-2022-CN and ISO-2022-CN-EXT entirely to the replacement character, due to concerns about code injection attacks such as cross-site scripting.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=7) {
+          (*parser.Link)({
+            URL: (string) (len=38) "https://en.wikipedia.org/wiki/IETF_RFC",
+            Text: (string) (len=9) "IETF RFCs",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=33) "https://en.wikipedia.org/wiki/IBM",
+            Text: (string) (len=3) "IBM",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/HTML5",
+            Text: (string) (len=5) "HTML5",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=36) "https://en.wikipedia.org/wiki/WHATWG",
+            Text: (string) (len=6) "WHATWG",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=51) "https://en.wikipedia.org/wiki/Replacement_character",
+            Text: (string) (len=21) "replacement character",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/Code_injection",
+            Text: (string) (len=14) "code injection",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Cross-site_scripting",
+            Text: (string) (len=20) "cross-site scripting",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=136) "8-bit code versions include Extended Unix Code. The ISO/IEC 8859 encodings also follow ISO 2022, in a subset stipulated in ISO/IEC 4873.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/Extended_Unix_Code",
+            Text: (string) (len=18) "Extended Unix Code",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/ISO/IEC_8859",
+            Text: (string) (len=12) "ISO/IEC 8859",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) (len=24) "Japanese e-mail versions",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) (len=11) "ISO-2022-JP",
+            Type: (string) (len=7) "section",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=4) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "paragraph",
+                Value: (string) (len=380) "ISO-2022-JP is a widely used encoding for Japanese, in particular in e-mail. It was introduced for use on the JUNET network and later codified in IETF RFC 1468, dated 1993. It has an advantage over other encodings for Japanese in that it does not require 8-bit clean transmission. Microsoft calls it Code page 50220. It starts in ASCII and includes the following escape sequences:",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=4) {
+                  (*parser.Link)({
+                    URL: (string) (len=36) "https://en.wikipedia.org/wiki/E-mail",
+                    Text: (string) (len=6) "e-mail",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=38) "https://en.wikipedia.org/wiki/IETF_RFC",
+                    Text: (string) (len=8) "IETF RFC",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=61) "https://en.wikipedia.org/wiki/Japanese_language_and_computers",
+                    Text: (string) (len=22) "encodings for Japanese",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=41) "https://en.wikipedia.org/wiki/8-bit_clean",
+                    Text: (string) (len=11) "8-bit clean",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=4) "list",
+                Value: (string) "",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) (len=4) {
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=48) "ESC (B to switch to ASCII (1 byte per character)",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) {
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=85) "ESC (J to switch to JIS X 0201-1976 (ISO/IEC 646:JP) Roman set (1 byte per character)",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) (len=1) {
+                      (*parser.Link)({
+                        URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0201",
+                        Text: (string) (len=15) "JIS X 0201-1976",
+                        Images: ([]*parser.Image) {
+                        }
+                      })
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=60) "ESC $ @ to switch to JIS X 0208-1978 (2 bytes per character)",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) (len=1) {
+                      (*parser.Link)({
+                        URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0208",
+                        Text: (string) (len=15) "JIS X 0208-1978",
+                        Images: ([]*parser.Image) {
+                        }
+                      })
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=60) "ESC $ B to switch to JIS X 0208-1983 (2 bytes per character)",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) (len=1) {
+                      (*parser.Link)({
+                        URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0208",
+                        Text: (string) (len=15) "JIS X 0208-1983",
+                        Images: ([]*parser.Image) {
+                        }
+                      })
+                    }
+                  })
+                },
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "paragraph",
+                Value: (string) (len=316) "Use of the two characters added in JIS X 0208-1990 is permitted, but without including the IRR sequence, i.e. using the same escape sequence as JIS X 0208-1983. Also, due to being registered before designating multi-byte sets except to G0 was possible, the escapes for JIS X 0208 do not include the second I -byte (.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "paragraph",
+                Value: (string) (len=655) "The RFC notes that some existing systems did not distinguish ESC (B from ESC (J, or did not distinguish ESC $ @ from ESC $ B, but stipulates that the escape sequences should not be changed by systems simply relaying messages such as e-mails. The WHATWG Encoding Standard referenced by HTML5 handles ESC (B and ESC (J distinctly, but treats ESC $ @ the same as ESC $ B when decoding, and uses only ESC $ B for JIS X 0208 when encoding. The RFC also notes that some past systems had made erroneous use of the sequence ESC (H to switch away from JIS X 0208, which is actually registered for ISO-IR-11 (a Swedish variant of ISO 646 and World System Teletext).",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=5) {
+                  (*parser.Link)({
+                    URL: (string) (len=36) "https://en.wikipedia.org/wiki/WHATWG",
+                    Text: (string) (len=6) "WHATWG",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=35) "https://en.wikipedia.org/wiki/HTML5",
+                    Text: (string) (len=5) "HTML5",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=39) "https://en.wikipedia.org/wiki/ISO-IR-11",
+                    Text: (string) (len=9) "ISO-IR-11",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=37) "https://en.wikipedia.org/wiki/ISO_646",
+                    Text: (string) (len=7) "ISO 646",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=51) "https://en.wikipedia.org/wiki/World_System_Teletext",
+                    Text: (string) (len=21) "World System Teletext",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=32) "Versions with halfwidth katakana",
+            Type: (string) (len=7) "section",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=2) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "paragraph",
+                Value: (string) (len=766) "Use of ESC (I to switch to the JIS X 0201-1976 Kana set (1 byte per character) is not part of the ISO-2022-JP profile, but is also sometimes used. Python allows it in a variant which it labels ISO-2022-JP-EXT (which also incorporates JIS X 0212 as described below, completing coverage of EUC-JP); this is close in both name and structure to an encoding denoted ISO-2022-JPext by DEC, which furthermore adds a two-byte user-defined region accessed with ESC $ (0 to complete the coverage of Super DEC Kanji. The WHATWG/HTML5 variant permits decoding JIS X 0201 katakana in ISO-2022-JP input, but converts the characters to their JIS X 0208 equivalents upon encoding. Microsoft's code page for ISO-2022-JP with JIS X 0201 kana additionally permitted is Code page 50221.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=6) {
+                  (*parser.Link)({
+                    URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0201",
+                    Text: (string) (len=15) "JIS X 0201-1976",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=59) "https://en.wikipedia.org/wiki/Python_(programming_language)",
+                    Text: (string) (len=6) "Python",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=36) "https://en.wikipedia.org/wiki/EUC-JP",
+                    Text: (string) (len=6) "EUC-JP",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=59) "https://en.wikipedia.org/wiki/Digital_Equipment_Corporation",
+                    Text: (string) (len=3) "DEC",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=94) "https://en.wikipedia.org/wiki/Private_Use_Areas#Private-use_characters_in_other_character_sets",
+                    Text: (string) (len=19) "user-defined region",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=58) "https://en.wikipedia.org/wiki/Extended_Unix_Code#DEC_Kanji",
+                    Text: (string) (len=15) "Super DEC Kanji",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "paragraph",
+                Value: (string) (len=504) "Other, older variants known as JIS7 and JIS8 build directly on the 7-bit and 8-bit encodings defined by JIS X 0201 and allow use of JIS X 0201 kana from G1 without escape sequences, using Shift Out and Shift In or setting the eighth bit (GR-invoked), respectively. They are not widely used; JIS X 0208 support in extended 8-bit JIS X 0201 is more commonly achieved via Shift JIS. Microsoft's code page for JIS X 0201-based ISO 2022 with single-byte katakana via Shift Out and Shift In is Code page 50222.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=3) {
+                  (*parser.Link)({
+                    URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0201",
+                    Text: (string) (len=10) "JIS X 0201",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=63) "https://en.wikipedia.org/wiki/Shift_Out_and_Shift_In_characters",
+                    Text: (string) (len=22) "Shift Out and Shift In",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=39) "https://en.wikipedia.org/wiki/Shift_JIS",
+                    Text: (string) (len=9) "Shift JIS",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "ISO-2022-JP-2",
+            Type: (string) (len=7) "section",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=3) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "paragraph",
+                Value: (string) (len=344) "ISO-2022-JP-2 is a multilingual extension of ISO-2022-JP, defined in RFC 1554 (dated 1993), which permits the following escape sequences in addition to the ISO-2022-JP ones. The ISO/IEC 8859 parts are 96-character sets which cannot be designated to G0, and are accessed from G2 using the 7-bit escape sequence form of the single-shift code SS2:",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=42) "https://en.wikipedia.org/wiki/ISO/IEC_8859",
+                    Text: (string) (len=12) "ISO/IEC 8859",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=4) "list",
+                Value: (string) "",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) (len=5) {
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=57) "ESC $ A to switch to GB 2312-1980 (2 bytes per character)",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) (len=1) {
+                      (*parser.Link)({
+                        URL: (string) (len=37) "https://en.wikipedia.org/wiki/GB_2312",
+                        Text: (string) (len=12) "GB 2312-1980",
+                        Images: ([]*parser.Image) {
+                        }
+                      })
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=60) "ESC $ (C to switch to KS X 1001-1992 (2 bytes per character)",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) (len=1) {
+                      (*parser.Link)({
+                        URL: (string) (len=37) "https://en.wikipedia.org/wiki/KSX1001",
+                        Text: (string) (len=14) "KS X 1001-1992",
+                        Images: ([]*parser.Image) {
+                        }
+                      })
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=61) "ESC $ (D to switch to JIS X 0212-1990 (2 bytes per character)",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) (len=1) {
+                      (*parser.Link)({
+                        URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0212",
+                        Text: (string) (len=15) "JIS X 0212-1990",
+                        Images: ([]*parser.Image) {
+                        }
+                      })
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=89) "ESC. A to switch to ISO/IEC 8859-1 high part, Extended Latin 1 set (1 byte per character)",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) (len=1) {
+                      (*parser.Link)({
+                        URL: (string) (len=44) "https://en.wikipedia.org/wiki/ISO/IEC_8859-1",
+                        Text: (string) (len=14) "ISO/IEC 8859-1",
+                        Images: ([]*parser.Image) {
+                        }
+                      })
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=84) "ESC. F to switch to ISO/IEC 8859-7 high part, Basic Greek set (1 byte per character)",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) (len=1) {
+                      (*parser.Link)({
+                        URL: (string) (len=44) "https://en.wikipedia.org/wiki/ISO/IEC_8859-7",
+                        Text: (string) (len=14) "ISO/IEC 8859-7",
+                        Images: ([]*parser.Image) {
+                        }
+                      })
+                    }
+                  })
+                },
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "paragraph",
+                Value: (string) (len=157) "ISO-2022-JP with the ISO-2022-JP-2 representation of JIS X 0212, but not the other extensions, was subsequently dubbed ISO-2022-JP-1 by RFC 2237, dated 1997.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=16) "IBM Japanese TCP",
+            Type: (string) (len=7) "section",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=1) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "paragraph",
+                Value: (string) (len=325) "IBM implements nine 7-bit ISO 2022 based encodings for Japanese, each using a different set of escape sequences: IBM-956, IBM-957, IBM-958, IBM-959, IBM-5052, IBM-5053, IBM-5054, IBM-5055 and ISO-2022-JP, which are collectively termed \"TCP/IP Japanese coded character sets\". CCSID 9148 is the standard (RFC 1468) ISO-2022-JP.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=33) "https://en.wikipedia.org/wiki/IBM",
+                    Text: (string) (len=3) "IBM",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=35) "https://tools.ietf.org/html/rfc1468",
+                    Text: (string) (len=8) "RFC 1468",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "JIS X 0213",
+            Type: (string) (len=7) "section",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=2) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "paragraph",
+                Value: (string) (len=632) "The JIS X 0213 standard, first published in 2000, defines an updated version of ISO-2022-JP, without the ISO-2022-JP-2 extensions, named ISO-2022-JP-3. The additions made by JIS X 0213 compared to the base JIS X 0208 standard resulted in a new registration being made for the extended JIS plane 1, while the new plane 2 received its own registration. The further additions to plane 1 in the 2004 edition of the standard resulted in an additional registration being added to a further revision of the profile, dubbed ISO-2022-JP-2004. In addition to the basic ISO-2022-JP designation codes, the following designations are recognized:",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0213",
+                    Text: (string) (len=10) "JIS X 0213",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=4) "list",
+                Value: (string) "",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) (len=4) {
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=67) "ESC (I to switch to JIS X 0201-1976 Kana set (1 byte per character)",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) (len=1) {
+                      (*parser.Link)({
+                        URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0201",
+                        Text: (string) (len=15) "JIS X 0201-1976",
+                        Images: ([]*parser.Image) {
+                        }
+                      })
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=69) "ESC $ (O to switch to JIS X 0213-2000 Plane 1 (2 bytes per character)",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) (len=1) {
+                      (*parser.Link)({
+                        URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0213",
+                        Text: (string) (len=15) "JIS X 0213-2000",
+                        Images: ([]*parser.Image) {
+                        }
+                      })
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=69) "ESC $ (P to switch to JIS X 0213-2000 Plane 2 (2 bytes per character)",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) (len=1) {
+                      (*parser.Link)({
+                        URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0213",
+                        Text: (string) (len=15) "JIS X 0213-2000",
+                        Images: ([]*parser.Image) {
+                        }
+                      })
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=92) "ESC $ (Q to switch to JIS X 0213-2004 Plane 1 (2 bytes per character, ISO-2022-JP-2004 only)",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) (len=1) {
+                      (*parser.Link)({
+                        URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0213",
+                        Text: (string) (len=15) "JIS X 0213-2004",
+                        Images: ([]*parser.Image) {
+                        }
+                      })
+                    }
+                  })
+                },
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) <nil>
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=20) "Other 7-bit versions",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=10) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=323) "ISO-2022-KR is defined in RFC 1557, dated 1993. It encodes ASCII and the Korean double-byte KS X 1001-1992, previously named KS C 5601-1987. Unlike ISO-2022-JP-2, it makes use of the Shift Out and Shift In characters to switch between them, after including ESC $) C once at the start of a line to designate KS X 1001 to G1.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/ASCII",
+                Text: (string) (len=5) "ASCII",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/KSX1001",
+                Text: (string) (len=14) "KS X 1001-1992",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=63) "https://en.wikipedia.org/wiki/Shift_Out_and_Shift_In_characters",
+                Text: (string) (len=33) "Shift Out and Shift In characters",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=385) "ISO-2022-CN and ISO-2022-CN-EXT are defined in RFC 1922, dated 1996. They are 7-bit encodings making use both of the Shift Out and Shift In functions (to shift between G0 and G1), and of the 7-bit escape code forms of the single-shift functions SS2 and SS3 (to access G2 and G3). They support the character sets GB 2312 (for simplified Chinese) and CNS 11643 (for traditional Chinese).",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/GB_2312",
+                Text: (string) (len=7) "GB 2312",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Simplified_Chinese",
+                Text: (string) (len=18) "simplified Chinese",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/CNS_11643",
+                Text: (string) (len=9) "CNS 11643",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Traditional_Chinese",
+                Text: (string) (len=19) "traditional Chinese",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=298) "The basic ISO-2022-CN profile uses ASCII as its G0 (shift in) set, and also includes GB 2312 and the first two planes of CNS 11643 (due to these two planes being sufficient to represent all traditional Chinese characters from common Big5, to which the RFC provides a correspondence in an appendix):",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=34) "https://en.wikipedia.org/wiki/Big5",
+                Text: (string) (len=4) "Big5",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=3) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=58) "ESC $) A to switch to GB 2312-1980 (2 bytes per character)",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=37) "https://en.wikipedia.org/wiki/GB_2312",
+                    Text: (string) (len=12) "GB 2312-1980",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=68) "ESC $) G to switch to CNS 11643-1992 Plane 1 (2 bytes per character)",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=39) "https://en.wikipedia.org/wiki/CNS_11643",
+                    Text: (string) (len=14) "CNS 11643-1992",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=69) "ESC $ * H to switch to CNS 11643-1992 Plane 2 (2 bytes per character)",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=77) "The ISO-2022-CN-EXT profile permits the following additional sets and planes.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=6) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=56) "ESC $) E to switch to ISO-IR-165 (2 bytes per character)",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=40) "https://en.wikipedia.org/wiki/ISO-IR-165",
+                    Text: (string) (len=10) "ISO-IR-165",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=69) "ESC $ + I to switch to CNS 11643-1992 Plane 3 (2 bytes per character)",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=69) "ESC $ + J to switch to CNS 11643-1992 Plane 4 (2 bytes per character)",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=69) "ESC $ + K to switch to CNS 11643-1992 Plane 5 (2 bytes per character)",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=69) "ESC $ + L to switch to CNS 11643-1992 Plane 6 (2 bytes per character)",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=69) "ESC $ + M to switch to CNS 11643-1992 Plane 7 (2 bytes per character)",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=182) "The ISO-2022-CN-EXT profile further lists additional Guobiao standard graphical sets as being permitted, but conditional on their being assigned registered ISO 2022 escape sequences:",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Guobiao_standard",
+                Text: (string) (len=16) "Guobiao standard",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=3) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=14) "GB 12345 in G1",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=38) "https://en.wikipedia.org/wiki/GB_12345",
+                    Text: (string) (len=8) "GB 12345",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=25) "GB 7589 or GB 13131 in G2",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=25) "GB 7590 or GB 13132 in G3",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=349) "The character after the ESC (for single-byte character sets) or ESC $ (for multi-byte character sets) specifies the type of character set and working set that is designated to. In the above examples, the character ((0x28) designates a 94-character set to the G0 character set, whereas), * or + (0x29–0x2B) designates to the G1–G3 character sets.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=742) "ISO-2022-KR and ISO-2022-CN are used less frequently than ISO-2022-JP, and are sometimes deliberately not supported due to security concerns. Notably, the WHATWG Encoding Standard used by HTML5 maps ISO-2022-KR, ISO-2022-CN and ISO-2022-CN-EXT (as well as HZ-GB-2312) to the \"replacement\" decoder, which maps all input to the replacement character (�), in order to prevent certain cross-site scripting and related attacks, which utilize a difference in encoding support between the client and server. Although the same security concern (allowing sequences of ASCII bytes to be interpreted differently) also applies to ISO-2022-JP and UTF-16, they could not be given this treatment due to being much more frequently used in deployed content.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=6) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/WHATWG",
+                Text: (string) (len=6) "WHATWG",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/HTML5",
+                Text: (string) (len=5) "HTML5",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/HZ-GB-2312",
+                Text: (string) (len=10) "HZ-GB-2312",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Replacement_character",
+                Text: (string) (len=21) "replacement character",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Cross-site_scripting",
+                Text: (string) (len=20) "cross-site scripting",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/UTF-16",
+                Text: (string) (len=6) "UTF-16",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=12) "ISO/IEC 4873",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=8) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=208) "A subset of ISO 2022 applied to 8-bit single-byte encodings is defined by ISO/IEC 4873, also published by Ecma International as ECMA-43. ISO/IEC 8859 defines 8-bit codes for ISO/IEC 4873 (or ECMA-43) level 1.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Ecma_International",
+                Text: (string) (len=18) "Ecma International",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/ISO/IEC_8859",
+                Text: (string) (len=12) "ISO/IEC 8859",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=56) "ISO/IEC 4873 / ECMA-43 defines three levels of encoding:",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=3) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=228) "Level 1, which includes a C0 set, the ASCII G0 set, an optional C1 set and an optional single-byte (94-character or 96-character) G1 set. G0 is invoked over GL, and G1 is invoked over GR. Use of shift functions is not permitted.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=35) "https://en.wikipedia.org/wiki/ASCII",
+                    Text: (string) (len=5) "ASCII",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=440) "Level 2, which includes a (94-character or 96-character) single-byte G2 and/or G3 set in addition to a mandatory G1 set. Only the single-shift functions SS2 and SS3 are permitted (i.e. locking shifts are forbidden), and they invoke over the GL region (including 0x 20 and 0x7F in the case of a 96-set). SS2 and SS3 must be available in C1 at 0x8E and 0x8F respectively. This minimal required C1 set for ISO 4873 is registered as ISO-IR-105.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=41) "https://en.wikipedia.org/wiki/Hexadecimal",
+                    Text: (string) (len=2) "0x",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=159) "Level 3, which permits the GR locking-shift functions LS1R, LS2R and LS3R in addition to the single shifts, but otherwise has the same restrictions as level 2.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=494) "Earlier editions of the standard permitted non-ASCII assignments in the G0 set, provided that the ISO/IEC 646 invariant positions were preserved, that the other positions were assigned to spacing (not combining) characters, that 0x23 was assigned to either £ or #, and that 0x24 was assigned to either $ or ¤. For instance, the 8-bit encoding of JIS X 0201 is compliant with earlier editions. This was subsequently changed to fully specify the ISO/IEC 646:1991 IRV / ISO-IR No. 6 set (ASCII).",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=7) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/ISO/IEC_646",
+                Text: (string) (len=11) "ISO/IEC 646",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=32) "https://en.wikipedia.org/wiki/£",
+                Text: (string) (len=2) "£",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Number_sign",
+                Text: (string) (len=1) "#",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Dollar_sign",
+                Text: (string) (len=1) "$",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=32) "https://en.wikipedia.org/wiki/¤",
+                Text: (string) (len=2) "¤",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0201",
+                Text: (string) (len=10) "JIS X 0201",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/ASCII",
+                Text: (string) (len=5) "ASCII",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=290) "The use of the ISO/IEC 646 IRV (synchronised with ASCII since 1991) at ISO/IEC 4873 Level 1 with no C1 or G1 set, i.e. using the IRV in an 8-bit environment in which shift codes are not used and the high bit is always zero, is known as ISO 4873 DV, in which DV stands for \"Default Version\".",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/ISO/IEC_646",
+                Text: (string) (len=11) "ISO/IEC 646",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=396) "In cases where duplicate characters are available in different sets, the current edition of ISO/IEC 4873 / ECMA-43 only permits using these characters in the lowest numbered working set which they appear in. For instance, if a character appears in both the G1 set and the G3 set, it must be used from the G1 set. However, use from other sets is noted as having been permitted in earlier editions.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=418) "ISO/IEC 8859 defines complete encodings at level 1 of ISO/IEC 4873, and does not allow for use of multiple ISO/IEC 8859 parts together. It stipulates that ISO/IEC 10367 should be used instead for levels 2 and 3 of ISO/IEC 4873. ISO/IEC 10367:1991 includes G0 and G1 sets matching those used by the first 9 parts of ISO/IEC 8859 (i.e. those which existed as of 1991, when it was published), and some supplementary sets.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/ISO/IEC_8859",
+                Text: (string) (len=12) "ISO/IEC 8859",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/ISO/IEC_10367",
+                Text: (string) (len=13) "ISO/IEC 10367",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=593) "Character set designation escape sequences are used for identifying or switching between versions during information interchange only if required by a further protocol, in which case the standard requires an ISO/IEC 2022 announcer sequence specifying the ISO/IEC 4873 level, followed by a complete set of escapes specifying the character set designations for C0, C1, G0, G1, G2 and G3 respectively (but omitting G2 and G3 designations for level 1), with an F -byte of 0x7E denoting an empty set. Each ISO/IEC 4873 level has its own single ISO/IEC 2022 announcer sequence, which are as follows:",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=18) "Extended Unix Code",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=4) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=593) "Extended Unix Code (EUC) is an 8-bit variable-width character encoding system used primarily for Japanese, Korean, and simplified Chinese. It is based on ISO 2022, and only character sets which conform to the ISO 2022 structure can have EUC forms. Up to four coded character sets can be represented (in G0, G1, G2 and G3). The G0 set is invoked over GL, the G1 set is invoked over GR, and the G2 and G3 sets are (if present) invoked using the single shifts SS2 and SS3, which are used as CR bytes (i.e. 0x8E and 0x8F respectively) and invoke over GR (not GL). Locking shift codes are not used.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Character_encoding",
+                Text: (string) (len=18) "character encoding",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Japanese_language",
+                Text: (string) (len=8) "Japanese",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Korean_language",
+                Text: (string) (len=6) "Korean",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Simplified_Chinese",
+                Text: (string) (len=18) "simplified Chinese",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=301) "The code assigned to the G0 set is ASCII, or the country's national ISO 646 character set such as KS-Roman (KS X 1003) or JIS-Roman (the lower half of JIS X 0201). Hence, 0x5C (backslash in US-ASCII) is used to represent a Yen sign in some versions of EUC-JP and a Won sign in some versions of EUC-KR.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=7) {
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/ASCII",
+                Text: (string) (len=5) "ASCII",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/ISO_646",
+                Text: (string) (len=7) "ISO 646",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/JIS-Roman",
+                Text: (string) (len=9) "JIS-Roman",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0201",
+                Text: (string) (len=10) "JIS X 0201",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Backslash",
+                Text: (string) (len=9) "backslash",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Yen_sign",
+                Text: (string) (len=8) "Yen sign",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Won_sign",
+                Text: (string) (len=8) "Won sign",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=325) "G1 is used for a 94x94 coded character set represented in two bytes. The EUC-CN form of GB 2312 and EUC-KR are examples of such two-byte EUC codes. EUC-JP includes characters represented by up to three bytes (i.e. SS3 plus two bytes) whereas a single character in EUC-TW can take up to four bytes (i.e. SS2 plus three bytes).",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/EUC-CN",
+                Text: (string) (len=6) "EUC-CN",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/GB_2312",
+                Text: (string) (len=7) "GB 2312",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/EUC-KR",
+                Text: (string) (len=6) "EUC-KR",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/EUC-JP",
+                Text: (string) (len=6) "EUC-JP",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/EUC-TW",
+                Text: (string) (len=6) "EUC-TW",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=213) "The EUC code itself does not make use of the announcer or designation sequences from ISO 2022; however, it corresponds to the following sequence of four announcer sequences, with meanings breaking down as follows.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=31) "Comparison with other encodings",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) (len=10) "Advantages",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=2) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=496) "As ISO/IEC 2022's entire range of graphical character encodings can be invoked over GL, the available glyphs are not significantly limited by an inability to represent GR and C1, such as in a system limited to 7-bit encodings. It accordingly enables the representation of large set of characters in such a system. Generally, this 7-bit compatibility is not really an advantage, except for backwards compatibility with older systems. The vast majority of modern computers use 8 bits for each byte.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=336) "As compared to Unicode, ISO/IEC 2022 sidesteps Han unification by using sequence codes to switch between discrete encodings for different East Asian languages. This avoids the issues associated with unification, such as difficulty supporting multiple CJK languages with their associated character variants in a single document and font.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=45) "https://en.wikipedia.org/wiki/Han_unification",
+                    Text: (string) (len=15) "Han unification",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=44) "https://en.wikipedia.org/wiki/CJK_characters",
+                    Text: (string) (len=3) "CJK",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=13) "Disadvantages",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=6) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=394) "Since ISO/IEC 2022 is a stateful encoding, a program cannot jump in the middle of a block of text to search, insert or delete characters. This makes manipulation of the text very cumbersome and slow when compared to non-stateful encodings. Any jump in the middle of the text may require a backup to the previous escape sequence before the bytes following the escape sequence can be interpreted.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=419) "Due to the stateful nature of ISO/IEC 2022, an identical and equivalent character may be encoded in different character sets, which may be designated to any of G0 through G3, which may be invoked using single shifts or by using locking shifts to GL or GR. Consequently, characters can be represented in multiple ways, meaning that two visually identical and equivalent strings can not be reliably compared for equality.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=248) "Some systems, like DICOM and several e-mail clients, use a variant of ISO-2022 (e.g. \"ISO 2022 IR 100\") in addition to supporting several other encodings. This type of variation makes it difficult to portably transfer text between computer systems.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=35) "https://en.wikipedia.org/wiki/DICOM",
+                    Text: (string) (len=5) "DICOM",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=296) "UTF-1, the multi-byte Unicode transformation format compatible with ISO/IEC 2022's representation of 8-bit control characters, has various disadvantages in comparison with UTF-8, and switching from or to other charsets, as supported by ISO/IEC 2022, is typically unnecessary in Unicode documents.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=3) {
+                  (*parser.Link)({
+                    URL: (string) (len=35) "https://en.wikipedia.org/wiki/UTF-1",
+                    Text: (string) (len=5) "UTF-1",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=37) "https://en.wikipedia.org/wiki/Unicode",
+                    Text: (string) (len=7) "Unicode",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=35) "https://en.wikipedia.org/wiki/UTF-8",
+                    Text: (string) (len=5) "UTF-8",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=596) "Because of its escape sequences, it is possible to construct attack byte sequences in which a malicious string (such as cross-site scripting) is masked until it is decoded to Unicode, which may allow it to bypass sanitisation. Use of this encoding is thus treated as suspicious by malware protection suites, and 7-bit ISO 2022 data (except for ISO-2022-JP) is mapped in its entirety to the replacement character in HTML5 to prevent attacks. Restricted ISO 2022 8-bit code versions which do not use designation escapes or locking shift codes, such as Extended Unix Code, do not share this problem.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=4) {
+                  (*parser.Link)({
+                    URL: (string) (len=50) "https://en.wikipedia.org/wiki/Cross-site_scripting",
+                    Text: (string) (len=20) "cross-site scripting",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=51) "https://en.wikipedia.org/wiki/Replacement_character",
+                    Text: (string) (len=21) "replacement character",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=35) "https://en.wikipedia.org/wiki/HTML5",
+                    Text: (string) (len=5) "HTML5",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=48) "https://en.wikipedia.org/wiki/Extended_Unix_Code",
+                    Text: (string) (len=18) "Extended Unix Code",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=997) "Concatenation can pose issues. Profiles such as ISO-2022-JP specify that the stream starts in the ASCII state and must end in the ASCII state. This is necessary to ensure that characters in concatenated ISO-2022-JP and/or ASCII streams will be interpreted in the correct set. This has the consequence that if a stream that ends in a multi-byte character is concatenated with one that starts with a multi-byte character, a pair of escape codes are generated switching to ASCII and immediately away from it. However, as stipulated in Unicode Technical Report #36 (\"Unicode Security Considerations\"), pairs of ISO 2022 escape sequences with no characters between them should generate a replacement character (\"�\") to prevent them from being used to mask malicious sequences such as cross-site scripting. Implementing this measure, e.g. in Mozilla Thunderbird, has led to interoperability issues, with unexpected \"�\" characters being generated where two ISO-2022-JP streams have been concatenated.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=3) {
+                  (*parser.Link)({
+                    URL: (string) (len=51) "https://en.wikipedia.org/wiki/Replacement_character",
+                    Text: (string) (len=21) "replacement character",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=50) "https://en.wikipedia.org/wiki/Cross-site_scripting",
+                    Text: (string) (len=20) "cross-site scripting",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=49) "https://en.wikipedia.org/wiki/Mozilla_Thunderbird",
+                    Text: (string) (len=19) "Mozilla Thunderbird",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

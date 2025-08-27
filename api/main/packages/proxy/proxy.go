@@ -2,6 +2,9 @@
 package proxy
 
 import (
+	"context"
+	"crypto/md5" // #nosec G501
+	"encoding/hex"
 	"errors"
 	"fmt"
 	"io"
@@ -11,9 +14,9 @@ import (
 	"time"
 	"wikimedia-enterprise/api/main/config/env"
 	"wikimedia-enterprise/api/main/packages/s3util"
-	"wikimedia-enterprise/general/config"
-	"wikimedia-enterprise/general/httputil"
-	"wikimedia-enterprise/general/log"
+	"wikimedia-enterprise/api/main/submodules/config"
+	"wikimedia-enterprise/api/main/submodules/httputil"
+	"wikimedia-enterprise/api/main/submodules/log"
 
 	"github.com/Masterminds/squirrel"
 	"github.com/aws/aws-sdk-go/aws"
@@ -55,7 +58,7 @@ func (f *Filter) Filter(val any) bool {
 // Model model for incoming requests.
 type Model struct {
 	Fields  []string  `form:"fields" json:"fields" binding:"max=255,dive,min=1,max=255"`
-	Filters []*Filter `form:"filters" json:"filters" binding:"max=255,dive,max=2"`
+	Filters []*Filter `form:"filters" json:"filters" binding:"max=255"`
 	Limit   int       `form:"limit" json:"limit" binding:"max=100"`
 	index   map[string]interface{}
 }
@@ -115,7 +118,47 @@ type PathGetter interface {
 // Be careful when using the interface, if you return true from the Modify method
 // the object will be filtered out.
 type Modifier interface {
-	Modify(*Model, *gjson.Result) (bool, error)
+	Modify(context.Context, *Model, *gjson.Result) (bool, error)
+}
+
+func escapeField(fld string) string {
+	parts := strings.Split(fld, ".")
+	for i := range parts {
+		parts[i] = fmt.Sprintf(`"%s"`, parts[i])
+	}
+
+	return "s." + strings.Join(parts, ".")
+}
+
+func formatFields(mdl Model) []string {
+	var cls []string
+
+	for _, fld := range mdl.Fields {
+		if len(fld) == 0 || fld == "*" {
+			return []string{"*"}
+		}
+
+		ffd := escapeField(fld)
+		cls = append(cls, fmt.Sprintf(`%s as "%s"`, ffd, strings.ReplaceAll(fld, ".", "__")))
+	}
+
+	if len(cls) == 0 {
+		cls = append(cls, "*")
+	}
+
+	return cls
+}
+
+// getBucketName resolve bucket for /v2/files/<filename> and /v2/files/<filename>/download
+// commons files are served from commons/files/ s3 prefix
+// commons file metadata are served from commons/pages/ s3 prefix
+func getBucketName(p *Params, path string) string {
+	bkt := p.Env.AWSBucket
+	if strings.HasPrefix(path, "commons/pages/") || strings.HasPrefix(path, "commons/files/") {
+		bkt = p.Env.AWSBucketCommons
+	}
+
+	return bkt
 }
 
 // NewGetEntity returns a single entity from s3 storage by path.
@@ -129,19 +172,8 @@ func NewGetEntity(p *Params, pg PathGetter) gin.HandlerFunc {
 			return
 		}
 
-		cls := []string{}
-
-		for _, fld := range mdl.Fields {
-			if len(fld) > 0 && fld != "*" {
-				cls = append(cls, fmt.Sprintf("main.%s as %s", fld, strings.Replace(fld, ".", "__", -1)))
-			}
-		}
-
-		if len(cls) == 0 {
-			cls = append(cls, "*")
-		}
-
-		sql, _, err := squirrel.Select(cls...).From("S3Object as main").ToSql()
+		cls := formatFields(*mdl)
+		sql, _, err := squirrel.Select(cls...).From("S3Object as s").ToSql()
 
 		if err != nil {
 			log.Error(err, log.Tip("problem in proxy with squirrel"))
@@ -157,8 +189,10 @@ func NewGetEntity(p *Params, pg PathGetter) gin.HandlerFunc {
 			return
 		}
 
+		//Choose between Commons bucket or Primary bucket
+		bkt := getBucketName(p, path)
 		sip := &s3.SelectObjectContentInput{
-			Bucket:         aws.String(p.Env.AWSBucket),
+			Bucket:         aws.String(bkt),
 			Key:            aws.String(path),
 			ExpressionType: aws.String(s3.ExpressionTypeSql),
 			Expression:     aws.String(sql),
@@ -220,29 +254,23 @@ func NewGetEntities(p *Params, pgr PathGetter) gin.HandlerFunc {
 			return
 		}
 
-		cls := []string{}
-
-		for _, fld := range mdl.Fields {
-			if len(fld) > 0 && fld != "*" {
-				cls = append(cls, fmt.Sprintf("main.%s as %s", fld, strings.Replace(fld, ".", "__", -1)))
-			}
-		}
-
-		if len(cls) == 0 {
-			cls = append(cls, "*")
-		}
-
-		que := squirrel.Select(cls...).From("S3Object as main")
+		cls := formatFields(*mdl)
+		que := squirrel.Select(cls...).From("S3Object as s")
 
 		for _, flt := range mdl.Filters {
 			if len(flt.Field) > 0 && flt.Value != nil {
 				switch val := flt.Value.(type) {
 				case int:
-					que = que.Where(fmt.Sprintf("main.%s = %d", flt.Field, val))
+					que = que.Where(fmt.Sprintf("%s = %d", escapeField(flt.Field), val))
 				case float64:
-					que = que.Where(fmt.Sprintf("main.%s = %f", flt.Field, val))
+					if strings.Contains(flt.Field, "namespace.identifier") {
+						// Namespace field is stored as a float in S3 Select, we cast to int in SQL for exact match
+						que = que.Where(fmt.Sprintf("CAST(%s AS INT) = %d", escapeField(flt.Field), int(val)))
+					} else {
+						que = que.Where(fmt.Sprintf("%s > %f", escapeField(flt.Field), val))
+					}
 				case string:
-					que = que.Where(fmt.Sprintf("main.%s = '%s'", flt.Field, val))
+					que = que.Where(fmt.Sprintf("%s = '%s'", escapeField(flt.Field), val))
 				}
 			}
 		}
@@ -328,10 +356,21 @@ func NewGetDownload(p *Params, pgr PathGetter) gin.HandlerFunc {
 			return
 		}
 
+		//Choose between Commons bucket or Primary bucket
+		bkt := getBucketName(p, pth)
 		req, _ := p.S3.GetObjectRequest(&s3.GetObjectInput{
-			Bucket: aws.String(p.Env.AWSBucket),
+			Bucket: aws.String(bkt),
 			Key:    aws.String(pth),
 		})
+		var params = req.HTTPRequest.URL.Query()
+		if prm, ok := gcx.Get("user"); ok {
+			if usr, ok := prm.(*httputil.User); ok {
+				if sub := usr.Sub; sub != "" {
+					params.Set("sub", sub)
+				}
+			}
+		}
+		req.HTTPRequest.URL.RawQuery = params.Encode()
 		url, err := req.Presign(time.Second * 60)
 
 		if err != nil {
@@ -355,8 +394,10 @@ func NewHeadDownload(p *Params, pgr PathGetter) gin.HandlerFunc {
 			return
 		}
 
+		//Choose between Commons bucket or Primary bucket
+		bkt := getBucketName(p, pth)
 		out, err := p.S3.HeadObjectWithContext(gcx.Request.Context(), &s3.HeadObjectInput{
-			Bucket: aws.String(p.Env.AWSBucket),
+			Bucket: aws.String(bkt),
 			Key:    aws.String(pth),
 		})
 
@@ -383,10 +424,22 @@ func NewGetLargeEntities(p *Params, ent string, mfs ...Modifier) gin.HandlerFunc
 
 		nme := gcx.Param("name")
 
-		if len(nme) == 0 {
+		if len(nme) < 2 {
 			log.Error("problem in proxy with large entities, no name")
 			httputil.NotFound(gcx)
 			return
+		}
+
+		// gcx.Param("name") has a leading slash.
+		nme = nme[1:]
+
+		articlePath := strings.ReplaceAll(nme, " ", "_")
+		if p.Env.UseHashedPrefixes {
+			hash := md5.Sum([]byte(articlePath)) // #nosec G401
+			hashString := hex.EncodeToString(hash[:])
+
+			// For example, 5/5c/Earth
+			articlePath = fmt.Sprintf("%s/%s/%s", hashString[:1], hashString[:2], articlePath)
 		}
 
 		if mdl.Limit > 10 {
@@ -445,7 +498,7 @@ func NewGetLargeEntities(p *Params, ent string, mfs ...Modifier) gin.HandlerFunc
 				for prj := range prs {
 					out, err := p.S3.GetObjectWithContext(gcx.Request.Context(), &s3.GetObjectInput{
 						Bucket: aws.String(p.Env.AWSBucket),
-						Key:    aws.String(fmt.Sprintf("%s/%s/%s.json", ent, prj, strings.ReplaceAll(nme, " ", "_"))),
+						Key:    aws.String(fmt.Sprintf("%s/%s/%s.json", ent, prj, articlePath)),
 					})
 
 					if err != nil {
@@ -477,7 +530,7 @@ func NewGetLargeEntities(p *Params, ent string, mfs ...Modifier) gin.HandlerFunc
 					obj := gjson.ParseBytes(dta)
 
 					for _, mfr := range mfs {
-						ftr, err := mfr.Modify(mdl, &obj)
+						ftr, err := mfr.Modify(gcx.Request.Context(), mdl, &obj)
 
 						if err != nil {
 							log.Error(err, log.Tip("problem in proxy with large entities, modifier failed"))

@@ -14,8 +14,8 @@ import (
 	"wikimedia-enterprise/api/auth/handlers/v1/resendconfirm"
 	"wikimedia-enterprise/api/auth/handlers/v1/tokenrefresh"
 	"wikimedia-enterprise/api/auth/handlers/v1/tokenrevoke"
-	"wikimedia-enterprise/general/httputil"
-	"wikimedia-enterprise/general/log"
+	"wikimedia-enterprise/api/auth/submodules/httputil"
+	"wikimedia-enterprise/api/auth/submodules/log"
 
 	"github.com/gin-gonic/gin"
 	"go.uber.org/dig"

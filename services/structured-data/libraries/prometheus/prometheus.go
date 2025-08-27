@@ -1,7 +1,7 @@
 package prometheus
 
 import (
-	pr "wikimedia-enterprise/general/prometheus"
+	pr "wikimedia-enterprise/services/structured-data/submodules/prometheus"
 )
 
 // New creates a new prometheus metrics helper instance.

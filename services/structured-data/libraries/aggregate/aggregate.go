@@ -3,19 +3,24 @@ package aggregate
 
 import (
 	"context"
+	"errors"
+	"fmt"
+	"strconv"
 	"time"
-	"wikimedia-enterprise/general/wmf"
+	"wikimedia-enterprise/services/structured-data/submodules/wmf"
 
 	"go.uber.org/dig"
 )
 
 // Aggregation represent API calls response for the package.
 type Aggregation struct {
-	Page     *wmf.Page
-	PageHTML *wmf.PageHTML
-	Revision *wmf.Revision
-	User     *wmf.User
-	Score    *wmf.Score
+	Page               *wmf.Page
+	PageHTML           *wmf.PageHTML
+	Revision           *wmf.Revision
+	User               *wmf.User
+	Score              *wmf.Score
+	ReferenceNeedScore *wmf.ReferenceNeedScore
+	ReferenceRiskScore *wmf.ReferenceRiskScore
 }
 
 // GetPage returns the page struct from aggregation.
@@ -403,6 +408,22 @@ func (a *Aggregation) GetRevertRiskScore() *wmf.LiftWingScore {
 	return nil
 }
 
+// GetReferenceRiskScore returns the reference risk score from aggregation.
+func (a *Aggregation) GetReferenceRiskScore() *wmf.ReferenceRiskScore {
+	if a == nil || a.ReferenceRiskScore == nil {
+		return nil
+	}
+	return a.ReferenceRiskScore
+}
+
+// GetReferenceNeedScore returns the reference need score from aggregation.
+func (a *Aggregation) GetReferenceNeedScore() *wmf.ReferenceNeedScore {
+	if a == nil || a.ReferenceNeedScore == nil {
+		return nil
+	}
+	return a.ReferenceNeedScore
+}
+
 // Getter an interface to allow injection of data getters (API calls) into aggregation helper.
 type Getter interface {
 	SetAPI(api wmf.API)
@@ -454,6 +475,17 @@ func (a *Aggregate) GetAggregations(ctx context.Context, dtb string, tls []strin
 	for _, gtr := range grs {
 		gtr.SetAPI(a.API)
 
+		// Check PagesRevisionGetter has valid revisionId integers in tls parameter
+		switch gtr.(type) {
+		case *RevisionsHTMLGetter:
+			for _, ttl := range tls {
+				if rid, err := strconv.Atoi(ttl); err != nil || rid == 0 {
+					ers <- errors.New("PagesRevisionsGetter requires a revision Id")
+					return nil
+				}
+			}
+		}
+
 		go func(gtr Getter) {
 			agr, err := gtr.GetData(ctx, dtb, tls)
 			ars <- agr
@@ -467,9 +499,18 @@ func (a *Aggregate) GetAggregations(ctx context.Context, dtb string, tls []strin
 		}
 	}
 
+	var errorList []error
+
 	for i := 0; i < qln; i++ {
-		if err := <-ers; err != nil {
-			return err
+		err := <-ers
+		if err != nil {
+			// Check if the error is from ScoreGetter, ReferenceNeedScoreGetter, or ReferenceRiskScoreGetter
+			switch grs[i].(type) {
+			case *ScoreGetter, *ReferenceNeedScoreGetter, *ReferenceRiskScoreGetter:
+				errorList = append(errorList, err)
+			default:
+				return err // For other getters, return early
+			}
 		}
 
 		switch dta := (<-ars).(type) {
@@ -513,7 +554,28 @@ func (a *Aggregate) GetAggregations(ctx context.Context, dtb string, tls []strin
 
 				ags[ttl].Score = scr
 			}
+		case map[string]*wmf.ReferenceNeedScore:
+			for ttl, scr := range dta {
+				if _, ok := ags[ttl]; !ok {
+					ags[ttl] = &Aggregation{}
+				}
+
+				ags[ttl].ReferenceNeedScore = scr
+			}
+		case map[string]*wmf.ReferenceRiskScore:
+			for ttl, scr := range dta {
+				if _, ok := ags[ttl]; !ok {
+					ags[ttl] = &Aggregation{}
+				}
+
+				ags[ttl].ReferenceRiskScore = scr
+			}
 		}
+	}
+
+	// Return aggregated errors if any exist
+	if len(errorList) > 0 {
+		return fmt.Errorf("Encountered errors: %v", errorList)
 	}
 
 	return nil

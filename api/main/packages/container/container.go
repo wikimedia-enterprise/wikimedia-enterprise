@@ -9,9 +9,10 @@ import (
 	"wikimedia-enterprise/api/main/libraries/metrics"
 	"wikimedia-enterprise/api/main/libraries/redis"
 	"wikimedia-enterprise/api/main/libraries/s3"
-	"wikimedia-enterprise/general/config"
-	"wikimedia-enterprise/general/log"
-	"wikimedia-enterprise/general/wmf"
+	"wikimedia-enterprise/api/main/submodules/config"
+	"wikimedia-enterprise/api/main/submodules/log"
+	parser "wikimedia-enterprise/api/main/submodules/structured-contents-parser"
+	"wikimedia-enterprise/api/main/submodules/wmf"
 
 	"go.uber.org/dig"
 )
@@ -28,6 +29,9 @@ func New() (*dig.Container, error) {
 		cnt.Provide(enforcer.New),
 		cnt.Provide(config.New),
 		cnt.Provide(metrics.New),
+		cnt.Provide(func(env *env.Environment) parser.API {
+			return parser.NewWithFlag(env.EnableTables, env.TablesConfidenceThreshold)
+		}),
 		cnt.Provide(wmf.NewAPI),
 	} {
 		if err != nil {

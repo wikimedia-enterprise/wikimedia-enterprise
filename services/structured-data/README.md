@@ -1,11 +1,17 @@
 # Wikimedia Enterprise Structured Data
 
-This service works on the kafka topic messages from event bridge service. Based on the type of event message, the service handlers make calls to wikimedia's REST Base, Actions and ORES API. The purpose of these calls are to get html, metadata, validate the accuracy of event action, etc. Finally, the structured data service handlers produce their own kafka events.
+This service works on the kafka topic messages from event bridge service. Based on the type of event message, the service handlers make calls to wikimedia's REST Base, Actions and Liftwing API. The purpose of these calls are to get html, metadata, validate the accuracy of event action, etc. Finally, the structured data service handlers produce their own kafka events.
 If wikimedia API call fails, an event will be published to an error topic, which is used in <>error service to reprocess. In case of multiple failure of a message, it will be published to a dead letter topic.
 
 ### Getting started:
 
 Need to make sure that `go`, `docker` and `docker-compose` is installed on your machine.
+
+1. Init `git` sub-modules by running:
+
+   ```bash
+   git submodule update --init --remote --recursive
+   ```
 
 1. Create `.env` file in the project root with following content:
 
@@ -15,8 +21,7 @@ Need to make sure that `go`, `docker` and `docker-compose` is installed on your 
    SCHEMA_REGISTRY_URL=http://schemaregistry:8085
    CONTENT_INTEGRITY_URL=content-integrity:5051
    BREAKING_NEWS_ENABLED=true
-   TOPICS={"articles_compacted":"aws.structured-data.articles-compacted.v1","files_compacted":"aws.structured-data.files-compacted.v1","templates_compacted":"aws.structured-data.templates-compacted.v1","categories_compacted":"aws.structured-data.categories-compacted.v1"}
-   PARTITION_CONFIG={"articles_compacted":"aws.structured-data.articles-compacted.v1","files_compacted":"aws.structured-data.files-compacted.v1","templates_compacted":"aws.structured-data.templates-compacted.v1","categories_compacted":"aws.structured-data.categories-compacted.v1"}
+   TOPIC_ARTICLE_UPDATE=["aws.event-bridge.article-update.v1", "aws.event-bridge.article-create.v1", "aws.event-bridge.article-move.v1"]
    ```
 
    Note: Since the same handler is being used in article-X and article-X-error service, the handler needs to know where to consume from. For instance, `articledelete` service consumes from aws.event-bridge.article-delete.v1. And, articledeleterror service would consume from aws.structured-data.article-delete-error.v1. This is controlled by using `TOPIC_ARTICLE_DELETE` env variable. The default value is aws.event-bridge.article-delete.v1. We override this env variable to aws.structured-data.article-delete-error.v1 in `articledeleterror` service docker config.

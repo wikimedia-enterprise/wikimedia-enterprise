@@ -1,0 +1,168 @@
+include:
+  - project: "wikimedia-enterprise/general/cdtools"
+    ref: main
+    file: "/ci/go_multiple_apps.yml"
+  - project: "wikimedia-enterprise/general/cdtools"
+    ref: main
+    file: "/ci/deploy/prep_argocd.yml"
+
+stages:
+  - test
+  - analyses
+  - build
+  - deploy
+  - app-restart
+  
+#---------------------
+# Service definitions
+#---------------------
+.articlebulk:
+  variables:
+    HANDLER: articlebulk
+    ECR_REPO: $ECR_REPO_ARTICLEBULK
+    IMAGE_NAME: $IMAGE_NAME_ARTICLEBULK
+    SERVICE_NAME: $SERVICE_NAME_ARTICLEBULK
+
+.articledelete:
+  variables:
+    HANDLER: articledelete
+    ECR_REPO: $ECR_REPO_ARTICLEDELETE
+    IMAGE_NAME: $IMAGE_NAME_ARTICLEDELETE
+    SERVICE_NAME: $SERVICE_NAME_ARTICLEDELETE
+
+.articleupdate:
+  variables:
+    HANDLER: articleupdate
+    ECR_REPO: $ECR_REPO_ARTICLEUPDATE
+    IMAGE_NAME: $IMAGE_NAME_ARTICLEUPDATE
+    SERVICE_NAME: $SERVICE_NAME_ARTICLEUPDATE
+
+.articlevisibility:
+  variables:
+    HANDLER: articlevisibility
+    ECR_REPO: $ECR_REPO_ARTICLEVISIBILITY
+    IMAGE_NAME: $IMAGE_NAME_ARTICLEVISIBILITY
+    SERVICE_NAME: $SERVICE_NAME_ARTICLEVISIBILITY
+
+#-----------------
+# Build Stage Jobs DEV
+#-----------------
+build:dev:articlebulk:
+  extends:
+    - .articlebulk
+    - .build_dev
+
+build:dev:articledelete:
+  extends:
+    - .articledelete
+    - .build_dev
+
+build:dev:articleupdate:
+  extends:
+    - .articleupdate
+    - .build_dev
+
+build:dev:articlevisibility:
+  extends:
+    - .articlevisibility
+    - .build_dev
+
+#-----------------
+# Build Stage Jobs PROD
+#-----------------
+build:prod:articlebulk:
+  extends:
+    - .articlebulk
+    - .build_prod
+
+build:prod:articledelete:
+  extends:
+    - .articledelete
+    - .build_prod
+
+build:prod:articleupdate:
+  extends:
+    - .articleupdate
+    - .build_prod
+
+build:prod:articlevisibility:
+  extends:
+    - .articlevisibility
+    - .build_prod
+
+#-----------------
+# Deploy Jobs DEV
+#-----------------
+deploy:dev:articlebulk:
+  extends:
+    - .articlebulk
+    - .deploy_dev
+
+deploy:dev:articledelete:
+  extends:
+    - .articledelete
+    - .deploy_dev
+
+deploy:dev:articleupdate:
+  extends:
+    - .articleupdate
+    - .deploy_dev
+
+deploy:dev:articlevisibility:
+  extends:
+    - .articlevisibility
+    - .deploy_dev
+
+#-----------------
+# Deploy Jobs UAT
+#-----------------
+# deploy:uat:articlebulk:
+#   extends:
+#     - .articlebulk
+#     - .deploy_uat
+
+# deploy:uat:articledelete:
+#   extends:
+#     - .articledelete
+#     - .deploy_uat
+
+# deploy:uat:articleupdate:
+#   extends:
+#     - .articleupdate
+#     - .deploy_uat
+
+# deploy:uat:articlevisibility:
+#   extends:
+#     - .articlevisibility
+#     - .deploy_uat
+
+#-----------------
+# Deploy Jobs PROD
+#-----------------
+deploy:prod:articlebulk:
+  extends:
+    - .articlebulk
+    - .deploy_prod
+  # needs:
+  # - build:articlebulk
+
+deploy:prod:articledelete:
+  extends:
+    - .articledelete
+    - .deploy_prod
+  # needs:
+  # - build:articledelete
+
+deploy:prod:articleupdate:
+  extends:
+    - .articleupdate
+    - .deploy_prod
+  # needs:
+  # - build:articleupdate
+
+deploy:prod:articlevisibility:
+  extends:
+    - .articlevisibility
+    - .deploy_prod
+  # needs:
+  #   - build:articlevisibility

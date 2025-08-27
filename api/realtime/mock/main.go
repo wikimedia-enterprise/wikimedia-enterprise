@@ -10,7 +10,7 @@ import (
 	"runtime"
 	"strconv"
 	"strings"
-	"wikimedia-enterprise/general/schema"
+	"wikimedia-enterprise/api/realtime/submodules/schema"
 )
 
 func main() {

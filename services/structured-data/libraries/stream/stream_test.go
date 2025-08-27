@@ -27,7 +27,7 @@ func (s *streamTestSuite) SetupSuite() {
 }
 
 func (s *streamTestSuite) TestNew() {
-	s.Assert().NotNil(stream.New(s.env, new(kafka.Producer)))
+	s.Assert().NotNil(stream.NewHelper(s.env, new(kafka.Producer)))
 }
 
 func TestNew(t *testing.T) {

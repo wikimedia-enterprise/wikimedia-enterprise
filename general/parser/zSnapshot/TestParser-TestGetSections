@@ -1,0 +1,1846 @@
+([]*parser.Part) (len=8) {
+  (*parser.Part)({
+    Name: (string) (len=8) "Abstract",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=264) "Body mass index (BMI) is a value derived from the mass (weight) and height of a person. The BMI is defined as the body mass divided by the square of the body height, and is expressed in units of kg/m, resulting from mass in kilograms (kg) and height in metres (m).",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=9) {
+          (*parser.Link)({
+            URL: (string) (len=34) "https://en.wikipedia.org/wiki/Mass",
+            Text: (string) (len=4) "mass",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/Mass_versus_weight",
+            Text: (string) (len=6) "weight",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=36) "https://en.wikipedia.org/wiki/Height",
+            Text: (string) (len=6) "height",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/Human_body_weight",
+            Text: (string) (len=9) "body mass",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Square_(algebra)",
+            Text: (string) (len=6) "square",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Human_height",
+            Text: (string) (len=11) "body height",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Units_of_measurement",
+            Text: (string) (len=5) "units",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=38) "https://en.wikipedia.org/wiki/Kilogram",
+            Text: (string) (len=9) "kilograms",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/Metre",
+            Text: (string) (len=6) "metres",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=470) "The BMI may be determined first by measuring its components by means of a weighing scale and a stadiometer. The multiplication and division may be carried out directly, by hand or using a calculator, or indirectly using a lookup table (or chart). The table displays BMI as a function of mass and height and may show other units of measurement (converted to metric units for the calculation). The table may also show contour lines or colours for different BMI categories.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/Weighing_scale",
+            Text: (string) (len=14) "weighing scale",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=41) "https://en.wikipedia.org/wiki/Stadiometer",
+            Text: (string) (len=11) "stadiometer",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Lookup_table",
+            Text: (string) (len=12) "lookup table",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Metric_system",
+            Text: (string) (len=12) "metric units",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=560) "The BMI is a convenient rule of thumb used to broadly categorize a person as based on tissue mass (muscle, fat, and bone) and height. Major adult BMI classifications are underweight (under 18.5 kg/m), normal weight (18.5 to 24.9), overweight (25 to 29.9), and obese (30 or more). When used to predict an individual's health, rather than as a statistical measurement for groups, the BMI has limitations that can make it less useful than some of the alternatives, especially when applied to individuals with abdominal obesity, short stature, or high muscle mass.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=13) {
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Rule_of_thumb",
+            Text: (string) (len=13) "rule of thumb",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=36) "https://en.wikipedia.org/wiki/Muscle",
+            Text: (string) (len=6) "muscle",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=33) "https://en.wikipedia.org/wiki/Fat",
+            Text: (string) (len=3) "fat",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=34) "https://en.wikipedia.org/wiki/Bone",
+            Text: (string) (len=4) "bone",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=41) "https://en.wikipedia.org/wiki/Underweight",
+            Text: (string) (len=11) "underweight",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Normal_weight",
+            Text: (string) (len=13) "normal weight",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/Overweight",
+            Text: (string) (len=10) "overweight",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/Obese",
+            Text: (string) (len=5) "obese",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=57) "https://en.wikipedia.org/wiki/Body_mass_index#Limitations",
+            Text: (string) (len=11) "limitations",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=58) "https://en.wikipedia.org/wiki/Body_mass_index#Alternatives",
+            Text: (string) (len=12) "alternatives",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/Abdominal_obesity",
+            Text: (string) (len=17) "abdominal obesity",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Short_stature",
+            Text: (string) (len=13) "short stature",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Bodybuilding",
+            Text: (string) (len=16) "high muscle mass",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=142) "BMIs under 20 and over 25 have been associated with higher all-cause mortality, with the risk increasing with distance from the 20–25 range.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=7) "History",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=5) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=762) "Adolphe Quetelet, a Belgian astronomer, mathematician, statistician, and sociologist, devised the basis of the BMI between 1830 and 1850 as he developed what he called \"social physics\". Quetelet himself never intended for the index, then called the Quetelet Index, to be used as a means of medical assessment. Instead, it was a component of his study of l'homme moyen, or the average man. Quetelet thought of the average man as a social ideal, and developed the body mass index as a means of discovering the socially ideal human person. According to Lars Grue and Arvid Heiberg in the Scandinavian Journal of Disability Research, Quetelet's idealization of the average man would be elaborated upon by Francis Galton a decade later in the development of Eugenics.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=6) {
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Adolphe_Quetelet",
+            Text: (string) (len=16) "Adolphe Quetelet",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/Astronomer",
+            Text: (string) (len=10) "astronomer",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Statistician",
+            Text: (string) (len=12) "statistician",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=41) "https://en.wikipedia.org/wiki/Sociologist",
+            Text: (string) (len=11) "sociologist",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/Francis_Galton",
+            Text: (string) (len=14) "Francis Galton",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=38) "https://en.wikipedia.org/wiki/Eugenics",
+            Text: (string) (len=8) "Eugenics",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=387) "The modern term \"body mass index\" (BMI) for the ratio of human body weight to squared height was coined in a paper published in the July 1972 edition of the Journal of Chronic Diseases by Ancel Keys and others. In this paper, Keys argued that what he termed the BMI was \"if not fully satisfactory, at least as good as any other relative weight index as an indicator of relative obesity\".",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/Human_body_weight",
+            Text: (string) (len=17) "human body weight",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=57) "https://en.wikipedia.org/wiki/Journal_of_Chronic_Diseases",
+            Text: (string) (len=27) "Journal of Chronic Diseases",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/Ancel_Keys",
+            Text: (string) (len=10) "Ancel Keys",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=391) "The interest in an index that measures body fat came with observed increasing obesity in prosperous Western societies. Keys explicitly judged BMI as appropriate for population studies and inappropriate for individual evaluation. Nevertheless, due to its simplicity, it has come to be widely used for preliminary diagnoses. Additional metrics, such as waist circumference, can be more useful.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=38) "https://en.wikipedia.org/wiki/Body_fat",
+            Text: (string) (len=8) "body fat",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Western_world",
+            Text: (string) (len=7) "Western",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=306) "The BMI is expressed in kg/m, resulting from mass in kilograms and height in metres. If pounds and inches are used, a conversion factor of 703 (kg/m)/(lb/in) is applied. (If pounds and feet are used, a conversion factor of 4.88 is used.) When the term BMI is used informally, the units are usually omitted.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Pound_(mass)",
+            Text: (string) (len=6) "pounds",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=34) "https://en.wikipedia.org/wiki/Inch",
+            Text: (string) (len=6) "inches",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=698) "BMI provides a simple numeric measure of a person's thickness or thinness, allowing health professionals to discuss weight problems more objectively with their patients. BMI was designed to be used as a simple means of classifying average sedentary (physically inactive) populations, with an average body composition. For such individuals, the BMI value recommendations as of 2014 are as follows: 18.5 to 24.9 kg/m may indicate optimal weight, lower than 18.5 may indicate underweight, 25 to 29.9 may indicate overweight, and 30 or more may indicate obese. Lean male athletes often have a high muscle-to-fat ratio and therefore a BMI that is misleadingly high relative to their body-fat percentage.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Body_composition",
+            Text: (string) (len=16) "body composition",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=41) "https://en.wikipedia.org/wiki/Underweight",
+            Text: (string) (len=11) "underweight",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/Overweight",
+            Text: (string) (len=10) "overweight",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/Obesity",
+            Text: (string) (len=5) "obese",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=10) "Categories",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=327) "A common use of the BMI is to assess how far an individual's body weight departs from what is normal for a person's height. The weight excess or deficiency may, in part, be accounted for by body fat (adipose tissue) although other factors such as muscularity also affect BMI significantly (see discussion below and overweight).",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/Adipose_tissue",
+            Text: (string) (len=14) "adipose tissue",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/Overweight",
+            Text: (string) (len=10) "overweight",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=499) "The WHO regards an adult BMI of less than 18.5 as underweight and possibly indicative of malnutrition, an eating disorder, or other health problems, while a BMI of 25 or more is considered overweight and 30 or more is considered obese. In addition to the principle, international WHO BMI cut-off points (16, 17, 18.5, 25, 30, 35 and 40), four additional cut-off points for at-risk Asians were identified (23, 27.5, 32.5 and 37.5). These ranges of BMI values are valid only as statistical categories.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=55) "https://en.wikipedia.org/wiki/World_Health_Organization",
+            Text: (string) (len=3) "WHO",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Malnutrition",
+            Text: (string) (len=12) "malnutrition",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=45) "https://en.wikipedia.org/wiki/Eating_disorder",
+            Text: (string) (len=15) "eating disorder",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/Obesity",
+            Text: (string) (len=5) "obese",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) (len=18) "Children and youth",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=337) "BMI is used differently for people aged 2 to 20. It is calculated in the same way as for adults but then compared to typical values for other children or youth of the same age. Instead of comparison against fixed thresholds for underweight and overweight, the BMI is compared against the percentiles for children of the same sex and age.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Percentile",
+                Text: (string) (len=11) "percentiles",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=209) "A BMI that is less than the 5th percentile is considered underweight and above the 95th percentile is considered obese. Children with a BMI between the 85th and 95th percentile are considered to be overweight.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=151) "Studies in Britain from 2013 have indicated that females between the ages 12 and 16 had a higher BMI than males of the same age by 1.0 kg/m on average.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=24) "International variations",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=6) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=618) "These recommended distinctions along the linear scale may vary from time to time and country to country, making global, longitudinal surveys problematic. People from different populations and descent have different associations between BMI, percentage of body fat, and health risks, with a higher risk of type 2 diabetes mellitus and atherosclerotic cardiovascular disease at BMIs lower than the WHO cut-off point for overweight, 25 kg/m, although the cut-off for observed risk varies among different populations. The cut-off for observed risk varies based on populations and subpopulations in Europe, Asia and Africa.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Type_2_diabetes_mellitus",
+                Text: (string) (len=24) "type 2 diabetes mellitus",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Atherosclerosis",
+                Text: (string) (len=15) "atherosclerotic",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/World_Health_Organization",
+                Text: (string) (len=3) "WHO",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Hong Kong",
+            Type: (string) (len=7) "section",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=1) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "paragraph",
+                Value: (string) (len=83) "The Hospital Authority of Hong Kong recommends the use of the following BMI ranges:",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=48) "https://en.wikipedia.org/wiki/Hospital_Authority",
+                    Text: (string) (len=18) "Hospital Authority",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=39) "https://en.wikipedia.org/wiki/Hong_Kong",
+                    Text: (string) (len=9) "Hong Kong",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Japan",
+            Type: (string) (len=7) "section",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=1) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "paragraph",
+                Value: (string) (len=116) "A 2000 study from the Japan Society for the Study of Obesity (JASSO) presents the following table of BMI categories:",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Singapore",
+            Type: (string) (len=7) "section",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=1) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "paragraph",
+                Value: (string) (len=429) "In Singapore, the BMI cut-off figures were revised in 2005 by the Health Promotion Board (HPB), motivated by studies showing that many Asian populations, including Singaporeans, have a higher proportion of body fat and increased risk for cardiovascular diseases and diabetes mellitus, compared with general BMI recommendations in other countries. The BMI cut-offs are presented with an emphasis on health risk rather than weight.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=47) "https://en.wikipedia.org/wiki/Diabetes_mellitus",
+                    Text: (string) (len=17) "diabetes mellitus",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "United Kingdom",
+            Type: (string) (len=7) "section",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=3) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "paragraph",
+                Value: (string) (len=186) "In the UK, NICE guidance recommends prevention of type 2 diabetes should start at a BMI of 30 in White and 27.5 in Black African, African-Caribbean, South Asian, and Chinese populations.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=5) {
+                  (*parser.Link)({
+                    URL: (string) (len=79) "https://en.wikipedia.org/wiki/National_Institute_for_Health_and_Care_Excellence",
+                    Text: (string) (len=4) "NICE",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=50) "https://en.wikipedia.org/wiki/Black_British_people",
+                    Text: (string) (len=13) "Black African",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=62) "https://en.wikipedia.org/wiki/British_African-Caribbean_people",
+                    Text: (string) (len=17) "African-Caribbean",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=64) "https://en.wikipedia.org/wiki/South_Asians_in_the_United_Kingdom",
+                    Text: (string) (len=11) "South Asian",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=45) "https://en.wikipedia.org/wiki/British_Chinese",
+                    Text: (string) (len=7) "Chinese",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "paragraph",
+                Value: (string) (len=168) "New research based on a large sample of almost 1.5 million people in England found that some ethnic groups would benefit from prevention at or above a BMI of (rounded):",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=4) "list",
+                Value: (string) "",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) (len=11) {
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=11) "30 in White",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) {
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=102) "28 in Black just below 30 in Black British 29 in Black African 27 in Black Other 26 in Black Caribbean",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) {
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=30) "just below 30 in Black British",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) {
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=19) "29 in Black African",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) {
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=17) "27 in Black Other",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) {
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=21) "26 in Black Caribbean",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) {
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=22) "27 in Arab and Chinese",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) {
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=97) "24 in South Asian 24 in Pakistani, Indian and Nepali 23 in Tamil and Sri Lankan 21 in Bangladeshi",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) (len=1) {
+                      (*parser.Link)({
+                        URL: (string) (len=50) "https://en.wikipedia.org/wiki/British_Bangladeshis",
+                        Text: (string) (len=11) "Bangladeshi",
+                        Images: ([]*parser.Image) {
+                        }
+                      })
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=34) "24 in Pakistani, Indian and Nepali",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) {
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=26) "23 in Tamil and Sri Lankan",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) {
+                    }
+                  }),
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=9) "list_item",
+                    Value: (string) (len=17) "21 in Bangladeshi",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) <nil>,
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) (len=1) {
+                      (*parser.Link)({
+                        URL: (string) (len=50) "https://en.wikipedia.org/wiki/British_Bangladeshis",
+                        Text: (string) (len=11) "Bangladeshi",
+                        Images: ([]*parser.Image) {
+                        }
+                      })
+                    }
+                  })
+                },
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) <nil>
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "United States",
+            Type: (string) (len=7) "section",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=3) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "paragraph",
+                Value: (string) (len=325) "In 1998, the U.S. National Institutes of Health brought U.S. definitions in line with World Health Organization guidelines, lowering the normal/overweight cut-off from a BMI of 27.8 (men) and 27.3 (women) to a BMI of 25. This had the effect of redefining approximately 25 million Americans, previously healthy, to overweight.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=59) "https://en.wikipedia.org/wiki/National_Institutes_of_Health",
+                    Text: (string) (len=29) "National Institutes of Health",
+                    Images: ([]*parser.Image) {
+                    }
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=55) "https://en.wikipedia.org/wiki/World_Health_Organization",
+                    Text: (string) (len=25) "World Health Organization",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "paragraph",
+                Value: (string) (len=358) "This can partially explain the increase in the overweight diagnosis in the past 20 years, and the increase in sales of weight loss products during the same time. WHO also recommends lowering the normal/overweight threshold for southeast Asian body types to around BMI 23, and expects further revisions to emerge from clinical studies of different body types.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=55) "https://en.wikipedia.org/wiki/World_Health_Organization",
+                    Text: (string) (len=3) "WHO",
+                    Images: ([]*parser.Image) {
+                    }
+                  })
+                }
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "paragraph",
+                Value: (string) (len=493) "A survey in 2007 showed 63% of Americans were then overweight or obese, with 26% in the obese category (a BMI of 30 or more). By 2014, 37.7% of adults in the United States were obese, 35.0% of men and 40.4% of women; class 3 obesity (BMI over 40) values were 7.7% for men and 9.9% for women. The U.S. National Health and Nutrition Examination Survey of 2015-2016 showed that 71.6% of American men and women had BMIs over 25. Obesity—a BMI of 30 or more—was found in 39.8% of the US adults.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                }
+              })
+            },
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=40) "Consequences of elevated level in adults",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=173) "The BMI ranges are based on the relationship between body weight and disease and death. Overweight and obese individuals are at an increased risk for the following diseases:",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=4) "list",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=11) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=23) "Coronary artery disease",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Coronary_artery_disease",
+                Text: (string) (len=23) "Coronary artery disease",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=12) "Dyslipidemia",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Dyslipidemia",
+                Text: (string) (len=12) "Dyslipidemia",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=15) "Type 2 diabetes",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Diabetes_mellitus_type_2",
+                Text: (string) (len=15) "Type 2 diabetes",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=19) "Gallbladder disease",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Gallbladder_disease",
+                Text: (string) (len=19) "Gallbladder disease",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=12) "Hypertension",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Hypertension",
+                Text: (string) (len=12) "Hypertension",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=14) "Osteoarthritis",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Osteoarthritis",
+                Text: (string) (len=14) "Osteoarthritis",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=11) "Sleep apnea",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Sleep_apnea",
+                Text: (string) (len=11) "Sleep apnea",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=6) "Stroke",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Stroke",
+                Text: (string) (len=6) "Stroke",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=11) "Infertility",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Infertility",
+                Text: (string) (len=11) "Infertility",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=68) "At least 10 cancers, including endometrial, breast, and colon cancer",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Endometrial_cancer",
+                Text: (string) (len=11) "endometrial",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Breast_cancer",
+                Text: (string) (len=6) "breast",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Colon_cancer",
+                Text: (string) (len=12) "colon cancer",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=20) "Epidural lipomatosis",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Lipomatosis",
+                Text: (string) (len=11) "lipomatosis",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=158) "Among people who have never smoked, overweight/obesity is associated with 51% increase in mortality compared with people who have always been a normal weight.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=12) "Applications",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) (len=13) "Public health",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=557) "The BMI is generally used as a means of correlation between groups related by general mass and can serve as a vague means of estimating adiposity. The duality of the BMI is that, while it is easy to use as a general calculation, it is limited as to how accurate and pertinent the data obtained from it can be. Generally, the index is suitable for recognizing trends within sedentary or overweight individuals because there is a smaller margin of error. The BMI has been used by the WHO as the standard for recording obesity statistics since the early 1980s.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Adipose_tissue",
+                Text: (string) (len=9) "adiposity",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/World_Health_Organization",
+                Text: (string) (len=3) "WHO",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=634) "This general correlation is particularly useful for consensus data regarding obesity or various other conditions because it can be used to build a semi-accurate representation from which a solution can be stipulated, or the RDA for a group can be calculated. Similarly, this is becoming more and more pertinent to the growth of children, since the majority of children are sedentary. Cross-sectional studies indicated that sedentary people can decrease BMI by becoming more physically active. Smaller effects are seen in prospective cohort studies which lend to support active mobility as a means to prevent a further increase in BMI.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/Recommended_Dietary_Allowance",
+                Text: (string) (len=3) "RDA",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Active_mobility",
+                Text: (string) (len=15) "active mobility",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=11) "Legislation",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=252) "In France, Italy, and Spain, legislation has been introduced banning the usage of fashion show models having a BMI below 18. In Israel, a model with BMI below 18.5 is banned. This is done to fight anorexia among models and people interested in fashion.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Anorexia_nervosa",
+                Text: (string) (len=8) "anorexia",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=22) "Relationship to health",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=6) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=237) "A study published by Journal of the American Medical Association (JAMA) in 2005 showed that overweight people had a death rate similar to normal weight people as defined by BMI, while underweight and obese people had a higher death rate.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=73) "https://en.wikipedia.org/wiki/Journal_of_the_American_Medical_Association",
+            Text: (string) (len=43) "Journal of the American Medical Association",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=311) "A study published by The Lancet in 2009 involving 900,000 adults showed that overweight and underweight people both had a mortality rate higher than normal weight people as defined by BMI. The optimal BMI was found to be in the range of 22.5–25. The average BMI of athletes is 22.4 for women and 23.6 for men.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/The_Lancet",
+            Text: (string) (len=10) "The Lancet",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=105) "High BMI is associated with type 2 diabetes only in people with high serum gamma-glutamyl transpeptidase.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=54) "https://en.wikipedia.org/wiki/Diabetes_mellitus_type_2",
+            Text: (string) (len=15) "type 2 diabetes",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=59) "https://en.wikipedia.org/wiki/Gamma-glutamyl_transpeptidase",
+            Text: (string) (len=29) "gamma-glutamyl transpeptidase",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=239) "In an analysis of 40 studies involving 250,000 people, patients with coronary artery disease with normal BMIs were at higher risk of death from cardiovascular disease than people whose BMIs put them in the overweight range (BMI 25–29.9).",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=424) "One study found that BMI had a good general correlation with body fat percentage, and noted that obesity has overtaken smoking as the world's number one cause of death. But it also notes that in the study 50% of men and 62% of women were obese according to body fat defined obesity, while only 21% of men and 31% of women were obese according to BMI, meaning that BMI was found to underestimate the number of obese subjects.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=382) "A 2010 study that followed 11,000 subjects for up to eight years concluded that BMI is not the most appropriate measure for the risk of heart attack, stroke or death. A better measure was found to be the waist-to-height ratio. A 2011 study that followed 60,000 participants for up to 13 years found that waist–hip ratio was a better predictor of ischaemic heart disease mortality.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=51) "https://en.wikipedia.org/wiki/Waist-to-height_ratio",
+            Text: (string) (len=21) "waist-to-height ratio",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/Waist–hip_ratio",
+            Text: (string) (len=17) "waist–hip ratio",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=11) "Limitations",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=6) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=97) "The medical establishment and statistical community have both highlighted the limitations of BMI.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) (len=29) "Racial and gender differences",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=624) "Part of the statistical limitations of the BMI scale is the result of Quetelet's original sampling methods. As noted in his primary work, A Treatise on Man and the Development of His Faculties, the data from which Quetelet derived his formula was taken mostly from Scottish Highland soldiers and French Gendarmerie. The BMI was always designed as a metric for European men. For women, and people of non-European origin, the scale is often biased. As noted by sociologist Sabrina Strings, the BMI is largely inaccurate for black people especially, disproportionately labelling them as overweight even for healthy individuals.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Gendarmerie",
+                Text: (string) (len=11) "Gendarmerie",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=7) "Scaling",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=745) "The exponent in the denominator of the formula for BMI is arbitrary. The BMI depends upon weight and the square of height. Since mass increases to the third power of linear dimensions, taller individuals with exactly the same body shape and relative composition have a larger BMI. BMI is proportional to the mass and inversely proportional to the square of the height. So, if all body dimensions double, and mass scales naturally with the cube of the height, then BMI doubles instead of remaining the same. This results in taller people having a reported BMI that is uncharacteristically high, compared to their actual body fat levels. In comparison, the Ponderal index is based on the natural scaling of mass with the third power of the height.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Ponderal_index",
+                Text: (string) (len=14) "Ponderal index",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=321) "However, many taller people are not just \"scaled up\" short people but tend to have narrower frames in proportion to their height. Carl Lavie has written that \"The B.M.I. tables are excellent for identifying obesity and body fat in large populations, but they are far less reliable for determining fatness in individuals.\"",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Carl_Lavie",
+                Text: (string) (len=10) "Carl Lavie",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=102) "For US adults, exponent estimates range from 1.92 to 1.96 for males and from 1.45 to 1.95 for females.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=24) "Physical characteristics",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=405) "The BMI overestimates roughly 10% for a large (or tall) frame and underestimates roughly 10% for a smaller frame (short stature). In other words, people with small frames would be carrying more fat than optimal, but their BMI indicates that they are normal. Conversely, large framed (or tall) individuals may be quite healthy, with a fairly low body fat percentage, but be classified as overweight by BMI.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Body_fat_percentage",
+                Text: (string) (len=19) "body fat percentage",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=726) "For example, a height/weight chart may say the ideal weight (BMI 21.5) for a 1.78-metre-tall (5 ft 10 in) man is 68 kilograms (150 lb). But if that man has a slender build (small frame), he may be overweight at 68 kg or 150 lb and should reduce by 10% to roughly 61 kg or 135 lb (BMI 19.4). In the reverse, the man with a larger frame and more solid build should increase by 10%, to roughly 75 kg or 165 lb (BMI 23.7). If one teeters on the edge of small/medium or medium/large, common sense should be used in calculating one's ideal weight. However, falling into one's ideal weight range for height and build is still not as accurate in determining health risk factors as waist-to-height ratio and actual body fat percentage.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Waist-to-height_ratio",
+                Text: (string) (len=21) "waist-to-height ratio",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=349) "Accurate frame size calculators use several measurements (wrist circumference, elbow width, neck circumference, and others) to determine what category an individual falls into for a given height. The BMI also fails to take into account loss of height through ageing. In this situation, BMI will increase without any corresponding increase in weight.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=17) "Muscle versus fat",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=235) "Assumptions about the distribution between muscle mass and fat mass are inexact. BMI generally overestimates adiposity on those with leaner body mass (e.g., athletes) and underestimates excess adiposity on those with fattier body mass.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Adipose_tissue",
+                Text: (string) (len=9) "adiposity",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=908) "A study in June 2008 by Romero-Corral et al. examined 13,601 subjects from the United States' third National Health and Nutrition Examination Survey (NHANES III) and found that BMI-defined obesity (BMI ≥ 30) was present in 21% of men and 31% of women. Body fat-defined obesity was found in 50% of men and 62% of women. While BMI-defined obesity showed high specificity (95% for men and 99% for women), BMI showed poor sensitivity (36% for men and 49% for women). In other words, the BMI will be mostly correct when determining a person to be obese, but can err quite frequently when determining a person not to be. Despite this undercounting of obesity by BMI, BMI values in the intermediate BMI range of 20–30 were found to be associated with a wide range of body fat percentages. For men with a BMI of 25, about 20% have a body fat percentage below 20% and about 10% have body fat percentage above 30%.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=78) "https://en.wikipedia.org/wiki/National_Health_and_Nutrition_Examination_Survey",
+                Text: (string) (len=48) "National Health and Nutrition Examination Survey",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/Sensitivity_and_specificity",
+                Text: (string) (len=11) "specificity",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/Sensitivity_and_specificity",
+                Text: (string) (len=11) "sensitivity",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=304) "Body composition for athletes is often better calculated using measures of body fat, as determined by such techniques as skinfold measurements or underwater weighing and the limitations of manual measurement have also led to new, alternative methods to measure obesity, such as the body volume indicator.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=73) "https://en.wikipedia.org/wiki/Classification_of_obesity#Body_Volume_Index",
+                Text: (string) (len=21) "body volume indicator",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=38) "Variation in definitions of categories",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=448) "It is not clear where on the BMI scale the threshold for overweight and obese should be set. Because of this, the standards have varied over the past few decades. Between 1980 and 2000 the U.S. Dietary Guidelines have defined overweight at a variety of levels ranging from a BMI of 24.9 to 27.1. In 1985 the National Institutes of Health (NIH) consensus conference recommended that overweight BMI be set at a BMI of 27.8 for men and 27.3 for women.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Overweight",
+                Text: (string) (len=10) "overweight",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Obesity",
+                Text: (string) (len=5) "obese",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/National_Institutes_of_Health",
+                Text: (string) (len=29) "National Institutes of Health",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=335) "In 1998, an NIH report concluded that a BMI over 25 is overweight and a BMI over 30 is obese. In the 1990s the World Health Organization (WHO) decided that a BMI of 25 to 30 should be considered overweight and a BMI over 30 is obese, the standards the NIH set. This became the definitive guide for determining if someone is overweight.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/World_Health_Organization",
+                Text: (string) (len=25) "World Health Organization",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=437) "One study found that the vast majority of people labelled 'overweight' and 'obese' according to current definitions do not in fact face any meaningful increased risk for early death. In a quantitative analysis of several studies, involving more than 600,000 men and women, the lowest mortality rates were found for people with BMIs between 23 and 29; most of the 25–30 range considered 'overweight' was not associated with higher risk.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=12) "Alternatives",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=6) {
+      (*parser.Part)({
+        Name: (string) (len=32) "Corpulence index (exponent of 3)",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=488) "The corpulence index uses an exponent of 3 rather than 2. The corpulence index yields valid results even for very short and very tall people, which is a problem with BMI. For example, a 152.4 cm (5 ft 0 in) tall person at an ideal body weight of 48 kg (106 lb) gives a normal BMI of 20.74 and CI of 13.6, while a 200 cm (6 ft 7 in) tall person with a weight of 100 kg (220 lb) gives a BMI of 24.84, very close to an overweight BMI of 25, and a CI of 12.4, very close to a normal CI of 12.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Corpulence_index",
+                Text: (string) (len=16) "corpulence index",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=25) "New BMI (exponent of 2.5)",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=4) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=62) "An exponent of 5/2 was proposed by Quetelet in the 19 century:",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=151) "In general, we do not err much when we assume that during development the squares of the weight at different ages are as the fifth powers of the height",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=301) "This exponent of 2.5 is used in a revised formula for Body Mass Index, proposed by Nick Trefethen, Professor of numerical analysis at the University of Oxford, which minimizes the distortions for shorter and taller individuals resulting from the use of an exponent of 2 in the traditional BMI formula:",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Nick_Trefethen",
+                Text: (string) (len=14) "Nick Trefethen",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/University_of_Oxford",
+                Text: (string) (len=20) "University of Oxford",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=577) "The scaling factor of 1.3 was determined to make the proposed new BMI formula align with the traditional BMI formula for adults of average height, while the exponent of 2.5 is a compromise between the exponent of 2 in the traditional formula for BMI and the exponent of 3 that would be expected for the scaling of weight (which at constant density would theoretically scale with volume, i.e., as the cube of the height) with height. In Trefethen's analysis, an exponent of 2.5 was found to fit empirical data more closely with less distortion than either an exponent of 2 or 3.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=47) "BMI prime (exponent of 2, normalization factor)",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=579) "BMI Prime, a modification of the BMI system, is the ratio of actual BMI to upper limit optimal BMI (currently defined at 25 kg/m), i.e., the actual BMI expressed as a proportion of upper limit optimal. BMI Prime is a dimensionless number independent of units. Individuals with BMI Prime less than 0.74 are underweight; those with between 0.74 and 1.00 have optimal weight; and those at 1.00 or greater are overweight. BMI Prime is useful clinically because it shows by what ratio (e.g. 1.36) or percentage (e.g. 136%, or 36% above) a person deviates from the maximum optimal BMI.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Dimensionless_number",
+                Text: (string) (len=20) "dimensionless number",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=391) "For instance, a person with BMI 34 kg/m has a BMI Prime of 34/25 = 1.36, and is 36% over their upper mass limit. In South East Asian and South Chinese populations (see § international variations), BMI Prime should be calculated using an upper limit BMI of 23 in the denominator instead of 25. BMI Prime allows easy comparison between populations whose upper-limit optimal BMI values differ.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=70) "https://en.wikipedia.org/wiki/Body_mass_index#International_variations",
+                Text: (string) (len=27) "§ international variations",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=19) "Waist circumference",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=678) "Waist circumference is a good indicator of visceral fat, which poses more health risks than fat elsewhere. According to the U.S. National Institutes of Health (NIH), waist circumference in excess of 1,020 mm (40 in) for men and 880 mm (35 in) for (non-pregnant) women is considered to imply a high risk for type 2 diabetes, dyslipidemia, hypertension, and cardiovascular disease CVD. Waist circumference can be a better indicator of obesity-related disease risk than BMI. For example, this is the case in populations of Asian descent and older people. 940 mm (37 in) for men and 800 mm (31 in) for women has been stated to pose \"higher risk\", with the NIH figures \"even higher\".",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Visceral_fat",
+                Text: (string) (len=12) "visceral fat",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/National_Institutes_of_Health",
+                Text: (string) (len=29) "National Institutes of Health",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Dyslipidemia",
+                Text: (string) (len=12) "dyslipidemia",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Hypertension",
+                Text: (string) (len=12) "hypertension",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Cardiovascular_disease",
+                Text: (string) (len=22) "cardiovascular disease",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=152) "Waist-to-hip circumference ratio has also been used, but has been found to be no better than waist circumference alone, and more complicated to measure.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=351) "A related indicator is waist circumference divided by height. A 2013 study identified critical threshold values for waist-to-height ratio according to age, with consequent significant reduction in life expectancy if exceeded. These are: 0.5 for people under 40 years of age, 0.5 to 0.6 for people aged 40–50, and 0.6 for people over 50 years of age.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Waist-to-height_ratio",
+                Text: (string) (len=21) "waist-to-height ratio",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=30) "Surface-based body shape index",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=430) "The Surface-based Body Shape Index (SBSI) is far more rigorous and is based upon four key measurements: the body surface area (BSA), vertical trunk circumference (VTC), waist circumference (WC) and height (H). Data on 11,808 subjects from the National Health and Human Nutrition Examination Surveys (NHANES) 1999–2004, showed that SBSI outperformed BMI, waist circumference, and A Body Shape Index (ABSI), an alternative to BMI.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Body_surface_area",
+                Text: (string) (len=17) "body surface area",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Body_Shape_Index",
+                Text: (string) (len=25) "A Body Shape Index (ABSI)",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=81) "A simplified, dimensionless form of SBSI, known as SBSI, has also been developed.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=24) "Modified body mass index",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=231) "Within some medical contexts, such as familial amyloid polyneuropathy, serum albumin is factored in to produce a modified body mass index (mBMI). The mBMI can be obtained by multiplying the BMI by serum albumin, in grams per litre.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=61) "https://en.wikipedia.org/wiki/Familial_amyloid_polyneuropathy",
+                Text: (string) (len=31) "familial amyloid polyneuropathy",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Human_serum_albumin",
+                Text: (string) (len=13) "serum albumin",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

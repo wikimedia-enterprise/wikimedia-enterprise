@@ -10,7 +10,7 @@ import (
 	"runtime"
 	"strings"
 
-	"wikimedia-enterprise/general/log"
+	"wikimedia-enterprise/api/auth/submodules/log"
 
 	env "github.com/Netflix/go-env"
 	"github.com/gocarina/gocsv"
@@ -124,25 +124,31 @@ func (t *List) UnmarshalEnvironmentValue(data string) error {
 
 // Environment environment variables configuration.
 type Environment struct {
-	AWSRegion              string        `env:"AWS_REGION,required=true"`
-	AWSID                  string        `env:"AWS_ID,required=true"`
-	AWSKey                 string        `env:"AWS_KEY,required=true"`
-	CognitoClientID        string        `env:"COGNITO_CLIENT_ID,required=true"`
-	CognitoSecret          string        `env:"COGNITO_SECRET,required=true"`
-	CognitoUserPoolID      string        `env:"COGNITO_USER_POOL_ID,required=true"`
-	CognitoUserGroup       string        `env:"COGNITO_USER_GROUP,required=true"`
-	ServerMode             string        `env:"SERVER_MODE,default=release"`
-	ServerPort             string        `env:"SERVER_PORT,default=4050"`
-	RedisAddr              string        `env:"REDIS_ADDR,default=redis:6379"`
-	RedisPassword          string        `env:"REDIS_PASSWORD"`
-	MaxAccessTokens        int64         `env:"MAX_ACCESS_TOKENS,default=90"`
-	AccessTokensExpHours   int64         `env:"ACCESS_TOKENS_EXPIRATION_HOURS,default=2160"`
-	IPRange                string        `env:"IP_RANGE"`
-	CognitoCacheExpiration int           `env:"COGNITO_CACHE_EXPIRATION,default=300"`
-	AccessPolicy           *AccessPolicy `env:"ACCESS_POLICY,required=true"`
-	GroupDownloadLimit     string        `env:"GROUP_DOWNLOAD_LIMIT,required=true"`
-	PrometheusPort         int           `env:"PROMETHEUS_PORT,default=12411"`
-	DomainDenyList         List          `env:"DOMAIN_DENY_LIST,default="`
+	AWSURL                   string        `env:"AWS_URL"`
+	AWSRegion                string        `env:"AWS_REGION,required=true"`
+	AWSID                    string        `env:"AWS_ID,required=true"`
+	AWSKey                   string        `env:"AWS_KEY,required=true"`
+	CognitoClientID          string        `env:"COGNITO_CLIENT_ID,required=true"`
+	CognitoSecret            string        `env:"COGNITO_SECRET,required=true"`
+	CognitoUserPoolID        string        `env:"COGNITO_USER_POOL_ID,required=true"`
+	CognitoUserGroup         string        `env:"COGNITO_USER_GROUP,required=true"`
+	ServerMode               string        `env:"SERVER_MODE,default=release"`
+	ServerPort               string        `env:"SERVER_PORT,default=4050"`
+	RedisAddr                string        `env:"REDIS_ADDR,default=redis:6379"`
+	RedisPassword            string        `env:"REDIS_PASSWORD"`
+	MaxAccessTokens          int64         `env:"MAX_ACCESS_TOKENS,default=90"`
+	AccessTokensExpHours     int64         `env:"ACCESS_TOKENS_EXPIRATION_HOURS,default=2160"`
+	IPRange                  string        `env:"IP_RANGE"`
+	CognitoCacheExpiration   int           `env:"COGNITO_CACHE_EXPIRATION,default=300"`
+	AccessPolicy             *AccessPolicy `env:"ACCESS_POLICY,required=true"`
+	OndemandLimit            string        `env:"ONDEMAND_LIMIT,default=5000"`
+	SnapshotLimit            string        `env:"SNAPSHOT_LIMIT,default=15"`
+	ChunkLimit               string        `env:"CHUNK_LIMIT,default=15"`
+	PrometheusPort           int           `env:"PROMETHEUS_PORT,default=12411"`
+	DomainDenyList           List          `env:"DOMAIN_DENY_LIST,default="`
+	HealthChecksTimeoutMs    int           `env:"HEALTH_CHECKS_TIMEOUT_MS,default=5000"`
+	HealthChecksTestUserName string        `env:"HEALTH_CHECKS_TEST_USER_NAME"`
+	HealthChecksTestPassword string        `env:"HEALTH_CHECKS_TEST_PASSWORD"`
 }
 
 // New initialize the environment

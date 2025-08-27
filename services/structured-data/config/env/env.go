@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"path/filepath"
 	"runtime"
-	"wikimedia-enterprise/general/schema"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
 
 	env "github.com/Netflix/go-env"
 	"github.com/joho/godotenv"
@@ -50,24 +50,35 @@ type Environment struct {
 	TopicArticleDelete           string         `env:"TOPIC_ARTICLE_DELETE,default=aws.event-bridge.article-delete.v1"`
 	TopicArticleDeleteError      string         `env:"TOPIC_ARTICLE_DELETE_ERROR,default=aws.structured-data.article-delete-error.v1"`
 	TopicArticleDeleteDeadLetter string         `env:"TOPIC_ARTICLE_DELETE_DEAD_LETTER,default=aws.structured-data.article-delete-dead-letter.v1"`
-	TopicArticleUpdate           string         `env:"TOPIC_ARTICLE_UPDATE,default=aws.event-bridge.article-update.v1"`
-	TopicArticleUpdateError      string         `env:"TOPIC_ARTICLE_UPDATE_ERROR,default=aws.structured-data.article-update-error.v1"`
-	TopicArticleUpdateDeadLetter string         `env:"TOPIC_ARTICLE_UPDATE_DEAD_LETTER,default=aws.structured-data.article-update-dead-letter.v1"`
-	TopicArticleBulk             string         `env:"TOPIC_ARTICLE_BULK,default=aws.bulk-ingestion.article-names.v1"`
-	TopicArticleBulkError        string         `env:"TOPIC_ARTICLE_BULK_ERROR,default=aws.structured-data.article-bulk-error.v1"`
-	TopicArticleBulkDeadLetter   string         `env:"TOPIC_ARTICLE_BULK_DEAD_LETTER,default=aws.structured-data.article-bulk-dead-letter.v1"`
-	MaxFailCount                 int            `env:"MAX_FAIL_COUNT,default=10"`
-	NumberOfWorkers              int            `env:"NUMBER_OF_WORKERS,default=5"`
-	EventChannelSize             int            `env:"EVENT_CHANNEL_SIZE,default=1000000"`
-	BackOffBase                  int            `env:"BACK_OFF_BASE,default=2"`
-	OauthToken                   string         `env:"WMF_OAUTH_TOKEN"`
-	NoindexTemplatePatterns      List           `env:"NOINDEX_TEMPLATE_PATTERNS,default=[]"`
-	NoindexCategoryPatterns      List           `env:"NOINDEX_CATEGORY_PATTERNS,default=[]"`
-	LatencyThresholdMS           int64          `env:"LATENCY_THRESHOLD_MS,default=500"`
-	TracingGRPCHost              string         `env:"OTEL_COLLECTOR_ADDR,default=collector"`
-	TracingSamplingRate          float64        `env:"TRACING_SAMPLING_RATE,default=0.1"`
-	ServiceName                  string         `env:"SERVICE_NAME,default=structured-data.service"`
-	PrometheusPort               int            `env:"PROMETHEUS_PORT,defaut=12411"`
+
+	// With page-change, articleupdate service must listen to aws.event-bridge.article-update.v1, aws.event-bridge.article-create.v1, and aws.event-bridge.article-move.v1
+	TopicArticleUpdate           List    `env:"TOPIC_ARTICLE_UPDATE,default=[\"aws.event-bridge.article-update.v1\"]"`
+	TopicArticleUpdateError      string  `env:"TOPIC_ARTICLE_UPDATE_ERROR,default=aws.structured-data.article-update-error.v1"`
+	TopicArticleUpdateDeadLetter string  `env:"TOPIC_ARTICLE_UPDATE_DEAD_LETTER,default=aws.structured-data.article-update-dead-letter.v1"`
+	TopicArticleBulk             string  `env:"TOPIC_ARTICLE_BULK,default=aws.bulk-ingestion.article-names.v1"`
+	TopicArticleBulkError        string  `env:"TOPIC_ARTICLE_BULK_ERROR,default=aws.structured-data.article-bulk-error.v1"`
+	TopicArticleBulkDeadLetter   string  `env:"TOPIC_ARTICLE_BULK_DEAD_LETTER,default=aws.structured-data.article-bulk-dead-letter.v1"`
+	MaxFailCount                 int     `env:"MAX_FAIL_COUNT,default=10"`
+	NumberOfWorkers              int     `env:"NUMBER_OF_WORKERS,default=5"`
+	EventChannelSize             int     `env:"EVENT_CHANNEL_SIZE,default=1000000"`
+	BackOffBase                  int     `env:"BACK_OFF_BASE,default=2"`
+	OauthToken                   string  `env:"WMF_OAUTH_TOKEN"`
+	NoindexTemplatePatterns      List    `env:"NOINDEX_TEMPLATE_PATTERNS,default=[]"`
+	NoindexCategoryPatterns      List    `env:"NOINDEX_CATEGORY_PATTERNS,default=[]"`
+	LatencyThresholdMS           int64   `env:"LATENCY_THRESHOLD_MS,default=500"`
+	TracingGRPCHost              string  `env:"OTEL_COLLECTOR_ADDR,default=collector"`
+	TracingSamplingRate          float64 `env:"TRACING_SAMPLING_RATE,default=0.1"`
+	ServiceName                  string  `env:"SERVICE_NAME,default=structured-data.service"`
+	PrometheusPort               int     `env:"PROMETHEUS_PORT,defaut=12411"`
+	LiftwingTimeoutMs            int     `env:"LIFTWING_TIMEOUT_MS,defaut=1000"`
+	ReferenceNeedLanguages       List    `env:"REFERENCE_NEED_LANGUAGES,default=[]"`
+	ReferenceNeedLanguagesFilter bool    `env:"REFERENCE_NEED_LANGUAGES_FILTER,default=true"`
+	LogLevel                     string  `env:"LOG_LEVEL,default=info"`
+	HealthChecksPort             int     `env:"HEALTH_CHECKS_PORT,default=8082"`
+	HealthChecksAsyncIntervalMs  int     `env:"HEALTH_CHECKS_ASYNC_INTERVAL_MS,default=10000"`
+	HealthChecksMaxConsumerLag   int     `env:"HEALTH_CHECKS_MAX_CONSUMER_LAG,default=1000"`
+	HealthChecksComponentName    string  `env:"HEALTH_CHECKS_COMPONENT_NAME"`
+	HealthChecksConsumerTopics   List    `env:"HEALTH_CHECKS_CONSUMER_TOPICS,default=[\"aws.event-bridge.article-update.v1\"]"`
 }
 
 // New initialize the environment

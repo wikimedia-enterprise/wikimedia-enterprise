@@ -1,0 +1,906 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=17) "Automatic taxobox",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=17) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=40) "Vitis Temporal range: Paleocene - Recent",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Paleocene",
+                Text: (string) (len=9) "Paleocene",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Vitis#cite_note-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=131) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Vitis_californica_with_grapes.jpg/220px-Vitis_californica_with_grapes.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 220,
+                Width: (int) 220
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=28) "Vitis californica with fruit",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Vitis_californica",
+                Text: (string) (len=17) "Vitis californica",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=25) "Scientific classification",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=71) "https://upload.wikimedia.org/wikipedia/commons/7/74/Red_Pencil_Icon.png",
+                AlternativeText: (string) (len=1) "e",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Taxonomy_(biology)",
+                Text: (string) (len=25) "Scientific classification",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Template:Taxonomy/Vitis",
+                Text: (string) (len=1) "e",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=71) "https://upload.wikimedia.org/wikipedia/commons/7/74/Red_Pencil_Icon.png",
+                    AlternativeText: (string) (len=1) "e",
+                    Caption: (string) "",
+                    Height: (int) 16,
+                    Width: (int) 16
+                  })
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Kingdom",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "Plantae",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Plant",
+                Text: (string) (len=7) "Plantae",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Clade",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Tracheophytes",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Vascular_plant",
+                Text: (string) (len=13) "Tracheophytes",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Clade",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "Angiosperms",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Flowering_plant",
+                Text: (string) (len=11) "Angiosperms",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Clade",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Eudicots",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Eudicots",
+                Text: (string) (len=8) "Eudicots",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Clade",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Rosids",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Rosids",
+                Text: (string) (len=6) "Rosids",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Order",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "Vitales",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Vitaceae",
+                Text: (string) (len=7) "Vitales",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Family",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Vitaceae",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Vitaceae",
+                Text: (string) (len=8) "Vitaceae",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Subfamily",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Vitoideae",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Vitoideae",
+                Text: (string) (len=9) "Vitoideae",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Genus",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Vitis L.",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Vitis",
+                Text: (string) (len=5) "Vitis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Carl_Linnaeus",
+                Text: (string) (len=2) "L.",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Vitis#cite_note-vitis-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Type species",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Type_species",
+                Text: (string) (len=12) "Type species",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "Vitis vinifera L.",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Vitis_vinifera",
+                Text: (string) (len=14) "Vitis vinifera",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Carl_Linnaeus",
+                Text: (string) (len=2) "L.",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "Species",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Vitis#cite_note-grin-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Vitis#cite_note-ag-4",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Vitis#cite_note-5",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=1216) "List V. acerifolia V. adenoclada V. aestivalis V. amazonica V. amurensis V. × andersonii V. arizonica V. baileyana V. balansana V. bashanica V. bellula V. berlandieri V. betulifolia V. biformis V. blancoi V. bloodworthiana V. bourgaeana V. bryoniifolia V. californica V. × champinii V. chontalensis V. chunganensis V. chungii V. cinerea V. cissoides V. coignetiae V. cordifolia V. davidii V. × doaniana V. erythrophylla V. fengqinensis V. figariana V. flexuosa V. girdiana V. hancockii V. heyneana V. hui V. jacquemontii V. jaegeriana V. jinggangensis V. jinzhainensis V. kelungensis V. labrusca V. labruscana V. lanceolatifoliosa V. linsecomii V. longquanensis V. luochengensis V. menghaiensis V. mengziensis V. monticola V. mustangensis V. nesbittiana V. × novae-angliae V. palmata V. peninsularis V. piasezkii V. pilosonerva V. popenoei V. pseudoreticulata V. pubescens V. retordii V. riparia V. romanetii V. rotundifolia V. rupestris V. ruyuanensis V. shenxiensis V. shuttleworthii V. silvestrii V. sinocinerea V. × slavinii V. thunbergii V. tiliifolia V. treleasei V. tsoii V. vinifera V. vulpina V. wenchouensis V. wilsonae V. wuhanensis V. xunyangensis V. yeshanensis V. yunnanensis V. zhejiang-adstricta",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=85) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Vitis_acerifolia",
+                Text: (string) (len=13) "V. acerifolia",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Vitis_adenoclada",
+                Text: (string) (len=13) "V. adenoclada",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Vitis_aestivalis",
+                Text: (string) (len=13) "V. aestivalis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=67) "https://en.wikipedia.org/wiki/Vitis_amazonica?action=edit&redlink=1",
+                Text: (string) (len=12) "V. amazonica",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Vitis_amurensis",
+                Text: (string) (len=12) "V. amurensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/Vitis_×_andersonii?action=edit&redlink=1",
+                Text: (string) (len=16) "V. × andersonii",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Vitis_arizonica",
+                Text: (string) (len=12) "V. arizonica",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=67) "https://en.wikipedia.org/wiki/Vitis_baileyana?action=edit&redlink=1",
+                Text: (string) (len=12) "V. baileyana",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Vitis_balansana",
+                Text: (string) (len=12) "V. balansana",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=67) "https://en.wikipedia.org/wiki/Vitis_bashanica?action=edit&redlink=1",
+                Text: (string) (len=12) "V. bashanica",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Vitis_bellula",
+                Text: (string) (len=10) "V. bellula",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Vitis_berlandieri",
+                Text: (string) (len=14) "V. berlandieri",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Vitis_betulifolia",
+                Text: (string) (len=14) "V. betulifolia",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=66) "https://en.wikipedia.org/wiki/Vitis_biformis?action=edit&redlink=1",
+                Text: (string) (len=11) "V. biformis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Vitis_blancoi",
+                Text: (string) (len=10) "V. blancoi",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=72) "https://en.wikipedia.org/wiki/Vitis_bloodworthiana?action=edit&redlink=1",
+                Text: (string) (len=17) "V. bloodworthiana",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=68) "https://en.wikipedia.org/wiki/Vitis_bourgaeana?action=edit&redlink=1",
+                Text: (string) (len=13) "V. bourgaeana",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Vitis_bryoniifolia",
+                Text: (string) (len=15) "V. bryoniifolia",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Vitis_californica",
+                Text: (string) (len=14) "V. californica",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Vitis_×_champinii",
+                Text: (string) (len=15) "V. × champinii",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=70) "https://en.wikipedia.org/wiki/Vitis_chontalensis?action=edit&redlink=1",
+                Text: (string) (len=15) "V. chontalensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Vitis_chunganensis",
+                Text: (string) (len=15) "V. chunganensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Vitis_chungii",
+                Text: (string) (len=10) "V. chungii",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Vitis_cinerea",
+                Text: (string) (len=10) "V. cinerea",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=67) "https://en.wikipedia.org/wiki/Vitis_cissoides?action=edit&redlink=1",
+                Text: (string) (len=12) "V. cissoides",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Vitis_coignetiae",
+                Text: (string) (len=13) "V. coignetiae",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Vitis_cordifolia",
+                Text: (string) (len=13) "V. cordifolia",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Vitis_davidii",
+                Text: (string) (len=10) "V. davidii",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Vitis_×_doaniana",
+                Text: (string) (len=14) "V. × doaniana",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/Vitis_erythrophylla?action=edit&redlink=1",
+                Text: (string) (len=16) "V. erythrophylla",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Vitis_fengqinensis",
+                Text: (string) (len=15) "V. fengqinensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=67) "https://en.wikipedia.org/wiki/Vitis_figariana?action=edit&redlink=1",
+                Text: (string) (len=12) "V. figariana",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Vitis_flexuosa",
+                Text: (string) (len=11) "V. flexuosa",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Vitis_girdiana",
+                Text: (string) (len=11) "V. girdiana",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=67) "https://en.wikipedia.org/wiki/Vitis_hancockii?action=edit&redlink=1",
+                Text: (string) (len=12) "V. hancockii",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Vitis_heyneana",
+                Text: (string) (len=11) "V. heyneana",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Vitis_hui",
+                Text: (string) (len=6) "V. hui",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=70) "https://en.wikipedia.org/wiki/Vitis_jacquemontii?action=edit&redlink=1",
+                Text: (string) (len=15) "V. jacquemontii",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Vitis_jaegeriana",
+                Text: (string) (len=13) "V. jaegeriana",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/Vitis_jinggangensis?action=edit&redlink=1",
+                Text: (string) (len=16) "V. jinggangensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/Vitis_jinzhainensis?action=edit&redlink=1",
+                Text: (string) (len=16) "V. jinzhainensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=69) "https://en.wikipedia.org/wiki/Vitis_kelungensis?action=edit&redlink=1",
+                Text: (string) (len=14) "V. kelungensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Vitis_labrusca",
+                Text: (string) (len=11) "V. labrusca",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Vitis_labruscana",
+                Text: (string) (len=13) "V. labruscana",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=75) "https://en.wikipedia.org/wiki/Vitis_lanceolatifoliosa?action=edit&redlink=1",
+                Text: (string) (len=20) "V. lanceolatifoliosa",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=68) "https://en.wikipedia.org/wiki/Vitis_linsecomii?action=edit&redlink=1",
+                Text: (string) (len=13) "V. linsecomii",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/Vitis_longquanensis?action=edit&redlink=1",
+                Text: (string) (len=16) "V. longquanensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/Vitis_luochengensis?action=edit&redlink=1",
+                Text: (string) (len=16) "V. luochengensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Vitis_menghaiensis",
+                Text: (string) (len=15) "V. menghaiensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Vitis_mengziensis",
+                Text: (string) (len=14) "V. mengziensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Vitis_monticola",
+                Text: (string) (len=12) "V. monticola",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Vitis_mustangensis",
+                Text: (string) (len=15) "V. mustangensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Vitis_nesbittiana",
+                Text: (string) (len=14) "V. nesbittiana",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=74) "https://en.wikipedia.org/wiki/Vitis_×_novae-angliae?action=edit&redlink=1",
+                Text: (string) (len=19) "V. × novae-angliae",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Vitis_palmata",
+                Text: (string) (len=10) "V. palmata",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=70) "https://en.wikipedia.org/wiki/Vitis_peninsularis?action=edit&redlink=1",
+                Text: (string) (len=15) "V. peninsularis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=67) "https://en.wikipedia.org/wiki/Vitis_piasezkii?action=edit&redlink=1",
+                Text: (string) (len=12) "V. piasezkii",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=69) "https://en.wikipedia.org/wiki/Vitis_pilosonerva?action=edit&redlink=1",
+                Text: (string) (len=14) "V. pilosonerva",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Vitis_popenoei",
+                Text: (string) (len=11) "V. popenoei",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Vitis_pseudoreticulata",
+                Text: (string) (len=19) "V. pseudoreticulata",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=67) "https://en.wikipedia.org/wiki/Vitis_pubescens?action=edit&redlink=1",
+                Text: (string) (len=12) "V. pubescens",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Vitis_retordii",
+                Text: (string) (len=11) "V. retordii",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Vitis_riparia",
+                Text: (string) (len=10) "V. riparia",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=67) "https://en.wikipedia.org/wiki/Vitis_romanetii?action=edit&redlink=1",
+                Text: (string) (len=12) "V. romanetii",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Vitis_rotundifolia",
+                Text: (string) (len=15) "V. rotundifolia",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Vitis_rupestris",
+                Text: (string) (len=12) "V. rupestris",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Vitis_ruyuanensis",
+                Text: (string) (len=14) "V. ruyuanensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=69) "https://en.wikipedia.org/wiki/Vitis_shenxiensis?action=edit&redlink=1",
+                Text: (string) (len=14) "V. shenxiensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Vitis_shuttleworthii",
+                Text: (string) (len=17) "V. shuttleworthii",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Vitis_silvestrii",
+                Text: (string) (len=13) "V. silvestrii",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Vitis_sinocinerea",
+                Text: (string) (len=14) "V. sinocinerea",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=69) "https://en.wikipedia.org/wiki/Vitis_×_slavinii?action=edit&redlink=1",
+                Text: (string) (len=14) "V. × slavinii",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Vitis_thunbergii",
+                Text: (string) (len=13) "V. thunbergii",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Vitis_tiliifolia",
+                Text: (string) (len=13) "V. tiliifolia",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=67) "https://en.wikipedia.org/wiki/Vitis_treleasei?action=edit&redlink=1",
+                Text: (string) (len=12) "V. treleasei",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Vitis_tsoii",
+                Text: (string) (len=8) "V. tsoii",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Vitis_vinifera",
+                Text: (string) (len=11) "V. vinifera",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Vitis_vulpina",
+                Text: (string) (len=10) "V. vulpina",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=70) "https://en.wikipedia.org/wiki/Vitis_wenchouensis?action=edit&redlink=1",
+                Text: (string) (len=15) "V. wenchouensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Vitis_wilsonae",
+                Text: (string) (len=11) "V. wilsonae",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Vitis_wuhanensis",
+                Text: (string) (len=13) "V. wuhanensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Vitis_xunyangensis",
+                Text: (string) (len=15) "V. xunyangensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=69) "https://en.wikipedia.org/wiki/Vitis_yeshanensis?action=edit&redlink=1",
+                Text: (string) (len=14) "V. yeshanensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Vitis_yunnanensis",
+                Text: (string) (len=14) "V. yunnanensis",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "https://en.wikipedia.org/wiki/Vitis_zhejiang-adstricta?action=edit&redlink=1",
+                Text: (string) (len=21) "V. zhejiang-adstricta",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

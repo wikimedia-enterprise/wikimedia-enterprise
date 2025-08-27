@@ -10,20 +10,44 @@ import (
 
 type s3TestSuite struct {
 	suite.Suite
-	env *env.Environment
 }
 
-func (s *s3TestSuite) TestNewS3() {
-	s3 := s3api.New(s.env)
+func (s *s3TestSuite) TestNewS3_Default() {
+	e := &env.Environment{
+		AWSRegion: "us-east-1",
+	}
+	s3 := s3api.New(e)
+	s.Assert().NotNil(s3)
+}
+
+func (s *s3TestSuite) TestNewS3_WithCredentials() {
+	e := &env.Environment{
+		AWSRegion: "us-east-1",
+		AWSID:     "test-id",
+		AWSKey:    "test-key",
+	}
+	s3 := s3api.New(e)
+	s.Assert().NotNil(s3)
+}
+
+func (s *s3TestSuite) TestNewS3_WithEndpoint() {
+	e := &env.Environment{
+		AWSRegion: "us-east-1",
+		AWSURL:    "https://s3.example.com",
+	}
+	s3 := s3api.New(e)
+	s.Assert().NotNil(s3)
+}
+
+func (s *s3TestSuite) TestNewS3_WithHTTP() {
+	e := &env.Environment{
+		AWSRegion: "us-east-1",
+		AWSURL:    "http://localhost:9000",
+	}
+	s3 := s3api.New(e)
 	s.Assert().NotNil(s3)
 }
 
 func TestS3(t *testing.T) {
-	for _, testCase := range []*s3TestSuite{
-		{
-			env: &env.Environment{},
-		},
-	} {
-		suite.Run(t, testCase)
-	}
+	suite.Run(t, new(s3TestSuite))
 }

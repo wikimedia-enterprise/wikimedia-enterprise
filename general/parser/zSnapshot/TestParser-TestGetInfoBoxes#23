@@ -1,0 +1,403 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=15) "Infobox Sportif",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=17) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=35) "Alexandros Ioannis Ginnis AJ Ginnis",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=122) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Alpine_skiing_pictogram.svg/40px-Alpine_skiing_pictogram.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 40,
+                Width: (int) 40
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=65) "https://fr.wikipedia.org/wiki/Fichier:Alpine_skiing_pictogram.svg",
+                Text: (string) "",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=122) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Alpine_skiing_pictogram.svg/40px-Alpine_skiing_pictogram.svg.png",
+                    AlternativeText: (string) "",
+                    Caption: (string) "",
+                    Height: (int) 40,
+                    Width: (int) 40
+                  })
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=91) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/AJ_Ginnis.png/280px-AJ_Ginnis.png",
+                AlternativeText: (string) (len=59) "Image illustrative de l’article Alexandros Ioannis Ginnis",
+                Caption: (string) "",
+                Height: (int) 280,
+                Width: (int) 280
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=51) "https://fr.wikipedia.org/wiki/Fichier:AJ_Ginnis.png",
+                Text: (string) "",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=91) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/AJ_Ginnis.png/280px-AJ_Ginnis.png",
+                    AlternativeText: (string) (len=59) "Image illustrative de l’article Alexandros Ioannis Ginnis",
+                    Caption: (string) "",
+                    Height: (int) 280,
+                    Width: (int) 280
+                  })
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "Contexte général",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Sport",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Ski alpin",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://fr.wikipedia.org/wiki/Ski_alpin",
+                Text: (string) (len=9) "Ski alpin",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "Biographie",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=16) "Nom de naissance",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=25) "Alexandros Ioannis Ginnis",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=21) "Nationalité sportive",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=45) "Américaine jusqu'en 2020 Grecque après 2020",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=51) "https://fr.wikipedia.org/wiki/Nationalité_sportive",
+                Text: (string) (len=21) "Nationalité sportive",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://fr.wikipedia.org/wiki/États-Unis",
+                Text: (string) (len=11) "Américaine",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://fr.wikipedia.org/wiki/Grèce",
+                Text: (string) (len=7) "Grecque",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Nationalité",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "Grèce et États-Unis",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://fr.wikipedia.org/wiki/Grèce",
+                Text: (string) (len=6) "Grèce",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://fr.wikipedia.org/wiki/États-Unis",
+                Text: (string) (len=11) "États-Unis",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Naissance",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "17 novembre 1994",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://fr.wikipedia.org/wiki/17_novembre_en_sport",
+                Text: (string) (len=11) "17 novembre",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://fr.wikipedia.org/wiki/1994_en_sport",
+                Text: (string) (len=4) "1994",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=17) "Lieu de naissance",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Athènes",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://fr.wikipedia.org/wiki/Athènes",
+                Text: (string) (len=8) "Athènes",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Club",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "SXO Arachovas",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://fr.wikipedia.org/wiki/Aráchova",
+                Text: (string) (len=9) "Arachovas",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Entraîneur",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=29) "Sandy Vietze & Gabriel Coulet",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Palmarès",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "Médailles obtenues",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://fr.wikipedia.org/wiki/Médaille_d'or_(sport)",
+                Text: (string) (len=2) "Or",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://fr.wikipedia.org/wiki/Médaille_d'argent",
+                Text: (string) (len=4) "Arg.",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://fr.wikipedia.org/wiki/Médaille_de_bronze",
+                Text: (string) (len=4) "Bro.",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=64) "https://fr.wikipedia.org/wiki/Championnats_du_monde_de_ski_alpin",
+                Text: (string) (len=21) "Championnats du monde",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://fr.wikipedia.org/wiki/Coupe_du_monde_de_ski_alpin",
+                Text: (string) (len=14) "Coupe du monde",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=25) "Compétition Or Arg. Bro.",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://fr.wikipedia.org/wiki/Médaille_d'or_(sport)",
+                Text: (string) (len=2) "Or",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://fr.wikipedia.org/wiki/Médaille_d'argent",
+                Text: (string) (len=4) "Arg.",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://fr.wikipedia.org/wiki/Médaille_de_bronze",
+                Text: (string) (len=4) "Bro.",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=27) "Championnats du monde 0 1 0",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=64) "https://fr.wikipedia.org/wiki/Championnats_du_monde_de_ski_alpin",
+                Text: (string) (len=21) "Championnats du monde",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=32) "Coupe du monde (épreuves) 0 1 0",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=57) "https://fr.wikipedia.org/wiki/Coupe_du_monde_de_ski_alpin",
+                Text: (string) (len=14) "Coupe du monde",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

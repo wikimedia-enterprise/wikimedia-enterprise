@@ -17,9 +17,9 @@ import (
 // TraceTestSuite tests the Trace function.
 type TraceTestSuite struct {
 	suite.Suite
-	client     *Client
-	err        error
-	msg        string
+	client *Client
+	err   error
+	msg  string
 	attributes map[string]string
 }
 
@@ -42,7 +42,7 @@ type TestSpan struct {
 }
 
 type spanProcessorState struct {
-	sps   trc.SpanProcessor
+	sps trc.SpanProcessor
 	state sync.Once
 }
 
@@ -62,8 +62,9 @@ func (s TestSpan) SetStatus(code codes.Code, description string) {
 }
 
 // Start starts a new span.
-func (tto *TestTracerObject) Start(ctx context.Context, name string, opts ...trace.SpanStartOption) (context.Context, trace.Span) {
-	spn := TestSpan{}
+func (tto * TestTracerObject) Start(ctx context.Context, name string, opts ...trace.SpanStartOption) (context.Context, trace.Span) {
+	spn := TestSpan {
+	}
 
 	wct := trace.ContextWithSpan(ctx, spn)
 	return wct, spn
@@ -95,7 +96,7 @@ func (p *TracerProviderMock) getSpanProcessors() spanProcessorStates {
 // Tracer creates a new Tracer.
 func (p *TracerProviderMock) Tracer(name string, opts ...trace.TracerOption) trace.Tracer {
 	tracer := TestTracerObject{}
-
+	
 	cll := p.getSpanProcessors()
 	fmt.Print(cll)
 
@@ -107,7 +108,7 @@ func (p *TracerProviderMock) UnregisterSpanProcessor(sp trc.SpanProcessor) {
 }
 
 // TestProviderTracer is a mock interface for the TracerProvider.
-type TestProviderTracer interface {
+type TestProviderTracer interface{
 	Trace(ctx context.Context, attributes map[string]string) (func(err error, msg string), context.Context)
 }
 
@@ -131,12 +132,13 @@ func (s *TraceTestSuite) TestTrace() {
 		"test": "test",
 	}
 
-	_, ctx := s.client.Trace(context.Background(), s.attributes)
+	_ , ctx := s.client.Trace(context.Background(), s.attributes)
 
 	s.Assert().NoError(ctx.Err())
 }
-
 // TestTraces tests that the Trace function throws an error
 func TestTraces(t *testing.T) {
 	suite.Run(t, new(TraceTestSuite))
 }
+
+

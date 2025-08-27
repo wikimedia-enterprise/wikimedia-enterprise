@@ -1,0 +1,94 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) (len=31) "François Lapous, père et fils",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=4) {
+          (*parser.Part)({
+            Name: (string) (len=9) "Naissance",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "Date et lieu inconnus",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Décès",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Date inconnue",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Activité",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Orfèvre",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=18) "/wiki/Orf%C3%A8vre",
+                Text: (string) (len=8) "Orfèvre",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=35) "Saint Suliau (Sizun reliquaire) (d)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://www.wikidata.org/wiki/Q29152800",
+                Text: (string) (len=1) "d",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) (len=1) {
+          (*parser.Image)({
+            ContentUrl: (string) (len=100) "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Defaut_2.svg/langfr-260px-Defaut_2.svg.png",
+            AlternativeText: (string) (len=52) "une illustration sous licence libre serait bienvenue",
+            Caption: (string) "",
+            Height: (int) 260,
+            Width: (int) 260
+          })
+        },
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

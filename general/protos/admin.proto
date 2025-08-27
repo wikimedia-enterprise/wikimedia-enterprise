@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+package admin;
+
+option go_package = "./;protos";
+
+// Admin service serves RPCs related to internal processes.
+service Admin {
+    // Eliminate one or more articles from our Kafka topics and S3.
+    // This is done by simulating a regular WMF "article deleted" event
+    // and letting it go through our system. 
+    // The article(s) may be re-ingested on their next revision or the
+    // next bulk-ingestion.
+    rpc Delete(DeleteRequest) returns (DeleteResponse);
+
+    // Trigger a re-ingestion of one or more articles.
+    rpc Refresh(RefreshRequest) returns (RefreshResponse);
+}
+
+message ArticleIdentifier {
+    // Project and language, e.g. enwiki
+    string database = 1;
+    // e.g. 0 for articles
+    int32 namespace = 2;
+    // e.g. Josephine_Baker
+    string title = 3;
+}
+
+message ArticleProcessingResult {
+    ArticleIdentifier article = 1;
+    // From google.golang.org/grpc/codes.Code
+    int32 status = 2;
+    // Empty iff status == OK (0)
+    string error = 3;
+}
+
+message DeleteRequest {
+    repeated ArticleIdentifier articles = 1;
+}
+
+message DeleteResponse {
+    repeated ArticleProcessingResult results = 1;
+}
+
+message RefreshRequest {
+    repeated ArticleIdentifier articles = 1;
+}
+
+message RefreshResponse {
+    repeated ArticleProcessingResult results = 1;
+}

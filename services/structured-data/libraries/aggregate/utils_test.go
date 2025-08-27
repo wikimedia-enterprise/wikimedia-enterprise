@@ -3,8 +3,8 @@ package aggregate_test
 import (
 	"errors"
 	"testing"
-	"wikimedia-enterprise/general/wmf"
 	"wikimedia-enterprise/services/structured-data/libraries/aggregate"
+	"wikimedia-enterprise/services/structured-data/submodules/wmf"
 
 	"github.com/stretchr/testify/suite"
 )
