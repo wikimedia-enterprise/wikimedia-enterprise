@@ -1,0 +1,81 @@
+version: "3.9"
+
+services:
+  # Redis server
+  redis:
+    image: redis:latest
+    ports:
+      - 6379:6379
+    env_file:
+      - ../.env
+
+  # Redis UI tool
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    restart: always
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+    ports:
+      - 9000:8081
+
+  # Swagger API documentation
+  swagger-ui:
+    image: swaggerapi/swagger-ui:latest
+    volumes:
+      - ../docs.yaml:/var/www/app/docs.yaml
+    ports:
+      - 8090:8080
+    environment:
+      SWAGGER_JSON: /var/www/app/docs.yaml
+
+  # Authentication service
+  auth:
+    build:
+      context: ..
+      dockerfile: ./submodules/cdtools/docker/handlers/Dockerfile
+    ports:
+      - 4050:4050
+      - 8080:8080
+    env_file:
+      - ../.env
+    environment:
+      AWS_URL: "http://cognito-local:9229"
+      CLIENT_ID_FILE: "/cognito_data/client_id.txt"
+      CLIENT_SECRET_FILE: "/cognito_data/client_secret.txt"
+      POOL_ID_FILE: "/cognito_data/pool_id.txt"
+    volumes:
+      - ./wait_for_cognito_data.sh:/wait_for_cognito_data.sh
+      - cognito_data:/cognito_data
+    entrypoint:
+      - sh
+      - /wait_for_cognito_data.sh
+
+  cognito-local:
+    image: jagregory/cognito-local:latest
+    ports:
+      - 9229:9229
+
+  setup-cognito-local:
+    build:
+      dockerfile: ./aws.Dockerfile
+    volumes:
+      - cognito_data:/cognito_data
+      - ./setup_local_cognito.sh:/setup_local_cognito.sh
+    entrypoint:
+      - bash
+      - /setup_local_cognito.sh
+    environment:
+      COGNITO_ENDPOINT: "http://cognito-local:9229"
+      CLIENT_ID_FILE: "/cognito_data/client_id.txt"
+      CLIENT_SECRET_FILE: "/cognito_data/client_secret.txt"
+      POOL_ID_FILE: "/cognito_data/pool_id.txt"
+
+# Shared volume to communicate pool ID to auth service
+volumes:
+  cognito_data:
+    driver_opts:
+      type: tmpfs # don't persist between runs
+      device: tmpfs
+

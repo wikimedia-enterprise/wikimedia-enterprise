@@ -1,0 +1,205 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=14) "Taxobox début",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) (len=20) "Phoenicurus hodgsoni",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=7) {
+          (*parser.Part)({
+            Name: (string) (len=6) "Règne",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Animalia",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://fr.wikipedia.org/wiki/Règne_(biologie)",
+                Text: (string) (len=6) "Règne",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://fr.wikipedia.org/wiki/Animal",
+                Text: (string) (len=8) "Animalia",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Embranchement",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Chordata",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://fr.wikipedia.org/wiki/Embranchement_(biologie)",
+                Text: (string) (len=13) "Embranchement",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://fr.wikipedia.org/wiki/Chordata",
+                Text: (string) (len=8) "Chordata",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Sous-embr.",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "Vertebrata",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://fr.wikipedia.org/wiki/Sous-embranchement",
+                Text: (string) (len=10) "Sous-embr.",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://fr.wikipedia.org/wiki/Vertebrata",
+                Text: (string) (len=10) "Vertebrata",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Classe",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "Aves",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://fr.wikipedia.org/wiki/Classe_(biologie)",
+                Text: (string) (len=6) "Classe",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://fr.wikipedia.org/wiki/Aves",
+                Text: (string) (len=4) "Aves",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Ordre",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Passeriformes",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://fr.wikipedia.org/wiki/Ordre_(biologie)",
+                Text: (string) (len=5) "Ordre",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://fr.wikipedia.org/wiki/Passeriformes",
+                Text: (string) (len=13) "Passeriformes",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Famille",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Muscicapidae",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://fr.wikipedia.org/wiki/Famille_(biologie)",
+                Text: (string) (len=7) "Famille",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://fr.wikipedia.org/wiki/Muscicapidae",
+                Text: (string) (len=12) "Muscicapidae",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Genre",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "Phoenicurus",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://fr.wikipedia.org/wiki/Genre_(biologie)",
+                Text: (string) (len=5) "Genre",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://fr.wikipedia.org/wiki/Phoenicurus",
+                Text: (string) (len=11) "Phoenicurus",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) (len=1) {
+          (*parser.Image)({
+            ContentUrl: (string) (len=113) "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Hodgson%27s_Redstart.jpg/290px-Hodgson%27s_Redstart.jpg",
+            AlternativeText: (string) (len=59) "Description de cette image, également commentée ci-après",
+            Caption: (string) (len=21) "Rougequeue de Hodgson",
+            Height: (int) 290,
+            Width: (int) 290
+          })
+        },
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

@@ -4,8 +4,10 @@ import (
 	"context"
 	"errors"
 	"testing"
-	"wikimedia-enterprise/general/schema"
+	"wikimedia-enterprise/services/on-demand/config/env"
 	"wikimedia-enterprise/services/on-demand/handlers/articles/handler"
+	"wikimedia-enterprise/services/on-demand/submodules/prometheus"
+	"wikimedia-enterprise/services/on-demand/submodules/schema"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/stretchr/testify/mock"
@@ -67,6 +69,8 @@ func (s *handlerTestSuite) SetupSuite() {
 	s.prs = &handler.Parameters{
 		Stream:  s.stm,
 		Storage: s.stg,
+		Env:     new(env.Environment),
+		Metrics: &prometheus.Metrics{},
 	}
 }
 
@@ -75,9 +79,9 @@ func (s *handlerTestSuite) TestHandler() {
 	err := hdl(s.ctx, s.msg)
 
 	if s.sme != nil {
-		s.Assert().Equal(err, s.sme)
+		s.Assert().Equal("error unmarshalling message: "+s.sme.Error(), err.Error())
 	} else if s.ste != nil {
-		s.Assert().Equal(err, s.ste)
+		s.Assert().Equal("error uploading message: "+s.ste.Error(), err.Error())
 	}
 }
 

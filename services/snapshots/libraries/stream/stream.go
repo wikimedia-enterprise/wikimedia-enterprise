@@ -4,8 +4,8 @@ package stream
 import (
 	"fmt"
 	"strings"
-	"wikimedia-enterprise/general/schema"
 	"wikimedia-enterprise/services/snapshots/config/env"
+	"wikimedia-enterprise/services/snapshots/submodules/schema"
 )
 
 // New creates new schema helper for dependency injection.

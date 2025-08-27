@@ -4,10 +4,13 @@ package storage
 import (
 	"bytes"
 	"context"
+	"crypto/md5" // #nosec G501
+	"encoding/hex"
 	"encoding/json"
 	"fmt"
-	"wikimedia-enterprise/general/schema"
+	"strings"
 	"wikimedia-enterprise/services/on-demand/config/env"
+	"wikimedia-enterprise/services/on-demand/submodules/schema"
 
 	"github.com/avast/retry-go"
 	"github.com/aws/aws-sdk-go/aws"
@@ -52,10 +55,27 @@ func (s *Storage) Update(ctx context.Context, kdt []byte, etp string, val interf
 	v := s.Env.ArticleKeyTypeSuffix
 
 	if v != "" {
+		// Usually _v1 or _v2.
 		v = "_" + v
 	}
 
+	// Example of key.Identifier: /enwiki/Earth.json
+	// Example of loc: articles_v1/enwiki/Earth.json
 	loc := fmt.Sprintf("%s%s%s.json", key.Type, v, key.Identifier)
+
+	if s.Env.UseHashedPrefixes {
+		project, article, found := strings.Cut(key.Identifier[1:], "/")
+		if !found {
+			return fmt.Errorf("unexpected identifier format: %s", key.Identifier)
+		}
+
+		hash := md5.Sum([]byte(article)) // #nosec G401
+		hashString := hex.EncodeToString(hash[:])
+		hashPrefix := fmt.Sprintf("%s/%s", hashString[:1], hashString[:2])
+
+		// For example, articles_v1/enwiki/5/5c/Earth.json
+		loc = fmt.Sprintf("%s%s/%s/%s/%s.json", key.Type, v, project, hashPrefix, article)
+	}
 
 	switch etp {
 	case schema.EventTypeCreate, schema.EventTypeUpdate:

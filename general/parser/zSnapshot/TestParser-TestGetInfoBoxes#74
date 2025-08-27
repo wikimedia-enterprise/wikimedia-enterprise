@@ -1,0 +1,682 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=21) "Infobox football club",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) (len=7) "Benfica",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=13) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=102) "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/SL_Benfica_logo.svg/190px-SL_Benfica_logo.svg.png",
+                AlternativeText: (string) (len=309) "Looking to its right, a wingspread golden eagle stands atop a bicycle wheel's grey tire. Below, on the spoked wheel, a horizontal green and red strip reads \"E PLURIBUS UNUM\", and a diagonal blue strip with the golden initials \"S . L . B .\" overlays a red and white shield with a golden football on its centre.",
+                Caption: (string) "",
+                Height: (int) 190,
+                Width: (int) 190
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Full name",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "Sport Lisboa e Benfica",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Nickname(s)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=78) "As Águias (The Eagles) Os Encarnados (The Reds) O Glorioso (The Glorious One)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Founded",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=32) "28 February 1904 as Sport Lisboa",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Ground",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "Estádio da Luz",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Estádio_da_Luz",
+                Text: (string) (len=15) "Estádio da Luz",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Capacity",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "64,642",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/S.L._Benfica#cite_note-seating_capacity-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "President",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Rui Costa",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Rui_Costa",
+                Text: (string) (len=9) "Rui Costa",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Head coach",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Roger Schmidt",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Roger_Schmidt_(footballer)",
+                Text: (string) (len=13) "Roger Schmidt",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "League",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Primeira Liga",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Primeira_Liga",
+                Text: (string) (len=13) "Primeira Liga",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "2021–22",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "Primeira Liga, 3rd of 18",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/2021–22_Primeira_Liga",
+                Text: (string) (len=9) "2021–22",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Website",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Club website",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=24) "https://www.slbenfica.pt",
+                Text: (string) (len=12) "Club website",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=29) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=81) "https://upload.wikimedia.org/wikipedia/commons/4/46/Kit_left_arm_benfica2223h.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=100) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Kit_left_arm.svg/31px-Kit_left_arm.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=77) "https://upload.wikimedia.org/wikipedia/commons/2/2d/Kit_body_benfica2223H.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 38,
+                Width: (int) 38
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=92) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kit_body.svg/38px-Kit_body.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 38,
+                Width: (int) 38
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=82) "https://upload.wikimedia.org/wikipedia/commons/f/f7/Kit_right_arm_benfica2223h.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=102) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Kit_right_arm.svg/31px-Kit_right_arm.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=76) "https://upload.wikimedia.org/wikipedia/commons/4/48/Kit_shorts_adidasred.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=97) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Kit_shorts.svg/100px-Kit_shorts.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=78) "https://upload.wikimedia.org/wikipedia/commons/5/59/Kit_socks_adidaswhitel.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kit_socks_long.svg/100px-Kit_socks_long.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=83) "https://upload.wikimedia.org/wikipedia/commons/0/05/Kit_left_arm_slbenfica2223a.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=100) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Kit_left_arm.svg/31px-Kit_left_arm.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=77) "https://upload.wikimedia.org/wikipedia/commons/2/23/Kit_body_benfica2223a.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 38,
+                Width: (int) 38
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=92) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kit_body.svg/38px-Kit_body.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 38,
+                Width: (int) 38
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=84) "https://upload.wikimedia.org/wikipedia/commons/9/98/Kit_right_arm_slbenfica2223a.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=102) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Kit_right_arm.svg/31px-Kit_right_arm.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=97) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Kit_shorts.svg/100px-Kit_shorts.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=81) "https://upload.wikimedia.org/wikipedia/commons/5/57/Kit_socks_3_stripes_black.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kit_socks_long.svg/100px-Kit_socks_long.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=81) "https://upload.wikimedia.org/wikipedia/commons/4/40/Kit_left_arm_benfica2223t.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=100) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Kit_left_arm.svg/31px-Kit_left_arm.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=77) "https://upload.wikimedia.org/wikipedia/commons/d/d6/Kit_body_benfica2223T.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 38,
+                Width: (int) 38
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=92) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kit_body.svg/38px-Kit_body.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 38,
+                Width: (int) 38
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=82) "https://upload.wikimedia.org/wikipedia/commons/d/dd/Kit_right_arm_benfica2223t.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=102) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Kit_right_arm.svg/31px-Kit_right_arm.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=78) "https://upload.wikimedia.org/wikipedia/commons/8/8e/Kit_shorts_adidaswhite.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=97) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Kit_shorts.svg/100px-Kit_shorts.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=79) "https://upload.wikimedia.org/wikipedia/commons/a/ab/Kit_socks_3_stripes_red.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kit_socks_long.svg/100px-Kit_socks_long.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              })
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Kit_(association_football)",
+                Text: (string) (len=12) "Home colours",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Away_colours",
+                Text: (string) (len=12) "Away colours",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Third_jersey",
+                Text: (string) (len=13) "Third colours",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=39) "Home colours Away colours Third colours",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=29) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=81) "https://upload.wikimedia.org/wikipedia/commons/4/46/Kit_left_arm_benfica2223h.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=100) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Kit_left_arm.svg/31px-Kit_left_arm.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=77) "https://upload.wikimedia.org/wikipedia/commons/2/2d/Kit_body_benfica2223H.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 38,
+                Width: (int) 38
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=92) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kit_body.svg/38px-Kit_body.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 38,
+                Width: (int) 38
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=82) "https://upload.wikimedia.org/wikipedia/commons/f/f7/Kit_right_arm_benfica2223h.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=102) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Kit_right_arm.svg/31px-Kit_right_arm.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=76) "https://upload.wikimedia.org/wikipedia/commons/4/48/Kit_shorts_adidasred.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=97) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Kit_shorts.svg/100px-Kit_shorts.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=78) "https://upload.wikimedia.org/wikipedia/commons/5/59/Kit_socks_adidaswhitel.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kit_socks_long.svg/100px-Kit_socks_long.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=83) "https://upload.wikimedia.org/wikipedia/commons/0/05/Kit_left_arm_slbenfica2223a.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=100) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Kit_left_arm.svg/31px-Kit_left_arm.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=77) "https://upload.wikimedia.org/wikipedia/commons/2/23/Kit_body_benfica2223a.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 38,
+                Width: (int) 38
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=92) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kit_body.svg/38px-Kit_body.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 38,
+                Width: (int) 38
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=84) "https://upload.wikimedia.org/wikipedia/commons/9/98/Kit_right_arm_slbenfica2223a.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=102) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Kit_right_arm.svg/31px-Kit_right_arm.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=97) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Kit_shorts.svg/100px-Kit_shorts.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=81) "https://upload.wikimedia.org/wikipedia/commons/5/57/Kit_socks_3_stripes_black.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kit_socks_long.svg/100px-Kit_socks_long.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=81) "https://upload.wikimedia.org/wikipedia/commons/4/40/Kit_left_arm_benfica2223t.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=100) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Kit_left_arm.svg/31px-Kit_left_arm.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=77) "https://upload.wikimedia.org/wikipedia/commons/d/d6/Kit_body_benfica2223T.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 38,
+                Width: (int) 38
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=92) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kit_body.svg/38px-Kit_body.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 38,
+                Width: (int) 38
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=82) "https://upload.wikimedia.org/wikipedia/commons/d/dd/Kit_right_arm_benfica2223t.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=102) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Kit_right_arm.svg/31px-Kit_right_arm.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 31
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=78) "https://upload.wikimedia.org/wikipedia/commons/8/8e/Kit_shorts_adidaswhite.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=97) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Kit_shorts.svg/100px-Kit_shorts.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=79) "https://upload.wikimedia.org/wikipedia/commons/a/ab/Kit_socks_3_stripes_red.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kit_socks_long.svg/100px-Kit_socks_long.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              })
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Kit_(association_football)",
+                Text: (string) (len=12) "Home colours",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Away_colours",
+                Text: (string) (len=12) "Away colours",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Third_jersey",
+                Text: (string) (len=13) "Third colours",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

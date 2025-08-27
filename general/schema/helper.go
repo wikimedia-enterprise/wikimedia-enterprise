@@ -17,6 +17,8 @@ var (
 	ErrEmptyTopic      = errors.New("empty topic name was provied")
 	ErrEmptyKey        = errors.New("key cannot be nil")
 	ErrEmptyValue      = errors.New("value cannot be nil")
+
+	SchemaParsingMutex sync.RWMutex
 )
 
 // Syncher is an interface that wraps default Sync method for unit testing.
@@ -130,8 +132,7 @@ func (h *Helper) Sync(ctx context.Context, topic string, cfg *Config, names ...s
 		return nil, err
 	}
 
-	sch, err := h.reg.GetBySubject(ctx, name)
-
+	sch, err := h.reg.GetStoredSubject(ctx, name, &sub)
 	if err != nil {
 		return nil, err
 	}
@@ -147,9 +148,23 @@ func (h *Helper) Sync(ctx context.Context, topic string, cfg *Config, names ...s
 
 // Get return schemas by id. Recursively resolves
 // dependencies and caches the result.
+// When a new schema is being resolved we prevent parallel execution, because
+// calls to `avro.Parse()` from different versions of the schema may
+// be in conflict.
 func (h *Helper) Get(ctx context.Context, id int) (*Schema, error) {
-	if sch, ok := h.schemas.Load(id); ok {
-		return sch.(*Schema), nil
+	SchemaParsingMutex.RLock()
+	cached, ok := h.schemas.Load(id)
+	SchemaParsingMutex.RUnlock()
+	if ok {
+		return cached.(*Schema), nil
+	}
+
+	SchemaParsingMutex.Lock()
+	defer SchemaParsingMutex.Unlock()
+
+	// Check again, a previous holder of the write lock might have created it.
+	if cached, ok = h.schemas.Load(id); ok {
+		return cached.(*Schema), nil
 	}
 
 	sch, err := h.reg.GetByID(ctx, id)
@@ -165,7 +180,7 @@ func (h *Helper) Get(ctx context.Context, id int) (*Schema, error) {
 			return nil, err
 		}
 
-		if _, err := h.Get(ctx, sch.ID); err != nil {
+		if err := h.Resolve(ctx, sch.ID); err != nil {
 			return nil, err
 		}
 	}
@@ -179,10 +194,56 @@ func (h *Helper) Get(ctx context.Context, id int) (*Schema, error) {
 	return sch, nil
 }
 
+// Resolve fetches the requested schema if needed and resolves its dependencies.
+// The actual outcome of this is calling `avro.Parse()`, which makes the dependencies available for parent schemas.
+func (h *Helper) Resolve(ctx context.Context, id int) error {
+	if sch, ok := h.schemas.Load(id); ok {
+		return sch.(*Schema).Parse()
+	}
+
+	sch, err := h.reg.GetByID(ctx, id)
+
+	if err != nil {
+		return err
+	}
+
+	for _, ref := range sch.References {
+		sch, err := h.reg.GetBySubject(ctx, ref.Subject, ref.Version)
+
+		if err != nil {
+			return err
+		}
+
+		if err := h.Resolve(ctx, sch.ID); err != nil {
+			return err
+		}
+	}
+
+	if err := sch.Parse(); err != nil {
+		return err
+	}
+
+	h.schemas.Store(id, sch)
+
+	return nil
+}
+
 // Marshal syncs schema with schema registry and encodes message into AVRO.
 func (h *Helper) Marshal(ctx context.Context, topic string, cfg *Config, v interface{}) ([]byte, error) {
 	key := fmt.Sprintf("%s-%s", topic, cfg.Type)
 
+	SchemaParsingMutex.RLock()
+	sch, ok := h.schemas.Load(key)
+	SchemaParsingMutex.RUnlock()
+
+	if ok {
+		return sch.(*Schema).Marshal(v)
+	}
+
+	SchemaParsingMutex.Lock()
+	defer SchemaParsingMutex.Unlock()
+
+	// Check again, a previous holder of the write lock might have created it.
 	if sch, ok := h.schemas.Load(key); ok {
 		return sch.(*Schema).Marshal(v)
 	}
@@ -195,7 +256,7 @@ func (h *Helper) Marshal(ctx context.Context, topic string, cfg *Config, v inter
 
 	h.schemas.Store(key, sch)
 
-	return sch.Marshal(v)
+	return sch.(*Schema).Marshal(v)
 }
 
 // Unmarshal gets schema by id and decodes it into struct.

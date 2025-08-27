@@ -12,7 +12,7 @@ services:
 
   # Confluent Kafka broker
   broker:
-    image: confluentinc/cp-kafka:latest
+    image: confluentinc/cp-kafka:7.6.0
     depends_on:
       - zookeeper
     ports:
@@ -56,7 +56,7 @@ services:
     ports:
       - 8085:8085
     environment:
-      SCHEMA_REGISTRY_HOST_NAME: localhost
+      SCHEMA_REGISTRY_HOST_NAME: schemaregistry
       SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: broker:29092
       SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8085
       SCHEMA_REGISTRY_SCHEMA_REGISTRY_INTER_INSTANCE_PROTOCOL: http
@@ -72,6 +72,7 @@ services:
       dockerfile: submodules/cdtools/docker/mock/Dockerfile
     depends_on:
       - broker
+      - schemaregistry
     env_file:
       - ./.env
 
@@ -85,6 +86,7 @@ services:
         BUILD_EXTRA: "True"
     depends_on:
       - broker
+      - schemaregistry
     env_file:
       - ./.env
     environment:
@@ -100,10 +102,16 @@ services:
         BUILD_EXTRA: "True"
     depends_on:
       - broker
+      - schemaregistry
+    ports:
+      - 8087:8082
     env_file:
       - ./.env
     environment:
       - KAFKA_CONSUMER_GROUP_ID=articledelete
+      - HEALTH_CHECKS_COMPONENT_NAME=articledelete
+      - HEALTH_CHECKS_CONSUMER_TOPICS=["aws.event-bridge.article-delete.v1"]
+      - HEALTH_CHECKS_MAX_CONSUMER_LAG=-1
 
   # articledelete error service (Mind the spelling)
   articledeleterror:
@@ -115,11 +123,16 @@ services:
         BUILD_EXTRA: "True"
     depends_on:
       - broker
+    ports:
+      - 8086:8082
     env_file:
       - ./.env
     environment:
       - TOPIC_ARTICLE_DELETE=aws.structured-data.article-delete-error.v1
       - KAFKA_CONSUMER_GROUP_ID=articledeleterror
+      - HEALTH_CHECKS_COMPONENT_NAME=articledeleterror
+      - HEALTH_CHECKS_CONSUMER_TOPICS=["aws.structured-data.article-delete-error.v1"]
+      - HEALTH_CHECKS_MAX_CONSUMER_LAG=-1
 
   # articleupdate service 
   articleupdate:
@@ -131,11 +144,14 @@ services:
         BUILD_EXTRA: "True"
     depends_on:
       - broker
-      - textprocessor
+      - schemaregistry
+    ports:
+      - 8082:8082
     env_file:
       - ./.env
     environment:
       - KAFKA_CONSUMER_GROUP_ID=articleupdate
+      - HEALTH_CHECKS_COMPONENT_NAME=articleupdate
 
   # articleupdate error service (Mind the spelling)
   articleupdaterror:
@@ -147,11 +163,17 @@ services:
         BUILD_EXTRA: "True"
     depends_on:
       - broker
+      - schemaregistry
+    ports:
+      - 8083:8082
     env_file:
       - ./.env
     environment:
-      - TOPIC_ARTICLE_UPDATE=aws.structured-data.article-update-error.v1
+      - TOPIC_ARTICLE_UPDATE=["aws.structured-data.article-update-error.v1"]
       - KAFKA_CONSUMER_GROUP_ID=articleupdateerror
+      - HEALTH_CHECKS_COMPONENT_NAME=articleupdateerror
+      - HEALTH_CHECKS_CONSUMER_TOPICS=["aws.structured-data.article-update-error.v1"]
+      - HEALTH_CHECKS_MAX_CONSUMER_LAG=-1
 
   # articlevisibility service
   articlevisibility:
@@ -163,16 +185,13 @@ services:
         BUILD_EXTRA: "True"
     depends_on:
       - broker
+      - schemaregistry
+    ports:
+      - 8084:8082
     env_file:
       - ./.env
     environment:
       - KAFKA_CONSUMER_GROUP_ID=articlevisibility
-
-  textprocessor:
-    image: okapis/text-processor:latest
-    ports:
-      - 5050:5050
-    ulimits:
-      nofile:
-        soft: 256000
-        hard: 256000
+      - HEALTH_CHECKS_COMPONENT_NAME=articlevisibility
+      - HEALTH_CHECKS_CONSUMER_TOPICS=["aws.event-bridge.article-visibility-change.v1"]
+      - HEALTH_CHECKS_MAX_CONSUMER_LAG=-1

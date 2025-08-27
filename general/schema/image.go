@@ -29,6 +29,16 @@ var ConfigImage = &Config{
 			{
 				"name": "height",
 				"type": "int"
+			},
+			{
+				"name": "alternative_text",
+				"type": "string",
+				"default": ""
+			},
+			{
+				"name": "caption",
+				"type": "string",
+				"default": ""
 			}
 		]
 	}`,
@@ -46,8 +56,10 @@ func NewImageSchema() (avro.Schema, error) {
 // Image schema for article image.
 // Compliant with https://schema.org/ImageObject,
 type Image struct {
-	ContentUrl string     `json:"content_url,omitempty" avro:"contentUrl"`
-	Thumbnail  *Thumbnail `json:"-" avro:"thumbnail"`
-	Width      int        `json:"width,omitempty" avro:"width"`
-	Height     int        `json:"height,omitempty" avro:"height"`
+	ContentUrl      string     `json:"content_url,omitempty" avro:"contentUrl"`
+	Thumbnail       *Thumbnail `json:"-" avro:"thumbnail"`
+	Width           int        `json:"width,omitempty" avro:"width"`
+	Height          int        `json:"height,omitempty" avro:"height"`
+	AlternativeText string     `json:"alternative_text,omitempty" avro:"alternative_text"`
+	Caption         string     `json:"caption,omitempty" avro:"caption"`
 }

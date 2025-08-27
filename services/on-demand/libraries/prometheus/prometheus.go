@@ -1,7 +1,7 @@
 package prometheus
 
 import (
-	pr "wikimedia-enterprise/general/prometheus"
+	pr "wikimedia-enterprise/services/on-demand/submodules/prometheus"
 )
 
 // NewAPI creates a new prometheus API.

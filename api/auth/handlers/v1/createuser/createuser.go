@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 	"wikimedia-enterprise/api/auth/config/env"
-	"wikimedia-enterprise/general/httputil"
-	"wikimedia-enterprise/general/log"
+	"wikimedia-enterprise/api/auth/submodules/httputil"
+	"wikimedia-enterprise/api/auth/submodules/log"
 
 	"golang.org/x/exp/slices"
 
@@ -46,7 +46,11 @@ type Model struct {
 	MarketingEmails  string    `json:"marketing_emails" form:"marketing_emails" binding:"required,min=4,max=5"`
 }
 
-var pvregex = regexp.MustCompile(`v\d{1}\.\d{1}`)
+var (
+	pvregex = regexp.MustCompile(`v\d{1}\.\d{1}`)
+	// Here, "internal" means the error is on our side (Wikimedia Enterprise), not necessarily in the auth API server.
+	internalErr = errors.New("Internal error, please try again later.")
+)
 
 // NewHandler creates a new gin handler function for create user endpoint.
 func NewHandler(p *Parameters) gin.HandlerFunc {
@@ -54,14 +58,14 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 		mdl := new(Model)
 
 		if err := gcx.ShouldBind(mdl); err != nil {
-			log.Error(err, log.Tip("problem binding request input to create user model"))
-			httputil.UnprocessableEntity(gcx, err)
+			log.Error(err, log.Tip("problem binding request input to create user model"), log.Any("url", gcx.Request.URL.String()))
+			httputil.UnprocessableEntity(gcx, internalErr)
 			return
 		}
 
 		if found := pvregex.MatchString(mdl.PolicyVersion); !found {
 			log.Error("policy version format is not compatible")
-			httputil.UnprocessableEntity(gcx, errors.New("Policy version format is not compatible!"))
+			httputil.UnprocessableEntity(gcx, internalErr)
 			return
 		}
 
@@ -80,25 +84,23 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 		_, err := p.Cognito.AdminGetUserWithContext(gcx.Request.Context(), gui)
 
 		if err == nil {
-			log.Error("user email already exists")
+			log.Info("user email already exists", log.Any("email", mdl.Email))
 			httputil.BadRequest(gcx, errors.New("An account using this email address already exists."))
 			return
 		}
 
-		if err != nil {
-			aerr, ok := err.(awserr.Error)
+		aerr, ok := err.(awserr.Error)
 
-			if !ok {
-				log.Error(err, log.Tip("could not extract inner error, in create user"))
-				httputil.InternalServerError(gcx, err)
-				return
-			}
+		if !ok {
+			log.Error(err, log.Tip("could not extract inner error, in create user"), log.Any("email", mdl.Email))
+			httputil.InternalServerError(gcx, internalErr)
+			return
+		}
 
-			if aerr.Code() != cognitoidentityprovider.ErrCodeUserNotFoundException {
-				log.Error(aerr, log.Tip("cognito could not find user"))
-				httputil.InternalServerError(gcx, err)
-				return
-			}
+		if aerr.Code() != cognitoidentityprovider.ErrCodeUserNotFoundException {
+			log.Error(aerr, log.Any("email", mdl.Email))
+			httputil.InternalServerError(gcx, internalErr)
+			return
 		}
 
 		ggi := new(cognitoidentityprovider.GetGroupInput)
@@ -109,7 +111,7 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 
 		if err != nil {
 			log.Error(err, log.Tip("create user could not find group"))
-			httputil.InternalServerError(gcx, err)
+			httputil.InternalServerError(gcx, internalErr)
 			return
 		}
 
@@ -124,7 +126,7 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 		// Delete solution after check to prevent abusive use of this endpoint.
 		if _, err := p.Redis.Del(gcx.Request.Context(), mdl.CaptchaID).Result(); err != nil {
 			log.Error("create user failed to delete redis captcha")
-			httputil.InternalServerError(gcx, err)
+			httputil.InternalServerError(gcx, internalErr)
 			return
 		}
 
@@ -158,16 +160,16 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 		h := hmac.New(sha256.New, []byte(p.Env.CognitoSecret))
 
 		if _, err := h.Write([]byte(fmt.Sprintf("%s%s", mdl.Username, p.Env.CognitoClientID))); err != nil {
-			log.Error(err, log.Tip("failed to write username and cognito client id"))
-			httputil.InternalServerError(gcx, err)
+			log.Error(err, log.Tip("failed to write username and cognito client id"), log.Any("email", mdl.Email), log.Any("username", mdl.Username))
+			httputil.InternalServerError(gcx, internalErr)
 			return
 		}
 
 		sgi.SetSecretHash(base64.StdEncoding.EncodeToString(h.Sum(nil)))
 
 		if _, err := p.Cognito.SignUpWithContext(gcx.Request.Context(), sgi); err != nil {
-			log.Error(err, log.Tip("failed to sign up with context from cognito"))
-			httputil.InternalServerError(gcx, err)
+			log.Error(err, log.Tip("failed to sign up with context from cognito"), log.Any("email", mdl.Email))
+			httputil.InternalServerError(gcx, internalErr)
 			return
 		}
 
@@ -178,8 +180,8 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 		agi.SetUsername(mdl.Username)
 
 		if _, err := p.Cognito.AdminAddUserToGroupWithContext(gcx.Request.Context(), agi); err != nil {
-			log.Error(err, log.Tip("failed to add user to group in cognito"))
-			httputil.InternalServerError(gcx, err)
+			log.Error(err, log.Tip("failed to add user to group in cognito"), log.Any("email", mdl.Email))
+			httputil.InternalServerError(gcx, internalErr)
 			return
 		}
 

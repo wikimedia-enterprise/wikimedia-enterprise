@@ -1,0 +1,37 @@
+stages:
+  - test
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+workflow:
+  rules:
+    - if: $CI_MERGE_REQUEST_IID
+    - if: $CI_COMMIT_TAG
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+default:
+  image: golang:1.22.4-bookworm
+  timeout: 10 minutes
+  retry: 1
+  tags:
+    - aws-fargate-wme-golang
+
+###################
+# Test Stage Jobs #
+###################
+test:protos:
+  stage: test
+  script:
+    - curl -OL https://github.com/protocolbuffers/protobuf/releases/download/v27.2/protoc-27.2-linux-x86_64.zip
+    - apt-get update ; apt-get install unzip
+    - unzip -o protoc-27.2-linux-x86_64.zip -d ./proto
+    - go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.28
+    - go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
+    - export PATH=$PATH:/go/bin:/root/go/bin:proto/bin
+    - echo $PATH
+    - echo $(which protoc)
+    - echo $(go env GOPATH)
+    - echo $(ls $(go env GOPATH)/bin)
+    - echo $(ls proto/bin/)
+    - for x in $(ls *.proto) ; do proto/bin/protoc --proto_path=.  --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative $x ; done

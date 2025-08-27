@@ -1,0 +1,305 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=12) "Infobox song",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=5) {
+      (*parser.Part)({
+        Name: (string) (len=30) "\"(Don't Go Back To) Rockville\"",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=154) "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/R.E.M._-_%28Don%27t_Go_Back_to%29_Rockville.jpg/220px-R.E.M._-_%28Don%27t_Go_Back_to%29_Rockville.jpg",
+                AlternativeText: (string) (len=26) "A crude drawing of a horse",
+                Caption: (string) "",
+                Height: (int) 220,
+                Width: (int) 220
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=16) "Single by R.E.M.",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=24) "from the album Reckoning",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=8) {
+          (*parser.Part)({
+            Name: (string) (len=6) "B-side",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "\"Catapult\" (Live)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/A-side_and_B-side",
+                Text: (string) (len=6) "B-side",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Released",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "October 16, 1984",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Recorded",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "1984",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Genre",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=4) {
+              (string) "",
+              (string) (len=50) "                              - Country rock[1][2]",
+              (string) (len=54) "                              - alternative country[3]",
+              (string) (len=24) "                        "
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Music_genre",
+                Text: (string) (len=5) "Genre",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Length",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=27) "4: 33 3:55 (single version)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Label",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=3) "IRS",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Record_label",
+                Text: (string) (len=5) "Label",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/IRS_Records",
+                Text: (string) (len=3) "IRS",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Songwriter(s)",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=7) {
+              (string) "",
+              (string) (len=46) "                                  - Bill Berry",
+              (string) (len=46) "                                  - Peter Buck",
+              (string) (len=46) "                                  - Mike Mills",
+              (string) (len=43) "                                  - Michael",
+              (string) (len=48) "                                        Stipe[4]",
+              (string) (len=28) "                            "
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Songwriter",
+                Text: (string) (len=13) "Songwriter(s)",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Producer(s)",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=6) {
+              (string) "",
+              (string) (len=39) "                                  - Don",
+              (string) (len=45) "                                        Dixon",
+              (string) (len=48) "                                  - Mitch Easter",
+              (string) (len=32) "                                ",
+              (string) (len=28) "                            "
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Record_producer",
+                Text: (string) (len=11) "Producer(s)",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=25) "R.E.M. singles chronology",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=115) "\" So. Central Rain (I'm Sorry) \" (1984) \" (Don't Go Back To) Rockville \" (1984) \" Cant Get There from Here \" (1985)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/So._Central_Rain_(I'm_Sorry)",
+                Text: (string) (len=28) "So. Central Rain (I'm Sorry)",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Cant_Get_There_from_Here",
+                Text: (string) (len=24) "Cant Get There from Here",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=115) "\" So. Central Rain (I'm Sorry) \" (1984) \" (Don't Go Back To) Rockville \" (1984) \" Cant Get There from Here \" (1985)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/So._Central_Rain_(I'm_Sorry)",
+                Text: (string) (len=28) "So. Central Rain (I'm Sorry)",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Cant_Get_There_from_Here",
+                Text: (string) (len=24) "Cant Get There from Here",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=17) "Alternative cover",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=16) "European release",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=168) "https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/R.E.M._-_%28Don%27t_Go_Back_to%29_Rockville_Europe.jpg/220px-R.E.M._-_%28Don%27t_Go_Back_to%29_Rockville_Europe.jpg",
+                AlternativeText: (string) (len=35) "A black-and-white photo of the band",
+                Caption: (string) (len=16) "European release",
+                Height: (int) 220,
+                Width: (int) 220
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

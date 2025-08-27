@@ -3,11 +3,11 @@ package aggregate
 
 import (
 	"context"
-	"wikimedia-enterprise/general/schema"
-	"wikimedia-enterprise/general/subscriber"
 	"wikimedia-enterprise/services/content-integrity/libraries/collector"
+	"wikimedia-enterprise/services/content-integrity/submodules/schema"
+	"wikimedia-enterprise/services/content-integrity/submodules/subscriber"
 
-	"wikimedia-enterprise/general/log"
+	"wikimedia-enterprise/services/content-integrity/submodules/log"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"go.uber.org/dig"

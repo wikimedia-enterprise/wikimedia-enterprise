@@ -2,7 +2,7 @@ package ksqldb
 
 import (
 	"wikimedia-enterprise/api/realtime/config/env"
-	"wikimedia-enterprise/general/ksqldb"
+	"wikimedia-enterprise/api/realtime/submodules/ksqldb"
 )
 
 // New creates new ksqldb client instance with credentials.

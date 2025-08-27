@@ -1,0 +1,46 @@
+include:
+  - project: 'wikimedia-enterprise/general/cdtools'
+    ref: main
+    file: '/ci/goapp.yml'
+
+stages:
+  - test
+  - analyses
+  - build
+  - deploy
+  - eks-ecr-push 
+.eks_dev_environment: &eks_dev_environment
+  environment:
+    name: dv
+  only:
+    - dev
+  tags:
+    - aws-fargate-wme-kaniko
+
+.eks_prod_environment: &eks_prod_environment
+  environment:
+    name: pr
+  only:
+    - main
+  tags:
+    - aws-fargate-wme-kaniko
+
+.push_eks_ecr: &push_eks_ecr
+  stage: eks-ecr-push
+  allow_failure: false
+  before_script:
+    - export EKS_DOCKER_FILE="./submodules/cdtools/docker/eks/Dockerfile" 
+  script:
+    - |
+      /kaniko/executor \
+        --context "${CI_PROJECT_DIR}" \
+        --dockerfile "${CI_PROJECT_DIR}/${EKS_DOCKER_FILE}" \
+        --destination "${EKS_ECR_REPO}:latest"
+
+eks:dev:
+  <<: *eks_dev_environment
+  <<: *push_eks_ecr 
+
+eks:prod:
+  <<: *eks_prod_environment
+  <<: *push_eks_ecr 

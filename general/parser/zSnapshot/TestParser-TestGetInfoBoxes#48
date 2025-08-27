@@ -1,0 +1,201 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=13) "Infobox storm",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) (len=35) "Early 2019 North American cold wave",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=8) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=48) "Surface temperatures from January 24 to 29, 2019",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Type",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Cold wave",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Cold_wave",
+                Text: (string) (len=9) "Cold wave",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Formed",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "January 24, 2019",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Dissipated",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "early March 2019",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=18) "Lowest temperature",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=64) "−56 °F (−49 °C) in Cotton, Minnesota, on January 27 and 31",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Cotton,_Minnesota",
+                Text: (string) (len=17) "Cotton, Minnesota",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=90) "https://en.wikipedia.org/wiki/January–February_2019_North_American_cold_wave#cite_note-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Fatalities",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=2) "22",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=95) "https://en.wikipedia.org/wiki/January–February_2019_North_American_cold_wave#cite_note-auto-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=96) "https://en.wikipedia.org/wiki/January–February_2019_North_American_cold_wave#cite_note-auto1-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Damage",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "$950 million",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=90) "https://en.wikipedia.org/wiki/January–February_2019_North_American_cold_wave#cite_note-4",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Areas affected",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=91) "Eastern Canada Central United States Eastern United States Pacific Northwest Western Canada",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Eastern_Canada",
+                Text: (string) (len=14) "Eastern Canada",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Central_United_States",
+                Text: (string) (len=21) "Central United States",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Eastern_United_States",
+                Text: (string) (len=21) "Eastern United States",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Pacific_Northwest",
+                Text: (string) (len=17) "Pacific Northwest",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Western_Canada",
+                Text: (string) (len=14) "Western Canada",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=43) "Part of the 2018–19 North American winter",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

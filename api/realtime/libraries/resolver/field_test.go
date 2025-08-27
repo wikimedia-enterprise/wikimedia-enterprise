@@ -12,13 +12,15 @@ import (
 
 type fieldTestSuite struct {
 	suite.Suite
-	name  string
-	value reflect.Value
-	par   *resolver.Struct
+	name     string
+	goName   string
+	value    reflect.Value
+	par      *resolver.Struct
+	keywords map[string]string
 }
 
 func (s *fieldTestSuite) TestNewField() {
-	fld := resolver.NewField(s.name, s.par, s.value)
+	fld := resolver.NewField(s.name, s.goName, s.par, s.value, s.keywords)
 
 	s.Assert().NotNil(fld)
 	s.Assert().Equal(s.name, fld.Name)
@@ -36,8 +38,9 @@ func (s *fieldTestSuite) TestNewField() {
 func TestField(t *testing.T) {
 	for _, testCase := range []*fieldTestSuite{
 		{
-			name:  "test",
-			value: reflect.Value{},
+			name:   "test",
+			goName: "Test",
+			value:  reflect.Value{},
 			par: &resolver.Struct{
 				Table: "main",
 				Field: &resolver.Field{
@@ -46,7 +49,29 @@ func TestField(t *testing.T) {
 			},
 		},
 		{
+			name:   "test",
+			goName: "Test",
+			value:  reflect.Value{},
+			par:    &resolver.Struct{},
+		},
+		{
 			name:  "test",
+			value: reflect.Value{},
+			keywords: map[string]string{
+				"keyword": "`keyword`",
+			},
+			par: &resolver.Struct{
+				Table: "main",
+				Field: &resolver.Field{
+					FullName: "secondary",
+				},
+			},
+		},
+		{
+			name: "test",
+			keywords: map[string]string{
+				"keyword": "`keyword`",
+			},
 			value: reflect.Value{},
 			par:   &resolver.Struct{},
 		},

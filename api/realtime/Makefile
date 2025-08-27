@@ -24,6 +24,7 @@ realtime:
 mock:
 	docker compose up -d --no-deps --build mock
 
+# To be removed
 #############################
 # ksqlDB migrations targets #
 #############################

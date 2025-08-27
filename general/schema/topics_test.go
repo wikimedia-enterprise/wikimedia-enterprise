@@ -1,6 +1,7 @@
 package schema
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/suite"
@@ -13,10 +14,12 @@ type topicsTestSuite struct {
 	dtb string
 	ets []string
 	tps *Topics
+	evt string
 	err error
 }
 
 func (s *topicsTestSuite) SetupSuite() {
+	s.evt = "Create"
 	s.tps = new(Topics)
 	s.Assert().NoError(
 		s.tps.UnmarshalEnvironmentValue(s.cfg),
@@ -54,11 +57,34 @@ func (s *topicsTestSuite) TestGetNames() {
 	s.Assert().Equal(s.ets, tps)
 }
 
+func (s *topicsTestSuite) TestGetNameByEventType() {
+	tpc := s.tps.GetNameByEventType(s.dtb, s.evt, s.tps.Versions[0])
+
+	if s.dtb == "commonswiki" {
+		s.Assert().Equal(fmt.Sprintf("%s.%s.commons-%s.%s", s.tps.Location, s.tps.ServiceName, s.evt, s.tps.Versions[0]), tpc)
+	} else {
+		s.Assert().Equal(fmt.Sprintf("%s.%s.article-%s.%s", s.tps.Location, s.tps.ServiceName, s.evt, s.tps.Versions[0]), tpc)
+	}
+}
+
+func (s *topicsTestSuite) TestGetNamesByEventType() {
+	tpcs := s.tps.GetNamesByEventType(s.dtb, s.evt)
+
+	for _, vrs := range s.tps.Versions {
+		if s.dtb == "commonswiki" {
+			s.Assert().Contains(tpcs, fmt.Sprintf("%s.%s.commons-%s.%s", s.tps.Location, s.tps.ServiceName, s.evt, vrs))
+		} else {
+			s.Assert().Contains(tpcs, fmt.Sprintf("%s.%s.article-%s.%s", s.tps.Location, s.tps.ServiceName, s.evt, vrs))
+		}
+	}
+}
+
 func TestTopics(t *testing.T) {
 	for _, testCase := range []*topicsTestSuite{
 		{
 			cfg: `{}`,
 			nid: -1,
+
 			err: ErrNamespaceNotSupported,
 		},
 		{
@@ -71,6 +97,7 @@ func TestTopics(t *testing.T) {
 			cfg: `{}`,
 			nid: 6,
 			dtb: "enwiki",
+
 			ets: []string{"aws.structured-data.enwiki-files-compacted.v1"},
 		},
 		{
@@ -140,6 +167,15 @@ func TestTopics(t *testing.T) {
 			nid: 14,
 			dtb: "enwiki",
 			ets: []string{"aws.structured-data.enwiki-categories-compacted.v2", "aws.structured-data.enwiki-categories-compacted.v1"},
+		},
+		{
+			cfg: `{
+				"version": ["v2", "v1"],
+				"service_name": "structured-contents"
+			}`,
+			nid: 0,
+			dtb: "enwiki",
+			ets: []string{"aws.structured-contents.enwiki-articles-compacted.v2", "aws.structured-contents.enwiki-articles-compacted.v1"},
 		},
 	} {
 		suite.Run(t, testCase)

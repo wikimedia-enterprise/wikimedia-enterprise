@@ -1,0 +1,887 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=26) "Infobox football biography",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=10) {
+      (*parser.Part)({
+        Name: (string) (len=12) "Lionel Messi",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=47) "Messi with Argentina at the 2022 FIFA World Cup",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=185) "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg/220px-Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) (len=47) "Messi with Argentina at the 2022 FIFA World Cup",
+                Height: (int) 220,
+                Width: (int) 220
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=62) "https://en.wikipedia.org/wiki/Argentina_national_football_team",
+                Text: (string) (len=9) "Argentina",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup",
+                Text: (string) (len=19) "2022 FIFA World Cup",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=20) "Personal information",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) (len=9) "Full name",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=20) "Lionel Andrés Messi",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=70) "https://en.wikipedia.org/wiki/Lionel_Messi#cite_note-NameBirthHeight-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Date of birth",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "24 June 1987",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=70) "https://en.wikipedia.org/wiki/Lionel_Messi#cite_note-NameBirthHeight-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Place of birth",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=28) "Rosario, Santa Fe, Argentina",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Rosario,_Santa_Fe",
+                Text: (string) (len=17) "Rosario, Santa Fe",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Height",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "1.70 m (5 ft 7 in)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=70) "https://en.wikipedia.org/wiki/Lionel_Messi#cite_note-NameBirthHeight-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Position(s)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "Forward",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/Forward_(association_football)",
+                Text: (string) (len=7) "Forward",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=16) "Club information",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) (len=12) "Current team",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "Paris Saint-Germain",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Paris_Saint-Germain_F.C.",
+                Text: (string) (len=19) "Paris Saint-Germain",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Number",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=2) "30",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=12) "Youth career",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) (len=11) "1992–1995",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Grandoli",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "1995–2000",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "Newell's Old Boys",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Newell's_Old_Boys",
+                Text: (string) (len=17) "Newell's Old Boys",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "2000–2003",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Barcelona",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/FC_Barcelona",
+                Text: (string) (len=9) "Barcelona",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=14) "Senior career*",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) (len=5) "Years",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "Team",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "2003–2004",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "Barcelona C",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/FC_Barcelona_C",
+                Text: (string) (len=11) "Barcelona C",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "2004–2005",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "Barcelona B",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/FC_Barcelona_B",
+                Text: (string) (len=11) "Barcelona B",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "2004–2021",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Barcelona",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/FC_Barcelona",
+                Text: (string) (len=9) "Barcelona",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "2021–",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "Paris Saint-Germain",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Paris_Saint-Germain_F.C.",
+                Text: (string) (len=19) "Paris Saint-Germain",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=24) "International career ‡",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) (len=11) "2004–2005",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Argentina U20",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/Argentina_national_under-20_football_team",
+                Text: (string) (len=13) "Argentina U20",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "2008",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Argentina U23",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/Argentina_national_under-23_football_team",
+                Text: (string) (len=13) "Argentina U23",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/Lionel_Messi#cite_note-U23-5",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "2005–",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Argentina",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=62) "https://en.wikipedia.org/wiki/Argentina_national_football_team",
+                Text: (string) (len=9) "Argentina",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=80) "https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Lionel_Messi",
+                Text: (string) (len=2) "98",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=391) "Honours Men's football Representing Argentina FIFA World Cup Winner 2022 Qatar Runner-up 2014 Brazil Copa América Winner 2021 Brazil Runner-up 2007 Venezuela Runner-up 2015 Chile Runner-up 2016 United States 2019 Brazil CONMEBOL–UEFA Cup of Champions Winner 2022 England Olympic Games 2008 Beijing FIFA U-20 World Cup Winner 2005 Netherlands South American U-20 Championship 2005 Colombia",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=19) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "Men's football",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Association_football",
+                Text: (string) (len=8) "football",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "Representing Argentina",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=110) "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/23px-Flag_of_Argentina.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 23,
+                Width: (int) 23
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/Argentine_Football_Association",
+                Text: (string) (len=9) "Argentina",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "FIFA World Cup",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/FIFA_World_Cup",
+                Text: (string) (len=14) "FIFA World Cup",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "Winner 2022 Qatar",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup",
+                Text: (string) (len=10) "2022 Qatar",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "Runner-up 2014 Brazil",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/2014_FIFA_World_Cup",
+                Text: (string) (len=11) "2014 Brazil",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Copa América",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Copa_América",
+                Text: (string) (len=13) "Copa América",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "Winner 2021 Brazil",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/2021_Copa_América",
+                Text: (string) (len=11) "2021 Brazil",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "Runner-up 2007 Venezuela",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/2007_Copa_América",
+                Text: (string) (len=14) "2007 Venezuela",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=20) "Runner-up 2015 Chile",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/2015_Copa_América",
+                Text: (string) (len=10) "2015 Chile",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=28) "Runner-up 2016 United States",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Copa_América_Centenario",
+                Text: (string) (len=18) "2016 United States",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "2019 Brazil",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=110) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bronze_medal_icon.svg/16px-Bronze_medal_icon.svg.png",
+                AlternativeText: (string) (len=11) "Third place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/2019_Copa_América",
+                Text: (string) (len=11) "2019 Brazil",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=32) "CONMEBOL–UEFA Cup of Champions",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=62) "https://en.wikipedia.org/wiki/CONMEBOL–UEFA_Cup_of_Champions",
+                Text: (string) (len=32) "CONMEBOL–UEFA Cup of Champions",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "Winner 2022 England",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/2022_Finalissima",
+                Text: (string) (len=12) "2022 England",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Olympic Games",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=78) "https://en.wikipedia.org/wiki/Football_at_the_Summer_Olympics#Men's_tournament",
+                Text: (string) (len=13) "Olympic Games",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "2008 Beijing",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/2008_Summer_Olympics",
+                Text: (string) (len=12) "2008 Beijing",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "FIFA U-20 World Cup",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/FIFA_U-20_World_Cup",
+                Text: (string) (len=19) "FIFA U-20 World Cup",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "Winner 2005 Netherlands",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=64) "https://en.wikipedia.org/wiki/2005_FIFA_World_Youth_Championship",
+                Text: (string) (len=16) "2005 Netherlands",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=32) "South American U-20 Championship",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=72) "https://en.wikipedia.org/wiki/South_American_Youth_Football_Championship",
+                Text: (string) (len=32) "South American U-20 Championship",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "2005 Colombia",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=110) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bronze_medal_icon.svg/16px-Bronze_medal_icon.svg.png",
+                AlternativeText: (string) (len=11) "Third place",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=67) "https://en.wikipedia.org/wiki/2005_South_American_U-20_Championship",
+                Text: (string) (len=13) "2005 Colombia",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=9) "Signature",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=9) "Signature",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=119) "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Firma_de_Lionel_Messi.svg/150px-Firma_de_Lionel_Messi.svg.png",
+                AlternativeText: (string) (len=22) "Lionel Messi signature",
+                Caption: (string) "",
+                Height: (int) 150,
+                Width: (int) 150
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=165) "*Club domestic league appearances and goals, correct as of 23:55, 29 January 2023 (UTC) ‡ National team caps and goals, correct as of 19:05, 18 December 2022 (UTC)",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

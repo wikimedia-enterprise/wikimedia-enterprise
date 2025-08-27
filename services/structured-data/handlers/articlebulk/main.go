@@ -6,13 +6,13 @@ import (
 	"os"
 	"os/signal"
 	"syscall"
-	"wikimedia-enterprise/general/schema"
-	"wikimedia-enterprise/general/subscriber"
 	"wikimedia-enterprise/services/structured-data/config/env"
 	"wikimedia-enterprise/services/structured-data/handlers/articlebulk/handler"
 	"wikimedia-enterprise/services/structured-data/packages/container"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
+	"wikimedia-enterprise/services/structured-data/submodules/subscriber"
 
-	pr "wikimedia-enterprise/general/prometheus"
+	pr "wikimedia-enterprise/services/structured-data/submodules/prometheus"
 )
 
 func main() {

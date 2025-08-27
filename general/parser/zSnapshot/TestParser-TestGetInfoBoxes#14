@@ -1,0 +1,227 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=7) "Infobox",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) (len=8) "ABC News",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=12) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=113) "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/ABC_News_logo_2021.svg/220px-ABC_News_logo_2021.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 220,
+                Width: (int) 220
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=16) "News division of",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=35) "American Broadcasting Company (ABC)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/American_Broadcasting_Company",
+                Text: (string) (len=29) "American Broadcasting Company",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Key people",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=2) {
+              (string) (len=30) "  - Kimberly Godwin(President)",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Founded",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "June 15, 1945",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Headquarters",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=7) {
+              (string) (len=25) "  - ABC News Headquarters",
+              (string) (len=18) "  - Lincoln Square",
+              (string) (len=23) "  - 47 West 66th Street",
+              (string) (len=30) "  - Upper West Side, Manhattan",
+              (string) (len=18) "  - New York City,",
+              (string) (len=17) "  - United States",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Studios",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=6) {
+              (string) (len=25) "  - ABC News Headquarters",
+              (string) (len=24) "  - Times Square Studios",
+              (string) (len=19) "  - (New York City)",
+              (string) (len=22) "  - ABC-owned stations",
+              (string) (len=30) "  - (across the United States)",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Area served",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Worldwide",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=18) "Broadcast programs",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=10) {
+              (string) (len=26) "  - ABC World News Tonight",
+              (string) (len=13) "  - Nightline",
+              (string) (len=13) "  - This Week",
+              (string) (len=9) "  - 20/20",
+              (string) (len=24) "  - Good Morning America",
+              (string) (len=18) "  - World News Now",
+              (string) (len=24) "  - America This Morning",
+              (string) (len=12) "  - The View",
+              (string) (len=15) "  - Tamron Hall",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Parent",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=20) "Disney Entertainment",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Disney_Entertainment",
+                Text: (string) (len=20) "Disney Entertainment",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Units",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=4) {
+              (string) (len=13) "  - ABC Audio",
+              (string) (len=20) "  - ABC News Studios",
+              (string) (len=30) "  - Lincoln Square Productions",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Slogan",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=93) "\"See the Whole Picture\" \"Every Day More Americans Choose ABC News, America's #1 News Source.\"",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Website",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "abcnews.go.com",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=23) "https://abcnews.go.com/",
+                Text: (string) (len=14) "abcnews.go.com",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

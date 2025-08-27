@@ -4,7 +4,7 @@ package s3
 import (
 	"strings"
 	"wikimedia-enterprise/api/main/config/env"
-	"wikimedia-enterprise/general/log"
+	"wikimedia-enterprise/api/main/submodules/log"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/credentials"

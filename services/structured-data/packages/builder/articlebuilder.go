@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings" //nolint // using nolint to avoid false negative https://github.com/golangci/golangci-lint/discussions/2214
 	"time"
-	"wikimedia-enterprise/general/parser"
-	"wikimedia-enterprise/general/schema"
-	"wikimedia-enterprise/general/wmf"
+	"wikimedia-enterprise/services/structured-data/submodules/parser"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
+	"wikimedia-enterprise/services/structured-data/submodules/wmf"
 )
 
 const (

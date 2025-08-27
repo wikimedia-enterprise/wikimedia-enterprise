@@ -11,6 +11,8 @@ import (
 
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
 
@@ -38,12 +40,10 @@ type handlerTestSuite struct {
 	igm *integrityMock
 	hdr *articledata.Handler
 	art *integrity.Article
-	err error
 }
 
 func (s *handlerTestSuite) SetupTest() {
 	s.ctx = context.Background()
-	s.err = errors.New("test")
 	s.igm = new(integrityMock)
 	s.bns = new(integrity.BreakingNews)
 	s.hdr = &articledata.Handler{
@@ -84,11 +84,19 @@ func (s *handlerTestSuite) SetupTest() {
 }
 
 func (s *handlerTestSuite) TestGetArticleDataError() {
-	s.igm.On("GetArticle", s.aps, s.bns).Return(nil, s.err)
+	getArticleErr := errors.New("test")
+	s.igm.On("GetArticle", s.aps, s.bns).Return(nil, getArticleErr)
 
 	res, err := s.hdr.GetArticleData(s.ctx, s.req)
-	s.Nil(res)
-	s.Equal(s.err, err)
+	s.Nil(res, "response should be nil when article data can't be retrieved")
+	s.Equal(getArticleErr, err)
+}
+
+func (s *handlerTestSuite) TestGetArticleDataClientError() {
+	s.req.Project = ""
+	res, err := s.hdr.GetArticleData(s.ctx, s.req)
+	s.Nil(res, "response should be nil on client error")
+	s.Equal(codes.InvalidArgument, status.Code(err))
 }
 
 func (s *handlerTestSuite) TestGetArticleData() {

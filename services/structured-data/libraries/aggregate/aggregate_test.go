@@ -5,8 +5,8 @@ import (
 	"errors"
 	"testing"
 	"time"
-	"wikimedia-enterprise/general/wmf"
 	"wikimedia-enterprise/services/structured-data/libraries/aggregate"
+	"wikimedia-enterprise/services/structured-data/submodules/wmf"
 
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
@@ -270,6 +270,60 @@ func (s *aggregationPageHTMLTestSuite) TestGetPageHTMLError() {
 
 func TestPageHTMLAggregation(t *testing.T) {
 	for _, testCase := range []*aggregationPageHTMLTestSuite{
+		{
+			phl: nil,
+		},
+		{
+			phl: &wmf.PageHTML{
+				Title:   "New",
+				Content: "<p>...html goes here...</p>",
+				Error:   errors.New("test error"),
+			},
+		},
+	} {
+		suite.Run(t, testCase)
+	}
+}
+
+type aggregationRevisionHTMLTestSuite struct {
+	suite.Suite
+	phl *wmf.PageHTML
+	agg *aggregate.Aggregation
+}
+
+func (s *aggregationRevisionHTMLTestSuite) SetupTest() {
+	s.agg = &aggregate.Aggregation{
+		PageHTML: s.phl,
+	}
+
+}
+
+func (s *aggregationRevisionHTMLTestSuite) TestGetPageHTML() {
+	if s.phl != nil {
+		s.Assert().Equal(s.phl, s.agg.GetPageHTML())
+	} else {
+		s.Assert().Nil(s.agg.GetPageHTML())
+	}
+}
+
+func (s *aggregationRevisionHTMLTestSuite) TestGetPageHTMLContent() {
+	if s.phl != nil {
+		s.Assert().Equal(s.phl.Content, s.agg.GetPageHTMLContent())
+	} else {
+		s.Assert().Equal("", s.agg.GetPageHTMLContent())
+	}
+}
+
+func (s *aggregationRevisionHTMLTestSuite) TestGetPageHTMLError() {
+	if s.phl != nil {
+		s.Assert().Equal(s.phl.Error, s.agg.GetPageHTMLError())
+	} else {
+		s.Assert().Nil(s.agg.GetPageHTMLError())
+	}
+}
+
+func TestRevisionHTMLAggregation(t *testing.T) {
+	for _, testCase := range []*aggregationRevisionHTMLTestSuite{
 		{
 			phl: nil,
 		},
@@ -673,7 +727,9 @@ type aggregateTestSuite struct {
 	gtr *aggregateGetterMock
 	dtb string
 	ttl string
+	rid string
 	tls []string
+	rvs []string
 	rsp interface{}
 	err error
 }
@@ -692,6 +748,7 @@ func (s *aggregateTestSuite) SetupTest() {
 
 func (s *aggregateTestSuite) TestGetAggregation() {
 	s.gtr.On("GetData", s.dtb, []string{s.ttl}).Return(s.rsp, s.err)
+	s.gtr.On("GetData", s.dtb, []string{s.rid}).Return(s.rsp, s.err)
 
 	agr := new(aggregate.Aggregation)
 	err := s.agg.GetAggregation(s.ctx, s.dtb, s.ttl, agr, s.gtr)
@@ -710,6 +767,39 @@ func (s *aggregateTestSuite) TestGetAggregation() {
 
 func (s *aggregateTestSuite) TestGetAggregations() {
 	s.gtr.On("GetData", s.dtb, s.tls).Return(s.rsp, s.err)
+	s.gtr.On("GetData", s.dtb, s.rvs).Return(s.rsp, s.err)
+
+	ars := map[string]*aggregate.Aggregation{}
+	err := s.agg.GetAggregations(s.ctx, s.dtb, s.tls, ars, s.gtr)
+
+	if s.err != nil {
+		s.Assert().Equal(s.err, err)
+
+		for _, agr := range ars {
+			s.Assert().Nil(agr.Page)
+			s.Assert().Nil(agr.PageHTML)
+			s.Assert().Nil(agr.Revision)
+			s.Assert().Nil(agr.User)
+			s.Assert().Nil(agr.Score)
+		}
+	} else {
+		s.Assert().NoError(err)
+	}
+}
+
+func (s *aggregateTestSuite) TestGetAggregationsWithRevisionsHTML() {
+	// Override the mock getter and use Page and RevisionHTML
+	amc := new(aggregateAPIMock)
+
+	s.ctx = context.Background()
+	s.gtr = new(aggregateGetterMock)
+	s.agg = &aggregate.Aggregate{
+		API: amc,
+	}
+
+	s.gtr.On("SetAPI", amc).Return()
+	s.gtr.On("GetData", s.dtb, s.tls).Return(s.rsp, s.err)
+	s.gtr.On("GetData", s.dtb, s.rvs).Return(s.rsp, s.err)
 
 	ars := map[string]*aggregate.Aggregation{}
 	err := s.agg.GetAggregations(s.ctx, s.dtb, s.tls, ars, s.gtr)
@@ -734,7 +824,9 @@ func TestAggregate(t *testing.T) {
 		{
 			dtb: "enwiki",
 			ttl: "Earth",
+			rid: "5",
 			tls: []string{"Earth", "Ninja"},
+			rvs: []string{"5", "10"},
 			rsp: map[string]*wmf.Page{
 				"Earth": {},
 				"Ninja": {},
@@ -743,7 +835,9 @@ func TestAggregate(t *testing.T) {
 		{
 			dtb: "enwiki",
 			ttl: "Earth",
+			rid: "5",
 			tls: []string{"Earth", "Ninja"},
+			rvs: []string{"5", "10"},
 			rsp: map[string]*wmf.Page{
 				"Earth": {},
 				"Ninja": {},
@@ -762,7 +856,9 @@ func TestAggregate(t *testing.T) {
 		{
 			dtb: "enwiki",
 			ttl: "Earth",
+			rid: "5",
 			tls: []string{"Earth", "Ninja"},
+			rvs: []string{"5", "10"},
 			rsp: map[string]*wmf.PageHTML{
 				"Earth": {},
 				"Ninja": {},
@@ -772,7 +868,9 @@ func TestAggregate(t *testing.T) {
 		{
 			dtb: "enwiki",
 			ttl: "Earth",
+			rid: "5",
 			tls: []string{"Earth", "Ninja"},
+			rvs: []string{"5", "10"},
 			rsp: map[string]*wmf.Revision{
 				"Earth": {},
 				"Ninja": {},
@@ -781,6 +879,7 @@ func TestAggregate(t *testing.T) {
 		{
 			dtb: "enwiki",
 			ttl: "Earth",
+			rid: "5",
 			tls: []string{"Earth", "Ninja"},
 			rsp: map[string]*wmf.Revision{
 				"Earth": {},
@@ -791,7 +890,9 @@ func TestAggregate(t *testing.T) {
 		{
 			dtb: "enwiki",
 			ttl: "Earth",
+			rid: "5",
 			tls: []string{"Earth", "Ninja"},
+			rvs: []string{"5", "10"},
 			rsp: map[string]*wmf.User{
 				"Earth": {},
 				"Ninja": {},
@@ -800,7 +901,9 @@ func TestAggregate(t *testing.T) {
 		{
 			dtb: "enwiki",
 			ttl: "Earth",
+			rid: "5",
 			tls: []string{"Earth", "Ninja"},
+			rvs: []string{"5", "10"},
 			rsp: map[string]*wmf.User{
 				"Earth": {},
 				"Ninja": {},
@@ -810,7 +913,9 @@ func TestAggregate(t *testing.T) {
 		{
 			dtb: "enwiki",
 			ttl: "Earth",
+			rid: "5",
 			tls: []string{"Earth", "Ninja"},
+			rvs: []string{"5", "10"},
 			rsp: map[string]*wmf.Score{
 				"Earth": {},
 				"Ninja": {},
@@ -819,7 +924,9 @@ func TestAggregate(t *testing.T) {
 		{
 			dtb: "enwiki",
 			ttl: "Earth",
+			rid: "5",
 			tls: []string{"Earth", "Ninja"},
+			rvs: []string{"5", "10"},
 			rsp: map[string]*wmf.Score{
 				"Earth": {},
 				"Ninja": {},

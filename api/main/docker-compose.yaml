@@ -3,13 +3,22 @@ version: "3.9"
 services:
   # Main application
   main:
-    build:
-      context: ./../../.
-      dockerfile: ./api/main/Dockerfile
+    build: .
     ports:
-      - 4060:4060
+      - 4061:4061
+      - 12411:12411
     env_file:
       - ./.env
+
+  # Swagger API documentation
+  swagger-ui:
+    image: swaggerapi/swagger-ui:latest
+    volumes:
+      - ./submodules/api-openapi-spec/main.yaml:/var/www/app/docs.yaml
+    ports:
+      - 8090:8080
+    environment:
+      SWAGGER_JSON: /var/www/app/docs.yaml
 
   cache:
     image: redis:latest
@@ -29,3 +38,13 @@ services:
       - 9000:9000
       - 9202:9202
     command: server /data --console-address :9202
+
+  # Redis UI tool
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    restart: always
+    environment:
+      - REDIS_HOSTS=local:cache:6379
+    ports:
+      - "8081:8081"
+

@@ -1,7 +1,7 @@
 package builder
 
 import (
-	"wikimedia-enterprise/general/schema"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
 )
 
 // DeltaBuilder follows the builder pattern for the Delta schema.

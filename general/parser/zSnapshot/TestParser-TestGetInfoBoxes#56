@@ -1,0 +1,920 @@
+([]*parser.Part) (len=2) {
+  (*parser.Part)({
+    Name: (string) (len=13) "Infobox Staat",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=27) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "Republik Malta",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=64) "Repubblika ta’ Malta (maltesisch) Republic of Malta (englisch)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=2) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=103) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Malta.svg/180px-Flag_of_Malta.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 180,
+                Width: (int) 180
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=119) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Malta.svg/117px-Coat_of_arms_of_Malta.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 117,
+                Width: (int) 117
+              })
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://de.wikipedia.org/wiki/Datei:Flag_of_Malta.svg",
+                Text: (string) "",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=103) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Malta.svg/180px-Flag_of_Malta.svg.png",
+                    AlternativeText: (string) "",
+                    Caption: (string) "",
+                    Height: (int) 180,
+                    Width: (int) 180
+                  })
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=61) "https://de.wikipedia.org/wiki/Datei:Coat_of_arms_of_Malta.svg",
+                Text: (string) "",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=119) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Malta.svg/117px-Coat_of_arms_of_Malta.svg.png",
+                    AlternativeText: (string) "",
+                    Caption: (string) "",
+                    Height: (int) 117,
+                    Width: (int) 117
+                  })
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://de.wikipedia.org/wiki/Flagge_Maltas",
+                Text: (string) (len=6) "Flagge",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://de.wikipedia.org/wiki/Wappen_Maltas",
+                Text: (string) (len=6) "Wappen",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=2) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=103) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Malta.svg/180px-Flag_of_Malta.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 180,
+                Width: (int) 180
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=119) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Malta.svg/117px-Coat_of_arms_of_Malta.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 117,
+                Width: (int) 117
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://de.wikipedia.org/wiki/Datei:Flag_of_Malta.svg",
+                Text: (string) "",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=103) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Malta.svg/180px-Flag_of_Malta.svg.png",
+                    AlternativeText: (string) "",
+                    Caption: (string) "",
+                    Height: (int) 180,
+                    Width: (int) 180
+                  })
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=61) "https://de.wikipedia.org/wiki/Datei:Coat_of_arms_of_Malta.svg",
+                Text: (string) "",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=119) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Malta.svg/117px-Coat_of_arms_of_Malta.svg.png",
+                    AlternativeText: (string) "",
+                    Caption: (string) "",
+                    Height: (int) 117,
+                    Width: (int) 117
+                  })
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Flagge",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Wappen",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://de.wikipedia.org/wiki/Flagge_Maltas",
+                Text: (string) (len=6) "Flagge",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://de.wikipedia.org/wiki/Wappen_Maltas",
+                Text: (string) (len=6) "Wappen",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=171) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Malta_in_European_Union_%28-rivers_-mini_map%29.svg/250px-Malta_in_European_Union_%28-rivers_-mini_map%29.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 250,
+                Width: (int) 250
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Amtssprache",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "Maltesisch und Englisch",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://de.wikipedia.org/wiki/Amtssprache",
+                Text: (string) (len=11) "Amtssprache",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://de.wikipedia.org/wiki/Maltesische_Sprache",
+                Text: (string) (len=10) "Maltesisch",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://de.wikipedia.org/wiki/Englische_Sprache",
+                Text: (string) (len=8) "Englisch",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Hauptstadt",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Valletta",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://de.wikipedia.org/wiki/Hauptstadt",
+                Text: (string) (len=10) "Hauptstadt",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://de.wikipedia.org/wiki/Valletta",
+                Text: (string) (len=8) "Valletta",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=26) "Staats- und Regierungsform",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=25) "parlamentarische Republik",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=74) "https://de.wikipedia.org/wiki/Liste_der_Staatsformen_und_Regierungssysteme",
+                Text: (string) (len=26) "Staats- und Regierungsform",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=64) "https://de.wikipedia.org/wiki/Parlamentarisches_Regierungssystem",
+                Text: (string) (len=16) "parlamentarische",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://de.wikipedia.org/wiki/Republik",
+                Text: (string) (len=8) "Republik",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Staatsoberhaupt",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=29) "Staatspräsident George Vella",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://de.wikipedia.org/wiki/Staatsoberhaupt",
+                Text: (string) (len=15) "Staatsoberhaupt",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=62) "https://de.wikipedia.org/wiki/Liste_der_Präsidenten_von_Malta",
+                Text: (string) (len=16) "Staatspräsident",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://de.wikipedia.org/wiki/George_Vella",
+                Text: (string) (len=12) "George Vella",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Regierungschef",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=28) "Premierminister Robert Abela",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://de.wikipedia.org/wiki/Regierungschef",
+                Text: (string) (len=14) "Regierungschef",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://de.wikipedia.org/wiki/Ministerpräsident",
+                Text: (string) (len=15) "Premierminister",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://de.wikipedia.org/wiki/Robert_Abela",
+                Text: (string) (len=12) "Robert Abela",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Parlament(e)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "Repräsentantenhaus",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://de.wikipedia.org/wiki/Parlament",
+                Text: (string) (len=12) "Parlament(e)",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://de.wikipedia.org/wiki/Repräsentantenhaus_(Malta)",
+                Text: (string) (len=19) "Repräsentantenhaus",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Fläche",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "316 km²",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://de.wikipedia.org/wiki/Staatsgebiet",
+                Text: (string) (len=7) "Fläche",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Einwohnerzahl",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "519.562 (2021)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://de.wikipedia.org/wiki/Einwohnerzahl",
+                Text: (string) (len=13) "Einwohnerzahl",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://de.wikipedia.org/wiki/Malta#cite_note-census_2021-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=19) "Bevölkerungsdichte",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "1.649 Einwohner pro km²",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://de.wikipedia.org/wiki/Bevölkerungsdichte",
+                Text: (string) (len=19) "Bevölkerungsdichte",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://de.wikipedia.org/wiki/Malta#cite_note-census_2021-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=25) "Bevölkerungs entwicklung",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=39) "+ 0,3 % (Schätzung für das Jahr 2021)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://de.wikipedia.org/wiki/Bevölkerungsentwicklung",
+                Text: (string) (len=25) "Bevölkerungs entwicklung",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://de.wikipedia.org/wiki/Malta#cite_note-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=81) "Bruttoinlandsprodukt Total (nominal) Total (KKP) BIP/Einw. (nom.) BIP/Einw. (KKP)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=88) "2021 17 Milliarden USD (126.) 26 Milliarden USD (146.) 33.329 USD (31.) 49.560 USD (30.)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=7) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://de.wikipedia.org/wiki/Bruttoinlandsprodukt",
+                Text: (string) (len=20) "Bruttoinlandsprodukt",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://de.wikipedia.org/wiki/Kaufkraftparität",
+                Text: (string) (len=3) "KKP",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://de.wikipedia.org/wiki/Malta#cite_note-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=73) "https://de.wikipedia.org/wiki/Liste_der_Länder_nach_Bruttoinlandsprodukt",
+                Text: (string) (len=4) "126.",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=73) "https://de.wikipedia.org/wiki/Liste_der_Länder_nach_Bruttoinlandsprodukt",
+                Text: (string) (len=4) "146.",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=82) "https://de.wikipedia.org/wiki/Liste_der_Länder_nach_Bruttoinlandsprodukt_pro_Kopf",
+                Text: (string) (len=3) "31.",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=82) "https://de.wikipedia.org/wiki/Liste_der_Länder_nach_Bruttoinlandsprodukt_pro_Kopf",
+                Text: (string) (len=3) "30.",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=34) "Index der menschlichen Entwicklung",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "0,918 (23.) (2021)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=64) "https://de.wikipedia.org/wiki/Index_der_menschlichen_Entwicklung",
+                Text: (string) (len=34) "Index der menschlichen Entwicklung",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=98) "https://de.wikipedia.org/wiki/Index_der_menschlichen_Entwicklung#Sehr_hohe_menschliche_Entwicklung",
+                Text: (string) (len=3) "23.",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://de.wikipedia.org/wiki/Malta#cite_note-4",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Währung",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "Euro (EUR)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://de.wikipedia.org/wiki/Währung",
+                Text: (string) (len=8) "Währung",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://de.wikipedia.org/wiki/Euro",
+                Text: (string) (len=4) "Euro",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Unabhängigkeit",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=48) "21. September 1964 (vom Vereinigten Königreich)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://de.wikipedia.org/wiki/Souveränität",
+                Text: (string) (len=15) "Unabhängigkeit",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://de.wikipedia.org/wiki/Vereinigtes_Königreich",
+                Text: (string) (len=23) "Vereinigten Königreich",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "National hymne",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "L-Innu Malti",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://de.wikipedia.org/wiki/Nationalhymne",
+                Text: (string) (len=14) "National hymne",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://de.wikipedia.org/wiki/L-Innu_Malti",
+                Text: (string) (len=12) "L-Innu Malti",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Zeitzone",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=40) "UTC+1 MEZ UTC+2 MESZ (März bis Oktober)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://de.wikipedia.org/wiki/Zeitzone",
+                Text: (string) (len=8) "Zeitzone",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://de.wikipedia.org/wiki/UTC+1",
+                Text: (string) (len=5) "UTC+1",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://de.wikipedia.org/wiki/Mitteleuropäische_Zeit",
+                Text: (string) (len=3) "MEZ",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://de.wikipedia.org/wiki/UTC+2",
+                Text: (string) (len=5) "UTC+2",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=70) "https://de.wikipedia.org/wiki/Sommerzeit#Mitteleuropäische_Sommerzeit",
+                Text: (string) (len=4) "MESZ",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Kfz-Kennzeichen",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=1) "M",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=65) "https://de.wikipedia.org/wiki/Liste_der_Kfz-Nationalitätszeichen",
+                Text: (string) (len=15) "Kfz-Kennzeichen",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://de.wikipedia.org/wiki/Kfz-Kennzeichen_(Malta)",
+                Text: (string) (len=1) "M",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "ISO 3166",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "MT, MLT, 470",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://de.wikipedia.org/wiki/ISO_3166",
+                Text: (string) (len=8) "ISO 3166",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://de.wikipedia.org/wiki/ISO_3166-2:MT",
+                Text: (string) (len=2) "MT",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Internet-TLD",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=3) ".mt",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://de.wikipedia.org/wiki/Top-Level-Domain",
+                Text: (string) (len=12) "Internet-TLD",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=33) "https://de.wikipedia.org/wiki/.mt",
+                Text: (string) (len=3) ".mt",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Telefonvorwahl",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "+356",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=59) "https://de.wikipedia.org/wiki/Internationale_Telefonvorwahl",
+                Text: (string) (len=14) "Telefonvorwahl",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=107) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Malta_Gozo_Comino.png/310px-Malta_Gozo_Comino.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 310,
+                Width: (int) 310
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=57) "https://de.wikipedia.org/wiki/Datei:Malta_Gozo_Comino.png",
+                Text: (string) "",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=107) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Malta_Gozo_Comino.png/310px-Malta_Gozo_Comino.png",
+                    AlternativeText: (string) "",
+                    Caption: (string) "",
+                    Height: (int) 310,
+                    Width: (int) 310
+                  })
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=12) "Klimatabelle",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=6) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=5) "Malta",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Klimadiagramm",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "J F M A M J J A S O N D",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=105) "93 16 10 63 16 9 43 18 10 24 20 12 21 24 15 7 29 19 0 31 22 19 32 23 64 28 21 77 25 18 95 21 14 114 17 11",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=38) "_ Temperatur (°C) _ Niederschlag (mm)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://de.wikipedia.org/wiki/Monatsmitteltemperatur",
+                Text: (string) (len=10) "Temperatur",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://de.wikipedia.org/wiki/Niederschlagsmenge",
+                Text: (string) (len=12) "Niederschlag",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Quelle: fehlt",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

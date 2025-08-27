@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 	"runtime"
-	"wikimedia-enterprise/general/schema"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
 )
 
 func main() {
@@ -22,6 +22,16 @@ func main() {
 	tps := []*schema.MockTopic{
 		{
 			Topic:  "aws.event-bridge.article-update.v1",
+			Config: schema.ConfigArticle,
+			Type:   schema.Article{},
+		},
+		{
+			Topic:  "aws.event-bridge.article-create.v1",
+			Config: schema.ConfigArticle,
+			Type:   schema.Article{},
+		},
+		{
+			Topic:  "aws.event-bridge.article-move.v1",
 			Config: schema.ConfigArticle,
 			Type:   schema.Article{},
 		},
@@ -59,4 +69,5 @@ func main() {
 		log.Panic(err)
 	}
 
+	log.Println("Finished successfully")
 }

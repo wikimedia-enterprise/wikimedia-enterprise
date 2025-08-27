@@ -1,19 +1,44 @@
 package proxy
 
 import (
+	"bytes"
 	"errors"
 	"fmt"
-	"wikimedia-enterprise/general/httputil"
+	"html/template"
+	"strings"
+	"wikimedia-enterprise/api/main/submodules/httputil"
 
 	"github.com/gin-gonic/gin"
 )
 
 // Errors for the getters.
 var (
-	ErrEmptyIdentifier = errors.New("identifier is empty")
-	ErrEmptyDate       = errors.New("date is empty")
-	ErrWrongUserType   = errors.New("user is of a wrong type")
-	ErrUnauthorized    = errors.New("user not found in the context")
+	ErrEmptyIdentifier      = errors.New("identifier is empty")
+	ErrEmptyChunkIdentifier = errors.New("chunk identifier is empty")
+	ErrEmptyFilename        = errors.New("filename is empty")
+	ErrEmptyDate            = errors.New("date is empty")
+	ErrWrongUserType        = errors.New("user is of a wrong type")
+	ErrUnauthorized         = errors.New("user not found in the context")
+
+	perHourAggregationPath = "/%s/:date/:hour"
+	perHourMetadataPath    = "/%s/:date/:hour/:database"
+	perHourDownloadPath    = "/%s/:date/:hour/:database/download"
+
+	HourlyPaths = struct {
+		PerHourAggregationPath string
+		PerHourAggregationS3   *template.Template
+		PerHourMetadataPath    string
+		PerHourMetadataS3      *template.Template
+		PerHourDownloadPath    string
+		PerHourDownloadS3      *template.Template
+	}{
+		PerHourAggregationPath: perHourAggregationPath,
+		PerHourAggregationS3:   template.Must(template.New("per-hour-aggregation").Parse("aggregations/{{.root}}/{{.date}}/{{.hour}}/batches.ndjson")),
+		PerHourMetadataPath:    perHourMetadataPath,
+		PerHourMetadataS3:      template.Must(template.New("per-hour-metadata").Parse("{{.root}}/{{.date}}/{{.hour}}/{{.database}}.json")),
+		PerHourDownloadPath:    perHourDownloadPath,
+		PerHourDownloadS3:      template.Must(template.New("per-hour-download").Parse("{{.root}}/{{.date}}/{{.hour}}/{{.database}}.tar.gz")),
+	}
 )
 
 // ByGroupGetterBase allows to get user from request context.
@@ -76,6 +101,26 @@ func (e *EntityGetter) GetPath(gcx *gin.Context) (string, error) {
 	return fmt.Sprintf("%s/%s.json", e.URL, idn), nil
 }
 
+// NewFileGetter creates new file getter instance.
+func NewFileGetter() *FileGetter {
+	return &FileGetter{}
+}
+
+// FileGetter this is a path getter for a single file metadata.
+type FileGetter struct {
+}
+
+// GetPath returns path for single file metadata by filename.
+func (e *FileGetter) GetPath(gcx *gin.Context) (string, error) {
+	fln := gcx.Param("filename")
+
+	if len(fln) == 0 {
+		return "", ErrEmptyFilename
+	}
+
+	return fmt.Sprintf("commons/pages/%s.json", strings.ReplaceAll(fln, " ", "_")), nil
+}
+
 // NewEntityDownloader creates new instance of entity downloader.
 func NewEntityDownloader(url string) *EntityDownloader {
 	return &EntityDownloader{
@@ -97,6 +142,26 @@ func (e *EntityDownloader) GetPath(gcx *gin.Context) (string, error) {
 	}
 
 	return fmt.Sprintf("%s/%s.tar.gz", e.URL, idn), nil
+}
+
+// NewFileDownloader creates new instance of a file downloader.
+func NewFileDownloader() *FileDownloader {
+	return &FileDownloader{}
+}
+
+// FileDownloader gives the ability to provide download path fo single file.
+type FileDownloader struct {
+}
+
+// GetPath returns a s3 bucket location for a file or error.
+func (e *FileDownloader) GetPath(gcx *gin.Context) (string, error) {
+	fln := gcx.Param("filename")
+
+	if len(fln) == 0 {
+		return "", ErrEmptyFilename
+	}
+
+	return fmt.Sprintf("commons/files/%s", strings.ReplaceAll(fln, " ", "_")), nil
 }
 
 // NewDateEntitiesGetter returns DateEntitiesGetter structure.
@@ -202,6 +267,15 @@ func (g *ByGroupEntitiesGetter) GetPath(gcx *gin.Context) (string, error) {
 	if err != nil {
 		return "", err
 	}
+	// Resolve s3 key for chunk metadata
+	if strings.Contains(g.URL, "chunks") {
+		idn := gcx.Param("identifier")
+		groupSuffix := ""
+		if usr.IsInGroup(g.Group) {
+			groupSuffix = fmt.Sprintf("_%s", g.Group)
+		}
+		return fmt.Sprintf("aggregations/%s/%s/%s%s.ndjson", g.URL, idn, g.URL, groupSuffix), nil
+	}
 
 	if usr.IsInGroup(g.Group) {
 		return fmt.Sprintf("aggregations/%[1]s/%[1]s_%[2]s.ndjson", g.URL, g.Group), nil
@@ -237,6 +311,21 @@ func (g *ByGroupEntityGetter) GetPath(gcx *gin.Context) (string, error) {
 
 	if err != nil {
 		return "", err
+	}
+	if strings.Contains(g.URL, "chunk") {
+		groupSuffix := ""
+		cdn := gcx.Param("chunkIdentifier")
+
+		if len(cdn) == 0 {
+			return "", ErrEmptyChunkIdentifier
+		}
+
+		sps := strings.Split(cdn, "_")
+		if usr.IsInGroup(g.Group) {
+			groupSuffix = fmt.Sprintf("_%s", g.Group)
+		}
+
+		return fmt.Sprintf("%s/%s/%s%s.json", g.URL, idn, fmt.Sprintf("chunk_%s", sps[len(sps)-1]), groupSuffix), nil
 	}
 
 	if usr.IsInGroup(g.Group) {
@@ -275,9 +364,95 @@ func (g *ByGroupEntityDownloader) GetPath(gcx *gin.Context) (string, error) {
 		return "", err
 	}
 
+	// Resolve s3 key for chunk tar
+	if strings.Contains(g.URL, "chunk") {
+		cdn := gcx.Param("chunkIdentifier")
+
+		if len(cdn) == 0 {
+			return "", ErrEmptyChunkIdentifier
+		}
+		groupSuffix := ""
+		if usr.IsInGroup(g.Group) {
+			groupSuffix = fmt.Sprintf("_%s", g.Group)
+		}
+
+		sps := strings.Split(cdn, "_")
+
+		return fmt.Sprintf("%s/%s/%s%s.tar.gz", g.URL, idn, fmt.Sprintf("chunk_%s", sps[len(sps)-1]), groupSuffix), nil
+	}
+
 	if usr.IsInGroup(g.Group) {
 		return fmt.Sprintf("%s/%s_%s.tar.gz", g.URL, idn, g.Group), nil
 	}
 
 	return fmt.Sprintf("%s/%s.tar.gz", g.URL, idn), nil
+}
+
+func getParamMap(gcx *gin.Context, params ...string) (map[string]string, error) {
+	dict := map[string]string{}
+	for _, param := range params {
+		dict[param] = gcx.Param(param)
+		if len(dict[param]) == 0 {
+			return nil, fmt.Errorf("expected parameter missing: %s", param)
+		}
+	}
+
+	return dict, nil
+}
+
+func runTemplate(tmpl *template.Template, params map[string]string) (string, error) {
+	var buf bytes.Buffer
+	err := tmpl.Execute(&buf, params)
+	if err != nil {
+		return "", err
+	}
+	return buf.String(), nil
+}
+
+// HourlyEntityAggregationGetter allows to download aggregations keyed by date and hour.
+type HourlyEntityAggregationGetter struct {
+	Root string
+}
+
+// GetPath returns the appropriate path for the requested file.
+func (d *HourlyEntityAggregationGetter) GetPath(gcx *gin.Context) (string, error) {
+	params, err := getParamMap(gcx, "date", "hour")
+	if err != nil {
+		return "", err
+	}
+
+	params["root"] = d.Root
+	return runTemplate(HourlyPaths.PerHourAggregationS3, params)
+}
+
+// HourlyEntityMetadataGetter allows to download entity metadata keyed by date, hour and database.
+type HourlyEntityMetadataGetter struct {
+	Root string
+}
+
+// GetPath returns the appropriate path for the requested file.
+func (d *HourlyEntityMetadataGetter) GetPath(gcx *gin.Context) (string, error) {
+	params, err := getParamMap(gcx, "date", "hour", "database")
+	if err != nil {
+		return "", err
+	}
+
+	params["root"] = d.Root
+	return runTemplate(HourlyPaths.PerHourMetadataS3, params)
+}
+
+// HourlyEntityDownloader allows to download entities keyed by date, hour and database.
+type HourlyEntityDownloader struct {
+	Root string
+}
+
+// GetPath returns the appropriate path for the requested file.
+func (d *HourlyEntityDownloader) GetPath(gcx *gin.Context) (string, error) {
+	params, err := getParamMap(gcx, "date", "hour", "database")
+	if err != nil {
+		return "", err
+	}
+
+	params["root"] = d.Root
+	return runTemplate(HourlyPaths.PerHourDownloadS3, params)
 }

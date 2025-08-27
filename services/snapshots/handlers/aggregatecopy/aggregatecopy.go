@@ -25,17 +25,51 @@ type Handler struct {
 // AggregateCopy copies project snapshots aggregated metadata.
 func (h *Handler) AggregateCopy(ctx context.Context, req *pb.AggregateCopyRequest) (*pb.AggregateCopyResponse, error) {
 	res := new(pb.AggregateCopyResponse)
-	res.Total = int32(1)
+	res.Total = int32(0)
 
-	_, err := h.S3.CopyObjectWithContext(ctx, &s3.CopyObjectInput{
-		Bucket:     aws.String(h.Env.AWSBucket),
-		CopySource: aws.String(fmt.Sprintf("%s/aggregations/%s/%s.ndjson", h.Env.AWSBucket, h.Env.Prefix, h.Env.Prefix)),
-		Key:        aws.String(fmt.Sprintf("aggregations/%s/%s_%s.ndjson", h.Env.Prefix, h.Env.Prefix, h.Env.FreeTierGroup)),
-	})
+	sources := []struct {
+		src string
+		dst string
+	}{}
 
-	if err != nil {
-		log.Println(err)
-		res.Errors++
+	// If no projects and namespaces then copy the root metadata file, example `aggregations/snapshots/snapshots.ndjson`
+	if len(req.Projects) == 0 && len(req.Namespaces) == 0 {
+		sources = append(sources, struct {
+			src string
+			dst string
+		}{
+			src: fmt.Sprintf("aggregations/%s/%s.ndjson", h.Env.Prefix, h.Env.Prefix),
+			dst: fmt.Sprintf("aggregations/%s/%s_%s.ndjson", h.Env.Prefix, h.Env.Prefix, h.Env.FreeTierGroup),
+		})
+	}
+
+	for _, prj := range req.Projects {
+		for _, ns := range req.Namespaces {
+			sources = append(sources, struct {
+				src string
+				dst string
+			}{
+				src: fmt.Sprintf("aggregations/chunks/%s_namespace_%d/chunks.ndjson", prj, ns),
+				dst: fmt.Sprintf("aggregations/chunks/%s_namespace_%d/chunks_%s.ndjson", prj, ns, h.Env.FreeTierGroup),
+			})
+		}
+	}
+
+	for _, pair := range sources {
+		_, err := h.S3.CopyObjectWithContext(ctx, &s3.CopyObjectInput{
+			Bucket:     aws.String(h.Env.AWSBucket),
+			CopySource: aws.String(fmt.Sprintf("%s/%s", h.Env.AWSBucket, pair.src)),
+			Key:        aws.String(pair.dst),
+		})
+
+		if err != nil {
+			log.Println(err)
+			log.Println(pair.src)
+			log.Println(pair.dst)
+			res.Errors++
+		}
+
+		res.Total++
 	}
 
 	return res, nil

@@ -1,0 +1,505 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=17) "Infobox character",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) (len=11) "Darth Vader",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=19) "Star Wars character",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=62) "Darth Vader, as he appeared throughout the Star Wars franchise",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=62) "https://upload.wikimedia.org/wikipedia/en/f/f7/Darth_Vader.png",
+                AlternativeText: (string) "",
+                Caption: (string) (len=76) "Darth Vader, as he appeared throughout the\n\t\t\t\t\t\t\tStar Wars franchise\n\t\t\t\t\t\t",
+                Height: (int) 198,
+                Width: (int) 198
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Star_Wars",
+                Text: (string) (len=9) "Star Wars",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=16) "First appearance",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "Star Wars (1977)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Star_Wars_(film)",
+                Text: (string) (len=9) "Star Wars",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Created by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "GeorgeLucas",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/George_Lucas",
+                Text: (string) (len=11) "GeorgeLucas",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Portrayed by",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=26) {
+              (string) "",
+              (string) (len=24) "\t\t\t\t\t\t\t\t  - Darth Vader:",
+              (string) (len=17) "\t\t\t\t\t\t\t\t  - David",
+              (string) (len=31) "\t\t\t\t\t\t\t\t\t\tProwse[lower-alpha 1]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=15) "\t\t\t\t\t\t\t\t  - Bob",
+              (string) (len=33) "\t\t\t\t\t\t\t\t\t\tAnderson[lower-alpha 2]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=19) "\t\t\t\t\t\t\t\t  - Spencer",
+              (string) (len=26) "\t\t\t\t\t\t\t\t\t\tWilding / Daniel",
+              (string) (len=31) "\t\t\t\t\t\t\t\t\tNaprous[lower-alpha 3]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=22) "\t\t\t\t\t\t\t\t  - Dimitrious",
+              (string) (len=37) "\t\t\t\t\t\t\t\t\tBistrevsky[1][lower-alpha 4]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=29) "\t\t\t\t\t\t\t\t  - Anakin Skywalker:",
+              (string) (len=21) "\t\t\t\t\t\t\t\t  - Sebastian",
+              (string) (len=29) "\t\t\t\t\t\t\t\t\t\tShaw[lower-alpha 6]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=16) "\t\t\t\t\t\t\t\t  - Jake",
+              (string) (len=30) "\t\t\t\t\t\t\t\t\t\tLloyd[lower-alpha 7]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=18) "\t\t\t\t\t\t\t\t  - Hayden",
+              (string) (len=36) "\t\t\t\t\t\t\t\t\t\tChristensen[lower-alpha 9]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=7) "\t\t\t\t\t\t\t"
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Voiced by",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=27) {
+              (string) "",
+              (string) (len=24) "\t\t\t\t\t\t\t\t  - Darth Vader:",
+              (string) (len=22) "\t\t\t\t\t\t\t\t  - James Earl",
+              (string) (len=31) "\t\t\t\t\t\t\t\t\t\tJones[lower-alpha 10]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=28) "\t\t\t\t\t\t\t\t  - Ben Burtt (vocal",
+              (string) (len=17) "\t\t\t\t\t\t\t\t\teffects)",
+              (string) (len=38) "\t\t\t\t\t\t\t\t  - Brock Peters (radio drama)",
+              (string) (len=16) "\t\t\t\t\t\t\t\t  - Matt",
+              (string) (len=31) "\t\t\t\t\t\t\t\t\t\tSloan[lower-alpha 11]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=17) "\t\t\t\t\t\t\t\t  - Scott",
+              (string) (len=40) "\t\t\t\t\t\t\t\t\t\tLawrence (various video games)",
+              (string) (len=29) "\t\t\t\t\t\t\t\t  - Anakin Skywalker:",
+              (string) (len=18) "\t\t\t\t\t\t\t\t  - Hayden",
+              (string) (len=36) "\t\t\t\t\t\t\t\t\tChristensen[lower-alpha 12]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=38) "\t\t\t\t\t\t\t\t  - David Birney (radio drama)",
+              (string) (len=15) "\t\t\t\t\t\t\t\t  - Mat",
+              (string) (len=31) "\t\t\t\t\t\t\t\t\t\tLucas[lower-alpha 13]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=24) "\t\t\t\t\t\t\t\t  - Kirby Morrow",
+              (string) (len=32) "\t\t\t\t\t\t\t\t\t(Lego Star Wars series)",
+              (string) (len=16) "\t\t\t\t\t\t\t\t  - Matt",
+              (string) (len=32) "\t\t\t\t\t\t\t\t\t\tLanter[lower-alpha 14]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=7) "\t\t\t\t\t\t\t"
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=22) "In-universeinformation",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=14) {
+          (*parser.Part)({
+            Name: (string) (len=9) "Full name",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "Anakin Skywalker",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Alias",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "The Chosen One",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Occupation",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=21) {
+              (string) "",
+              (string) (len=33) "\t\t\t\t\t\t\t\t  - Slave[lower-alpha 15]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=35) "\t\t\t\t\t\t\t\t  - Padawan[lower-alpha 16]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=16) "\t\t\t\t\t\t\t\t  - Jedi",
+              (string) (len=31) "\t\t\t\t\t\t\t\t\tKnight[lower-alpha 17]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=35) "\t\t\t\t\t\t\t\t  - Member of the Jedi High",
+              (string) (len=32) "\t\t\t\t\t\t\t\t\tCouncil[lower-alpha 18]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=49) "\t\t\t\t\t\t\t\t  - Jedi General in the Grand Army of the",
+              (string) (len=33) "\t\t\t\t\t\t\t\t\tRepublic[lower-alpha 19]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=28) "\t\t\t\t\t\t\t\t  - Dark Lord of the",
+              (string) (len=30) "\t\t\t\t\t\t\t\t\t\tSith[lower-alpha 20]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=45) "\t\t\t\t\t\t\t\t  - Supreme Commander of the Imperial",
+              (string) (len=33) "\t\t\t\t\t\t\t\t\tMilitary[lower-alpha 21]",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=7) "\t\t\t\t\t\t\t"
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Affiliation",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=10) {
+              (string) "",
+              (string) (len=21) "\t\t\t\t\t\t\t\t  - Skywalker",
+              (string) (len=16) "\t\t\t\t\t\t\t\t\t\tfamily",
+              (string) (len=24) "\t\t\t\t\t\t\t\t  - Watto's shop",
+              (string) (len=22) "\t\t\t\t\t\t\t\t  - Jedi Order",
+              (string) (len=20) "\t\t\t\t\t\t\t\t  - Galactic",
+              (string) (len=18) "\t\t\t\t\t\t\t\t\t\tRepublic",
+              (string) (len=22) "\t\t\t\t\t\t\t\t  - Sith Order",
+              (string) (len=27) "\t\t\t\t\t\t\t\t  - Galactic Empire",
+              (string) (len=7) "\t\t\t\t\t\t\t"
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Weapon",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "Lightsaber",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Lightsaber",
+                Text: (string) (len=10) "Lightsaber",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Family",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "Shmi Skywalker (mother)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Shmi_Skywalker",
+                Text: (string) (len=14) "Shmi Skywalker",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Spouse",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=20) "PadméAmidala (wife)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Padmé_Amidala",
+                Text: (string) (len=13) "PadméAmidala",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Children",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=47) "LukeSkywalker (son) Leia Organa Solo (daughter)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Luke_Skywalker",
+                Text: (string) (len=13) "LukeSkywalker",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Princess_Leia",
+                Text: (string) (len=16) "Leia Organa Solo",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Relatives",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "Ben Solo (grandson)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Kylo_Ren",
+                Text: (string) (len=8) "Ben Solo",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Master",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=5) {
+              (string) "",
+              (string) (len=19) "\t\t\t\t\t\t\t\t  - Obi-Wan",
+              (string) (len=26) "\t\t\t\t\t\t\t\t\t\tKenobi (as Jedi)",
+              (string) (len=35) "\t\t\t\t\t\t\t\t  - Darth Sidious (as Sith)",
+              (string) (len=7) "\t\t\t\t\t\t\t"
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Apprentice",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=10) {
+              (string) "",
+              (string) (len=17) "\t\t\t\t\t\t\t\t  - Jedi:",
+              (string) (len=23) "\t\t\t\t\t\t\t\t  - Ahsoka Tano",
+              (string) (len=16) "\t\t\t\t\t\t\t\t  - Sith",
+              (string) (len=19) "\t\t\t\t\t\t\t\t\t(Legends):",
+              (string) (len=30) "\t\t\t\t\t\t\t\t  - Starkiller / Galen",
+              (string) (len=15) "\t\t\t\t\t\t\t\t\t\tMarek",
+              (string) (len=18) "\t\t\t\t\t\t\t\t  - Lumiya",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=7) "\t\t\t\t\t\t\t"
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Homeworld",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Tatooine",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Tatooine",
+                Text: (string) (len=8) "Tatooine",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Born",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "41 BBY",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Died",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=5) "4 ABY",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=15) "Extended Family",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) (len=5) "Canon",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=11) {
+              (string) "",
+              (string) (len=36) "\t\t\t\t\t\t\t\t  - Cliegg Lars (stepfather)",
+              (string) (len=16) "\t\t\t\t\t\t\t\t  - Owen",
+              (string) (len=28) "\t\t\t\t\t\t\t\t\t\tLars (stepbrother)",
+              (string) (len=45) "\t\t\t\t\t\t\t\t  - Beru Whitesun (stepsister-in-law)",
+              (string) (len=33) "\t\t\t\t\t\t\t\t  - Han Solo (son-in-law)",
+              (string) (len=8) "\t\t\t\t\t\t\t\t",
+              (string) (len=42) "\t\t\t\t\t\t\t\t  - Jobal Naberrie (mother-in-law)",
+              (string) (len=42) "\t\t\t\t\t\t\t\t  - Ruwee Naberrie (father-in-law)",
+              (string) (len=41) "\t\t\t\t\t\t\t\t  - Sola Naberrie (sister-in-law)",
+              (string) (len=7) "\t\t\t\t\t\t\t"
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Legends",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=12) {
+              (string) "",
+              (string) (len=31) "\t\t\t\t\t\t\t\t  - Mara Jade Skywalker",
+              (string) (len=26) "\t\t\t\t\t\t\t\t\t(daughter-in-law)",
+              (string) (len=36) "\t\t\t\t\t\t\t\t  - Ben Skywalker (grandson)",
+              (string) (len=22) "\t\t\t\t\t\t\t\t  - Jacen Solo",
+              (string) (len=19) "\t\t\t\t\t\t\t\t\t(grandson)",
+              (string) (len=42) "\t\t\t\t\t\t\t\t  - Jaina Solo Fel (granddaughter)",
+              (string) (len=34) "\t\t\t\t\t\t\t\t  - Anakin Solo (grandson)",
+              (string) (len=54) "\t\t\t\t\t\t\t\t  - Allana \"Amelia\" Solo (great-granddaughter)",
+              (string) (len=40) "\t\t\t\t\t\t\t\t  - Jagged Fel (grandson-in-law)",
+              (string) (len=39) "\t\t\t\t\t\t\t\t  - Cade Skywalker (descendant)",
+              (string) (len=7) "\t\t\t\t\t\t\t"
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

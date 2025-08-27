@@ -3,7 +3,7 @@ package auth
 
 import (
 	"wikimedia-enterprise/api/main/config/env"
-	"wikimedia-enterprise/general/httputil"
+	"wikimedia-enterprise/api/main/submodules/httputil"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/credentials"

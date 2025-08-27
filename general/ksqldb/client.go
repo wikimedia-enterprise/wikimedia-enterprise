@@ -14,7 +14,9 @@ import (
 	"net"
 	"net/http"
 	"strings"
+	"time"
 
+	"github.com/pkg/errors"
 	"golang.org/x/net/http2"
 )
 
@@ -33,6 +35,8 @@ const (
 	EndpointRunStreamQuery string = "query"
 	// EndpointCloseQuery used to terminates a push query.
 	EndpointCloseQuery string = "close-query"
+	// CloseQueryTimeout is the default timeout for closing a query.
+	CloseQueryTimeout = 5 * time.Second
 )
 
 // Pusher is an interface to wrap default ksqldb Push method for unit testing.
@@ -112,13 +116,13 @@ func (c *Client) req(ctx context.Context, endpoint string, payload interface{}) 
 	body, err := json.Marshal(payload)
 
 	if err != nil {
-		return nil, err
+		return nil, errors.Wrap(err, "failed to marshal payload")
 	}
 
 	req, err := http.NewRequestWithContext(ctx, http.MethodPost, fmt.Sprintf("%s/%s", c.url, endpoint), bytes.NewBuffer(body))
 
 	if err != nil {
-		return nil, err
+		return nil, errors.Wrap(err, "failed to create request")
 	}
 
 	switch endpoint {
@@ -139,14 +143,14 @@ func (c *Client) req(ctx context.Context, endpoint string, payload interface{}) 
 	res, err := c.HTTPClient.Do(req)
 
 	if err != nil {
-		return res, err
+		return res, errors.Wrap(err, "failed to do request")
 	}
 
 	if res.StatusCode != http.StatusOK {
 		data, err := io.ReadAll(res.Body)
 
 		if err != nil {
-			return res, err
+			return res, errors.Wrap(err, "failed to read response body")
 		}
 
 		return res, fmt.Errorf("%s:%s", http.StatusText(res.StatusCode), string(data))
@@ -173,7 +177,7 @@ func (c *Client) Pull(ctx context.Context, q *QueryRequest) (*HeaderRow, []Row, 
 	for scn.Scan() {
 		if len(hr.ColumnNames) <= 0 {
 			if err := json.Unmarshal([]byte(scn.Text()), hr); err != nil {
-				log.Println(err)
+				log.Printf("failed to unmarshal header row: %v\n", err)
 			}
 			continue
 		}
@@ -181,7 +185,7 @@ func (c *Client) Pull(ctx context.Context, q *QueryRequest) (*HeaderRow, []Row, 
 		row := Row{}
 
 		if err := json.Unmarshal([]byte(scn.Text()), &row); err != nil {
-			log.Println(err)
+			log.Printf("failed to unmarshal row: %v\n", err)
 		} else {
 			rows = append(rows, row)
 		}
@@ -195,7 +199,7 @@ func (c *Client) Pull(ctx context.Context, q *QueryRequest) (*HeaderRow, []Row, 
 }
 
 // Push query to receive streaming data in real time, every time new record gets returned call back
-// fuction gets called with header row and the actual row.
+// function gets called with header row and the actual row.
 func (c *Client) Push(ctx context.Context, q *QueryRequest, cb func(qr *HeaderRow, row Row) error) error {
 	res, err := c.req(ctx, EndpointRunStreamQuery, q)
 
@@ -203,6 +207,7 @@ func (c *Client) Push(ctx context.Context, q *QueryRequest, cb func(qr *HeaderRo
 		return err
 	}
 
+	closeQueryDeferred := false
 	defer res.Body.Close()
 
 	hr := new(HeaderRow)
@@ -212,25 +217,48 @@ func (c *Client) Push(ctx context.Context, q *QueryRequest, cb func(qr *HeaderRo
 	for scn.Scan() {
 		if len(hr.ColumnNames) <= 0 {
 			if err := json.Unmarshal([]byte(scn.Text()), hr); err != nil {
-				log.Println(err)
+				log.Printf("failed to unmarshal header row: %v\n", err)
 			}
+
+			if !closeQueryDeferred && hr.QueryID != "" {
+				queryID := hr.QueryID
+				defer func() {
+					var closeCtx context.Context
+					var cancel context.CancelFunc
+
+					// if the ctx context is already done or cancelled, use a new context with timeout
+					if ctx.Err() != nil {
+						closeCtx, cancel = context.WithTimeout(context.Background(), CloseQueryTimeout)
+					} else {
+						closeCtx, cancel = context.WithTimeout(ctx, CloseQueryTimeout)
+					}
+					defer cancel()
+
+					if err := c.CloseQuery(closeCtx, queryID); err != nil {
+						log.Printf("failed to close query %s: %v", queryID, err)
+					}
+				}()
+
+				closeQueryDeferred = true
+			}
+
 			continue
 		}
 
 		row := Row{}
 
 		if err := json.Unmarshal([]byte(scn.Text()), &row); err != nil {
-			log.Println(err)
+			log.Printf("failed to unmarshal row: %v\n", err)
 			continue
 		}
 
 		if err := cb(hr, row); err != nil {
-			return err
+			return errors.Wrap(err, "failed to call callback function")
 		}
 	}
 
 	if err := scn.Err(); err != io.EOF && err != nil {
-		return err
+		return errors.Wrap(err, "failed to scan response body, non-EOF error")
 	}
 
 	return nil

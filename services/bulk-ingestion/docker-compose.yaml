@@ -17,6 +17,8 @@ services:
       - 9392:9392
     environment:
       KAFKA_BROKER_ID: 1
+      CLUSTER_ID: clusterid
+      KAFKA_PROCESS_ROLES: broker,controler
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_ADVERTISED_LISTENERS: LISTENER_DOCKER_INTERNAL://broker:29092,LISTENER_DOCKER_EXTERNAL://localhost:9392
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: LISTENER_DOCKER_INTERNAL:PLAINTEXT,LISTENER_DOCKER_EXTERNAL:PLAINTEXT
@@ -72,13 +74,12 @@ services:
   # Bulk Ingestion service
   bulk:
     build:
-      context: ./../../.
-      dockerfile: ./docker/handlers/Dockerfile
-      args:
-        SOURCE_DIR: ./services/bulk-ingestion
+      context: .
+      dockerfile: ./submodules/cdtools/docker/handlers/Dockerfile
     ports:
       - 50051:50051
     env_file:
       - ./.env
     depends_on:
       - broker
+      - schemaregistry

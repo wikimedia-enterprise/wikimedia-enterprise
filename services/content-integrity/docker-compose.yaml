@@ -32,10 +32,8 @@ services:
  # mock service
   mock:
     build:
-      context: ./../../.
-      dockerfile: ./docker/mock/Dockerfile
-      args:
-        SOURCE_DIR: ./services/content-integrity
+      context: .
+      dockerfile: submodules/cdtools/docker/mock/Dockerfile
     depends_on:
       broker:
         condition: service_started
@@ -46,9 +44,6 @@ services:
       - broker
     env_file:
       - ./.env
-    environment:
-      SCHEMA_REGISTRY_URL: http://schemaregistry:8081
-      KAFKA_BOOTSTRAP_SERVERS: broker:29092
 
   # Kafka topics/messages UI tool
   kafka-ui:
@@ -61,11 +56,12 @@ services:
       - broker
     ports:
       - 8380:8080
+    env_file:
+      - ./.env
     environment:
       KAFKA_CLUSTERS_0_NAME: local
       KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: broker:29092
       KAFKA_CLUSTERS_0_ZOOKEEPER: zookeeper:2181
-      KAFKA_CLUSTERS_0_SCHEMAREGISTRY: http://schemaregistry:8081
       KAFKA_CLUSTERS_0_SCHEMANAMETEMPLATE: __schemas
 
   # Schema registry
@@ -78,10 +74,12 @@ services:
     links:
       - zookeeper
       - broker
+    ports:
+      - "8085:8085"
     environment:
       SCHEMA_REGISTRY_HOST_NAME: schemaregistry
       SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: broker:29092
-      SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8081
+      SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8085
       SCHEMA_REGISTRY_SCHEMA_REGISTRY_INTER_INSTANCE_PROTOCOL: http
       SCHEMA_REGISTRY_LOG4J_ROOT_LOGLEVEL: INFO
       SCHEMA_REGISTRY_KAFKASTORE_TOPIC: _schemas
@@ -91,10 +89,8 @@ services:
   # Content Integrity
   content-integrity:
     build:
-      context: ./../../.
-      dockerfile: ./docker/handlers/Dockerfile
-      args:
-        SOURCE_DIR: ./services/content-integrity
+      context: .
+      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
     ports:
       - 5050:5050
       - 12411:12411

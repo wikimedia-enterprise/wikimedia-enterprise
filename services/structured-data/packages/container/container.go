@@ -3,9 +3,6 @@
 package container
 
 import (
-	"wikimedia-enterprise/general/parser"
-	"wikimedia-enterprise/general/schema"
-	"wikimedia-enterprise/general/subscriber"
 	"wikimedia-enterprise/services/structured-data/config/env"
 	"wikimedia-enterprise/services/structured-data/libraries/aggregate"
 	"wikimedia-enterprise/services/structured-data/libraries/content"
@@ -15,6 +12,11 @@ import (
 	"wikimedia-enterprise/services/structured-data/libraries/text"
 	trc "wikimedia-enterprise/services/structured-data/libraries/tracing"
 	"wikimedia-enterprise/services/structured-data/libraries/wmf"
+	"wikimedia-enterprise/services/structured-data/packages/protected"
+	"wikimedia-enterprise/services/structured-data/submodules/config"
+	"wikimedia-enterprise/services/structured-data/submodules/parser"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
+	"wikimedia-enterprise/services/structured-data/submodules/subscriber"
 
 	"go.uber.org/dig"
 )
@@ -31,12 +33,14 @@ func New() (*dig.Container, error) {
 		cnt.Provide(subscriber.New),
 		cnt.Provide(text.New),
 		cnt.Provide(content.New),
-		cnt.Provide(stream.New),
+		cnt.Provide(stream.NewHelper),
 		cnt.Provide(schema.NewRetry),
 		cnt.Provide(aggregate.New),
 		cnt.Provide(wmf.NewAPI),
 		cnt.Provide(parser.New),
+		cnt.Provide(protected.New),
 		cnt.Provide(pr.New),
+		cnt.Provide(config.New),
 	} {
 		if err != nil {
 			return nil, err

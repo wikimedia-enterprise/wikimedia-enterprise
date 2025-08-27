@@ -6,8 +6,8 @@ import (
 	"os"
 	"path/filepath"
 	"runtime"
-	"wikimedia-enterprise/general/log"
-	"wikimedia-enterprise/general/schema"
+	"wikimedia-enterprise/services/content-integrity/submodules/log"
+	"wikimedia-enterprise/services/content-integrity/submodules/schema"
 )
 
 func main() {
@@ -56,6 +56,8 @@ func main() {
 
 	if err := mck.Run(ctx, tps...); err != nil {
 		log.Error(err)
+		os.Exit(1)
 	}
 
+	log.Info("Finished successfully")
 }

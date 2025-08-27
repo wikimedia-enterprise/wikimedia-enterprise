@@ -6,10 +6,10 @@ import (
 	"strings"
 	"testing"
 	"time"
-	"wikimedia-enterprise/general/parser"
-	"wikimedia-enterprise/general/schema"
-	"wikimedia-enterprise/general/wmf"
 	"wikimedia-enterprise/services/structured-data/packages/builder"
+	"wikimedia-enterprise/services/structured-data/submodules/parser"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
+	"wikimedia-enterprise/services/structured-data/submodules/wmf"
 
 	"github.com/stretchr/testify/suite"
 )

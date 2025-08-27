@@ -1,0 +1,240 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=15) "Infobox website",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) (len=7) "FetLife",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=12) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=96) "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/FetLife_logo.svg/100px-FetLife_logo.svg.png",
+                AlternativeText: (string) (len=32) "FetLife logo, a heart with horns",
+                Caption: (string) "",
+                Height: (int) 100,
+                Width: (int) 100
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=10) "Screenshot",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=102) "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/FetLife_user_page.png/255px-FetLife_user_page.png",
+                AlternativeText: (string) (len=23) "John Kopanas' user page",
+                Caption: (string) "",
+                Height: (int) 255,
+                Width: (int) 255
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Type of site",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "Adult social networking",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Social_networking_service",
+                Text: (string) (len=23) "Adult social networking",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Available in",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "English",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/English_language",
+                Text: (string) (len=7) "English",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Founded",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "January 2008",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Headquarters",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=35) "Vancouver, British Columbia, Canada",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Vancouver",
+                Text: (string) (len=27) "Vancouver, British Columbia",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Canada",
+                Text: (string) (len=6) "Canada",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Founder(s)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "John Kopanas",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Organizational_founder",
+                Text: (string) (len=10) "Founder(s)",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Parent",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "BitLove, Inc.",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Holding_company",
+                Text: (string) (len=6) "Parent",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=3) "URL",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "fetlife.com",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=18) "http://fetlife.com",
+                Text: (string) (len=11) "fetlife.com",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Registration",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Required",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Current status",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Active",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Written in",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Ruby on Rails",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Ruby_on_Rails",
+                Text: (string) (len=13) "Ruby on Rails",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

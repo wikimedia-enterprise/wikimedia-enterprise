@@ -1,0 +1,128 @@
+([]*parser.Part) (len=2) {
+  (*parser.Part)({
+    Name: (string) (len=8) "Abstract",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=749) "ISO/IEC 8859-2:1999, Information technology — 8-bit single-byte coded graphic character sets — Part 2: Latin alphabet No. 2, is part of the ISO/IEC 8859 series of ASCII-based standard character encodings, first edition published in 1987. It is informally referred to as \"Latin-2\". It is generally intended for Central or \"Eastern European\" languages that are written in the Latin script. Note that ISO/IEC 8859-2 is very different from code page 852 (MS-DOS Latin 2, PC Latin 2) which is also referred to as \"Latin-2\" in Czech and Slovak regions. Code page 912 is an extension. Almost half the use of the encoding is for Polish, and it's the main legacy encoding for Polish, while virtually all use of it has been replaced by UTF-8 (on the web).",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/ISO/IEC_8859",
+            Text: (string) (len=12) "ISO/IEC 8859",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/Character_encoding",
+            Text: (string) (len=19) "character encodings",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Code_page_852",
+            Text: (string) (len=13) "code page 852",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Code_page_912",
+            Text: (string) (len=13) "Code page 912",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=330) "ISO-8859-2 is the IANA preferred charset name for this standard when supplemented with the C0 and C1 control codes from ISO/IEC 6429. Less than 0.04% of all web pages use ISO-8859-2 as of October 2022. Microsoft has assigned code page 28592 a.k.a. Windows-28592 to ISO-8859-2 in Windows. IBM assigned Code page 1111 to ISO 8859-2.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=65) "https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority",
+            Text: (string) (len=4) "IANA",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://en.wikipedia.org/wiki/C0_and_C1_control_codes",
+            Text: (string) (len=23) "C0 and C1 control codes",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/ISO/IEC_6429",
+            Text: (string) (len=12) "ISO/IEC 6429",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=223) "Windows-1250 is similar to ISO-8859-2 and has all the printable characters it has and more. However a few of them are rearranged (unlike Windows-1252, which keeps all printable characters from ISO-8859-1 in the same place).",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Windows-1250",
+            Text: (string) (len=12) "Windows-1250",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Windows-1252",
+            Text: (string) (len=12) "Windows-1252",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/ISO-8859-1",
+            Text: (string) (len=10) "ISO-8859-1",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=16) "Code page layout",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=74) "Differences from ISO-8859-1 have the Unicode code point number underneath.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/ISO-8859-1",
+            Text: (string) (len=10) "ISO-8859-1",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

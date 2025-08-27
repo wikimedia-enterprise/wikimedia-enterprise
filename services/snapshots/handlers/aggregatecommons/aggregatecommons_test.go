@@ -3,6 +3,7 @@ package aggregatecommons_test
 import (
 	"bytes"
 	"context"
+	"fmt"
 	"io"
 	"testing"
 
@@ -20,33 +21,28 @@ import (
 )
 
 type s3Mock struct {
-	mock.Mock
+	keys       []string
+	objectData map[string]string
 	s3tracerproxy.S3TracerProxy
 }
 
 func (s *s3Mock) ListObjectsV2PagesWithContext(_ aws.Context, inp *s3.ListObjectsV2Input, cb func(*s3.ListObjectsV2Output, bool) bool, _ ...request.Option) error {
-	args := s.Called(inp)
 	out := &s3.ListObjectsV2Output{}
 
-	if keys, ok := args.Get(0).([]string); ok {
-		for _, key := range keys {
-			out.Contents = append(out.Contents, &s3.Object{
-				Key: aws.String(key),
-			})
-		}
+	for _, key := range s.keys {
+		out.Contents = append(out.Contents, &s3.Object{
+			Key: aws.String(key),
+		})
 	}
 
 	cb(out, true)
-	return args.Error(1)
+	return nil
 }
 
 func (s *s3Mock) GetObjectWithContext(_ aws.Context, inp *s3.GetObjectInput, _ ...request.Option) (*s3.GetObjectOutput, error) {
-	args := s.Called(inp)
-	data := args.String(0)
-	err := args.Error(1)
-
-	if err != nil {
-		return nil, err
+	data, ok := s.objectData[*inp.Key]
+	if !ok {
+		return nil, fmt.Errorf("object not found: %s", *inp.Key)
 	}
 
 	out := &s3.GetObjectOutput{
@@ -61,6 +57,12 @@ type uploaderMock struct {
 }
 
 func (u *uploaderMock) Upload(input *s3manager.UploadInput, _ ...func(*s3manager.Uploader)) (*s3manager.UploadOutput, error) {
+	if input.Body != nil {
+		_, err := io.ReadAll(input.Body)
+		if err != nil {
+			return nil, err
+		}
+	}
 	args := u.Called(input)
 	return &s3manager.UploadOutput{}, args.Error(0)
 }
@@ -76,11 +78,27 @@ type handlerTestSuite struct {
 
 func (s *handlerTestSuite) SetupTest() {
 	s.ctx = context.Background()
-	s.s3Mock = new(s3Mock)
+	s.s3Mock = &s3Mock{
+		keys: []string{
+			"commons/batches/20230101/file1.json",
+			"commons/batches/20230101/file2.json",
+		},
+		objectData: map[string]string{
+			"commons/batches/20230101/file1.json": `{"key": "value"}`,
+			"commons/batches/20230101/file2.json": `{"key": "value"}`,
+		},
+	}
 	s.upMock = new(uploaderMock)
 	s.env = &env.Environment{
-		AWSBucket: "wme-data",
-		LineLimit: 2,
+		AWSBucketCommons:                 "wme-data",
+		AWSBucket:                        "wme-primary",
+		LineLimit:                        2,
+		CommonsAggregationWorkercount:    10,
+		CommonsAggregationKeyChannelSize: 10,
+		PipeBufferSize:                   1024 * 1024,
+		UploadPartSize:                   5 * 1024 * 1024,
+		UploadConcurrency:                3,
+		LogInterval:                      15,
 	}
 	s.handler = &aggregatecommons.Handler{
 		S3:       s.s3Mock,
@@ -89,18 +107,10 @@ func (s *handlerTestSuite) SetupTest() {
 	}
 }
 
-func (s *handlerTestSuite) TearDownTest() {
-	s.s3Mock = new(s3Mock)
-	s.upMock = new(uploaderMock)
-}
-
 func (s *handlerTestSuite) TestAggregateCommonsSuccess() {
 	req := &pb.AggregateCommonsRequest{TimePeriod: "20230101"}
-	keys := []string{"commons/batches/20230101/file1.json", "commons/batches/20230101/file2.json"}
 
-	s.s3Mock.On("ListObjectsV2PagesWithContext", mock.Anything).Return(keys, nil).Once()
-	s.s3Mock.On("GetObjectWithContext", mock.Anything).Return(`{"key": "value"}`, nil).Times(2)
-	s.upMock.On("Upload", mock.AnythingOfType("*s3manager.UploadInput")).Return(nil).Once()
+	s.upMock.On("Upload", mock.Anything).Return(nil).Once()
 
 	res, err := s.handler.AggregateCommons(s.ctx, req)
 
@@ -109,7 +119,6 @@ func (s *handlerTestSuite) TestAggregateCommonsSuccess() {
 	s.Equal(int32(2), res.Total)
 	s.Equal(int32(0), res.Errors)
 
-	s.s3Mock.AssertExpectations(s.T())
 	s.upMock.AssertExpectations(s.T())
 }
 

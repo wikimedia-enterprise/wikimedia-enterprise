@@ -8,7 +8,6 @@ import (
 	"time"
 
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/collectors"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	redis "github.com/redis/go-redis/v9"
 
@@ -25,14 +24,6 @@ type Parameters struct {
 	Metrics    *Metrics
 	Redis      redis.Cmdable
 	Srv        *http.Server
-}
-
-// addDefaultCollectors function appends default collectors.
-func addDefaultCollectors(cs []prometheus.Collector) []prometheus.Collector {
-	// Add default collectors.
-	return append(cs,
-		collectors.NewGoCollector(),
-		collectors.NewProcessCollector(collectors.ProcessCollectorOpts{}))
 }
 
 // addRedisCollector function appends default Redis collector.
@@ -57,24 +48,19 @@ func NewServer(p int, handler http.Handler) *http.Server {
 
 // Runs a server with the endpoint /metrics for Prometheus.
 func Run(p Parameters) error {
-	p.Collectors = addDefaultCollectors(p.Collectors)
-
 	if p.Redis != nil {
 		p.Collectors = addDefaultRedisCollector(p.Collectors, p.Redis.(*redis.Client))
 	}
 
-	// Create non-global registry.
-	reg := prometheus.NewRegistry()
-
 	// Registering collectors.
-	reg.MustRegister(p.Collectors...)
+	prometheus.MustRegister(p.Collectors...)
 
-	if err := p.Metrics.RegisterMetrics(reg); err != nil {
+	if err := p.Metrics.RegisterMetrics(prometheus.DefaultRegisterer.(*prometheus.Registry)); err != nil {
 		log.Println(err)
 		return err
 	}
 
-	handler := promhttp.HandlerFor(reg, promhttp.HandlerOpts{Registry: reg, EnableOpenMetrics: true})
+	handler := promhttp.HandlerFor(prometheus.DefaultGatherer, promhttp.HandlerOpts{Registry: prometheus.DefaultRegisterer, EnableOpenMetrics: true})
 
 	if p.Srv == nil {
 		p.Srv = NewServer(p.Port, handler)

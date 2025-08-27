@@ -1,0 +1,160 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=8) "Abstract",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=482) "The.NET Foundation is an organization incorporated on March 31, 2014, by Microsoft to improve open-source software development and collaboration around the.NET Framework. It was launched at the annual Build 2014 conference held by Microsoft. The foundation is license-agnostic, and projects that come to the foundation are free to choose any open-source license, as defined by the Open Source Initiative (OSI). The foundation uses GitHub to host the open-source projects it manages.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=7) {
+          (*parser.Link)({
+            URL: (string) (len=39) "https://en.wikipedia.org/wiki/Microsoft",
+            Text: (string) (len=9) "Microsoft",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Open-source_software",
+            Text: (string) (len=20) "open-source software",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=34) "https://en.wikipedia.org/wiki/.NET",
+            Text: (string) (len=14) ".NET Framework",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=63) "https://en.wikipedia.org/wiki/Build_(developer_conference)#2014",
+            Text: (string) (len=10) "Build 2014",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://en.wikipedia.org/wiki/Open-source_license",
+            Text: (string) (len=19) "open-source license",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=52) "https://en.wikipedia.org/wiki/Open_Source_Initiative",
+            Text: (string) (len=22) "Open Source Initiative",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=36) "https://en.wikipedia.org/wiki/GitHub",
+            Text: (string) (len=6) "GitHub",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=205) "Anyone who has contributed to.NET Foundation projects can apply to be a.NET Foundation member. Members can vote in elections for the board of the directors and will preserve the health of the organization.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=608) "The foundation began with twenty-four projects under its stewardship including.NET Compiler Platform (\"Roslyn\") and the ASP.NET family of open-source projects, both open-sourced by Microsoft Open Technologies, Inc. (MS Open Tech). Xamarin contributed six of its projects including the open source email libraries MimeKit and MailKit. As of May 2020, it is the steward of 556 active projects, including:.NET, Entity Framework (EF), Managed Extensibility Framework (MEF), MSBuild, NuGet, Orchard CMS and WorldWide Telescope. Many of these projects are also listed under Outercurve Foundation project galleries.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=10) {
+          (*parser.Link)({
+            URL: (string) (len=52) "https://en.wikipedia.org/wiki/.NET_Compiler_Platform",
+            Text: (string) (len=22) ".NET Compiler Platform",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/ASP.NET",
+            Text: (string) (len=7) "ASP.NET",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/Xamarin",
+            Text: (string) (len=7) "Xamarin",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=34) "https://en.wikipedia.org/wiki/.NET",
+            Text: (string) (len=4) ".NET",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Entity_Framework",
+            Text: (string) (len=16) "Entity Framework",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/MSBuild",
+            Text: (string) (len=7) "MSBuild",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/NuGet",
+            Text: (string) (len=5) "NuGet",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=45) "https://en.wikipedia.org/wiki/Orchard_Project",
+            Text: (string) (len=11) "Orchard CMS",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://en.wikipedia.org/wiki/WorldWide_Telescope",
+            Text: (string) (len=19) "WorldWide Telescope",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=51) "https://en.wikipedia.org/wiki/Outercurve_Foundation",
+            Text: (string) (len=21) "Outercurve Foundation",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=157) "As of June 2022, its board of directors consisted of Bill Wagner, Javier Lozano, Rich Lander, Frank Odoom, Mattias Karlsson, Rob Prouse and Shawn Wildermuth.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/Board_of_directors",
+            Text: (string) (len=18) "board of directors",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

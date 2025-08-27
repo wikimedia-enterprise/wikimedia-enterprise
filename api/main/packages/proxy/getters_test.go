@@ -1,9 +1,10 @@
 package proxy_test
 
 import (
+	"net/http/httptest"
 	"testing"
 	"wikimedia-enterprise/api/main/packages/proxy"
-	"wikimedia-enterprise/general/httputil"
+	"wikimedia-enterprise/api/main/submodules/httputil"
 
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/suite"
@@ -16,7 +17,6 @@ type newEntitiesGetterTestSuite struct {
 
 func (s *newEntitiesGetterTestSuite) TestNewEntitiesGetter() {
 	gtr := proxy.NewEntitiesGetter(s.url)
-
 	s.Assert().NotNil(gtr)
 	s.Assert().Equal(s.url, gtr.URL)
 }
@@ -33,8 +33,12 @@ func TestNewEntitiesGetter(t *testing.T) {
 
 type entitiesGetterTestSuite struct {
 	suite.Suite
-	url string
-	gtr *proxy.EntitiesGetter
+	url  string
+	path string
+	gcx  *gin.Context
+	idn  string
+	gtr  *proxy.EntitiesGetter
+	err  error
 }
 
 func (s *entitiesGetterTestSuite) SetupSuite() {
@@ -43,17 +47,31 @@ func (s *entitiesGetterTestSuite) SetupSuite() {
 	}
 }
 
-func (s *entitiesGetterTestSuite) TestGetPath() {
-	pth, err := s.gtr.GetPath(new(gin.Context))
+func (s *entitiesGetterTestSuite) SetupTest() {
+	s.gcx, _ = gin.CreateTestContext(httptest.NewRecorder())
 
-	s.Assert().NotEmpty(pth)
-	s.Assert().NoError(err)
+	if len(s.idn) > 0 {
+		s.gcx.Params = gin.Params{
+			gin.Param{
+				Key:   "identifier",
+				Value: s.idn,
+			},
+		}
+	}
+}
+
+func (s *entitiesGetterTestSuite) TestGetPath() {
+	pth, err := s.gtr.GetPath(s.gcx)
+
+	s.Assert().Equal(s.path, pth)
+	s.Assert().Equal(s.err, err)
 }
 
 func TestEntitiesGetter(t *testing.T) {
 	for _, testCase := range []*entitiesGetterTestSuite{
 		{
-			url: "entity",
+			url:  "codes",
+			path: "aggregations/codes/codes.ndjson",
 		},
 	} {
 		suite.Run(t, testCase)
@@ -84,48 +102,152 @@ func TestNewEntityGetter(t *testing.T) {
 
 type entityGetterTestSuite struct {
 	suite.Suite
-	gcx *gin.Context
-	gtr *proxy.EntityGetter
-	url string
-	idn string
-	err error
+	gcx  *gin.Context
+	gtr  *proxy.EntityGetter
+	url  string
+	idn  string
+	cdn  string
+	path string
+	err  error
 }
 
 func (s *entityGetterTestSuite) SetupSuite() {
-	s.gcx = &gin.Context{
-		Params: []gin.Param{
-			{
-				Key:   "identifier",
-				Value: s.idn,
-			},
-		},
-	}
 	s.gtr = &proxy.EntityGetter{
 		URL: s.url,
 	}
 }
 
+func (s *entityGetterTestSuite) SetupTest() {
+	s.gcx, _ = gin.CreateTestContext(httptest.NewRecorder())
+	prms := []gin.Param{
+		{
+			Key:   "identifier",
+			Value: s.idn,
+		},
+	}
+
+	if len(s.cdn) > 0 {
+		prms = append(prms, gin.Param{Key: "chunkIdentifier", Value: s.cdn})
+	}
+
+	s.gcx.Params = prms
+}
+
 func (s *entityGetterTestSuite) TestGetPath() {
 	pth, err := s.gtr.GetPath(s.gcx)
 
-	if s.err != nil {
-		s.Assert().Empty(pth)
-		s.Assert().Equal(s.err, err)
-	} else {
-		s.Assert().Contains(pth, s.url)
-		s.Assert().Contains(pth, s.idn)
-		s.Assert().NoError(err)
-	}
+	s.Assert().Equal(s.path, pth)
+	s.Assert().Equal(s.err, err)
 }
 
 func TestEntityGetter(t *testing.T) {
 	for _, testCase := range []*entityGetterTestSuite{
 		{
-			url: "entity",
-			idn: "Earth",
+			url: "codes",
+			err: proxy.ErrEmptyIdentifier,
 		},
 		{
-			err: proxy.ErrEmptyIdentifier,
+			url:  "codes",
+			idn:  "wiktionary",
+			path: "codes/wiktionary.json",
+		},
+	} {
+		suite.Run(t, testCase)
+	}
+}
+
+type fileGetterTestSuite struct {
+	suite.Suite
+	gcx  *gin.Context
+	gtr  *proxy.FileGetter
+	fln  string
+	path string
+	err  error
+}
+
+func (s *fileGetterTestSuite) SetupSuite() {
+	s.gtr = &proxy.FileGetter{}
+	s.Assert().NotNil(s.gtr)
+}
+
+func (s *fileGetterTestSuite) SetupTest() {
+	s.gcx, _ = gin.CreateTestContext(httptest.NewRecorder())
+	s.gcx.Params = []gin.Param{
+		{
+			Key:   "filename",
+			Value: s.fln,
+		},
+	}
+}
+
+func (s *fileGetterTestSuite) TestGetPath() {
+	pth, err := s.gtr.GetPath(s.gcx)
+
+	s.Assert().Equal(s.path, pth)
+	s.Assert().Equal(s.err, err)
+}
+
+func TestFileGetter(t *testing.T) {
+	for _, testCase := range []*fileGetterTestSuite{
+		{
+			err: proxy.ErrEmptyFilename,
+		},
+		{
+			fln:  "File:!!!,_SXSW_2013_(8678302775).jpg",
+			path: "commons/pages/File:!!!,_SXSW_2013_(8678302775).jpg.json",
+		},
+		{
+			fln:  "File:!!!, SXSW 2013 (8678302775).jpg",
+			path: "commons/pages/File:!!!,_SXSW_2013_(8678302775).jpg.json",
+		},
+	} {
+		suite.Run(t, testCase)
+	}
+}
+
+type fileDownloaderTestSuite struct {
+	suite.Suite
+	gcx  *gin.Context
+	gtr  *proxy.FileDownloader
+	fln  string
+	path string
+	err  error
+}
+
+func (s *fileDownloaderTestSuite) SetupSuite() {
+	s.gtr = &proxy.FileDownloader{}
+	s.Assert().NotNil(s.gtr)
+}
+
+func (s *fileDownloaderTestSuite) SetupTest() {
+	s.gcx, _ = gin.CreateTestContext(httptest.NewRecorder())
+	s.gcx.Params = []gin.Param{
+		{
+			Key:   "filename",
+			Value: s.fln,
+		},
+	}
+}
+
+func (s *fileDownloaderTestSuite) TestGetPath() {
+	pth, err := s.gtr.GetPath(s.gcx)
+
+	s.Assert().Equal(s.path, pth)
+	s.Assert().Equal(s.err, err)
+}
+
+func TestFileDownloader(t *testing.T) {
+	for _, testCase := range []*fileDownloaderTestSuite{
+		{
+			err: proxy.ErrEmptyFilename,
+		},
+		{
+			fln:  "File:!!!,_SXSW_2013_(8678302775).jpg",
+			path: "commons/files/File:!!!,_SXSW_2013_(8678302775).jpg",
+		},
+		{
+			fln:  "File:!!!, SXSW 2013 (8678302775).jpg",
+			path: "commons/files/File:!!!,_SXSW_2013_(8678302775).jpg",
 		},
 	} {
 		suite.Run(t, testCase)
@@ -156,48 +278,54 @@ func TestNewEntityDownloader(t *testing.T) {
 
 type entityDownloaderTestSuite struct {
 	suite.Suite
-	gcx *gin.Context
-	gtr *proxy.EntityDownloader
-	url string
-	idn string
-	err error
+	gcx  *gin.Context
+	gtr  *proxy.EntityDownloader
+	url  string
+	idn  string
+	cdn  string
+	path string
+	err  error
 }
 
 func (s *entityDownloaderTestSuite) SetupSuite() {
-	s.gcx = &gin.Context{
-		Params: []gin.Param{
-			{
-				Key:   "identifier",
-				Value: s.idn,
-			},
-		},
-	}
 	s.gtr = &proxy.EntityDownloader{
 		URL: s.url,
 	}
 }
 
+func (s *entityDownloaderTestSuite) SetupTest() {
+	s.gcx, _ = gin.CreateTestContext(httptest.NewRecorder())
+	prms := []gin.Param{
+		{
+			Key:   "identifier",
+			Value: s.idn,
+		},
+	}
+
+	if len(s.cdn) > 0 {
+		prms = append(prms, gin.Param{Key: "chunkIdentifier", Value: s.cdn})
+	}
+
+	s.gcx.Params = prms
+}
+
 func (s *entityDownloaderTestSuite) TestGetPath() {
 	pth, err := s.gtr.GetPath(s.gcx)
 
-	if s.err != nil {
-		s.Assert().Empty(pth)
-		s.Assert().Equal(s.err, err)
-	} else {
-		s.Assert().Contains(pth, s.url)
-		s.Assert().Contains(pth, s.idn)
-		s.Assert().NoError(err)
-	}
+	s.Assert().Equal(s.path, pth)
+	s.Assert().Equal(s.err, err)
 }
 
 func TestEntityDownloader(t *testing.T) {
 	for _, testCase := range []*entityDownloaderTestSuite{
 		{
-			url: "entity",
-			idn: "Earth",
+			url: "snapshots",
+			err: proxy.ErrEmptyIdentifier,
 		},
 		{
-			err: proxy.ErrEmptyIdentifier,
+			url:  "snapshots",
+			idn:  "enwiki_namespace_0",
+			path: "snapshots/enwiki_namespace_0.tar.gz",
 		},
 	} {
 		suite.Run(t, testCase)
@@ -562,6 +690,30 @@ func TestByGroupEntitiesGetter(t *testing.T) {
 			},
 			path: "aggregations/snapshots/snapshots.ndjson",
 		},
+		{
+			url: "chunks",
+			ctx: &gin.Context{
+				Params: []gin.Param{{Key: "identifier", Value: "enwiki_namespace_0"}},
+				Keys: map[string]any{"user": &httputil.User{
+					Username: "new_user",
+					Groups:   []string{"group_1"},
+				},
+				},
+			},
+			path: "aggregations/chunks/enwiki_namespace_0/chunks_group_1.ndjson",
+		},
+		{
+			url: "chunks",
+			ctx: &gin.Context{
+				Params: []gin.Param{{Key: "identifier", Value: "enwiki_namespace_0"}},
+				Keys: map[string]any{"user": &httputil.User{
+					Username: "new_user2",
+					Groups:   []string{"group_2"},
+				},
+				},
+			},
+			path: "aggregations/chunks/enwiki_namespace_0/chunks.ndjson",
+		},
 	} {
 		suite.Run(t, testCase)
 	}
@@ -661,6 +813,18 @@ func TestByGroupEntityGetter(t *testing.T) {
 			path: "",
 			err:  proxy.ErrEmptyIdentifier,
 		},
+		{
+			url: "chunks",
+			ctx: &gin.Context{
+				Params: []gin.Param{{Key: "identifier", Value: "enwiki_namespace_0"}, {Key: "chunkIdentifier", Value: "chunk_001"}},
+				Keys: map[string]any{"user": &httputil.User{
+					Username: "new_user",
+					Groups:   []string{"group_1"},
+				},
+				},
+			},
+			path: "chunks/enwiki_namespace_0/chunk_001_group_1.json",
+		},
 	} {
 		suite.Run(t, testCase)
 	}
@@ -759,6 +923,18 @@ func TestByGroupEntityDownloader(t *testing.T) {
 			},
 			path: "",
 			err:  proxy.ErrEmptyIdentifier,
+		},
+		{
+			url: "chunk",
+			ctx: &gin.Context{
+				Params: []gin.Param{{Key: "identifier", Value: "enwiki_namespace_0"}, {Key: "chunkIdentifier", Value: "chunk_002"}},
+				Keys: map[string]any{"user": &httputil.User{
+					Username: "new_user",
+					Groups:   []string{"group_1"},
+				},
+				},
+			},
+			path: "chunk/enwiki_namespace_0/chunk_002_group_1.tar.gz",
 		},
 	} {
 		suite.Run(t, testCase)

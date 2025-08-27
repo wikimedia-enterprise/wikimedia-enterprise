@@ -2,7 +2,7 @@
 // abstract processing.
 package abstract
 
-import "wikimedia-enterprise/general/schema"
+import "wikimedia-enterprise/services/structured-data/submodules/schema"
 
 // IsValid function that checks if abstract can be extracted from
 // current article. By checking namespace and content model.

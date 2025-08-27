@@ -1,0 +1,348 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=17) "Infobox scientist",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) (len=34) "Charles Darwin FRS FRGS FLS FZS JP",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=16) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=79) "Darwin, c. 1854, when he was preparing On the Origin of Species for publication",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=125) "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Charles_Darwin_seated_crop.jpg/220px-Charles_Darwin_seated_crop.jpg",
+                AlternativeText: (string) (len=456) "Three quarter length studio photo showing Darwin's characteristic large forehead and bushy eyebrows with deep set eyes, pug nose and mouth set in a determined look. He is bald on top, with dark hair and long side whiskers but no beard or moustache. His jacket is dark, with very wide lapels, and his trousers are a light check pattern. His shirt has an upright wing collar, and his cravat is tucked into his waistcoat which is a light fine checked pattern.",
+                Caption: (string) (len=82) "Darwin, c. 1854, when he was preparing On the Origin of Species for publication[1]",
+                Height: (int) 220,
+                Width: (int) 220
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/On_the_Origin_of_Species",
+                Text: (string) (len=24) "On the Origin of Species",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=78) "https://en.wikipedia.org/wiki/Charles_Darwin#cite_note-FOOTNOTEFreeman200776-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Born",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=58) "Charles Robert Darwin 12 February 1809 Shrewsbury, England",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Shrewsbury",
+                Text: (string) (len=10) "Shrewsbury",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Died",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=43) "19 April 1882 (aged 73) Down, Kent, England",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Downe",
+                Text: (string) (len=4) "Down",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Resting place",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "Westminster Abbey",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Westminster_Abbey",
+                Text: (string) (len=17) "Westminster Abbey",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Known for",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=4) {
+              (string) (len=28) "  - The Voyage of the Beagle",
+              (string) (len=28) "  - On the Origin of Species",
+              (string) (len=22) "  - The Descent of Man",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Spouse",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "Emma Wedgwood (m. 1839)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Emma_Darwin",
+                Text: (string) (len=13) "Emma Wedgwood",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Children",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=2) "10",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Awards",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=8) {
+              (string) (len=17) "  - FRS (1839)[2]",
+              (string) (len=25) "  - Royal Medal (1853)[3]",
+              (string) (len=29) "  - Wollaston Medal (1859)[3]",
+              (string) (len=26) "  - Copley Medal (1864)[3]",
+              (string) (len=24) "  - Baly Medal (1879)[3]",
+              (string) (len=38) "  - Pour le Mérite, Prussia (1867)[3]",
+              (string) (len=50) "  - Doctor of Laws (Honorary), Cambridge (1877)[4]",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "Scientific career",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Fields",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "Natural history, geology",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Natural_history",
+                Text: (string) (len=15) "Natural history",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Geology",
+                Text: (string) (len=7) "geology",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Institutions",
+            Type: (string) (len=4) "list",
+            Value: (string) (len=44) "Tertiary education: Professional institution",
+            Values: ([]string) (len=2) {
+              (string) (len=32) "  - Geological Society of London",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=17) "Academic advisors",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=3) {
+              (string) (len=24) "  - John Stevens Henslow",
+              (string) (len=17) "  - Adam Sedgwick",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Influences",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=5) {
+              (string) (len=17) "  - Charles Lyell",
+              (string) (len=26) "  - Alexander von Humboldt",
+              (string) (len=17) "  - John Herschel",
+              (string) (len=18) "  - Thomas Malthus",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Influenced",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=5) {
+              (string) (len=24) "  - Joseph Dalton Hooker",
+              (string) (len=23) "  - Thomas Henry Huxley",
+              (string) (len=19) "  - Herbert Spencer",
+              (string) (len=17) "  - Ernst Haeckel",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=23) "Author abbrev. (botany)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Darwin",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Author_citation_(botany)",
+                Text: (string) (len=23) "Author abbrev. (botany)",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=24) "Author abbrev. (zoology)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Darwin",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Author_citation_(zoology)",
+                Text: (string) (len=24) "Author abbrev. (zoology)",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=9) "Signature",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=125) "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Charles_Darwin_Signature.svg/150px-Charles_Darwin_Signature.svg.png",
+                AlternativeText: (string) (len=106) "\"Charles Darwin\", with the surname underlined by a downward curve that mimics the curve of the initial \"C\"",
+                Caption: (string) "",
+                Height: (int) 150,
+                Width: (int) 150
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

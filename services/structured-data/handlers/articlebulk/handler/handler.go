@@ -3,20 +3,23 @@ package handler
 import (
 	"context"
 	"fmt"
+	"regexp"
+	"strconv"
 	"time"
 
 	"strings"
-	"wikimedia-enterprise/general/log"
-	"wikimedia-enterprise/general/parser"
-	pr "wikimedia-enterprise/general/prometheus"
-	"wikimedia-enterprise/general/schema"
-	"wikimedia-enterprise/general/subscriber"
-	"wikimedia-enterprise/general/tracing"
 	"wikimedia-enterprise/services/structured-data/config/env"
 	"wikimedia-enterprise/services/structured-data/libraries/aggregate"
 	"wikimedia-enterprise/services/structured-data/packages/abstract"
 	"wikimedia-enterprise/services/structured-data/packages/builder"
 	"wikimedia-enterprise/services/structured-data/packages/exponential"
+	"wikimedia-enterprise/services/structured-data/submodules/config"
+	"wikimedia-enterprise/services/structured-data/submodules/log"
+	"wikimedia-enterprise/services/structured-data/submodules/parser"
+	pr "wikimedia-enterprise/services/structured-data/submodules/prometheus"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
+	"wikimedia-enterprise/services/structured-data/submodules/subscriber"
+	"wikimedia-enterprise/services/structured-data/submodules/tracing"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/confluentinc/confluent-kafka-go/kafka"
@@ -32,7 +35,12 @@ type Parameters struct {
 	Parser     parser.API
 	Tracer     tracing.Tracer
 	Metrics    *pr.Metrics
+	Cfg        config.API
 }
+
+var (
+	redirectPattern = regexp.MustCompile(`Special:Redirect/revision/(\d+)`)
+)
 
 // NewArticleBulk will produce an articles schema messages for all article titles consumed from a kafka message
 //
@@ -43,7 +51,12 @@ func NewArticleBulk(p *Parameters) subscriber.Handler {
 		hcr := tracing.NewHeadersCarrier()
 		hcr.FromKafkaHeaders(msg.Headers)
 		hcx := hcr.ExtractContext(ctx)
-		end, trx := p.Tracer.StartTrace(hcx, "article-bulk", map[string]string{})
+
+		end, trx := p.Tracer.StartTrace(hcx, "article-bulk", map[string]string{
+			"message_partition": fmt.Sprintf("%d", msg.TopicPartition.Partition),
+			"message_offset":    fmt.Sprintf("%d", msg.TopicPartition.Offset),
+		})
+
 		var err error
 		defer func() {
 			if err != nil {
@@ -54,8 +67,11 @@ func NewArticleBulk(p *Parameters) subscriber.Handler {
 		}()
 
 		pld := new(schema.ArticleNames)
-
 		if err := p.Stream.Unmarshal(trx, msg.Value, pld); err != nil {
+			return err
+		}
+
+		if err != nil {
 			return err
 		}
 
@@ -63,7 +79,17 @@ func NewArticleBulk(p *Parameters) subscriber.Handler {
 		// based on the exponential backoff.
 		if pld.Event != nil && pld.Event.FailCount > 0 {
 			epn := exponential.GetNth(uint(pld.Event.FailCount+1), uint(p.Env.BackOffBase))
-			time.Sleep(time.Duration(epn) * time.Second)
+			delay := time.Duration(epn) * time.Second
+			time.Sleep(delay)
+
+			log.Info("event failed count ",
+				log.Any("count", pld.Event.FailCount),
+				log.Any("failed reason", pld.Event.FailReason),
+				log.Any("delay", delay),
+				log.Any("identifier", pld.Event.Identifier),
+				log.Any("names", pld.Names),
+				log.Any("partition", pld.Event.Partition),
+				log.Any("offset", pld.Event.Offset))
 		}
 
 		tls := pld.Names
@@ -72,9 +98,7 @@ func NewArticleBulk(p *Parameters) subscriber.Handler {
 
 		err = p.Aggregator.GetAggregations(
 			trx, dtb, tls, ags,
-			aggregate.WithPages(1, len(tls)),
-			// aggregate.WithRevisions(len(tls)),
-			aggregate.WithPagesHTML(len(tls)),
+			aggregate.WithPages(2, len(tls)), //no version or timestamp to tell it when to go back in time , so this is the latest revision Page
 		)
 
 		if err != nil {
@@ -85,6 +109,129 @@ func NewArticleBulk(p *Parameters) subscriber.Handler {
 			)
 
 			return err
+		}
+
+		// create lookups for revision ids and titles used by different API calls
+		rtm := map[string]string{} // revision id to title mapping
+		trv := map[string]int{}    // title to revision id mapping for RevertRisk API call
+		rvs := []string{}          // revision ids slice
+		tps := []string{}          // titles slice
+
+		for _, agg := range ags {
+			if agg.GetPageLastRevID() == 0 {
+				ttl := agg.GetPageTitle()
+				if len(ttl) > 0 {
+					tps = append(tps, ttl)
+				}
+				continue
+			}
+
+			rvs = append(rvs, fmt.Sprintf("%d", agg.GetPageLastRevID()))
+			rtm[fmt.Sprintf("%d", agg.GetPageLastRevID())] = agg.GetPageTitle()
+
+			// trv slice is used to get the RevertRisk score for each article, but only if in namespace 0, is a wiki and has previous revision
+			if agg.GetPageNs() == 0 && strings.HasSuffix(dtb, "wiki") && agg.GetPreviousRevisionID() != 0 {
+				trv[agg.GetPageTitle()] = agg.GetPageLastRevID()
+			}
+		}
+
+		if len(tps) > 0 {
+			err = p.Aggregator.GetAggregations(
+				trx, dtb, tps, ags,
+				aggregate.WithPagesHTML(len(tps)),
+			)
+
+			if err != nil {
+				log.Error("wmf api error no HTML from title API",
+					log.Any("articles queried concurrently", len(rvs)),
+					log.Any("project", dtb),
+					log.Any("error", err),
+				)
+			} else {
+				for ttl, agg := range ags {
+					match := redirectPattern.FindStringSubmatch(agg.PageHTML.Content)
+					rid := strconv.Itoa(agg.GetPageLastRevID())
+					if len(match) > 1 && match[1] != rid {
+						log.Warn("revision mismatch in HTML using title API",
+							log.Any("project", dtb),
+							log.Any("title", ttl),
+							log.Any("expected revision id", rid),
+							log.Any("found revision id", match[1]),
+							log.Any("revision from Page object", agg.PageHTML.Revision),
+						)
+					}
+				}
+			}
+		}
+
+		if len(rvs) > 0 {
+			err = p.Aggregator.GetAggregations(
+				trx, dtb, rvs, ags,
+				aggregate.WithRevisionsHTML(len(rvs)),
+			)
+
+			if err != nil {
+				log.Error("wmf api error no HTML from revision API",
+					log.Any("articles queried concurrently", len(rvs)),
+					log.Any("project", dtb),
+					log.Any("error", err),
+				)
+			}
+
+			for rid, ttl := range rtm {
+				agg, ok := ags[rid]
+				if !ok {
+					log.Warn("revision key not found when remapping to title",
+						log.Any("revision id", rid),
+						log.Any("project", dtb),
+					)
+
+					continue
+				}
+
+				if ags[ttl] == nil {
+					ags[ttl] = agg
+				}
+
+				ags[ttl].PageHTML = agg.GetPageHTML()
+				delete(ags, rid)
+
+				match := redirectPattern.FindStringSubmatch(ags[ttl].PageHTML.Content)
+				if len(match) > 1 && match[1] != rid {
+					log.Warn("revision mismatch in HTML using revision API",
+						log.Any("project", dtb),
+						log.Any("expected revision id", rid),
+						log.Any("found revision id", match[1]),
+						log.Any("revision from Page object", ags[ttl].PageHTML.Revision),
+						log.Any("title", ttl),
+					)
+				}
+			}
+		}
+
+		// get RevertRisk scores for wiki articles in namespace 0 with previous revision
+		// GetAggregations call is done after calls for `WithRevisionsHTML` and `WithPagesHTML`
+		// because it has a different set of articles in `trv` compared to the other calls
+		if len(trv) > 0 {
+			lng := p.Cfg.GetLanguage(pld.IsPartOf.Identifier)
+			tts := []string{}
+			for ttl := range trv {
+				tts = append(tts, ttl)
+			}
+
+			err = p.Aggregator.GetAggregations(
+				trx, dtb, tts, ags,
+				aggregate.WithScores(trv, lng, time.Duration(p.Env.LiftwingTimeoutMs)*time.Millisecond, "revertrisk", dtb),
+			)
+
+			if err != nil {
+				log.Error("wmf api error from revert risk API",
+					log.Any("articles queried concurrently", len(tts)),
+					log.Any("articles", tts),
+					log.Any("project", dtb),
+					log.Any("error", err),
+				)
+			}
 		}
 
 		mgs := []*schema.Message{}
@@ -116,6 +263,13 @@ func NewArticleBulk(p *Parameters) subscriber.Handler {
 					strings.NewReader(agg.GetPageHTMLContent()))
 
 			if err != nil {
+				log.Warn(
+					"error reading HTML Content",
+					log.Any("name", agg.GetPageTitle()),
+					log.Any("project", dtb),
+					log.Any("url", pld.IsPartOf.URL),
+				)
+
 				return err
 			}
 
@@ -137,6 +291,7 @@ func NewArticleBulk(p *Parameters) subscriber.Handler {
 			crc := agg.GetCurrentRevisionContent()
 			cts := p.Parser.GetCategories(doc.Selection)
 			tps := p.Parser.GetTemplates(doc.Selection)
+			scr := builder.NewScoresBuilder().RevertRisk(agg.GetRevertRiskScore()).Build()
 
 			edr := builder.NewEditorBuilder().
 				Identifier(agg.GetCurrentRevisionUserID()).
@@ -153,6 +308,7 @@ func NewArticleBulk(p *Parameters) subscriber.Handler {
 				IsFlaggedStable(agg.GetPageFlaggedStableRevID() == agg.GetPageLastRevID()).
 				Editor(edr).
 				Size(crc).
+				Scores(scr).
 				Noindex(tps.HasSubstringInNames(p.Env.NoindexTemplatePatterns) || cts.HasSubstringInNames(p.Env.NoindexCategoryPatterns)).
 				Build()
 
@@ -191,6 +347,11 @@ func NewArticleBulk(p *Parameters) subscriber.Handler {
 			tcs, err := p.Env.Topics.GetNames(dtb, agg.GetPageNs())
 
 			if err != nil {
+				log.Warn("error getting topic names",
+					log.Any("project", dtb),
+					log.Any("namespace", agg.GetPageNs()),
+					log.Any("error", err),
+				)
 				return err
 			}
 

@@ -4,11 +4,10 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
-	"fmt"
 	"testing"
-	"wikimedia-enterprise/general/schema"
 	"wikimedia-enterprise/services/on-demand/config/env"
 	"wikimedia-enterprise/services/on-demand/libraries/storage"
+	"wikimedia-enterprise/services/on-demand/submodules/schema"
 
 	"github.com/avast/retry-go"
 	"github.com/aws/aws-sdk-go/aws"
@@ -65,11 +64,18 @@ type storageTestSuite struct {
 	uer error
 	der error
 	ser error
+
+	keyTypeSuffix      string
+	expectedPutPath    string
+	expectedDeletePath string
+	useHashedPrefixes  bool
 }
 
-func (s *storageTestSuite) SetupSuite() {
+func (s *storageTestSuite) SetupTest() {
 	s.env = &env.Environment{
-		AWSBucket: "bucket",
+		AWSBucket:            "bucket",
+		ArticleKeyTypeSuffix: s.keyTypeSuffix,
+		UseHashedPrefixes:    s.useHashedPrefixes,
 	}
 	s.key = &schema.Key{
 		Identifier: "/enwiki/Earth",
@@ -84,10 +90,13 @@ func (s *storageTestSuite) SetupSuite() {
 	s.str = new(streamMock)
 	s.str.On("Unmarshal", s.kdt, s.key).Return(s.ser)
 
-	loc := fmt.Sprintf("%s%s%s.json", s.key.Type, "", s.key.Identifier)
 	s.s3a = new(s3APIMock)
-	s.s3a.On("PutObjectWithContext", s.env.AWSBucket, loc).Return(s.uer)
-	s.s3a.On("DeleteObjectWithContext", s.env.AWSBucket, loc).Return(s.der)
+	if s.expectedPutPath != "" {
+		s.s3a.On("PutObjectWithContext", s.env.AWSBucket, s.expectedPutPath).Return(s.uer)
+	}
+	if s.expectedDeletePath != "" {
+		s.s3a.On("DeleteObjectWithContext", s.env.AWSBucket, s.expectedDeletePath).Return(s.der)
+	}
 
 	s.ctx = context.Background()
 	s.sto = &storage.Storage{
@@ -95,6 +104,10 @@ func (s *storageTestSuite) SetupSuite() {
 		Env:    s.env,
 		S3:     s.s3a,
 	}
+}
+
+func (s *storageTestSuite) TearDownTest() {
+	s.s3a.AssertExpectations(s.T())
 }
 
 func (s *storageTestSuite) TestUpdate() {
@@ -120,28 +133,48 @@ func TestStorage(t *testing.T) {
 			ser: errors.New("unmarshal error"),
 		},
 		{
-			etp: schema.EventTypeUpdate,
-			uer: nil,
+			etp:             schema.EventTypeUpdate,
+			uer:             nil,
+			expectedPutPath: "articles/enwiki/Earth.json",
 		},
 		{
-			etp: schema.EventTypeCreate,
-			uer: nil,
+			etp:             schema.EventTypeCreate,
+			uer:             nil,
+			expectedPutPath: "articles/enwiki/Earth.json",
 		},
 		{
-			uer: errors.New("update error"),
-			etp: schema.EventTypeUpdate,
+			uer:             errors.New("update error"),
+			etp:             schema.EventTypeUpdate,
+			expectedPutPath: "articles/enwiki/Earth.json",
 		},
 		{
-			uer: errors.New("create error"),
-			etp: schema.EventTypeCreate,
+			uer:             errors.New("create error"),
+			etp:             schema.EventTypeCreate,
+			expectedPutPath: "articles/enwiki/Earth.json",
 		},
 		{
-			der: nil,
-			etp: schema.EventTypeDelete,
+			der:                nil,
+			etp:                schema.EventTypeDelete,
+			keyTypeSuffix:      "v2",
+			expectedDeletePath: "articles_v2/enwiki/Earth.json",
 		},
 		{
-			der: errors.New("delete error"),
-			etp: schema.EventTypeDelete,
+			der:                errors.New("delete error"),
+			etp:                schema.EventTypeDelete,
+			expectedDeletePath: "articles/enwiki/Earth.json",
+		},
+		{
+			useHashedPrefixes: true,
+			uer:               errors.New("create error"),
+			etp:               schema.EventTypeCreate,
+			expectedPutPath:   "articles/enwiki/5/5c/Earth.json",
+		},
+		{
+			useHashedPrefixes:  true,
+			der:                nil,
+			etp:                schema.EventTypeDelete,
+			keyTypeSuffix:      "v2",
+			expectedDeletePath: "articles_v2/enwiki/5/5c/Earth.json",
 		},
 	} {
 		suite.Run(t, testCase)

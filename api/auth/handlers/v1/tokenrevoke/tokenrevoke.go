@@ -2,11 +2,12 @@
 package tokenrevoke
 
 import (
+	"errors"
 	"fmt"
 	"net/http"
 	"wikimedia-enterprise/api/auth/config/env"
-	"wikimedia-enterprise/general/httputil"
-	"wikimedia-enterprise/general/log"
+	"wikimedia-enterprise/api/auth/submodules/httputil"
+	"wikimedia-enterprise/api/auth/submodules/log"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/cognitoidentityprovider"
@@ -29,14 +30,19 @@ type Model struct {
 	RefreshToken string `json:"refresh_token" form:"refresh_token" binding:"required"`
 }
 
+var (
+	// Here, "internal" means the error is on our side (Wikimedia Enterprise), not necessarily in the auth API server.
+	internalErr = errors.New("Internal error, please try again later.")
+)
+
 // NewHandler creates new revoke HTTP handler.
 func NewHandler(p *Parameters) gin.HandlerFunc {
 	return func(gcx *gin.Context) {
 		mdl := new(Model)
 
 		if err := gcx.ShouldBind(mdl); err != nil {
-			log.Error(err, log.Tip("problem in revoke user v1 binding inputs"))
-			httputil.UnprocessableEntity(gcx, err)
+			log.Error(err, log.Tip("problem in revoke user v1 binding inputs"), log.Any("url", gcx.Request.URL.String()))
+			httputil.UnprocessableEntity(gcx, internalErr)
 			return
 		}
 
@@ -48,7 +54,7 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 
 		if err != nil {
 			log.Error(err, log.Tip("problem in v1 revoke user is unauthorized"))
-			httputil.Unauthorized(gcx, err)
+			httputil.Unauthorized(gcx)
 			return
 		}
 
@@ -67,7 +73,7 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 
 			if err != nil {
 				log.Error(err, log.Tip("problem in v1 revoke user, redis scan failed"))
-				httputil.InternalServerError(gcx, err)
+				httputil.InternalServerError(gcx, internalErr)
 				return
 			}
 
@@ -85,7 +91,7 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 
 			if err != nil {
 				log.Error(err, log.Tip("problem in v1 revoke user, redis SMembers returned nil"))
-				httputil.InternalServerError(gcx, err)
+				httputil.InternalServerError(gcx, internalErr)
 				return
 			}
 
@@ -99,7 +105,7 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 		if len(deleteKeys) > 0 {
 			if err := p.Redis.Del(gcx.Request.Context(), deleteKeys...).Err(); err != nil {
 				log.Error(err, log.Tip("problem in v1 revoke user, redis delete failed"))
-				httputil.InternalServerError(gcx, err)
+				httputil.InternalServerError(gcx, internalErr)
 				return
 			}
 		}

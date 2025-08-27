@@ -2,7 +2,7 @@ package builder
 
 import (
 	"regexp"
-	"wikimedia-enterprise/general/schema"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
 )
 
 var (

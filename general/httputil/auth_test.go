@@ -76,6 +76,7 @@ func (s *cognitoAuthTestSuite) getJWTToken() (string, error) {
 			"client_id":      s.cid,
 			"iss":            s.iss,
 			"cognito:groups": []string{s.ugr},
+			"sub":            "provided-sub",
 		})
 
 	token.Header["kid"] = s.kid
@@ -89,6 +90,7 @@ func (s *cognitoAuthTestSuite) getWrongJWTToken() (string, error) {
 			"client_id":      s.wci,
 			"iss":            s.iss,
 			"cognito:groups": []string{s.ugr},
+			"sub":            "provided-sub",
 		})
 
 	token.Header["kid"] = s.kid
@@ -113,6 +115,7 @@ func (s *cognitoAuthTestSuite) createServer(mwr ...gin.HandlerFunc) http.Handler
 		user, _ := gcx.Get("user")
 		s.Assert().Equal(s.unm, user.(*User).GetUsername())
 		s.Assert().Contains(user.(*User).GetGroups(), s.ugr)
+		s.Assert().Equal("provided-sub", user.(*User).Sub)
 		gcx.Status(http.StatusOK)
 	})
 
@@ -195,6 +198,7 @@ func (s *cognitoAuthTestSuite) TestAuthUserSetSuccess() {
 		gcx.Set("user", &User{
 			Username: s.unm,
 			Groups:   []string{s.ugr},
+			Sub:      "provided-sub",
 		})
 	}
 

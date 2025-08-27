@@ -2,9 +2,9 @@ package builder_test
 
 import (
 	"testing"
-	"wikimedia-enterprise/general/schema"
-	"wikimedia-enterprise/general/wmf"
 	"wikimedia-enterprise/services/structured-data/packages/builder"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
+	"wikimedia-enterprise/services/structured-data/submodules/wmf"
 
 	"github.com/stretchr/testify/suite"
 )

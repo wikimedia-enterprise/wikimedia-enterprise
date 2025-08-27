@@ -40,14 +40,15 @@ func (c *HeadersCarrier) Set(key string, value string) {
 	c.headers[key] = value
 }
 
+
 // Keys returns the keys stored in the HeadersCarrier.
 func (c *HeadersCarrier) Keys() []string {
 	kys := make([]string, 0, len(c.headers))
 	for key := range c.headers {
 		kys = append(kys, key)
 	}
-
-	return kys
+	
+        return kys
 }
 
 // ToKafkaHeaders converts the HeadersCarrier to a slice of kafka.Header.
@@ -56,8 +57,8 @@ func (c *HeadersCarrier) ToKafkaHeaders() []kafka.Header {
 	for key, val := range c.headers {
 		hds = append(hds, kafka.Header{Key: key, Value: []byte(val)})
 	}
-
-	return hds
+	
+       return hds
 }
 
 // FromKafkaHeaders initializes the HeadersCarrier from a slice of kafka.Header.
@@ -79,3 +80,4 @@ func (c *HeadersCarrier) InjectContext(ctx context.Context) []kafka.Header {
 	pps.Inject(ctx, c)
 	return c.ToKafkaHeaders()
 }
+

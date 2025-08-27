@@ -22,6 +22,14 @@ func NewConsumer(env *env.Environment) (*kafka.Consumer, error) {
 		cfg["sasl.password"] = env.KafkaCreds.Password
 	}
 
+	if env.KafkaAutoOffsetReset != "" {
+		cfg["auto.offset.reset"] = env.KafkaAutoOffsetReset
+	}
+
+	for k, v := range env.KafkaExtraConfig {
+		cfg[k] = v
+	}
+
 	return kafka.NewConsumer(&cfg)
 }
 

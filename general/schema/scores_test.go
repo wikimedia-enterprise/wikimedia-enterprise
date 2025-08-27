@@ -35,12 +35,32 @@ func (s *scoresTestSuite) SetupTest() {
 				False: 0.9,
 			},
 		},
+		ReferenceNeed: &ReferenceNeedData{
+			ReferenceNeedScore: 0.08,
+		},
+		ReferenceRisk: &ReferenceRiskData{
+			ReferenceCount:     10,
+			ReferenceRiskScore: 0.0,
+			References:         nil,
+			SurvivalRatio: &SurvivalRatioData{
+				Min:    0.58,
+				Mean:   0.65,
+				Median: 0.6,
+			},
+		},
 	}
 }
 
 func (s *scoresTestSuite) TestNewScoresSchema() {
 	sch, err := NewScoresSchema()
 	s.Assert().NoError(err)
+
+	if s.scores.ReferenceRisk.SurvivalRatio == nil {
+		s.scores.ReferenceRisk.SurvivalRatio = &SurvivalRatioData{}
+	}
+	if s.scores.ReferenceRisk.References == nil {
+		s.scores.ReferenceRisk.References = []*ReferenceDetails(nil)
+	}
 
 	data, err := avro.Marshal(sch, s.scores)
 	s.Assert().NoError(err)
@@ -56,6 +76,12 @@ func (s *scoresTestSuite) TestNewScoresSchema() {
 	s.Assert().Equal(s.scores.RevertRisk.Prediction, scores.RevertRisk.Prediction)
 	s.Assert().Equal(s.scores.RevertRisk.Probability.False, scores.RevertRisk.Probability.False)
 	s.Assert().Equal(s.scores.RevertRisk.Probability.True, scores.RevertRisk.Probability.True)
+	s.Assert().Equal(s.scores.ReferenceNeed.ReferenceNeedScore, scores.ReferenceNeed.ReferenceNeedScore)
+	s.Assert().Equal(s.scores.ReferenceRisk.ReferenceCount, scores.ReferenceRisk.ReferenceCount)
+	s.Assert().Equal(s.scores.ReferenceRisk.ReferenceRiskScore, scores.ReferenceRisk.ReferenceRiskScore)
+	s.Assert().Equal(s.scores.ReferenceRisk.References, scores.ReferenceRisk.References)
+	s.Assert().Equal(s.scores.ReferenceRisk.SurvivalRatio, scores.ReferenceRisk.SurvivalRatio)
+
 }
 
 func TestScores(t *testing.T) {

@@ -4,8 +4,8 @@ package stream
 import (
 	"fmt"
 	"strings"
-	"wikimedia-enterprise/general/schema"
 	"wikimedia-enterprise/services/bulk-ingestion/config/env"
+	"wikimedia-enterprise/services/bulk-ingestion/submodules/schema"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 )

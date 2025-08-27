@@ -1,0 +1,1033 @@
+([]*parser.Part) (len=3) {
+  (*parser.Part)({
+    Name: (string) (len=20) "Infobox officeholder",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=7) {
+      (*parser.Part)({
+        Name: (string) (len=13) "Narendra Modi",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=23) "Official portrait, 2022",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=185) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Official_portrait_of_Narendra_Modi%2C_2022_%28cropped%29.jpg/220px-Official_portrait_of_Narendra_Modi%2C_2022_%28cropped%29.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) (len=23) "Official portrait, 2022",
+                Height: (int) 220,
+                Width: (int) 220
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=28) "14th Prime Minister of India",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=11) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Incumbent",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Incumbent",
+                Text: (string) (len=9) "Incumbent",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=26) "Assumed office 26 May 2014",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "President",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=4) {
+              (string) (len=20) "  - Pranab Mukherjee",
+              (string) (len=19) "  - Ram Nath Kovind",
+              (string) (len=18) "  - Droupadi Murmu",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Vice President",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=4) {
+              (string) (len=25) "  - Mohammad Hamid Ansari",
+              (string) (len=18) "  - Venkaiah Naidu",
+              (string) (len=20) "  - Jagdeep Dhankhar",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Preceded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "Manmohan Singh",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Manmohan_Singh",
+                Text: (string) (len=14) "Manmohan Singh",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=24) "Ministry and Departments",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=91) "Personnel, Public Grievances and Pensions, Department of Space, Department of Atomic Energy",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Incumbent",
+                Text: (string) (len=9) "Incumbent",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=83) "https://en.wikipedia.org/wiki/Ministry_of_Personnel,_Public_Grievances_and_Pensions",
+                Text: (string) (len=41) "Personnel, Public Grievances and Pensions",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Department_of_Space",
+                Text: (string) (len=19) "Department of Space",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/Department_of_Atomic_Energy",
+                Text: (string) (len=27) "Department of Atomic Energy",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Dr._Manmohan_Singh",
+                Text: (string) (len=18) "Dr. Manmohan Singh",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "Additional ministries",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Incumbent",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Incumbent",
+                Text: (string) (len=9) "Incumbent",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=26) "Assumed office 26 May 2014",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=24) "Ministry and Departments",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=91) "Personnel, Public Grievances and Pensions, Department of Space, Department of Atomic Energy",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=83) "https://en.wikipedia.org/wiki/Ministry_of_Personnel,_Public_Grievances_and_Pensions",
+                Text: (string) (len=41) "Personnel, Public Grievances and Pensions",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Department_of_Space",
+                Text: (string) (len=19) "Department of Space",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/Department_of_Atomic_Energy",
+                Text: (string) (len=27) "Department of Atomic Energy",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Preceded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "Dr. Manmohan Singh",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Dr._Manmohan_Singh",
+                Text: (string) (len=18) "Dr. Manmohan Singh",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=30) "Leader of the House, Lok Sabha",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Incumbent",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Incumbent",
+                Text: (string) (len=9) "Incumbent",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=26) "Assumed office 26 May 2014",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Deputy",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Rajnath Singh",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Rajnath_Singh",
+                Text: (string) (len=13) "Rajnath Singh",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Speaker",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=3) {
+              (string) (len=19) "  - Sumitra Mahajan",
+              (string) (len=12) "  - Om Birla",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Speaker_of_the_Lok_Sabha",
+                Text: (string) (len=7) "Speaker",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Preceded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "Sushilkumar Shinde",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Sushilkumar_Shinde",
+                Text: (string) (len=18) "Sushilkumar Shinde",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=31) "Member of Parliament, Lok Sabha",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=4) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Incumbent",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Incumbent",
+                Text: (string) (len=9) "Incumbent",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=26) "Assumed office 5 June 2014",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Preceded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "Murli Manohar Joshi",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Murli_Manohar_Joshi",
+                Text: (string) (len=19) "Murli Manohar Joshi",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Constituency",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Varanasi",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=63) "https://en.wikipedia.org/wiki/Varanasi_(Lok_Sabha_constituency)",
+                Text: (string) (len=8) "Varanasi",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=30) "14th Chief Minister of Gujarat",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=4) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=40) "In office 7 October 2001 – 22 May 2014",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Governor",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=7) {
+              (string) (len=25) "  - Sunder Singh Bhandari",
+              (string) (len=22) "  - Kailashpati Mishra",
+              (string) (len=17) "  - Balram Jakhar",
+              (string) (len=24) "  - Nawal Kishore Sharma",
+              (string) (len=15) "  - S. C. Jamir",
+              (string) (len=17) "  - Kamla Beniwal",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Preceded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "Keshubhai Patel",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Keshubhai_Patel",
+                Text: (string) (len=15) "Keshubhai Patel",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Succeeded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "Anandiben Patel",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Anandiben_Patel",
+                Text: (string) (len=15) "Anandiben Patel",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=38) "Member of Gujarat Legislative Assembly",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=8) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=42) "In office 15 December 2002 – 16 May 2014",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Preceded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Kamlesh Patel",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Kamlesh_Patel_(politician)",
+                Text: (string) (len=13) "Kamlesh Patel",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Succeeded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Suresh Patel",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Suresh_Patel",
+                Text: (string) (len=12) "Suresh Patel",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Constituency",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Maninagar",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=67) "https://en.wikipedia.org/wiki/Maninagar_(Vidhan_Sabha_constituency)",
+                Text: (string) (len=9) "Maninagar",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=43) "In office 24 February 2002 – 19 July 2002",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Preceded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Vajubhai Vala",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Vajubhai_Vala",
+                Text: (string) (len=13) "Vajubhai Vala",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Succeeded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Vajubhai Vala",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Constituency",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Rajkot II",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Rajkot_West",
+                Text: (string) (len=9) "Rajkot II",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=16) "Personal details",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=9) {
+          (*parser.Part)({
+            Name: (string) (len=4) "Born",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=98) "Narendrabhai Damodardas Modi 17 September 1950 Vadnagar, Bombay State, India (present-day Gujarat)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Vadnagar",
+                Text: (string) (len=8) "Vadnagar",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Bombay_State",
+                Text: (string) (len=12) "Bombay State",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/India",
+                Text: (string) (len=5) "India",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Gujarat",
+                Text: (string) (len=7) "Gujarat",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Political party",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "Bharatiya Janata Party",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=92) "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/BJP_flag.svg/23px-BJP_flag.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 23,
+                Width: (int) 23
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Bharatiya_Janata_Party",
+                Text: (string) (len=22) "Bharatiya Janata Party",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Spouse",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=36) "Jashodaben Modi (m. 1968; estranged)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Jashodaben_Modi",
+                Text: (string) (len=15) "Jashodaben Modi",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=65) "https://en.wikipedia.org/wiki/Narendra_Modi#cite_note-ndtvchild-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Residence(s)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=43) "7, Lok Kalyan Marg, New Delhi, Delhi, India",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/7,_Lok_Kalyan_Marg",
+                Text: (string) (len=18) "7, Lok Kalyan Marg",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/New_Delhi",
+                Text: (string) (len=9) "New Delhi",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Delhi",
+                Text: (string) (len=5) "Delhi",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Narendra_Modi#cite_note-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Alma mater",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=48) "University of Delhi (BA) Gujarat University (MA)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Alma_mater",
+                Text: (string) (len=10) "Alma mater",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/University_of_Delhi",
+                Text: (string) (len=19) "University of Delhi",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Bachelor_of_Arts",
+                Text: (string) (len=2) "BA",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Gujarat_University",
+                Text: (string) (len=18) "Gujarat University",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Master_of_Arts",
+                Text: (string) (len=2) "MA",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Awards",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "List of state honours",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=66) "https://en.wikipedia.org/wiki/Narendra_Modi#Awards_and_recognition",
+                Text: (string) (len=21) "List of state honours",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Signature",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Signature",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=153) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Signature_of_Narendra_Modi_%28Hindi%29.svg/128px-Signature_of_Narendra_Modi_%28Hindi%29.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 128,
+                Width: (int) 128
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Website",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=3) {
+              (string) (len=12) "  - Personal",
+              (string) (len=21) "  - PM India official",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Nicknames",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "see article",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=89) "https://en.wikipedia.org/wiki/List_of_nicknames_of_prime_ministers_of_India#Narendra_Modi",
+                Text: (string) (len=11) "see article",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=14) "external media",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) (len=14) "External video",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=144) "BJP announces Shri Narendra Modi as its Prime Ministerial candidate for Loksabha Elections. Bharatiya Janata Party on YouTube, 13 September 2013",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=116) "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Nuvola_apps_kaboodle.svg/16px-Nuvola_apps_kaboodle.svg.png",
+                AlternativeText: (string) (len=10) "video icon",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://www.youtube.com/watch?v=wgeKLJuJMp8",
+                Text: (string) (len=91) "BJP announces Shri Narendra Modi as its Prime Ministerial candidate for Loksabha Elections.",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/YouTube",
+                Text: (string) (len=7) "YouTube",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=14) "External media",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) (len=14) "External video",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=124) "BJP announced manifesto and Shri Narendra Modi as prime minister candidate. Bharatiya Janata Party on YouTube, 8 April 2019.",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=116) "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Nuvola_apps_kaboodle.svg/16px-Nuvola_apps_kaboodle.svg.png",
+                AlternativeText: (string) (len=10) "video icon",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://www.youtube.com/watch?v=QoORekBf6pE",
+                Text: (string) (len=75) "BJP announced manifesto and Shri Narendra Modi as prime minister candidate.",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/YouTube",
+                Text: (string) (len=7) "YouTube",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

@@ -22,6 +22,8 @@ func (s *imageTestSuite) SetupTest() {
 			Width:      10,
 			Height:     10,
 		},
+		AlternativeText: "altText",
+		Caption:         "Caption",
 	}
 }
 
@@ -41,6 +43,10 @@ func (s *imageTestSuite) TestNewImageSchema() {
 	s.Assert().Equal(s.image.Thumbnail.ContentUrl, image.Thumbnail.ContentUrl)
 	s.Assert().Equal(s.image.Thumbnail.Width, image.Thumbnail.Width)
 	s.Assert().Equal(s.image.Thumbnail.Height, image.Thumbnail.Height)
+
+	s.Assert().Equal(s.image.AlternativeText, image.AlternativeText)
+	s.Assert().Equal(s.image.Caption, image.Caption)
+
 }
 
 func TestImage(t *testing.T) {

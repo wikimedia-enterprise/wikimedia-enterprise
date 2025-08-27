@@ -5,14 +5,17 @@ import (
 	"os"
 	"os/signal"
 	"syscall"
-	"wikimedia-enterprise/general/log"
-	"wikimedia-enterprise/general/schema"
-	"wikimedia-enterprise/general/subscriber"
 	"wikimedia-enterprise/services/structured-data/config/env"
 	"wikimedia-enterprise/services/structured-data/handlers/articleupdate/handler"
+	"wikimedia-enterprise/services/structured-data/libraries/health"
 	"wikimedia-enterprise/services/structured-data/packages/container"
+	"wikimedia-enterprise/services/structured-data/submodules/log"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
+	"wikimedia-enterprise/services/structured-data/submodules/subscriber"
 
-	pr "wikimedia-enterprise/general/prometheus"
+	"github.com/confluentinc/confluent-kafka-go/kafka"
+
+	pr "wikimedia-enterprise/services/structured-data/submodules/prometheus"
 )
 
 func main() {
@@ -25,13 +28,22 @@ func main() {
 	sgs := make(chan os.Signal, 1)
 	signal.Notify(sgs, os.Interrupt, syscall.SIGTERM)
 
-	app := func(env *env.Environment, rtr schema.Retryer, sbs *subscriber.Subscriber, pms handler.Parameters) error {
+	app := func(env *env.Environment, rtr schema.Retryer, sbs *subscriber.Subscriber, pms handler.Parameters, consumer *kafka.Consumer, producer *kafka.Producer) error {
 		ctx := context.Background()
 		hdl := handler.NewArticleUpdate(&pms)
+
+		producerTopics := []string{env.TopicArticles, env.TopicArticleUpdateError, env.TopicArticleUpdateDeadLetter}
+		cancel, rebalanceCb, err := health.SetUpHealthChecks(producerTopics, ctx, env, producer, consumer)
+		if err != nil {
+			log.Fatal(err)
+		}
+		defer cancel()
+
 		scf := &subscriber.Config{
 			Events:          make(chan *subscriber.Event, env.EventChannelSize),
-			Topics:          []string{env.TopicArticleUpdate},
+			Topics:          env.TopicArticleUpdate,
 			NumberOfWorkers: env.NumberOfWorkers,
+			RebalanceCb:     rebalanceCb,
 		}
 
 		pms.Metrics.AddStructuredDataMetrics()
@@ -84,8 +96,7 @@ func main() {
 			}
 		}()
 
-		return sbs.
-			Subscribe(ctx, hdl, scf)
+		return sbs.Subscribe(ctx, hdl, scf)
 	}
 
 	if err := cnt.Invoke(app); err != nil {

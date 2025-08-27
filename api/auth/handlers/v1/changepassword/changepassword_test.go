@@ -3,8 +3,8 @@ package changepassword_test
 import (
 	"bytes"
 	"encoding/json"
-	"errors"
 	"fmt"
+	"io"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -12,6 +12,7 @@ import (
 	"wikimedia-enterprise/api/auth/handlers/v1/changepassword"
 
 	"github.com/aws/aws-sdk-go/aws"
+	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/aws/request"
 	"github.com/aws/aws-sdk-go/service/cognitoidentityprovider"
 	"github.com/aws/aws-sdk-go/service/cognitoidentityprovider/cognitoidentityprovideriface"
@@ -109,7 +110,7 @@ func (s *changePasswordTestSuite) TestInputValidationError() {
 }
 
 func (s *changePasswordTestSuite) TestAPIError() {
-	s.cog.On("ChangePasswordWithContext", s.in).Return(s.out, errors.New("test_error"))
+	s.cog.On("ChangePasswordWithContext", s.in).Return(s.out, awserr.New(cognitoidentityprovider.ErrCodeNotAuthorizedException, "<AWS Message>", nil))
 
 	body := bytes.NewBuffer([]byte{})
 	s.Assert().NoError(json.NewEncoder(body).Encode(s.req))
@@ -118,6 +119,10 @@ func (s *changePasswordTestSuite) TestAPIError() {
 	s.Assert().NoError(err)
 	defer res.Body.Close()
 	s.Assert().Equal(http.StatusUnauthorized, res.StatusCode)
+	b, err := io.ReadAll(res.Body)
+	s.Assert().NoError(err)
+	s.Assert().Contains(string(b), "Incorrect username or password.")
+	s.Assert().NotContains(string(b), "<AWS Message>")
 
 	s.cog.AssertNumberOfCalls(s.T(), "ChangePasswordWithContext", 1)
 }

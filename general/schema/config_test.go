@@ -13,7 +13,7 @@ type configTestSuite struct {
 }
 
 func (s *configTestSuite) TestResolveReferences() {
-	s.Assert().Equal(s.refs, s.cfg.ResolveReferences())
+	s.Assert().ElementsMatch(s.refs, s.cfg.ResolveReferences())
 }
 
 func TestConfig(t *testing.T) {
@@ -37,6 +37,11 @@ func TestConfig(t *testing.T) {
 				ConfigDiff,
 				ConfigMaintenanceTags,
 				ConfigVersion,
+				ConfigDomainMetadata,
+				ConfigReferenceDetails,
+				ConfigReferenceNeedData,
+				ConfigReferenceRiskData,
+				ConfigSurvivalRatioData,
 			},
 			cfg: ConfigVersion,
 		},

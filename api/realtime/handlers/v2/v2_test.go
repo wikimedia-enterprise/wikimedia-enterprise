@@ -25,6 +25,9 @@ func (s *v2TestSuite) SetupTest() {
 	os.Setenv("COGNITO_CLIENT_SECRET", "cg_sc")
 	os.Setenv("REDIS_ADDR", "addr")
 	os.Setenv("REDIS_PASSWORD", "pwd")
+	os.Setenv("SCHEMA_REGISTRY_URL", "localhost:22")
+	os.Setenv("ACCESS_MODEL", "")
+	os.Setenv("ACCESS_POLICY", "")
 
 	gin.SetMode(gin.TestMode)
 	s.router = gin.New()

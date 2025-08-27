@@ -1,0 +1,16 @@
+([]*parser.Image) (len=2) {
+  (*parser.Image)({
+    ContentUrl: (string) (len=87) "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Moz-cjk.png/220px-Moz-cjk.png",
+    AlternativeText: (string) (len=232) "(A screenshot of an old version of Firefox showing Big5, GB 2312, GBK, GB 18030, HZ, ISO-2022-CN, Big5-HKSCS, EUC-TW, EUC-JP, ISO-2022-JP, Shift_JIS, EUC-KR, UHC, Johab and ISO-2022-KR as available encodings under the CJK sub-menu.)",
+    Caption: (string) (len=178) "Various ISO 2022 and other CJK encodings supported by Mozilla Firefox as of 2004. (This support has been reduced in later versions to avoid certain cross site scripting attacks.)",
+    Height: (int) 220,
+    Width: (int) 220
+  }),
+  (*parser.Image)({
+    ContentUrl: (string) (len=111) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ecma43_versus_EUC.svg/220px-Ecma43_versus_EUC.svg.png",
+    AlternativeText: (string) "",
+    Caption: (string) (len=73) "Relationship between ECMA-43 (ISO/IEC 4873) editions and levels, and EUC.",
+    Height: (int) 220,
+    Width: (int) 220
+  })
+}

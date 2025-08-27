@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"strconv"
 	"wikimedia-enterprise/api/auth/config/env"
-	"wikimedia-enterprise/general/httputil"
-	"wikimedia-enterprise/general/log"
+	"wikimedia-enterprise/api/auth/submodules/httputil"
+	"wikimedia-enterprise/api/auth/submodules/log"
 
 	"github.com/gin-gonic/gin"
 	"github.com/go-redis/redis/v8"
@@ -24,12 +24,21 @@ type Parameters struct {
 
 // Response structure represents response data format.
 type Response struct {
-	Groups        []string         `json:"groups"`
-	RequestsCount int              `json:"requests_count"`
-	DownloadLimit int              `json:"download_limit"`
-	Username      string           `json:"username"`
-	Apis          []env.AccessPath `json:"apis"`
+	Groups                []string         `json:"groups"`
+	OndemandRequestsCount int              `json:"ondemand_requests_count"`
+	OndemandLimit         int              `json:"ondemand_limit"`
+	SnapshotRequestsCount int              `json:"snapshot_requests_count"`
+	SnapshotLimit         int              `json:"snapshot_limit"`
+	ChunkRequestsCount    int              `json:"chunk_requests_count"`
+	ChunkLimit            int              `json:"chunk_limit"`
+	Username              string           `json:"username"`
+	Apis                  []env.AccessPath `json:"apis"`
 }
+
+var (
+	// Here, "internal" means the error is on our side (Wikimedia Enterprise), not necessarily in the auth API server.
+	internalErr = errors.New("Internal error, please try again later.")
+)
 
 // NewHandler creates new getuser HTTP handler.
 func NewHandler(p *Parameters) gin.HandlerFunc {
@@ -56,16 +65,42 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 			return
 		}
 
-		rqc, err := p.Redis.Get(
+		ondemandCount, err := p.Redis.Get(
 			gcx,
 			fmt.Sprintf("cap:ondemand:user:%s:count", usr.Username),
 		).Int()
 
 		if err == redis.Nil {
-			rqc = 0
+			ondemandCount = 0
 		} else if err != nil {
-			log.Error(err, log.Tip("problem getting user from redis"))
-			httputil.InternalServerError(gcx, err)
+			log.Error(err, log.Tip("problem getting ondemand count"))
+			httputil.InternalServerError(gcx, internalErr)
+			return
+		}
+
+		snapshotCount, err := p.Redis.Get(
+			gcx,
+			fmt.Sprintf("cap:snapshot:user:%s:count", usr.Username),
+		).Int()
+
+		if err == redis.Nil {
+			snapshotCount = 0
+		} else if err != nil {
+			log.Error(err, log.Tip("problem getting snapshot count"))
+			httputil.InternalServerError(gcx, internalErr)
+			return
+		}
+
+		chunkReqCount, err := p.Redis.Get(
+			gcx,
+			fmt.Sprintf("cap:chunk:user:%s:count", usr.Username),
+		).Int()
+
+		if err == redis.Nil {
+			chunkReqCount = 0
+		} else if err != nil {
+			log.Error(err, log.Tip("problem getting chunks count"))
+			httputil.InternalServerError(gcx, internalErr)
 			return
 		}
 
@@ -84,14 +119,21 @@ func NewHandler(p *Parameters) gin.HandlerFunc {
 			aps = append(aps, p.Env.AccessPolicy.Map["*"]...)
 		}
 
-		dwl, _ := strconv.Atoi(p.Env.GroupDownloadLimit)
+		ondemandLimit, _ := strconv.Atoi(p.Env.OndemandLimit)
+		snapshotLimit, _ := strconv.Atoi(p.Env.SnapshotLimit)
+		chunkLimit, _ := strconv.Atoi(p.Env.ChunkLimit)
 
 		r := new(Response)
 		r.Username = usr.Username
 		r.Groups = gps
-		r.RequestsCount = rqc
+		r.OndemandRequestsCount = ondemandCount
+		r.SnapshotRequestsCount = snapshotCount
+		r.ChunkRequestsCount = chunkReqCount
+		r.OndemandLimit = ondemandLimit
+		r.SnapshotLimit = snapshotLimit
+		r.ChunkLimit = chunkLimit
 		r.Apis = aps
-		r.DownloadLimit = dwl
+
 		gcx.JSON(http.StatusOK, r)
 	}
 }

@@ -1,0 +1,451 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=18) "Infobox television",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) (len=21) "Monday Night Football",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=10) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=148) "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/ESPN_NFL_Monday_Night_Football_logo_2023.jpg/220px-ESPN_NFL_Monday_Night_Football_logo_2023.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 220,
+                Width: (int) 220
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Also known as",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=3) {
+              (string) (len=59) "  - ABC Monday Night Football (1970–2005, 2016–present)",
+              (string) (len=47) "  - ESPN Monday Night Football (2006–present)",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Genre",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "NFL game telecasts",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=82) "https://en.wikipedia.org/wiki/National_Football_League_on_United_States_television",
+                Text: (string) (len=18) "NFL game telecasts",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Created by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Roone Arledge",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Roone_Arledge",
+                Text: (string) (len=13) "Roone Arledge",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Directed by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=176) "Chet Forte (1970–1986) Larry Kamm (1987) Craig Janoff (1988–1999) Drew Esocoff (2000–2005) Chip Dean (2006–2018) Jimmy Platt (2019–2022) Derek Mobley (2023–present)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Chet_Forte",
+                Text: (string) (len=10) "Chet Forte",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Drew_Esocoff",
+                Text: (string) (len=12) "Drew Esocoff",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Presented by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=296) "Commentators: Joe Buck Troy Aikman Chris Fowler (select games) Louis Riddick (select games) Dan Orlovsky (select games) Peyton Manning and Eli Manning (ESPN2) Reporters: Lisa Salters (lead sideline) Laura Rutledge (sideline, select games) Michelle Beisner-Buck (feature) Rules Analyst: John Parry",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=11) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Joe_Buck",
+                Text: (string) (len=8) "Joe Buck",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Troy_Aikman",
+                Text: (string) (len=11) "Troy Aikman",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Chris_Fowler",
+                Text: (string) (len=12) "Chris Fowler",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Louis_Riddick",
+                Text: (string) (len=13) "Louis Riddick",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Dan_Orlovsky",
+                Text: (string) (len=12) "Dan Orlovsky",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Peyton_Manning",
+                Text: (string) (len=14) "Peyton Manning",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Eli_Manning",
+                Text: (string) (len=11) "Eli Manning",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Lisa_Salters",
+                Text: (string) (len=12) "Lisa Salters",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Laura_Rutledge",
+                Text: (string) (len=14) "Laura Rutledge",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Michelle_Beisner-Buck",
+                Text: (string) (len=21) "Michelle Beisner-Buck",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=69) "https://en.wikipedia.org/wiki/John_Parry_(American_football_official)",
+                Text: (string) (len=10) "John Parry",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Opening theme",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=6) {
+              (string) (len=39) "  - \"Score\" by Bob's Band (1970–1975)",
+              (string) (len=99) "  - \"All My Rowdy Friends Are Here on Monday Night\" by Hank Williams Jr. (1989–2010; 2017–2019)",
+              (string) (len=150) "  - \"Heavy Action\" by Johnny Pearson (1976–1988; 2011–2017, 2022–2023; used as secondary theme from 1989 to 2011, 2017-2021, and 2023–present)",
+              (string) (len=67) "  - \"Rip It Up\" by Little Richard feat. Butcher Brown (2019–2021)",
+              (string) (len=118) "  - \"In The Air Tonight\" by Phil Collins feat. Chris Stapleton, Cindy Blackman Santana and Snoop Dogg (2023–present)",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=17) "Country of origin",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "United States",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "No. of seasons",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "54 (NFL seasons)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "No. of episodes",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "718 (games)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=10) "Production",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=6) {
+          (*parser.Part)({
+            Name: (string) (len=18) "Executive producer",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=2) {
+              (string) (len=37) "  - Norby Williamson (2006–present)",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Producers",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=5) {
+              (string) (len=16) "  - Steve Ackels",
+              (string) (len=15) "  - Roger Lewin",
+              (string) (len=15) "  - Jay Rothman",
+              (string) (len=16) "  - Lisa Salters",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=20) "Production locations",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=90) "Various NFL stadiums (game telecasts) ESPN Studios, Bristol, Connecticut (studio segments)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=79) "https://en.wikipedia.org/wiki/List_of_current_National_Football_League_stadiums",
+                Text: (string) (len=20) "Various NFL stadiums",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Bristol,_Connecticut",
+                Text: (string) (len=20) "Bristol, Connecticut",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=63) "https://en.wikipedia.org/wiki/Monday_Night_Football#cite_note-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Camera setup",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Multi-camera",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Multi-camera_setup",
+                Text: (string) (len=12) "Multi-camera",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Running time",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "3–4 hours",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=20) "Production companies",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=4) {
+              (string) (len=28) "  - National Football League",
+              (string) (len=28) "  - ABC Sports (1970–2005)",
+              (string) (len=25) "  - ESPN (2006–present)",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=16) "Original release",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) (len=7) "Network",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=5) {
+              (string) (len=52) "  - ABC (1970–2005; 2016–present[lower-alpha 1])",
+              (string) (len=25) "  - ESPN (2006–present)",
+              (string) (len=41) "  - ESPN2 (2020–present[lower-alpha 2])",
+              (string) (len=41) "  - ESPN+ (2021–present[lower-alpha 3])",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Release",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=30) "September 21, 1970 – present",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=7) "Related",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=33) "Monday Night Countdown NFL on ABC",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Monday_Night_Countdown",
+                Text: (string) (len=22) "Monday Night Countdown",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/NFL_on_ABC",
+                Text: (string) (len=10) "NFL on ABC",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

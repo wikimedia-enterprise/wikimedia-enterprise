@@ -90,17 +90,19 @@ func (t *Topics) GetNames(dtb string, nid int) ([]string, error) {
 	return nms, nil
 }
 
-// GetNameByEventType returns topic name by project identifier, event type and version
-func (t *Topics) GetNameByEventType(dtb string, evt string, vrs string) string {
-	switch dtb {
+// GetNameByEventType returns topic name by project identifier, event type and version.
+func (t *Topics) GetNameByEventType(db string, evt string, vrs string) string {
+	switch db {
 	case "commonswiki":
 		return fmt.Sprintf("%s.%s.commons-%s.%s", t.Location, t.ServiceName, evt, vrs)
 	default:
-		return fmt.Sprintf("%s.%s.articles-%s.%s", t.Location, t.ServiceName, evt, vrs)
+		// For all text-based projects
+		return fmt.Sprintf("%s.%s.article-%s.%s", t.Location, t.ServiceName, evt, vrs)
 	}
 }
 
-func (t *Topics) GetNamesByEvent(dtb string, evt string) []string {
+// GetNamesByEventType returns topic name by project identifier, event type and version.
+func (t *Topics) GetNamesByEventType(dtb string, evt string) []string {
 	nms := []string{}
 
 	for _, vrs := range t.Versions {

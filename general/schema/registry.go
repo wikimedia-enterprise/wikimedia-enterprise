@@ -7,6 +7,7 @@ import (
 	"errors"
 	"fmt"
 	"io"
+	"log"
 	"net/http"
 	"strconv"
 	"sync"
@@ -47,6 +48,11 @@ type SubjectCreator interface {
 	CreateSubject(ctx context.Context, name string, subject *Subject) (*Schema, error)
 }
 
+// StoredSubjectGetter is the interface to wrap default GetStoredSubject method for unit testing.
+type StoredSubjectGetter interface {
+	GetStoredSubject(ctx context.Context, name string, subject *Subject) (*Schema, error)
+}
+
 // BySubjectGetter is the interface to wrap default GetBySubject method for unit testing.
 type BySubjectGetter interface {
 	GetBySubject(ctx context.Context, name string, versions ...int) (*Schema, error)
@@ -60,8 +66,9 @@ type ByIdGetter interface {
 // GetterCreator wraps all methods of the schema under single interface for unit testing.
 type GetterCreator interface {
 	SubjectCreator
-	ByIdGetter
+	StoredSubjectGetter
 	BySubjectGetter
+	ByIdGetter
 }
 
 // BasicAuth struct to pass authentication to schema registry.
@@ -184,6 +191,7 @@ func (r *Registry) req(ctx context.Context, method string, endpoint string, payl
 
 // CreateSubject create new schema subject by name.
 func (r *Registry) CreateSubject(ctx context.Context, name string, subject *Subject) (*Schema, error) {
+	// Documentation: https://docs.confluent.io/platform/current/schema-registry/develop/api.html#post--subjects-(string-%20subject)-versions
 	res, err := r.req(ctx, http.MethodPost, fmt.Sprintf("subjects/%s/versions", name), subject)
 
 	if err != nil {
@@ -196,6 +204,26 @@ func (r *Registry) CreateSubject(ctx context.Context, name string, subject *Subj
 	if err := json.NewDecoder(res.Body).Decode(sch); err != nil {
 		return nil, err
 	}
+	log.Printf("response from CreateSubject(%s): %+v", name, sch)
+
+	return sch, nil
+}
+
+func (r *Registry) GetStoredSubject(ctx context.Context, name string, subject *Subject) (*Schema, error) {
+	// Documentation: https://docs.confluent.io/platform/current/schema-registry/develop/api.html#post--subjects-(string-%20subject)
+	res, err := r.req(ctx, http.MethodPost, fmt.Sprintf("subjects/%s", name), subject)
+
+	if err != nil {
+		return nil, err
+	}
+
+	defer res.Body.Close()
+	sch := new(Schema)
+
+	if err := json.NewDecoder(res.Body).Decode(sch); err != nil {
+		return nil, err
+	}
+	log.Printf(`response from GetCreatedSubject(%s): %+v`, name, sch)
 
 	return sch, nil
 }
@@ -203,6 +231,7 @@ func (r *Registry) CreateSubject(ctx context.Context, name string, subject *Subj
 // GetBySubject get particular version of the schema by subject and version.
 // If no version argument is provided then gets the latest version.
 func (r *Registry) GetBySubject(ctx context.Context, name string, versions ...int) (*Schema, error) {
+	// Documentation: https://docs.confluent.io/platform/current/schema-registry/develop/api.html#get--subjects-(string-%20subject)-versions-(versionId-%20version)
 	version := "latest"
 
 	if len(versions) > 0 {

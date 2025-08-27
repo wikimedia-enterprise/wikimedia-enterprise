@@ -5,9 +5,9 @@ import (
 	"errors"
 	"testing"
 	"time"
-	"wikimedia-enterprise/general/schema"
 	"wikimedia-enterprise/services/content-integrity/config/env"
 	"wikimedia-enterprise/services/content-integrity/libraries/collector"
+	"wikimedia-enterprise/services/content-integrity/submodules/schema"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/stretchr/testify/mock"

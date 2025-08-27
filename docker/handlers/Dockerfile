@@ -1,10 +1,10 @@
 ###############
 # Build stage #
 ###############
-FROM golang:1.19 AS builder
+FROM golang:1.22 AS builder
 
-# source to build as an argument, for shared CI/CD
-ARG SOURCE_DIR=null
+# handler to build as an argument, for shared CI/CD
+ARG HANDLER=null
 
 # Switch to /app dir
 WORKDIR /app
@@ -17,7 +17,7 @@ RUN go mod download
 COPY . .
 
 # Build the binary
-RUN go build -o main ${SOURCE_DIR}/*.go
+RUN if [ -n "${HANDLER}" ] && [ "${HANDLER}" != "null" ]; then go build -o main handlers/${HANDLER}/*.go; else go build -o main *.go; fi
 
 #############
 # Run stage #
@@ -46,7 +46,7 @@ WORKDIR /home/${USERNAME}
 COPY --from=builder /app/main ./
 
 # Copy startup script which will dynamically add custom truststore if INTERNAL_ROOT_CA_PEM env var is set
-COPY ./docker/handlers/start.sh ./
+COPY ./submodules/cdtools/docker/handlers/start.sh ./
 
 # Set the binary as the CMD of the container
 CMD ["./start.sh"]

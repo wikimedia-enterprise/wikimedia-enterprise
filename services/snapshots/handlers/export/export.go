@@ -10,23 +10,26 @@ import (
 	"errors"
 	"fmt"
 	"hash"
-	"log"
 	"runtime"
 	"strconv"
+	"strings"
 	"sync"
 	"time"
 
-	"wikimedia-enterprise/general/config"
-	"wikimedia-enterprise/general/schema"
 	"wikimedia-enterprise/services/snapshots/config/env"
 	pb "wikimedia-enterprise/services/snapshots/handlers/protos"
 	libkafka "wikimedia-enterprise/services/snapshots/libraries/kafka"
 	"wikimedia-enterprise/services/snapshots/libraries/s3tracerproxy"
 	"wikimedia-enterprise/services/snapshots/libraries/uploader"
+	"wikimedia-enterprise/services/snapshots/submodules/config"
+	"wikimedia-enterprise/services/snapshots/submodules/log"
+	"wikimedia-enterprise/services/snapshots/submodules/schema"
 
 	nbf "github.com/djherbis/buffer"
 	"github.com/djherbis/nio/v3"
 	"github.com/klauspost/pgzip"
+	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/promauto"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/s3"
@@ -36,10 +39,40 @@ import (
 	"go.uber.org/dig"
 )
 
+var (
+	// "ns": namespace. "namespace" already exists as a label.
+	// "type": one of "snapshots", "structured-snapshots" or "batches".
+	commonLabels             = []string{"project", "ns", "type"}
+	snapshotSizeBytesCounter = promauto.NewCounterVec(prometheus.CounterOpts{
+		Name: "snapshot_size_bytes",
+		Help: "The size of generated snapshots",
+	}, append(commonLabels, "has_errors", "partitions"))
+	snapshotArticlesCounter = promauto.NewCounterVec(prometheus.CounterOpts{
+		Name: "snapshot_articles",
+		Help: "The number of articles in generated snapshots",
+	}, append(commonLabels, "has_errors", "partitions"))
+	snapshotErrorsCounter = promauto.NewCounterVec(prometheus.CounterOpts{
+		Name: "snapshot_errors",
+		Help: "The number of errors encountered in generated snapshots",
+	}, commonLabels)
+	snapshotTimeSeconds = promauto.NewHistogramVec(prometheus.HistogramOpts{
+		Name:    "snapshot_time_seconds_v2",
+		Help:    "The time it took to generate a given snapshot",
+		Buckets: prometheus.ExponentialBuckets(1, 2, 14), // 14 buckets, 1s to ~8192s (~2.2h)
+	}, append(commonLabels, "has_errors", "partitions"))
+	snapshotMessagesProcessedCounter = promauto.NewCounterVec(prometheus.CounterOpts{
+		Name: "snapshot_messages_processed",
+		Help: "The number of messages processed when generating snapshots, updated in real time",
+	}, commonLabels)
+)
+
 // ErrEndMessage represents an error when we reached end of messages.
 var ErrEndMessage = errors.New("end message")
 
-const numExportWorkers = 4
+const (
+	numExportWorkers = 4
+	maxBatchSize     = 1000
+)
 
 type buffer struct {
 	name string
@@ -70,19 +103,19 @@ func (b *buffer) len() int {
 	return len(b.data)
 }
 
-// counter is a struct that contains the counter.
-type counter struct {
-	itr int
+// Counter is a struct that contains the counter.
+type Counter struct {
+	Itr int
 	mtx sync.Mutex
 }
 
 // get will return the next value of the counter.
-func (c *counter) get() int {
+func (c *Counter) get() int {
 	c.mtx.Lock()
 	defer c.mtx.Unlock()
-	c.itr++
+	c.Itr++
 
-	return c.itr
+	return c.Itr
 }
 
 // HashReader is a reader that will read from pipe and write to hash.
@@ -128,7 +161,7 @@ type ChunkOptions struct {
 	Ctx     context.Context
 	Request *pb.ExportRequest
 	Key     string
-	Counter *counter
+	Counter *Counter
 }
 
 // Chunks is a struct that contains all the chunks.
@@ -161,17 +194,20 @@ func (h *Handler) Export(ctx context.Context, req *pb.ExportRequest) (*pb.Export
 		return nil, err
 	}
 
+	labelValues := []string{req.GetProject(), fmt.Sprintf("%d", req.GetNamespace()), req.GetPrefix()}
+
 	idr := fmt.Sprintf("%s_namespace_%d", req.GetProject(), req.GetNamespace())
+	idrField := log.Any("idr", idr)
 	str := time.Now().UTC()
-	ers := make(chan error, numExportWorkers)
+	exportErrors := make(chan error, numExportWorkers)
 	bfs := make(chan *buffer, 1)
 	pbf := nbf.New(int64(h.Env.PipeBufferSize))
 	prr, pwr := nio.Pipe(pbf)
 	hrr := &HashReader{PipeReader: prr}
 
 	// Chunking initialize
-	ncg := h.Env.ChunkWorkers
-	ecg := make(chan error, ncg)
+	numChunkWorkers := h.Env.ChunkWorkers
+	chunkErrors := make(chan error, numChunkWorkers)
 	cuf := make(chan *buffer, 1)
 	var opt ChunkOptions
 	chunks := NewChunks()
@@ -182,19 +218,24 @@ func (h *Handler) Export(ctx context.Context, req *pb.ExportRequest) (*pb.Export
 			Ctx:     ctx,
 			Request: req,
 			Key:     idr,
-			Counter: &counter{itr: -1},
+			Counter: &Counter{Itr: -1},
 		}
 
-		for i := 0; i < ncg; i++ {
+		h.CleanupChunks(ctx, idr)
+
+		log.Info("finished cleaning up existing chunks", idrField)
+
+		for i := 0; i < numChunkWorkers; i++ {
 			go func() {
 				for buf := range cuf {
-					log.Printf("started chunking for id: `%s`\n", buf.name)
+					chunkField := log.Any("chunk", buf.name)
+					log.Info("started chunking", chunkField, idrField)
 
 					// Write to chunk file (Tar -> Gzip -> Hash -> upload -> S3)
-					cnm, err := h.handleChunk(buf.data, &opt)
+					cnm, err := h.HandleChunk(buf.data, &opt)
 					if err != nil {
-						ecg <- err
-						log.Printf("failed chunking for id: `%s`\n", buf.name)
+						chunkErrors <- err
+						log.Error("failed chunking", chunkField, idrField)
 						return
 					}
 
@@ -202,28 +243,28 @@ func (h *Handler) Export(ctx context.Context, req *pb.ExportRequest) (*pb.Export
 					chunks.data = append(chunks.data, *cnm)
 					chunks.mu.Unlock()
 
-					log.Printf("completed chunking for id: `%s`\n", buf.name)
+					log.Info("completed chunking", chunkField, idrField)
 				}
 
-				ecg <- nil
+				chunkErrors <- nil
 			}()
 		}
 	}
 
 	go func() {
-		log.Printf("starting gzip go routine for id: `%s`\n", idr)
+		log.Info("starting gzip go routine", idrField)
 
 		gzw := pgzip.NewWriter(pwr)
 
 		if err := gzw.SetConcurrency(1<<20, runtime.NumCPU()*2); err != nil {
-			ers <- err
+			exportErrors <- err
 			return
 		}
 
 		trw := tar.NewWriter(gzw)
 
 		for buf := range bfs {
-			log.Printf("processing buffer for id: `%s` with the name: `%s` and length: `%d`\n", idr, buf.name, buf.len())
+			log.Info("processing buffer", idrField, log.Any("buffer", buf.name), log.Any("length", buf.len()))
 
 			if buf.len() == 0 {
 				continue
@@ -241,17 +282,17 @@ func (h *Handler) Export(ctx context.Context, req *pb.ExportRequest) (*pb.Export
 			}
 
 			if err := trw.WriteHeader(hdr); err != nil {
-				ers <- err
+				exportErrors <- err
 				return
 			}
 
 			if _, err := trw.Write(buf.data); err != nil {
-				ers <- err
+				exportErrors <- err
 				return
 			}
 
 			if err := trw.Flush(); err != nil {
-				ers <- err
+				exportErrors <- err
 				return
 			}
 
@@ -262,20 +303,21 @@ func (h *Handler) Export(ctx context.Context, req *pb.ExportRequest) (*pb.Export
 		_ = trw.Close()
 		_ = gzw.Close()
 		_ = pwr.Close()
-		//close(ecg)
 
-		ers <- nil
-		log.Printf("gzip go routine has finished for id: `%s`\n", idr)
+		exportErrors <- nil
+		log.Info("gzip go routine has finished", idrField)
 	}()
 
-	bir := getSinceName(req, h.Env.Prefix, idr)
+	bir := getSinceName(req, idr)
+	filename := fmt.Sprintf("%s/%s.tar.gz", req.GetPrefix(), bir)
+	metadataFilename := fmt.Sprintf("%s/%s.json", req.GetPrefix(), bir)
 
 	go func() {
-		log.Printf("starting upload go routine for id: `%s`\n", idr)
+		log.Info("starting upload go routine", idrField)
 		uin := &s3manager.UploadInput{
 			Body:    hrr,
 			Bucket:  aws.String(h.Env.AWSBucket),
-			Key:     aws.String(fmt.Sprintf("%s/%s.tar.gz", req.GetPrefix(), bir)),
+			Key:     aws.String(filename),
 			Tagging: aws.String(fmt.Sprintf("type=%s", req.Prefix)),
 		}
 		opt := func(upl *s3manager.Uploader) {
@@ -284,44 +326,67 @@ func (h *Handler) Export(ctx context.Context, req *pb.ExportRequest) (*pb.Export
 		}
 
 		_, err := h.Uploader.Upload(uin, opt)
-		ers <- err
-		log.Printf("upload go routine has finished for id: `%s`\n", idr)
+		exportErrors <- err
+		log.Info("upload go routine has finished", idrField)
 	}()
 
 	res := new(pb.ExportResponse)
 	mgs := make(chan *kafka.Message, h.Env.MessagesChannelCap)
-	ctr := &counter{itr: -1}
+	ctr := &Counter{Itr: -1}
 
 	go func() {
-		log.Printf("starting buffers go routine for id: `%s`\n", idr)
+		log.Info("starting buffers go routine", idrField)
 
 		buf := newBuffer(idr, ctr.get()) // create a new empty buffer
 
 		for msg := range mgs {
 			res.Total++
+			snapshotMessagesProcessedCounter.WithLabelValues(labelValues...).Inc()
 
 			var dta []byte
 			var err error
 
 			unmarshal := func(msgValue []byte, target interface{}) error {
 				if err := h.Stream.Unmarshal(ctx, msgValue, target); err != nil {
-					log.Printf("avro unmarshal error for id: `%s` with offset: `%d` with error: `%v`\n", idr, msg.TopicPartition.Offset, err)
+					log.Error("avro unmarshal error", idrField, log.Any("partition", msg.TopicPartition.Partition), log.Any("offset", msg.TopicPartition.Offset), log.Any("error", err))
 					res.Errors++
 					return err
 				}
 				return nil
 			}
 
-			art := new(schema.Article)
-			if err = unmarshal(msg.Value, art); err != nil {
-				continue
-			}
+			switch req.GetType() {
+			case schema.KeyTypeStructured:
+				std := new(schema.AvroStructured)
+				if err = unmarshal(msg.Value, std); err != nil {
+					continue
+				}
 
-			if excludeEvent(art.Event, req.ExcludeEvents) {
-				continue
-			}
+				if excludeEvent(std.Event, req.ExcludeEvents) {
+					continue
+				}
 
-			dta, err = json.Marshal(art)
+				var jst *schema.Structured
+				jst, err = std.ToJsonStruct()
+				if err != nil {
+					log.Error("json marshal error", idrField, log.Any("partition", msg.TopicPartition.Partition), log.Any("offset", msg.TopicPartition.Offset), log.Any("error", err))
+					res.Errors++
+					continue
+				}
+
+				dta, err = json.Marshal(jst)
+			default:
+				art := new(schema.Article)
+				if err = unmarshal(msg.Value, art); err != nil {
+					continue
+				}
+
+				if excludeEvent(art.Event, req.ExcludeEvents) {
+					continue
+				}
+
+				dta, err = json.Marshal(art)
+			}
 
 			// Skip if the data is empty, example `{}`
 			if len(dta) <= 2 {
@@ -329,7 +394,7 @@ func (h *Handler) Export(ctx context.Context, req *pb.ExportRequest) (*pb.Export
 			}
 
 			if err != nil {
-				log.Printf("json marshal error for id: `%s` with offset: `%d` with error: `%v`\n", idr, msg.TopicPartition.Offset, err)
+				log.Error("json marshal error", idrField, log.Any("partition", msg.TopicPartition.Partition), log.Any("offset", msg.TopicPartition.Offset), log.Any("error", err))
 				res.Errors++
 				continue
 			}
@@ -345,14 +410,14 @@ func (h *Handler) Export(ctx context.Context, req *pb.ExportRequest) (*pb.Export
 		bfs <- buf //signal that we have more buffer to compress
 
 		close(bfs)
-		ers <- nil
-		log.Printf("finishing buffers go routine for id: `%s`\n", idr)
+		exportErrors <- nil
+		log.Info("finishing buffers go routine", idrField)
 	}()
 
+	pts := h.Cfg.GetPartitions(req.GetProject(), int(req.GetNamespace()))
 	go func() {
-		log.Printf("starting consumers go routine for id: `%s`\n", idr)
+		log.Info("starting consumers go routine", idrField)
 		cid := fmt.Sprintf("%s_%s", req.GetPrefix(), idr)
-		pts := h.Cfg.GetPartitions(req.GetProject(), int(req.GetNamespace()))
 		erp := make(chan error, len(pts))
 
 		// Create many go routines that consume messages from the kafka topic and push them to the mgs channel
@@ -366,17 +431,21 @@ func (h *Handler) Export(ctx context.Context, req *pb.ExportRequest) (*pb.Export
 				}
 
 				defer csr.Close()
+				var lastIncluded kafka.Offset
 				cbk := func(msg *kafka.Message) error {
 					if msg.Timestamp.After(str) {
-						log.Printf("finishing with the ErrEndMessage for id: `%s` with partition: `%v`\n", idr, pid)
+						log.Info("finishing with the ErrEndMessage", idrField, log.Any("partition", pid), log.Any("last_offset", lastIncluded))
 						return libkafka.ErrReadAllEndMessage
 					}
 
+					lastIncluded = msg.TopicPartition.Offset
 					mgs <- msg
 					return nil
 				}
 
-				erp <- csr.ReadAll(ctx, int(req.GetSince()), tpc, []int{pid}, cbk)
+				err = csr.ReadAll(ctx, int(req.GetSince()), tpc, pid, idr, cbk)
+				log.Info("finishing consumer go routine", idrField, log.Any("partition", pid), log.Any("last_offset", lastIncluded))
+				erp <- err
 			}(pts[i])
 		}
 
@@ -391,31 +460,31 @@ func (h *Handler) Export(ctx context.Context, req *pb.ExportRequest) (*pb.Export
 
 		close(mgs)
 		close(erp)
-		ers <- erm
-		log.Printf("finishing consumers go routine for id: `%s`\n", idr)
+		exportErrors <- erm
+		log.Info("finishing consumers go routine", idrField)
 	}()
 
-	// wait for all ers (main export) and ecg (chunk export) channels to finish, these are errors from the top-level go-routines
+	// wait for all exportErrors (main export) and chunkErrors (chunk export) channels to finish, these are errors from the top-level go-routines
 	for i := 0; i < numExportWorkers; i++ {
-		if err := <-ers; err != nil {
+		if err := <-exportErrors; err != nil {
 			return nil, err
 		}
 	}
 
-	close(ers)
+	close(exportErrors)
 
 	if req.EnableChunking {
 		for i := 0; i < h.Env.ChunkWorkers; i++ {
-			if err := <-ecg; err != nil {
+			if err := <-chunkErrors; err != nil {
 				return nil, err
 			}
 		}
-		close(ecg)
+		close(chunkErrors)
 	}
 
 	hin := &s3.HeadObjectInput{
 		Bucket: aws.String(h.Env.AWSBucket),
-		Key:    aws.String(fmt.Sprintf("%s/%s.tar.gz", req.GetPrefix(), bir)),
+		Key:    aws.String(filename),
 	}
 
 	hop, err := h.S3.HeadObjectWithContext(ctx, hin)
@@ -424,11 +493,20 @@ func (h *Handler) Export(ctx context.Context, req *pb.ExportRequest) (*pb.Export
 		return nil, err
 	}
 
-	sze, err := strconv.ParseFloat(fmt.Sprintf("%.3f", float64(*hop.ContentLength)/1000000), 64)
+	sizeString := fmt.Sprintf("%.3f", float64(*hop.ContentLength)/1000000)
+	sze, err := strconv.ParseFloat(sizeString, 64)
 
 	if err != nil {
 		return nil, err
 	}
+
+	log.Info("wrote snapshot", idrField, log.Any("file", filename), log.Any("size_mb", sizeString), log.Any("articles", res.Total), log.Any("errors", res.Errors))
+	hasErr := strconv.FormatBool(res.Errors > 0)
+	numPts := fmt.Sprintf("%d", len(pts))
+	snapshotSizeBytesCounter.WithLabelValues(append(labelValues, hasErr, numPts)...).Add(float64(*hop.ContentLength))
+	snapshotArticlesCounter.WithLabelValues(append(labelValues, hasErr, numPts)...).Add(float64(res.Total))
+	snapshotErrorsCounter.WithLabelValues(labelValues...).Add(float64(res.Errors))
+	snapshotTimeSeconds.WithLabelValues(append(labelValues, hasErr, numPts)...).Observe(float64(time.Since(str).Seconds()))
 
 	dateModified := time.Now().UTC()
 	snp := &schema.Snapshot{
@@ -458,9 +536,10 @@ func (h *Handler) Export(ctx context.Context, req *pb.ExportRequest) (*pb.Export
 	}
 
 	pin := &s3.PutObjectInput{
-		Bucket: aws.String(h.Env.AWSBucket),
-		Key:    aws.String(fmt.Sprintf("%s/%s.json", req.GetPrefix(), bir)),
-		Body:   bytes.NewReader(dta),
+		Bucket:  aws.String(h.Env.AWSBucket),
+		Key:     aws.String(metadataFilename),
+		Body:    bytes.NewReader(dta),
+		Tagging: aws.String(fmt.Sprintf("type=%s", req.Prefix)),
 	}
 
 	if _, err := h.S3.PutObjectWithContext(ctx, pin); err != nil {
@@ -473,7 +552,7 @@ func (h *Handler) Export(ctx context.Context, req *pb.ExportRequest) (*pb.Export
 // handleChunk tars a bytes buffer and uploads as chunks/{snapshot_identifier}/{chunk_identifier}.tar.gz e.g., chunks/enwiki_namespace_0/chunk_2.tar.gz
 // Also uploads metadata as chunks/{snapshot_identifier}/{chunk_identifier}.json e.g., chunks/enwiki_namespace_0/chunk_2.json
 // It appends to a chunks slice by adding the chunks processed, if successful. Returns an error, if not.
-func (h *Handler) handleChunk(buf []byte, opts *ChunkOptions) (*string, error) {
+func (h *Handler) HandleChunk(buf []byte, opts *ChunkOptions) (*string, error) {
 	cid := fmt.Sprintf("chunk_%d", opts.Counter.get())
 
 	var compressedBuffer bytes.Buffer
@@ -515,9 +594,10 @@ func (h *Handler) handleChunk(buf []byte, opts *ChunkOptions) (*string, error) {
 	md5sum := fmt.Sprintf("%x", hash.Sum(nil))
 
 	pin := &s3.PutObjectInput{
-		Body:   bytes.NewReader(compressedBuffer.Bytes()),
-		Bucket: aws.String(h.Env.AWSBucket),
-		Key:    aws.String(fmt.Sprintf("%s/%s/%s.tar.gz", "chunks", opts.Key, cid)),
+		Body:    bytes.NewReader(compressedBuffer.Bytes()),
+		Bucket:  aws.String(h.Env.AWSBucket),
+		Key:     aws.String(fmt.Sprintf("%s/%s/%s.tar.gz", "chunks", opts.Key, cid)),
+		Tagging: aws.String(fmt.Sprintf("type=%s_chunks", opts.Request.Prefix)),
 	}
 
 	if _, err := h.S3.PutObjectWithContext(opts.Ctx, pin); err != nil {
@@ -557,9 +637,10 @@ func (h *Handler) handleChunk(buf []byte, opts *ChunkOptions) (*string, error) {
 	}
 
 	metadataPin := &s3.PutObjectInput{
-		Bucket: aws.String(h.Env.AWSBucket),
-		Key:    aws.String(fmt.Sprintf("%s/%s/%s.json", "chunks", opts.Key, cid)),
-		Body:   bytes.NewReader(dta),
+		Bucket:  aws.String(h.Env.AWSBucket),
+		Key:     aws.String(fmt.Sprintf("%s/%s/%s.json", "chunks", opts.Key, cid)),
+		Body:    bytes.NewReader(dta),
+		Tagging: aws.String(fmt.Sprintf("type=%s_chunks", opts.Request.Prefix)),
 	}
 
 	if _, err := h.S3.PutObjectWithContext(opts.Ctx, metadataPin); err != nil {
@@ -583,14 +664,86 @@ func excludeEvent(event *schema.Event, excludeEvents []string) bool {
 }
 
 // getSinceName returns the batches key, if Since is set in request parameter
-func getSinceName(req *pb.ExportRequest, prefix, name string) string {
-	if req.GetSince() > 0 && req.GetPrefix() != prefix {
+func getSinceName(req *pb.ExportRequest, name string) string {
+	if req.GetSince() > 0 && req.GetPrefix() == "batches" {
+		if req.GetEnableNonCumulativeBatches() {
+			// Include the hour in the path.
+			return fmt.Sprintf(
+				"%s/%s",
+				time.Unix(0, req.GetSince()*int64(time.Millisecond)).UTC().Format("2006-01-02/15"),
+				name,
+			)
+		}
+
 		return fmt.Sprintf(
 			"%s/%s",
-			time.Unix(0, req.GetSince()*int64(time.Millisecond)).Format("2006-01-02"),
+			time.Unix(0, req.GetSince()*int64(time.Millisecond)).UTC().Format("2006-01-02"),
 			name,
 		)
 	}
 
 	return name
+}
+
+// CleanupChunks deletes chunks from S3, ignoring keys that contain "group_1"
+func (h *Handler) CleanupChunks(ctx context.Context, key string) {
+	prefix := fmt.Sprintf("chunks/%s/", key)
+
+	input := &s3.ListObjectsV2Input{
+		Bucket: aws.String(h.Env.AWSBucket),
+		Prefix: aws.String(prefix),
+	}
+
+	var objectsToDelete []*s3.ObjectIdentifier
+
+	err := h.S3.ListObjectsV2PagesWithContext(ctx, input, func(page *s3.ListObjectsV2Output, lastPage bool) bool {
+		for _, obj := range page.Contents {
+			if strings.Contains(*obj.Key, fmt.Sprintf("_%s.", h.Env.FreeTierGroup)) {
+				continue
+			}
+
+			if strings.HasSuffix(*obj.Key, ".tar.gz") || strings.HasSuffix(*obj.Key, ".json") {
+				objectsToDelete = append(objectsToDelete, &s3.ObjectIdentifier{
+					Key: obj.Key,
+				})
+			}
+		}
+		return !lastPage
+	})
+
+	if err != nil {
+		log.Error("error listing objects for cleanup", log.Any("error", err))
+		return
+	}
+
+	if len(objectsToDelete) == 0 {
+		return
+	}
+
+	// Delete in batches of 1000 which is the maximum AWS allows for batch delete
+	for i := 0; i < len(objectsToDelete); i += maxBatchSize {
+		end := i + maxBatchSize
+		if end > len(objectsToDelete) {
+			end = len(objectsToDelete)
+		}
+
+		batch := objectsToDelete[i:end]
+
+		deleteInput := &s3.DeleteObjectsInput{
+			Bucket: aws.String(h.Env.AWSBucket),
+			Delete: &s3.Delete{
+				Objects: batch,
+				Quiet:   aws.Bool(true),
+			},
+		}
+
+		if _, err := h.S3.DeleteObjectsWithContext(ctx, deleteInput); err != nil {
+			log.Error(
+				"error deleting chunk batch",
+				log.Any("error", err),
+				log.Any("chunk", key),
+			)
+			continue
+		}
+	}
 }

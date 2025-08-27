@@ -1,0 +1,356 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=16) "Infobox language",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) (len=8) "Scythian",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=7) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=86) "The approximate distribution of Eastern Iranian languages in 100 BC appears in orange.",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=117) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Scythia-Parthia_100_BC.png/200px-Scythia-Parthia_100_BC.png",
+                AlternativeText: (string) "",
+                Caption: (string) (len=86) "The approximate distribution of Eastern Iranian languages in 100 BC appears in orange.",
+                Height: (int) 200,
+                Width: (int) 200
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Eastern_Iranian_languages",
+                Text: (string) (len=25) "Eastern Iranian languages",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Native to",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=48) "Sarmatia, Scythia, Sistan, Scythia Minor, Alania",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=6) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Sarmatia",
+                Text: (string) (len=8) "Sarmatia",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Scythia",
+                Text: (string) (len=7) "Scythia",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Sistan",
+                Text: (string) (len=6) "Sistan",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Scythia_Minor_(Crimea)",
+                Text: (string) (len=7) "Scythia",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Scythia_Minor_(Dobruja)",
+                Text: (string) (len=5) "Minor",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Alania",
+                Text: (string) (len=6) "Alania",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Region",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=28) "Central Asia, Eastern Europe",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Central_Asia",
+                Text: (string) (len=12) "Central Asia",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Eastern_Europe",
+                Text: (string) (len=14) "Eastern Europe",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Ethnicity",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=32) "Scythians, Sarmatians, and Alans",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Scythians",
+                Text: (string) (len=9) "Scythians",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Sarmatians",
+                Text: (string) (len=10) "Sarmatians",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Alans",
+                Text: (string) (len=5) "Alans",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=3) "Era",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=35) "Classical antiquity, late antiquity",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Classical_antiquity",
+                Text: (string) (len=19) "Classical antiquity",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Late_antiquity",
+                Text: (string) (len=14) "late antiquity",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Language family",
+            Type: (string) (len=4) "list",
+            Value: (string) (len=13) "Indo-European",
+            Values: ([]string) (len=2) {
+              (string) (len=12) "  - Scythian",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Language_family",
+                Text: (string) (len=15) "Language family",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Indo-European_languages",
+                Text: (string) (len=13) "Indo-European",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Dialects",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=5) {
+              (string) (len=17) "  - Cimmerian †",
+              (string) (len=12) "  - Ossetian",
+              (string) (len=9) "  - Wakhi",
+              (string) (len=12) "  - Yaghnobi",
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=14) "Language codes",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) (len=9) "ISO 639-3",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=64) "Variously: xsc – Scythian xln – Alanian oos – Old Ossetian",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/ISO_639-3",
+                Text: (string) (len=9) "ISO 639-3",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=33) "https://iso639-3.sil.org/code/xsc",
+                Text: (string) (len=3) "xsc",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=33) "https://iso639-3.sil.org/code/xln",
+                Text: (string) (len=3) "xln",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=33) "https://iso639-3.sil.org/code/oos",
+                Text: (string) (len=3) "oos",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Linguist List",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "xsc Scythian",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Linguist_List",
+                Text: (string) (len=13) "Linguist List",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=30) "http://multitree.org/codes/xsc",
+                Text: (string) (len=3) "xsc",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "xln Alanian",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=30) "http://multitree.org/codes/xln",
+                Text: (string) (len=3) "xln",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "oos Old Ossetian",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=30) "http://multitree.org/codes/oos",
+                Text: (string) (len=3) "oos",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Glottolog",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=20) "oldo1234 Old Ossetic",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Glottolog",
+                Text: (string) (len=9) "Glottolog",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "http://glottolog.org/resource/languoid/id/oldo1234",
+                Text: (string) (len=8) "oldo1234",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

@@ -1,7 +1,7 @@
 package builder
 
 import (
-	"wikimedia-enterprise/general/schema"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
 )
 
 // VersionBuilder implements the builder pattern for the version schema.

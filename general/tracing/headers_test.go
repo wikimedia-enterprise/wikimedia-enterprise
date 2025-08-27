@@ -12,7 +12,7 @@ import (
 // HeadersTestSuite tests the HeadersCarrier.
 type HeadersTestSuite struct {
 	suite.Suite
-	headers     *HeadersCarrier
+	headers *HeadersCarrier
 	spanContext trace.SpanContext
 }
 
@@ -20,9 +20,9 @@ type HeadersTestSuite struct {
 func (h *HeadersTestSuite) SetupSuite() {
 	h.headers = &HeadersCarrier{headers: map[string]string{}}
 	spanContext := trace.SpanContext{}
-	spanContext = spanContext.WithTraceID([16]byte{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16})
-	spanContext = spanContext.WithSpanID([8]byte{1, 2, 3, 4, 5, 6, 7, 8})
-	spanContext = spanContext.WithTraceFlags(trace.FlagsSampled)
+    spanContext = spanContext.WithTraceID([16]byte{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16})
+    spanContext = spanContext.WithSpanID([8]byte{1, 2, 3, 4, 5, 6, 7, 8})
+    spanContext = spanContext.WithTraceFlags(trace.FlagsSampled)
 	h.spanContext = spanContext
 }
 
@@ -49,7 +49,7 @@ func (h *HeadersTestSuite) TestInjectContext() {
 	h.Assert().NotNil(kafkaHeaders)
 	extractedCtx := propagators.Extract(context.Background(), hds)
 	extractedSpanContext := trace.SpanContextFromContext(extractedCtx)
-
+	
 	h.Assert().Equal(h.spanContext.TraceID(), extractedSpanContext.TraceID())
 	h.Assert().Equal(h.spanContext.TraceFlags(), extractedSpanContext.TraceFlags())
 }
@@ -64,3 +64,4 @@ func (h *HeadersTestSuite) TearDownSuite() {
 func TestHeaders(t *testing.T) {
 	suite.Run(t, new(HeadersTestSuite))
 }
+

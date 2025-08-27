@@ -1,0 +1,616 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=6) {
+      (*parser.Part)({
+        Name: (string) (len=11) "Mike Pompeo",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=125) "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Mike_Pompeo_official_photo.jpg/220px-Mike_Pompeo_official_photo.jpg",
+                AlternativeText: (string) (len=30) "Mike Pompeo official photo.jpg",
+                Caption: (string) "",
+                Height: (int) 220,
+                Width: (int) 220
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=41) "/wiki/File:Mike_Pompeo_official_photo.jpg",
+                Text: (string) "",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=125) "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Mike_Pompeo_official_photo.jpg/220px-Mike_Pompeo_official_photo.jpg",
+                    AlternativeText: (string) (len=30) "Mike Pompeo official photo.jpg",
+                    Caption: (string) "",
+                    Height: (int) 220,
+                    Width: (int) 220
+                  })
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=37) "70th United States Secretary of State",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=45) "In office April 26, 2018 – January 20, 2021",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "President",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Donald Trump",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=18) "/wiki/Donald_Trump",
+                Text: (string) (len=12) "Donald Trump",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Deputy",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "Stephen Biegun",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=55) "/w/index.php?title=Stephen_Biegun&action=edit&redlink=1",
+                Text: (string) (len=14) "Stephen Biegun",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Preceded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Rex Tillerson",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=19) "/wiki/Rex_Tillerson",
+                Text: (string) (len=13) "Rex Tillerson",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Succeeded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Tony Blinken",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=18) "/wiki/Tony_Blinken",
+                Text: (string) (len=12) "Tony Blinken",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=47) "6th Director of the Central Intelligence Agency",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=45) "In office January 23, 2017 – April 26, 2018",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "President",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Donald Trump",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Deputy",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "Gina Haspel",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Preceded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "John O. Brennan",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=21) "/wiki/John_O._Brennan",
+                Text: (string) (len=15) "John O. Brennan",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Succeeded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "Gina Haspel",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=17) "/wiki/Gina_Haspel",
+                Text: (string) (len=11) "Gina Haspel",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=71) "Member of the U.S. House of Representatives from Kansas 's 4th district",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=46) "In office January 3, 2011 – January 23, 2017",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Preceded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "Todd Tiahrt",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=52) "/w/index.php?title=Todd_Tiahrt&action=edit&redlink=1",
+                Text: (string) (len=11) "Todd Tiahrt",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Succeeded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Ron Estes",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=15) "/wiki/Ron_Estes",
+                Text: (string) (len=9) "Ron Estes",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=16) "Personal details",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=7) {
+          (*parser.Part)({
+            Name: (string) (len=4) "Born",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=65) "Michael Richard Pompeo December 30, 1963 Orange, California, U.S.",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=24) "/wiki/Orange,_California",
+                Text: (string) (len=18) "Orange, California",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Political party",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "Republican",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=38) "/wiki/Republican_Party_(United_States)",
+                Text: (string) (len=10) "Republican",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Spouse(s)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Susan Pompeo",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Children",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=1) "1",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Education",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=59) "United States Military Academy (BS) Harvard University (JD)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=36) "/wiki/United_States_Military_Academy",
+                Text: (string) (len=30) "United States Military Academy",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=25) "/wiki/Bachelor_of_Science",
+                Text: (string) (len=2) "BS",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=24) "/wiki/Harvard_University",
+                Text: (string) (len=18) "Harvard University",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=18) "/wiki/Juris_Doctor",
+                Text: (string) (len=2) "JD",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Net worth",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "$345,000",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=12) "#cite_note-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Signature",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Signature",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=119) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Mike_Pompeo_Signature.svg/128px-Mike_Pompeo_Signature.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 128,
+                Width: (int) 128
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=36) "/wiki/File:Mike_Pompeo_Signature.svg",
+                Text: (string) (len=23) "Mike Pompeo's signature",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=119) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Mike_Pompeo_Signature.svg/128px-Mike_Pompeo_Signature.svg.png",
+                    AlternativeText: (string) "",
+                    Caption: (string) "",
+                    Height: (int) 128,
+                    Width: (int) 128
+                  })
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=16) "Military service",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) (len=10) "Allegiance",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "United States",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=154) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Flag_of_the_United_States_%28Pantone%29.svg/23px-Flag_of_the_United_States_%28Pantone%29.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 23,
+                Width: (int) 23
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Branch/service",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "United States Army",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=136) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_the_United_States_Army.svg/22px-Flag_of_the_United_States_Army.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 22,
+                Width: (int) 22
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=24) "/wiki/United_States_Army",
+                Text: (string) (len=18) "United States Army",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=16) "Years of service",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "1986–1991",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=18) "#cite_note-whois-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Rank",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "Captain",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=140) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/US_Army_O3_shoulderboard_rotated.svg/25px-US_Army_O3_shoulderboard_rotated.svg.png",
+                AlternativeText: (string) (len=36) "US Army O3 shoulderboard rotated.svg",
+                Caption: (string) "",
+                Height: (int) 25,
+                Width: (int) 25
+              })
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=47) "/wiki/File:US_Army_O3_shoulderboard_rotated.svg",
+                Text: (string) "",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=140) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/US_Army_O3_shoulderboard_rotated.svg/25px-US_Army_O3_shoulderboard_rotated.svg.png",
+                    AlternativeText: (string) (len=36) "US Army O3 shoulderboard rotated.svg",
+                    Caption: (string) "",
+                    Height: (int) 25,
+                    Width: (int) 25
+                  })
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=29) "/wiki/Captain_(United_States)",
+                Text: (string) (len=7) "Captain",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=18) "#cite_note-whois-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=12) "#cite_note-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Unit",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=57) "2nd Squadron, 7th Cavalry Regiment, 4th Infantry Division",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=61) "/w/index.php?title=7th_Cavalry_Regiment&action=edit&redlink=1",
+                Text: (string) (len=34) "2nd Squadron, 7th Cavalry Regiment",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=78) "/w/index.php?title=4th_Infantry_Division_(United_States)&action=edit&redlink=1",
+                Text: (string) (len=21) "4th Infantry Division",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

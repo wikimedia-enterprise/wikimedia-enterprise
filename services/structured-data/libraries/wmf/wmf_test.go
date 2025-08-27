@@ -3,8 +3,8 @@ package wmf
 import (
 	"context"
 	"testing"
-	"wikimedia-enterprise/general/tracing"
 	"wikimedia-enterprise/services/structured-data/config/env"
+	"wikimedia-enterprise/services/structured-data/submodules/tracing"
 
 	"github.com/stretchr/testify/suite"
 )

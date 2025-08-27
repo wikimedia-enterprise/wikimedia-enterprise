@@ -4,12 +4,12 @@ import (
 	"context"
 	"errors"
 	"testing"
-	"wikimedia-enterprise/general/parser"
-	"wikimedia-enterprise/general/schema"
-	"wikimedia-enterprise/general/wmf"
 	"wikimedia-enterprise/services/structured-data/config/env"
 	"wikimedia-enterprise/services/structured-data/handlers/articlebulk/handler"
 	"wikimedia-enterprise/services/structured-data/libraries/aggregate"
+	"wikimedia-enterprise/services/structured-data/submodules/parser"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
+	"wikimedia-enterprise/services/structured-data/submodules/wmf"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/confluentinc/confluent-kafka-go/kafka"
@@ -50,6 +50,11 @@ func (a *aggregatorMock) GetAggregations(_ context.Context, dtb string, tls []st
 	}
 
 	return ags.Error(1)
+}
+
+func (a *aggregatorMock) GetPageHTML(_ context.Context, dtb string, tls []string, _ int) (map[string]*aggregate.Aggregation, error) {
+	ags := a.Called(dtb, tls)
+	return ags.Get(0).(map[string]*aggregate.Aggregation), ags.Error(1)
 }
 
 type parserMock struct {
@@ -115,6 +120,8 @@ func (s *handlerTestSuite) SetupSuite() {
 
 	agg := new(aggregatorMock)
 	agg.On("GetAggregations", s.val.IsPartOf.Identifier, s.val.Names).Return(s.aggs, s.eag)
+	agg.On("GetAggregations", s.val.IsPartOf.Identifier, []string{"5"}, mock.Anything, mock.Anything).Return(s.aggs, s.eag)
+	agg.On("GetPageHTML").Return(s.aggs)
 
 	prs := new(parserMock)
 	prs.On("GetCategories").Return(s.psc)
@@ -160,72 +167,116 @@ func TestHandler(t *testing.T) {
 		Event: schema.NewEvent(schema.EventTypeCreate),
 	}
 
+	var topic string = "topic"
+
 	for _, testCase := range []*handlerTestSuite{
 		{
 			val: msg,
-		},
-		{
-			val: &schema.ArticleNames{
-				IsPartOf: &schema.Project{
-					Identifier: "enwiki",
-					URL:        "http://localhost:8080",
+			msg: &kafka.Message{
+				TopicPartition: kafka.TopicPartition{
+					Topic:     &topic,
+					Partition: 0,
+					Offset:    0,
 				},
-				Names: []string{"Earth"},
-				Event: schema.NewEvent(schema.EventTypeCreate),
-			},
-			evu: errors.New("value unmarshal error"),
-		},
-		{
-			val: &schema.ArticleNames{
-				IsPartOf: &schema.Project{
-					Identifier: "enwiki",
-					URL:        "http://localhost:8080",
-				},
-				Names: []string{"Earth"},
-				Event: schema.NewEvent(schema.EventTypeCreate),
-			},
-			aggs: map[string]*aggregate.Aggregation{},
-			eag:  errors.New("aggregation query error"),
-		},
-		{
-			val: &schema.ArticleNames{
-				IsPartOf: &schema.Project{
-					Identifier: "enwiki",
-					URL:        "http://localhost:8080",
-				},
-				Names: []string{"Earth"},
-				Event: schema.NewEvent(schema.EventTypeCreate),
-			},
-		},
-		{
-			val: &schema.ArticleNames{
-				IsPartOf: &schema.Project{
-					Identifier: "enwiki",
-					URL:        "http://localhost:8080",
-				},
-				Names: []string{"Earth"},
-				Event: schema.NewEvent(schema.EventTypeCreate),
+				Key:   []byte("key"),
+				Value: []byte("value"),
 			},
 			aggs: map[string]*aggregate.Aggregation{
 				"Earth": {
 					Page: &wmf.Page{
-						Missing: true,
+						LastRevID: 5,
+						Title:     "Earth",
+					},
+				},
+				"5": {
+					PageHTML: &wmf.PageHTML{
+						Content: "<html></html>",
+					},
+				},
+			},
+			msl: 1,
+		},
+		{
+			val: msg,
+			aggs: map[string]*aggregate.Aggregation{
+				"Earth": {
+					Page: &wmf.Page{
+						LastRevID: 5,
+						Title:     "Earth",
+					},
+				},
+				"5": {
+					PageHTML: &wmf.PageHTML{
+						Content: "<html></html>",
+					},
+				},
+			},
+			evu: errors.New("value unmarshal error"),
+		},
+		{
+			val: msg,
+			aggs: map[string]*aggregate.Aggregation{
+				"Earth": {
+					Page: &wmf.Page{
+						LastRevID: 5,
+						Title:     "Earth",
+					},
+				},
+				"5": {
+					PageHTML: &wmf.PageHTML{
+						Content: "<html></html>",
+					},
+				},
+			},
+			eag: errors.New("aggregation query error"),
+		},
+		{
+			val: msg,
+			aggs: map[string]*aggregate.Aggregation{
+				"Earth": {
+					Page: &wmf.Page{
+						LastRevID: 5,
+						Title:     "Earth",
+					},
+				},
+				"5": {
+					PageHTML: &wmf.PageHTML{
+						Content: "<html></html>",
+					},
+				},
+			},
+			msl: 1,
+		},
+		{
+			val: msg,
+			aggs: map[string]*aggregate.Aggregation{
+				"Earth": {
+					Page: &wmf.Page{
+						Missing:   true,
+						LastRevID: 5,
+						Title:     "Earth",
+					},
+				},
+				"5": {
+					PageHTML: &wmf.PageHTML{
+						Content: "<html></html>",
 					},
 				},
 			},
 		},
 		{
-			val: &schema.ArticleNames{
-				IsPartOf: &schema.Project{
-					Identifier: "enwiki",
-					URL:        "http://localhost:8080",
-				},
-				Names: []string{"Earth"},
-				Event: schema.NewEvent(schema.EventTypeCreate),
-			},
+			val: msg,
 			aggs: map[string]*aggregate.Aggregation{
 				"Earth": {
-					Page: &wmf.Page{},
+					Page: &wmf.Page{
+						LastRevID: 5,
+						Title:     "Earth",
+					},
+					PageHTML: &wmf.PageHTML{
+						Error: errors.New("html page missing"),
+					},
+				},
+				"5": {
 					PageHTML: &wmf.PageHTML{
 						Error: errors.New("html page missing"),
 					},
@@ -233,17 +284,18 @@ func TestHandler(t *testing.T) {
 			},
 		},
 		{
-			val: &schema.ArticleNames{
-				IsPartOf: &schema.Project{
-					Identifier: "enwiki",
-					URL:        "http://localhost:8080",
-				},
-				Names: []string{"Earth"},
-				Event: schema.NewEvent(schema.EventTypeCreate),
-			},
+			val: msg,
 			aggs: map[string]*aggregate.Aggregation{
 				"Earth": {
-					Page: &wmf.Page{},
+					Page: &wmf.Page{
+						LastRevID: 5,
+						Title:     "Earth",
+					},
+				},
+				"5": {
+					PageHTML: &wmf.PageHTML{
+						Content: "<html></html>",
+					},
 				},
 			},
 			msl: 1,
@@ -262,26 +314,72 @@ func TestHandler(t *testing.T) {
 			abs: "...abstract goes here...",
 		},
 		{
-			val: &schema.ArticleNames{
-				IsPartOf: &schema.Project{
-					Identifier: "enwiki",
-					URL:        "http://localhost:8080",
-				},
-				Names: []string{"Earth"},
-				Event: schema.NewEvent(schema.EventTypeCreate),
-			},
+			val: msg,
 			aggs: map[string]*aggregate.Aggregation{
 				"Earth": {
 					Page: &wmf.Page{
+						LastRevID: 5,
+						Title:     "Earth",
 						Revisions: []*wmf.Revision{
 							{},
 							{},
 						},
 					},
 				},
+				"5": {
+					PageHTML: &wmf.PageHTML{
+						Content: "<html></html>",
+						Title:   "Earth",
+					},
+				},
 			},
 			msl: 1,
 			epr: errors.New("producer error"),
+			psc: []*parser.Category{
+				{
+					Name: "Test",
+					URL:  "http://localhost:8080/wiki/Test",
+				},
+			},
+			pst: []*parser.Template{
+				{
+					Name: "Test",
+					URL:  "http://localhost:8080/wiki/Test",
+				},
+			},
+			abs: "...abstract goes here...",
+		},
+		{
+			val: msg,
+			aggs: map[string]*aggregate.Aggregation{
+				"Earth": {
+					Page: &wmf.Page{
+						LastRevID: 5,
+						Title:     "Earth",
+						Revisions: []*wmf.Revision{
+							{},
+							{},
+						},
+					},
+				},
+				"5": {
+					PageHTML: &wmf.PageHTML{
+						Content: "<html></html>",
+						Title:   "Earth",
+					},
+					Score: &wmf.Score{
+						Output: &wmf.LiftWingScore{
+							Prediction: true,
+							Probability: &wmf.BooleanProbability{
+								True:  1,
+								False: 0,
+							},
+						},
+					},
+				},
+			},
+			msl: 1,
+			epr: nil,
 			psc: []*parser.Category{
 				{
 					Name: "Test",

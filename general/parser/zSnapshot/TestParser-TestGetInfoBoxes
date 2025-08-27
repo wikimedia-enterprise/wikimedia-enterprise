@@ -1,0 +1,148 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=18) "Infobox diagnostic",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) (len=21) "Body mass index (BMI)",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=271) "Chart showing body mass index (BMI) for a range of heights and weights in both metric and imperial. Colours indicate BMI categories defined by the World Health Organization; underweight, normal weight, overweight, moderately obese, severely obese and very severely obese.",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=91) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/BMI_chart.png/290px-BMI_chart.png",
+                AlternativeText: (string) "",
+                Caption: (string) (len=271) "Chart showing body mass index (BMI) for a range of heights and weights in both metric and imperial. Colours indicate BMI categories defined by the World Health Organization; underweight, normal weight, overweight, moderately obese, severely obese and very severely obese.",
+                Height: (int) 290,
+                Width: (int) 290
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Body_mass_index#Categories",
+                Text: (string) (len=14) "BMI categories",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/World_Health_Organization",
+                Text: (string) (len=25) "World Health Organization",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Synonyms",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "Quetelet index",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Synonym",
+                Text: (string) (len=8) "Synonyms",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "MeSH",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "D015992",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Medical_Subject_Headings",
+                Text: (string) (len=4) "MeSH",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://meshb.nlm.nih.gov/record/ui?ui=D015992",
+                Text: (string) (len=7) "D015992",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "MedlinePlus",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "007196",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/MedlinePlus",
+                Text: (string) (len=11) "MedlinePlus",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://medlineplus.gov/ency/article/007196.htm",
+                Text: (string) (len=6) "007196",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "LOINC",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "39156-5",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/LOINC",
+                Text: (string) (len=5) "LOINC",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=69) "https://s.details.loinc.org/LOINC/39156-5.html?sections=Comprehensive",
+                Text: (string) (len=7) "39156-5",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

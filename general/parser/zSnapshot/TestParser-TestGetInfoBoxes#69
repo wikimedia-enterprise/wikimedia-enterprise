@@ -1,0 +1,745 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=21) "Infobox Tennisspieler",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=39) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Roger Federer",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=108) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tennis_pictogram.svg/20px-Tennis_pictogram.svg.png",
+                AlternativeText: (string) (len=13) "Tennisspieler",
+                Caption: (string) "",
+                Height: (int) 20,
+                Width: (int) 20
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://de.wikipedia.org/wiki/Tennis",
+                Text: (string) (len=13) "Tennisspieler",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=108) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tennis_pictogram.svg/20px-Tennis_pictogram.svg.png",
+                    AlternativeText: (string) (len=13) "Tennisspieler",
+                    Caption: (string) "",
+                    Height: (int) 20,
+                    Width: (int) 20
+                  })
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=135) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Roger_Federer_%2819113580056%29.jpg/250px-Roger_Federer_%2819113580056%29.jpg",
+                AlternativeText: (string) (len=13) "Roger Federer",
+                Caption: (string) "",
+                Height: (int) 250,
+                Width: (int) 250
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=67) "https://de.wikipedia.org/wiki/Datei:Roger_Federer_(19113580056).jpg",
+                Text: (string) (len=13) "Roger Federer",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=135) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Roger_Federer_%2819113580056%29.jpg/250px-Roger_Federer_%2819113580056%29.jpg",
+                    AlternativeText: (string) (len=13) "Roger Federer",
+                    Caption: (string) "",
+                    Height: (int) 250,
+                    Width: (int) 250
+                  })
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "Roger Federer 2015",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Spitzname",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=46) "Federer-Express («FedEx») King Roger Maestro",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=55) "https://de.wikipedia.org/wiki/Roger_Federer#cite_note-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Nation",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "Schweiz",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Flag_of_Switzerland_within_2to3.svg/20px-Flag_of_Switzerland_within_2to3.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 20,
+                Width: (int) 20
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=37) "https://de.wikipedia.org/wiki/Schweiz",
+                Text: (string) (len=7) "Schweiz",
+                Images: ([]*parser.Image) (len=1) {
+                  (*parser.Image)({
+                    ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Flag_of_Switzerland_within_2to3.svg/20px-Flag_of_Switzerland_within_2to3.svg.png",
+                    AlternativeText: (string) "",
+                    Caption: (string) "",
+                    Height: (int) 20,
+                    Width: (int) 20
+                  })
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://de.wikipedia.org/wiki/Schweiz",
+                Text: (string) (len=7) "Schweiz",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Geburtstag",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=25) "8. August 1981 (41 Jahre)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Grösse",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "185 cm",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Gewicht",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=5) "85 kg",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "1. Profisaison",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "1998",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Rücktritt",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "2022",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Spielhand",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=29) "Rechts, einhändige Rückhand",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Trainer",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=30) "Severin Lüthi Ivan Ljubičić",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://de.wikipedia.org/wiki/Severin_Lüthi",
+                Text: (string) (len=14) "Severin Lüthi",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://de.wikipedia.org/wiki/Ivan_Ljubičić",
+                Text: (string) (len=15) "Ivan Ljubičić",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Preisgeld",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "130'594'339 US-Dollar",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Einzel",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Karrierebilanz",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "1251:275",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Karrieretitel",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=3) "103",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=20) "Höchste Platzierung",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "1 (2. Februar 2004)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=85) "https://de.wikipedia.org/wiki/Liste_der_Weltranglistenersten_im_Herrentennis_(Einzel)",
+                Text: (string) (len=1) "1",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=16) "Wochen als Nr. 1",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=3) "310",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "Grand-Slam-Bilanz",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=26) "Grand-Slam-Titel: 00000 20",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://de.wikipedia.org/wiki/Australian_Open",
+                Text: (string) (len=15) "Australian Open",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://de.wikipedia.org/wiki/French_Open",
+                Text: (string) (len=11) "French Open",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://de.wikipedia.org/wiki/Wimbledon_Championships",
+                Text: (string) (len=9) "Wimbledon",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://de.wikipedia.org/wiki/US_Open",
+                Text: (string) (len=7) "US Open",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Australian Open",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=38) "S (2004, 2006, 2007, 2010, 2017, 2018)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://de.wikipedia.org/wiki/Australian_Open",
+                Text: (string) (len=15) "Australian Open",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "French Open",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "S (2009)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://de.wikipedia.org/wiki/French_Open",
+                Text: (string) (len=11) "French Open",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Wimbledon",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=33) "S (2003–2007, 2009, 2012, 2017)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://de.wikipedia.org/wiki/Wimbledon_Championships",
+                Text: (string) (len=9) "Wimbledon",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "US Open",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "S (2004–2008)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=37) "https://de.wikipedia.org/wiki/US_Open",
+                Text: (string) (len=7) "US Open",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Doppel",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Karrierebilanz",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "131:92",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Karrieretitel",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=1) "8",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=20) "Höchste Platzierung",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "24 (9. Juni 2003)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "Grand-Slam-Bilanz",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=25) "Grand-Slam-Titel: 00000 0",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://de.wikipedia.org/wiki/Australian_Open",
+                Text: (string) (len=15) "Australian Open",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://de.wikipedia.org/wiki/French_Open",
+                Text: (string) (len=11) "French Open",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://de.wikipedia.org/wiki/Wimbledon_Championships",
+                Text: (string) (len=9) "Wimbledon",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://de.wikipedia.org/wiki/US_Open",
+                Text: (string) (len=7) "US Open",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Australian Open",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "AF (2003)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://de.wikipedia.org/wiki/Australian_Open",
+                Text: (string) (len=15) "Australian Open",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "French Open",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "1R (2000)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://de.wikipedia.org/wiki/French_Open",
+                Text: (string) (len=11) "French Open",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Wimbledon",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "VF (2000)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://de.wikipedia.org/wiki/Wimbledon_Championships",
+                Text: (string) (len=9) "Wimbledon",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "US Open",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "AF (2002)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=37) "https://de.wikipedia.org/wiki/US_Open",
+                Text: (string) (len=7) "US Open",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "Olympische Spiele",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=20) "Olympische Medaillen",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=58) "https://de.wikipedia.org/wiki/Olympische_Sommerspiele_2008",
+                Text: (string) (len=11) "2008 Peking",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=58) "https://de.wikipedia.org/wiki/Olympische_Sommerspiele_2012",
+                Text: (string) (len=11) "2012 London",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "Gold 2008 Peking Doppel",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=58) "https://de.wikipedia.org/wiki/Olympische_Sommerspiele_2008",
+                Text: (string) (len=11) "2008 Peking",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=25) "Silber 2012 London Einzel",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=58) "https://de.wikipedia.org/wiki/Olympische_Sommerspiele_2012",
+                Text: (string) (len=11) "2012 London",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=67) "Quellen: offizielle Spielerprofile bei der ATP/WTA (siehe Weblinks)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://de.wikipedia.org/wiki/Roger_Federer#Weblinks",
+                Text: (string) (len=8) "Weblinks",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

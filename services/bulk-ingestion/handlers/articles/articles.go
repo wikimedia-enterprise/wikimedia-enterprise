@@ -13,8 +13,8 @@ import (
 	"wikimedia-enterprise/services/bulk-ingestion/config/env"
 	pb "wikimedia-enterprise/services/bulk-ingestion/handlers/protos"
 
-	"wikimedia-enterprise/general/schema"
-	"wikimedia-enterprise/general/wmf"
+	"wikimedia-enterprise/services/bulk-ingestion/submodules/schema"
+	"wikimedia-enterprise/services/bulk-ingestion/submodules/wmf"
 
 	"go.uber.org/dig"
 )
@@ -87,6 +87,7 @@ func Handler(ctx context.Context, p *Parameters, req *pb.ArticlesRequest) (*pb.A
 	}
 
 	if err := p.Client.GetAllPages(ctx, req.Project, cbk, opt); err != nil {
+		log.Println(err)
 		return nil, err
 	}
 

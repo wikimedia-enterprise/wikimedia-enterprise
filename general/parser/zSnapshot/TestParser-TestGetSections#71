@@ -1,0 +1,65 @@
+([]*parser.Part) (len=2) {
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) <nil>,
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=11) "Korištenje",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) (len=11) "Korištenje",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "paragraph",
+            Value: (string) (len=31) "Šablon:Infookvir za predložak",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=83) "https://bs.wikipedia.org/wiki/Šablon:Infookvir_za_predložak?action=edit&redlink=1",
+                Text: (string) (len=31) "Šablon:Infookvir za predložak",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=4) "Kôd",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=19) "Također pogledajte",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

@@ -1,0 +1,866 @@
+([]*parser.Part) (len=10) {
+  (*parser.Part)({
+    Name: (string) (len=8) "Abstract",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=5) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=143) "Financial statements (or financial reports) are formal records of the financial activities and position of a business, person, or other entity.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=217) "Relevant financial information is presented in a structured manner and in a form which is easy to understand. They typically include four basic financial statements accompanied by a management discussion and analysis:",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=64) "https://en.wikipedia.org/wiki/Management_discussion_and_analysis",
+            Text: (string) (len=34) "management discussion and analysis",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=4) "list",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=4) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=139) "A balance sheet or statement of financial position, reports on a company's assets, liabilities, and owners equity at a given point in time.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Balance_sheet",
+                Text: (string) (len=13) "balance sheet",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Asset",
+                Text: (string) (len=6) "assets",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=62) "https://en.wikipedia.org/wiki/Liability_(financial_accounting)",
+                Text: (string) (len=11) "liabilities",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Equity_(finance)",
+                Text: (string) (len=13) "owners equity",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=377) "An income statement —or profit and loss report (P&L report), or statement of comprehensive income, or statement of revenue & expense —reports on a company's income, expenses, and profits over a stated period. A profit and loss statement provides information on the operation of the enterprise. These include sales and the various expenses incurred during the stated period.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Income_statement",
+                Text: (string) (len=16) "income statement",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Income",
+                Text: (string) (len=6) "income",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Expense",
+                Text: (string) (len=8) "expenses",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Profit_(accounting)",
+                Text: (string) (len=7) "profits",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=161) "A statement of changes in equity or statement of equity, or statement of retained earnings, reports on the changes in equity of the company over a stated period.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/Statement_of_changes_in_equity",
+                Text: (string) (len=30) "statement of changes in equity",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Equity_(finance)",
+                Text: (string) (len=6) "equity",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=151) "A cash flow statement reports on a company's cash flow activities, particularly its operating, investing and financing activities over a stated period.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Cash_flow_statement",
+                Text: (string) (len=19) "cash flow statement",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Cash_flow",
+                Text: (string) (len=9) "cash flow",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Investing",
+                Text: (string) (len=9) "investing",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Financing",
+                Text: (string) (len=9) "financing",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=201) "Notably, a balance sheet represents a single point in time, whereas the income statement, the statement of changes in equity, and the cash flow statement each represent activities over a stated period.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=381) "For large corporations, these statements may be complex and may include an extensive set of footnotes to the financial statements and management discussion and analysis. The notes typically describe each item on the balance sheet, income statement and cash flow statement in further detail. Notes to financial statements are considered an integral part of the financial statements.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=32) "Purpose for financial statements",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=430) "\"The objective of financial statements is to provide information about the financial position, performance and changes in financial position of an enterprise that is useful to a wide range of users in making economic decisions.\" Financial statements should be understandable, relevant, reliable and comparable. Reported assets, liabilities, equity, income and expenses are directly related to an organization's financial position.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=273) "Financial statements are intended to be understandable by readers who have \"a reasonable knowledge of business and economic activities and accounting and who are willing to study the information diligently.\" Financial statements may be used by users for different purposes:",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=4) "list",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=4) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=343) "Owners and managers require financial statements to make important business decisions that affect its continued operations. Financial analysis is then performed on these statements to provide management with a more detailed understanding of the figures. These statements are also used as part of management's annual report to the stockholders.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Financial_analysis",
+                Text: (string) (len=18) "Financial analysis",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=208) "Employees also need these reports in making collective bargaining agreements (CBA) with the management, in the case of labor unions or for individuals in discussing their compensation, promotion and rankings.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Collective_bargaining",
+                Text: (string) (len=21) "collective bargaining",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Labor_unions",
+                Text: (string) (len=12) "labor unions",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=277) "Prospective investors make use of financial statements to assess the viability of investing in a business. Financial analyses are often used by investors and are prepared by professionals (financial analysts), thus providing them with the basis for making investment decisions.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Investor",
+                Text: (string) (len=9) "investors",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=9) "list_item",
+            Value: (string) (len=260) "Financial institutions (banks and other lending companies) use them to decide whether to grant a company with fresh working capital or extend debt securities (such as a long-term bank loan or debentures) to finance expansion and other significant expenditures.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Working_capital",
+                Text: (string) (len=15) "working capital",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Security_(finance)",
+                Text: (string) (len=10) "securities",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Bank_loan",
+                Text: (string) (len=9) "bank loan",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Debenture",
+                Text: (string) (len=10) "debentures",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=12) "Consolidated",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=441) "Consolidated financial statements are defined as \"Financial statements of a group in which the assets, liabilities, equity, income, expenses and cash flows of the parent (company) and its subsidiaries are presented as those of a single economic entity \", according to International Accounting Standard 27 \"Consolidated and separate financial statements\", and International Financial Reporting Standard 10 \"Consolidated financial statements\".",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=11) {
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/Asset",
+            Text: (string) (len=6) "assets",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=62) "https://en.wikipedia.org/wiki/Liability_(financial_accounting)",
+            Text: (string) (len=11) "liabilities",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Equity_(finance)",
+            Text: (string) (len=6) "equity",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=36) "https://en.wikipedia.org/wiki/Income",
+            Text: (string) (len=6) "income",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/Expense",
+            Text: (string) (len=8) "expenses",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=39) "https://en.wikipedia.org/wiki/Cash_flow",
+            Text: (string) (len=10) "cash flows",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Subsidiaries",
+            Text: (string) (len=12) "subsidiaries",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=45) "https://en.wikipedia.org/wiki/Economic_entity",
+            Text: (string) (len=15) "economic entity",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=63) "https://en.wikipedia.org/wiki/International_Accounting_Standard",
+            Text: (string) (len=33) "International Accounting Standard",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=39) "https://en.wikipedia.org/wiki/Financial",
+            Text: (string) (len=9) "financial",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=72) "https://en.wikipedia.org/wiki/International_Financial_Reporting_Standard",
+            Text: (string) (len=42) "International Financial Reporting Standard",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=10) "Government",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=432) "The rules for the recording, measurement and presentation of government financial statements may be different from those required for business and even for non-profit organizations. They may use either of two accounting methods: accrual accounting, or cost accounting, or a combination of the two (OCBOA). A complete set of chart of accounts is also used that is substantially different from the chart of a profit-oriented business.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=5) {
+          (*parser.Link)({
+            URL: (string) (len=61) "https://en.wikipedia.org/wiki/Government_financial_statements",
+            Text: (string) (len=31) "government financial statements",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://en.wikipedia.org/wiki/Basis_of_accounting",
+            Text: (string) (len=18) "accounting methods",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/Accounting",
+            Text: (string) (len=10) "accounting",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/OCBOA",
+            Text: (string) (len=5) "OCBOA",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/Chart_of_accounts",
+            Text: (string) (len=17) "chart of accounts",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=8) "Personal",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=375) "Personal financial statements may be required from persons applying for a personal loan or financial aid. Typically, a personal financial statement consists of a single form for reporting personally held assets and liabilities (debts), or personal sources of income and expenses, or both. The form to be filled out is determined by the organization supplying the loan or aid.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Personal_loan",
+            Text: (string) (len=13) "personal loan",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/Welfare",
+            Text: (string) (len=13) "financial aid",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=28) "Audit and legal implications",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=506) "Although laws differ from country to country, an audit of the financial statements of a public company is usually required for investment, financing, and tax purposes. These are usually performed by independent accountants or auditing firms. Results of the audit are summarized in an audit report that either provide an unqualified opinion on the financial statements or qualifications as to its fairness and accuracy. The audit opinion on the financial statements is usually included in the annual report.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/Audit",
+            Text: (string) (len=5) "audit",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/Public_company",
+            Text: (string) (len=14) "public company",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Auditor's_report",
+            Text: (string) (len=12) "audit report",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=826) "There has been much legal debate over who an auditor is liable to. Since audit reports tend to be addressed to the current shareholders, it is commonly thought that they owe a legal duty of care to them. But this may not be the case as determined by common law precedent. In Canada, auditors are liable only to investors using a prospectus to buy shares in the primary market. In the United Kingdom, they have been held liable to potential investors when the auditor was aware of the potential investor and how they would use the information in the financial statements. Nowadays auditors tend to include in their report liability restricting language, discouraging anyone other than the addressees of their report from relying on it. Liability is an important issue: in the UK, for example, auditors have unlimited liability.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/United_Kingdom",
+            Text: (string) (len=14) "United Kingdom",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://en.wikipedia.org/wiki/Unlimited_liability",
+            Text: (string) (len=19) "unlimited liability",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=362) "In the United States, especially in the post- Enron era there has been substantial concern about the accuracy of financial statements. Corporate officers—the chief executive officer (CEO) and chief financial officer (CFO)—are personally responsible for fair financial reporting that provides an accurate sense of the organization to those reading the report.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/United_States",
+            Text: (string) (len=13) "United States",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/Enron",
+            Text: (string) (len=5) "Enron",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://en.wikipedia.org/wiki/Chief_executive_officer",
+            Text: (string) (len=23) "chief executive officer",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://en.wikipedia.org/wiki/Chief_financial_officer",
+            Text: (string) (len=23) "chief financial officer",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=25) "Standards and regulations",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=530) "Different countries have developed their own accounting principles over time, making international comparisons of companies difficult. To ensure uniformity and comparability between financial statements prepared by different companies, a set of guidelines and rules are used. Commonly referred to as Generally Accepted Accounting Principles (GAAP), these set of guidelines provide the basis in the preparation of financial statements, although many companies voluntarily disclose information beyond the scope of such requirements.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=70) "https://en.wikipedia.org/wiki/Generally_Accepted_Accounting_Principles",
+            Text: (string) (len=40) "Generally Accepted Accounting Principles",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Voluntary_disclosure",
+            Text: (string) (len=20) "voluntarily disclose",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=477) "Recently there has been a push towards standardizing accounting rules made by the International Accounting Standards Board (IASB). IASB develops International Financial Reporting Standards that have been adopted by Australia, Canada and the European Union (for publicly quoted companies only), are under consideration in South Africa and other countries. The United States Financial Accounting Standards Board has made a commitment to converge the U.S. GAAP and IFRS over time.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=8) {
+          (*parser.Link)({
+            URL: (string) (len=70) "https://en.wikipedia.org/wiki/International_Accounting_Standards_Board",
+            Text: (string) (len=40) "International Accounting Standards Board",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=73) "https://en.wikipedia.org/wiki/International_Financial_Reporting_Standards",
+            Text: (string) (len=43) "International Financial Reporting Standards",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=39) "https://en.wikipedia.org/wiki/Australia",
+            Text: (string) (len=9) "Australia",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/European_Union",
+            Text: (string) (len=14) "European Union",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/South_Africa",
+            Text: (string) (len=12) "South Africa",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=100) "https://en.wikipedia.org/wiki/International_Financial_Reporting_Standards#Adaptation_and_convergence",
+            Text: (string) (len=15) "other countries",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/United_States",
+            Text: (string) (len=13) "United States",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=66) "https://en.wikipedia.org/wiki/Financial_Accounting_Standards_Board",
+            Text: (string) (len=36) "Financial Accounting Standards Board",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=27) "Inclusion in annual reports",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=419) "To entice new investors, public companies assemble their financial statements on fine paper with pleasing graphics and photos in an annual report to shareholders, attempting to capture the excitement and culture of the organization in a \"marketing brochure \" of sorts. Usually the company's chief executive will write a letter to shareholders, describing management's performance and the company's financial highlights.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Annual_report",
+            Text: (string) (len=29) "annual report to shareholders",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=38) "https://en.wikipedia.org/wiki/Brochure",
+            Text: (string) (len=8) "brochure",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=364) "In the United States, prior to the advent of the internet, the annual report was considered the most effective way for corporations to communicate with individual shareholders. Blue chip companies went to great expense to produce and mail out attractive annual reports to every shareholder. The annual report was often prepared in the style of a coffee table book.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=54) "https://en.wikipedia.org/wiki/Blue_chip_(stock_market)",
+            Text: (string) (len=9) "Blue chip",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/Coffee_table_book",
+            Text: (string) (len=17) "coffee table book",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=34) "Management discussion and analysis",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=469) "Management discussion and analysis or MD&A is an integrated part of a company's annual financial statements. The purpose of the MD&A is to provide a narrative explanation, through the eyes of management, of how an entity has performed in the past, its financial condition, and its future prospects. In so doing, the MD&A attempt to provide investors with complete, fair, and balanced information to help them decide whether to invest or continue to invest in an entity.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=224) "The section contains a description of the year gone by and some of the key factors that influenced the business of the company in that year, as well as a fair and unbiased overview of the company's past, present, and future.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=446) "MD&A typically describes the corporation's liquidity position, capital resources, results of its operations, underlying causes of material changes in financial statement items (such as asset impairment and restructuring charges), events of unusual or infrequent nature (such as mergers and acquisitions or share buybacks), positive and negative trends, effects of inflation, domestic and international market risks, and significant uncertainties.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Accounting_liquidity",
+            Text: (string) (len=18) "liquidity position",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=54) "https://en.wikipedia.org/wiki/Mergers_and_acquisitions",
+            Text: (string) (len=24) "mergers and acquisitions",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Share_buyback",
+            Text: (string) (len=14) "share buybacks",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=39) "https://en.wikipedia.org/wiki/Inflation",
+            Text: (string) (len=9) "inflation",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=29) "Move to electronic statements",
+    Type: (string) (len=7) "section",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=461) "Financial statements have been created on paper for hundreds of years. The growth of the Web has seen more and more financial statements created in an electronic form which is exchangeable over the Web. Common forms of electronic financial statements are PDF and HTML. These types of electronic financial statements have their drawbacks in that it still takes a human to read the information in order to reuse the information contained in a financial statement.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=411) "More recently a market driven global standard, XBRL (Extensible Business Reporting Language), which can be used for creating financial statements in a structured and computer readable format, has become more popular as a format for creating financial statements. Many regulators around the world such as the U.S. Securities and Exchange Commission have mandated XBRL for the submission of financial information.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=34) "https://en.wikipedia.org/wiki/XBRL",
+            Text: (string) (len=4) "XBRL",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=69) "https://en.wikipedia.org/wiki/U.S._Securities_and_Exchange_Commission",
+            Text: (string) (len=39) "U.S. Securities and Exchange Commission",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "paragraph",
+        Value: (string) (len=378) "The UN/CEFACT created, with respect to Generally Accepted Accounting Principles (GAAP), internal or external financial reporting XML messages to be used between enterprises and their partners, such as private interested parties (e.g. bank) and public collecting bodies (e.g. taxation authorities). Many regulators use such messages to collect financial and economic information.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=39) "https://en.wikipedia.org/wiki/UN/CEFACT",
+            Text: (string) (len=9) "UN/CEFACT",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=70) "https://en.wikipedia.org/wiki/Generally_accepted_accounting_principles",
+            Text: (string) (len=4) "GAAP",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://en.wikipedia.org/wiki/Financial_reporting",
+            Text: (string) (len=19) "financial reporting",
+            Images: ([]*parser.Image) {
+            }
+          }),
+          (*parser.Link)({
+            URL: (string) (len=33) "https://en.wikipedia.org/wiki/XML",
+            Text: (string) (len=3) "XML",
+            Images: ([]*parser.Image) {
+            }
+          })
+        }
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

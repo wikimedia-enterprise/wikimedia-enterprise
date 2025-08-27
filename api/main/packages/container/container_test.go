@@ -26,6 +26,7 @@ func (s *containerTestSuite) SetupSuite() {
 	os.Setenv("COGNITO_CLIENT_SECRET", "dv34ad21")
 	os.Setenv("ACCESS_MODEL", "model")
 	os.Setenv("ACCESS_POLICY", "policy")
+	os.Setenv("CAP_CONFIGURATION", "[{\"groups\":[\"test_group\"],\"limit\":100,\"products\":[\"test_product\"],\"prefix_group\":\"cap:test\"}]")
 }
 
 func (s *containerTestSuite) TestNew() {

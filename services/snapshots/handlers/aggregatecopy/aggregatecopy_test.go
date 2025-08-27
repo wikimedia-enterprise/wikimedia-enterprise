@@ -38,12 +38,10 @@ type handlerTestSuite struct {
 func (s *handlerTestSuite) SetupSuite() {
 	s.ctx = context.Background()
 	s.env = &env.Environment{
-		AWSBucket:     "wme-data",
+		AWSBucket:     "wme-primary",
 		FreeTierGroup: "group_1",
 		Prefix:        "snapshots",
 	}
-
-	s.req = &pb.AggregateCopyRequest{}
 }
 
 func (s *handlerTestSuite) SetupTest() {
@@ -61,22 +59,50 @@ func (s *handlerTestSuite) TestCopy() {
 
 	s.Assert().NoError(err)
 
-	if s.cpErr != nil {
-		s.Assert().Equal(int32(1), res.Errors)
-	} else {
-		s.Assert().Equal(int32(0), res.Errors)
+	errors := len(s.req.Projects) * len(s.req.Namespaces)
+	if s.cpErr == nil {
+		errors = 0
 	}
 
-	s.Assert().Equal(int32(1), res.Total)
+	s.Assert().Equal(int32(errors), res.Errors)
+
+	copied := len(s.req.Projects) * len(s.req.Namespaces)
+	if len(s.req.Projects) == 0 && len(s.req.Namespaces) == 0 {
+		copied = 1 // copy the root metadata file
+	}
+
+	s.Assert().Equal(int32(copied), res.Total)
 }
 
 func TestHandler(t *testing.T) {
 	for _, testCase := range []*handlerTestSuite{
 		{
+			req: &pb.AggregateCopyRequest{
+				Projects:   []string{"project_1", "project_2"},
+				Namespaces: []int32{0, 16},
+			},
 			cpErr: nil,
 		},
 		{
+			req: &pb.AggregateCopyRequest{
+				Projects:   []string{"project_1", "project_2"},
+				Namespaces: []int32{0, 16},
+			},
 			cpErr: errors.New("copy object error"),
+		},
+		{
+			req: &pb.AggregateCopyRequest{
+				Projects:   []string{"project_1"},
+				Namespaces: []int32{0},
+			},
+			cpErr: nil,
+		},
+		{
+			req: &pb.AggregateCopyRequest{
+				Projects:   []string{},
+				Namespaces: []int32{},
+			},
+			cpErr: nil,
 		},
 	} {
 		suite.Run(t, testCase)

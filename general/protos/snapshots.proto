@@ -24,6 +24,11 @@ message ExportRequest {
   repeated string exclude_events = 7;
   string type = 8;
   bool enable_chunking = 9;
+
+  // If set to true, and prefix="batches", the path of the object will also contain the hour of the time provided in "since".
+  // e.g. instead of uploading to batches/2025-06-26/enwiki_namespace_0.json (and .tar.gz), it will upload to
+  // batches/2025-06-26/15/enwiki_namespace_0.json (and .tar.gz).
+  bool enable_non_cumulative_batches = 10;
 }
 
 message ExportResponse {
@@ -56,7 +61,10 @@ message AggregateResponse {
 }
 
 // Aggregate copy io description
-message AggregateCopyRequest {}
+message AggregateCopyRequest {
+  repeated string projects = 1;
+  repeated int32 namespaces = 2;
+}
 
 message AggregateCopyResponse {
   int32 total = 1;

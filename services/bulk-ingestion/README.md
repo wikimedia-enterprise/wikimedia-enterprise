@@ -68,12 +68,14 @@ Need to make sure that `go`, `docker` and `docker-compose` is installed on your 
     golangci-lint run
     ```
 
+1. To set up the AWS bucket (`wme-data`), log in to http://localhost:9100 (`admin`, `password`) and create it.
+
 1. For dubugging the gPRC server, you may install and use the following gRPC client
 
    ```bash
    $ go install github.com/fullstorydev/grpcui/cmd/grpcui@latest
    # Start a grpc client to grpc server @ <host>:<port>, with a pointer to a proto file. You can use web UI client then.
-   $ grpcui -plaintext -proto submodules/protos/bulk.proto localhost:5050
+   $ grpcui -plaintext -proto submodules/protos/bulk.proto localhost:50051
    gRPC Web UI available at http://127.0.0.1:60551/...
    ```
 

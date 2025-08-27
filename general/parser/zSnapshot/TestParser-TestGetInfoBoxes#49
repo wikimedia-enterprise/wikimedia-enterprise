@@ -1,0 +1,444 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=20) "Infobox officeholder",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=5) {
+      (*parser.Part)({
+        Name: (string) (len=24) "José Eduardo dos Santos",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=18) "dos Santos in 2007",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=133) "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Jos%C3%A9_Eduardo_dos_Santos_2.jpg/220px-Jos%C3%A9_Eduardo_dos_Santos_2.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) (len=18) "dos Santos in 2007",
+                Height: (int) 220,
+                Width: (int) 220
+              })
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=19) "President of Angola",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=49) "In office 21 September 1979 – 25 September 2017",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Prime Minister",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=7) {
+              (string) "",
+              (string) (len=69) "                          - Fernando José de França Dias Van-Dúnem",
+              (string) (len=24) "                        ",
+              (string) (len=42) "                          - Marcolino Moco",
+              (string) (len=63) "                          - Fernando da Piedade Dias dos Santos",
+              (string) (len=41) "                          - Paulo Kassoma",
+              (string) (len=21) "                     "
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Vice President",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=4) {
+              (string) "",
+              (string) (len=63) "                          - Fernando da Piedade Dias dos Santos",
+              (string) (len=42) "                          - Manuel Vicente",
+              (string) (len=21) "                     "
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Preceded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "Agostinho Neto",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Agostinho_Neto",
+                Text: (string) (len=14) "Agostinho Neto",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Succeeded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "João Lourenço",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/João_Lourenço",
+                Text: (string) (len=15) "João Lourenço",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=62) "Commander of the People's Armed Forces of Liberation of Angola",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=46) "In office 21 September 1979 – 9 October 1991",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Preceded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "Agostinho Neto",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Agostinho_Neto",
+                Text: (string) (len=14) "Agostinho Neto",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Succeeded by",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "Office abolished",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=16) "Personal details",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=6) {
+          (*parser.Part)({
+            Name: (string) (len=4) "Born",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=40) "28 August 1942 Luanda, Portuguese Angola",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Luanda",
+                Text: (string) (len=6) "Luanda",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Portuguese_Angola",
+                Text: (string) (len=17) "Portuguese Angola",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Died",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=38) "8 July 2022 (aged 79) Barcelona, Spain",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Barcelona",
+                Text: (string) (len=9) "Barcelona",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Spain",
+                Text: (string) (len=5) "Spain",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Political party",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "MPLA (1958–2022)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=34) "https://en.wikipedia.org/wiki/MPLA",
+                Text: (string) (len=4) "MPLA",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Spouses",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=19) {
+              (string) "",
+              (string) (len=28) "                          - ",
+              (string) (len=27) "                           ",
+              (string) (len=30) "                              ",
+              (string) (len=49) "                                 Tatiana Kukanova",
+              (string) (len=33) "                              \u200b",
+              (string) (len=31) "                               ",
+              (string) (len=33) "                              \u200b",
+              (string) (len=55) "                              (m.\u00a01966; div.\u00a01980)\u200b",
+              (string) (len=27) "                           ",
+              (string) (len=24) "                        ",
+              (string) (len=28) "                          - ",
+              (string) (len=27) "                           ",
+              (string) (len=45) "                              Ana Paula Lemos",
+              (string) (len=31) "                               ",
+              (string) (len=46) "                              \u200b(m.\u00a01991)\u200b",
+              (string) (len=27) "                           ",
+              (string) (len=24) "                        ",
+              (string) (len=21) "                     "
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Children",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=43) "10, including Isabel, José and Coréon Dú",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Isabel_dos_Santos",
+                Text: (string) (len=6) "Isabel",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/José_Filomeno_dos_Santos",
+                Text: (string) (len=5) "José",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Coréon_Dú",
+                Text: (string) (len=11) "Coréon Dú",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Alma mater",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=28) "Azerbaijan State Oil Academy",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Alma_mater",
+                Text: (string) (len=10) "Alma mater",
+                Images: ([]*parser.Image) {
+                }
+              }),
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/Azerbaijan_State_Oil_Academy",
+                Text: (string) (len=28) "Azerbaijan State Oil Academy",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=16) "Military service",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=4) {
+          (*parser.Part)({
+            Name: (string) (len=10) "Allegiance",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Angola",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=104) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Flag_of_Angola.svg/23px-Flag_of_Angola.svg.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 23,
+                Width: (int) 23
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Angola",
+                Text: (string) (len=6) "Angola",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Branch/service",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) (len=5) {
+              (string) "",
+              (string) (len=52) "                          - FAPLA/EPLA (1962–1991)",
+              (string) (len=35) "                          - FAA/EXE",
+              (string) (len=40) "                           (1991–2002)",
+              (string) (len=21) "                     "
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=16) "Years of service",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "1962–2002",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            }
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Rank",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "Army general (1986)",
+            Values: ([]string) (len=1) {
+              (string) ""
+            },
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Army_general",
+                Text: (string) (len=12) "Army general",
+                Images: ([]*parser.Image) {
+                }
+              })
+            }
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>
+  })
+}

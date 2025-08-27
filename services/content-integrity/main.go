@@ -20,11 +20,11 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/keepalive"
 
-	"wikimedia-enterprise/general/subscriber"
+	"wikimedia-enterprise/services/content-integrity/submodules/subscriber"
 
 	"wikimedia-enterprise/services/content-integrity/handlers/listener/aggregate"
 
-	"wikimedia-enterprise/general/log"
+	"wikimedia-enterprise/services/content-integrity/submodules/log"
 )
 
 const timeout = 72 * time.Hour
@@ -38,7 +38,7 @@ func main() {
 	}
 
 	go func() {
-		lsn := func(env *env.Environment, agp aggregate.Parameters, sub subscriber.Subscriber, hsr server.Server) error {
+		lsn := func(env *env.Environment, agp aggregate.Parameters, sub *subscriber.Subscriber, hsr server.Server) error {
 			ctx := context.Background()
 			hdl := aggregate.NewAggregate(&agp)
 
@@ -100,6 +100,7 @@ func main() {
 		srv := grpc.NewServer(ops...)
 		pb.RegisterContentIntegrityServer(srv, &hsr)
 
+		log.Info(fmt.Sprintf("Listening on :%s", env.ServerPort))
 		return srv.Serve(lis)
 	}
 

@@ -10,6 +10,7 @@ const (
 	KeyTypeProject      = "projects"
 	KeyTypeLanguage     = "languages"
 	KeyTypeNamespace    = "namespaces"
+	KeyTypeStructured   = "structured"
 )
 
 // ConfigKey schema configuration for Key.

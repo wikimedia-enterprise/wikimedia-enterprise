@@ -2,15 +2,12 @@ package handler
 
 import (
 	"context"
+	"errors"
 	"fmt"
+	"regexp"
+	"slices"
 	"strings"
 	"time"
-	"wikimedia-enterprise/general/log"
-	"wikimedia-enterprise/general/parser"
-	pr "wikimedia-enterprise/general/prometheus"
-	"wikimedia-enterprise/general/schema"
-	"wikimedia-enterprise/general/subscriber"
-	"wikimedia-enterprise/general/tracing"
 	"wikimedia-enterprise/services/structured-data/config/env"
 	"wikimedia-enterprise/services/structured-data/libraries/aggregate"
 	"wikimedia-enterprise/services/structured-data/libraries/text"
@@ -18,7 +15,14 @@ import (
 	"wikimedia-enterprise/services/structured-data/packages/builder"
 	pb "wikimedia-enterprise/services/structured-data/packages/contentintegrity"
 	"wikimedia-enterprise/services/structured-data/packages/exponential"
+	"wikimedia-enterprise/services/structured-data/packages/protected"
 	"wikimedia-enterprise/services/structured-data/packages/tokenizer"
+	"wikimedia-enterprise/services/structured-data/submodules/log"
+	"wikimedia-enterprise/services/structured-data/submodules/parser"
+	pr "wikimedia-enterprise/services/structured-data/submodules/prometheus"
+	"wikimedia-enterprise/services/structured-data/submodules/schema"
+	"wikimedia-enterprise/services/structured-data/submodules/subscriber"
+	"wikimedia-enterprise/services/structured-data/submodules/tracing"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/confluentinc/confluent-kafka-go/kafka"
@@ -35,6 +39,7 @@ type Parameters struct {
 	Aggregator aggregate.Aggregator
 	Parser     parser.API
 	Integrity  pb.ContentIntegrityClient
+	Protected  *protected.Protected
 	Tracer     tracing.Tracer
 	Metrics    *pr.Metrics
 }
@@ -89,27 +94,10 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 			trx, dtb, ttl, agg,
 			aggregate.WithPages(2, 1),
 			aggregate.WithRevisions(1),
-			aggregate.WithPagesHTML(1),
 		)
 
 		if err != nil {
 			log.Error("wmf api error",
-				log.Any("name", pld.Name),
-				log.Any("revision", pld.Version.Identifier),
-				log.Any("project", dtb),
-				log.Any("event_id", pld.Event.Identifier),
-				log.Any("error", err),
-			)
-
-			if aggregate.IsNonFatalErr(err) {
-				return nil
-			}
-
-			return err
-		}
-
-		if err := agg.GetPageHTMLError(); err != nil {
-			log.Error("wmf page html api error",
 				log.Any("name", pld.Name),
 				log.Any("revision", pld.Version.Identifier),
 				log.Any("project", dtb),
@@ -146,16 +134,87 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 			}
 		}
 
-		// Call revertrisk for all non-first revisions from all languages wiki projects in namespace 0
-		if pld.Namespace.Identifier == 0 && strings.HasSuffix(dtb, "wiki") && pld.PreviousVersion.Identifier != 0 {
-			mdl := "revertrisk"
-			err := p.Aggregator.GetAggregation(
-				trx, dtb, ttl, agg,
-				aggregate.WithScore(agg.GetPageLastRevID(), pld.InLanguage.Identifier, ttl, mdl, dtb),
+		if pld.Version.Identifier == 0 {
+			return errors.New("invalid revision identifier")
+		}
+
+		err = p.Aggregator.GetAggregation(
+			trx, dtb, fmt.Sprintf("%d", agg.Page.LastRevID), agg,
+			aggregate.WithRevisionsHTML(1),
+		)
+
+		if err != nil {
+			log.Error("wmf api parsoid error",
+				log.Any("name", pld.Name),
+				log.Any("revision", pld.Version.Identifier),
+				log.Any("project", dtb),
+				log.Any("event_id", pld.Event.Identifier),
+				log.Any("error", err),
 			)
 
+			if aggregate.IsNonFatalErr(err) {
+				return nil
+			}
+
+			return err
+		}
+
+		if err := agg.GetPageHTMLError(); err != nil {
+			log.Error("wmf page html api error",
+				log.Any("name", pld.Name),
+				log.Any("revision", pld.Version.Identifier),
+				log.Any("project", dtb),
+				log.Any("event_id", pld.Event.Identifier),
+				log.Any("error", err),
+			)
+
+			if aggregate.IsNonFatalErr(err) {
+				return nil
+			}
+
+			return err
+		}
+
+		re := regexp.MustCompile(`Special:Redirect/revision/(\d+)`)
+
+		match := re.FindStringSubmatch(agg.PageHTML.Content)
+		rid := fmt.Sprintf("%d", agg.GetPageLastRevID())
+		if len(match) > 1 && match[1] != rid {
+			log.Warn("revision mismatch in Parsoid HTML using revision API - update",
+				log.Any("project", dtb),
+				log.Any("expected revision id", rid),
+				log.Any("found revision id", match[1]),
+				log.Any("revision from Page object", agg.PageHTML.Revision),
+				log.Any("title", ttl),
+			)
+		}
+
+		// Call revertrisk, reference need, and reference risk scores for all non-first revisions
+		// from all languages wiki projects in namespace 0.
+		// checking pld.PreviousVersion != nil for safety reasons to not get nil pointer deref
+		if pld.Namespace.Identifier == 0 && strings.HasSuffix(dtb, "wiki") && pld.PreviousVersion != nil && pld.PreviousVersion.Identifier != 0 {
+			if !p.Env.ReferenceNeedLanguagesFilter || (len(p.Env.ReferenceNeedLanguages) > 0 && slices.Contains(p.Env.ReferenceNeedLanguages, pld.InLanguage.Identifier)) {
+				// If filtering is OFF (false) OR language is in the list (and list is non-empty) → Include ReferenceNeedScore
+				log.Debug(fmt.Sprintf("Calling Reference risk and need with PageLastRevID: %d, Language: %s",
+					agg.GetPageLastRevID(), pld.InLanguage.Identifier))
+				err = p.Aggregator.GetAggregation(
+					trx, dtb, ttl, agg,
+					aggregate.WithScore(agg.GetPageLastRevID(), pld.InLanguage.Identifier, time.Duration(p.Env.LiftwingTimeoutMs)*time.Millisecond, ttl, "revertrisk", dtb),
+					aggregate.WithReferenceNeedScore(agg.GetPageLastRevID(), pld.InLanguage.Identifier, time.Duration(p.Env.LiftwingTimeoutMs)*time.Millisecond, ttl, dtb),
+					aggregate.WithReferenceRiskScore(agg.GetPageLastRevID(), pld.InLanguage.Identifier, time.Duration(p.Env.LiftwingTimeoutMs)*time.Millisecond, ttl, dtb),
+				)
+			} else {
+				// If filtering is ON (true) but language is NOT in the list → Exclude ReferenceNeedScore
+				log.Debug(fmt.Sprintf("Calling Reference risk with PageLastRevID: %d, Language: %s",
+					agg.GetPageLastRevID(), pld.InLanguage.Identifier))
+				err = p.Aggregator.GetAggregation(
+					trx, dtb, ttl, agg,
+					aggregate.WithScore(agg.GetPageLastRevID(), pld.InLanguage.Identifier, time.Duration(p.Env.LiftwingTimeoutMs)*time.Millisecond, ttl, "revertrisk", dtb),
+					aggregate.WithReferenceRiskScore(agg.GetPageLastRevID(), pld.InLanguage.Identifier, time.Duration(p.Env.LiftwingTimeoutMs)*time.Millisecond, ttl, dtb),
+				)
+			}
 			if err != nil {
-				log.Warn("wmf score api error",
+				log.Debug("wmf score api error",
 					log.Any("name", ttl),
 					log.Any("revision", pld.Version.Identifier),
 					log.Any("project", dtb),
@@ -253,6 +312,12 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 			HasAdvancedRights(ugs).
 			Build()
 
+		if p.Protected.IsProtectedPage(pld.IsPartOf.Identifier, agg.GetPageTitle()) {
+			edr = builder.NewEditorBuilder().Build()
+
+			log.Warn("Protected Page, retracting user", log.Any("prj", pld.IsPartOf.Identifier), log.Any("ttl", pld.Name))
+		}
+
 		aci := new(pb.ArticleDataResponse)
 		cts := p.Parser.GetCategories(doc.Selection)
 		tps := p.Parser.GetTemplates(doc.Selection)
@@ -284,6 +349,8 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 
 		scs := builder.NewScoresBuilder().
 			RevertRisk(agg.GetRevertRiskScore()).
+			ReferenceNeed(agg.GetReferenceNeedScore()).
+			ReferenceRisk(agg.GetReferenceRiskScore()).
 			Build()
 
 		var tgs *schema.MaintenanceTags
@@ -386,4 +453,5 @@ func NewArticleUpdate(p *Parameters) subscriber.Handler {
 
 		return p.Stream.Produce(trx, mgs...)
 	}
+
 }

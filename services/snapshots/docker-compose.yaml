@@ -71,10 +71,8 @@ services:
   # Snapshots service
   snapshots:
     build:
-      context: ./../../.
-      dockerfile: ./docker/handlers/Dockerfile
-      args:
-        SOURCE_DIR: ./services/snapshots
+      context: .
+      dockerfile: submodules/cdtools/docker/handlers/Dockerfile
     ports:
       - 5050:5050
       - 12411:12411
@@ -87,10 +85,8 @@ services:
   # Mock generator
   mock:
     build:
-      context: ./../../.
-      dockerfile: ./docker/mock/Dockerfile
-      args:
-        SOURCE_DIR: ./services/snapshots
+      context: .
+      dockerfile: submodules/cdtools/docker/mock/Dockerfile
     depends_on:
       - broker
     env_file:
