@@ -1,0 +1,193 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    karpenter.sh/do-not-disrupt: "true"
+  labels:
+    app: structured-snapshots
+    team: wme
+  name: structured-snapshots
+spec:
+  tolerations:
+    - effect: NoSchedule
+      key: airflow
+      operator: Equal
+      value: "true"
+  initContainers:
+    - name: git-sync
+      image: "457151943714.dkr.ecr.us-east-1.amazonaws.com/airflow-git-sync:v4.3.0"
+      imagePullPolicy: IfNotPresent
+      env:
+        - name: GITSYNC_REF
+          value: "main"
+        - name: GITSYNC_REPO
+          value: "https://$(GIT_USERNAME):$(GIT_PASSWORD)@gitlab.enterprise.wikimedia.com/wikimedia-enterprise/services/dags.git"
+        - name: GITSYNC_DEPTH
+          value: "1"
+        - name: GITSYNC_ROOT
+          value: "/git"
+        - name: GITSYNC_ONE_TIME
+          value: "true"
+      envFrom:
+        - secretRef:
+            name: gitsync
+      volumeMounts:
+        - name: airflow-dags
+          mountPath: /git
+          readOnly: false
+  containers:
+  - name: base
+    resources:
+      limits:
+        memory: 500Mi
+      requests:
+        memory: 500Mi
+        cpu: 500m
+    env:
+    - name: AIRFLOW__LOGGING__REMOTE_LOGGING
+      value: "True"
+    - name: AIRFLOW__LOGGING__REMOTE_LOG_CONN_ID
+      value: "wme-eks-pr"
+    - name: AIRFLOW__LOGGING__REMOTE_BASE_LOG_FOLDER
+      value: "s3://wme-eks-airflow-pr"
+    - name: AIRFLOW__LOGGING__ENCRYPT_S3_LOGS
+      value: "False"
+    - name: AIRFLOW__DATABASE__SQL_ALCHEMY_CONN
+      valueFrom:
+        secretKeyRef:
+          name: postgres
+          key: connection
+    - name: AIRFLOW__CORE__LOAD_EXAMPLES
+      value: "False"
+    - name: AIRFLOW__CORE__FERNET_KEY
+      valueFrom:
+        secretKeyRef:
+          key: airflow-fernet-key
+          name: airflow
+    volumeMounts:
+      - name: airflow-dags
+        mountPath: /opt/bitnami/airflow/dags
+        readOnly: false
+      - name: exit-signals
+        mountPath: /opt/exit-signals
+  - env:
+    - name: KUBERNETES_NODE_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: spec.nodeName
+    - name: KUBERNETES_NODE_IP
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: status.hostIP
+    - name: KUBERNETES_POD_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.name
+    - name: KUBERNETES_POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    - name: KUBERNETES_POD_IP
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: status.podIP
+    - name: KUBERNETES_POD_UID
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.uid
+    - name: GOMAXPROCS
+      valueFrom:
+        resourceFieldRef:
+          divisor: "0"
+          resource: limits.cpu
+    - name: GOMEMLIMIT
+      valueFrom:
+        resourceFieldRef:
+          divisor: "0"
+          resource: limits.memory
+    - name: SCHEMA_REGISTRY_URL
+      value: http://schema.kafka:8081
+    - name: OTEL_COLLECTOR_ADDR
+      value: otel-collector-opentelemetry-collector.telemetry:4317
+    - name: AWS_REGION
+      value: us-east-1
+    - name: AWS_BUCKET
+      valueFrom:
+        secretKeyRef:
+          name: bucket
+          key: bucket
+    - name: KAFKA_AUTO_OFFSET_RESET
+      value: "earliest"
+    - name: TOPICS
+      value: '{"location":"aws","service_name":"structured-contents","version":["v1"]}'
+    - name: TRACING_SAMPLING_RATE
+      value: "0.1"
+    - name: SERVER_PORT
+      value: "5051"
+    - name: BUFFER_SIZE
+      value: "2147483648"
+    - name: PROMETHEUS
+      value: "true"
+    - name: KAFKA_USE_WATERMARK
+      value: "true"
+
+
+
+    envFrom:
+    - secretRef:
+        name: structured-snapshots-creds
+
+    image: 457151943714.dkr.ecr.us-east-1.amazonaws.com/pr_wme_snapshots_eks_rp:latest
+    imagePullPolicy: Always
+    name: structured-snapshots
+    ports:
+    - containerPort: 5051
+      name: grpc
+      protocol: TCP
+    - containerPort: 12411
+      name: metrics
+      protocol: TCP
+    resources:
+      limits:
+        memory: 21Gi
+      requests:
+        cpu: "8"
+        memory: 21Gi
+    volumeMounts:
+      - name: exit-signals
+        mountPath: /opt/exit-signals
+  terminationGracePeriodSeconds: 40
+  dnsConfig:
+    options:
+    - name: ndots
+      value: "1"
+  dnsPolicy: ClusterFirst
+  serviceAccountName: "structured-snapshots-eks"
+  automountServiceAccountToken: true
+  affinity:
+    podAntiAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 100
+        podAffinityTerm:
+          labelSelector:
+            matchExpressions:
+            - key: app
+              operator: In
+              values:
+              - structured-snapshots
+          topologyKey: topology.kubernetes.io/hostname
+
+
+  volumes:
+    - name: airflow-dags
+      emptyDir: {}
+    - name: exit-signals
+      emptyDir:
+        medium: Memory
+  restartPolicy: Never

@@ -1,0 +1,183 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    karpenter.sh/do-not-disrupt: "true"
+  labels:
+    app: admin
+    team: wme
+  name: admin
+spec:
+  tolerations:
+    - effect: NoSchedule
+      key: airflow
+      operator: Equal
+      value: "true"
+  initContainers:
+    - name: git-sync
+      image: "457151943714.dkr.ecr.us-east-1.amazonaws.com/airflow-git-sync:v4.3.0"
+      imagePullPolicy: IfNotPresent
+      env:
+        - name: GITSYNC_BRANCH
+          value: "main"
+        - name: GITSYNC_REPO
+          value: "https://$(GIT_USERNAME):$(GIT_PASSWORD)@gitlab.enterprise.wikimedia.com/wikimedia-enterprise/services/dags.git"
+        - name: GITSYNC_DEPTH
+          value: "1"
+        - name: GITSYNC_ROOT
+          value: "/git"
+        - name: GITSYNC_ONE_TIME
+          value: "true"
+      envFrom:
+        - secretRef:
+            name: gitsync
+      volumeMounts:
+        - name: airflow-dags
+          mountPath: /git
+          readOnly: false
+  containers:
+  - name: base
+    resources:
+      limits:
+        memory: 500Mi
+      requests:
+        memory: 500Mi
+        cpu: 500m
+    env:
+    - name: OMP_NUM_THREADS
+      value: "1"
+    - name: AIRFLOW__LOGGING__REMOTE_LOGGING
+      value: "True"
+    - name: AIRFLOW__LOGGING__REMOTE_LOG_CONN_ID
+      value: "wme-eks-dv"
+    - name: AIRFLOW__LOGGING__REMOTE_BASE_LOG_FOLDER
+      value: "s3://wme-eks-airflow-dv"
+    - name: AIRFLOW__LOGGING__ENCRYPT_S3_LOGS
+      value: "False"
+    - name: AIRFLOW__DATABASE__SQL_ALCHEMY_CONN
+      valueFrom:
+        secretKeyRef:
+          name: postgres
+          key: connection
+    - name: AIRFLOW__CORE__LOAD_EXAMPLES
+      value: "False"
+    - name: AIRFLOW__CORE__FERNET_KEY
+      valueFrom:
+        secretKeyRef:
+          key: airflow-fernet-key
+          name: airflow
+    volumeMounts:
+      - name: airflow-dags
+        mountPath: /opt/bitnami/airflow/dags
+        readOnly: false
+      - name: exit-signals
+        mountPath: /opt/exit-signals
+      - name: admin-requirements
+        mountPath: /bitnami/python/requirements.txt
+        subPath: requirements.txt
+  - env:
+    - name: KUBERNETES_NODE_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: spec.nodeName
+    - name: KUBERNETES_NODE_IP
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: status.hostIP
+    - name: KUBERNETES_POD_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.name
+    - name: KUBERNETES_POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    - name: KUBERNETES_POD_IP
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: status.podIP
+    - name: KUBERNETES_POD_UID
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.uid
+    - name: GOMAXPROCS
+      valueFrom:
+        resourceFieldRef:
+          divisor: "0"
+          resource: limits.cpu
+    - name: GOMEMLIMIT
+      valueFrom:
+        resourceFieldRef:
+          divisor: "0"
+          resource: limits.memory
+    - name: SCHEMA_REGISTRY_URL
+      value: http://schema.kafka:8081
+    - name: OTEL_COLLECTOR_ADDR
+      value: otel-collector-opentelemetry-collector.telemetry:4317
+    - name: OUTPUT_TOPICS
+      value: '{"version": ["v1"], "service_name": "event-bridge", "location": "aws"}'
+    - name: SERVER_PORT
+      value: "5051"
+
+
+
+    envFrom:
+    - secretRef:
+        name: admin-service-creds
+
+    image: 457151943714.dkr.ecr.us-east-1.amazonaws.com/dv_wme_admin_rp:latest
+    imagePullPolicy: Always
+    name: admin
+    ports:
+    - containerPort: 5051
+      name: grpc
+      protocol: TCP
+    - containerPort: 12411
+      name: metrics
+      protocol: TCP
+    resources:
+      limits:
+        memory: 8Gi
+      requests:
+        cpu: "4"
+        memory: 8Gi
+    volumeMounts:
+      - name: exit-signals
+        mountPath: /opt/exit-signals
+  dnsConfig:
+    options:
+    - name: ndots
+      value: "1"
+  dnsPolicy: ClusterFirst
+  serviceAccountName: "admin-service-eks"
+  automountServiceAccountToken: true
+  affinity:
+    podAntiAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 100
+        podAffinityTerm:
+          labelSelector:
+            matchExpressions:
+            - key: app
+              operator: In
+              values:
+              - admin
+          topologyKey: topology.kubernetes.io/hostname
+
+
+  volumes:
+    - name: airflow-dags
+      emptyDir: {}
+    - name: exit-signals
+      emptyDir:
+        medium: Memory
+    - name: admin-requirements
+      configMap:
+        name: airflow-worker-admin
+  restartPolicy: Never

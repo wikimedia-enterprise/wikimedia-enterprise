@@ -1,0 +1,107 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    karpenter.sh/do-not-disrupt: "true"
+  labels:
+    app: generic-worker
+    team: wme
+  name: generic-worker
+spec:
+  tolerations:
+    - effect: NoSchedule
+      key: airflow
+      operator: Equal
+      value: "true"
+  initContainers:
+    - name: git-sync
+      image: "457151943714.dkr.ecr.us-east-1.amazonaws.com/airflow-git-sync:v4.3.0"
+      imagePullPolicy: IfNotPresent
+      env:
+        - name: GITSYNC_REF
+          value: "main"
+        - name: GITSYNC_REPO
+          value: "https://$(GIT_USERNAME):$(GIT_PASSWORD)@gitlab.enterprise.wikimedia.com/wikimedia-enterprise/services/dags.git"
+        - name: GITSYNC_DEPTH
+          value: "1"
+        - name: GITSYNC_ROOT
+          value: "/git"
+        - name: GITSYNC_ONE_TIME
+          value: "true"
+      envFrom:
+        - secretRef:
+            name: gitsync
+      volumeMounts:
+        - name: airflow-dags 
+          mountPath: /git
+          readOnly: false
+  containers:
+  - name: base
+    resources:
+      limits:
+        memory: 500Mi
+      requests:
+        memory: 500Mi
+        cpu: 500m
+    envFrom:
+    - secretRef:
+        name: generic-creds
+    env:
+    - name: AIRFLOW__LOGGING__REMOTE_LOGGING
+      value: "True"
+    - name: AIRFLOW__LOGGING__REMOTE_LOG_CONN_ID
+      value: "wme-eks-dv"
+    - name: AIRFLOW__LOGGING__REMOTE_BASE_LOG_FOLDER
+      value: "s3://wme-eks-airflow-dv"
+    - name: AIRFLOW__LOGGING__ENCRYPT_S3_LOGS
+      value: "False"
+    - name: AIRFLOW__DATABASE__SQL_ALCHEMY_CONN
+      valueFrom:
+        secretKeyRef:
+          name: postgres
+          key: connection
+    - name: AIRFLOW__CORE__LOAD_EXAMPLES
+      value: "False"
+    - name: PYTHONPATH
+      value: "/opt/bitnami/airflow/venv/lib/python3.12/site-packages"
+    - name: AIRFLOW__CORE__FERNET_KEY
+      valueFrom:
+        secretKeyRef:
+          key: airflow-fernet-key
+          name: airflow
+    volumeMounts:
+      - name: airflow-dags
+        mountPath: /opt/bitnami/airflow/dags
+        readOnly: false
+      - name: exit-signals
+        mountPath: /opt/exit-signals
+  
+  dnsConfig:
+    options:
+    - name: ndots
+      value: "1"
+  dnsPolicy: ClusterFirst
+  serviceAccountName: "airflow-scale-eks"
+  automountServiceAccountToken: true 
+  # affinity:
+  #   podAntiAffinity:
+  #     preferredDuringSchedulingIgnoredDuringExecution:
+  #     - weight: 100
+  #       podAffinityTerm:
+  #         labelSelector:
+  #           matchExpressions:
+  #           - key: app
+  #             operator: In
+  #             values:
+  #             - bulk-ingestion
+  #         topologyKey: topology.kubernetes.io/hostname
+
+
+  volumes:
+    - name: airflow-dags
+      emptyDir: {}
+    - name: exit-signals
+      emptyDir:
+        medium: Memory
+  restartPolicy: Never

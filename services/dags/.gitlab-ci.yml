@@ -1,0 +1,5 @@
+# pipeline to verify dags
+include:
+  - project: 'wikimedia-enterprise/general/cdtools'
+    ref: main
+    file: '/eks_ci/check-dags.yml'
