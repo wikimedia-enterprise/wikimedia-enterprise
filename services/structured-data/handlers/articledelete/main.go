@@ -9,13 +9,13 @@ import (
 	"wikimedia-enterprise/services/structured-data/handlers/articledelete/handler"
 	"wikimedia-enterprise/services/structured-data/libraries/health"
 	"wikimedia-enterprise/services/structured-data/packages/container"
-	"wikimedia-enterprise/services/structured-data/submodules/log"
 	"wikimedia-enterprise/services/structured-data/submodules/schema"
 	"wikimedia-enterprise/services/structured-data/submodules/subscriber"
 
 	pr "wikimedia-enterprise/services/structured-data/submodules/prometheus"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
+	"github.com/wikimedia-enterprise/log"
 )
 
 func main() {

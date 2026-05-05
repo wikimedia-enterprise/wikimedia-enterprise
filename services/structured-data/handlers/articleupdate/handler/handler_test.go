@@ -14,12 +14,12 @@ import (
 	"wikimedia-enterprise/services/structured-data/packages/protected"
 	"wikimedia-enterprise/services/structured-data/submodules/parser"
 	"wikimedia-enterprise/services/structured-data/submodules/schema"
-	"wikimedia-enterprise/services/structured-data/submodules/wmf"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
+	"github.com/wikimedia-enterprise/wmf"
 	"google.golang.org/grpc"
 )
 

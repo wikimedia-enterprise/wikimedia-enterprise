@@ -11,10 +11,10 @@ import (
 	"wikimedia-enterprise/services/snapshots/config/env"
 	pb "wikimedia-enterprise/services/snapshots/handlers/protos"
 	"wikimedia-enterprise/services/snapshots/libraries/s3tracerproxy"
-	"wikimedia-enterprise/services/snapshots/submodules/log"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/s3"
+	"github.com/wikimedia-enterprise/log"
 	"go.uber.org/dig"
 )
 
@@ -35,6 +35,12 @@ var (
 
 	// chunkTarGzRe regex for chunk tar.gz files.
 	chunkTarGzRe = regexp.MustCompile(`^chunk_(\d+)\.tar\.gz$`)
+
+	// chunkFreeTierJSONRe regex for free tier chunk JSON files.
+	chunkFreeTierJSONRe = regexp.MustCompile(`^chunk_(\d+)_([^.]+)\.json$`)
+
+	// chunkFreeTierTarGzRe regex for free tier chunk tar.gz files.
+	chunkFreeTierTarGzRe = regexp.MustCompile(`^chunk_(\d+)_([^.]+)\.tar\.gz$`)
 )
 
 // Handler copy handler execution struct with dependency injection.
@@ -139,7 +145,6 @@ func (h *Handler) Copy(ctx context.Context, req *pb.CopyRequest) (*pb.CopyRespon
 func (h *Handler) CopyChunkFiles(ctx context.Context, prefix string, prj string, namespace int32) (map[string]string, error) {
 	chunkCopyPaths := make(map[string]string)
 	filesToDelete := make([]*s3.ObjectIdentifier, 0)
-	freeTier := fmt.Sprintf("_%s.", h.Env.FreeTierGroup)
 
 	cleanUpChunkFiles := func(page *s3.ListObjectsV2Output, lastPage bool) bool {
 		for _, obj := range page.Contents {
@@ -147,20 +152,26 @@ func (h *Handler) CopyChunkFiles(ctx context.Context, prefix string, prj string,
 				continue
 			}
 			key := strings.TrimPrefix(*obj.Key, prefix)
-			if strings.Contains(key, freeTier) {
-				tempKeyForRegex := strings.Replace(key, freeTier, "", 1)
-				if chunkJSONRe.MatchString(tempKeyForRegex) || chunkTarGzRe.MatchString(tempKeyForRegex) {
-					filesToDelete = append(filesToDelete, &s3.ObjectIdentifier{
-						Key: obj.Key,
-					})
-				}
+
+			// Check if this is a free tier chunk file to delete
+			jsonMatches := chunkFreeTierJSONRe.FindStringSubmatch(key)
+			tarMatches := chunkFreeTierTarGzRe.FindStringSubmatch(key)
+
+			if jsonMatches != nil && jsonMatches[2] == h.Env.FreeTierGroup {
+				filesToDelete = append(filesToDelete, &s3.ObjectIdentifier{
+					Key: obj.Key,
+				})
+			} else if tarMatches != nil && tarMatches[2] == h.Env.FreeTierGroup {
+				filesToDelete = append(filesToDelete, &s3.ObjectIdentifier{
+					Key: obj.Key,
+				})
 			} else {
 				jsn := chunkJSONRe.FindStringSubmatch(key)
 				trn := chunkTarGzRe.FindStringSubmatch(key)
 
-				if len(jsn) > 0 {
+				if jsn != nil {
 					chunkCopyPaths[*obj.Key] = fmt.Sprintf("%schunk_%s_%s.json", prefix, jsn[1], h.Env.FreeTierGroup)
-				} else if len(trn) > 0 {
+				} else if trn != nil {
 					chunkCopyPaths[*obj.Key] = fmt.Sprintf("%schunk_%s_%s.tar.gz", prefix, trn[1], h.Env.FreeTierGroup)
 				}
 			}
@@ -243,16 +254,14 @@ func (h *Handler) MultipartCopy(ctx context.Context, src, dst string, size int64
 	}
 
 	cmu := &s3.CompletedMultipartUpload{}
-	maxPart := int(math.Ceil(float64(size) / float64(maxUploadSizeBytes)))
+	partSize := maxUploadSizeBytes
+	maxPart := int(math.Ceil(float64(size) / float64(partSize)))
 
 	for prt := 0; prt < maxPart; prt++ {
-		from := prt * maxUploadSizeBytes
-		to := (prt * maxUploadSizeBytes) + maxUploadSizeBytes
+		from := prt * partSize
+		to := (prt+1)*partSize - 1
 
-		if prt != 0 {
-			from += 1
-		}
-		if to > int(size) {
+		if to >= int(size) {
 			to = int(size) - 1
 		}
 

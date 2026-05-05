@@ -14,8 +14,8 @@ import (
 	pb "wikimedia-enterprise/services/bulk-ingestion/handlers/protos"
 
 	"wikimedia-enterprise/services/bulk-ingestion/submodules/schema"
-	"wikimedia-enterprise/services/bulk-ingestion/submodules/wmf"
 
+	"github.com/wikimedia-enterprise/wmf"
 	"go.uber.org/dig"
 )
 

@@ -3,7 +3,8 @@ package wmf
 
 import (
 	"wikimedia-enterprise/services/bulk-ingestion/config/env"
-	"wikimedia-enterprise/services/bulk-ingestion/submodules/wmf"
+
+	"github.com/wikimedia-enterprise/wmf"
 )
 
 // NewAPI create new wmf API with custom configuration.

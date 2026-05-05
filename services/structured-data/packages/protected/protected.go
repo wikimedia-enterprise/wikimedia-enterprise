@@ -5,9 +5,9 @@ import (
 	"errors"
 	"strings"
 	"time"
-	"wikimedia-enterprise/services/structured-data/submodules/log"
-	"wikimedia-enterprise/services/structured-data/submodules/wmf"
 
+	"github.com/wikimedia-enterprise/log"
+	"github.com/wikimedia-enterprise/wmf"
 	"golang.org/x/exp/slices"
 )
 
@@ -35,7 +35,7 @@ func New(wmf wmf.API) *Protected {
 
 	return &Protected{
 		projects: []project{
-			{dtb: "mywiki", tls: []string{"mypage"}},
+			{dtb: "ruwiki", tls: []string{"Участник:Lê_Lợi_(bot)/He_protecc"}},
 		},
 
 		wmf:     wmf,

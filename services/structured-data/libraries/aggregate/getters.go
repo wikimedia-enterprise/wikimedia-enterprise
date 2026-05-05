@@ -10,8 +10,9 @@ import (
 	"sync"
 	"sync/atomic"
 	"time"
-	"wikimedia-enterprise/services/structured-data/submodules/log"
-	"wikimedia-enterprise/services/structured-data/submodules/wmf"
+
+	"github.com/wikimedia-enterprise/log"
+	"github.com/wikimedia-enterprise/wmf"
 )
 
 // ErrScorePrefix is the prefix for the ScoresGetter errors.

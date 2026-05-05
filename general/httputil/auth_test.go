@@ -15,8 +15,8 @@ import (
 
 	"github.com/alicebob/miniredis"
 	"github.com/gin-gonic/gin"
-	"github.com/go-redis/redis/v8"
 	"github.com/golang-jwt/jwt"
+	"github.com/redis/go-redis/v9"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
 )

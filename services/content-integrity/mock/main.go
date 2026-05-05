@@ -6,8 +6,10 @@ import (
 	"os"
 	"path/filepath"
 	"runtime"
-	"wikimedia-enterprise/services/content-integrity/submodules/log"
+
 	"wikimedia-enterprise/services/content-integrity/submodules/schema"
+
+	"github.com/wikimedia-enterprise/log"
 )
 
 func main() {

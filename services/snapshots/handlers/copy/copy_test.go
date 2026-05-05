@@ -25,35 +25,40 @@ type s3Mock struct {
 }
 
 func (m *s3Mock) HeadObjectWithContext(_ aws.Context, _ *s3.HeadObjectInput, _ ...request.Option) (*s3.HeadObjectOutput, error) {
+	args := m.Called()
 	hop := &s3.HeadObjectOutput{
-		ContentLength: aws.Int64(int64(m.Called().Int(0))),
+		ContentLength: aws.Int64(int64(args.Int(0))),
 	}
 
-	return hop, m.Called().Error(1)
+	return hop, args.Error(1)
 }
 
 func (m *s3Mock) CopyObjectWithContext(_ aws.Context, _ *s3.CopyObjectInput, _ ...request.Option) (*s3.CopyObjectOutput, error) {
-	return nil, m.Called().Error(0)
+	args := m.Called()
+	return nil, args.Error(0)
 }
 
 func (m *s3Mock) CreateMultipartUploadWithContext(_ aws.Context, _ *s3.CreateMultipartUploadInput, _ ...request.Option) (*s3.CreateMultipartUploadOutput, error) {
+	args := m.Called()
 	cmr := &s3.CreateMultipartUploadOutput{
-		UploadId: aws.String(m.Called().String(0)),
+		UploadId: aws.String(args.String(0)),
 	}
 
-	return cmr, m.Called().Error(1)
+	return cmr, args.Error(1)
 }
 
 func (m *s3Mock) UploadPartCopyWithContext(_ aws.Context, _ *s3.UploadPartCopyInput, _ ...request.Option) (*s3.UploadPartCopyOutput, error) {
+	args := m.Called()
 	upr := &s3.UploadPartCopyOutput{
-		CopyPartResult: &s3.CopyPartResult{ETag: aws.String(m.Called().String(0))},
+		CopyPartResult: &s3.CopyPartResult{ETag: aws.String(args.String(0))},
 	}
 
-	return upr, m.Called().Error(1)
+	return upr, args.Error(1)
 }
 
 func (m *s3Mock) CompleteMultipartUploadWithContext(_ aws.Context, _ *s3.CompleteMultipartUploadInput, _ ...request.Option) (*s3.CompleteMultipartUploadOutput, error) {
-	return nil, m.Called().Error(0)
+	args := m.Called()
+	return nil, args.Error(0)
 }
 
 func (m *s3Mock) ListObjectsV2PagesWithContext(_ aws.Context, input *s3.ListObjectsV2Input, fn func(*s3.ListObjectsV2Output, bool) bool, _ ...request.Option) error {
@@ -132,7 +137,6 @@ func (s *handlerTestSuite) SetupTest() {
 	s.s3m.On("UploadPartCopyWithContext").Return(s.tag, s.upErr)
 	s.s3m.On("CompleteMultipartUploadWithContext").Return(s.cmpErr)
 	s.s3m.On("DeleteObjectsWithContext", mock.Anything).Return(nil)
-
 }
 
 const maxUploadSizeBytes = 4294967296
@@ -276,9 +280,11 @@ func (s *handlerTestSuite) TestGetChunkCopyPaths() {
 		for _, obj := range input.Delete.Objects {
 			deletedKeys = append(deletedKeys, *obj.Key)
 		}
+		// Verify that the correct free tier files are being deleted
 		s.Assert().Contains(deletedKeys, "chunks/enwiki_namespace_0/chunk_1_group_1.json")
 		s.Assert().Contains(deletedKeys, "chunks/enwiki_namespace_0/chunk_2_group_1.tar.gz")
 		s.Assert().Contains(deletedKeys, "chunks/enwiki_namespace_0/chunk_3_group_1.json")
+		// Verify that regular chunk files are NOT being deleted
 		s.Assert().NotContains(deletedKeys, "chunks/enwiki_namespace_0/chunk_1.json")
 		s.Assert().NotContains(deletedKeys, "chunks/enwiki_namespace_0/chunk_2.tar.gz")
 		s.Assert().NotContains(deletedKeys, "chunks/enwiki_namespace_0/random_file.txt")
@@ -295,7 +301,7 @@ func (s *handlerTestSuite) TestGetChunkCopyPaths() {
 	s.Assert().Len(paths, 2)
 	s.Assert().Equal("chunks/enwiki_namespace_0/chunk_1_group_1.json", paths["chunks/enwiki_namespace_0/chunk_1.json"])
 	s.Assert().Equal("chunks/enwiki_namespace_0/chunk_2_group_1.tar.gz", paths["chunks/enwiki_namespace_0/chunk_2.tar.gz"])
-	s.s3m.AssertNotCalled(s.T(), "DeleteObjectsWithContext", mock.Anything)
+	s.s3m.AssertCalled(s.T(), "DeleteObjectsWithContext", mock.Anything)
 }
 
 func (s *handlerTestSuite) TestGetChunkCopyPathsWithDeletionError() {
@@ -312,6 +318,41 @@ func (s *handlerTestSuite) TestGetChunkCopyPathsWithDeletionError() {
 	s.Require().NoError(err)
 	s.Assert().Len(paths, 1)
 	s.Assert().Equal("chunks/enwiki_namespace_0/chunk_1_group_1.json", paths["chunks/enwiki_namespace_0/chunk_1.json"])
+}
+
+func (s *handlerTestSuite) TestMultipartCopy() {
+	s.s3m.ExpectedCalls = nil
+	s.s3m.Calls = nil
+	s.uid = "uploadId"
+	s.tag = "etag123"
+
+	fileSize := int64(maxUploadSizeBytes + 1024)
+
+	s.s3m.On("CreateMultipartUploadWithContext", mock.Anything, mock.Anything, mock.Anything).Return(s.uid, nil).Once()
+	s.s3m.On("UploadPartCopyWithContext", mock.Anything, mock.Anything, mock.Anything).Return(s.tag, nil)
+	s.s3m.On("CompleteMultipartUploadWithContext", mock.Anything, mock.Anything, mock.Anything).Return(nil).Once()
+
+	err := s.hdl.MultipartCopy(s.ctx, "source/path/file.json", "dest/path/file.json", fileSize)
+
+	s.Require().NoError(err)
+
+	uploadPartCalls := 0
+	expectedRanges := []string{
+		"bytes=0-4294967295",          // First part: 0 to 4GB-1
+		"bytes=4294967296-4294968319", // Second part: 4GB to 4GB+1024
+	}
+
+	for _, call := range s.s3m.Calls {
+		if call.Method == "UploadPartCopyWithContext" {
+			uploadPartCalls++
+			if len(call.Arguments) > 1 {
+				if input, ok := call.Arguments[1].(*s3.UploadPartCopyInput); ok && input != nil && input.CopySourceRange != nil {
+					s.Assert().Contains(expectedRanges, *input.CopySourceRange, "unexpected range value")
+				}
+			}
+		}
+	}
+	s.Assert().Equal(2, uploadPartCalls, "expected exactly two UploadPartCopy calls")
 }
 
 func TestHandler(t *testing.T) {

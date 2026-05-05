@@ -1,16 +1,17 @@
 module wikimedia-enterprise/services/bulk-ingestion
 
-go 1.18
+go 1.22.3
 
 require (
-	dario.cat/mergo v1.0.0
 	github.com/Netflix/go-env v0.0.0-20210215222557-e437a7e7f9fb
 	github.com/aws/aws-sdk-go v1.44.184
 	github.com/confluentinc/confluent-kafka-go v1.9.2
+	github.com/gocarina/gocsv v0.0.0-20240520201108-78e41c74b4b1
 	github.com/google/uuid v1.3.0
 	github.com/hamba/avro/v2 v2.22.1
 	github.com/joho/godotenv v1.3.0
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.10.0
+	github.com/wikimedia-enterprise/wmf v1.0.0
 	go.uber.org/dig v1.18.0
 	google.golang.org/grpc v1.46.0
 	google.golang.org/protobuf v1.28.0
@@ -19,8 +20,8 @@ require (
 require github.com/jmespath/go-jmespath v0.4.0 // indirect
 
 require (
+	dario.cat/mergo v1.0.2 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/gocarina/gocsv v0.0.0-20240520201108-78e41c74b4b1 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect

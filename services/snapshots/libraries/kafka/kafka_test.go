@@ -15,6 +15,11 @@ import (
 	"github.com/stretchr/testify/suite"
 )
 
+// Shared typed timeout error used across tests.
+// NOTE: production code now checks err.(kafka.Error).Code().
+var timeoutErr = kafka.NewError(kafka.ErrTimedOut, "timed out", false)
+var transportErr = kafka.NewError(kafka.ErrTransport, "transport failure", false)
+
 type consumerMock struct {
 	mock.Mock
 }
@@ -101,7 +106,12 @@ func (s *consumerTestSuite) SetupSuite() {
 	cmk := new(consumerMock)
 	cmk.On("Assign", tps).Return(s.assignErr)
 	cmk.On("OffsetsForTimes", tps).Return(s.offsetsErr)
-	cmk.On("ReadMessage").Return(s.msg, s.readMsgErr)
+	if s.readMsgErr != nil && libkafka.IsTransientKafkaErr(s.readMsgErr) {
+		cmk.On("ReadMessage").Return(s.msg, s.readMsgErr).Once()
+		cmk.On("ReadMessage").Return(&kafka.Message{}, timeoutErr).Once()
+	} else {
+		cmk.On("ReadMessage").Return(s.msg, s.readMsgErr)
+	}
 	cmk.On("GetMetadata", s.tpc).Return(&kmd, s.emd)
 	cmk.On("GetWatermarkOffsets", s.tpc, s.ptn).Return(s.lof, s.hof, s.eof)
 	cmk.On("Close").Return(s.cer)
@@ -119,8 +129,17 @@ func (s *consumerTestSuite) TestReadAll() {
 		s.Assert().Equal(s.assignErr, err)
 	} else if s.offsetsErr != nil {
 		s.Assert().Equal(s.offsetsErr, err)
-	} else if s.readMsgErr != nil && s.readMsgErr.Error() != kafka.ErrTimedOut.String() {
-		s.Assert().Equal(s.readMsgErr, err)
+	} else if s.readMsgErr != nil {
+		if libkafka.IsTransientKafkaErr(s.readMsgErr) {
+			s.Assert().NoError(err)
+			return
+		}
+
+		if ke, ok := s.readMsgErr.(kafka.Error); ok && ke.Code() == kafka.ErrTimedOut {
+			s.Assert().NoError(err)
+		} else {
+			s.Assert().Equal(s.readMsgErr, err)
+		}
 	} else {
 		s.Assert().NoError(err)
 	}
@@ -162,13 +181,13 @@ func TestConsumer(t *testing.T) {
 			msg:        &kafka.Message{},
 			lof:        5,
 			hof:        10,
-			readMsgErr: errors.New(kafka.ErrTimedOut.String()),
+			readMsgErr: timeoutErr,
 		},
 		{
 			tpc:        "test.local",
 			partition:  1,
 			msg:        &kafka.Message{},
-			readMsgErr: errors.New(kafka.ErrTimedOut.String()),
+			readMsgErr: timeoutErr,
 			eof:        errors.New("offset error"),
 		},
 		{
@@ -176,13 +195,13 @@ func TestConsumer(t *testing.T) {
 			partition:  2,
 			msg:        &kafka.Message{},
 			emd:        errors.New("test"),
-			readMsgErr: errors.New(kafka.ErrTimedOut.String()),
+			readMsgErr: timeoutErr,
 		},
 		{
 			tpc:        "test.local",
 			partition:  3,
 			msg:        &kafka.Message{},
-			readMsgErr: errors.New(kafka.ErrTimedOut.String()),
+			readMsgErr: timeoutErr,
 			assignErr:  errors.New("test error"),
 		},
 		{
@@ -190,7 +209,7 @@ func TestConsumer(t *testing.T) {
 			partition:  4,
 			msg:        &kafka.Message{},
 			snc:        10,
-			readMsgErr: errors.New(kafka.ErrTimedOut.String()),
+			readMsgErr: timeoutErr,
 			offsetsErr: errors.New("test error"),
 		},
 		{
@@ -199,6 +218,12 @@ func TestConsumer(t *testing.T) {
 			msg:        &kafka.Message{},
 			readMsgErr: errors.New("test error"),
 			cer:        errors.New("test error"),
+		},
+		{
+			tpc:        "test.local",
+			partition:  6,
+			msg:        &kafka.Message{},
+			readMsgErr: transportErr,
 		},
 	} {
 		suite.Run(t, testCase)
@@ -279,7 +304,7 @@ type fakeConsumerPartition struct {
 
 func (c *fakeConsumerPartition) ReadMessage() (*kafka.Message, error) {
 	if c.nextIdx >= len(c.outputs) {
-		return nil, errors.New(kafka.ErrTimedOut.String())
+		return nil, timeoutErr
 	}
 
 	next := c.outputs[c.nextIdx]
@@ -342,7 +367,7 @@ func (c *fakeConsumer) Assign(tps []kafka.TopicPartition) error {
 
 func (c *fakeConsumer) ReadMessage(_ time.Duration) (*kafka.Message, error) {
 	if len(c.partitions) == 0 {
-		return nil, errors.New(kafka.ErrTimedOut.String())
+		return nil, timeoutErr
 	}
 
 	res, err := c.partitions[c.lastPartitionConsumed].ReadMessage()
@@ -424,7 +449,7 @@ func TestTimeout(t *testing.T) {
 	fake.AddMsg(0)
 	fake.AddMsg(1)
 	fake.AddMsg(2)
-	fake.AddError(errors.New(kafka.ErrTimedOut.String()))
+	fake.AddError(timeoutErr)
 	fake.AddMsg(5)
 
 	received := []int{}
@@ -450,7 +475,7 @@ func TestWatermark(t *testing.T) {
 	fake.AddMsg(0)
 	fake.AddMsg(1)
 	fake.AddMsg(2)
-	fake.AddError(errors.New(kafka.ErrTimedOut.String()))
+	fake.AddError(timeoutErr)
 	fake.AddMsg(5)
 	fake.AddMsg(6)
 	fake.AddMsg(7)
@@ -479,7 +504,7 @@ func TestPastWatermark(t *testing.T) {
 	fake.AddMsg(0)
 	fake.AddMsg(1)
 	fake.AddMsg(2)
-	fake.AddError(errors.New(kafka.ErrTimedOut.String()))
+	fake.AddError(timeoutErr)
 	fake.AddMsg(5)
 	fake.AddMsg(6)
 	fake.AddMsg(7)
@@ -518,7 +543,7 @@ func TestEmptyWithSince(t *testing.T) {
 	fake.AddMsg(0)
 	fake.AddMsg(1)
 	fake.AddMsg(2)
-	fake.AddError(errors.New(kafka.ErrTimedOut.String()))
+	fake.AddError(timeoutErr)
 	fake.AddMsg(5)
 	fake.AddMsg(6)
 	fake.AddMsg(7)

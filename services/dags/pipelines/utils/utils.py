@@ -632,7 +632,7 @@ def retry_failed_tasks_callback(context):
     try:
         for ti in dag_run.get_task_instances():
             logger.info(f"[Retry Callback] Task {ti.task_id} state = {ti.state}")
-            if ti.state == "failed":
+            if ti.state in ("failed", "upstream_failed"):
                 task_id = ti.task_id
                 custom_try = ti.try_number
 

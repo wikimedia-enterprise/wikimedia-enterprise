@@ -9,13 +9,13 @@ import (
 	pb "wikimedia-enterprise/services/bulk-ingestion/handlers/protos"
 	"wikimedia-enterprise/services/bulk-ingestion/submodules/config"
 	"wikimedia-enterprise/services/bulk-ingestion/submodules/schema"
-	"wikimedia-enterprise/services/bulk-ingestion/submodules/wmf"
 
 	"github.com/aws/aws-sdk-go/aws/request"
 	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/aws/aws-sdk-go/service/s3/s3iface"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
+	"github.com/wikimedia-enterprise/wmf"
 
 	"wikimedia-enterprise/services/bulk-ingestion/handlers/namespaces"
 )

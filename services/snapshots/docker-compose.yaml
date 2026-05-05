@@ -10,12 +10,18 @@ services:
 
   # Confluent Kafka broker
   broker:
-    image: confluentinc/cp-kafka:latest
+    # Pinning the image tag. Recent Confluent Kafka images default to KRaft mode (no Zookeeper), 
+    # and require KAFKA_PROCESS_ROLES to be set.
+    image: confluentinc/cp-kafka:7.7.7
+    ports:
+      - "9392:9392"
+      - "29092:29092"
     depends_on:
       - zookeeper
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_LISTENERS: LISTENER_DOCKER_INTERNAL://0.0.0.0:29092,LISTENER_DOCKER_EXTERNAL://0.0.0.0:9392
       KAFKA_ADVERTISED_LISTENERS: LISTENER_DOCKER_INTERNAL://broker:29092,LISTENER_DOCKER_EXTERNAL://localhost:9392
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: LISTENER_DOCKER_INTERNAL:PLAINTEXT,LISTENER_DOCKER_EXTERNAL:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: LISTENER_DOCKER_INTERNAL

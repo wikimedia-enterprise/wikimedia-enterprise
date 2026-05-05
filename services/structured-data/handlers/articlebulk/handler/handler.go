@@ -14,7 +14,6 @@ import (
 	"wikimedia-enterprise/services/structured-data/packages/builder"
 	"wikimedia-enterprise/services/structured-data/packages/exponential"
 	"wikimedia-enterprise/services/structured-data/submodules/config"
-	"wikimedia-enterprise/services/structured-data/submodules/log"
 	"wikimedia-enterprise/services/structured-data/submodules/parser"
 	pr "wikimedia-enterprise/services/structured-data/submodules/prometheus"
 	"wikimedia-enterprise/services/structured-data/submodules/schema"
@@ -23,6 +22,7 @@ import (
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/confluentinc/confluent-kafka-go/kafka"
+	"github.com/wikimedia-enterprise/log"
 	"go.uber.org/dig"
 )
 

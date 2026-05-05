@@ -9,22 +9,18 @@ import (
 	"time"
 
 	"wikimedia-enterprise/services/content-integrity/config/env"
+	"wikimedia-enterprise/services/content-integrity/handlers/listener/aggregate"
 	server "wikimedia-enterprise/services/content-integrity/handlers/server"
-	"wikimedia-enterprise/services/content-integrity/packages/container"
-
 	pb "wikimedia-enterprise/services/content-integrity/handlers/server/protos"
+	"wikimedia-enterprise/services/content-integrity/packages/container"
+	"wikimedia-enterprise/services/content-integrity/submodules/subscriber"
 
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/collectors"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"github.com/wikimedia-enterprise/log"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/keepalive"
-
-	"wikimedia-enterprise/services/content-integrity/submodules/subscriber"
-
-	"wikimedia-enterprise/services/content-integrity/handlers/listener/aggregate"
-
-	"wikimedia-enterprise/services/content-integrity/submodules/log"
 )
 
 const timeout = 72 * time.Hour

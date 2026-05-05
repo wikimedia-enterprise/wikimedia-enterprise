@@ -3,7 +3,6 @@ module wikimedia-enterprise/services/structured-data
 go 1.22.3
 
 require (
-	dario.cat/mergo v1.0.1
 	github.com/Netflix/go-env v0.0.0-20220526054621-78278af1949d
 	github.com/PuerkitoBio/goquery v1.8.0
 	github.com/bradleyjkemp/cupaloy v2.3.0+incompatible
@@ -15,15 +14,16 @@ require (
 	github.com/prometheus/client_golang v1.20.3
 	github.com/redis/go-redis/extra/redisprometheus/v9 v9.5.3
 	github.com/redis/go-redis/v9 v9.6.1
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.10.0
 	github.com/tidwall/gjson v1.14.4
-	github.com/twmb/murmur3 v1.1.7
+	github.com/twmb/murmur3 v1.1.8
 	github.com/wikimedia-enterprise/health-checker v1.7.0
+	github.com/wikimedia-enterprise/log v0.1.0
+	github.com/wikimedia-enterprise/wmf v1.0.0
 	go.opentelemetry.io/contrib/propagators/aws v1.28.0
 	go.opentelemetry.io/otel/sdk v1.28.0
 	go.opentelemetry.io/otel/trace v1.28.0
 	go.uber.org/dig v1.14.1
-	go.uber.org/zap v1.27.0
 	golang.org/x/exp v0.0.0-20230713183714-613f0c0eb8a1
 	golang.org/x/net v0.29.0
 	google.golang.org/grpc v1.68.1
@@ -42,6 +42,7 @@ require (
 )
 
 require (
+	dario.cat/mergo v1.0.2 // indirect
 	github.com/aws/aws-sdk-go v1.55.6 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
@@ -58,6 +59,7 @@ require (
 	github.com/prometheus/client_model v0.6.1 // indirect
 	github.com/prometheus/common v0.55.0 // indirect
 	github.com/prometheus/procfs v0.15.1 // indirect
+	go.uber.org/zap v1.27.0 // indirect
 )
 
 require (

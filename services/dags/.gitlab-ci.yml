@@ -1,5 +1,91 @@
-# pipeline to verify dags
-include:
-  - project: 'wikimedia-enterprise/general/cdtools'
-    ref: main
-    file: '/eks_ci/check-dags.yml'
+# Override workflow to set runner tags based on MR target branch
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+workflow:
+  rules:
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "main"
+      variables:
+        RUNNER_TAG: "wme-eks-generic-pr"
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      variables:
+        RUNNER_TAG: "wme-eks-generic-dv"
+    - changes:
+        - "*.md"
+        - "Makefile"
+      when: never
+    - when: always
+
+.preparation:
+  before_script:
+    - apt-get update && apt-get install -y python3-pip graphviz libgraphviz-dev curl
+    - pip3 install --upgrade pip setuptools wheel
+    - export AIRFLOW_VERSION=2.10.2
+    - pip3 install "apache-airflow==${AIRFLOW_VERSION}"
+    - pip3 install "apache-airflow-providers-amazon==9.17.0"
+    - pip3 install "apache-airflow-providers-cncf-kubernetes==10.10.0"
+    - pip3 install -r requirements.txt
+    - pip3 install graphviz
+
+stages:
+  - test-dags-import
+
+test-dags-import:
+  stage: test-dags-import
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event" 
+  extends:
+    - .preparation
+  script:
+    - |
+      export PATH="$HOME/.local/bin:$PATH"
+      export AIRFLOW_HOME=$(pwd)/airflow_home
+      mkdir -p "$AIRFLOW_HOME"
+      airflow db init
+
+      BASE_DIR="pipelines"
+      FULL_BASE_DIR="$(pwd)/$BASE_DIR"
+      had_error=0
+
+      echo "Starting DAG import error checks..."
+      echo "Base directory: $FULL_BASE_DIR"
+      echo
+
+      for dir in "$BASE_DIR"/*/; do
+        [ -d "$dir" ] || continue
+
+        dir_name=$(basename "$dir")
+
+        # Exclude utils or pycache dirs
+        if [[ "$dir_name" == "utils" || "$dir_name" == "__pycache__" ]]; then
+          echo "Skipping non-DAG directory: $dir"
+          echo
+          continue
+        fi
+
+        echo "--------------------------------------------------"
+        echo "Processing DAG folder: $dir"
+        echo "Setting AIRFLOW__CORE__DAGS_FOLDER to: $(pwd)/$dir"
+        echo "Setting PYTHONPATH to: $(pwd)"
+        echo
+
+        tmp_output=$(mktemp)
+        PYTHONPATH=$(pwd) AIRFLOW__CORE__DAGS_FOLDER=$(pwd)/"$dir" airflow dags list-import-errors > "$tmp_output" 2>&1
+        status=$?
+
+        if [[ $status -ne 0  ]]; then
+          echo "Import errors or warnings found in: $dir_name"
+          cat ${tmp_output}
+          had_error=1
+        else
+          echo "No import errors in: $dir_name"
+        fi
+
+        rm "$tmp_output"
+        echo
+      done
+
+      echo "All directories processed."
+      exit $had_error
+  tags:
+    - $RUNNER_TAG

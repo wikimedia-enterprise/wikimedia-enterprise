@@ -19,6 +19,10 @@ var (
 		Name: "subscriber_worker_channel_pending",
 		Help: "Number of messages in the input channel for each worker",
 	}, []string{"worker"})
+	workerWorkDistribution = prometheus.NewCounterVec(prometheus.CounterOpts{
+		Name: "subscriber_worker_messages_sent",
+		Help: "Number of messages sent to the input channel of each worker",
+	}, []string{"worker"})
 )
 
 // DefaultNumberOfWorkers defines the default number of workers to use.
@@ -76,13 +80,7 @@ func (c *Config) CreateWorker() chan *kafka.Message {
 
 // GetWorkerID returns the ID of the worker that should process the given message key.
 func (s *Config) GetWorkerID(key []byte) (int, error) {
-	hsh, err := murmur3.New32().Write(key)
-
-	if err != nil {
-		return 0, err
-	}
-
-	return hsh % s.NumberOfWorkers, nil
+	return int(murmur3.Sum32(key) % uint32(s.NumberOfWorkers)), nil
 }
 
 // PushEvent sends an event to the events channel. If the channel
@@ -97,6 +95,10 @@ func (c *Config) PushEvent(msg *kafka.Message, err error) {
 }
 
 func RegisterMetrics(registerer prometheus.Registerer) error {
+	err := registerer.Register(workerWorkDistribution)
+	if err != nil {
+		return err
+	}
 	return registerer.Register(workerChannelPending)
 }
 
@@ -167,9 +169,11 @@ func (s *Subscriber) Subscribe(ctx context.Context, hdl Handler, cfg *Config) er
 
 	// Create and start worker goroutines.
 	pendingPerWorker := map[int]prometheus.Gauge{}
+	messagesPerWorker := map[int]prometheus.Counter{}
 	for i := 0; i < cfg.NumberOfWorkers; i++ {
 		wks[i] = cfg.CreateWorker()
 		pendingPerWorker[i] = workerChannelPending.WithLabelValues(strconv.Itoa(i))
+		messagesPerWorker[i] = workerWorkDistribution.WithLabelValues(strconv.Itoa(i))
 
 		go func(mgs chan *kafka.Message) {
 			defer swg.Done()
@@ -232,6 +236,7 @@ func (s *Subscriber) Subscribe(ctx context.Context, hdl Handler, cfg *Config) er
 			// Send the message to the appropriate worker channel
 			wks[wid] <- msg
 			pendingPerWorker[wid].Set(float64(len(wks[wid])))
+			messagesPerWorker[wid].Inc()
 		}
 	}
 }

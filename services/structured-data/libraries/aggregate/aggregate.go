@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"strconv"
 	"time"
-	"wikimedia-enterprise/services/structured-data/submodules/wmf"
 
+	"github.com/wikimedia-enterprise/wmf"
 	"go.uber.org/dig"
 )
 

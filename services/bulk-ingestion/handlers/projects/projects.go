@@ -11,11 +11,11 @@ import (
 	"wikimedia-enterprise/services/bulk-ingestion/config/env"
 	pb "wikimedia-enterprise/services/bulk-ingestion/handlers/protos"
 	"wikimedia-enterprise/services/bulk-ingestion/submodules/schema"
-	"wikimedia-enterprise/services/bulk-ingestion/submodules/wmf"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/aws/aws-sdk-go/service/s3/s3iface"
+	"github.com/wikimedia-enterprise/wmf"
 	"go.uber.org/dig"
 )
 
@@ -111,14 +111,14 @@ func Handler(ctx context.Context, p *Parameters, req *pb.ProjectsRequest) (*pb.P
 		return nil, err
 	}
 
-	cds := `{"identifier":"wiki","name":"Wikipedia","description":"The free encyclopedia."}
-{"identifier":"wikibooks","name":"Wikibooks","description":"E-book textbooks and annotated texts."}
-{"identifier":"wikinews","name":"Wikinews","description":"The free news source."}
-{"identifier":"wikiquote","name":"Wikiquote","description":"Quotes across your favorite books, movies, authors, and more."}
-{"identifier":"wikisource","name":"Wikisource","description":"The free digital library."}
-{"identifier":"wikivoyage","name":"Wikivoyage","description":"The ultimate worldwide travel guide."}
-{"identifier":"wiktionary","name":"Wiktionary","description":"A dictionary for over 170 languages."}
-{"identifier":"wikiversity","name":"Wikiversity","description":"Free learning resources."}`
+	cds := `{"identifier":"wiki","name":"Wikipedia","description":"A content encyclopedia written collaboratively in more than 340 language editions at a rate of over 2 edits every second, performed by volunteers from all over the world.","url":"https://enterprise.wikimedia.com/project-data/wikipedia-api/"}
+{"identifier":"wikibooks","name":"Wikibooks","description":"Free e-book resources that span textbooks, instructional guides, manuals, annotated texts, and other educational materials, available in over 75 languages.","url":"https://enterprise.wikimedia.com/project-data/wikibooks-api/"}
+{"identifier":"wikinews","name":"Wikinews","description":"A collaboratively written news portal with stories that chronicle events when they happen, are fact-checked, and peer reviewed.","url":"https://www.wikinews.org/"}
+{"identifier":"wikiquote","name":"Wikiquote","description":"Quotations from notable people and creative works in over 75 languages, backed up by citations and sources.","url":"https://enterprise.wikimedia.com/project-data/wikiquote-api/"}
+{"identifier":"wikisource","name":"Wikisource","description":"A library of freely-licensed source texts and historical documents including poetry, novels, letters, speeches, constitutional and historical documents of many countries, laws, and a range of other documents.","url":"https://enterprise.wikimedia.com/project-data/wikisource-api/"}
+{"identifier":"wikivoyage","name":"Wikivoyage","description":"A community-curated worldwide travel guide built from contributions by locals and experienced travelers.","url":"https://enterprise.wikimedia.com/project-data/wikivoyage-api/"}
+{"identifier":"wiktionary","name":"Wiktionary","description":"A free multilingual dictionary of over 170 languages. Includes etymologies, pronunciations, sample quotations, translations, spelling variants, a thesaurus, rhyming guides, phrase books, and non-standard spellings.","url":"https://enterprise.wikimedia.com/project-data/wiktionary-api/"}
+{"identifier":"wikiversity","name":"Wikiversity","description":"Free learning resources, learning projects, and research for all levels, types and styles of education from pre-school to university.","url":"https://enterprise.wikimedia.com/project-data/wikiversity-api/"}`
 
 	scn := bufio.NewScanner(strings.NewReader(cds))
 

@@ -10,7 +10,7 @@ metadata:
 spec:
   tolerations:
     - effect: NoSchedule
-      key: airflow
+      key: airflow-latest
       operator: Equal
       value: "true"
   initContainers:
