@@ -1,0 +1,339 @@
+([]*parser.Reference) (len=12) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=181) "Cell Movements and the Shaping of the Vertebrate Body в Глава 21 на Molecular Biology of the Cell fourth edition, edited by Bruce Alberts (2002) published by Garland Science",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=206) "http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Search&db=books&doptcmdl=GenBookHL&term=Cell+Movements+and+the+Shaping+of+the+Vertebrate+Body+AND+mboc4%5Bbook%5D+AND+374635%5Buid%5D&rid=mboc4.section.3919",
+          Text: (string) (len=53) "Cell Movements and the Shaping of the Vertebrate Body",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=152) "http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Search&db=books&doptcmdl=GenBookHL&term=cell+biology+AND+mboc4%5Bbook%5D+AND+373693%5Buid%5D&rid=mboc4",
+          Text: (string) (len=29) "Molecular Biology of the Cell",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=9) "coauthors": (string) (len=32) "Brad Williamson; Robin J. Heyden",
+      (string) (len=4) "date": (string) (len=4) "2006",
+      (string) (len=5) "first": (string) (len=7) "Neil A.",
+      (string) (len=4) "isbn": (string) (len=13) "0-13-250882-6",
+      (string) (len=4) "last": (string) (len=8) "Campbell",
+      (string) (len=8) "location": (string) (len=21) "Boston, Massachusetts",
+      (string) (len=9) "publisher": (string) (len=21) "Pearson Prentice Hall",
+      (string) (len=5) "title": (string) (len=23) "Biology: Exploring Life",
+      (string) (len=3) "url": (string) (len=41) "http://www.phschool.com/el_marketing.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=125) "Campbell, Neil A. и др. Biology: Exploring Life.   Boston, Massachusetts, Pearson Prentice Hall, 2006. ISBN 0-13-250882-6.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=41) "http://www.phschool.com/el_marketing.html",
+          Text: (string) (len=23) "Biology: Exploring Life",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://bg.wikipedia.org/wiki/Special:BookSources/0132508826",
+          Text: (string) (len=18) "ISBN 0-13-250882-6",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=708) "\"... с изключителна яснота можех да осъзная, че той е изцяло перфориран и порьозен, съвсем като восъчна пита, но порите му не са равномерни [..] тези пори, или клетки, [..] всъщност бяха първите микроскопични пори, които видях, а може би и първите, видяни някога, тъй като аз не съм срещал писател или човек, който да ги е споменавал досега...\" – Хук описва наблуденията си на тънко парче корк. Robert Hooke",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=47) "http://www.ucmp.berkeley.edu/history/hooke.html",
+          Text: (string) (len=12) "Robert Hooke",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=9) "coauthors": (string) (len=79) "Hopkins, Jean Johnson, Susan LaHart, David Quon Warner, Maryanna Wright, Jill D",
+      (string) (len=5) "first": (string) (len=6) "Anthea",
+      (string) (len=4) "isbn": (string) (len=13) "0-13-423476-6",
+      (string) (len=4) "last": (string) (len=5) "Maton",
+      (string) (len=8) "location": (string) (len=10) "New Jersey",
+      (string) (len=9) "publisher": (string) (len=13) "Prentice Hall",
+      (string) (len=5) "title": (string) (len=29) "Cells Building Blocks of Life",
+      (string) (len=3) "url": (string) (len=50) "https://archive.org/details/cellsbuildingblo00mato",
+      (string) (len=4) "year": (string) (len=4) "1997"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=108) "Maton, Anthea и др. Cells Building Blocks of Life.   New Jersey, Prentice Hall, 1997. ISBN 0-13-423476-6.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=50) "https://archive.org/details/cellsbuildingblo00mato",
+          Text: (string) (len=29) "Cells Building Blocks of Life",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://bg.wikipedia.org/wiki/Special:BookSources/0134234766",
+          Text: (string) (len=18) "ISBN 0-13-423476-6",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=254) "A. Rose, S. J. Schraegle, E. A. Stahlberg and I. Meier (2005) „Coiled-coil protein composition of 22 proteomes--differences and common themes in subcellular infrastructure and traffic control“ в BMC evolutionary biology Vulume 5 article 66. 16288662",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=22) {
+      (string) (len=10) "accessdate": (string) (len=26) "12 септември 2009",
+      (string) (len=11) "archive-url": (string) (len=96) "https://web.archive.org/web/20200428014511/http://www.springerlink.com/content/x5051hq648t3152q/",
+      (string) (len=11) "archivedate": (string) (len=10) "2020-04-28",
+      (string) (len=9) "coauthors": (string) (len=21) "Søren T. Christensen",
+      (string) (len=4) "date": (string) (len=16) "26 март 2008",
+      (string) (len=3) "doi": (string) (len=25) "10.1007/s00418-008-0416-9",
+      (string) (len=5) "first": (string) (len=5) "Peter",
+      (string) (len=6) "first1": (string) (len=1) "P",
+      (string) (len=6) "first2": (string) (len=2) "ST",
+      (string) (len=2) "id": (string) (len=9) "1432-119X",
+      (string) (len=4) "issn": (string) (len=9) "0948-6143",
+      (string) (len=5) "issue": (string) (len=1) "6",
+      (string) (len=7) "journal": (string) (len=31) "Histochemistry and Cell Biology",
+      (string) (len=4) "last": (string) (len=5) "Satir",
+      (string) (len=5) "last1": (string) (len=5) "Satir",
+      (string) (len=5) "last2": (string) (len=11) "Christensen",
+      (string) (len=5) "pages": (string) (len=12) "687\u00a0– 693",
+      (string) (len=4) "pmid": (string) (len=8) "18365235",
+      (string) (len=9) "publisher": (string) (len=28) "Springer Berlin / Heidelberg",
+      (string) (len=5) "title": (string) (len=41) "Structure and function of mammalian cilia",
+      (string) (len=3) "url": (string) (len=53) "http://www.springerlink.com/content/x5051hq648t3152q/",
+      (string) (len=6) "volume": (string) (len=3) "129"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=328) "Satir, Peter и др. Structure and function of mammalian cilia //  Histochemistry and Cell Biology 129 (6).   Springer Berlin / Heidelberg, 26 март 2008. DOI:10.1007/s00418-008-0416-9. 1432-119X. с.\u00a0687\u00a0– 693.  Архивиран от оригинала на 2020-04-28. Посетен на 12 септември 2009.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=96) "https://web.archive.org/web/20200428014511/http://www.springerlink.com/content/x5051hq648t3152q/",
+          Text: (string) (len=41) "Structure and function of mammalian cilia",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=43) "http://dx.doi.org/10.1007/s00418-008-0416-9",
+          Text: (string) (len=25) "10.1007/s00418-008-0416-9",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=53) "http://www.springerlink.com/content/x5051hq648t3152q/",
+          Text: (string) (len=18) "оригинала",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=6) "author": (string) (len=17) "Michie K, Löwe J",
+      (string) (len=7) "journal": (string) (len=16) "Annu Rev Biochem",
+      (string) (len=5) "pages": (string) (len=11) "467\u00a0– 92",
+      (string) (len=4) "pmid": (string) (len=8) "16756499",
+      (string) (len=5) "title": (string) (len=47) "Dynamic filaments of the bacterial cytoskeleton",
+      (string) (len=6) "volume": (string) (len=2) "75",
+      (string) (len=4) "year": (string) (len=4) "2006"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=117) "Michie K, Löwe J. Dynamic filaments of the bacterial cytoskeleton //  Annu Rev Biochem 75.   2006. с.\u00a0467\u00a0– 92.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=6) "author": (string) (len=68) "Anderson S, Bankier AT, Barrell BG, de Bruijn MH, Coulson AR, et al.",
+      (string) (len=4) "date": (string) (len=10) "1981 Apr 9",
+      (string) (len=5) "issue": (string) (len=4) "5806",
+      (string) (len=7) "journal": (string) (len=7) "Nature.",
+      (string) (len=5) "pages": (string) (len=9) "4\u00a0– 65",
+      (string) (len=5) "title": (string) (len=59) "Sequence and organization of the human mitochondrial genome",
+      (string) (len=6) "volume": (string) (len=3) "290"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=182) "Anderson S, Bankier AT, Barrell BG, de Bruijn MH, Coulson AR, et al. Sequence and organization of the human mitochondrial genome //  Nature. 290 (5806).   1981 Apr 9. с.\u00a04\u00a0– 65.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=9) "coauthors": (string) (len=73) "Alexander Johnson, Julian Lewis, Martin Raff, Keith Roberts, Peter Walter",
+      (string) (len=5) "first": (string) (len=5) "Bruce",
+      (string) (len=2) "id": (string) (len=18) "ISBN 0-8153-3218-1",
+      (string) (len=4) "last": (string) (len=7) "Alberts",
+      (string) (len=8) "location": (string) (len=8) "New York",
+      (string) (len=9) "publisher": (string) (len=23) "Garland Publishing Inc.",
+      (string) (len=5) "title": (string) (len=29) "Molecular Biology of the Cell",
+      (string) (len=3) "url": (string) (len=50) "https://archive.org/details/molecularbiology00albe",
+      (string) (len=4) "year": (string) (len=4) "1994"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=117) "Alberts, Bruce и др. Molecular Biology of the Cell.   New York, Garland Publishing Inc., 1994. ISBN 0-8153-3218-1.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=50) "https://archive.org/details/molecularbiology00albe",
+          Text: (string) (len=29) "Molecular Biology of the Cell",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://bg.wikipedia.org/wiki/Special:BookSources/0815332181",
+          Text: (string) (len=18) "ISBN 0-8153-3218-1",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=12) {
+      (string) (len=6) "author": (string) (len=51) "Ménétret JF, Schaletzky J, Clemons WM, ''et al.''",
+      (string) (len=3) "doi": (string) (len=28) "10.1016/j.molcel.2007.10.034",
+      (string) (len=7) "first12": (string) (len=2) "CW",
+      (string) (len=5) "issue": (string) (len=1) "6",
+      (string) (len=7) "journal": (string) (len=9) "Mol. Cell",
+      (string) (len=6) "last12": (string) (len=4) "Akey",
+      (string) (len=5) "month": (string) (len=16) "Декември",
+      (string) (len=5) "pages": (string) (len=12) "1083\u00a0– 92",
+      (string) (len=4) "pmid": (string) (len=8) "18158904",
+      (string) (len=5) "title": (string) (len=93) "Ribosome binding of a single copy of the SecY complex: implications for protein translocation",
+      (string) (len=6) "volume": (string) (len=2) "28",
+      (string) (len=4) "year": (string) (len=4) "2007"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=241) "Ménétret JF, Schaletzky J, Clemons WM, et al. Ribosome binding of a single copy of the SecY complex: implications for protein translocation //  Mol. Cell 28 (6).   Декември 2007. DOI:10.1016/j.molcel.2007.10.034. с.\u00a01083\u00a0– 92.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=46) "http://dx.doi.org/10.1016/j.molcel.2007.10.034",
+          Text: (string) (len=28) "10.1016/j.molcel.2007.10.034",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-11",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=6) "author": (string) (len=8) "Orgel LE",
+      (string) (len=3) "doi": (string) (len=29) "10.1016/S0968-0004(98)01300-0",
+      (string) (len=5) "issue": (string) (len=2) "12",
+      (string) (len=7) "journal": (string) (len=18) "Trends Biochem Sci",
+      (string) (len=5) "pages": (string) (len=10) "491\u00a0– 5",
+      (string) (len=4) "pmid": (string) (len=7) "9868373",
+      (string) (len=5) "title": (string) (len=54) "The origin of life--a review of facts and speculations",
+      (string) (len=6) "volume": (string) (len=2) "23",
+      (string) (len=4) "year": (string) (len=4) "1998"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=156) "Orgel LE. The origin of life--a review of facts and speculations //  Trends Biochem Sci 23 (12).   1998. DOI:10.1016/S0968-0004(98)01300-0. с.\u00a0491\u00a0– 5.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=47) "http://dx.doi.org/10.1016/S0968-0004(98)01300-0",
+          Text: (string) (len=29) "10.1016/S0968-0004(98)01300-0",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-12",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=6) "author": (string) (len=11) "Griffiths G",
+      (string) (len=3) "doi": (string) (len=15) "10.1038/nrm2287",
+      (string) (len=5) "issue": (string) (len=2) "12",
+      (string) (len=7) "journal": (string) (len=38) "Nature reviews. Molecular cell biology",
+      (string) (len=5) "month": (string) (len=16) "Декември",
+      (string) (len=5) "pages": (string) (len=12) "1018\u00a0– 24",
+      (string) (len=4) "pmid": (string) (len=8) "17971839",
+      (string) (len=5) "title": (string) (len=51) "Cell evolution and the problem of membrane topology",
+      (string) (len=6) "volume": (string) (len=1) "8",
+      (string) (len=4) "year": (string) (len=4) "2007"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=180) "Griffiths G. Cell evolution and the problem of membrane topology //  Nature reviews. Molecular cell biology 8 (12).   Декември 2007. DOI:10.1038/nrm2287. с.\u00a01018\u00a0– 24.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=33) "http://dx.doi.org/10.1038/nrm2287",
+          Text: (string) (len=15) "10.1038/nrm2287",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

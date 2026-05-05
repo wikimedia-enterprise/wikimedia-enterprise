@@ -1,0 +1,46 @@
+([]*parser.Reference) (len=2) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=6) "titolo": (string) (len=63) "Si chiama Pergolettese 1932. Soluzione trovata grazie ad Alloni",
+      (string) (len=3) "url": (string) (len=85) "http://www.cremonaweb.it/index.php?option=com_content&view=article&id=1669&Itemid=477",
+      (string) (len=11) "urlarchivio": (string) (len=128) "https://web.archive.org/web/20130921054015/http://www.cremonaweb.it/index.php?option=com_content&view=article&id=1669&Itemid=477"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=135) "Si chiama Pergolettese 1932. Soluzione trovata grazie ad Alloni, su cremonaweb.it (archiviato dall'url originale il 21 settembre 2013).",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=128) "https://web.archive.org/web/20130921054015/http://www.cremonaweb.it/index.php?option=com_content&view=article&id=1669&Itemid=477",
+          Text: (string) (len=63) "Si chiama Pergolettese 1932. Soluzione trovata grazie ad Alloni",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=6) "titolo": (string) (len=18) "Real Pizzighettone",
+      (string) (len=3) "url": (string) (len=101) "http://www.baloocalcio.it/index.php?option=com_k2&view=item&id=1021:prima-real-pizzighettone&Itemid=8",
+      (string) (len=11) "urlarchivio": (string) (len=144) "https://web.archive.org/web/20140427203344/http://www.baloocalcio.it/index.php?option=com_k2&view=item&id=1021:prima-real-pizzighettone&Itemid=8"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=89) "Real Pizzighettone, su baloocalcio.it (archiviato dall'url originale il 27 aprile 2014)./",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=144) "https://web.archive.org/web/20140427203344/http://www.baloocalcio.it/index.php?option=com_k2&view=item&id=1021:prima-real-pizzighettone&Itemid=8",
+          Text: (string) (len=18) "Real Pizzighettone",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

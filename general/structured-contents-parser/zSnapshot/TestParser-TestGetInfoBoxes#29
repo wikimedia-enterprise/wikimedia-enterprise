@@ -1,0 +1,765 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=19) "Infobox Biographie2",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) (len=16) "Joséphine Baker",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=22) {
+          (*parser.Part)({
+            Name: (string) (len=9) "Naissance",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=47) "3 juin 1906 Saint-Louis (Missouri, États-Unis)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=6) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://fr.wikipedia.org/wiki/3_juin",
+                Text: (string) (len=1) "3",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://fr.wikipedia.org/wiki/Juin_1906",
+                Text: (string) (len=4) "juin",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://fr.wikipedia.org/wiki/1906",
+                Text: (string) (len=4) "1906",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=52) "https://fr.wikipedia.org/wiki/Saint-Louis_(Missouri)",
+                Text: (string) (len=11) "Saint-Louis",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://fr.wikipedia.org/wiki/Missouri_(État)",
+                Text: (string) (len=8) "Missouri",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://fr.wikipedia.org/wiki/États-Unis",
+                Text: (string) (len=11) "États-Unis",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Décès",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=40) "12 avril 1975 (à 68 ans) Paris (France)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://fr.wikipedia.org/wiki/12_avril",
+                Text: (string) (len=2) "12",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://fr.wikipedia.org/wiki/Avril_1975",
+                Text: (string) (len=5) "avril",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://fr.wikipedia.org/wiki/1975",
+                Text: (string) (len=4) "1975",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://fr.wikipedia.org/wiki/Paris",
+                Text: (string) (len=5) "Paris",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://fr.wikipedia.org/wiki/France",
+                Text: (string) (len=6) "France",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Sépulture",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=86) "Cimetière de Monaco (depuis le 19 avril 1975), Panthéon (depuis le 30 novembre 2021)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=8) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://fr.wikipedia.org/wiki/Cimetière_de_Monaco",
+                Text: (string) (len=20) "Cimetière de Monaco",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://fr.wikipedia.org/wiki/19_avril",
+                Text: (string) (len=2) "19",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://fr.wikipedia.org/wiki/Avril_1975",
+                Text: (string) (len=5) "avril",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://fr.wikipedia.org/wiki/1975",
+                Text: (string) (len=4) "1975",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://fr.wikipedia.org/wiki/Panthéon_(Paris)",
+                Text: (string) (len=9) "Panthéon",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://fr.wikipedia.org/wiki/30_novembre",
+                Text: (string) (len=2) "30",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://fr.wikipedia.org/wiki/Novembre_2021",
+                Text: (string) (len=8) "novembre",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://fr.wikipedia.org/wiki/2021",
+                Text: (string) (len=4) "2021",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=16) "Nom de naissance",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "Freda Josephine McDonald",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Époque",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "XXe siècle",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://fr.wikipedia.org/wiki/XXe_siècle",
+                Text: (string) (len=11) "XXe siècle",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Nationalités",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=70) "américaine (jusqu'en 1937) française (à partir du 30 novembre 1937)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://fr.wikipedia.org/wiki/États-Unis",
+                Text: (string) (len=11) "américaine",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://fr.wikipedia.org/wiki/France",
+                Text: (string) (len=10) "française",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Domiciles",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=135) "Le Vésinet (1929 - 1947), château des Milandes (1937 - 1969), Roquebrune-Cap-Martin (à partir de 1969), Saint-Louis, New York, Paris",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=11) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://fr.wikipedia.org/wiki/Le_Vésinet",
+                Text: (string) (len=11) "Le Vésinet",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://fr.wikipedia.org/wiki/1929",
+                Text: (string) (len=4) "1929",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://fr.wikipedia.org/wiki/1947",
+                Text: (string) (len=4) "1947",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://fr.wikipedia.org/wiki/Château_des_Milandes",
+                Text: (string) (len=21) "château des Milandes",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://fr.wikipedia.org/wiki/1937",
+                Text: (string) (len=4) "1937",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://fr.wikipedia.org/wiki/1969",
+                Text: (string) (len=4) "1969",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://fr.wikipedia.org/wiki/Roquebrune-Cap-Martin",
+                Text: (string) (len=21) "Roquebrune-Cap-Martin",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://fr.wikipedia.org/wiki/1969",
+                Text: (string) (len=4) "1969",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=52) "https://fr.wikipedia.org/wiki/Saint-Louis_(Missouri)",
+                Text: (string) (len=11) "Saint-Louis",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://fr.wikipedia.org/wiki/New_York",
+                Text: (string) (len=8) "New York",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://fr.wikipedia.org/wiki/Paris",
+                Text: (string) (len=5) "Paris",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Activités",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=238) "Officière de renseignement (à partir de septembre 1939), officier (23 mai 1944 - 8 septembre 1945), actrice, chanteuse, mannequin, écrivaine, musicienne de jazz, artiste de rue, danseuse, meneuse de revue, militante des droits civiques",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=19) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://fr.wikipedia.org/wiki/Renseignement",
+                Text: (string) (len=27) "Officière de renseignement",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://fr.wikipedia.org/wiki/Septembre_1939",
+                Text: (string) (len=9) "septembre",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://fr.wikipedia.org/wiki/1939",
+                Text: (string) (len=4) "1939",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://fr.wikipedia.org/wiki/Officier",
+                Text: (string) (len=8) "officier",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://fr.wikipedia.org/wiki/23_mai",
+                Text: (string) (len=2) "23",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://fr.wikipedia.org/wiki/Mai_1944",
+                Text: (string) (len=3) "mai",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://fr.wikipedia.org/wiki/1944",
+                Text: (string) (len=4) "1944",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://fr.wikipedia.org/wiki/8_septembre",
+                Text: (string) (len=1) "8",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://fr.wikipedia.org/wiki/Septembre_1945",
+                Text: (string) (len=9) "septembre",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://fr.wikipedia.org/wiki/1945",
+                Text: (string) (len=4) "1945",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://fr.wikipedia.org/wiki/Acteur",
+                Text: (string) (len=7) "actrice",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://fr.wikipedia.org/wiki/Chanteur",
+                Text: (string) (len=9) "chanteuse",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://fr.wikipedia.org/wiki/Mannequinat",
+                Text: (string) (len=9) "mannequin",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://fr.wikipedia.org/wiki/Écrivain",
+                Text: (string) (len=10) "écrivaine",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://fr.wikipedia.org/wiki/Jazz",
+                Text: (string) (len=18) "musicienne de jazz",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://fr.wikipedia.org/wiki/Artiste_de_rue",
+                Text: (string) (len=14) "artiste de rue",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://fr.wikipedia.org/wiki/Danseur",
+                Text: (string) (len=8) "danseuse",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://fr.wikipedia.org/wiki/Meneuse_de_revue",
+                Text: (string) (len=16) "meneuse de revue",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://fr.wikipedia.org/wiki/Droits_civiques",
+                Text: (string) (len=29) "militante des droits civiques",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=20) "Période d'activité",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "1921 - 1975",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=34) "https://fr.wikipedia.org/wiki/1921",
+                Text: (string) (len=4) "1921",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://fr.wikipedia.org/wiki/1975",
+                Text: (string) (len=4) "1975",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Conjoint",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=145) "Willie Wells (1919 div 1919), William Baker (1921 div 1925), Jean Lion (1937 div 1940), Jo Bouillon (1947 div 1961), Robert Brady (1973 div 1974)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://fr.wikipedia.org/wiki/Jean_Lion_(résistant)",
+                Text: (string) (len=9) "Jean Lion",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://fr.wikipedia.org/wiki/Jo_Bouillon",
+                Text: (string) (len=11) "Jo Bouillon",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=16) "Propriétaire de",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=34) "Collection de Joséphine Baker (d)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://www.wikidata.org/wiki/Q110147293",
+                Text: (string) (len=1) "d",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Membre de",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=31) "Franc-maçonnerie (1960 - 1964)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://fr.wikipedia.org/wiki/Franc-maçonnerie",
+                Text: (string) (len=17) "Franc-maçonnerie",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Arme",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "Force aérienne",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=60) "https://fr.wikipedia.org/wiki/Composante_aérienne_militaire",
+                Text: (string) (len=15) "Force aérienne",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Grade militaire",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=33) "Sous-lieutenant (d) (1944 - 1945)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://www.wikidata.org/wiki/Q21074326",
+                Text: (string) (len=1) "d",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://fr.wikipedia.org/wiki/1944",
+                Text: (string) (len=4) "1944",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://fr.wikipedia.org/wiki/1945",
+                Text: (string) (len=4) "1945",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Conflit",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "Seconde Guerre mondiale",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://fr.wikipedia.org/wiki/Seconde_Guerre_mondiale",
+                Text: (string) (len=23) "Seconde Guerre mondiale",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Mouvement",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "Renaissance de Harlem",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=51) "https://fr.wikipedia.org/wiki/Renaissance_de_Harlem",
+                Text: (string) (len=21) "Renaissance de Harlem",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Labels",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=58) "Columbia Records, Odeon, Mercury Records, RCA Records, EMI",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://fr.wikipedia.org/wiki/Columbia_Records",
+                Text: (string) (len=16) "Columbia Records",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://fr.wikipedia.org/wiki/Odeon_(label)",
+                Text: (string) (len=5) "Odeon",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://fr.wikipedia.org/wiki/Mercury_Records",
+                Text: (string) (len=15) "Mercury Records",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://fr.wikipedia.org/wiki/RCA_Records",
+                Text: (string) (len=11) "RCA Records",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://fr.wikipedia.org/wiki/EMI_Group",
+                Text: (string) (len=3) "EMI",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=18) "Genres artistiques",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=39) "Cabaret (d), music-hall, pop française",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://www.wikidata.org/wiki/Q27976507",
+                Text: (string) (len=1) "d",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://fr.wikipedia.org/wiki/Music-hall",
+                Text: (string) (len=10) "music-hall",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://fr.wikipedia.org/wiki/Pop_française",
+                Text: (string) (len=14) "pop française",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Site web",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=30) "(en) www.cmgww.com/stars/baker",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=33) "http://www.cmgww.com/stars/baker/",
+                Text: (string) (len=25) "www.cmgww.com/stars/baker",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Distinctions",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=245) "Liste détaillée Médaille de la Résistance (1946) Croix de guerre 1939-1945 (1957) Chevalier de la Légion d'honneur (1957) Médaille commémorative des services volontaires dans la France libre Médaille commémorative de la guerre 1939-1945",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=68) "https://fr.wikipedia.org/wiki/Médaille_de_la_Résistance_française",
+                Text: (string) (len=27) "Médaille de la Résistance",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=64) "https://fr.wikipedia.org/wiki/Croix_de_guerre_1939-1945_(France)",
+                Text: (string) (len=25) "Croix de guerre 1939-1945",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=81) "https://fr.wikipedia.org/wiki/Ordre_national_de_la_Légion_d'honneur#Organisation",
+                Text: (string) (len=33) "Chevalier de la Légion d'honneur",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=100) "https://fr.wikipedia.org/wiki/Médaille_commémorative_des_services_volontaires_dans_la_France_libre",
+                Text: (string) (len=70) "Médaille commémorative des services volontaires dans la France libre",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=88) "https://fr.wikipedia.org/wiki/Médaille_commémorative_française_de_la_guerre_1939-1945",
+                Text: (string) (len=47) "Médaille commémorative de la guerre 1939-1945",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=24) "Archives conservées par",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=208) "Bibliothèque Beinecke de livres rares et manuscrits Stuart A. Rose Manuscript, Archives, and Rare Book Library (d) Service historique de la Défense Schomburg Center for Research in Black Culture (Sc MG 778)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=7) {
+              (*parser.Link)({
+                URL: (string) (len=82) "https://fr.wikipedia.org/wiki/Bibliothèque_Beinecke_de_livres_rares_et_manuscrits",
+                Text: (string) (len=52) "Bibliothèque Beinecke de livres rares et manuscrits",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://www.wikidata.org/wiki/Q72941560",
+                Text: (string) (len=1) "d",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=108) "https://fr.wikipedia.org/wiki/Joséphine_Baker#cite_note-wikidata-8b82e0c57c4538f2c17dbd9be50b9e6601206302-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=63) "https://fr.wikipedia.org/wiki/Service_historique_de_la_Défense",
+                Text: (string) (len=33) "Service historique de la Défense",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=108) "https://fr.wikipedia.org/wiki/Joséphine_Baker#cite_note-wikidata-4b7c34299e1f7d477e8142ed5dd3435a1533b173-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "https://fr.wikipedia.org/wiki/Schomburg_Center_for_Research_in_Black_Culture",
+                Text: (string) (len=46) "Schomburg Center for Research in Black Culture",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=108) "https://fr.wikipedia.org/wiki/Joséphine_Baker#cite_note-wikidata-a88f6c6b8e553c22b0de063ca441ebac4bf48c74-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=37) "Les mémoires de Joséphine Baker (d)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://www.wikidata.org/wiki/Q110832744",
+                Text: (string) (len=1) "d",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) (len=2) {
+          (*parser.Image)({
+            ContentUrl: (string) (len=91) "https://upload.wikimedia.org/wikipedia/commons/1/1c/Baker_Harcourt_1940_2_%28cropped%29.jpg",
+            Identifier: (string) (len=64) "b81f2dfd4f10598da4c61443d6ce6e2c9729e3c03dbee43254e04c02e3da0f61",
+            Name: (string) (len=43) "Fichier:Baker_Harcourt_1940_2_(cropped).jpg",
+            AlternativeText: (string) "",
+            Caption: (string) (len=25) "Joséphine Baker en 1940.",
+            Height: (int) 388,
+            Width: (int) 238,
+            EncodingFormat: (string) (len=10) "image/jpeg",
+            MediaType: (string) (len=6) "bitmap"
+          }),
+          (*parser.Image)({
+            ContentUrl: (string) (len=209) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Signature_de_Jos%C3%A9phine_Baker_-_Archives_nationales_%28France%29.png/170px-Signature_de_Jos%C3%A9phine_Baker_-_Archives_nationales_%28France%29.png",
+            Identifier: (string) (len=64) "cffa4068851bda722756d43d586f8b024084a9d93ae69dede55d60b667af9928",
+            Name: (string) (len=72) "Fichier:Signature_de_Joséphine_Baker_-_Archives_nationales_(France).png",
+            AlternativeText: (string) (len=29) "signature de Joséphine Baker",
+            Caption: (string) "",
+            Height: (int) 118,
+            Width: (int) 170,
+            EncodingFormat: (string) (len=9) "image/png",
+            MediaType: (string) (len=6) "bitmap"
+          })
+        },
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

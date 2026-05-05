@@ -1,0 +1,16 @@
+([]*parser.Reference) (len=1) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=77) "Munthe, C.M., \"Norske slegtsmerker\", Norsk Slektshistorisk Tidsskrift (NST) 1",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

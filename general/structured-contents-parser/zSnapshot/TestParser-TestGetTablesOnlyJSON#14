@@ -1,0 +1,1009 @@
+Body mass index
+[
+  {
+    "ID": "history_table1",
+    "Table": {
+      "headers": null,
+      "footers": null,
+      "rows": [
+        [
+          {
+            "value": "Units"
+          },
+          {
+            "value": "1 Metric 0 Imperial"
+          }
+        ],
+        [
+          {
+            "value": "Weight"
+          },
+          {
+            "value": "kg lbs"
+          }
+        ],
+        [
+          {
+            "value": "Height"
+          },
+          {
+            "value": "cm feet inches"
+          }
+        ],
+        [
+          {
+            "value": "BMI"
+          },
+          {
+            "value": "kg/m"
+          }
+        ]
+      ],
+      "confidence_score": 1
+    }
+  },
+  {
+    "ID": "categories_table1",
+    "Table": {
+      "headers": [
+        [
+          {
+            "value": "Category"
+          },
+          {
+            "value": "BMI (kg/m)"
+          },
+          {
+            "value": "BMI Prime"
+          }
+        ]
+      ],
+      "footers": null,
+      "rows": [
+        [
+          {
+            "value": "Underweight (Severe thinness)"
+          },
+          {
+            "value": "\u003c 16.0"
+          },
+          {
+            "value": "\u003c 0.64"
+          }
+        ],
+        [
+          {
+            "value": "Underweight (Moderate thinness)"
+          },
+          {
+            "value": "16.0-16.9"
+          },
+          {
+            "value": "0.64-0.67"
+          }
+        ],
+        [
+          {
+            "value": "Underweight (Mild thinness)"
+          },
+          {
+            "value": "17.0-18.4"
+          },
+          {
+            "value": "0.68-0.73"
+          }
+        ],
+        [
+          {
+            "value": "Normal range"
+          },
+          {
+            "value": "18.5-24.9"
+          },
+          {
+            "value": "0.74-0.99"
+          }
+        ],
+        [
+          {
+            "value": "Overweight (Pre-obese)"
+          },
+          {
+            "value": "25.0-29.9"
+          },
+          {
+            "value": "2019-01-01"
+          }
+        ],
+        [
+          {
+            "value": "Obese (Class I)"
+          },
+          {
+            "value": "30.0-34.9"
+          },
+          {
+            "value": "1.20-1.39"
+          }
+        ],
+        [
+          {
+            "value": "Obese (Class II)"
+          },
+          {
+            "value": "35.0-39.9"
+          },
+          {
+            "value": "1.40-1.59"
+          }
+        ],
+        [
+          {
+            "value": "Obese (Class III)"
+          },
+          {
+            "value": "≥ 40.0"
+          },
+          {
+            "value": "≥ 1.60"
+          }
+        ]
+      ],
+      "confidence_score": 0.9
+    }
+  },
+  {
+    "ID": "categories.international_variations.hong_kong_table1",
+    "Table": {
+      "headers": [
+        [
+          {
+            "value": "Category"
+          },
+          {
+            "value": "BMI (kg/m)"
+          }
+        ]
+      ],
+      "footers": null,
+      "rows": [
+        [
+          {
+            "value": "Underweight (Unhealthy)"
+          },
+          {
+            "value": "\u003c 18.5"
+          }
+        ],
+        [
+          {
+            "value": "Normal range (Healthy)"
+          },
+          {
+            "value": "18.5-22.9"
+          }
+        ],
+        [
+          {
+            "value": "Overweight I (At risk)"
+          },
+          {
+            "value": "23.0-24.9"
+          }
+        ],
+        [
+          {
+            "value": "Overweight II (Moderately obese)"
+          },
+          {
+            "value": "25.0-29.9"
+          }
+        ],
+        [
+          {
+            "value": "Overweight III (Severely obese)"
+          },
+          {
+            "value": "≥ 30.0"
+          }
+        ]
+      ],
+      "confidence_score": 0.9
+    }
+  },
+  {
+    "ID": "categories.international_variations.japan_table1",
+    "Table": {
+      "headers": [
+        [
+          {
+            "value": "Category"
+          },
+          {
+            "value": "BMI (kg/m)"
+          }
+        ]
+      ],
+      "footers": null,
+      "rows": [
+        [
+          {
+            "value": "Underweight (Thin)"
+          },
+          {
+            "value": "\u003c 18.5"
+          }
+        ],
+        [
+          {
+            "value": "Normal weight"
+          },
+          {
+            "value": "18.5-24.9"
+          }
+        ],
+        [
+          {
+            "value": "Obesity (Class 1)"
+          },
+          {
+            "value": "25.0-29.9"
+          }
+        ],
+        [
+          {
+            "value": "Obesity (Class 2)"
+          },
+          {
+            "value": "30.0-34.9"
+          }
+        ],
+        [
+          {
+            "value": "Obesity (Class 3)"
+          },
+          {
+            "value": "35.0-39.9"
+          }
+        ],
+        [
+          {
+            "value": "Obesity (Class 4)"
+          },
+          {
+            "value": "≥ 40.0"
+          }
+        ]
+      ],
+      "confidence_score": 0.9
+    }
+  },
+  {
+    "ID": "categories.international_variations.singapore_table1",
+    "Table": {
+      "headers": [
+        [
+          {
+            "value": "Category"
+          },
+          {
+            "value": "BMI (kg/m)"
+          },
+          {
+            "value": "Health risk"
+          }
+        ]
+      ],
+      "footers": null,
+      "rows": [
+        [
+          {
+            "value": "Underweight"
+          },
+          {
+            "value": "\u003c 18.5"
+          },
+          {
+            "value": "Possible nutritional deficiency and osteoporosis."
+          }
+        ],
+        [
+          {
+            "value": "Normal"
+          },
+          {
+            "value": "18.5-22.9"
+          },
+          {
+            "value": "Low risk (healthy range)."
+          }
+        ],
+        [
+          {
+            "value": "Mild to moderate overweight"
+          },
+          {
+            "value": "23.0-27.4"
+          },
+          {
+            "value": "Moderate risk of developing heart disease, high blood pressure, stroke, diabetes mellitus."
+          }
+        ],
+        [
+          {
+            "value": "Very overweight to obese"
+          },
+          {
+            "value": "≥ 27.5"
+          },
+          {
+            "value": "High risk of developing heart disease, high blood pressure, stroke, diabetes mellitus. Metabolic syndrome."
+          }
+        ]
+      ],
+      "confidence_score": 0.9
+    }
+  },
+  {
+    "ID": "categories.international_variations.united_states_table1",
+    "Table": {
+      "headers": [
+        [
+          {
+            "value": "Age"
+          },
+          {
+            "value": "Percentile"
+          },
+          {
+            "value": "Percentile"
+          },
+          {
+            "value": "Percentile"
+          },
+          {
+            "value": "Percentile"
+          },
+          {
+            "value": "Percentile"
+          },
+          {
+            "value": "Percentile"
+          },
+          {
+            "value": "Percentile"
+          },
+          {
+            "value": "Percentile"
+          },
+          {
+            "value": "Percentile"
+          }
+        ],
+        [
+          {
+            "value": "Age"
+          },
+          {
+            "value": "5th"
+          },
+          {
+            "value": "10th"
+          },
+          {
+            "value": "15th"
+          },
+          {
+            "value": "25th"
+          },
+          {
+            "value": "50th"
+          },
+          {
+            "value": "75th"
+          },
+          {
+            "value": "85th"
+          },
+          {
+            "value": "90th"
+          },
+          {
+            "value": "95th"
+          }
+        ]
+      ],
+      "footers": null,
+      "rows": [
+        [
+          {
+            "value": "≥ 20 (total)"
+          },
+          {
+            "value": "20.7"
+          },
+          {
+            "value": "22.2"
+          },
+          {
+            "value": "23.0"
+          },
+          {
+            "value": "24.6"
+          },
+          {
+            "value": "27.7"
+          },
+          {
+            "value": "31.6"
+          },
+          {
+            "value": "34.0"
+          },
+          {
+            "value": "36.1"
+          },
+          {
+            "value": "39.8"
+          }
+        ],
+        [
+          {
+            "value": "20-29"
+          },
+          {
+            "value": "19.3"
+          },
+          {
+            "value": "20.5"
+          },
+          {
+            "value": "21.2"
+          },
+          {
+            "value": "22.5"
+          },
+          {
+            "value": "25.5"
+          },
+          {
+            "value": "30.5"
+          },
+          {
+            "value": "33.1"
+          },
+          {
+            "value": "35.1"
+          },
+          {
+            "value": "39.2"
+          }
+        ],
+        [
+          {
+            "value": "30-39"
+          },
+          {
+            "value": "21.1"
+          },
+          {
+            "value": "22.4"
+          },
+          {
+            "value": "23.3"
+          },
+          {
+            "value": "24.8"
+          },
+          {
+            "value": "27.5"
+          },
+          {
+            "value": "31.9"
+          },
+          {
+            "value": "35.1"
+          },
+          {
+            "value": "36.5"
+          },
+          {
+            "value": "39.3"
+          }
+        ],
+        [
+          {
+            "value": "40-49"
+          },
+          {
+            "value": "21.9"
+          },
+          {
+            "value": "23.4"
+          },
+          {
+            "value": "24.3"
+          },
+          {
+            "value": "25.7"
+          },
+          {
+            "value": "28.5"
+          },
+          {
+            "value": "31.9"
+          },
+          {
+            "value": "34.4"
+          },
+          {
+            "value": "36.5"
+          },
+          {
+            "value": "40.0"
+          }
+        ],
+        [
+          {
+            "value": "50-59"
+          },
+          {
+            "value": "21.6"
+          },
+          {
+            "value": "22.7"
+          },
+          {
+            "value": "23.6"
+          },
+          {
+            "value": "25.4"
+          },
+          {
+            "value": "28.3"
+          },
+          {
+            "value": "32.0"
+          },
+          {
+            "value": "34.0"
+          },
+          {
+            "value": "35.2"
+          },
+          {
+            "value": "40.3"
+          }
+        ],
+        [
+          {
+            "value": "60-69"
+          },
+          {
+            "value": "21.6"
+          },
+          {
+            "value": "22.7"
+          },
+          {
+            "value": "23.6"
+          },
+          {
+            "value": "25.3"
+          },
+          {
+            "value": "28.0"
+          },
+          {
+            "value": "32.4"
+          },
+          {
+            "value": "35.3"
+          },
+          {
+            "value": "36.9"
+          },
+          {
+            "value": "41.2"
+          }
+        ],
+        [
+          {
+            "value": "70-79"
+          },
+          {
+            "value": "21.5"
+          },
+          {
+            "value": "23.2"
+          },
+          {
+            "value": "23.9"
+          },
+          {
+            "value": "25.4"
+          },
+          {
+            "value": "27.8"
+          },
+          {
+            "value": "30.9"
+          },
+          {
+            "value": "33.1"
+          },
+          {
+            "value": "34.9"
+          },
+          {
+            "value": "38.9"
+          }
+        ],
+        [
+          {
+            "value": "≥ 80"
+          },
+          {
+            "value": "20.0"
+          },
+          {
+            "value": "21.5"
+          },
+          {
+            "value": "22.5"
+          },
+          {
+            "value": "24.1"
+          },
+          {
+            "value": "26.3"
+          },
+          {
+            "value": "29.0"
+          },
+          {
+            "value": "31.1"
+          },
+          {
+            "value": "32.3"
+          },
+          {
+            "value": "33.8"
+          }
+        ]
+      ],
+      "confidence_score": 0.9
+    }
+  },
+  {
+    "ID": "categories.international_variations.united_states_table2",
+    "Table": {
+      "headers": [
+        [
+          {
+            "value": "Age"
+          },
+          {
+            "value": "Percentile"
+          },
+          {
+            "value": "Percentile"
+          },
+          {
+            "value": "Percentile"
+          },
+          {
+            "value": "Percentile"
+          },
+          {
+            "value": "Percentile"
+          },
+          {
+            "value": "Percentile"
+          },
+          {
+            "value": "Percentile"
+          },
+          {
+            "value": "Percentile"
+          },
+          {
+            "value": "Percentile"
+          }
+        ],
+        [
+          {
+            "value": "Age"
+          },
+          {
+            "value": "5th"
+          },
+          {
+            "value": "10th"
+          },
+          {
+            "value": "15th"
+          },
+          {
+            "value": "25th"
+          },
+          {
+            "value": "50th"
+          },
+          {
+            "value": "75th"
+          },
+          {
+            "value": "85th"
+          },
+          {
+            "value": "90th"
+          },
+          {
+            "value": "95th"
+          }
+        ]
+      ],
+      "footers": null,
+      "rows": [
+        [
+          {
+            "value": "≥ 20 (total)"
+          },
+          {
+            "value": "19.6"
+          },
+          {
+            "value": "21.0"
+          },
+          {
+            "value": "22.0"
+          },
+          {
+            "value": "23.6"
+          },
+          {
+            "value": "27.7"
+          },
+          {
+            "value": "33.2"
+          },
+          {
+            "value": "36.5"
+          },
+          {
+            "value": "39.3"
+          },
+          {
+            "value": "43.3"
+          }
+        ],
+        [
+          {
+            "value": "20-29"
+          },
+          {
+            "value": "18.6"
+          },
+          {
+            "value": "19.8"
+          },
+          {
+            "value": "20.7"
+          },
+          {
+            "value": "21.9"
+          },
+          {
+            "value": "25.6"
+          },
+          {
+            "value": "31.8"
+          },
+          {
+            "value": "36.0"
+          },
+          {
+            "value": "38.9"
+          },
+          {
+            "value": "42.0"
+          }
+        ],
+        [
+          {
+            "value": "30-39"
+          },
+          {
+            "value": "19.8"
+          },
+          {
+            "value": "21.1"
+          },
+          {
+            "value": "22.0"
+          },
+          {
+            "value": "23.3"
+          },
+          {
+            "value": "27.6"
+          },
+          {
+            "value": "33.1"
+          },
+          {
+            "value": "36.6"
+          },
+          {
+            "value": "40.0"
+          },
+          {
+            "value": "44.7"
+          }
+        ],
+        [
+          {
+            "value": "40-49"
+          },
+          {
+            "value": "20.0"
+          },
+          {
+            "value": "21.5"
+          },
+          {
+            "value": "22.5"
+          },
+          {
+            "value": "23.7"
+          },
+          {
+            "value": "28.1"
+          },
+          {
+            "value": "33.4"
+          },
+          {
+            "value": "37.0"
+          },
+          {
+            "value": "39.6"
+          },
+          {
+            "value": "44.5"
+          }
+        ],
+        [
+          {
+            "value": "50-59"
+          },
+          {
+            "value": "19.9"
+          },
+          {
+            "value": "21.5"
+          },
+          {
+            "value": "22.2"
+          },
+          {
+            "value": "24.5"
+          },
+          {
+            "value": "28.6"
+          },
+          {
+            "value": "34.4"
+          },
+          {
+            "value": "38.3"
+          },
+          {
+            "value": "40.7"
+          },
+          {
+            "value": "45.2"
+          }
+        ],
+        [
+          {
+            "value": "60-69"
+          },
+          {
+            "value": "20.0"
+          },
+          {
+            "value": "21.7"
+          },
+          {
+            "value": "23.0"
+          },
+          {
+            "value": "24.5"
+          },
+          {
+            "value": "28.9"
+          },
+          {
+            "value": "33.4"
+          },
+          {
+            "value": "36.1"
+          },
+          {
+            "value": "38.7"
+          },
+          {
+            "value": "41.8"
+          }
+        ],
+        [
+          {
+            "value": "70-79"
+          },
+          {
+            "value": "20.5"
+          },
+          {
+            "value": "22.1"
+          },
+          {
+            "value": "22.9"
+          },
+          {
+            "value": "24.6"
+          },
+          {
+            "value": "28.3"
+          },
+          {
+            "value": "33.4"
+          },
+          {
+            "value": "36.5"
+          },
+          {
+            "value": "39.1"
+          },
+          {
+            "value": "42.9"
+          }
+        ],
+        [
+          {
+            "value": "≥ 80"
+          },
+          {
+            "value": "19.3"
+          },
+          {
+            "value": "20.4"
+          },
+          {
+            "value": "21.3"
+          },
+          {
+            "value": "23.3"
+          },
+          {
+            "value": "26.1"
+          },
+          {
+            "value": "29.7"
+          },
+          {
+            "value": "30.9"
+          },
+          {
+            "value": "32.8"
+          },
+          {
+            "value": "35.2"
+          }
+        ]
+      ],
+      "confidence_score": 0.9
+    }
+  }
+]

@@ -1,0 +1,894 @@
+([]*parser.Part) (len=2) {
+  (*parser.Part)({
+    Name: (string) (len=18) "Infobox settlement",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=5) {
+      (*parser.Part)({
+        Name: (string) (len=15) "Kyoto 京都市",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=15) "Designated city",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=10) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=202) "From top left: Kiyomizu-dera, Bamboo Forest of Arashiyama, Kinkaku-ji, Dry garden of Ryōan-ji, Katsura Imperial Villa, Senbon torii gates of Fushimi Inari-Taisha, Heian Shrine and Kyoto Imperial Palace",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=8) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=89) "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Kiyomizu.jpg/268px-Kiyomizu.jpg",
+                Identifier: (string) (len=64) "1a6d0341794bc2eb88596b0bd4164dd82fa7cdb48acd1e353b5a582a3ca52869",
+                Name: (string) (len=17) "File:Kiyomizu.jpg",
+                AlternativeText: (string) (len=20) "Kiyomizu-dera temple",
+                Caption: (string) "",
+                Height: (int) 179,
+                Width: (int) 268,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=272) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Sagaogurayama_Tabuchiyamacho%2C_Ukyo_Ward%2C_Kyoto%2C_Kyoto_Prefecture_616-8394%2C_Japan_-_panoramio.jpg/91px-Sagaogurayama_Tabuchiyamacho%2C_Ukyo_Ward%2C_Kyoto%2C_Kyoto_Prefecture_616-8394%2C_Japan_-_panoramio.jpg",
+                Identifier: (string) (len=64) "d5ab284eefab30a7740197a5dc851a8f20b294ea1ced65a4865c2de21525fe3e",
+                Name: (string) (len=101) "File:Sagaogurayama_Tabuchiyamacho,_Ukyo_Ward,_Kyoto,_Kyoto_Prefecture_616-8394,_Japan_-_panoramio.jpg",
+                AlternativeText: (string) (len=25) "Bamboo Forest, Arashiyama",
+                Caption: (string) "",
+                Height: (int) 121,
+                Width: (int) 91,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=113) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Kinkaku3402CBcropped.jpg/173px-Kinkaku3402CBcropped.jpg",
+                Identifier: (string) (len=64) "e0776a2f142d0ae2d75f6435b7c07ad7b4ba5b3766ae37643e2fb8108432807b",
+                Name: (string) (len=29) "File:Kinkaku3402CBcropped.jpg",
+                AlternativeText: (string) (len=17) "Kinkaku-ji temple",
+                Caption: (string) "",
+                Height: (int) 121,
+                Width: (int) 173,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=117) "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kyoto-Ryoan-Ji_MG_4512.jpg/129px-Kyoto-Ryoan-Ji_MG_4512.jpg",
+                Identifier: (string) (len=64) "8f6ce2e840036a60527bba32130e7b8a39d722726153bca3b6cf3090c19e8a03",
+                Name: (string) (len=31) "File:Kyoto-Ryoan-Ji_MG_4512.jpg",
+                AlternativeText: (string) (len=22) "Rock garden, Ryōan-ji",
+                Caption: (string) "",
+                Height: (int) 86,
+                Width: (int) 129,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=101) "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Katsura-1999-1.jpg/135px-Katsura-1999-1.jpg",
+                Identifier: (string) (len=64) "646a15a3d7c8339daa9a2f6433c371ab59483fe5568b7dd3f1239253f9889329",
+                Name: (string) (len=23) "File:Katsura-1999-1.jpg",
+                AlternativeText: (string) (len=22) "Katsura Imperial Villa",
+                Caption: (string) "",
+                Height: (int) 86,
+                Width: (int) 135,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=131) "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Torii%2C_Fushimi_Inari-Taisha.jpg/179px-Torii%2C_Fushimi_Inari-Taisha.jpg",
+                Identifier: (string) (len=64) "b67f0895e2427048e33edd9be43637d52451a986acd09ddfe6459d20b2b8bf22",
+                Name: (string) (len=36) "File:Torii,_Fushimi_Inari-Taisha.jpg",
+                AlternativeText: (string) (len=27) "Fushimi Inari-Taisha shrine",
+                Caption: (string) "",
+                Height: (int) 127,
+                Width: (int) 179,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=112) "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Lamps_at_Heian_Jingu.jpg/85px-Lamps_at_Heian_Jingu.jpg",
+                Identifier: (string) (len=64) "6273c0953d20d5790e57522d1360fc26a10332e45b5444e23b9f55fd8601f1d4",
+                Name: (string) (len=29) "File:Lamps_at_Heian_Jingu.jpg",
+                AlternativeText: (string) (len=12) "Heian Shrine",
+                Caption: (string) "",
+                Height: (int) 128,
+                Width: (int) 85,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=143) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Imperial_Palace_-_panoramio_%281%29.jpg/268px-Imperial_Palace_-_panoramio_%281%29.jpg",
+                Identifier: (string) (len=64) "3bce4ff95f9bf89a709b1315932b56752c4ed104f345607d4daeab4218f36137",
+                Name: (string) (len=40) "File:Imperial_Palace_-_panoramio_(1).jpg",
+                AlternativeText: (string) (len=21) "Kyoto Imperial Palace",
+                Caption: (string) "",
+                Height: (int) 114,
+                Width: (int) 268,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) (len=11) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Kiyomizu-dera",
+                Text: (string) (len=13) "Kiyomizu-dera",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/Bamboo_Forest_(Kyoto,_Japan)",
+                Text: (string) (len=13) "Bamboo Forest",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Arashiyama",
+                Text: (string) (len=10) "Arashiyama",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Kinkaku-ji",
+                Text: (string) (len=10) "Kinkaku-ji",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Dry_garden",
+                Text: (string) (len=10) "Dry garden",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Ryōan-ji",
+                Text: (string) (len=9) "Ryōan-ji",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Katsura_Imperial_Villa",
+                Text: (string) (len=22) "Katsura Imperial Villa",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Torii",
+                Text: (string) (len=5) "torii",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Fushimi_Inari-taisha",
+                Text: (string) (len=20) "Fushimi Inari-Taisha",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Heian_Shrine",
+                Text: (string) (len=12) "Heian Shrine",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Kyoto_Imperial_Palace",
+                Text: (string) (len=21) "Kyoto Imperial Palace",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Flag Seal",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=2) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=113) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Flag_of_Kyoto_City.svg/100px-Flag_of_Kyoto_City.svg.png",
+                Identifier: (string) (len=64) "8dae4febbbb0f7ffa04fc28784795ec7656e0bcf97f57f9a2ad4e4429213464b",
+                Name: (string) (len=27) "File:Flag_of_Kyoto_City.svg",
+                AlternativeText: (string) (len=13) "Flag of Kyoto",
+                Caption: (string) (len=13) "Flag of Kyoto",
+                Height: (int) 67,
+                Width: (int) 100,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=124) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Emblem_of_Kyoto%2C_Kyoto.svg/89px-Emblem_of_Kyoto%2C_Kyoto.svg.png",
+                Identifier: (string) (len=64) "b532da0b06ebfc31134d5187fb373db5614d748c5cc06bf3711f1e226ac66280",
+                Name: (string) (len=31) "File:Emblem_of_Kyoto,_Kyoto.svg",
+                AlternativeText: (string) (len=22) "Official seal of Kyoto",
+                Caption: (string) (len=22) "Official seal of Kyoto",
+                Height: (int) 100,
+                Width: (int) 89,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=167) "https://maps.wikimedia.org/img/osm-intl,8,a,a,300x200.png?lang=en&domain=en.wikipedia.org&title=Kyoto&revid=1270581376&groups=_ff83353673157f0ca778e6ecaf775e5cc0aff48c",
+                Identifier: (string) (len=64) "f27ee208f540b9ed4da44a182fb714b89ffbb2ab19b70c39fb00d6f161c6a6c9",
+                Name: (string) "",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 200,
+                Width: (int) 300,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) ""
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=30) "https://en.wikipedia.org/wiki/",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=37) "Location of Kyoto in Kyoto Prefecture",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=133) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Kyoto_in_Kyoto_Prefecture_Ja.svg/250px-Kyoto_in_Kyoto_Prefecture_Ja.svg.png",
+                Identifier: (string) (len=64) "0c5ee477662a561689ef4092d2b4c07f96b09b00958989960a385e060f7c134f",
+                Name: (string) (len=37) "File:Kyoto_in_Kyoto_Prefecture_Ja.svg",
+                AlternativeText: (string) (len=37) "Location of Kyoto in Kyoto Prefecture",
+                Caption: (string) (len=212) "Location of Kyoto in <a rel=\"mw:WikiLink\" href=\"./Kyoto_Prefecture\" title=\"Kyoto Prefecture\" data-parsoid='{\"stx\":\"simple\",\"a\":{\"href\":\"./Kyoto_Prefecture\"},\"sa\":{\"href\":\"Kyoto Prefecture\"}}'>Kyoto Prefecture</a>",
+                Height: (int) 297,
+                Width: (int) 250,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Kyoto_Prefecture",
+                Text: (string) (len=16) "Kyoto Prefecture",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=44) "Kyoto Kyoto Kyoto (Asia) Kyoto Kyoto (Earth)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=3) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=197) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Japan_natural_location_map_with_side_map_of_the_Ryukyu_Islands.jpg/250px-Japan_natural_location_map_with_side_map_of_the_Ryukyu_Islands.jpg",
+                Identifier: (string) (len=64) "dacb9cd5e876f5280f3532d7c9bda9e6194c860e2b62cf4d9744476cedd0557f",
+                Name: (string) (len=71) "File:Japan_natural_location_map_with_side_map_of_the_Ryukyu_Islands.jpg",
+                AlternativeText: (string) (len=25) "Kyoto is located in Japan",
+                Caption: (string) (len=25) "Kyoto is located in Japan",
+                Height: (int) 226,
+                Width: (int) 250,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=131) "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Asia_laea_relief_location_map.jpg/250px-Asia_laea_relief_location_map.jpg",
+                Identifier: (string) (len=64) "d216c8dd37f05a5c3d4e5f8bc34d3adf27de32635f2d2bdd3382c3fcfcf0e972",
+                Name: (string) (len=38) "File:Asia_laea_relief_location_map.jpg",
+                AlternativeText: (string) (len=24) "Kyoto is located in Asia",
+                Caption: (string) (len=24) "Kyoto is located in Asia",
+                Height: (int) 222,
+                Width: (int) 250,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=165) "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/World_location_map_%28equirectangular_180%29.svg/250px-World_location_map_%28equirectangular_180%29.svg.png",
+                Identifier: (string) (len=64) "74b5a0afc1a6d0687663fcd678c6add05d218e60cc4738520b702907a8393bd3",
+                Name: (string) (len=49) "File:World_location_map_(equirectangular_180).svg",
+                AlternativeText: (string) (len=25) "Kyoto is located in Earth",
+                Caption: (string) (len=25) "Kyoto is located in Earth",
+                Height: (int) 125,
+                Width: (int) 250,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=70) "Coordinates: 35°0′42″N 135°46′6″E / 35.01167°N 135.76833°E",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=116) "https://geohack.toolforge.org/geohack.php?pagename=Kyoto&params=35_0_42_N_135_46_6_E_region:JP-26_type:city(1463723)",
+                Text: (string) (len=57) "35°0′42″N 135°46′6″E / 35.01167°N 135.76833°E",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Country",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=5) "Japan",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/List_of_sovereign_states",
+                Text: (string) (len=7) "Country",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Japan",
+                Text: (string) (len=5) "Japan",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Region",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Kansai",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/List_of_regions_of_Japan",
+                Text: (string) (len=6) "Region",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Kansai_region",
+                Text: (string) (len=6) "Kansai",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Prefecture",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "Kyoto Prefecture",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Prefectures_of_Japan",
+                Text: (string) (len=10) "Prefecture",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Kyoto_Prefecture",
+                Text: (string) (len=16) "Kyoto Prefecture",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Founded",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=3) "794",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=10) "Government",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) (len=4) "Type",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "Mayor–council",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Mayor–council_government",
+                Text: (string) (len=15) "Mayor–council",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Body",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "Kyoto City Assembly",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Mayor",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Kōji Matsui",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Koji_Matsui_(politician)",
+                Text: (string) (len=12) "Kōji Matsui",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=4) "Area",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) (len=15) "Designated city",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=26) "827.83 km 2 (319.63 sq mi)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=80) "https://en.wikipedia.org/wiki/Cities_designated_by_government_ordinance_of_Japan",
+                Text: (string) (len=15) "Designated city",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=17) "Highest elevation",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "971 m (3,186 ft)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=16) "Lowest elevation",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "9 m (30 ft)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=28) "Population (October 1, 2020)",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=8) {
+          (*parser.Part)({
+            Name: (string) (len=15) "Designated city",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "1,463,723",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=80) "https://en.wikipedia.org/wiki/Cities_designated_by_government_ordinance_of_Japan",
+                Text: (string) (len=15) "Designated city",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Rank",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "9th, Japan",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/List_of_cities_in_Japan",
+                Text: (string) (len=10) "9th, Japan",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Density",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "1,800/km 2 (4,600/sq mi)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Metro",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "3,783,014",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Metropolitan_area",
+                Text: (string) (len=5) "Metro",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=62) "https://en.wikipedia.org/wiki/Kyoto#cite_note-2020population-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Kyoto#cite_note-range-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Time zone",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=27) "UTC+9 (Japan Standard Time)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Time_zone",
+                Text: (string) (len=9) "Time zone",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/UTC+9",
+                Text: (string) (len=5) "UTC+9",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Japan_Standard_Time",
+                Text: (string) (len=19) "Japan Standard Time",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "- Tree",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=42) "Weeping Willow, Japanese Maple and Katsura",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=91) "https://en.wikipedia.org/wiki/Salix_babylonica#Horticultural_selections_and_related_hybrids",
+                Text: (string) (len=14) "Weeping Willow",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Acer_palmatum",
+                Text: (string) (len=14) "Japanese Maple",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Cercidiphyllum_japonicum",
+                Text: (string) (len=7) "Katsura",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "- Flower",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=33) "Camellia, Azalea and Sugar Cherry",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Camellia",
+                Text: (string) (len=8) "Camellia",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Azalea",
+                Text: (string) (len=6) "Azalea",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Cherry_blossom",
+                Text: (string) (len=6) "Cherry",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Website",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "city.kyoto.lg.jp",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=29) "https://www.city.kyoto.lg.jp/",
+                Text: (string) (len=16) "city.kyoto.lg.jp",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=15) "Infobox Chinese",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) (len=5) "Kyoto",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=16) "\"Kyoto\" in kanji",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=136) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Kyoto_%28Chinese_characters%29.svg/90px-Kyoto_%28Chinese_characters%29.svg.png",
+                Identifier: (string) (len=64) "f3857e817780cf6f89965326b1be3e94c028746f2fa2bfcf4d922aecf23a78cd",
+                Name: (string) (len=35) "File:Kyoto_(Chinese_characters).svg",
+                AlternativeText: (string) "",
+                Caption: (string) (len=16) "\"Kyoto\" in kanji",
+                Height: (int) 47,
+                Width: (int) 90,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Kanji",
+                Text: (string) (len=5) "kanji",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=13) "Japanese name",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) (len=5) "Kanji",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "京都",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Kanji",
+                Text: (string) (len=5) "Kanji",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Revised Hepburn",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Kyōto",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Hepburn_romanization",
+                Text: (string) (len=15) "Revised Hepburn",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Kunrei-shiki_romanization",
+                Text: (string) (len=12) "Kunrei-shiki",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=14) "Transcriptions",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) (len=15) "Revised Hepburn",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Kyōto",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Hepburn_romanization",
+                Text: (string) (len=15) "Revised Hepburn",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Kunrei-shiki",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Kyouto",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Kunrei-shiki_romanization",
+                Text: (string) (len=12) "Kunrei-shiki",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

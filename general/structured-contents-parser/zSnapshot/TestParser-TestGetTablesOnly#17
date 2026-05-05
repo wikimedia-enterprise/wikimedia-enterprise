@@ -1,0 +1,22 @@
+([]*parser.OrderedTable) (len=1) {
+  (*parser.OrderedTable)({
+    ID: (string) (len=8) "__table1",
+    Table: (*parser.TableWithHeaders)({
+      Headers: ([][]parser.Cell) <nil>,
+      Footers: ([][]parser.Cell) <nil>,
+      Rows: ([][]parser.Cell) (len=1) {
+        ([]parser.Cell) (len=2) {
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=287) "Тази статия е включена в списъка на избраните на 27 юли 2020. Тя е оценена от участниците в проекта като една от най-добрите статии на български език в Уикипедия.",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      ConfidenceScore: (float64) 1
+    })
+  })
+}

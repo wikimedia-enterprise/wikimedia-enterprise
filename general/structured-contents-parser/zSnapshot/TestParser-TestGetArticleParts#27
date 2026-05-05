@@ -1,0 +1,1909 @@
+(map[string]interface {}) (len=2) {
+  (string) (len=8) "sections": ([]*parser.Part) (len=5) {
+    (*parser.Part)({
+      Name: (string) (len=8) "Abstract",
+      Type: (string) (len=7) "section",
+      Value: (string) "",
+      Values: ([]string) <nil>,
+      HasParts: ([]*parser.Part) (len=4) {
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=452) "In linguistics, a distinctive feature is the most basic unit of phonological structure that distinguishes one sound from another within a language. For example, the feature distinguishes the two bilabial plosives: and (i.e., it makes the two plosives distinct from one another). There are many different ways of defining and arranging features into feature systems: some deal with only one language while others are developed to apply to all languages.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=7) {
+            (*parser.Link)({
+              URL: (string) (len=41) "https://en.wikipedia.org/wiki/Linguistics",
+              Text: (string) (len=11) "linguistics",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=39) "https://en.wikipedia.org/wiki/Phonology",
+              Text: (string) (len=12) "phonological",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=47) "https://en.wikipedia.org/wiki/Phone_(phonetics)",
+              Text: (string) (len=5) "sound",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=38) "https://en.wikipedia.org/wiki/Language",
+              Text: (string) (len=8) "language",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=47) "https://en.wikipedia.org/wiki/Voice_(phonetics)",
+              Text: (string) (len=5) "voice",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=46) "https://en.wikipedia.org/wiki/Bilabial_plosive",
+              Text: (string) (len=17) "bilabial plosives",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=65) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-V&C-1",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=1) {
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-1",
+              Group: (string) "",
+              Text: (string) (len=3) "[1]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=311) "Distinctive features are grouped into categories according to the natural classes of segments they describe: major class features, laryngeal features, manner features, and place features. These feature categories in turn are further specified on the basis of the phonetic properties of the segments in question.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=4) {
+            (*parser.Link)({
+              URL: (string) (len=45) "https://en.wikipedia.org/wiki/Natural_classes",
+              Text: (string) (len=15) "natural classes",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=51) "https://en.wikipedia.org/wiki/Segment_(linguistics)",
+              Text: (string) (len=8) "segments",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=39) "https://en.wikipedia.org/wiki/Phonetics",
+              Text: (string) (len=8) "phonetic",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=96) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-FOOTNOTEGussenhovenJacobs201764-65-2",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=1) {
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-2",
+              Group: (string) "",
+              Text: (string) (len=3) "[2]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=1032) "Since the inception of the phonological analysis of distinctive features in the 1950s, features traditionally have been specified by binary values to signify whether a segment is described by the feature; a positive value,, denotes the presence of a feature, while a negative value,, indicates its absence. In addition, a phoneme may be unmarked with respect to a feature. It is also possible for certain phonemes to have different features across languages. For example, could be classified as a continuant or not in a given language depending on how it patterns with other consonants. After the first distinctive feature theory was created by Russian linguist Roman Jakobson in 1941, it was assumed that the distinctive features are binary and this theory about distinctive features being binary was formally adopted in \"Sound Pattern of English\" by Noam Chomsky and Morris Halle in 1968. Jakobson saw the binary approach as the best way to make the phoneme inventory shorter and the phonological oppositions are naturally binary.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=7) {
+            (*parser.Link)({
+              URL: (string) (len=38) "https://en.wikipedia.org/wiki/Unmarked",
+              Text: (string) (len=8) "unmarked",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=37) "https://en.wikipedia.org/wiki/Phoneme",
+              Text: (string) (len=8) "phonemes",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=96) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-FOOTNOTEGussenhovenJacobs201772-73-3",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=44) "https://en.wikipedia.org/wiki/Roman_Jakobson",
+              Text: (string) (len=14) "Roman Jakobson",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=42) "https://en.wikipedia.org/wiki/Noam_Chomsky",
+              Text: (string) (len=12) "Noam Chomsky",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=42) "https://en.wikipedia.org/wiki/Morris_Halle",
+              Text: (string) (len=12) "Morris Halle",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=61) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-4",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=2) {
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-3",
+              Group: (string) "",
+              Text: (string) (len=3) "[3]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-4",
+              Group: (string) "",
+              Text: (string) (len=3) "[4]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=311) "In recent developments to the theory of distinctive features, phonologists have proposed the existence of single-valued features. These features, called univalent or privative features, can only describe the classes of segments that are said to possess those features, and not the classes that are without them.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=2) {
+            (*parser.Link)({
+              URL: (string) (len=69) "https://en.wikipedia.org/wiki/Privative_feature?action=edit&redlink=1",
+              Text: (string) (len=18) "privative features",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=93) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-FOOTNOTEGussenhovenJacobs201765-5",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=1) {
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-5",
+              Group: (string) "",
+              Text: (string) (len=3) "[5]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        })
+      },
+      Images: ([]*parser.Image) <nil>,
+      Links: ([]*parser.Link) <nil>,
+      Citations: ([]*parser.Citation) <nil>,
+      TableReferences: ([]parser.TableReference) <nil>
+    }),
+    (*parser.Part)({
+      Name: (string) (len=4) "List",
+      Type: (string) (len=7) "section",
+      Value: (string) "",
+      Values: ([]string) <nil>,
+      HasParts: ([]*parser.Part) (len=7) {
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=5) "image",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) (len=1) {
+            (*parser.Image)({
+              ContentUrl: (string) (len=129) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/IPA-euler-manners-features.svg/220px-IPA-euler-manners-features.svg.png",
+              Identifier: (string) (len=64) "f71b2bcd3034fa4f4590327f332a79350f96a912fb23ecc0e534f595fdaeb689",
+              Name: (string) (len=35) "File:IPA-euler-manners-features.svg",
+              AlternativeText: (string) "",
+              Caption: (string) (len=124) "Euler diagram showing a typical classification of sounds (in IPA) and their manners of articulation and distinctive features",
+              Height: (int) 231,
+              Width: (int) 220,
+              EncodingFormat: (string) (len=9) "image/png",
+              MediaType: (string) (len=7) "drawing"
+            })
+          },
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=69) "This section lists and describes distinctive features in linguistics.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=1) {
+            (*parser.Link)({
+              URL: (string) (len=98) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-FOOTNOTEGussenhovenJacobs201766–81-6",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=1) {
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-6",
+              Group: (string) "",
+              Text: (string) (len=3) "[6]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) (len=11) "Major class",
+          Type: (string) (len=7) "section",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) (len=2) {
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=9) "paragraph",
+              Value: (string) (len=78) "Major class features: The features that represent the major classes of sounds.",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) {
+              },
+              Citations: ([]*parser.Citation) {
+              },
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=12) "ordered_list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=4) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=227) "Syllabic segments may function as the nucleus of a syllable, while their counterparts, the segments, may not. Except in the case of syllabic consonants, designates all vowels, while designates all consonants (including glides).",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=7) {
+                    (*parser.Link)({
+                      URL: (string) (len=64) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-:0-7",
+                      Text: (string) "",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=46) "https://en.wikipedia.org/wiki/Syllable_nucleus",
+                      Text: (string) (len=7) "nucleus",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=38) "https://en.wikipedia.org/wiki/Syllable",
+                      Text: (string) (len=8) "syllable",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=48) "https://en.wikipedia.org/wiki/Syllabic_consonant",
+                      Text: (string) (len=19) "syllabic consonants",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=36) "https://en.wikipedia.org/wiki/Vowels",
+                      Text: (string) (len=6) "vowels",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=39) "https://en.wikipedia.org/wiki/Consonant",
+                      Text: (string) (len=10) "consonants",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=39) "https://en.wikipedia.org/wiki/Semivowel",
+                      Text: (string) (len=6) "glides",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=190) "Consonantal segments are produced with an audible constriction in the vocal tract, such as obstruents, nasals, liquids, and trills. Vowels, glides and laryngeal segments are not consonantal.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=7) {
+                    (*parser.Link)({
+                      URL: (string) (len=64) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-:1-8",
+                      Text: (string) "",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=41) "https://en.wikipedia.org/wiki/Vocal_tract",
+                      Text: (string) (len=11) "vocal tract",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=39) "https://en.wikipedia.org/wiki/Obstruent",
+                      Text: (string) (len=10) "obstruents",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=45) "https://en.wikipedia.org/wiki/Nasal_consonant",
+                      Text: (string) (len=6) "nasals",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=46) "https://en.wikipedia.org/wiki/Liquid_consonant",
+                      Text: (string) (len=7) "liquids",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=45) "https://en.wikipedia.org/wiki/Trill_consonant",
+                      Text: (string) (len=6) "trills",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=39) "https://en.wikipedia.org/wiki/Semivowel",
+                      Text: (string) (len=6) "glides",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=95) "Approximant segments include vowels, glides, and liquids while excluding nasals and obstruents.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=4) {
+                    (*parser.Link)({
+                      URL: (string) (len=39) "https://en.wikipedia.org/wiki/Semivowel",
+                      Text: (string) (len=6) "glides",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=46) "https://en.wikipedia.org/wiki/Liquid_consonant",
+                      Text: (string) (len=7) "liquids",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=45) "https://en.wikipedia.org/wiki/Nasal_consonant",
+                      Text: (string) (len=6) "nasals",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=39) "https://en.wikipedia.org/wiki/Obstruent",
+                      Text: (string) (len=10) "obstruents",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=399) "This feature describes the type of oral constriction that can occur in the vocal tract. designates the vowels and sonorant consonants (namely glides, liquids, and nasals) that are produced without an imbalance of air pressure in the vocal tract that might cause turbulence. describes the obstruents, articulated with a noticeable turbulence caused by an imbalance of air pressure in the vocal tract.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=8) {
+                    (*parser.Link)({
+                      URL: (string) (len=64) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-:1-8",
+                      Text: (string) "",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=36) "https://en.wikipedia.org/wiki/Vowels",
+                      Text: (string) (len=6) "vowels",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=38) "https://en.wikipedia.org/wiki/Sonorant",
+                      Text: (string) (len=8) "sonorant",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=40) "https://en.wikipedia.org/wiki/Consonants",
+                      Text: (string) (len=10) "consonants",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=39) "https://en.wikipedia.org/wiki/Semivowel",
+                      Text: (string) (len=6) "glides",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=46) "https://en.wikipedia.org/wiki/Liquid_consonant",
+                      Text: (string) (len=7) "liquids",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=45) "https://en.wikipedia.org/wiki/Nasal_consonant",
+                      Text: (string) (len=6) "nasals",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=39) "https://en.wikipedia.org/wiki/Obstruent",
+                      Text: (string) (len=10) "obstruents",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            })
+          },
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) (len=9) "Laryngeal",
+          Type: (string) (len=7) "section",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) (len=2) {
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=9) "paragraph",
+              Value: (string) (len=75) "Laryngeal features: The features that specify the glottal states of sounds.",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) {
+              },
+              Citations: ([]*parser.Citation) {
+              },
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=12) "ordered_list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=3) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=104) "This feature indicates whether vibration of the vocal folds occurs with the articulation of the segment.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=2) {
+                    (*parser.Link)({
+                      URL: (string) (len=64) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-:0-7",
+                      Text: (string) "",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=41) "https://en.wikipedia.org/wiki/Vocal_folds",
+                      Text: (string) (len=11) "vocal folds",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=226) "Used to indicate the aspiration of a segment, this feature denotes the openness of the glottis. For, the vocal folds are spread apart widely enough for friction to occur; for, there is not the same friction-inducing spreading.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=2) {
+                    (*parser.Link)({
+                      URL: (string) (len=64) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-:0-7",
+                      Text: (string) "",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=52) "https://en.wikipedia.org/wiki/Aspiration_(phonetics)",
+                      Text: (string) (len=10) "aspiration",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=305) "The constricted glottis feature denotes the degree of closure of the glottis. implies that the vocal folds are held closely together, enough so that air cannot pass through momentarily, while implies the opposite. sounds include glottalized, ejective and implosive consonants, as well as the glottal stop.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=5) {
+                    (*parser.Link)({
+                      URL: (string) (len=64) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-:0-7",
+                      Text: (string) "",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=44) "https://en.wikipedia.org/wiki/Glottalization",
+                      Text: (string) (len=11) "glottalized",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=48) "https://en.wikipedia.org/wiki/Ejective_consonant",
+                      Text: (string) (len=8) "ejective",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=49) "https://en.wikipedia.org/wiki/Implosive_consonant",
+                      Text: (string) (len=9) "implosive",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=42) "https://en.wikipedia.org/wiki/Glottal_stop",
+                      Text: (string) (len=12) "glottal stop",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            })
+          },
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) (len=6) "Manner",
+          Type: (string) (len=7) "section",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) (len=2) {
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=9) "paragraph",
+              Value: (string) (len=70) "Manner features: The features that specify the manner of articulation.",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) (len=1) {
+                (*parser.Link)({
+                  URL: (string) (len=52) "https://en.wikipedia.org/wiki/Manner_of_articulation",
+                  Text: (string) (len=22) "manner of articulation",
+                  Images: ([]*parser.Image) <nil>
+                })
+              },
+              Citations: ([]*parser.Citation) {
+              },
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=12) "ordered_list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=5) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=305) "This feature describes the passage of air through the vocal tract. segments are produced without any significant obstruction in the tract, allowing air to pass through in a continuous stream. segments, on the other hand, have such an obstruction, and so occlude the air flow at some point of articulation.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=2) {
+                    (*parser.Link)({
+                      URL: (string) (len=40) "https://en.wikipedia.org/wiki/Continuant",
+                      Text: (string) (len=10) "continuant",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=64) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-:1-8",
+                      Text: (string) "",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=277) "This feature describes the position of the velum. segments are produced by lowering the velum so that air can pass through the nasal tract. segments conversely are produced with a raised velum, blocking the passage of air from the nasal tract and shunting it to the oral tract.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=4) {
+                    (*parser.Link)({
+                      URL: (string) (len=42) "https://en.wikipedia.org/wiki/Nasalization",
+                      Text: (string) (len=5) "nasal",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=64) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-:1-8",
+                      Text: (string) "",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=41) "https://en.wikipedia.org/wiki/Soft_palate",
+                      Text: (string) (len=5) "velum",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=42) "https://en.wikipedia.org/wiki/Nasal_cavity",
+                      Text: (string) (len=11) "nasal tract",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=151) "The strident feature applies to obstruents only and refers to a type of friction that is noisier than usual. This is caused by high energy white noise.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=2) {
+                    (*parser.Link)({
+                      URL: (string) (len=64) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-:0-7",
+                      Text: (string) "",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=41) "https://en.wikipedia.org/wiki/White_noise",
+                      Text: (string) (len=11) "white noise",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=331) "This feature designates the shape and positioning of the tongue with respect to the oral tract. segments are produced as the center of the tongue rises to contact the roof of the mouth, thereby blocking air from flowing centrally through the oral tract and instead forcing more lateral flow along the lowered side(s) of the tongue.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=3) {
+                    (*parser.Link)({
+                      URL: (string) (len=47) "https://en.wikipedia.org/wiki/Lateral_consonant",
+                      Text: (string) (len=7) "lateral",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=64) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-:0-7",
+                      Text: (string) "",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=36) "https://en.wikipedia.org/wiki/Tongue",
+                      Text: (string) (len=6) "tongue",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=75) "This feature distinguishes stops from affricates. Affricates are designated",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=3) {
+                    (*parser.Link)({
+                      URL: (string) (len=64) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-:0-7",
+                      Text: (string) "",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=44) "https://en.wikipedia.org/wiki/Stop_consonant",
+                      Text: (string) (len=5) "stops",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=49) "https://en.wikipedia.org/wiki/Affricate_consonant",
+                      Text: (string) (len=10) "affricates",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            })
+          },
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) (len=5) "Place",
+          Type: (string) (len=7) "section",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) (len=10) {
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=9) "paragraph",
+              Value: (string) (len=68) "Place features: The features that specify the place of articulation.",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) (len=1) {
+                (*parser.Link)({
+                  URL: (string) (len=51) "https://en.wikipedia.org/wiki/Place_of_articulation",
+                  Text: (string) (len=21) "place of articulation",
+                  Images: ([]*parser.Image) <nil>
+                })
+              },
+              Citations: ([]*parser.Citation) {
+              },
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=4) "list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=1) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=112) "Labial segments are articulated with the lips. As consonants, these include bilabial and labiodental consonants.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=4) {
+                    (*parser.Link)({
+                      URL: (string) (len=46) "https://en.wikipedia.org/wiki/Labial_consonant",
+                      Text: (string) (len=6) "LABIAL",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=64) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-:1-8",
+                      Text: (string) "",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=48) "https://en.wikipedia.org/wiki/Bilabial_consonant",
+                      Text: (string) (len=8) "bilabial",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=51) "https://en.wikipedia.org/wiki/Labiodental_consonant",
+                      Text: (string) (len=22) "labiodental consonants",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=12) "ordered_list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=1) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=48) ": are produced with lip rounding, while are not.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) {
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=4) "list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=1) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=703) "Coronal sounds are articulated with the tip and/or blade of the tongue. These include a large number of consonants, which can be made with the tip, blade or underside of the tongue (apical, laminal, or subapical consonant, respectively), making contact with the upper lip (linguolabial), between the teeth (interdental), with the back of the teeth (dental), with the alveolar ridge (alveolar), behind the alveolar ridge (postalveolar), or on or in front of the hard palate ((pre)palatal). With postalveolar sibilants, additional tongue shapes need to be distinguished, i.e. \"domed\" or slightly palatalized (\"hushing\" or \"palato-alveolar\"), palatalized (alveolopalatal), and \"closed\" (\"hissing-hushing\").",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=20) {
+                    (*parser.Link)({
+                      URL: (string) (len=47) "https://en.wikipedia.org/wiki/Coronal_consonant",
+                      Text: (string) (len=7) "CORONAL",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=64) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-:0-7",
+                      Text: (string) "",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=64) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-:1-8",
+                      Text: (string) "",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=46) "https://en.wikipedia.org/wiki/Apical_consonant",
+                      Text: (string) (len=3) "tip",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=47) "https://en.wikipedia.org/wiki/Laminal_consonant",
+                      Text: (string) (len=5) "blade",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=46) "https://en.wikipedia.org/wiki/Apical_consonant",
+                      Text: (string) (len=6) "apical",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=47) "https://en.wikipedia.org/wiki/Laminal_consonant",
+                      Text: (string) (len=7) "laminal",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=49) "https://en.wikipedia.org/wiki/Subapical_consonant",
+                      Text: (string) (len=19) "subapical consonant",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=52) "https://en.wikipedia.org/wiki/Linguolabial_consonant",
+                      Text: (string) (len=12) "linguolabial",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=51) "https://en.wikipedia.org/wiki/Interdental_consonant",
+                      Text: (string) (len=11) "interdental",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=46) "https://en.wikipedia.org/wiki/Dental_consonant",
+                      Text: (string) (len=6) "dental",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=44) "https://en.wikipedia.org/wiki/Alveolar_ridge",
+                      Text: (string) (len=14) "alveolar ridge",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=48) "https://en.wikipedia.org/wiki/Alveolar_consonant",
+                      Text: (string) (len=8) "alveolar",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=52) "https://en.wikipedia.org/wiki/Postalveolar_consonant",
+                      Text: (string) (len=12) "postalveolar",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=41) "https://en.wikipedia.org/wiki/Hard_palate",
+                      Text: (string) (len=11) "hard palate",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=47) "https://en.wikipedia.org/wiki/Palatal_consonant",
+                      Text: (string) (len=12) "(pre)palatal",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=52) "https://en.wikipedia.org/wiki/Postalveolar_consonant",
+                      Text: (string) (len=12) "postalveolar",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=38) "https://en.wikipedia.org/wiki/Sibilant",
+                      Text: (string) (len=9) "sibilants",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=56) "https://en.wikipedia.org/wiki/Palatalization_(phonetics)",
+                      Text: (string) (len=11) "palatalized",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=54) "https://en.wikipedia.org/wiki/Alveolopalatal_consonant",
+                      Text: (string) (len=14) "alveolopalatal",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=12) "ordered_list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=2) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=169) ": Anterior segments are articulated with the tip or blade of the tongue at or in front of the alveolar ridge. Dental consonants are, postalveolar and retroflex ones are.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) {
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=195) ": For segments the tongue is extended for some distance in the mouth. In other words, laminal dental and postalveolar consonants are marked as, while apical alveolar and retroflex consonants are.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) {
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=4) "list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=1) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=160) "Dorsal sounds are articulated by raising the dorsum of the tongue. All vowels are dorsal sounds. Dorsal consonants include palatal, velar and uvular consonants.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=4) {
+                    (*parser.Link)({
+                      URL: (string) (len=46) "https://en.wikipedia.org/wiki/Dorsal_consonant",
+                      Text: (string) (len=6) "DORSAL",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=47) "https://en.wikipedia.org/wiki/Palatal_consonant",
+                      Text: (string) (len=7) "palatal",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=45) "https://en.wikipedia.org/wiki/Velar_consonant",
+                      Text: (string) (len=5) "velar",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=46) "https://en.wikipedia.org/wiki/Uvular_consonant",
+                      Text: (string) (len=17) "uvular consonants",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=12) "ordered_list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=4) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=65) ": segments raise the dorsum close to the palate. segments do not.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=1) {
+                    (*parser.Link)({
+                      URL: (string) (len=36) "https://en.wikipedia.org/wiki/Palate",
+                      Text: (string) (len=6) "palate",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=59) ": segments bunch the dorsum to a position low in the mouth.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) {
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=155) ": segments are produced with the tongue dorsum bunched and retracted slightly to the back of the mouth. segments are bunched and extended slightly forward.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) {
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=298) ": This feature (mainly) applies to the position of the root of the tongue when articulating vowels. vowels have an advanced tongue root. In fact, this feature is often referred to as advanced tongue root (ATR), although there is a debate on whether tense and ATR are the same or different features.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=1) {
+                    (*parser.Link)({
+                      URL: (string) (len=50) "https://en.wikipedia.org/wiki/Advanced_tongue_root",
+                      Text: (string) (len=20) "advanced tongue root",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=4) "list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=1) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=96) "Radical sounds are articulated with the root of the tongue. These include epiglottal consonants.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=2) {
+                    (*parser.Link)({
+                      URL: (string) (len=47) "https://en.wikipedia.org/wiki/Radical_consonant",
+                      Text: (string) (len=7) "RADICAL",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=50) "https://en.wikipedia.org/wiki/Epiglottal_consonant",
+                      Text: (string) (len=21) "epiglottal consonants",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=12) "ordered_list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=2) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=42) ": segments advance the root of the tongue.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) {
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=115) ": segments bunch the root of the tongue towards the pharyngeal wall and activate the pharyngeal constrictor muscles",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=1) {
+                    (*parser.Link)({
+                      URL: (string) (len=52) "https://en.wikipedia.org/wiki/Pharyngeal_constrictor",
+                      Text: (string) (len=22) "pharyngeal constrictor",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=4) "list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=1) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=89) "Purely glottal sounds do not involve the tongue at all. These are the glottal consonants.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=2) {
+                    (*parser.Link)({
+                      URL: (string) (len=47) "https://en.wikipedia.org/wiki/Glottal_consonant",
+                      Text: (string) (len=7) "GLOTTAL",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=47) "https://en.wikipedia.org/wiki/Glottal_consonant",
+                      Text: (string) (len=18) "glottal consonants",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            })
+          },
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) (len=11) "Vowel space",
+          Type: (string) (len=7) "section",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) (len=4) {
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=9) "paragraph",
+              Value: (string) (len=27) "Vowels are distinguished by",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) {
+              },
+              Citations: ([]*parser.Citation) {
+              },
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=12) "ordered_list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=4) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=13) "(back vowels)",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=1) {
+                    (*parser.Link)({
+                      URL: (string) (len=40) "https://en.wikipedia.org/wiki/Back_vowel",
+                      Text: (string) (len=11) "back vowels",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=14) "(close vowels)",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=1) {
+                    (*parser.Link)({
+                      URL: (string) (len=41) "https://en.wikipedia.org/wiki/Close_vowel",
+                      Text: (string) (len=12) "close vowels",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=12) "(low vowels)",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=1) {
+                    (*parser.Link)({
+                      URL: (string) (len=39) "https://en.wikipedia.org/wiki/Low_vowel",
+                      Text: (string) (len=10) "low vowels",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=14) "(tense vowels)",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=1) {
+                    (*parser.Link)({
+                      URL: (string) (len=41) "https://en.wikipedia.org/wiki/Tense_vowel",
+                      Text: (string) (len=12) "tense vowels",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=9) "paragraph",
+              Value: (string) (len=53) "However, laryngoscopic studies suggest these features",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) {
+              },
+              Citations: ([]*parser.Citation) {
+              },
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=12) "ordered_list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=4) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=14) "(front vowels)",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=1) {
+                    (*parser.Link)({
+                      URL: (string) (len=41) "https://en.wikipedia.org/wiki/Front_vowel",
+                      Text: (string) (len=12) "front vowels",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=15) "(raised vowels)",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=1) {
+                    (*parser.Link)({
+                      URL: (string) (len=42) "https://en.wikipedia.org/wiki/Raised_vowel",
+                      Text: (string) (len=13) "raised vowels",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=18) "(retracted vowels)",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=1) {
+                    (*parser.Link)({
+                      URL: (string) (len=45) "https://en.wikipedia.org/wiki/Retracted_vowel",
+                      Text: (string) (len=16) "retracted vowels",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=14) "(round vowels)",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=1) {
+                    (*parser.Link)({
+                      URL: (string) (len=41) "https://en.wikipedia.org/wiki/Roundedness",
+                      Text: (string) (len=12) "round vowels",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            })
+          },
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        })
+      },
+      Images: ([]*parser.Image) <nil>,
+      Links: ([]*parser.Link) <nil>,
+      Citations: ([]*parser.Citation) <nil>,
+      TableReferences: ([]parser.TableReference) <nil>
+    }),
+    (*parser.Part)({
+      Name: (string) (len=18) "Jakobsonian system",
+      Type: (string) (len=7) "section",
+      Value: (string) "",
+      Values: ([]string) <nil>,
+      HasParts: ([]*parser.Part) (len=4) {
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=58) "This system is given by Jakobson & Halle (1971, 3.6, 3.7).",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=1) {
+            (*parser.Link)({
+              URL: (string) (len=74) "https://en.wikipedia.org/wiki/Distinctive_feature#CITEREFJakobsonHalle1971",
+              Text: (string) (len=22) "Jakobson & Halle (1971",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) {
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) (len=8) "Sonority",
+          Type: (string) (len=7) "section",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) (len=1) {
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=4) "list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=6) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=20) "vocalic, non-vocalic",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) {
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=28) "consonantal, non-consonantal",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) {
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=11) "nasal, oral",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) {
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=56) "forward-flanged: velar and palatal consonant, wide vowel",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=2) {
+                    (*parser.Link)({
+                      URL: (string) (len=45) "https://en.wikipedia.org/wiki/Velar_consonant",
+                      Text: (string) (len=5) "velar",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=47) "https://en.wikipedia.org/wiki/Palatal_consonant",
+                      Text: (string) (len=17) "palatal consonant",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=50) "backward-flanged: labial and coronal, narrow vowel",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=2) {
+                    (*parser.Link)({
+                      URL: (string) (len=46) "https://en.wikipedia.org/wiki/Labial_consonant",
+                      Text: (string) (len=6) "labial",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=47) "https://en.wikipedia.org/wiki/Coronal_consonant",
+                      Text: (string) (len=7) "coronal",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=16) "strident, mellow",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) {
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            })
+          },
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) (len=10) "Protensity",
+          Type: (string) (len=7) "section",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) (len=8) "Tonality",
+          Type: (string) (len=7) "section",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) (len=1) {
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=4) "list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=5) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=32) "peripheral consonant, back vowel",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=3) {
+                    (*parser.Link)({
+                      URL: (string) (len=45) "https://en.wikipedia.org/wiki/Grave_and_acute",
+                      Text: (string) (len=5) "grave",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=50) "https://en.wikipedia.org/wiki/Peripheral_consonant",
+                      Text: (string) (len=20) "peripheral consonant",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=40) "https://en.wikipedia.org/wiki/Back_vowel",
+                      Text: (string) (len=10) "back vowel",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) "",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=1) {
+                    (*parser.Link)({
+                      URL: (string) (len=45) "https://en.wikipedia.org/wiki/Grave_and_acute",
+                      Text: (string) (len=5) "acute",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=41) "coronal or palatal consonant, front vowel",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=3) {
+                    (*parser.Link)({
+                      URL: (string) (len=47) "https://en.wikipedia.org/wiki/Coronal_consonant",
+                      Text: (string) (len=7) "coronal",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=47) "https://en.wikipedia.org/wiki/Palatal_consonant",
+                      Text: (string) (len=17) "palatal consonant",
+                      Images: ([]*parser.Image) <nil>
+                    }),
+                    (*parser.Link)({
+                      URL: (string) (len=41) "https://en.wikipedia.org/wiki/Front_vowel",
+                      Text: (string) (len=11) "front vowel",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=25) "narrowed slit, wider slit",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) {
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=27) "widened slit, narrower slit",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) {
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            })
+          },
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        })
+      },
+      Images: ([]*parser.Image) <nil>,
+      Links: ([]*parser.Link) <nil>,
+      Citations: ([]*parser.Citation) <nil>,
+      TableReferences: ([]parser.TableReference) <nil>
+    }),
+    (*parser.Part)({
+      Name: (string) (len=10) "Other uses",
+      Type: (string) (len=7) "section",
+      Value: (string) "",
+      Values: ([]string) <nil>,
+      HasParts: ([]*parser.Part) (len=2) {
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=528) "The concept of a distinctive feature matrix to distinguish similar elements is identified with phonology, but there have been at least two efforts to use a distinctive feature matrix in related fields. Close to phonology, and clearly acknowledging its debt to phonology, distinctive features have been used to describe and differentiate handshapes in fingerspelling in American Sign Language. Distinctive features have also been used to distinguish proverbs from other types of language such as slogans, clichés, and aphorisms.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=8) {
+            (*parser.Link)({
+              URL: (string) (len=44) "https://en.wikipedia.org/wiki/Fingerspelling",
+              Text: (string) (len=14) "fingerspelling",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=52) "https://en.wikipedia.org/wiki/American_Sign_Language",
+              Text: (string) (len=22) "American Sign Language",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=61) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-9",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=37) "https://en.wikipedia.org/wiki/Proverb",
+              Text: (string) (len=8) "proverbs",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=36) "https://en.wikipedia.org/wiki/Slogan",
+              Text: (string) (len=7) "slogans",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=37) "https://en.wikipedia.org/wiki/Cliché",
+              Text: (string) (len=8) "clichés",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=38) "https://en.wikipedia.org/wiki/Aphorism",
+              Text: (string) (len=9) "aphorisms",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=62) "https://en.wikipedia.org/wiki/Distinctive_feature#cite_note-10",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=2) {
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-9",
+              Group: (string) "",
+              Text: (string) (len=3) "[9]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=12) "cite_note-10",
+              Group: (string) "",
+              Text: (string) (len=4) "[10]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=771) "Analogous feature systems are also used throughout Natural Language Processing (NLP). For example, part-of-speech tagging divides words into categories. These include \"major\" categories such as Noun vs. Verb, but also other dimensions such as person and number, plurality, tense, and others. Some mnemonics for part-of-speech tags conjoin multiple features, such as \"NN\" for singular noun, vs. \"NNS\" for plural noun, vs. \"NNS$\" for plural possessive noun (see Brown Corpus). Others provide more explicit separation of features, even formalizing them via markup such as the Text Encoding Initiative 's feature structures. Modern statistical NLP uses vectors of very many features, although many of those features are not formally \"distinctive\" in the sense described here.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=5) {
+            (*parser.Link)({
+              URL: (string) (len=57) "https://en.wikipedia.org/wiki/Natural_Language_Processing",
+              Text: (string) (len=27) "Natural Language Processing",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=52) "https://en.wikipedia.org/wiki/Part-of-speech_tagging",
+              Text: (string) (len=22) "part-of-speech tagging",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=42) "https://en.wikipedia.org/wiki/Brown_Corpus",
+              Text: (string) (len=12) "Brown Corpus",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=45) "https://en.wikipedia.org/wiki/Markup_language",
+              Text: (string) (len=6) "markup",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=54) "https://en.wikipedia.org/wiki/Text_Encoding_Initiative",
+              Text: (string) (len=24) "Text Encoding Initiative",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) {
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        })
+      },
+      Images: ([]*parser.Image) <nil>,
+      Links: ([]*parser.Link) <nil>,
+      Citations: ([]*parser.Citation) <nil>,
+      TableReferences: ([]parser.TableReference) <nil>
+    }),
+    (*parser.Part)({
+      Name: (string) (len=7) "Sources",
+      Type: (string) (len=7) "section",
+      Value: (string) "",
+      Values: ([]string) <nil>,
+      HasParts: ([]*parser.Part) (len=1) {
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=4) "list",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) (len=2) {
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=9) "list_item",
+              Value: (string) (len=151) "Clements, George N. (1985). \"The geometry of phonological features\". Phonology Yearbook. 2: 225– 252. doi: 10.1017/S0952675700000440. S2CID 62237665.",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) (len=5) {
+                (*parser.Link)({
+                  URL: (string) (len=48) "https://en.wikipedia.org/wiki/George_N._Clements",
+                  Text: (string) (len=19) "Clements, George N.",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+                  Text: (string) (len=3) "doi",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=43) "https://doi.org/10.1017%2FS0952675700000440",
+                  Text: (string) (len=25) "10.1017/S0952675700000440",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=48) "https://en.wikipedia.org/wiki/S2CID_(identifier)",
+                  Text: (string) (len=5) "S2CID",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=49) "https://api.semanticscholar.org/CorpusID:62237665",
+                  Text: (string) (len=8) "62237665",
+                  Images: ([]*parser.Image) <nil>
+                })
+              },
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=9) "list_item",
+              Value: (string) (len=119) "Flynn, Darin (2006). \"Articulator Theory\" (PDF). University of Calgary. Archived from the original (PDF) on 2011-01-01.",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) (len=2) {
+                (*parser.Link)({
+                  URL: (string) (len=97) "https://web.archive.org/web/20110101072734/http://www.ucalgary.ca/dflynn/files/dflynn/Flynn06.pdf",
+                  Text: (string) (len=20) "\"Articulator Theory\"",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=50) "http://ucalgary.ca/dflynn/files/dflynn/Flynn06.pdf",
+                  Text: (string) (len=12) "the original",
+                  Images: ([]*parser.Image) <nil>
+                })
+              },
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            })
+          },
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        })
+      },
+      Images: ([]*parser.Image) <nil>,
+      Links: ([]*parser.Link) <nil>,
+      Citations: ([]*parser.Citation) <nil>,
+      TableReferences: ([]parser.TableReference) <nil>
+    })
+  },
+  (string) (len=6) "tables": ([]*parser.OrderedTable) {
+  }
+}

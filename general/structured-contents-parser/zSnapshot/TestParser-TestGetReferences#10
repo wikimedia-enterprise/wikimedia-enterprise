@@ -1,0 +1,47 @@
+([]*parser.Reference) (len=2) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=23) "In inglese: harmoniums.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=44) "https://it.wikipedia.org/wiki/Lingua_inglese",
+          Text: (string) (len=7) "inglese",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=5) "libro",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "isbn": (string) (len=13) "9781879511125",
+      (string) (len=6) "titolo": (string) (len=77) "Robert F. Gellerman, The American Reed Organ and the Harmonium, New York 1996"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=99) "Robert F. Gellerman, The American Reed Organ and the Harmonium, New York 1996, ISBN\u00a09781879511125.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=34) "https://it.wikipedia.org/wiki/ISBN",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=64) "https://it.wikipedia.org/wiki/Speciale:RicercaISBN/9781879511125",
+          Text: (string) (len=13) "9781879511125",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

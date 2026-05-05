@@ -1,0 +1,1405 @@
+(map[string]interface {}) (len=2) {
+  (string) (len=8) "sections": ([]*parser.Part) (len=6) {
+    (*parser.Part)({
+      Name: (string) (len=8) "Abstract",
+      Type: (string) (len=7) "section",
+      Value: (string) "",
+      Values: ([]string) <nil>,
+      HasParts: ([]*parser.Part) (len=3) {
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=5) "image",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) (len=1) {
+            (*parser.Image)({
+              ContentUrl: (string) (len=165) "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/FunktionelleGruppen_Carbons%C3%A4ureanhydrid.svg/220px-FunktionelleGruppen_Carbons%C3%A4ureanhydrid.svg.png",
+              Identifier: (string) (len=64) "d592c2782782959835d0ce22d59c359d0c04a53948448c91855830bf24636fde",
+              Name: (string) (len=49) "File:FunktionelleGruppen_Carbonsäureanhydrid.svg",
+              AlternativeText: (string) "",
+              Caption: (string) (len=205) "Generic example of an anhydride of two carboxylic acids R 1 COOH and R 2 COOH, with the blue marked carboxylic acid anhydride functional group, where R stands for any group (typically hydrogen or organyl).",
+              Height: (int) 120,
+              Width: (int) 220,
+              EncodingFormat: (string) (len=9) "image/png",
+              MediaType: (string) (len=7) "drawing"
+            })
+          },
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=927) "An organic acid anhydride is an acid anhydride that is also an organic compound. An acid anhydride is a compound that has two acyl groups bonded to the same oxygen atom. A common type of organic acid anhydride is a carboxylic anhydride, where the parent acid is a carboxylic acid, the formula of the anhydride being (RC(O)) O. Symmetrical acid anhydrides of this type are named by replacing the word acid in the name of the parent carboxylic acid by the word anhydride. Thus, (CH CO) O is called acetic anhydride. Mixed (or unsymmetrical) acid anhydrides, such as acetic formic anhydride (see below), are known, whereby reaction occurs between two different carboxylic acids. Nomenclature of unsymmetrical acid anhydrides list the names of both of the reacted carboxylic acids before the word \"anhydride\" (for example, the dehydration reaction between benzoic acid and propanoic acid would yield \"benzoic propanoic anhydride\").",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=10) {
+            (*parser.Link)({
+              URL: (string) (len=44) "https://en.wikipedia.org/wiki/Acid_anhydride",
+              Text: (string) (len=14) "acid anhydride",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=46) "https://en.wikipedia.org/wiki/Organic_compound",
+              Text: (string) (len=16) "organic compound",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=40) "https://en.wikipedia.org/wiki/Acyl_group",
+              Text: (string) (len=11) "acyl groups",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=43) "https://en.wikipedia.org/wiki/Chemical_bond",
+              Text: (string) (len=6) "bonded",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=36) "https://en.wikipedia.org/wiki/Oxygen",
+              Text: (string) (len=6) "oxygen",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=69) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-Gold-1",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=45) "https://en.wikipedia.org/wiki/Carboxylic_acid",
+              Text: (string) (len=15) "carboxylic acid",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=69) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-Blue-2",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=53) "https://en.wikipedia.org/wiki/Acetic_formic_anhydride",
+              Text: (string) (len=23) "acetic formic anhydride",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=64) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-3",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=3) {
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-1",
+              Group: (string) "",
+              Text: (string) (len=3) "[1]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-2",
+              Group: (string) "",
+              Text: (string) (len=3) "[2]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-3",
+              Group: (string) "",
+              Text: (string) (len=3) "[3]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=479) "One or both acyl groups of an acid anhydride may also be derived from another type of organic acid, such as sulfonic acid or a phosphonic acid. One of the acyl groups of an acid anhydride can be derived from an inorganic acid such as phosphoric acid. The mixed anhydride 1,3-bisphosphoglyceric acid, an intermediate in the formation of ATP via glycolysis, is the mixed anhydride of 3-phosphoglyceric acid and phosphoric acid. Acidic oxides are also classified as acid anhydrides.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=11) {
+            (*parser.Link)({
+              URL: (string) (len=42) "https://en.wikipedia.org/wiki/Organic_acid",
+              Text: (string) (len=12) "organic acid",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=43) "https://en.wikipedia.org/wiki/Sulfonic_acid",
+              Text: (string) (len=13) "sulfonic acid",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=41) "https://en.wikipedia.org/wiki/Phosphonate",
+              Text: (string) (len=15) "phosphonic acid",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=44) "https://en.wikipedia.org/wiki/Inorganic_acid",
+              Text: (string) (len=14) "inorganic acid",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=45) "https://en.wikipedia.org/wiki/Phosphoric_acid",
+              Text: (string) (len=15) "phosphoric acid",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=57) "https://en.wikipedia.org/wiki/1,3-Bisphosphoglyceric_acid",
+              Text: (string) (len=27) "1,3-bisphosphoglyceric acid",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=40) "https://en.wikipedia.org/wiki/Glycolysis",
+              Text: (string) (len=10) "glycolysis",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=64) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-4",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=52) "https://en.wikipedia.org/wiki/3-Phosphoglyceric_acid",
+              Text: (string) (len=22) "3-phosphoglyceric acid",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=45) "https://en.wikipedia.org/wiki/Phosphoric_acid",
+              Text: (string) (len=15) "phosphoric acid",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=42) "https://en.wikipedia.org/wiki/Acidic_oxide",
+              Text: (string) (len=13) "Acidic oxides",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=1) {
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-4",
+              Group: (string) "",
+              Text: (string) (len=3) "[4]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        })
+      },
+      Images: ([]*parser.Image) <nil>,
+      Links: ([]*parser.Link) <nil>,
+      Citations: ([]*parser.Citation) <nil>,
+      TableReferences: ([]parser.TableReference) <nil>
+    }),
+    (*parser.Part)({
+      Name: (string) (len=12) "Nomenclature",
+      Type: (string) (len=7) "section",
+      Value: (string) "",
+      Values: ([]string) <nil>,
+      HasParts: ([]*parser.Part) (len=1) {
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=404) "The nomenclature of organic acid anhydrides is derived from the names of the constituent carboxylic acids. In symmetrical acid anhydrides, only the prefix of the original carboxylic acid is used and the suffix \"anhydride\" is added. For most unsymmetrical acid anhydrides - also called mixed anhydrides- the prefixes from both acids reacted are listed before the suffix, e.g., benzoic propanoic anhydride.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=1) {
+            (*parser.Link)({
+              URL: (string) (len=64) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-5",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=1) {
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-5",
+              Group: (string) "",
+              Text: (string) (len=3) "[5]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        })
+      },
+      Images: ([]*parser.Image) <nil>,
+      Links: ([]*parser.Link) <nil>,
+      Citations: ([]*parser.Citation) <nil>,
+      TableReferences: ([]parser.TableReference) <nil>
+    }),
+    (*parser.Part)({
+      Name: (string) (len=11) "Preparation",
+      Type: (string) (len=7) "section",
+      Value: (string) "",
+      Values: ([]string) <nil>,
+      HasParts: ([]*parser.Part) (len=6) {
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=377) "Organic acid anhydrides are prepared in industry by diverse means. Acetic anhydride is mainly produced by the carbonylation of methyl acetate. Maleic anhydride is produced by the oxidation of benzene or butane. Laboratory routes emphasize the dehydration of the corresponding acids. The conditions vary from acid to acid, but phosphorus pentoxide is a common dehydrating agent:",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=9) {
+            (*parser.Link)({
+              URL: (string) (len=46) "https://en.wikipedia.org/wiki/Acetic_anhydride",
+              Text: (string) (len=16) "Acetic anhydride",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=43) "https://en.wikipedia.org/wiki/Carbonylation",
+              Text: (string) (len=13) "carbonylation",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=44) "https://en.wikipedia.org/wiki/Methyl_acetate",
+              Text: (string) (len=14) "methyl acetate",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=64) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-6",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=46) "https://en.wikipedia.org/wiki/Maleic_anhydride",
+              Text: (string) (len=16) "Maleic anhydride",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=37) "https://en.wikipedia.org/wiki/Benzene",
+              Text: (string) (len=7) "benzene",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=36) "https://en.wikipedia.org/wiki/Butane",
+              Text: (string) (len=6) "butane",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=50) "https://en.wikipedia.org/wiki/Phosphorus_pentoxide",
+              Text: (string) (len=20) "phosphorus pentoxide",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=50) "https://en.wikipedia.org/wiki/Dehydration_reaction",
+              Text: (string) (len=17) "dehydrating agent",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=1) {
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-6",
+              Group: (string) "",
+              Text: (string) (len=3) "[6]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=15) "definition_list",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) (len=1) {
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=10) "definition",
+              Value: (string) (len=48) "2 CH COOH + P O → CH C(O)OC(O)CH + \"P O (OH) \"",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) (len=2) {
+                (*parser.Link)({
+                  URL: (string) (len=41) "https://en.wikipedia.org/wiki/Acetic_acid",
+                  Text: (string) (len=7) "CH COOH",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=46) "https://en.wikipedia.org/wiki/Acetic_anhydride",
+                  Text: (string) (len=14) "CH C(O)OC(O)CH",
+                  Images: ([]*parser.Image) <nil>
+                })
+              },
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            })
+          },
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=116) "In addition to symmetrical, acyclic anhydrides, other classes are recognized as discussed in the following sections.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) {
+          },
+          Citations: ([]*parser.Citation) {
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) (len=16) "Mixed anhydrides",
+          Type: (string) (len=7) "section",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) (len=4) {
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=9) "paragraph",
+              Value: (string) (len=243) "Mixed anhydrides have the formula RC(O)OC(O)R'. They tend to redistribute upon heating although acetic formic anhydride can be distilled at one atmosphere. Those containing the acetyl group can be prepared using ketene as an acetylating agent:",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) (len=4) {
+                (*parser.Link)({
+                  URL: (string) (len=53) "https://en.wikipedia.org/wiki/Redistribution_reaction",
+                  Text: (string) (len=12) "redistribute",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=53) "https://en.wikipedia.org/wiki/Acetic_formic_anhydride",
+                  Text: (string) (len=23) "acetic formic anhydride",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=69) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-ullm-7",
+                  Text: (string) "",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=36) "https://en.wikipedia.org/wiki/Ketene",
+                  Text: (string) (len=6) "ketene",
+                  Images: ([]*parser.Image) <nil>
+                })
+              },
+              Citations: ([]*parser.Citation) (len=1) {
+                (*parser.Citation)({
+                  Identifier: (string) (len=11) "cite_note-7",
+                  Group: (string) "",
+                  Text: (string) (len=3) "[7]"
+                })
+              },
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=15) "definition_list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=1) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=10) "definition",
+                  Value: (string) (len=30) "RCO H + H C=C=O → RCO C(O)CH",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) {
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=9) "paragraph",
+              Value: (string) (len=96) "Acid chlorides are also effective precursors as illustrated by the reaction with sodium formate:",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) (len=3) {
+                (*parser.Link)({
+                  URL: (string) (len=43) "https://en.wikipedia.org/wiki/Acid_chloride",
+                  Text: (string) (len=14) "Acid chlorides",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=44) "https://en.wikipedia.org/wiki/Sodium_formate",
+                  Text: (string) (len=14) "sodium formate",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=64) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-8",
+                  Text: (string) "",
+                  Images: ([]*parser.Image) <nil>
+                })
+              },
+              Citations: ([]*parser.Citation) (len=1) {
+                (*parser.Citation)({
+                  Identifier: (string) (len=11) "cite_note-8",
+                  Group: (string) "",
+                  Text: (string) (len=3) "[8]"
+                })
+              },
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=15) "definition_list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=1) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=10) "definition",
+                  Value: (string) (len=38) "CH C(O)Cl + HCO Na → HCO COCH + NaCl",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) {
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            })
+          },
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) (len=17) "Cyclic anhydrides",
+          Type: (string) (len=7) "section",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) (len=1) {
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=9) "paragraph",
+              Value: (string) (len=106) "Examples include maleic anhydride and succinic anhydride. Although these five-membered rings form readily.",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) (len=5) {
+                (*parser.Link)({
+                  URL: (string) (len=46) "https://en.wikipedia.org/wiki/Maleic_anhydride",
+                  Text: (string) (len=16) "maleic anhydride",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=48) "https://en.wikipedia.org/wiki/Succinic_anhydride",
+                  Text: (string) (len=18) "succinic anhydride",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=64) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-9",
+                  Text: (string) "",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=65) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-10",
+                  Text: (string) "",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=65) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-11",
+                  Text: (string) "",
+                  Images: ([]*parser.Image) <nil>
+                })
+              },
+              Citations: ([]*parser.Citation) (len=3) {
+                (*parser.Citation)({
+                  Identifier: (string) (len=11) "cite_note-9",
+                  Group: (string) "",
+                  Text: (string) (len=3) "[9]"
+                }),
+                (*parser.Citation)({
+                  Identifier: (string) (len=12) "cite_note-10",
+                  Group: (string) "",
+                  Text: (string) (len=4) "[10]"
+                }),
+                (*parser.Citation)({
+                  Identifier: (string) (len=12) "cite_note-11",
+                  Group: (string) "",
+                  Text: (string) (len=4) "[11]"
+                })
+              },
+              TableReferences: ([]parser.TableReference) <nil>
+            })
+          },
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) (len=30) "Dianhydrides and trianhydrides",
+          Type: (string) (len=7) "section",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) (len=3) {
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=9) "paragraph",
+              Value: (string) (len=38) "Examples are mostly cyclic anhydrides:",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) {
+              },
+              Citations: ([]*parser.Citation) {
+              },
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=4) "list",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) (len=4) {
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=104) "1,2,3,4-butanetetracarboxylic dianhydride produced by dehydration of 1,2,3,4-butanetetracarboxylic acid.",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=1) {
+                    (*parser.Link)({
+                      URL: (string) (len=64) "https://en.wikipedia.org/wiki/1,2,3,4-Butanetetracarboxylic_acid",
+                      Text: (string) (len=34) "1,2,3,4-butanetetracarboxylic acid",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=38) "naphthalenetetracarboxylic dianhydride",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=1) {
+                    (*parser.Link)({
+                      URL: (string) (len=68) "https://en.wikipedia.org/wiki/Naphthalenetetracarboxylic_dianhydride",
+                      Text: (string) (len=38) "naphthalenetetracarboxylic dianhydride",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=89) "1,2,4,5-Benzenetetracarboxylic dianhydride and 1,2,3,4-Benzenetetracarboxylic dianhydride",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) {
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                }),
+                (*parser.Part)({
+                  Name: (string) "",
+                  Type: (string) (len=9) "list_item",
+                  Value: (string) (len=34) "Mellitic anhydride, a trianhydride",
+                  Values: ([]string) <nil>,
+                  HasParts: ([]*parser.Part) <nil>,
+                  Images: ([]*parser.Image) <nil>,
+                  Links: ([]*parser.Link) (len=1) {
+                    (*parser.Link)({
+                      URL: (string) (len=48) "https://en.wikipedia.org/wiki/Mellitic_anhydride",
+                      Text: (string) (len=18) "Mellitic anhydride",
+                      Images: ([]*parser.Image) <nil>
+                    })
+                  },
+                  Citations: ([]*parser.Citation) <nil>,
+                  TableReferences: ([]parser.TableReference) <nil>
+                })
+              },
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=9) "paragraph",
+              Value: (string) (len=57) "These compounds are sometimes useful crosslinking agents.",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) (len=1) {
+                (*parser.Link)({
+                  URL: (string) (len=48) "https://en.wikipedia.org/wiki/Crosslinking_agent",
+                  Text: (string) (len=19) "crosslinking agents",
+                  Images: ([]*parser.Image) <nil>
+                })
+              },
+              Citations: ([]*parser.Citation) {
+              },
+              TableReferences: ([]parser.TableReference) <nil>
+            })
+          },
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        })
+      },
+      Images: ([]*parser.Image) <nil>,
+      Links: ([]*parser.Link) <nil>,
+      Citations: ([]*parser.Citation) <nil>,
+      TableReferences: ([]parser.TableReference) <nil>
+    }),
+    (*parser.Part)({
+      Name: (string) (len=9) "Reactions",
+      Type: (string) (len=7) "section",
+      Value: (string) "",
+      Values: ([]string) <nil>,
+      HasParts: ([]*parser.Part) (len=10) {
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=387) "Acid anhydrides are a source of reactive acyl groups, and their reactions and uses resemble those of acyl halides. Acid anhydrides tend to be less electrophilic than acyl chlorides, and only one acyl group is transferred per molecule of acid anhydride, which leads to a lower atom efficiency. The low cost, however, of acetic anhydride makes it a common choice for acetylation reactions.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=6) {
+            (*parser.Link)({
+              URL: (string) (len=41) "https://en.wikipedia.org/wiki/Acyl_halide",
+              Text: (string) (len=12) "acyl halides",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=43) "https://en.wikipedia.org/wiki/Electrophilic",
+              Text: (string) (len=13) "electrophilic",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=43) "https://en.wikipedia.org/wiki/Acyl_chloride",
+              Text: (string) (len=14) "acyl chlorides",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=45) "https://en.wikipedia.org/wiki/Atom_efficiency",
+              Text: (string) (len=15) "atom efficiency",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=46) "https://en.wikipedia.org/wiki/Acetic_anhydride",
+              Text: (string) (len=16) "acetic anhydride",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=41) "https://en.wikipedia.org/wiki/Acetylation",
+              Text: (string) (len=11) "acetylation",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) {
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=122) "In reactions with alcohols and amines, the reactions afford equal amounts of the acylated product and the carboxylic acid:",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) {
+          },
+          Citations: ([]*parser.Citation) {
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=15) "definition_list",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) (len=2) {
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=10) "definition",
+              Value: (string) (len=39) "RC(O)OC(O)R + R'OH → RC(O)OR' + RCO H",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) {
+              },
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=10) "definition",
+              Value: (string) (len=40) "RC(O)OC(O)R + R' NH → RC(O)NR' + RCO H",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) {
+              },
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            })
+          },
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=55) "Similarly, in Friedel-Crafts acylation of arenes (ArH):",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=1) {
+            (*parser.Link)({
+              URL: (string) (len=54) "https://en.wikipedia.org/wiki/Friedel-Crafts_acylation",
+              Text: (string) (len=24) "Friedel-Crafts acylation",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) {
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=15) "definition_list",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) (len=1) {
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=10) "definition",
+              Value: (string) (len=37) "RC(O)OC(O)R + ArH → RC(O)Ar + RCO H",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) {
+              },
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            })
+          },
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=286) "As with acid halides, anhydrides can also react with carbon nucleophiles to furnish ketones and/or tertiary alcohols, and can participate in both the Friedel–Crafts acylation and the Weinreb ketone synthesis. Unlike acid halides, however, anhydrides do not react with Gilman reagents.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) {
+          },
+          Citations: ([]*parser.Citation) {
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=129) "The reactivity of anhydrides can be increased by using a catalytic amount of N,N-dimethylaminopyridine (\"DMAP\") or even pyridine.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=3) {
+            (*parser.Link)({
+              URL: (string) (len=53) "https://en.wikipedia.org/wiki/4-dimethylaminopyridine",
+              Text: (string) (len=25) "N,N-dimethylaminopyridine",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=38) "https://en.wikipedia.org/wiki/Pyridine",
+              Text: (string) (len=8) "pyridine",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=72) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-kurti1-12",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=1) {
+            (*parser.Citation)({
+              Identifier: (string) (len=12) "cite_note-12",
+              Group: (string) "",
+              Text: (string) (len=4) "[12]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=5) "image",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) (len=1) {
+            (*parser.Image)({
+              ContentUrl: (string) (len=201) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Nucleophilic_Acyl_Substitution_on_an_Anhydride_Catalyzed_by_DMAP.png/581px-Nucleophilic_Acyl_Substitution_on_an_Anhydride_Catalyzed_by_DMAP.png",
+              Identifier: (string) (len=64) "6fb3f06cf2b716bd26d8dd80fe16162da5063e6ec23234c8a5493a284bbe878f",
+              Name: (string) (len=73) "File:Nucleophilic_Acyl_Substitution_on_an_Anhydride_Catalyzed_by_DMAP.png",
+              AlternativeText: (string) (len=95) "DMAP activates anhydrides towards nucleophilic substitution by creating a better leaving group.",
+              Caption: (string) (len=95) "DMAP activates anhydrides towards nucleophilic substitution by creating a better leaving group.",
+              Height: (int) 156,
+              Width: (int) 581,
+              EncodingFormat: (string) (len=9) "image/png",
+              MediaType: (string) (len=6) "bitmap"
+            })
+          },
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=657) "First, DMAP (2) attacks the anhydride (1) to form a tetrahedral intermediate, which collapses to eliminate a carboxylate ion to give amide 3. This intermediate amide is more activated towards nucleophilic attack than the original anhydride, because dimethylaminopyridine is a better leaving group than a carboxylate. In the final set of steps, a nucleophile (Nuc) attacks 3 to give another tetrahedral intermediate. When this intermediate collapses to give the product 4, the pyridine group is eliminated and its aromaticity is restored – a powerful driving force, and the reason why the pyridine compound is a better leaving group than a carboxylate ion.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) {
+          },
+          Citations: ([]*parser.Citation) {
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=90) "For prochiral cyclic anhydrides, the alcoholysis reaction can be conducted asymmetrically.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=2) {
+            (*parser.Link)({
+              URL: (string) (len=39) "https://en.wikipedia.org/wiki/Prochiral",
+              Text: (string) (len=9) "prochiral",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=65) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-13",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=1) {
+            (*parser.Citation)({
+              Identifier: (string) (len=12) "cite_note-13",
+              Group: (string) "",
+              Text: (string) (len=4) "[13]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        })
+      },
+      Images: ([]*parser.Image) <nil>,
+      Links: ([]*parser.Link) <nil>,
+      Citations: ([]*parser.Citation) <nil>,
+      TableReferences: ([]parser.TableReference) <nil>
+    }),
+    (*parser.Part)({
+      Name: (string) (len=46) "Applications and occurrence of acid anhydrides",
+      Type: (string) (len=7) "section",
+      Value: (string) "",
+      Values: ([]string) <nil>,
+      HasParts: ([]*parser.Part) (len=4) {
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=7) "gallery",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) (len=6) {
+            (*parser.Image)({
+              ContentUrl: (string) (len=119) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Acetic_anhydride2DACS.svg/130px-Acetic_anhydride2DACS.svg.png",
+              Identifier: (string) (len=64) "c24ef5bb260abc8ef15738eeb622cd49c519e1641572f3ea41b10fbec1c1eb2c",
+              Name: (string) (len=30) "File:Acetic_anhydride2DACS.svg",
+              AlternativeText: (string) (len=68) "Acetic anhydride is produced on a large scale for many applications.",
+              Caption: (string) (len=68) "Acetic anhydride is produced on a large scale for many applications.",
+              Height: (int) 84,
+              Width: (int) 130,
+              EncodingFormat: (string) (len=9) "image/png",
+              MediaType: (string) (len=7) "drawing"
+            }),
+            (*parser.Image)({
+              ContentUrl: (string) (len=152) "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Naphthalenetetracarboxylic_dianhydride.svg/57px-Naphthalenetetracarboxylic_dianhydride.svg.png",
+              Identifier: (string) (len=64) "a9bb85bc9c62a150641122f41c9eaabd70cd123db0fc7063058504e87523a8be",
+              Name: (string) (len=47) "File:Naphthalenetetracarboxylic_dianhydride.svg",
+              AlternativeText: (string) (len=119) "Naphthalenetetracarboxylic dianhydride, a building block for complex organic compounds, is an example of a dianhydride.",
+              Caption: (string) (len=119) "Naphthalenetetracarboxylic dianhydride, a building block for complex organic compounds, is an example of a dianhydride.",
+              Height: (int) 90,
+              Width: (int) 57,
+              EncodingFormat: (string) (len=9) "image/png",
+              MediaType: (string) (len=7) "drawing"
+            }),
+            (*parser.Image)({
+              ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Maleic_anhydride_%28vertical%29.svg/41px-Maleic_anhydride_%28vertical%29.svg.png",
+              Identifier: (string) (len=64) "baee84af7ac1a06969da19ea1a1a2e3ca67db267b928d6170dead91e55beac61",
+              Name: (string) (len=36) "File:Maleic_anhydride_(vertical).svg",
+              AlternativeText: (string) (len=80) "Maleic anhydride is a cyclic anhydride, widely used to make industrial coatings.",
+              Caption: (string) (len=80) "Maleic anhydride is a cyclic anhydride, widely used to make industrial coatings.",
+              Height: (int) 90,
+              Width: (int) 41,
+              EncodingFormat: (string) (len=9) "image/png",
+              MediaType: (string) (len=7) "drawing"
+            }),
+            (*parser.Image)({
+              ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Adenosintriphosphat_protoniert.svg/130px-Adenosintriphosphat_protoniert.svg.png",
+              Identifier: (string) (len=64) "0187b1905941491be3fd24e22359975bce85ba5ec8d801b4a499a3c3bb6ed575",
+              Name: (string) (len=39) "File:Adenosintriphosphat_protoniert.svg",
+              AlternativeText: (string) (len=72) "ATP in its protonated form is an anhydride derived from phosphoric acid.",
+              Caption: (string) (len=72) "ATP in its protonated form is an anhydride derived from phosphoric acid.",
+              Height: (int) 64,
+              Width: (int) 130,
+              EncodingFormat: (string) (len=9) "image/png",
+              MediaType: (string) (len=7) "drawing"
+            }),
+            (*parser.Image)({
+              ContentUrl: (string) (len=135) "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/1%2C3-Bisphosphoglyceric_acid.svg/130px-1%2C3-Bisphosphoglyceric_acid.svg.png",
+              Identifier: (string) (len=64) "4346b2411fa445983c005e918f7771bcc578454816be70f7c551122c84ac9ba8",
+              Name: (string) (len=36) "File:1,3-Bisphosphoglyceric_acid.svg",
+              AlternativeText: (string) (len=86) "The \"mixed anhydride\" 1,3-bisphosphoglyceric acid occurs widely in metabolic pathways.",
+              Caption: (string) (len=86) "The \"mixed anhydride\" 1,3-bisphosphoglyceric acid occurs widely in metabolic pathways.",
+              Height: (int) 50,
+              Width: (int) 130,
+              EncodingFormat: (string) (len=9) "image/png",
+              MediaType: (string) (len=7) "drawing"
+            }),
+            (*parser.Image)({
+              ContentUrl: (string) (len=159) "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/3%27-Phosphoadenosine-5%27-phosphosulfate.svg/110px-3%27-Phosphoadenosine-5%27-phosphosulfate.svg.png",
+              Identifier: (string) (len=64) "280d173b81c8d6f0cb22e256c5478a1852e65fd4a0cc72c74b0736b844fd019a",
+              Name: (string) (len=46) "File:3'-Phosphoadenosine-5'-phosphosulfate.svg",
+              AlternativeText: (string) (len=172) "3'-Phosphoadenosine-5'-phosphosulfate (PAPS) is a mixed anhydride of sulfuric and phosphoric acids and is the most common coenzyme in biological sulfate transfer reactions.",
+              Caption: (string) (len=172) "3'-Phosphoadenosine-5'-phosphosulfate (PAPS) is a mixed anhydride of sulfuric and phosphoric acids and is the most common coenzyme in biological sulfate transfer reactions.",
+              Height: (int) 90,
+              Width: (int) 110,
+              EncodingFormat: (string) (len=9) "image/png",
+              MediaType: (string) (len=7) "drawing"
+            })
+          },
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=261) "Acetic anhydride is a major industrial chemical widely used for preparing acetate esters, e.g. cellulose acetate. Maleic anhydride is the precursor to various resins by copolymerization with styrene. Maleic anhydride is a dienophile in the Diels-Alder reaction.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=8) {
+            (*parser.Link)({
+              URL: (string) (len=46) "https://en.wikipedia.org/wiki/Acetic_anhydride",
+              Text: (string) (len=16) "Acetic anhydride",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=47) "https://en.wikipedia.org/wiki/Cellulose_acetate",
+              Text: (string) (len=17) "cellulose acetate",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=46) "https://en.wikipedia.org/wiki/Maleic_anhydride",
+              Text: (string) (len=16) "Maleic anhydride",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=35) "https://en.wikipedia.org/wiki/Resin",
+              Text: (string) (len=6) "resins",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=39) "https://en.wikipedia.org/wiki/Copolymer",
+              Text: (string) (len=16) "copolymerization",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=37) "https://en.wikipedia.org/wiki/Styrene",
+              Text: (string) (len=7) "styrene",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=50) "https://en.wikipedia.org/wiki/Diels-Alder_reaction",
+              Text: (string) (len=20) "Diels-Alder reaction",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=69) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-ullm-7",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=1) {
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-7",
+              Group: (string) "",
+              Text: (string) (len=3) "[7]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=581) "Dianhydrides, molecules containing two acid anhydride functions, are used to synthesize polyimides and sometimes polyesters and polyamides. Examples of dianhydrides: pyromellitic dianhydride (PMDA), 3,3’, 4,4’ - oxydiphtalic dianhydride (ODPA), 3,3’, 4,4’-benzophenone tetracarboxylic dianhydride (BTDA), 4,4’-diphtalic (hexafluoroisopropylidene) anhydride (6FDA), benzoquinonetetracarboxylic dianhydride, ethylenetetracarboxylic dianhydride. Polyanhydrides are a class of polymers characterized by anhydride bonds that connect repeat units of the polymer backbone chain.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=12) {
+            (*parser.Link)({
+              URL: (string) (len=39) "https://en.wikipedia.org/wiki/Polyimide",
+              Text: (string) (len=10) "polyimides",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=39) "https://en.wikipedia.org/wiki/Polyester",
+              Text: (string) (len=10) "polyesters",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=65) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-14",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=39) "https://en.wikipedia.org/wiki/Polyamide",
+              Text: (string) (len=10) "polyamides",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=65) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-15",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=92) "https://en.wikipedia.org/wiki/3,3’,_4,4’-benzophenone_tetracarboxylic_dianhydride_(BTDA)",
+              Text: (string) (len=62) "3,3’, 4,4’-benzophenone tetracarboxylic dianhydride (BTDA)",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=69) "https://en.wikipedia.org/wiki/Benzoquinonetetracarboxylic_dianhydride",
+              Text: (string) (len=39) "benzoquinonetetracarboxylic dianhydride",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=65) "https://en.wikipedia.org/wiki/Ethylenetetracarboxylic_dianhydride",
+              Text: (string) (len=35) "ethylenetetracarboxylic dianhydride",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=44) "https://en.wikipedia.org/wiki/Polyanhydrides",
+              Text: (string) (len=14) "Polyanhydrides",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=37) "https://en.wikipedia.org/wiki/Polymer",
+              Text: (string) (len=8) "polymers",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=41) "https://en.wikipedia.org/wiki/Repeat_unit",
+              Text: (string) (len=12) "repeat units",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=44) "https://en.wikipedia.org/wiki/Backbone_chain",
+              Text: (string) (len=14) "backbone chain",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=2) {
+            (*parser.Citation)({
+              Identifier: (string) (len=12) "cite_note-14",
+              Group: (string) "",
+              Text: (string) (len=4) "[14]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=12) "cite_note-15",
+              Group: (string) "",
+              Text: (string) (len=4) "[15]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) (len=21) "Biological occurrence",
+          Type: (string) (len=7) "section",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) (len=1) {
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=9) "paragraph",
+              Value: (string) (len=819) "Natural products containing acid anhydrides have been isolated from animals, bacteria and fungi. Examples include cantharidin from species of blister beetle, including the Spanish fly, Lytta vesicatoria, and tautomycin, from the bacterium Streptomyces spiroverticillatus. The maleidride family of fungal secondary metabolites, which possess a wide range of antibiotic and antifungal activity, are alicyclic compounds with maleic anhydride functional groups. A number of proteins in prokaryotes and eukaryotes undergo spontaneous cleavage between the amino acid residues aspartic acid and proline via an acid anhydride intermediate. In some cases, the anhydride may then react with nucleophiles of other cellular components, such as at the surface of the bacterium Neisseria meningitidis or on proteins localized nearby.",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) (len=15) {
+                (*parser.Link)({
+                  URL: (string) (len=65) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-16",
+                  Text: (string) "",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=65) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-17",
+                  Text: (string) "",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=65) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-18",
+                  Text: (string) "",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=41) "https://en.wikipedia.org/wiki/Cantharidin",
+                  Text: (string) (len=11) "cantharidin",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=47) "https://en.wikipedia.org/wiki/Lytta_vesicatoria",
+                  Text: (string) (len=11) "Spanish fly",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=40) "https://en.wikipedia.org/wiki/Tautomycin",
+                  Text: (string) (len=10) "tautomycin",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=61) "https://en.wikipedia.org/wiki/Streptomyces_spiroverticillatus",
+                  Text: (string) (len=31) "Streptomyces spiroverticillatus",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=49) "https://en.wikipedia.org/wiki/Alicyclic_compounds",
+                  Text: (string) (len=19) "alicyclic compounds",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=65) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-19",
+                  Text: (string) "",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=65) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-20",
+                  Text: (string) "",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=65) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-21",
+                  Text: (string) "",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=43) "https://en.wikipedia.org/wiki/Aspartic_acid",
+                  Text: (string) (len=13) "aspartic acid",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=37) "https://en.wikipedia.org/wiki/Proline",
+                  Text: (string) (len=7) "proline",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=52) "https://en.wikipedia.org/wiki/Neisseria_meningitidis",
+                  Text: (string) (len=22) "Neisseria meningitidis",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=65) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-22",
+                  Text: (string) "",
+                  Images: ([]*parser.Image) <nil>
+                })
+              },
+              Citations: ([]*parser.Citation) (len=7) {
+                (*parser.Citation)({
+                  Identifier: (string) (len=12) "cite_note-16",
+                  Group: (string) "",
+                  Text: (string) (len=4) "[16]"
+                }),
+                (*parser.Citation)({
+                  Identifier: (string) (len=12) "cite_note-17",
+                  Group: (string) "",
+                  Text: (string) (len=4) "[17]"
+                }),
+                (*parser.Citation)({
+                  Identifier: (string) (len=12) "cite_note-18",
+                  Group: (string) "",
+                  Text: (string) (len=4) "[18]"
+                }),
+                (*parser.Citation)({
+                  Identifier: (string) (len=12) "cite_note-19",
+                  Group: (string) "",
+                  Text: (string) (len=4) "[19]"
+                }),
+                (*parser.Citation)({
+                  Identifier: (string) (len=12) "cite_note-20",
+                  Group: (string) "",
+                  Text: (string) (len=4) "[20]"
+                }),
+                (*parser.Citation)({
+                  Identifier: (string) (len=12) "cite_note-21",
+                  Group: (string) "",
+                  Text: (string) (len=4) "[21]"
+                }),
+                (*parser.Citation)({
+                  Identifier: (string) (len=12) "cite_note-22",
+                  Group: (string) "",
+                  Text: (string) (len=4) "[22]"
+                })
+              },
+              TableReferences: ([]parser.TableReference) <nil>
+            })
+          },
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        })
+      },
+      Images: ([]*parser.Image) <nil>,
+      Links: ([]*parser.Link) <nil>,
+      Citations: ([]*parser.Citation) <nil>,
+      TableReferences: ([]parser.TableReference) <nil>
+    }),
+    (*parser.Part)({
+      Name: (string) (len=9) "Analogues",
+      Type: (string) (len=7) "section",
+      Value: (string) "",
+      Values: ([]string) <nil>,
+      HasParts: ([]*parser.Part) (len=2) {
+        (*parser.Part)({
+          Name: (string) (len=8) "Nitrogen",
+          Type: (string) (len=7) "section",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) (len=2) {
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=5) "image",
+              Value: (string) "",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) (len=1) {
+                (*parser.Image)({
+                  ContentUrl: (string) (len=121) "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Imide_functional_group.svg/100px-Imide_functional_group.svg.png",
+                  Identifier: (string) (len=64) "845a9c51051318ced1884818f698017728ba68224fa4e4566615a295ec373c61",
+                  Name: (string) (len=31) "File:Imide_functional_group.svg",
+                  AlternativeText: (string) "",
+                  Caption: (string) (len=39) "A general linear imide functional group",
+                  Height: (int) 87,
+                  Width: (int) 100,
+                  EncodingFormat: (string) (len=9) "image/png",
+                  MediaType: (string) (len=7) "drawing"
+                })
+              },
+              Links: ([]*parser.Link) <nil>,
+              Citations: ([]*parser.Citation) <nil>,
+              TableReferences: ([]parser.TableReference) <nil>
+            }),
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=9) "paragraph",
+              Value: (string) (len=311) "Imides are structurally related analogues, where the bridging oxygen is replaced by nitrogen. They are similarly formed by the condensation of dicarboxylic acids with ammonia. The replacement of all oxygen atoms with nitrogen gives imidines, these are a rare functional group which are very prone to hydrolysis.",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) (len=2) {
+                (*parser.Link)({
+                  URL: (string) (len=35) "https://en.wikipedia.org/wiki/Imide",
+                  Text: (string) (len=6) "Imides",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=37) "https://en.wikipedia.org/wiki/Imidine",
+                  Text: (string) (len=8) "imidines",
+                  Images: ([]*parser.Image) <nil>
+                })
+              },
+              Citations: ([]*parser.Citation) {
+              },
+              TableReferences: ([]parser.TableReference) <nil>
+            })
+          },
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) (len=6) "Sulfur",
+          Type: (string) (len=7) "section",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) (len=1) {
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=9) "paragraph",
+              Value: (string) (len=377) "Sulfur can replace oxygen, either in the carbonyl group or in the bridge. In the former case, the name of the acyl group is enclosed in parentheses to avoid ambiguity in the name, e.g., (thioacetic) anhydride (CH C(S)OC(S)CH). When two acyl groups are attached to the same sulfur atom, the resulting compound is called a thioanhydride, e.g., acetic thioanhydride ((CH C(O)) S).",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) (len=3) {
+                (*parser.Link)({
+                  URL: (string) (len=36) "https://en.wikipedia.org/wiki/Sulfur",
+                  Text: (string) (len=6) "Sulfur",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=69) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-Blue-2",
+                  Text: (string) "",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=69) "https://en.wikipedia.org/wiki/Organic_acid_anhydride#cite_note-Blue-2",
+                  Text: (string) "",
+                  Images: ([]*parser.Image) <nil>
+                })
+              },
+              Citations: ([]*parser.Citation) (len=2) {
+                (*parser.Citation)({
+                  Identifier: (string) (len=11) "cite_note-2",
+                  Group: (string) "",
+                  Text: (string) (len=3) "[2]"
+                }),
+                (*parser.Citation)({
+                  Identifier: (string) (len=11) "cite_note-2",
+                  Group: (string) "",
+                  Text: (string) (len=3) "[2]"
+                })
+              },
+              TableReferences: ([]parser.TableReference) <nil>
+            })
+          },
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        })
+      },
+      Images: ([]*parser.Image) <nil>,
+      Links: ([]*parser.Link) <nil>,
+      Citations: ([]*parser.Citation) <nil>,
+      TableReferences: ([]parser.TableReference) <nil>
+    })
+  },
+  (string) (len=6) "tables": ([]*parser.OrderedTable) {
+  }
+}

@@ -1,0 +1,472 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=10) "Info/País",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=22) {
+          (*parser.Part)({
+            Name: (string) (len=13) "Faixa de Gaza",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=33) "قطاع غزة Qiṭāʿ Ġazzah",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "Bandeira da Palestina",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=111) "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Palestine.svg/125px-Flag_of_Palestine.svg.png",
+                Identifier: (string) (len=64) "b2fb72943482bb123d4221e81c8f2bdb402727881285d1f3964a78513c815be5",
+                Name: (string) (len=30) "Ficheiro:Flag_of_Palestine.svg",
+                AlternativeText: (string) (len=23) "Bandeira  Faixa de Gaza",
+                Caption: (string) (len=23) "Bandeira  Faixa de Gaza",
+                Height: (int) 63,
+                Width: (int) 125,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=60) "https://pt.wikipedia.org/wiki/Ficheiro:Flag_of_Palestine.svg",
+                Text: (string) (len=23) "Bandeira  Faixa de Gaza",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://pt.wikipedia.org/wiki/Bandeira_da_Palestina",
+                Text: (string) (len=21) "Bandeira da Palestina",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=107) "Mapa da Faixa de Gaza mostrando as áreas urbanas, campos de refugiados e pontos de travessia na fronteira.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=119) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Mapa_da_Faixa_de_Gaza.svg/250px-Mapa_da_Faixa_de_Gaza.svg.png",
+                Identifier: (string) (len=64) "70d9f618f9b916b65c10e253d45234bfb840529df6cdd7c89c230a12d08cb9b1",
+                Name: (string) (len=34) "Ficheiro:Mapa_da_Faixa_de_Gaza.svg",
+                AlternativeText: (string) (len=107) "Mapa da Faixa de Gaza mostrando as áreas urbanas, campos de refugiados e pontos de travessia na fronteira.",
+                Caption: (string) (len=107) "Mapa da Faixa de Gaza mostrando as áreas urbanas, campos de refugiados e pontos de travessia na fronteira.",
+                Height: (int) 306,
+                Width: (int) 250,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=64) "https://pt.wikipedia.org/wiki/Ficheiro:Mapa_da_Faixa_de_Gaza.svg",
+                Text: (string) (len=107) "Mapa da Faixa de Gaza mostrando as áreas urbanas, campos de refugiados e pontos de travessia na fronteira.",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Capital",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "Gaza",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=34) "https://pt.wikipedia.org/wiki/Gaza",
+                Text: (string) (len=4) "Gaza",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Maior cidade",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "Rafa",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=34) "https://pt.wikipedia.org/wiki/Rafa",
+                Text: (string) (len=4) "Rafa",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Língua oficial",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "árabe",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://pt.wikipedia.org/wiki/Língua_árabe",
+                Text: (string) (len=6) "árabe",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Gentílico",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "gazita ou gazeu",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://pt.wikipedia.org/wiki/Gentílico",
+                Text: (string) (len=10) "Gentílico",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=71) "https://pt.wikipedia.org/wiki/Wikipédia:Livro_de_estilo/Cite_as_fontes",
+                Text: (string) (len=16) "carece de fontes",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Governo",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "Autoridade Nacional",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=62) "https://pt.wikipedia.org/wiki/Autoridade_Nacional_Palestiniana",
+                Text: (string) (len=19) "Autoridade Nacional",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Presidente",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Mahmoud Abbas",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=73) "https://pt.wikipedia.org/wiki/Presidente_da_Autoridade_Nacional_Palestina",
+                Text: (string) (len=10) "Presidente",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://pt.wikipedia.org/wiki/Mahmoud_Abbas",
+                Text: (string) (len=13) "Mahmoud Abbas",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=17) "Primeiro-ministro",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Ismail Haniya",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://pt.wikipedia.org/wiki/Primeiro-ministro",
+                Text: (string) (len=17) "Primeiro-ministro",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://pt.wikipedia.org/wiki/Ismail_Haniya",
+                Text: (string) (len=13) "Ismail Haniya",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=5) "Área",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Total",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "365 km²",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://pt.wikipedia.org/wiki/Quilómetro_quadrado",
+                Text: (string) (len=4) "km²",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "População",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=20) "Estimativa para 2022",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "2 375 259 hab.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=66) "https://pt.wikipedia.org/wiki/Faixa_de_Gaza#cite_note-demografia-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Densidade",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "6,507 hab./km²",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://pt.wikipedia.org/wiki/Densidade_populacional",
+                Text: (string) (len=9) "Densidade",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "PIB (base PPC)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=20) "Estimativa para 2014",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=51) "https://pt.wikipedia.org/wiki/Produto_interno_bruto",
+                Text: (string) (len=3) "PIB",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://pt.wikipedia.org/wiki/Paridade_do_poder_de_compra",
+                Text: (string) (len=3) "PPC",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Total",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "US$ 1,35 bilhão *",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=37) "https://pt.wikipedia.org/wiki/Bilhão",
+                Text: (string) (len=7) "bilhão",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://pt.wikipedia.org/wiki/Escalas_curta_e_longa",
+                Text: (string) (len=1) "*",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Per capita",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "US$ 6 100",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://pt.wikipedia.org/wiki/Renda_per_capita",
+                Text: (string) (len=10) "Per capita",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Fuso horário",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "(UTC +2)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://pt.wikipedia.org/wiki/Fuso_horário",
+                Text: (string) (len=13) "Fuso horário",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=56) "https://pt.wikipedia.org/wiki/Tempo_Universal_Coordenado",
+                Text: (string) (len=3) "UTC",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Verão (DST)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "(UTC +3)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://pt.wikipedia.org/wiki/Horário_de_verão",
+                Text: (string) (len=3) "DST",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=56) "https://pt.wikipedia.org/wiki/Tempo_Universal_Coordenado",
+                Text: (string) (len=3) "UTC",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Cód. Internet",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=3) ".ps",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://pt.wikipedia.org/wiki/Lista_de_TLDs",
+                Text: (string) (len=14) "Cód. Internet",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=33) "https://pt.wikipedia.org/wiki/.ps",
+                Text: (string) (len=3) ".ps",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Cód. telef.",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "+970",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=60) "https://pt.wikipedia.org/wiki/Lista_de_códigos_telefónicos",
+                Text: (string) (len=12) "Cód. telef.",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

@@ -1,0 +1,184 @@
+([]*parser.OrderedTable) (len=1) {
+  (*parser.OrderedTable)({
+    ID: (string) (len=40) "phylogeny_and_evolution.phylogeny_table1",
+    Table: (*parser.TableWithHeaders)({
+      Headers: ([][]parser.Cell) <nil>,
+      Footers: ([][]parser.Cell) <nil>,
+      Rows: ([][]parser.Cell) (len=1) {
+        ([]parser.Cell) (len=2) {
+          (parser.Cell) {
+            Value: (string) (len=9) "Cactaceae",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) (len=1) {
+              (parser.TableWithHeaders) {
+                Headers: ([][]parser.Cell) <nil>,
+                Footers: ([][]parser.Cell) <nil>,
+                Rows: ([][]parser.Cell) (len=3) {
+                  ([]parser.Cell) (len=2) {
+                    (parser.Cell) {
+                      Value: (string) "",
+                      Inner: (parser.TablesWithHeaders) <nil>
+                    },
+                    (parser.Cell) {
+                      Value: (string) (len=39) "Pereskia s.l. Clade A → Leuenbergeria",
+                      Inner: (parser.TablesWithHeaders) <nil>
+                    }
+                  },
+                  ([]parser.Cell) (len=2) {
+                    (parser.Cell) {
+                      Value: (string) "",
+                      Inner: (parser.TablesWithHeaders) <nil>
+                    },
+                    (parser.Cell) {
+                      Value: (string) (len=39) "Pereskia s.l. Clade A → Leuenbergeria",
+                      Inner: (parser.TablesWithHeaders) <nil>
+                    }
+                  },
+                  ([]parser.Cell) (len=2) {
+                    (parser.Cell) {
+                      Value: (string) (len=10) "caulocacti",
+                      Inner: (parser.TablesWithHeaders) <nil>
+                    },
+                    (parser.Cell) {
+                      Value: (string) "",
+                      Inner: (parser.TablesWithHeaders) (len=1) {
+                        (parser.TableWithHeaders) {
+                          Headers: ([][]parser.Cell) <nil>,
+                          Footers: ([][]parser.Cell) <nil>,
+                          Rows: ([][]parser.Cell) (len=3) {
+                            ([]parser.Cell) (len=2) {
+                              (parser.Cell) {
+                                Value: (string) "",
+                                Inner: (parser.TablesWithHeaders) <nil>
+                              },
+                              (parser.Cell) {
+                                Value: (string) (len=53) "Pereskia s.l. Clade B → Rhodocactus + Pereskia s.s.",
+                                Inner: (parser.TablesWithHeaders) <nil>
+                              }
+                            },
+                            ([]parser.Cell) (len=2) {
+                              (parser.Cell) {
+                                Value: (string) "",
+                                Inner: (parser.TablesWithHeaders) <nil>
+                              },
+                              (parser.Cell) {
+                                Value: (string) (len=53) "Pereskia s.l. Clade B → Rhodocactus + Pereskia s.s.",
+                                Inner: (parser.TablesWithHeaders) <nil>
+                              }
+                            },
+                            ([]parser.Cell) (len=2) {
+                              (parser.Cell) {
+                                Value: (string) (len=11) "core\u00a0cacti",
+                                Inner: (parser.TablesWithHeaders) <nil>
+                              },
+                              (parser.Cell) {
+                                Value: (string) "",
+                                Inner: (parser.TablesWithHeaders) (len=1) {
+                                  (parser.TableWithHeaders) {
+                                    Headers: ([][]parser.Cell) <nil>,
+                                    Footers: ([][]parser.Cell) <nil>,
+                                    Rows: ([][]parser.Cell) (len=3) {
+                                      ([]parser.Cell) (len=2) {
+                                        (parser.Cell) {
+                                          Value: (string) "",
+                                          Inner: (parser.TablesWithHeaders) <nil>
+                                        },
+                                        (parser.Cell) {
+                                          Value: (string) (len=12) "Opuntioideae",
+                                          Inner: (parser.TablesWithHeaders) <nil>
+                                        }
+                                      },
+                                      ([]parser.Cell) (len=2) {
+                                        (parser.Cell) {
+                                          Value: (string) "",
+                                          Inner: (parser.TablesWithHeaders) <nil>
+                                        },
+                                        (parser.Cell) {
+                                          Value: (string) (len=12) "Opuntioideae",
+                                          Inner: (parser.TablesWithHeaders) <nil>
+                                        }
+                                      },
+                                      ([]parser.Cell) (len=2) {
+                                        (parser.Cell) {
+                                          Value: (string) "",
+                                          Inner: (parser.TablesWithHeaders) <nil>
+                                        },
+                                        (parser.Cell) {
+                                          Value: (string) "",
+                                          Inner: (parser.TablesWithHeaders) (len=1) {
+                                            (parser.TableWithHeaders) {
+                                              Headers: ([][]parser.Cell) <nil>,
+                                              Footers: ([][]parser.Cell) <nil>,
+                                              Rows: ([][]parser.Cell) (len=4) {
+                                                ([]parser.Cell) (len=2) {
+                                                  (parser.Cell) {
+                                                    Value: (string) "",
+                                                    Inner: (parser.TablesWithHeaders) <nil>
+                                                  },
+                                                  (parser.Cell) {
+                                                    Value: (string) (len=9) "Maihuenia",
+                                                    Inner: (parser.TablesWithHeaders) <nil>
+                                                  }
+                                                },
+                                                ([]parser.Cell) (len=2) {
+                                                  (parser.Cell) {
+                                                    Value: (string) "",
+                                                    Inner: (parser.TablesWithHeaders) <nil>
+                                                  },
+                                                  (parser.Cell) {
+                                                    Value: (string) (len=9) "Maihuenia",
+                                                    Inner: (parser.TablesWithHeaders) <nil>
+                                                  }
+                                                },
+                                                ([]parser.Cell) (len=2) {
+                                                  (parser.Cell) {
+                                                    Value: (string) "",
+                                                    Inner: (parser.TablesWithHeaders) <nil>
+                                                  },
+                                                  (parser.Cell) {
+                                                    Value: (string) (len=10) "Cactoideae",
+                                                    Inner: (parser.TablesWithHeaders) <nil>
+                                                  }
+                                                },
+                                                ([]parser.Cell) (len=2) {
+                                                  (parser.Cell) {
+                                                    Value: (string) "",
+                                                    Inner: (parser.TablesWithHeaders) <nil>
+                                                  },
+                                                  (parser.Cell) {
+                                                    Value: (string) (len=10) "Cactoideae",
+                                                    Inner: (parser.TablesWithHeaders) <nil>
+                                                  }
+                                                }
+                                              },
+                                              ConfidenceScore: (float64) 1
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    ConfidenceScore: (float64) 1
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          ConfidenceScore: (float64) 1
+                        }
+                      }
+                    }
+                  }
+                },
+                ConfidenceScore: (float64) 1
+              }
+            }
+          }
+        }
+      },
+      ConfidenceScore: (float64) 1
+    })
+  })
+}

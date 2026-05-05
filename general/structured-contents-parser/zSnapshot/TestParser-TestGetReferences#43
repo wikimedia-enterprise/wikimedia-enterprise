@@ -1,0 +1,145 @@
+([]*parser.Reference) (len=6) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=4) "date": (string) (len=15) "10 January 2017",
+      (string) (len=5) "title": (string) (len=35) "Microsoft Outlook Message Encodings",
+      (string) (len=3) "url": (string) (len=70) "https://technet.microsoft.com/en-us/library/cc179149(v=office.12).aspx"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=55) "\"Microsoft Outlook Message Encodings\". 10 January 2017.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=70) "https://technet.microsoft.com/en-us/library/cc179149(v=office.12).aspx",
+          Text: (string) (len=37) "\"Microsoft Outlook Message Encodings\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=10) "2022-02-27",
+      (string) (len=5) "title": (string) (len=54) "The Czech and Slovak Character Encoding Mess Explained",
+      (string) (len=3) "url": (string) (len=53) "http://luki.sdf-eu.org/txt/cs-encodings-faq.html#pcl2",
+      (string) (len=7) "website": (string) (len=15) "luki.sdf-eu.org"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=96) "\"The Czech and Slovak Character Encoding Mess Explained\". luki.sdf-eu.org. Retrieved 2022-02-27.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=53) "http://luki.sdf-eu.org/txt/cs-encodings-faq.html#pcl2",
+          Text: (string) (len=56) "\"The Czech and Slovak Character Encoding Mess Explained\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=10) "2022-10-23",
+      (string) (len=5) "title": (string) (len=74) "Usage Statistics and Market Share of ISO-8859-2 for Websites, October 2022",
+      (string) (len=3) "url": (string) (len=53) "https://w3techs.com/technologies/details/en-iso885902",
+      (string) (len=7) "website": (string) (len=11) "w3techs.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "\"Usage Statistics and Market Share of ISO-8859-2 for Websites, October 2022\". w3techs.com. Retrieved 2022-10-23.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=53) "https://w3techs.com/technologies/details/en-iso885902",
+          Text: (string) (len=76) "\"Usage Statistics and Market Share of ISO-8859-2 for Websites, October 2022\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=5) "title": (string) (len=92) "Historical trends in the usage statistics of character encodings for websites, February 2022",
+      (string) (len=3) "url": (string) (len=68) "https://w3techs.com/technologies/history_overview/character_encoding"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=95) "\"Historical trends in the usage statistics of character encodings for websites, February 2022\".",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=68) "https://w3techs.com/technologies/history_overview/character_encoding",
+          Text: (string) (len=94) "\"Historical trends in the usage statistics of character encodings for websites, February 2022\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=5) "title": (string) (len=79) "Icu-data/Charset/Data/XML/Ibm-912_P100-1995.XML at main · unicode-org/Icu-data",
+      (string) (len=3) "url": (string) (len=88) "https://github.com/unicode-org/icu-data/blob/main/charset/data/xml/ibm-912_P100-1995.xml",
+      (string) (len=7) "website": (string) (len=10) "[[GitHub]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=90) "\"Icu-data/Charset/Data/XML/Ibm-912_P100-1995.XML at main · unicode-org/Icu-data\". GitHub.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=88) "https://github.com/unicode-org/icu-data/blob/main/charset/data/xml/ibm-912_P100-1995.xml",
+          Text: (string) (len=81) "\"Icu-data/Charset/Data/XML/Ibm-912_P100-1995.XML at main · unicode-org/Icu-data\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=36) "https://en.wikipedia.org/wiki/GitHub",
+          Text: (string) (len=6) "GitHub",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=5) "title": (string) (len=79) "Icu-data/Charset/Data/Ucm/Ibm-912_P100-1999.ucm at main · unicode-org/Icu-data",
+      (string) (len=3) "url": (string) (len=88) "https://github.com/unicode-org/icu-data/blob/main/charset/data/ucm/ibm-912_P100-1999.ucm",
+      (string) (len=7) "website": (string) (len=10) "[[GitHub]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=90) "\"Icu-data/Charset/Data/Ucm/Ibm-912_P100-1999.ucm at main · unicode-org/Icu-data\". GitHub.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=88) "https://github.com/unicode-org/icu-data/blob/main/charset/data/ucm/ibm-912_P100-1999.ucm",
+          Text: (string) (len=81) "\"Icu-data/Charset/Data/Ucm/Ibm-912_P100-1999.ucm at main · unicode-org/Icu-data\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=36) "https://en.wikipedia.org/wiki/GitHub",
+          Text: (string) (len=6) "GitHub",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

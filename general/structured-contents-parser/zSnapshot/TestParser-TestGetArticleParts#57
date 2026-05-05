@@ -1,0 +1,113 @@
+(map[string]interface {}) (len=2) {
+  (string) (len=8) "sections": ([]*parser.Part) (len=1) {
+    (*parser.Part)({
+      Name: (string) (len=8) "Abstract",
+      Type: (string) (len=7) "section",
+      Value: (string) "",
+      Values: ([]string) <nil>,
+      HasParts: ([]*parser.Part) (len=5) {
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=175) "Matrjoschka (\" Matryoshka \") is a film made and produced by the German artist Karin Hoerler in 2006. At ninety-five hours, it is one of the longest experimental films by time.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=3) {
+            (*parser.Link)({
+              URL: (string) (len=45) "https://en.wikipedia.org/wiki/Matryoshka_doll",
+              Text: (string) (len=10) "Matryoshka",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=67) "https://en.wikipedia.org/wiki/List_of_longest_films_by_running_time",
+              Text: (string) (len=7) "longest",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=47) "https://en.wikipedia.org/wiki/Experimental_film",
+              Text: (string) (len=18) "experimental films",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) {
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=225) "The film consists of images and sequences based on a single photo. It shows a boy riding a bicycle, a street, houses, garages, and sky. Over time, the image changes, but those movements are very slow and not directly visible.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) {
+          },
+          Citations: ([]*parser.Citation) {
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=312) "The world premiere of the film was at the light spectacle Luminale 2006 in Frankfurt -Germany. Matrjoschka was publicly shown on an outdoor 100 m 2 LED-screen at the DrKW-building, starting on 23 April 2006 at 6:00am and ending on 28 April 2006 at 1:00am. During the night, there was a break from 1:00 to 6:00am.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=1) {
+            (*parser.Link)({
+              URL: (string) (len=39) "https://en.wikipedia.org/wiki/Frankfurt",
+              Text: (string) (len=9) "Frankfurt",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) {
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=65) "This film is available only in Windows Media Video format on DVD.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=2) {
+            (*parser.Link)({
+              URL: (string) (len=49) "https://en.wikipedia.org/wiki/Windows_Media_Video",
+              Text: (string) (len=19) "Windows Media Video",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=33) "https://en.wikipedia.org/wiki/DVD",
+              Text: (string) (len=3) "DVD",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) {
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=56) "The movie is 4 days long and took over 10 years to make.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) {
+          },
+          Citations: ([]*parser.Citation) {
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        })
+      },
+      Images: ([]*parser.Image) <nil>,
+      Links: ([]*parser.Link) <nil>,
+      Citations: ([]*parser.Citation) <nil>,
+      TableReferences: ([]parser.TableReference) <nil>
+    })
+  },
+  (string) (len=6) "tables": ([]*parser.OrderedTable) {
+  }
+}

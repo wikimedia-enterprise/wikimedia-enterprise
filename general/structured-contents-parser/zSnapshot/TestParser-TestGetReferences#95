@@ -1,0 +1,662 @@
+([]*parser.Reference) (len=23) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=6) "author": (string) (len=15) "Thomas S. Yukic",
+      (string) (len=4) "page": (string) (len=2) "1f",
+      (string) (len=9) "publisher": (string) (len=49) "Harpers & Row, 1970, Library of Congress 70-88646",
+      (string) (len=5) "title": (string) (len=39) "Fundamentals of Recreation, 2nd edition"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=116) "Thomas S. Yukic. Fundamentals of Recreation, 2nd edition. Harpers & Row, 1970, Library of Congress 70-88646. p.\u00a01f.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=65) "Garvey, C. (1990). Play. Cambridge, MA: Harvard University Press.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=128) "Recognized Sports of the International Olympic Committee\nInternational Olympic Committee official website. Retrieved 2 May 2008.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=56) "http://www.olympic.org/uk/sports/recognized/index_uk.asp",
+          Text: (string) (len=56) "Recognized Sports of the International Olympic Committee",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=12) "4 April 2018",
+      (string) (len=6) "series": (string) (len=12) "Chess Forums",
+      (string) (len=5) "title": (string) (len=44) "In a real tournament can you play 2\u00a0queens?",
+      (string) (len=3) "url": (string) (len=81) "http://www.chess.com/forum/view/general/in-a-real-tournment-can-you-play-2-queens",
+      (string) (len=7) "website": (string) (len=9) "chess.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=96) "\"In a real tournament can you play 2\u00a0queens?\". chess.com. Chess Forums. Retrieved 4 April 2018.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=81) "http://www.chess.com/forum/view/general/in-a-real-tournment-can-you-play-2-queens",
+          Text: (string) (len=45) "\"In a real tournament can you play 2 queens?\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=44) "FIDE rules (En\u00a0Passant is rule 3.7, part d)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=53) "http://www.fide.com/fide/handbook?id=124&view=article",
+          Text: (string) (len=43) "FIDE rules (En Passant is rule 3.7, part d)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=12) "archive-date": (string) (len=10) "2008-01-25",
+      (string) (len=11) "archive-url": (string) (len=105) "https://web.archive.org/web/20080125081835/http://chess.about.com/od/improveyouropenings/ss/aa03c15_9.htm",
+      (string) (len=6) "author": (string) (len=10) "Mark Weeks",
+      (string) (len=9) "publisher": (string) (len=9) "about.com",
+      (string) (len=5) "title": (string) (len=45) "Chess Opening Tutorial : Introduction to 1.d4",
+      (string) (len=3) "url": (string) (len=62) "http://chess.about.com/od/improveyouropenings/ss/aa03c15_9.htm",
+      (string) (len=10) "url-status": (string) (len=4) "dead"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=114) "Mark Weeks. \"Chess Opening Tutorial\u00a0: Introduction to 1.d4\". about.com. Archived from the original on 2008-01-25.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=105) "https://web.archive.org/web/20080125081835/http://chess.about.com/od/improveyouropenings/ss/aa03c15_9.htm",
+          Text: (string) (len=47) "\"Chess Opening Tutorial : Introduction to 1.d4\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=62) "http://chess.about.com/od/improveyouropenings/ss/aa03c15_9.htm",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=6) "author": (string) (len=28) "[[Andrew Soltis|Soltis, A.]]",
+      (string) (len=4) "isbn": (string) (len=17) "978-0-7134-9051-0",
+      (string) (len=9) "publisher": (string) (len=8) "Batsford",
+      (string) (len=5) "title": (string) (len=23) "Transpo Tricks in Chess",
+      (string) (len=4) "year": (string) (len=4) "2007"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=188) "Soltis, A. (2007). Transpo Tricks in Chess. Batsford. ISBN\u00a0978-0-7134-9051-0. See review at \"Transpo Tricks in Chess – review\". chessville.com. Archived from the original on 2008-04-18.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=43) "https://en.wikipedia.org/wiki/Andrew_Soltis",
+          Text: (string) (len=10) "Soltis, A.",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-7134-9051-0",
+          Text: (string) (len=17) "978-0-7134-9051-0",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=94) "https://web.archive.org/web/20080418115252/http://www.chessville.com/reviews/TranspoTricks.htm",
+          Text: (string) (len=36) "\"Transpo Tricks in Chess – review\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=17) "978-0-679-50814-4"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=108) "Edward R. Brace, Illustrated Dictionary of Chess (Fodor's Travel Publications, 1978) ISBN\u00a0978-0-679-50814-4",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-679-50814-4",
+          Text: (string) (len=17) "978-0-679-50814-4",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=12) {
+      (string) (len=11) "author-link": (string) (len=20) "David Vincent Hooper",
+      (string) (len=12) "author-link2": (string) (len=13) "Kenneth Whyld",
+      (string) (len=7) "edition": (string) (len=6) "second",
+      (string) (len=6) "first1": (string) (len=5) "David",
+      (string) (len=6) "first2": (string) (len=7) "Kenneth",
+      (string) (len=4) "isbn": (string) (len=17) "978-0-19-866164-1",
+      (string) (len=5) "last1": (string) (len=6) "Hooper",
+      (string) (len=5) "last2": (string) (len=5) "Whyld",
+      (string) (len=9) "publisher": (string) (len=27) "[[Oxford University Press]]",
+      (string) (len=5) "title": (string) (len=29) "The Oxford Companion to Chess",
+      (string) (len=10) "title-link": (string) (len=29) "The Oxford Companion to Chess",
+      (string) (len=4) "year": (string) (len=4) "1992"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=132) "Hooper, David; Whyld, Kenneth (1992). The Oxford Companion to Chess (second\u00a0ed.). Oxford University Press. ISBN\u00a0978-0-19-866164-1.",
+      Links: ([]*parser.Link) (len=6) {
+        (*parser.Link)({
+          URL: (string) (len=50) "https://en.wikipedia.org/wiki/David_Vincent_Hooper",
+          Text: (string) (len=13) "Hooper, David",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=43) "https://en.wikipedia.org/wiki/Kenneth_Whyld",
+          Text: (string) (len=14) "Whyld, Kenneth",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=59) "https://en.wikipedia.org/wiki/The_Oxford_Companion_to_Chess",
+          Text: (string) (len=29) "The Oxford Companion to Chess",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=53) "https://en.wikipedia.org/wiki/Oxford_University_Press",
+          Text: (string) (len=23) "Oxford University Press",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-19-866164-1",
+          Text: (string) (len=17) "978-0-19-866164-1",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=44) "Discovered Attack Article at Chesscorner.com",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=69) "http://www.chesscorner.com/tutorial/tactics/discovered/discovered.htm",
+          Text: (string) (len=17) "Discovered Attack",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-11",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=13) {
+      (string) (len=11) "author-link": (string) (len=20) "David Vincent Hooper",
+      (string) (len=12) "author-link2": (string) (len=13) "Kenneth Whyld",
+      (string) (len=7) "edition": (string) (len=6) "second",
+      (string) (len=6) "first1": (string) (len=5) "David",
+      (string) (len=6) "first2": (string) (len=7) "Kenneth",
+      (string) (len=4) "isbn": (string) (len=17) "978-0-19-866164-1",
+      (string) (len=5) "last1": (string) (len=6) "Hooper",
+      (string) (len=5) "last2": (string) (len=5) "Whyld",
+      (string) (len=4) "page": (string) (len=67) "[https://archive.org/details/oxfordcompaniont0000hoop/page/113 113]",
+      (string) (len=9) "publisher": (string) (len=27) "[[Oxford University Press]]",
+      (string) (len=5) "title": (string) (len=29) "The Oxford Companion to Chess",
+      (string) (len=10) "title-link": (string) (len=29) "The Oxford Companion to Chess",
+      (string) (len=4) "year": (string) (len=4) "1992"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=141) "Hooper, David; Whyld, Kenneth (1992). The Oxford Companion to Chess (second\u00a0ed.). Oxford University Press. p.\u00a0113. ISBN\u00a0978-0-19-866164-1.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=50) "https://en.wikipedia.org/wiki/David_Vincent_Hooper",
+          Text: (string) (len=13) "Hooper, David",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=43) "https://en.wikipedia.org/wiki/Kenneth_Whyld",
+          Text: (string) (len=14) "Whyld, Kenneth",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=59) "https://en.wikipedia.org/wiki/The_Oxford_Companion_to_Chess",
+          Text: (string) (len=29) "The Oxford Companion to Chess",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=53) "https://en.wikipedia.org/wiki/Oxford_University_Press",
+          Text: (string) (len=23) "Oxford University Press",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=61) "https://archive.org/details/oxfordcompaniont0000hoop/page/113",
+          Text: (string) (len=3) "113",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-19-866164-1",
+          Text: (string) (len=17) "978-0-19-866164-1",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-12",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=12) "author-link1": (string) (len=14) "Harry Golombek",
+      (string) (len=6) "given1": (string) (len=5) "Harry",
+      (string) (len=4) "isbn": (string) (len=17) "978-0-517-53146-4",
+      (string) (len=5) "last1": (string) (len=8) "Golombek",
+      (string) (len=4) "page": (string) (len=2) "88",
+      (string) (len=9) "publisher": (string) (len=16) "Crown Publishing",
+      (string) (len=5) "title": (string) (len=32) "Golombek's Encyclopedia of Chess",
+      (string) (len=4) "year": (string) (len=4) "1977"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=108) "Golombek, Harry (1977). Golombek's Encyclopedia of Chess. Crown Publishing. p.\u00a088. ISBN\u00a0978-0-517-53146-4.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=44) "https://en.wikipedia.org/wiki/Harry_Golombek",
+          Text: (string) (len=15) "Golombek, Harry",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-517-53146-4",
+          Text: (string) (len=17) "978-0-517-53146-4",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-13",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=10) "2020-11-09",
+      (string) (len=9) "publisher": (string) (len=14) "Skillshare.com",
+      (string) (len=5) "title": (string) (len=39) "Chess Masterclass: Learn to Play Chess!",
+      (string) (len=3) "url": (string) (len=83) "https://www.skillshare.com/classes/Chess-MasterClass-Learn-to-Play-Chess/1192984645"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=80) "\"Chess Masterclass: Learn to Play Chess!\". Skillshare.com. Retrieved 2020-11-09.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=83) "https://www.skillshare.com/classes/Chess-MasterClass-Learn-to-Play-Chess/1192984645",
+          Text: (string) (len=41) "\"Chess Masterclass: Learn to Play Chess!\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-14",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=12) "4 April 2018",
+      (string) (len=5) "first": (string) (len=19) "Chess com Webmaster",
+      (string) (len=4) "last": (string) (len=6) "(News)",
+      (string) (len=5) "title": (string) (len=42) "Chess Tactics – Definitions and Examples",
+      (string) (len=3) "url": (string) (len=74) "https://www.chess.com/article/view/chess-tactics--definitions-and-examples",
+      (string) (len=7) "website": (string) (len=9) "Chess.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=109) "(News), Chess com Webmaster. \"Chess Tactics – Definitions and Examples\". Chess.com. Retrieved 4 April 2018.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=74) "https://www.chess.com/article/view/chess-tactics--definitions-and-examples",
+          Text: (string) (len=44) "\"Chess Tactics – Definitions and Examples\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-15",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=5) "title": (string) (len=56) "Emil Szalanczy vs Thi Mai Hung Nguyen (2009) Sixth Sense",
+      (string) (len=3) "url": (string) (len=53) "https://www.chessgames.com/perl/chessgame?gid=1699399"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=59) "\"Emil Szalanczy vs Thi Mai Hung Nguyen (2009) Sixth Sense\".",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=53) "https://www.chessgames.com/perl/chessgame?gid=1699399",
+          Text: (string) (len=58) "\"Emil Szalanczy vs Thi Mai Hung Nguyen (2009) Sixth Sense\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-16",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "author-link": (string) (len=16) "Bruce Pandolfini",
+      (string) (len=5) "first": (string) (len=5) "Bruce",
+      (string) (len=4) "isbn": (string) (len=17) "978-0-671-79502-3",
+      (string) (len=4) "last": (string) (len=10) "Pandolfini",
+      (string) (len=4) "page": (string) (len=3) "179",
+      (string) (len=9) "publisher": (string) (len=18) "Simon and Schuster",
+      (string) (len=5) "title": (string) (len=14) "Chess thinking",
+      (string) (len=3) "url": (string) (len=74) "https://books.google.com/books?id=S2gI_mExCOoC&q=%22Pawn+storm%22&pg=PA179",
+      (string) (len=4) "year": (string) (len=4) "1995"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=95) "Pandolfini, Bruce (1995). Chess thinking. Simon and Schuster. p.\u00a0179. ISBN\u00a0978-0-671-79502-3.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Bruce_Pandolfini",
+          Text: (string) (len=17) "Pandolfini, Bruce",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=74) "https://books.google.com/books?id=S2gI_mExCOoC&q=%22Pawn+storm%22&pg=PA179",
+          Text: (string) (len=14) "Chess thinking",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-671-79502-3",
+          Text: (string) (len=17) "978-0-671-79502-3",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-17",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=13) "0-679-50814-7"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=94) "Edward R. Brace, An Illustrated Dictionary of Chess, McKay, 1977, p. 276. ISBN\u00a00-679-50814-7.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/0-679-50814-7",
+          Text: (string) (len=13) "0-679-50814-7",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-18",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=81) "Byrne J. Horton, Dictionary of Modern Chess, Philosophical Library, 1959, p. 199.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-19",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=13) "0-671-21041-6"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=123) "I. A. Horowitz and Fred Reinfeld, Chess Traps, Pitfalls and Swindles, Simon and Schuster, 1954, p. 12. ISBN\u00a00-671-21041-6.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=44) "https://en.wikipedia.org/wiki/I._A._Horowitz",
+          Text: (string) (len=14) "I. A. Horowitz",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=43) "https://en.wikipedia.org/wiki/Fred_Reinfeld",
+          Text: (string) (len=13) "Fred Reinfeld",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/0-671-21041-6",
+          Text: (string) (len=13) "0-671-21041-6",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-20",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=91) "Walter Korn, The Brilliant Touch in Chess, Dover Publications, 1966, p. 4. SBN 486-21615-2.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=41) "https://en.wikipedia.org/wiki/Walter_Korn",
+          Text: (string) (len=11) "Walter Korn",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-21",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=13) "0-7867-0431-4"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=93) "Graham Burgess, The Mammoth Book of Chess, Carroll & Graf, 1997, p. 489. ISBN\u00a00-7867-0431-4.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/0-7867-0431-4",
+          Text: (string) (len=13) "0-7867-0431-4",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-22",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=13) "1-85744-105-2"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=182) "See, e.g., Ali Mortazavi, The Fine Art of Swindling, Cadogan Books, 1996, p. 44. ISBN\u00a01-85744-105-2 (referring to Em. Lasker–Ed. Lasker, New York 1924, as a \"celebrated swindle\").",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/1-85744-105-2",
+          Text: (string) (len=13) "1-85744-105-2",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "http://www.chessgames.com/perl/chessgame?gid=1272756",
+          Text: (string) (len=38) "Em. Lasker–Ed. Lasker, New York 1924",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-23",
+    Group: (string) "",
+    Type: (string) (len=3) "cs2",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "author-link": (string) (len=30) "David Pritchard (chess player)",
+      (string) (len=5) "first": (string) (len=5) "D. B.",
+      (string) (len=4) "isbn": (string) (len=17) "978-0-9524142-0-9",
+      (string) (len=4) "last": (string) (len=9) "Pritchard",
+      (string) (len=4) "page": (string) (len=3) "107",
+      (string) (len=9) "publisher": (string) (len=28) "Games & Puzzles Publications",
+      (string) (len=5) "title": (string) (len=34) "The Encyclopedia of Chess Variants",
+      (string) (len=4) "year": (string) (len=4) "1994"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=123) "Pritchard, D. B. (1994), The Encyclopedia of Chess Variants, Games & Puzzles Publications, p.\u00a0107, ISBN\u00a0978-0-9524142-0-9",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=60) "https://en.wikipedia.org/wiki/David_Pritchard_(chess_player)",
+          Text: (string) (len=16) "Pritchard, D. B.",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-9524142-0-9",
+          Text: (string) (len=17) "978-0-9524142-0-9",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

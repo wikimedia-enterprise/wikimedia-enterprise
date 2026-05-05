@@ -1,0 +1,191 @@
+([]*parser.Reference) (len=9) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=4) "isbn": (string) (len=13) "0-87311-019-6",
+      (string) (len=9) "publisher": (string) (len=36) "[[Gemological Institute of America]]",
+      (string) (len=5) "title": (string) (len=19) "Gem Reference Guide",
+      (string) (len=4) "year": (string) (len=4) "1988"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=81) "Gem Reference Guide. Gemological Institute of America. 1988. ISBN\u00a00-87311-019-6.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=62) "https://en.wikipedia.org/wiki/Gemological_Institute_of_America",
+          Text: (string) (len=32) "Gemological Institute of America",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/0-87311-019-6",
+          Text: (string) (len=13) "0-87311-019-6",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=10) "webarchive",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "date": (string) (len=10) "2016-10-31",
+      (string) (len=3) "url": (string) (len=128) "https://web.archive.org/web/20161031091846/http://www.em.gov.bc.ca/Mining/Geoscience/IndustrialMinerals/Documents/P2004-2-57.pdf"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=364) "Kirk Makepeace, George J. Simandl, Jade (Nephrite) in British Columbia, Canada Archived 2016-10-31 at the Wayback Machine; in G.J. Simandl, W.J. McMillan and N.D. Robinson, (editors), 37th Annual Forum on Industrial Minerals Proceedings, Industrial Minerals with emphasis on Western North America, Paper 2004-2-57, pages 287–288 (2004). Accessed October 30, 2016",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=85) "http://www.em.gov.bc.ca/Mining/Geoscience/IndustrialMinerals/Documents/P2004-2-57.pdf",
+          Text: (string) (len=43) "Jade (Nephrite) in British Columbia, Canada",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=128) "https://web.archive.org/web/20161031091846/http://www.em.gov.bc.ca/Mining/Geoscience/IndustrialMinerals/Documents/P2004-2-57.pdf",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Wayback_Machine",
+          Text: (string) (len=15) "Wayback Machine",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=5) "first": (string) (len=17) "Elizabeth Kennedy",
+      (string) (len=4) "last": (string) (len=5) "Easby",
+      (string) (len=8) "location": (string) (len=8) "New York",
+      (string) (len=9) "publisher": (string) (len=19) "André Emmerich Inc",
+      (string) (len=5) "title": (string) (len=34) "Pre-Columbian Jade from Costa Rica",
+      (string) (len=4) "year": (string) (len=4) "1968"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=99) "Easby, Elizabeth Kennedy (1968). Pre-Columbian Jade from Costa Rica. New York: André Emmerich Inc.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=4) "date": (string) (len=17) "November 30, 2013",
+      (string) (len=5) "first": (string) (len=9) "Ruslan I.",
+      (string) (len=7) "journal": (string) (len=14) "Haemus Journal",
+      (string) (len=4) "last": (string) (len=6) "Kostov",
+      (string) (len=5) "pages": (string) (len=5) "11-30",
+      (string) (len=5) "title": (string) (len=102) "Nephrite-yielding prehistoric cultures and nephrite occurrences in Europe: archaeomineralogical review",
+      (string) (len=3) "url": (string) (len=152) "https://www.researchgate.net/publication/261795355_Nephrite-yielding_prehistoric_cultures_and_nephrite_occurrences_in_Europe_archaeomineralogical_review",
+      (string) (len=3) "via": (string) (len=12) "ResearchGate",
+      (string) (len=6) "volume": (string) (len=1) "2"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=193) "Kostov, Ruslan I. (November 30, 2013). \"Nephrite-yielding prehistoric cultures and nephrite occurrences in Europe: archaeomineralogical review\". Haemus Journal. 2: 11–30 – via ResearchGate.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=152) "https://www.researchgate.net/publication/261795355_Nephrite-yielding_prehistoric_cultures_and_nephrite_occurrences_in_Europe_archaeomineralogical_review",
+          Text: (string) (len=104) "\"Nephrite-yielding prehistoric cultures and nephrite occurrences in Europe: archaeomineralogical review\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=179) "Tsang, Cheng-hwa (2000), \"Recent advances in the Iron Age archaeology of Taiwan\", Bulletin of the Indo-Pacific Prehistory Association, 20: 153–158, doi:10.7152/bippa.v20i0.11751",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=236) "Turton, M. (2021). Notes from central Taiwan: Our brother to the south. Taiwan’s relations with the Philippines date back millenia, so it’s a mystery that it’s not the jewel in the crown of the New Southbound Policy. Taiwan Times.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=104) "Everington, K. (2017). Birthplace of Austronesians is Taiwan, capital was Taitung: Scholar. Taiwan News.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=147) "Bellwood, P., H. Hung, H., Lizuka, Y. (2011). Taiwan Jade in the Philippines: 3,000 Years of Trade and Long-distance Interaction. Semantic Scholar.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=5) "title": (string) (len=34) "Pounamu - Te Rūnanga o Ngāi Tahu",
+      (string) (len=3) "url": (string) (len=112) "http://ngaitahu.iwi.nz/ngai-tahu/the-settlement/settlement-offer/cultural-redress/ownership-and-control/pounamu/"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "\"Pounamu - Te Rūnanga o Ngāi Tahu\".",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=112) "http://ngaitahu.iwi.nz/ngai-tahu/the-settlement/settlement-offer/cultural-redress/ownership-and-control/pounamu/",
+          Text: (string) (len=36) "\"Pounamu - Te Rūnanga o Ngāi Tahu\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

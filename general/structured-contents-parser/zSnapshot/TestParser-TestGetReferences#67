@@ -1,0 +1,990 @@
+([]*parser.Reference) (len=22) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=11) "goldbookref",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "file": (string) (len=6) "A00072",
+      (string) (len=5) "title": (string) (len=15) "acid anhydrides"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=159) "IUPAC, Compendium of Chemical Terminology, 2nd ed. (the \"Gold Book\") (1997). Online corrected version: (2006–) \"acid anhydrides\". doi:10.1351/goldbook.A00072",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=79) "https://en.wikipedia.org/wiki/International_Union_of_Pure_and_Applied_Chemistry",
+          Text: (string) (len=5) "IUPAC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=51) "https://en.wikipedia.org/wiki/IUPAC_books#Gold_Book",
+          Text: (string) (len=34) "Compendium of Chemical Terminology",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://goldbook.iupac.org/terms/view/A00072.html",
+          Text: (string) (len=15) "acid anhydrides",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=41) "https://doi.org/10.1351%2Fgoldbook.A00072",
+          Text: (string) (len=23) "10.1351/goldbook.A00072",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=5) "pages": (string) (len=8) "123–25",
+      (string) (len=3) "rec": (string) (len=7) "R-5.7.7"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=193) "Panico, R.; Powell, W. H.; Richer, J. C., eds. (1993). \"Recommendation R-5.7.7\". A Guide to IUPAC Nomenclature of Organic Compounds. IUPAC/Blackwell Science. pp.\u00a0123–25. ISBN\u00a00-632-03488-2.",
+      Links: ([]*parser.Link) (len=6) {
+        (*parser.Link)({
+          URL: (string) (len=43) "https://www.acdlabs.com/iupac/nomenclature/",
+          Text: (string) (len=24) "\"Recommendation R-5.7.7\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=80) "https://en.wikipedia.org/wiki/A_Guide_to_IUPAC_Nomenclature_of_Organic_Compounds",
+          Text: (string) (len=50) "A Guide to IUPAC Nomenclature of Organic Compounds",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=79) "https://en.wikipedia.org/wiki/International_Union_of_Pure_and_Applied_Chemistry",
+          Text: (string) (len=5) "IUPAC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/Blackwell_Science",
+          Text: (string) (len=17) "Blackwell Science",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/0-632-03488-2",
+          Text: (string) (len=13) "0-632-03488-2",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=4) "date": (string) (len=15) "8 November 2013",
+      (string) (len=5) "title": (string) (len=26) "Nomenclature of Anhydrides",
+      (string) (len=3) "url": (string) (len=136) "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Supplemental_Modules_(Organic_Chemistry)/Anhydrides/Nomenclature_of_Anhydrides"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=46) "\"Nomenclature of Anhydrides\". 8 November 2013.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=136) "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Supplemental_Modules_(Organic_Chemistry)/Anhydrides/Nomenclature_of_Anhydrides",
+          Text: (string) (len=28) "\"Nomenclature of Anhydrides\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=13) "1-57259-153-6"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=128) "Nelson, D. L.; Cox, M. M. \"Lehninger, Principles of Biochemistry\" 3rd Ed. Worth Publishing: New York, 2000. ISBN\u00a01-57259-153-6.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/1-57259-153-6",
+          Text: (string) (len=13) "1-57259-153-6",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=4) "date": (string) (len=15) "8 November 2013",
+      (string) (len=5) "title": (string) (len=26) "Nomenclature of Anhydrides",
+      (string) (len=3) "url": (string) (len=136) "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Supplemental_Modules_(Organic_Chemistry)/Anhydrides/Nomenclature_of_Anhydrides"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=46) "\"Nomenclature of Anhydrides\". 8 November 2013.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=136) "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Supplemental_Modules_(Organic_Chemistry)/Anhydrides/Nomenclature_of_Anhydrides",
+          Text: (string) (len=28) "\"Nomenclature of Anhydrides\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=3) "doi",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=28) "10.1016/0920-5861(92)80188-S"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=223) "Zoeller, J. R.; Agreda, V. H.; Cook, S. L.; Lafferty, N. L.; Polichnowski, S. W.; Pond, D. M. \"Eastman Chemical Company Acetic Anhydride Process\" Catalysis Today (1992), volume 13, pp.73-91. doi:10.1016/0920-5861(92)80188-S",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://doi.org/10.1016%2F0920-5861%2892%2980188-S",
+          Text: (string) (len=28) "10.1016/0920-5861(92)80188-S",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=3) "doi",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=24) "10.1002/14356007.a01_065"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=194) "Heimo Held, Alfred Rengstl, Dieter Mayer \"Acetic Anhydride and Mixed Fatty Acid Anhydrides\" Ullmann's Encyclopedia of Industrial Chemistry 2002, Wiley-VCH, Weinheim. doi:10.1002/14356007.a01_065",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://doi.org/10.1002%2F14356007.a01_065",
+          Text: (string) (len=24) "10.1002/14356007.a01_065",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=6) "author": (string) (len=15) "Lewis I. Krimen",
+      (string) (len=3) "doi": (string) (len=24) "10.15227/orgsyn.050.0001",
+      (string) (len=5) "pages": (string) (len=1) "1",
+      (string) (len=5) "title": (string) (len=23) "Acetic Formic Anhydride",
+      (string) (len=6) "volume": (string) (len=2) "50",
+      (string) (len=4) "year": (string) (len=4) "1970"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=106) "Lewis I. Krimen (1970). \"Acetic Formic Anhydride\". Organic Syntheses. 50: 1. doi:10.15227/orgsyn.050.0001.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/Organic_Syntheses",
+          Text: (string) (len=17) "Organic Syntheses",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://doi.org/10.15227%2Forgsyn.050.0001",
+          Text: (string) (len=24) "10.15227/orgsyn.050.0001",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=13) {
+      (string) (len=4) "date": (string) (len=4) "2021",
+      (string) (len=3) "doi": (string) (len=31) "10.1021/acs.bioconjchem.1c00023",
+      (string) (len=6) "first1": (string) (len=14) "Maria Vittoria",
+      (string) (len=6) "first2": (string) (len=4) "Line",
+      (string) (len=5) "issue": (string) (len=1) "3",
+      (string) (len=7) "journal": (string) (len=22) "Bioconjugate Chemistry",
+      (string) (len=5) "last1": (string) (len=8) "Spanedda",
+      (string) (len=5) "last2": (string) (len=13) "Bourel-Bonnet",
+      (string) (len=5) "pages": (string) (len=9) "482–496",
+      (string) (len=4) "pmid": (string) (len=8) "33662203",
+      (string) (len=5) "title": (string) (len=73) "Cyclic Anhydrides as Powerful Tools for Bioconjugation and Smart Delivery",
+      (string) (len=3) "url": (string) (len=71) "https://hal.archives-ouvertes.fr/hal-03167284/file/islandora_115150.pdf",
+      (string) (len=6) "volume": (string) (len=2) "32"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=232) "Spanedda, Maria Vittoria; Bourel-Bonnet, Line (2021). \"Cyclic Anhydrides as Powerful Tools for Bioconjugation and Smart Delivery\" (PDF). Bioconjugate Chemistry. 32 (3): 482–496. doi:10.1021/acs.bioconjchem.1c00023. PMID\u00a033662203.",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=71) "https://hal.archives-ouvertes.fr/hal-03167284/file/islandora_115150.pdf",
+          Text: (string) (len=75) "\"Cyclic Anhydrides as Powerful Tools for Bioconjugation and Smart Delivery\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://doi.org/10.1021%2Facs.bioconjchem.1c00023",
+          Text: (string) (len=31) "10.1021/acs.bioconjchem.1c00023",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/33662203",
+          Text: (string) (len=8) "33662203",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=14) {
+      (string) (len=4) "date": (string) (len=4) "2003",
+      (string) (len=3) "doi": (string) (len=17) "10.1021/cr020037x",
+      (string) (len=6) "first1": (string) (len=8) "Yonggang",
+      (string) (len=6) "first2": (string) (len=4) "Paul",
+      (string) (len=6) "first3": (string) (len=2) "Li",
+      (string) (len=5) "issue": (string) (len=1) "8",
+      (string) (len=7) "journal": (string) (len=16) "Chemical Reviews",
+      (string) (len=5) "last1": (string) (len=4) "Chen",
+      (string) (len=5) "last2": (string) (len=6) "McDaid",
+      (string) (len=5) "last3": (string) (len=4) "Deng",
+      (string) (len=5) "pages": (string) (len=11) "2965–2984",
+      (string) (len=4) "pmid": (string) (len=8) "12914488",
+      (string) (len=5) "title": (string) (len=43) "Asymmetric Alcoholysis of Cyclic Anhydrides",
+      (string) (len=6) "volume": (string) (len=3) "103"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=172) "Chen, Yonggang; McDaid, Paul; Deng, Li (2003). \"Asymmetric Alcoholysis of Cyclic Anhydrides\". Chemical Reviews. 103 (8): 2965–2984. doi:10.1021/cr020037x. PMID\u00a012914488.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=35) "https://doi.org/10.1021%2Fcr020037x",
+          Text: (string) (len=17) "10.1021/cr020037x",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/12914488",
+          Text: (string) (len=8) "12914488",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-11",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=12) {
+      (string) (len=4) "date": (string) (len=4) "2009",
+      (string) (len=3) "doi": (string) (len=17) "10.1021/cr8002714",
+      (string) (len=6) "first1": (string) (len=6) "Marcos",
+      (string) (len=6) "first2": (string) (len=8) "Jared T.",
+      (string) (len=5) "issue": (string) (len=1) "1",
+      (string) (len=7) "journal": (string) (len=16) "Chemical Reviews",
+      (string) (len=5) "last1": (string) (len=16) "González-López",
+      (string) (len=5) "last2": (string) (len=4) "Shaw",
+      (string) (len=5) "pages": (string) (len=9) "164–189",
+      (string) (len=4) "pmid": (string) (len=8) "19140773",
+      (string) (len=5) "title": (string) (len=71) "Cyclic Anhydrides in Formal Cycloadditions and Multicomponent Reactions",
+      (string) (len=6) "volume": (string) (len=3) "109"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=200) "González-López, Marcos; Shaw, Jared T. (2009). \"Cyclic Anhydrides in Formal Cycloadditions and Multicomponent Reactions\". Chemical Reviews. 109 (1): 164–189. doi:10.1021/cr8002714. PMID\u00a019140773.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=35) "https://doi.org/10.1021%2Fcr8002714",
+          Text: (string) (len=17) "10.1021/cr8002714",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/19140773",
+          Text: (string) (len=8) "19140773",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-12",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=7) "author2": (string) (len=14) "Barbara Czakó",
+      (string) (len=5) "first": (string) (len=8) "László",
+      (string) (len=4) "isbn": (string) (len=10) "0124297854",
+      (string) (len=4) "last": (string) (len=6) "Kürti",
+      (string) (len=8) "location": (string) (len=6) "London",
+      (string) (len=4) "page": (string) (len=3) "398",
+      (string) (len=9) "publisher": (string) (len=23) "Elsevier Academic Press",
+      (string) (len=5) "title": (string) (len=62) "Strategic Applications of Named Reactions in Organic Synthesis",
+      (string) (len=4) "year": (string) (len=4) "2005"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=164) "Kürti, László; Barbara Czakó (2005). Strategic Applications of Named Reactions in Organic Synthesis. London: Elsevier Academic Press. p.\u00a0398. ISBN\u00a00124297854.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://en.wikipedia.org/wiki/Special:BookSources/0124297854",
+          Text: (string) (len=10) "0124297854",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-13",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=6) "author": (string) (len=52) "Carsten Bolm, Iuliana Atodiresei, and Ingo Schiffers",
+      (string) (len=4) "date": (string) (len=4) "2005",
+      (string) (len=3) "doi": (string) (len=24) "10.15227/orgsyn.082.0120",
+      (string) (len=7) "journal": (string) (len=17) "Organic Syntheses",
+      (string) (len=4) "page": (string) (len=3) "120",
+      (string) (len=5) "title": (string) (len=63) "Asymmetric Alcoholysis of Meso-Anhydrides Mediated by Alkaloids",
+      (string) (len=6) "volume": (string) (len=2) "82"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=250) "Carsten Bolm, Iuliana Atodiresei, and Ingo Schiffers (2005). \"Asymmetric Alcoholysis of Meso-Anhydrides Mediated by Alkaloids\". Organic Syntheses. 82: 120. doi:10.15227/orgsyn.082.0120.{{cite journal}}:  CS1 maint: multiple names: authors list (link)",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://doi.org/10.15227%2Forgsyn.082.0120",
+          Text: (string) (len=24) "10.15227/orgsyn.082.0120",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=51) "https://en.wikipedia.org/wiki/Template:Cite_journal",
+          Text: (string) (len=12) "cite journal",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=78) "https://en.wikipedia.org/wiki/Category:CS1_maint:_multiple_names:_authors_list",
+          Text: (string) (len=4) "link",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-14",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=12) {
+      (string) (len=4) "date": (string) (len=10) "1988-05-05",
+      (string) (len=3) "doi": (string) (len=26) "10.1002/app.1988.070350603",
+      (string) (len=6) "first1": (string) (len=7) "Wen-Yen",
+      (string) (len=6) "first2": (string) (len=9) "Wen-Chang",
+      (string) (len=5) "issue": (string) (len=1) "6",
+      (string) (len=7) "journal": (string) (len=34) "Journal of Applied Polymer Science",
+      (string) (len=5) "last1": (string) (len=6) "Chiang",
+      (string) (len=5) "last2": (string) (len=6) "Chiang",
+      (string) (len=5) "pages": (string) (len=11) "1433–1439",
+      (string) (len=5) "title": (string) (len=153) "Condensation polymerization of multifunctional monomers and properties of related polyester resins. II. Thermal properties of polyester—imide varnishes",
+      (string) (len=3) "url": (string) (len=62) "https://onlinelibrary.wiley.com/doi/10.1002/app.1988.070350603",
+      (string) (len=6) "volume": (string) (len=2) "35"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=294) "Chiang, Wen-Yen; Chiang, Wen-Chang (1988-05-05). \"Condensation polymerization of multifunctional monomers and properties of related polyester resins. II. Thermal properties of polyester—imide varnishes\". Journal of Applied Polymer Science. 35 (6): 1433–1439. doi:10.1002/app.1988.070350603.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=62) "https://onlinelibrary.wiley.com/doi/10.1002/app.1988.070350603",
+          Text: (string) (len=155) "\"Condensation polymerization of multifunctional monomers and properties of related polyester resins. II. Thermal properties of polyester—imide varnishes\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=44) "https://doi.org/10.1002%2Fapp.1988.070350603",
+          Text: (string) (len=26) "10.1002/app.1988.070350603",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-15",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=16) {
+      (string) (len=4) "date": (string) (len=10) "2013-10-25",
+      (string) (len=3) "doi": (string) (len=22) "10.1515/htmp-2012-0164",
+      (string) (len=10) "doi-access": (string) (len=4) "free",
+      (string) (len=6) "first1": (string) (len=6) "Khalil",
+      (string) (len=6) "first2": (string) (len=7) "Mostafa",
+      (string) (len=6) "first3": (string) (len=6) "Mohsen",
+      (string) (len=4) "issn": (string) (len=9) "2191-0324",
+      (string) (len=5) "issue": (string) (len=1) "5",
+      (string) (len=7) "journal": (string) (len=40) "High Temperature Materials and Processes",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "last1": (string) (len=7) "Faghihi",
+      (string) (len=5) "last2": (string) (len=7) "Ashouri",
+      (string) (len=5) "last3": (string) (len=9) "Hajibeygi",
+      (string) (len=5) "pages": (string) (len=9) "451–458",
+      (string) (len=5) "title": (string) (len=166) "High Temperature and Organosoluble Poly(amide-imide)s Based on 1,4-Bis[4-aminophenoxy]butane and Aromatic Diacids by Direct Polycondensation: Synthesis and Properties",
+      (string) (len=6) "volume": (string) (len=2) "32"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=342) "Faghihi, Khalil; Ashouri, Mostafa; Hajibeygi, Mohsen (2013-10-25). \"High Temperature and Organosoluble Poly(amide-imide)s Based on 1,4-Bis[4-aminophenoxy]butane and Aromatic Diacids by Direct Polycondensation: Synthesis and Properties\". High Temperature Materials and Processes. 32 (5): 451–458. doi:10.1515/htmp-2012-0164. ISSN\u00a02191-0324.",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=40) "https://doi.org/10.1515%2Fhtmp-2012-0164",
+          Text: (string) (len=153) "\"High Temperature and Organosoluble Poly(amide-imide)s Based on 1,4-Bis butane and Aromatic Diacids by Direct Polycondensation: Synthesis and Properties\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://doi.org/10.1515%2Fhtmp-2012-0164",
+          Text: (string) (len=22) "10.1515/htmp-2012-0164",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISSN_(identifier)",
+          Text: (string) (len=4) "ISSN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://search.worldcat.org/issn/2191-0324",
+          Text: (string) (len=9) "2191-0324",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-16",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=29) {
+      (string) (len=4) "date": (string) (len=13) "February 2011",
+      (string) (len=3) "doi": (string) (len=22) "10.1002/ejoc.201001324",
+      (string) (len=6) "first1": (string) (len=8) "Muhammad",
+      (string) (len=7) "first10": (string) (len=6) "Ulrich",
+      (string) (len=7) "first11": (string) (len=7) "Karsten",
+      (string) (len=6) "first2": (string) (len=7) "Hidayat",
+      (string) (len=6) "first3": (string) (len=7) "Ishtiaq",
+      (string) (len=6) "first4": (string) (len=9) "Siegfried",
+      (string) (len=6) "first5": (string) (len=7) "Barbara",
+      (string) (len=6) "first6": (string) (len=7) "Kathrin",
+      (string) (len=6) "first7": (string) (len=7) "Michael",
+      (string) (len=6) "first8": (string) (len=7) "Gennaro",
+      (string) (len=6) "first9": (string) (len=5) "Tibor",
+      (string) (len=5) "issue": (string) (len=1) "4",
+      (string) (len=7) "journal": (string) (len=37) "European Journal of Organic Chemistry",
+      (string) (len=5) "last1": (string) (len=6) "Saleem",
+      (string) (len=6) "last10": (string) (len=7) "Flörke",
+      (string) (len=6) "last11": (string) (len=5) "Krohn",
+      (string) (len=5) "last2": (string) (len=7) "Hussain",
+      (string) (len=5) "last3": (string) (len=5) "Ahmed",
+      (string) (len=5) "last4": (string) (len=7) "Draeger",
+      (string) (len=5) "last5": (string) (len=6) "Schulz",
+      (string) (len=5) "last6": (string) (len=5) "Meier",
+      (string) (len=5) "last7": (string) (len=8) "Steinert",
+      (string) (len=5) "last8": (string) (len=10) "Pescitelli",
+      (string) (len=5) "last9": (string) (len=7) "Kurtán",
+      (string) (len=5) "pages": (string) (len=9) "808–812",
+      (string) (len=5) "title": (string) (len=93) "Viburspiran, an Antifungal Member of the Octadride Class of Maleic Anhydride Natural Products",
+      (string) (len=6) "volume": (string) (len=4) "2011"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=394) "Saleem, Muhammad; Hussain, Hidayat; Ahmed, Ishtiaq; Draeger, Siegfried; Schulz, Barbara; Meier, Kathrin; Steinert, Michael; Pescitelli, Gennaro; Kurtán, Tibor; Flörke, Ulrich; Krohn, Karsten (February 2011). \"Viburspiran, an Antifungal Member of the Octadride Class of Maleic Anhydride Natural Products\". European Journal of Organic Chemistry. 2011 (4): 808–812. doi:10.1002/ejoc.201001324.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://doi.org/10.1002%2Fejoc.201001324",
+          Text: (string) (len=22) "10.1002/ejoc.201001324",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-17",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=24) {
+      (string) (len=4) "date": (string) (len=13) "24 April 2015",
+      (string) (len=3) "doi": (string) (len=17) "10.1021/np500773s",
+      (string) (len=6) "first1": (string) (len=9) "Chunguang",
+      (string) (len=6) "first2": (string) (len=8) "Hiroyuki",
+      (string) (len=6) "first3": (string) (len=8) "Tomohiko",
+      (string) (len=6) "first4": (string) (len=7) "Ryosuke",
+      (string) (len=6) "first5": (string) (len=7) "Kenichi",
+      (string) (len=6) "first6": (string) (len=9) "Bong-Keun",
+      (string) (len=6) "first7": (string) (len=5) "Genji",
+      (string) (len=6) "first8": (string) (len=6) "Makoto",
+      (string) (len=5) "issue": (string) (len=1) "4",
+      (string) (len=7) "journal": (string) (len=27) "Journal of Natural Products",
+      (string) (len=5) "last1": (string) (len=3) "Han",
+      (string) (len=5) "last2": (string) (len=8) "Furukawa",
+      (string) (len=5) "last3": (string) (len=6) "Tomura",
+      (string) (len=5) "last4": (string) (len=5) "Fudou",
+      (string) (len=5) "last5": (string) (len=5) "Kaida",
+      (string) (len=5) "last6": (string) (len=4) "Choi",
+      (string) (len=5) "last7": (string) (len=7) "Imokawa",
+      (string) (len=5) "last8": (string) (len=5) "Ojika",
+      (string) (len=5) "pages": (string) (len=9) "639–644",
+      (string) (len=4) "pmid": (string) (len=8) "25875311",
+      (string) (len=5) "title": (string) (len=100) "Bioactive Maleic Anhydrides and Related Diacids from the Aquatic Hyphomycete Tricladium castaneicola",
+      (string) (len=6) "volume": (string) (len=2) "78"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=340) "Han, Chunguang; Furukawa, Hiroyuki; Tomura, Tomohiko; Fudou, Ryosuke; Kaida, Kenichi; Choi, Bong-Keun; Imokawa, Genji; Ojika, Makoto (24 April 2015). \"Bioactive Maleic Anhydrides and Related Diacids from the Aquatic Hyphomycete Tricladium castaneicola\". Journal of Natural Products. 78 (4): 639–644. doi:10.1021/np500773s. PMID\u00a025875311.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=35) "https://doi.org/10.1021%2Fnp500773s",
+          Text: (string) (len=17) "10.1021/np500773s",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/25875311",
+          Text: (string) (len=8) "25875311",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-18",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=20) {
+      (string) (len=4) "date": (string) (len=14) "3 January 2020",
+      (string) (len=3) "doi": (string) (len=25) "10.1016/j.tet.2019.130717",
+      (string) (len=6) "first1": (string) (len=8) "David M.",
+      (string) (len=6) "first2": (string) (len=7) "Emyr R.",
+      (string) (len=6) "first3": (string) (len=10) "Russell J.",
+      (string) (len=6) "first4": (string) (len=9) "Thomas J.",
+      (string) (len=6) "first5": (string) (len=12) "Christine L.",
+      (string) (len=3) "hdl": (string) (len=41) "1983/53998d06-9017-4cfb-822b-c6453348000a",
+      (string) (len=5) "issue": (string) (len=1) "1",
+      (string) (len=7) "journal": (string) (len=11) "Tetrahedron",
+      (string) (len=5) "last1": (string) (len=5) "Heard",
+      (string) (len=5) "last2": (string) (len=6) "Tayler",
+      (string) (len=5) "last3": (string) (len=3) "Cox",
+      (string) (len=5) "last4": (string) (len=7) "Simpson",
+      (string) (len=5) "last5": (string) (len=6) "Willis",
+      (string) (len=5) "pages": (string) (len=6) "130717",
+      (string) (len=5) "s2cid": (string) (len=9) "209714625",
+      (string) (len=5) "title": (string) (len=88) "Structural and synthetic studies on maleic anhydride and related diacid natural products",
+      (string) (len=3) "url": (string) (len=91) "https://research-information.bris.ac.uk/ws/files/217963504/Maleidrides_Tricladics_final.pdf",
+      (string) (len=6) "volume": (string) (len=2) "76"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=332) "Heard, David M.; Tayler, Emyr R.; Cox, Russell J.; Simpson, Thomas J.; Willis, Christine L. (3 January 2020). \"Structural and synthetic studies on maleic anhydride and related diacid natural products\" (PDF). Tetrahedron. 76 (1): 130717. doi:10.1016/j.tet.2019.130717. hdl:1983/53998d06-9017-4cfb-822b-c6453348000a. S2CID\u00a0209714625.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=91) "https://research-information.bris.ac.uk/ws/files/217963504/Maleidrides_Tricladics_final.pdf",
+          Text: (string) (len=90) "\"Structural and synthetic studies on maleic anhydride and related diacid natural products\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=43) "https://doi.org/10.1016%2Fj.tet.2019.130717",
+          Text: (string) (len=25) "10.1016/j.tet.2019.130717",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Hdl_(identifier)",
+          Text: (string) (len=3) "hdl",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=66) "https://hdl.handle.net/1983%2F53998d06-9017-4cfb-822b-c6453348000a",
+          Text: (string) (len=41) "1983/53998d06-9017-4cfb-822b-c6453348000a",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/S2CID_(identifier)",
+          Text: (string) (len=5) "S2CID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://api.semanticscholar.org/CorpusID:209714625",
+          Text: (string) (len=9) "209714625",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-19",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=14) {
+      (string) (len=4) "date": (string) (len=8) "May 2007",
+      (string) (len=3) "doi": (string) (len=17) "10.1021/cr050029r",
+      (string) (len=6) "first1": (string) (len=8) "Xiaolong",
+      (string) (len=6) "first2": (string) (len=5) "Yuguo",
+      (string) (len=6) "first3": (string) (len=6) "Yinchu",
+      (string) (len=5) "issue": (string) (len=1) "5",
+      (string) (len=7) "journal": (string) (len=16) "Chemical Reviews",
+      (string) (len=5) "last1": (string) (len=4) "Chen",
+      (string) (len=5) "last2": (string) (len=5) "Zheng",
+      (string) (len=5) "last3": (string) (len=4) "Shen",
+      (string) (len=5) "pages": (string) (len=11) "1777–1830",
+      (string) (len=4) "pmid": (string) (len=8) "17439289",
+      (string) (len=5) "title": (string) (len=117) "Natural Products with Maleic Anhydride Structure: Nonadrides, Tautomycin, Chaetomellic Anhydride, and Other Compounds",
+      (string) (len=6) "volume": (string) (len=3) "107"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=254) "Chen, Xiaolong; Zheng, Yuguo; Shen, Yinchu (May 2007). \"Natural Products with Maleic Anhydride Structure: Nonadrides, Tautomycin, Chaetomellic Anhydride, and Other Compounds\". Chemical Reviews. 107 (5): 1777–1830. doi:10.1021/cr050029r. PMID\u00a017439289.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=35) "https://doi.org/10.1021%2Fcr050029r",
+          Text: (string) (len=17) "10.1021/cr050029r",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/17439289",
+          Text: (string) (len=8) "17439289",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-20",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=4) "date": (string) (len=4) "2020",
+      (string) (len=3) "doi": (string) (len=21) "10.1128/mBio.00226-20",
+      (string) (len=6) "first1": (string) (len=7) "Vojtech",
+      (string) (len=5) "issue": (string) (len=1) "2",
+      (string) (len=7) "journal": (string) (len=4) "mBio",
+      (string) (len=5) "last1": (string) (len=5) "Kuban",
+      (string) (len=5) "pages": (string) (len=9) "e00226-20",
+      (string) (len=3) "pmc": (string) (len=7) "7078468",
+      (string) (len=4) "pmid": (string) (len=8) "32184239",
+      (string) (len=5) "title": (string) (len=88) "Structural Basis of Ca 2+-Dependent Self-Processing Activity of Repeat-in-Toxin Proteins",
+      (string) (len=6) "volume": (string) (len=2) "11"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=196) "Kuban, Vojtech (2020). \"Structural Basis of Ca 2+-Dependent Self-Processing Activity of Repeat-in-Toxin Proteins\". mBio. 11 (2): e00226-20. doi:10.1128/mBio.00226-20. PMC\u00a07078468. PMID\u00a032184239.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7078468",
+          Text: (string) (len=90) "\"Structural Basis of Ca 2+-Dependent Self-Processing Activity of Repeat-in-Toxin Proteins\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=39) "https://doi.org/10.1128%2FmBio.00226-20",
+          Text: (string) (len=21) "10.1128/mBio.00226-20",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7078468",
+          Text: (string) (len=7) "7078468",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/32184239",
+          Text: (string) (len=8) "32184239",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-21",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=12) {
+      (string) (len=7) "bibcode": (string) (len=19) "2013Sci...341...77B",
+      (string) (len=4) "date": (string) (len=4) "2013",
+      (string) (len=3) "doi": (string) (len=23) "10.1126/science.1232322",
+      (string) (len=6) "first1": (string) (len=9) "Christian",
+      (string) (len=5) "issue": (string) (len=4) "6141",
+      (string) (len=7) "journal": (string) (len=7) "Science",
+      (string) (len=5) "last1": (string) (len=4) "Bell",
+      (string) (len=5) "pages": (string) (len=7) "77–80",
+      (string) (len=3) "pmc": (string) (len=7) "4730555",
+      (string) (len=4) "pmid": (string) (len=8) "23744777",
+      (string) (len=5) "title": (string) (len=73) "Structure of the repulsive guidance molecule (RGM)-neogenin signaling hub",
+      (string) (len=6) "volume": (string) (len=3) "341"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=218) "Bell, Christian (2013). \"Structure of the repulsive guidance molecule (RGM)-neogenin signaling hub\". Science. 341 (6141): 77–80. Bibcode:2013Sci...341...77B. doi:10.1126/science.1232322. PMC\u00a04730555. PMID\u00a023744777.",
+      Links: ([]*parser.Link) (len=9) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4730555",
+          Text: (string) (len=75) "\"Structure of the repulsive guidance molecule (RGM)-neogenin signaling hub\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+          Text: (string) (len=7) "Bibcode",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=53) "https://ui.adsabs.harvard.edu/abs/2013Sci...341...77B",
+          Text: (string) (len=19) "2013Sci...341...77B",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=41) "https://doi.org/10.1126%2Fscience.1232322",
+          Text: (string) (len=23) "10.1126/science.1232322",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4730555",
+          Text: (string) (len=7) "4730555",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/23744777",
+          Text: (string) (len=8) "23744777",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-22",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=13) {
+      (string) (len=7) "bibcode": (string) (len=19) "2021NatCo..12..717S",
+      (string) (len=4) "date": (string) (len=4) "2021",
+      (string) (len=3) "doi": (string) (len=26) "10.1038/s41467-021-20963-5",
+      (string) (len=6) "first1": (string) (len=4) "Arne",
+      (string) (len=5) "issue": (string) (len=1) "1",
+      (string) (len=7) "journal": (string) (len=21) "Nature Communications",
+      (string) (len=5) "last1": (string) (len=5) "Scheu",
+      (string) (len=5) "pages": (string) (len=3) "717",
+      (string) (len=3) "pmc": (string) (len=7) "7846742",
+      (string) (len=4) "pmid": (string) (len=8) "33514717",
+      (string) (len=5) "title": (string) (len=95) "NeissLock provides an inducible protein anhydride for covalent targeting of endogenous proteins",
+      (string) (len=3) "url": (string) (len=150) "https://ora.ox.ac.uk/objects/uuid:c789f971-19c9-4c10-a13a-e1bf39860763/download_file?safe_filename=s41467-021-20963-5.pdf&type_of_work=Journal+article",
+      (string) (len=6) "volume": (string) (len=2) "12"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=245) "Scheu, Arne (2021). \"NeissLock provides an inducible protein anhydride for covalent targeting of endogenous proteins\". Nature Communications. 12 (1): 717. Bibcode:2021NatCo..12..717S. doi:10.1038/s41467-021-20963-5. PMC\u00a07846742. PMID\u00a033514717.",
+      Links: ([]*parser.Link) (len=9) {
+        (*parser.Link)({
+          URL: (string) (len=150) "https://ora.ox.ac.uk/objects/uuid:c789f971-19c9-4c10-a13a-e1bf39860763/download_file?safe_filename=s41467-021-20963-5.pdf&type_of_work=Journal+article",
+          Text: (string) (len=97) "\"NeissLock provides an inducible protein anhydride for covalent targeting of endogenous proteins\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+          Text: (string) (len=7) "Bibcode",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=53) "https://ui.adsabs.harvard.edu/abs/2021NatCo..12..717S",
+          Text: (string) (len=19) "2021NatCo..12..717S",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=44) "https://doi.org/10.1038%2Fs41467-021-20963-5",
+          Text: (string) (len=26) "10.1038/s41467-021-20963-5",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7846742",
+          Text: (string) (len=7) "7846742",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/33514717",
+          Text: (string) (len=8) "33514717",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

@@ -1,0 +1,830 @@
+([]*parser.Reference) (len=28) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=3) "doi": (string) (len=36) "10.1093/acref/9780199571123.001.0001",
+      (string) (len=5) "first": (string) (len=2) "A.",
+      (string) (len=4) "isbn": (string) (len=14) "978-0199571123",
+      (string) (len=4) "last": (string) (len=9) "Stevenson",
+      (string) (len=9) "publisher": (string) (len=23) "Oxford University Press",
+      (string) (len=5) "title": (string) (len=40) "Oxford Dictionary of English (Vol. III).",
+      (string) (len=4) "year": (string) (len=4) "2010"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=151) "Stevenson, A. (2010). Oxford Dictionary of English (Vol. III). Oxford University Press. doi:10.1093/acref/9780199571123.001.0001. ISBN\u00a0978-0199571123.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=56) "https://doi.org/10.1093%2Facref%2F9780199571123.001.0001",
+          Text: (string) (len=36) "10.1093/acref/9780199571123.001.0001",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=64) "https://en.wikipedia.org/wiki/Special:BookSources/978-0199571123",
+          Text: (string) (len=14) "978-0199571123",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=4) "date": (string) (len=4) "2015",
+      (string) (len=3) "doi": (string) (len=24) "10.1075/babel.61.2.07lim",
+      (string) (len=6) "first1": (string) (len=2) "L.",
+      (string) (len=7) "journal": (string) (len=5) "Babel",
+      (string) (len=5) "last1": (string) (len=3) "Lim",
+      (string) (len=5) "last2": (string) (len=3) "Loi",
+      (string) (len=5) "title": (string) (len=82) "Evaluating slogan translation from the readers' perspective: A case study of Macao"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=143) "Lim, L.; Loi (2015). \"Evaluating slogan translation from the readers' perspective: A case study of Macao\". Babel. doi:10.1075/babel.61.2.07lim.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://doi.org/10.1075%2Fbabel.61.2.07lim",
+          Text: (string) (len=24) "10.1075/babel.61.2.07lim",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=38) "Merriam-Webster (2003), p. 1174. Irish",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=4) "date": (string) (len=4) "1980",
+      (string) (len=3) "doi": (string) (len=25) "10.1080/01463378009369362",
+      (string) (len=5) "first": (string) (len=9) "R. E. Jr.",
+      (string) (len=5) "issue": (string) (len=1) "2",
+      (string) (len=7) "journal": (string) (len=23) "Communication Quarterly",
+      (string) (len=4) "last": (string) (len=6) "Denton",
+      (string) (len=5) "pages": (string) (len=7) "10–18",
+      (string) (len=5) "title": (string) (len=70) "The Rhetorical Function of Slogans: Classification and Characteristics",
+      (string) (len=6) "volume": (string) (len=2) "28"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=172) "Denton, R. E. Jr. (1980). \"The Rhetorical Function of Slogans: Classification and Characteristics\". Communication Quarterly. 28 (2): 10–18. doi:10.1080/01463378009369362.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=43) "https://doi.org/10.1080%2F01463378009369362",
+          Text: (string) (len=25) "10.1080/01463378009369362",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=15) {
+      (string) (len=4) "date": (string) (len=10) "2014-12-01",
+      (string) (len=3) "doi": (string) (len=29) "10.1016/j.jbusres.2014.05.004",
+      (string) (len=6) "first1": (string) (len=6) "Mayukh",
+      (string) (len=6) "first2": (string) (len=10) "Chiranjeev",
+      (string) (len=6) "first3": (string) (len=6) "Piyush",
+      (string) (len=6) "first4": (string) (len=5) "Sunil",
+      (string) (len=5) "issue": (string) (len=2) "12",
+      (string) (len=7) "journal": (string) (len=28) "Journal of Business Research",
+      (string) (len=5) "last1": (string) (len=4) "Dass",
+      (string) (len=5) "last2": (string) (len=5) "Kohli",
+      (string) (len=5) "last3": (string) (len=5) "Kumar",
+      (string) (len=5) "last4": (string) (len=6) "Thomas",
+      (string) (len=5) "pages": (string) (len=11) "2504–2511",
+      (string) (len=5) "title": (string) (len=43) "A study of the antecedents of slogan liking",
+      (string) (len=6) "volume": (string) (len=2) "67"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=209) "Dass, Mayukh; Kohli, Chiranjeev; Kumar, Piyush; Thomas, Sunil (2014-12-01). \"A study of the antecedents of slogan liking\". Journal of Business Research. 67 (12): 2504–2511. doi:10.1016/j.jbusres.2014.05.004.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://doi.org/10.1016%2Fj.jbusres.2014.05.004",
+          Text: (string) (len=29) "10.1016/j.jbusres.2014.05.004",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=5) "first": (string) (len=13) "Timothy R. V.",
+      (string) (len=4) "last": (string) (len=6) "Foster",
+      (string) (len=9) "publisher": (string) (len=15) "adslogans.co.uk",
+      (string) (len=5) "title": (string) (len=45) "The Art and Science of the Advertising Slogan",
+      (string) (len=3) "url": (string) (len=48) "http://www.adslogans.co.uk/ans/nomenclature.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=87) "Foster, Timothy R. V. \"The Art and Science of the Advertising Slogan\". adslogans.co.uk.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=48) "http://www.adslogans.co.uk/ans/nomenclature.html",
+          Text: (string) (len=47) "\"The Art and Science of the Advertising Slogan\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=6) "author": (string) (len=14) "Daly, Kathleen",
+      (string) (len=5) "issue": (string) (len=11) "1/2 (51-52)",
+      (string) (len=7) "journal": (string) (len=14) "Social Justice",
+      (string) (len=5) "jstor": (string) (len=8) "29766732",
+      (string) (len=5) "pages": (string) (len=7) "56–71",
+      (string) (len=5) "title": (string) (len=52) "Class-Race-Gender: Sloganeering in Search of Meaning",
+      (string) (len=3) "url": (string) (len=36) "http://www.jstor.org/stable/29766732",
+      (string) (len=6) "volume": (string) (len=2) "20",
+      (string) (len=4) "year": (string) (len=4) "1993"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=138) "Daly, Kathleen (1993). \"Class-Race-Gender: Sloganeering in Search of Meaning\". Social Justice. 20 (1/2 (51-52)): 56–71. JSTOR\u00a029766732.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=36) "http://www.jstor.org/stable/29766732",
+          Text: (string) (len=54) "\"Class-Race-Gender: Sloganeering in Search of Meaning\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/JSTOR_(identifier)",
+          Text: (string) (len=5) "JSTOR",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=37) "https://www.jstor.org/stable/29766732",
+          Text: (string) (len=8) "29766732",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=9) "citeseerx": (string) (len=15) "10.1.1.735.7047",
+      (string) (len=4) "date": (string) (len=15) "1 February 2013",
+      (string) (len=3) "doi": (string) (len=24) "10.4304/tpls.3.2.275-284",
+      (string) (len=6) "first1": (string) (len=8) "Qunsheng",
+      (string) (len=6) "first2": (string) (len=6) "Weiwei",
+      (string) (len=5) "issue": (string) (len=1) "2",
+      (string) (len=7) "journal": (string) (len=39) "Theory and Practice in Language Studies",
+      (string) (len=5) "last1": (string) (len=2) "Ke",
+      (string) (len=5) "last2": (string) (len=4) "Wang",
+      (string) (len=5) "title": (string) (len=54) "The Adjective Frequency in Advertising English Slogans",
+      (string) (len=6) "volume": (string) (len=1) "3"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=209) "Ke, Qunsheng; Wang, Weiwei (1 February 2013). \"The Adjective Frequency in Advertising English Slogans\". Theory and Practice in Language Studies. 3 (2). CiteSeerX\u00a010.1.1.735.7047. doi:10.4304/tpls.3.2.275-284.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://en.wikipedia.org/wiki/CiteSeerX_(identifier)",
+          Text: (string) (len=9) "CiteSeerX",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=65) "https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.735.7047",
+          Text: (string) (len=15) "10.1.1.735.7047",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://doi.org/10.4304%2Ftpls.3.2.275-284",
+          Text: (string) (len=24) "10.4304/tpls.3.2.275-284",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=22) "Ke. Wang 2013, p. 276.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=5) "title": (string) (len=24) "Lewis Silkin - Error 404",
+      (string) (len=3) "url": (string) (len=140) "https://www.lewissilkin.com/404?item=%2fcmi%2fservices%2fbrands-and-intellectual-property%2fadslogans&user=extranet%5cAnonymous&site=website",
+      (string) (len=7) "website": (string) (len=12) "Lewis Silkin"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=41) "\"Lewis Silkin - Error 404\". Lewis Silkin.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=140) "https://www.lewissilkin.com/404?item=%2fcmi%2fservices%2fbrands-and-intellectual-property%2fadslogans&user=extranet%5cAnonymous&site=website",
+          Text: (string) (len=26) "\"Lewis Silkin - Error 404\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-11",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=22) "Ke. Wang 2013, p. 277.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-12",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=22) "Ke. Wang 2013, p. 278.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-13",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=22) "Ke. Wang 2013, p. 279.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-14",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=29) "Ke. Wang 2013, pp. 278–280.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-15",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=104) "Kohl F. David. (2011). Getting the Slogan Right. The Journal of Academic Librarianship, 37(3), 195–196",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-16",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=18) "Kohl 2011, p. 195.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-17",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=133) "Colla, E. (2014). The People Want. Middle East Research and Information Project. Retrieved from www.merip.org/mer/mer263/people-want.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-18",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=4) "date": (string) (len=4) "2014",
+      (string) (len=6) "first1": (string) (len=5) "G. R.",
+      (string) (len=7) "journal": (string) (len=52) "Language in Different Contexts / Kalba Ir Kontekstai",
+      (string) (len=5) "last1": (string) (len=10) "Rumšienė",
+      (string) (len=5) "last2": (string) (len=7) "Rumšas",
+      (string) (len=5) "title": (string) (len=53) "Shift of emphasis in advertisement slogan translation"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=145) "Rumšienė, G. R.; Rumšas (2014). \"Shift of emphasis in advertisement slogan translation\". Language in Different Contexts / Kalba Ir Kontekstai.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-19",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2021-11-28",
+      (string) (len=12) "archive-date": (string) (len=10) "2021-12-02",
+      (string) (len=11) "archive-url": (string) (len=151) "https://web.archive.org/web/20211202132756/https://www.sjsu.edu/people/james.lindahl/courses/Hum2B/s2/Hitler%20on%20Propaganda%20and%20Organization.pdf",
+      (string) (len=5) "title": (string) (len=24) "Mein Kampf (My Struggle)",
+      (string) (len=3) "url": (string) (len=108) "https://www.sjsu.edu/people/james.lindahl/courses/Hum2B/s2/Hitler%20on%20Propaganda%20and%20Organization.pdf",
+      (string) (len=10) "url-status": (string) (len=4) "dead"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=103) "\"Mein Kampf (My Struggle)\" (PDF). Archived from the original (PDF) on 2021-12-02. Retrieved 2021-11-28.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=151) "https://web.archive.org/web/20211202132756/https://www.sjsu.edu/people/james.lindahl/courses/Hum2B/s2/Hitler%20on%20Propaganda%20and%20Organization.pdf",
+          Text: (string) (len=26) "\"Mein Kampf (My Struggle)\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=108) "https://www.sjsu.edu/people/james.lindahl/courses/Hum2B/s2/Hitler%20on%20Propaganda%20and%20Organization.pdf",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-20",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=6) "author": (string) (len=21) "Marjorie Van de Water",
+      (string) (len=3) "doi": (string) (len=15) "10.2307/3914714",
+      (string) (len=5) "issue": (string) (len=2) "15",
+      (string) (len=7) "journal": (string) (len=23) "The Science News-Letter",
+      (string) (len=5) "jstor": (string) (len=7) "3914714",
+      (string) (len=5) "pages": (string) (len=9) "234–235",
+      (string) (len=5) "title": (string) (len=10) "Propaganda",
+      (string) (len=3) "url": (string) (len=35) "http://www.jstor.org/stable/3914714",
+      (string) (len=6) "volume": (string) (len=2) "34",
+      (string) (len=4) "year": (string) (len=4) "1938"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=125) "Marjorie Van de Water (1938). \"Propaganda\". The Science News-Letter. 34 (15): 234–235. doi:10.2307/3914714. JSTOR\u00a03914714.",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=35) "http://www.jstor.org/stable/3914714",
+          Text: (string) (len=12) "\"Propaganda\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://doi.org/10.2307%2F3914714",
+          Text: (string) (len=15) "10.2307/3914714",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/JSTOR_(identifier)",
+          Text: (string) (len=5) "JSTOR",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=36) "https://www.jstor.org/stable/3914714",
+          Text: (string) (len=7) "3914714",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-21",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=6) "author": (string) (len=19) "Lasswell, Harold D.",
+      (string) (len=3) "doi": (string) (len=15) "10.2307/1173235",
+      (string) (len=5) "issue": (string) (len=1) "2",
+      (string) (len=7) "journal": (string) (len=47) "Proceedings of the Academy of Political Science",
+      (string) (len=5) "jstor": (string) (len=7) "1173235",
+      (string) (len=5) "pages": (string) (len=7) "66–78",
+      (string) (len=5) "title": (string) (len=33) "The Strategy of Soviet Propaganda",
+      (string) (len=3) "url": (string) (len=35) "http://www.jstor.org/stable/1173235",
+      (string) (len=6) "volume": (string) (len=2) "24",
+      (string) (len=4) "year": (string) (len=4) "1951"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=167) "Lasswell, Harold D. (1951). \"The Strategy of Soviet Propaganda\". Proceedings of the Academy of Political Science. 24 (2): 66–78. doi:10.2307/1173235. JSTOR\u00a01173235.",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=35) "http://www.jstor.org/stable/1173235",
+          Text: (string) (len=35) "\"The Strategy of Soviet Propaganda\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://doi.org/10.2307%2F1173235",
+          Text: (string) (len=15) "10.2307/1173235",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/JSTOR_(identifier)",
+          Text: (string) (len=5) "JSTOR",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=36) "https://www.jstor.org/stable/1173235",
+          Text: (string) (len=7) "1173235",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-22",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=4) "date": (string) (len=4) "2002",
+      (string) (len=5) "first": (string) (len=6) "Robert",
+      (string) (len=6) "first2": (string) (len=5) "Karin",
+      (string) (len=4) "last": (string) (len=7) "Michael",
+      (string) (len=5) "last2": (string) (len=5) "Doerr",
+      (string) (len=5) "title": (string) (len=79) "Nazi-Deutsch/Nazi German: An English Lexicon of the Language of the Third Reich",
+      (string) (len=3) "url": (string) (len=47) "https://www.arild-hauge.com/PDF/NS-ordliste.pdf",
+      (string) (len=7) "website": (string) (len=18) "Arild Hauges Runer"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=146) "Michael, Robert; Doerr, Karin (2002). \"Nazi-Deutsch/Nazi German: An English Lexicon of the Language of the Third Reich\" (PDF). Arild Hauges Runer.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://www.arild-hauge.com/PDF/NS-ordliste.pdf",
+          Text: (string) (len=81) "\"Nazi-Deutsch/Nazi German: An English Lexicon of the Language of the Third Reich\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-23",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=3) "doi": (string) (len=14) "10.1086/266211",
+      (string) (len=6) "first1": (string) (len=10) "Leonard W.",
+      (string) (len=5) "issue": (string) (len=1) "3",
+      (string) (len=7) "journal": (string) (len=24) "Public Opinion Quarterly",
+      (string) (len=5) "last1": (string) (len=4) "Doob",
+      (string) (len=4) "page": (string) (len=3) "419",
+      (string) (len=5) "s2cid": (string) (len=9) "145615085",
+      (string) (len=5) "title": (string) (len=34) "Goebbels' Principles of Propaganda",
+      (string) (len=3) "url": (string) (len=62) "https://academic.oup.com/poq/article-abstract/14/3/419/1832014",
+      (string) (len=6) "volume": (string) (len=2) "14",
+      (string) (len=4) "year": (string) (len=4) "1950"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=139) "Doob, Leonard W. (1950). \"Goebbels' Principles of Propaganda\". Public Opinion Quarterly. 14 (3): 419. doi:10.1086/266211. S2CID\u00a0145615085.",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=62) "https://academic.oup.com/poq/article-abstract/14/3/419/1832014",
+          Text: (string) (len=36) "\"Goebbels' Principles of Propaganda\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=32) "https://doi.org/10.1086%2F266211",
+          Text: (string) (len=14) "10.1086/266211",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/S2CID_(identifier)",
+          Text: (string) (len=5) "S2CID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://api.semanticscholar.org/CorpusID:145615085",
+          Text: (string) (len=9) "145615085",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-24",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=13) {
+      (string) (len=4) "date": (string) (len=13) "July 15, 2019",
+      (string) (len=3) "doi": (string) (len=25) "10.1163/9789004408616_003",
+      (string) (len=6) "first1": (string) (len=8) "Yonghong",
+      (string) (len=6) "first2": (string) (len=10) "Ching Kwan",
+      (string) (len=4) "isbn": (string) (len=13) "9789004408623",
+      (string) (len=7) "journal": (string) (len=78) "Urban Chinese Governance, Contention, and Social Control in the New Millennium",
+      (string) (len=5) "last1": (string) (len=5) "Zhang",
+      (string) (len=5) "last2": (string) (len=3) "Lee",
+      (string) (len=5) "pages": (string) (len=6) "6–38",
+      (string) (len=5) "s2cid": (string) (len=9) "203154512",
+      (string) (len=5) "title": (string) (len=78) "Manufacturing Consent: How Grassroots Government Assimilates Public Resistance",
+      (string) (len=3) "url": (string) (len=61) "https://brill.com/view/book/edcoll/9789004408616/BP000009.xml",
+      (string) (len=3) "via": (string) (len=9) "brill.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=307) "Zhang, Yonghong; Lee, Ching Kwan (July 15, 2019). \"Manufacturing Consent: How Grassroots Government Assimilates Public Resistance\". Urban Chinese Governance, Contention, and Social Control in the New Millennium: 6–38. doi:10.1163/9789004408616_003. ISBN\u00a09789004408623. S2CID\u00a0203154512 – via brill.com.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://brill.com/view/book/edcoll/9789004408616/BP000009.xml",
+          Text: (string) (len=80) "\"Manufacturing Consent: How Grassroots Government Assimilates Public Resistance\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=43) "https://doi.org/10.1163%2F9789004408616_003",
+          Text: (string) (len=25) "10.1163/9789004408616_003",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9789004408623",
+          Text: (string) (len=13) "9789004408623",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/S2CID_(identifier)",
+          Text: (string) (len=5) "S2CID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://api.semanticscholar.org/CorpusID:203154512",
+          Text: (string) (len=9) "203154512",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-25",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=16) "28 November 2021",
+      (string) (len=12) "archive-date": (string) (len=15) "2 December 2021",
+      (string) (len=11) "archive-url": (string) (len=130) "https://web.archive.org/web/20211202134602/http://repositorio.roca.utfpr.edu.br/jspui/bitstream/1/3078/1/CT_COLET_%202013_2_06.pdf",
+      (string) (len=5) "title": (string) (len=237) "The functions of the narrative structure in Nineteen-eighty four: A look into the three-part novel and its relation to the author's warning message. Federal University of Technology – Paraná, By: Maior, Felipe Souto, 28 February 2014.",
+      (string) (len=3) "url": (string) (len=87) "http://repositorio.roca.utfpr.edu.br/jspui/bitstream/1/3078/1/CT_COLET_%202013_2_06.pdf",
+      (string) (len=10) "url-status": (string) (len=4) "dead"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=326) "\"The functions of the narrative structure in Nineteen-eighty four: A look into the three-part novel and its relation to the author's warning message. Federal University of Technology – Paraná, By: Maior, Felipe Souto, 28 February 2014\" (PDF). Archived from the original (PDF) on 2 December 2021. Retrieved 28 November 2021.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=130) "https://web.archive.org/web/20211202134602/http://repositorio.roca.utfpr.edu.br/jspui/bitstream/1/3078/1/CT_COLET_%202013_2_06.pdf",
+          Text: (string) (len=238) "\"The functions of the narrative structure in Nineteen-eighty four: A look into the three-part novel and its relation to the author's warning message. Federal University of Technology – Paraná, By: Maior, Felipe Souto, 28 February 2014\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=87) "http://repositorio.roca.utfpr.edu.br/jspui/bitstream/1/3078/1/CT_COLET_%202013_2_06.pdf",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-26",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=7) "edition": (string) (len=12) "Illini Books",
+      (string) (len=5) "first": (string) (len=9) "Constance",
+      (string) (len=4) "isbn": (string) (len=17) "978-0-252-06695-5",
+      (string) (len=4) "last": (string) (len=6) "Coiner",
+      (string) (len=4) "lccn": (string) (len=8) "97039933",
+      (string) (len=8) "location": (string) (len=6) "Urbana",
+      (string) (len=4) "page": (string) (len=1) "7",
+      (string) (len=9) "publisher": (string) (len=32) "[[University of Illinois Press]]",
+      (string) (len=5) "title": (string) (len=75) "Better Red: The Writing and Resistance of Tillie Olsen and Meridel Le Sueur",
+      (string) (len=3) "url": (string) (len=46) "https://books.google.com/books?id=C_pZSXCNHS4C",
+      (string) (len=4) "year": (string) (len=4) "1998"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=208) "Coiner, Constance (1998). Better Red: The Writing and Resistance of Tillie Olsen and Meridel Le Sueur (Illini Books\u00a0ed.). Urbana: University of Illinois Press. p.\u00a07. ISBN\u00a0978-0-252-06695-5. LCCN\u00a097039933.",
+      Links: ([]*parser.Link) (len=6) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://books.google.com/books?id=C_pZSXCNHS4C",
+          Text: (string) (len=75) "Better Red: The Writing and Resistance of Tillie Olsen and Meridel Le Sueur",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=58) "https://en.wikipedia.org/wiki/University_of_Illinois_Press",
+          Text: (string) (len=28) "University of Illinois Press",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-252-06695-5",
+          Text: (string) (len=17) "978-0-252-06695-5",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/LCCN_(identifier)",
+          Text: (string) (len=4) "LCCN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=29) "https://lccn.loc.gov/97039933",
+          Text: (string) (len=8) "97039933",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-27",
+    Group: (string) "",
+    Type: (string) (len=10) "webarchive",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "date": (string) (len=10) "2016-03-04",
+      (string) (len=3) "url": (string) (len=106) "https://web.archive.org/web/20160304100629/http://iranpulse.al-monitor.com/index.php/tag/sadegh-zibakalam/"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=140) "Arash Karami: Khomeini Orders Media to End 'Death to America' Chant Archived 2016-03-04 at the Wayback Machine, Iran Pulse, October 13, 2013",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=63) "http://iranpulse.al-monitor.com/index.php/tag/sadegh-zibakalam/",
+          Text: (string) (len=53) "Khomeini Orders Media to End 'Death to America' Chant",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=106) "https://web.archive.org/web/20160304100629/http://iranpulse.al-monitor.com/index.php/tag/sadegh-zibakalam/",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Wayback_Machine",
+          Text: (string) (len=15) "Wayback Machine",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-28",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=12) "4 April 2022",
+      (string) (len=6) "first1": (string) (len=6) "Robert",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "last1": (string) (len=6) "Mackey",
+      (string) (len=5) "title": (string) (len=90) "Israel's New Leaders Won't Stop \"Death to Arabs\" Chants, but They Will Feel Bad About Them",
+      (string) (len=3) "url": (string) (len=99) "https://theintercept.com/2021/06/16/israels-new-leaders-wont-stop-death-arabs-chants-will-feel-bad/",
+      (string) (len=4) "work": (string) (len=13) "The Intercept"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=148) "Mackey, Robert. \"Israel's New Leaders Won't Stop \"Death to Arabs\" Chants, but They Will Feel Bad About Them\". The Intercept. Retrieved 4 April 2022.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=99) "https://theintercept.com/2021/06/16/israels-new-leaders-wont-stop-death-arabs-chants-will-feel-bad/",
+          Text: (string) (len=92) "\"Israel's New Leaders Won't Stop \"Death to Arabs\" Chants, but They Will Feel Bad About Them\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

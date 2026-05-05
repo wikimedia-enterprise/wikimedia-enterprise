@@ -1,0 +1,1135 @@
+([]*parser.Part) (len=3) {
+  (*parser.Part)({
+    Name: (string) (len=23) "Infobox language family",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) (len=8) "Scythian",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=4) {
+          (*parser.Part)({
+            Name: (string) (len=23) "Geographic distribution",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=39) "Central Asia, West Asia, Eastern Europe",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Central_Asia",
+                Text: (string) (len=12) "Central Asia",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/West_Asia",
+                Text: (string) (len=9) "West Asia",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Eastern_Europe",
+                Text: (string) (len=14) "Eastern Europe",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Ethnicity",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=32) "Scythians, Sarmatians, and Alans",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Scythians",
+                Text: (string) (len=9) "Scythians",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Sarmatians",
+                Text: (string) (len=10) "Sarmatians",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Alans",
+                Text: (string) (len=5) "Alans",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=25) "Linguistic classification",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=1) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=11) "Indo-Iranic",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) (len=1) {
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=4) "list",
+                    Value: (string) "",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) (len=1) {
+                      (*parser.Part)({
+                        Name: (string) "",
+                        Type: (string) (len=9) "list_item",
+                        Value: (string) (len=6) "Iranic",
+                        Values: ([]string) <nil>,
+                        HasParts: ([]*parser.Part) (len=1) {
+                          (*parser.Part)({
+                            Name: (string) "",
+                            Type: (string) (len=4) "list",
+                            Value: (string) "",
+                            Values: ([]string) <nil>,
+                            HasParts: ([]*parser.Part) (len=1) {
+                              (*parser.Part)({
+                                Name: (string) "",
+                                Type: (string) (len=9) "list_item",
+                                Value: (string) (len=14) "Eastern Iranic",
+                                Values: ([]string) <nil>,
+                                HasParts: ([]*parser.Part) (len=1) {
+                                  (*parser.Part)({
+                                    Name: (string) "",
+                                    Type: (string) (len=4) "list",
+                                    Value: (string) "",
+                                    Values: ([]string) <nil>,
+                                    HasParts: ([]*parser.Part) (len=1) {
+                                      (*parser.Part)({
+                                        Name: (string) "",
+                                        Type: (string) (len=9) "list_item",
+                                        Value: (string) (len=8) "Scythian",
+                                        Values: ([]string) <nil>,
+                                        HasParts: ([]*parser.Part) <nil>,
+                                        Images: ([]*parser.Image) <nil>,
+                                        Links: ([]*parser.Link) {
+                                        },
+                                        Citations: ([]*parser.Citation) <nil>,
+                                        TableReferences: ([]parser.TableReference) <nil>
+                                      })
+                                    },
+                                    Images: ([]*parser.Image) <nil>,
+                                    Links: ([]*parser.Link) <nil>,
+                                    Citations: ([]*parser.Citation) <nil>,
+                                    TableReferences: ([]parser.TableReference) <nil>
+                                  })
+                                },
+                                Images: ([]*parser.Image) <nil>,
+                                Links: ([]*parser.Link) (len=1) {
+                                  (*parser.Link)({
+                                    URL: (string) (len=55) "https://en.wikipedia.org/wiki/Eastern_Iranian_languages",
+                                    Text: (string) (len=14) "Eastern Iranic",
+                                    Images: ([]*parser.Image) <nil>
+                                  })
+                                },
+                                Citations: ([]*parser.Citation) <nil>,
+                                TableReferences: ([]parser.TableReference) <nil>
+                              })
+                            },
+                            Images: ([]*parser.Image) <nil>,
+                            Links: ([]*parser.Link) <nil>,
+                            Citations: ([]*parser.Citation) <nil>,
+                            TableReferences: ([]parser.TableReference) <nil>
+                          })
+                        },
+                        Images: ([]*parser.Image) <nil>,
+                        Links: ([]*parser.Link) (len=1) {
+                          (*parser.Link)({
+                            URL: (string) (len=47) "https://en.wikipedia.org/wiki/Iranian_languages",
+                            Text: (string) (len=6) "Iranic",
+                            Images: ([]*parser.Image) <nil>
+                          })
+                        },
+                        Citations: ([]*parser.Citation) <nil>,
+                        TableReferences: ([]parser.TableReference) <nil>
+                      })
+                    },
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) <nil>,
+                    Citations: ([]*parser.Citation) <nil>,
+                    TableReferences: ([]parser.TableReference) <nil>
+                  })
+                },
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=52) "https://en.wikipedia.org/wiki/Indo-Iranian_languages",
+                    Text: (string) (len=11) "Indo-Iranic",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Language_family",
+                Text: (string) (len=25) "Linguistic classification",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Indo-European_languages",
+                Text: (string) (len=13) "Indo-European",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Subdivisions",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=4) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=23) "(Western) Cimmerian †",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=49) "https://en.wikipedia.org/wiki/Cimmerians#Language",
+                    Text: (string) (len=9) "Cimmerian",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=29) "(Western) Pontic Scythian †",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=17) "(Western) Alanian",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=30) "(Eastern) Scytho-Khotanese †",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=43) "https://en.wikipedia.org/wiki/Saka_language",
+                    Text: (string) (len=16) "Scytho-Khotanese",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=14) "Language codes",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) (len=9) "Glottolog",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=47) "sogd1247 (Sogdic-Ossetic) saka1303 (Saka-Wakhi)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Glottolog",
+                Text: (string) (len=9) "Glottolog",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://glottolog.org/resource/languoid/id/sogd1247",
+                Text: (string) (len=8) "sogd1247",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://glottolog.org/resource/languoid/id/saka1303",
+                Text: (string) (len=8) "saka1303",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=96) "The approximate distribution of Eastern Iranic languages and peoples in 100 BC appears in green.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=309) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Assimilation_of_Baltic_and_Aryan_Peoples_by_Uralic_Speakers_in_the_Middle_and_Upper_Volga_Basin_%28Shaded_Relief_BG%29.png/300px-Assimilation_of_Baltic_and_Aryan_Peoples_by_Uralic_Speakers_in_the_Middle_and_Upper_Volga_Basin_%28Shaded_Relief_BG%29.png",
+                Identifier: (string) (len=64) "6e31c920ea9d8608cb66e063c154e16d28bd67c7566602e6f6b382c64da103fd",
+                Name: (string) (len=123) "File:Assimilation_of_Baltic_and_Aryan_Peoples_by_Uralic_Speakers_in_the_Middle_and_Upper_Volga_Basin_(Shaded_Relief_BG).png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 151,
+                Width: (int) 300,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Eastern_Iranian_languages",
+                Text: (string) (len=24) "Eastern Iranic languages",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Notes",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=3) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=13) "xsc: Scythian",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=33) "https://iso639-3.sil.org/code/xsc",
+                    Text: (string) (len=3) "xsc",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=12) "xln: Alanian",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=33) "https://iso639-3.sil.org/code/xln",
+                    Text: (string) (len=3) "xln",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=17) "oos: Old Ossetian",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=33) "https://iso639-3.sil.org/code/oos",
+                    Text: (string) (len=3) "oos",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=16) "Infobox language",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) (len=15) "Pontic Scythian",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) (len=9) "Native to",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=32) "Sarmatia, Scythia, Scythia Minor",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Sarmatia",
+                Text: (string) (len=8) "Sarmatia",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Scythia",
+                Text: (string) (len=7) "Scythia",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Scythia_Minor_(Crimea)",
+                Text: (string) (len=7) "Scythia",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Scythia_Minor_(Dobruja)",
+                Text: (string) (len=5) "Minor",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Region",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=25) "West Asia, Eastern Europe",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/West_Asia",
+                Text: (string) (len=9) "West Asia",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Eastern_Europe",
+                Text: (string) (len=14) "Eastern Europe",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Ethnicity",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "Scythians and Sarmatians",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Scythians",
+                Text: (string) (len=9) "Scythians",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Sarmatians",
+                Text: (string) (len=10) "Sarmatians",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=3) "Era",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=35) "Classical antiquity, late antiquity",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Classical_antiquity",
+                Text: (string) (len=19) "Classical antiquity",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Late_antiquity",
+                Text: (string) (len=14) "late antiquity",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Language family",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=1) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=11) "Indo-Iranic",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) (len=1) {
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=4) "list",
+                    Value: (string) "",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) (len=1) {
+                      (*parser.Part)({
+                        Name: (string) "",
+                        Type: (string) (len=9) "list_item",
+                        Value: (string) (len=6) "Iranic",
+                        Values: ([]string) <nil>,
+                        HasParts: ([]*parser.Part) (len=1) {
+                          (*parser.Part)({
+                            Name: (string) "",
+                            Type: (string) (len=4) "list",
+                            Value: (string) "",
+                            Values: ([]string) <nil>,
+                            HasParts: ([]*parser.Part) (len=1) {
+                              (*parser.Part)({
+                                Name: (string) "",
+                                Type: (string) (len=9) "list_item",
+                                Value: (string) (len=14) "Eastern Iranic",
+                                Values: ([]string) <nil>,
+                                HasParts: ([]*parser.Part) (len=1) {
+                                  (*parser.Part)({
+                                    Name: (string) "",
+                                    Type: (string) (len=4) "list",
+                                    Value: (string) "",
+                                    Values: ([]string) <nil>,
+                                    HasParts: ([]*parser.Part) (len=1) {
+                                      (*parser.Part)({
+                                        Name: (string) "",
+                                        Type: (string) (len=9) "list_item",
+                                        Value: (string) (len=8) "Scythian",
+                                        Values: ([]string) <nil>,
+                                        HasParts: ([]*parser.Part) (len=1) {
+                                          (*parser.Part)({
+                                            Name: (string) "",
+                                            Type: (string) (len=4) "list",
+                                            Value: (string) "",
+                                            Values: ([]string) <nil>,
+                                            HasParts: ([]*parser.Part) (len=1) {
+                                              (*parser.Part)({
+                                                Name: (string) "",
+                                                Type: (string) (len=9) "list_item",
+                                                Value: (string) (len=15) "Pontic Scythian",
+                                                Values: ([]string) <nil>,
+                                                HasParts: ([]*parser.Part) <nil>,
+                                                Images: ([]*parser.Image) <nil>,
+                                                Links: ([]*parser.Link) {
+                                                },
+                                                Citations: ([]*parser.Citation) <nil>,
+                                                TableReferences: ([]parser.TableReference) <nil>
+                                              })
+                                            },
+                                            Images: ([]*parser.Image) <nil>,
+                                            Links: ([]*parser.Link) <nil>,
+                                            Citations: ([]*parser.Citation) <nil>,
+                                            TableReferences: ([]parser.TableReference) <nil>
+                                          })
+                                        },
+                                        Images: ([]*parser.Image) <nil>,
+                                        Links: ([]*parser.Link) {
+                                        },
+                                        Citations: ([]*parser.Citation) <nil>,
+                                        TableReferences: ([]parser.TableReference) <nil>
+                                      })
+                                    },
+                                    Images: ([]*parser.Image) <nil>,
+                                    Links: ([]*parser.Link) <nil>,
+                                    Citations: ([]*parser.Citation) <nil>,
+                                    TableReferences: ([]parser.TableReference) <nil>
+                                  })
+                                },
+                                Images: ([]*parser.Image) <nil>,
+                                Links: ([]*parser.Link) (len=1) {
+                                  (*parser.Link)({
+                                    URL: (string) (len=55) "https://en.wikipedia.org/wiki/Eastern_Iranian_languages",
+                                    Text: (string) (len=14) "Eastern Iranic",
+                                    Images: ([]*parser.Image) <nil>
+                                  })
+                                },
+                                Citations: ([]*parser.Citation) <nil>,
+                                TableReferences: ([]parser.TableReference) <nil>
+                              })
+                            },
+                            Images: ([]*parser.Image) <nil>,
+                            Links: ([]*parser.Link) <nil>,
+                            Citations: ([]*parser.Citation) <nil>,
+                            TableReferences: ([]parser.TableReference) <nil>
+                          })
+                        },
+                        Images: ([]*parser.Image) <nil>,
+                        Links: ([]*parser.Link) (len=1) {
+                          (*parser.Link)({
+                            URL: (string) (len=47) "https://en.wikipedia.org/wiki/Iranian_languages",
+                            Text: (string) (len=6) "Iranic",
+                            Images: ([]*parser.Image) <nil>
+                          })
+                        },
+                        Citations: ([]*parser.Citation) <nil>,
+                        TableReferences: ([]parser.TableReference) <nil>
+                      })
+                    },
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) <nil>,
+                    Citations: ([]*parser.Citation) <nil>,
+                    TableReferences: ([]parser.TableReference) <nil>
+                  })
+                },
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=52) "https://en.wikipedia.org/wiki/Indo-Iranian_languages",
+                    Text: (string) (len=11) "Indo-Iranic",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Language_family",
+                Text: (string) (len=15) "Language family",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Indo-European_languages",
+                Text: (string) (len=13) "Indo-European",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=14) "Language codes",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=4) {
+          (*parser.Part)({
+            Name: (string) (len=9) "ISO 639-3",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "xsc – Scythian",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/ISO_639-3",
+                Text: (string) (len=9) "ISO 639-3",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=33) "https://iso639-3.sil.org/code/xsc",
+                Text: (string) (len=3) "xsc",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Linguist List",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "xsc Scythian",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Linguist_List",
+                Text: (string) (len=13) "Linguist List",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=73) "https://web.archive.org/web/20200101010101/http://multitree.org/codes/xsc",
+                Text: (string) (len=3) "xsc",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Glottolog",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "None",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Glottolog",
+                Text: (string) (len=9) "Glottolog",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=96) "The approximate distribution of Eastern Iranic languages and peoples in 100 BC appears in green.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=309) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Assimilation_of_Baltic_and_Aryan_Peoples_by_Uralic_Speakers_in_the_Middle_and_Upper_Volga_Basin_%28Shaded_Relief_BG%29.png/320px-Assimilation_of_Baltic_and_Aryan_Peoples_by_Uralic_Speakers_in_the_Middle_and_Upper_Volga_Basin_%28Shaded_Relief_BG%29.png",
+                Identifier: (string) (len=64) "5161fd376b031b041fb4d16fab3715d4a85db64c0f5d26d2a41f2824f1fdd49f",
+                Name: (string) (len=123) "File:Assimilation_of_Baltic_and_Aryan_Peoples_by_Uralic_Speakers_in_the_Middle_and_Upper_Volga_Basin_(Shaded_Relief_BG).png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 161,
+                Width: (int) 320,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Eastern_Iranian_languages",
+                Text: (string) (len=24) "Eastern Iranic languages",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=16) "Infobox language",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) (len=7) "Alanian",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=6) "Alanic",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) (len=9) "Native to",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Alania",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Alania",
+                Text: (string) (len=6) "Alania",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Region",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=25) "North Caucasus and Iberia",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/North_Caucasus",
+                Text: (string) (len=14) "North Caucasus",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Iberia",
+                Text: (string) (len=6) "Iberia",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Ethnicity",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=5) "Alans",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Alans",
+                Text: (string) (len=5) "Alans",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=3) "Era",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=44) "5th–11th centuries Developed into Ossetian",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Ossetian_language",
+                Text: (string) (len=8) "Ossetian",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Language family",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=1) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=12) "Indo-Iranian",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) (len=1) {
+                  (*parser.Part)({
+                    Name: (string) "",
+                    Type: (string) (len=4) "list",
+                    Value: (string) "",
+                    Values: ([]string) <nil>,
+                    HasParts: ([]*parser.Part) (len=1) {
+                      (*parser.Part)({
+                        Name: (string) "",
+                        Type: (string) (len=9) "list_item",
+                        Value: (string) (len=7) "Iranian",
+                        Values: ([]string) <nil>,
+                        HasParts: ([]*parser.Part) (len=1) {
+                          (*parser.Part)({
+                            Name: (string) "",
+                            Type: (string) (len=4) "list",
+                            Value: (string) "",
+                            Values: ([]string) <nil>,
+                            HasParts: ([]*parser.Part) (len=1) {
+                              (*parser.Part)({
+                                Name: (string) "",
+                                Type: (string) (len=9) "list_item",
+                                Value: (string) (len=7) "Eastern",
+                                Values: ([]string) <nil>,
+                                HasParts: ([]*parser.Part) (len=1) {
+                                  (*parser.Part)({
+                                    Name: (string) "",
+                                    Type: (string) (len=4) "list",
+                                    Value: (string) "",
+                                    Values: ([]string) <nil>,
+                                    HasParts: ([]*parser.Part) (len=1) {
+                                      (*parser.Part)({
+                                        Name: (string) "",
+                                        Type: (string) (len=9) "list_item",
+                                        Value: (string) (len=8) "Scythian",
+                                        Values: ([]string) <nil>,
+                                        HasParts: ([]*parser.Part) (len=1) {
+                                          (*parser.Part)({
+                                            Name: (string) "",
+                                            Type: (string) (len=4) "list",
+                                            Value: (string) "",
+                                            Values: ([]string) <nil>,
+                                            HasParts: ([]*parser.Part) (len=1) {
+                                              (*parser.Part)({
+                                                Name: (string) "",
+                                                Type: (string) (len=9) "list_item",
+                                                Value: (string) (len=7) "Alanian",
+                                                Values: ([]string) <nil>,
+                                                HasParts: ([]*parser.Part) <nil>,
+                                                Images: ([]*parser.Image) <nil>,
+                                                Links: ([]*parser.Link) {
+                                                },
+                                                Citations: ([]*parser.Citation) <nil>,
+                                                TableReferences: ([]parser.TableReference) <nil>
+                                              })
+                                            },
+                                            Images: ([]*parser.Image) <nil>,
+                                            Links: ([]*parser.Link) <nil>,
+                                            Citations: ([]*parser.Citation) <nil>,
+                                            TableReferences: ([]parser.TableReference) <nil>
+                                          })
+                                        },
+                                        Images: ([]*parser.Image) <nil>,
+                                        Links: ([]*parser.Link) {
+                                        },
+                                        Citations: ([]*parser.Citation) <nil>,
+                                        TableReferences: ([]parser.TableReference) <nil>
+                                      })
+                                    },
+                                    Images: ([]*parser.Image) <nil>,
+                                    Links: ([]*parser.Link) <nil>,
+                                    Citations: ([]*parser.Citation) <nil>,
+                                    TableReferences: ([]parser.TableReference) <nil>
+                                  })
+                                },
+                                Images: ([]*parser.Image) <nil>,
+                                Links: ([]*parser.Link) (len=1) {
+                                  (*parser.Link)({
+                                    URL: (string) (len=55) "https://en.wikipedia.org/wiki/Eastern_Iranian_languages",
+                                    Text: (string) (len=7) "Eastern",
+                                    Images: ([]*parser.Image) <nil>
+                                  })
+                                },
+                                Citations: ([]*parser.Citation) <nil>,
+                                TableReferences: ([]parser.TableReference) <nil>
+                              })
+                            },
+                            Images: ([]*parser.Image) <nil>,
+                            Links: ([]*parser.Link) <nil>,
+                            Citations: ([]*parser.Citation) <nil>,
+                            TableReferences: ([]parser.TableReference) <nil>
+                          })
+                        },
+                        Images: ([]*parser.Image) <nil>,
+                        Links: ([]*parser.Link) (len=1) {
+                          (*parser.Link)({
+                            URL: (string) (len=47) "https://en.wikipedia.org/wiki/Iranian_languages",
+                            Text: (string) (len=7) "Iranian",
+                            Images: ([]*parser.Image) <nil>
+                          })
+                        },
+                        Citations: ([]*parser.Citation) <nil>,
+                        TableReferences: ([]parser.TableReference) <nil>
+                      })
+                    },
+                    Images: ([]*parser.Image) <nil>,
+                    Links: ([]*parser.Link) <nil>,
+                    Citations: ([]*parser.Citation) <nil>,
+                    TableReferences: ([]parser.TableReference) <nil>
+                  })
+                },
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=52) "https://en.wikipedia.org/wiki/Indo-Iranian_languages",
+                    Text: (string) (len=12) "Indo-Iranian",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Language_family",
+                Text: (string) (len=15) "Language family",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Indo-European_languages",
+                Text: (string) (len=13) "Indo-European",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=14) "Language codes",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) (len=9) "ISO 639-3",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=3) "xln",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/ISO_639-3",
+                Text: (string) (len=9) "ISO 639-3",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=33) "https://iso639-3.sil.org/code/xln",
+                Text: (string) (len=3) "xln",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Linguist List",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=3) "xln",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Linguist_List",
+                Text: (string) (len=13) "Linguist List",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=73) "https://web.archive.org/web/20200101010101/http://multitree.org/codes/xln",
+                Text: (string) (len=3) "xln",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Glottolog",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "None",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Glottolog",
+                Text: (string) (len=9) "Glottolog",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

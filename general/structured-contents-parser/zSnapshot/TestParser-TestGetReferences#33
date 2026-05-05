@@ -1,0 +1,361 @@
+([]*parser.Reference) (len=12) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=10) "2024-05-30",
+      (string) (len=11) "editor-last": (string) (len=19) "[[Eric S. Raymond]]",
+      (string) (len=5) "title": (string) (len=69) "The on-line hacker Jargon File, version 4.4.8. metasyntactic variable",
+      (string) (len=3) "url": (string) (len=61) "http://www.catb.org/jargon/html/M/metasyntactic-variable.html",
+      (string) (len=7) "website": (string) (len=15) "[[Jargon File]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=130) "Eric S. Raymond (ed.). \"The on-line hacker Jargon File, version 4.4.8. metasyntactic variable\". Jargon File. Retrieved 2024-05-30.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Eric_S._Raymond",
+          Text: (string) (len=15) "Eric S. Raymond",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=61) "http://www.catb.org/jargon/html/M/metasyntactic-variable.html",
+          Text: (string) (len=71) "\"The on-line hacker Jargon File, version 4.4.8. metasyntactic variable\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=41) "https://en.wikipedia.org/wiki/Jargon_File",
+          Text: (string) (len=11) "Jargon File",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=4) "ietf",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=4) "3092"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=30) "RFC\u00a03092 - Etymology of \"Foo\"",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/RFC_(identifier)",
+          Text: (string) (len=3) "RFC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://datatracker.ietf.org/doc/html/rfc3092",
+          Text: (string) (len=4) "3092",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=12) "26 June 2023",
+      (string) (len=4) "date": (string) (len=10) "2023-06-23",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "quote": (string) (len=109) "Ensure that the name is applicable to the user's environment. Don't use unclear terms like foo, bar, and baz.",
+      (string) (len=5) "title": (string) (len=74) "Example domains and names {{!}} Google developer documentation style guide",
+      (string) (len=3) "url": (string) (len=66) "https://developers.google.com/style/examples#example-project-names",
+      (string) (len=7) "website": (string) (len=21) "Google for Developers"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=240) "\"Example domains and names | Google developer documentation style guide\". Google for Developers. 2023-06-23. Retrieved 2023-06-26. Ensure that the name is applicable to the user's environment. Don't use unclear terms like foo, bar, and baz.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=66) "https://developers.google.com/style/examples#example-project-names",
+          Text: (string) (len=72) "\"Example domains and names | Google developer documentation style guide\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-08-17",
+      (string) (len=9) "publisher": (string) (len=18) "[[Dictionary.com]]",
+      (string) (len=5) "title": (string) (len=19) "What does foo mean?",
+      (string) (len=3) "url": (string) (len=33) "https://www.dictionary.com/e/foo/"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=60) "\"What does foo mean?\". Dictionary.com. Retrieved 2019-08-17.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=33) "https://www.dictionary.com/e/foo/",
+          Text: (string) (len=21) "\"What does foo mean?\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=44) "https://en.wikipedia.org/wiki/Dictionary.com",
+          Text: (string) (len=14) "Dictionary.com",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=10) "accessdate": (string) (len=13) "17 April 2016",
+      (string) (len=6) "first1": (string) (len=1) "D",
+      (string) (len=6) "first2": (string) (len=1) "C",
+      (string) (len=6) "first3": (string) (len=1) "E",
+      (string) (len=5) "last1": (string) (len=8) "Eastlake",
+      (string) (len=5) "last2": (string) (len=6) "Manros",
+      (string) (len=5) "last3": (string) (len=7) "Raymond",
+      (string) (len=5) "title": (string) (len=18) "Etymology of \"Foo\"",
+      (string) (len=3) "url": (string) (len=35) "http://www.ietf.org/rfc/rfc3092.txt",
+      (string) (len=7) "website": (string) (len=35) "The Internet Engineering Task Force"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=116) "Eastlake, D; Manros, C; Raymond, E. \"Etymology of \"Foo\"\". The Internet Engineering Task Force. Retrieved 2016-04-17.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=35) "http://www.ietf.org/rfc/rfc3092.txt",
+          Text: (string) (len=21) "\"Etymology of \"Foo\" \"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-08-17",
+      (string) (len=4) "date": (string) (len=10) "2007-06-13",
+      (string) (len=9) "publisher": (string) (len=17) "[[Smokey Stover]]",
+      (string) (len=5) "title": (string) (len=26) "The History of Bill Holman",
+      (string) (len=3) "url": (string) (len=42) "https://www.smokey-stover.com/history.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=78) "\"The History of Bill Holman\". Smokey Stover. 2007-06-13. Retrieved 2019-08-17.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.smokey-stover.com/history.html",
+          Text: (string) (len=28) "\"The History of Bill Holman\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=43) "https://en.wikipedia.org/wiki/Smokey_Stover",
+          Text: (string) (len=13) "Smokey Stover",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "9888455729"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=230) "Mieke Matthyssen, \"Chinese happiness: A proverbial approach to popular philosophies of life\", p. 190, ch. 9 in, Gerda Wielander, Derek Hird (eds), Chinese Discourses on Happiness, Hong Kong University Press, 2018 ISBN\u00a09888455729.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://en.wikipedia.org/wiki/Special:BookSources/9888455729",
+          Text: (string) (len=10) "9888455729",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=4) "page": (string) (len=2) "63",
+      (string) (len=9) "publisher": (string) (len=41) "[[Massachusetts Institute of Technology]]",
+      (string) (len=5) "quote": (string) (len=357) "Further, it is possible to search for an effective address; e.g., if an instruction such as \"add 1 foo\" were used, specifying indirect addressing thru location \"foo\", and location \"foo\" contained the address of location \"foobar\", then an effective word search for \"foobar\" would find location \"foo\" and the location containing the \"add\" instruction as well.",
+      (string) (len=5) "title": (string) (len=21) "Tech Engineering News",
+      (string) (len=3) "url": (string) (len=55) "https://books.google.com/books?id=aOQRAQAAMAAJ&q=foobar",
+      (string) (len=6) "volume": (string) (len=2) "47",
+      (string) (len=4) "year": (string) (len=4) "1965"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=443) "Tech Engineering News. Vol.\u00a047. Massachusetts Institute of Technology. 1965. p.\u00a063. Further, it is possible to search for an effective address; e.g., if an instruction such as \"add 1 foo\" were used, specifying indirect addressing thru location \"foo\", and location \"foo\" contained the address of location \"foobar\", then an effective word search for \"foobar\" would find location \"foo\" and the location containing the \"add\" instruction as well.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=55) "https://books.google.com/books?id=aOQRAQAAMAAJ&q=foobar",
+          Text: (string) (len=21) "Tech Engineering News",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Massachusetts_Institute_of_Technology",
+          Text: (string) (len=37) "Massachusetts Institute of Technology",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=5) "title": (string) (len=26) "Computer Dictionary Online",
+      (string) (len=3) "url": (string) (len=65) "https://www.computer-dictionary-online.org/definitions-f/foo.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=61) "\"Computer Dictionary Online\"., computer-dictionary-online.org",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=65) "https://www.computer-dictionary-online.org/definitions-f/foo.html",
+          Text: (string) (len=28) "\"Computer Dictionary Online\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=10) "2013-03-12",
+      (string) (len=12) "archive-date": (string) (len=14) "2 January 2018",
+      (string) (len=11) "archive-url": (string) (len=82) "https://web.archive.org/web/20180102215225/http://tmrc.mit.edu/dictionary.html#FOO",
+      (string) (len=9) "publisher": (string) (len=35) "Tech Model Railroad Club of [[MIT]]",
+      (string) (len=5) "title": (string) (len=40) "Abridged Dictionary of the TMRC Language",
+      (string) (len=3) "url": (string) (len=39) "http://tmrc.mit.edu/dictionary.html#FOO",
+      (string) (len=10) "url-status": (string) (len=4) "dead"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=140) "\"Abridged Dictionary of the TMRC Language\". Tech Model Railroad Club of MIT. Archived from the original on 2018-01-02. Retrieved 2013-03-12.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=82) "https://web.archive.org/web/20180102215225/http://tmrc.mit.edu/dictionary.html#FOO",
+          Text: (string) (len=42) "\"Abridged Dictionary of the TMRC Language\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://en.wikipedia.org/wiki/MIT",
+          Text: (string) (len=3) "MIT",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=39) "http://tmrc.mit.edu/dictionary.html#FOO",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-11",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=7) "ctx_ver": (string) (len=11) "Z39.88-2004",
+      (string) (len=8) "is_coins": (string) (len=4) "true",
+      (string) (len=6) "rfr_id": (string) (len=32) "info:sid/en.wikipedia.org:Foobar",
+      (string) (len=10) "rft.btitle": (string) (len=57) "MCS-86 Assembler Operating Instructions For ISIS-II Users",
+      (string) (len=8) "rft.date": (string) (len=4) "1978",
+      (string) (len=11) "rft.edition": (string) (len=14) "A32/379/10K/CP",
+      (string) (len=9) "rft.genre": (string) (len=4) "book",
+      (string) (len=9) "rft.place": (string) (len=28) "Santa Clara, California, USA",
+      (string) (len=7) "rft.pub": (string) (len=17) "Intel Corporation",
+      (string) (len=6) "rft_id": (string) (len=97) "https://archive.org/details/bitsavers_intelISISIblerOperatingInstructionsforISISIIUsersM_3593319/",
+      (string) (len=11) "rft_val_fmt": (string) (len=25) "info:ofi/fmt:kev:mtx:book"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=184) "MCS-86 Assembler Operating Instructions For ISIS-II Users (A32/379/10K/CP\u00a0ed.). Santa Clara, California, USA: Intel Corporation. 1978. Manual Order No. 9800641A. Retrieved 2020-02-29.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=97) "https://archive.org/details/bitsavers_intelISISIblerOperatingInstructionsforISISIIUsersM_3593319/",
+          Text: (string) (len=57) "MCS-86 Assembler Operating Instructions For ISIS-II Users",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/Intel_Corporation",
+          Text: (string) (len=17) "Intel Corporation",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=177) "https://archive.org/stream/bitsavers_intelISISIblerOperatingInstructionsforISISIIUsersM_3593319/9800641A_MCS-86_Assembler_Operating_Instructions_for_ISIS-II_Users_Mar79_djvu.txt",
+          Text: (string) "",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=174) "https://archive.org/download/bitsavers_intelISISIblerOperatingInstructionsforISISIIUsersM_3593319/9800641A_MCS-86_Assembler_Operating_Instructions_for_ISIS-II_Users_Mar79.pdf",
+          Text: (string) "",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-12",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-08-17",
+      (string) (len=6) "author": (string) (len=13) "Mike Ricciuti",
+      (string) (len=4) "date": (string) (len=10) "2002-07-04",
+      (string) (len=9) "publisher": (string) (len=8) "[[CNET]]",
+      (string) (len=5) "title": (string) (len=35) "Microsoft ploy to block Sun exposed",
+      (string) (len=3) "url": (string) (len=62) "https://www.cnet.com/news/microsoft-ploy-to-block-sun-exposed/"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=94) "Mike Ricciuti (2002-07-04). \"Microsoft ploy to block Sun exposed\". CNET. Retrieved 2019-08-17.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=62) "https://www.cnet.com/news/microsoft-ploy-to-block-sun-exposed/",
+          Text: (string) (len=37) "\"Microsoft ploy to block Sun exposed\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=34) "https://en.wikipedia.org/wiki/CNET",
+          Text: (string) (len=4) "CNET",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

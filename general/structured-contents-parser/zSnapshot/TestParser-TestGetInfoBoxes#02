@@ -1,0 +1,626 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=16) "Infobox election",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) (len=44) "1976 Democratic Party presidential primaries",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=121) "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/50px-Flag_of_the_United_States.svg.png",
+                Identifier: (string) (len=64) "6b9ad570ab28df5dc340c663d3b44bb60f649c71f503ef8974a4e992c15c97c7",
+                Name: (string) (len=34) "File:Flag_of_the_United_States.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 26,
+                Width: (int) 50,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=26) "January 27 to June 8, 1976",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=26) "January 27 to June 8, 1976",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=90) "3,010 delegates to the Democratic National Convention 1,506 (majority) votes needed to win",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=18) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=411) "Candidate Jimmy Carter Mo Udall Henry M. Jackson Home state Georgia Arizona Washington Delegate count 1,130 328 242 Contests won 24 1 4 Popular vote 7,020,624 1,667,362 1,153,766 Percentage 39.67% 9.42% 6.52% Candidate Jerry Brown George Wallace Frank Church Home state California Alabama Idaho Delegate count 226 146 78 Contests won 3 2 4 Popular vote 2,449,374 2,268,895 831,209 Percentage 13.84% 12.82% 4.70%",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=6) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=123) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Jimmy_Carter_1977_cropped.jpg/112px-Jimmy_Carter_1977_cropped.jpg",
+                Identifier: (string) (len=64) "ff9d2a36caa333789b752d88f1fb92b752e81fafcddeb6ff1b59c27a048e7f1f",
+                Name: (string) (len=34) "File:Jimmy_Carter_1977_cropped.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 150,
+                Width: (int) 112,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=163) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Representative_Mo_Udall_Listens_%28cropped%29.png/112px-Representative_Mo_Udall_Listens_%28cropped%29.png",
+                Identifier: (string) (len=64) "3efeb20ef5ebd7a82a9dfc5614be62c7f42bde92c40033dd0e9ccf1336110750",
+                Name: (string) (len=50) "File:Representative_Mo_Udall_Listens_(cropped).png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 150,
+                Width: (int) 112,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=167) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Scoop_Jackson_campaigning_in_1976_%28cropped%29.jpg/112px-Scoop_Jackson_campaigning_in_1976_%28cropped%29.jpg",
+                Identifier: (string) (len=64) "cced12b7addab6b45c6b64cb1b5f28a764a9277c4c83af492c3b77504c702750",
+                Name: (string) (len=52) "File:Scoop_Jackson_campaigning_in_1976_(cropped).jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 150,
+                Width: (int) 112,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=161) "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Jerry_Brown%2C_SoS_%2772_%28croppedcloser%29.jpg/112px-Jerry_Brown%2C_SoS_%2772_%28croppedcloser%29.jpg",
+                Identifier: (string) (len=64) "2b188e6f77c6bbe2519bdcee85776d5851411c92957ae007113b1db0ad708aa8",
+                Name: (string) (len=45) "File:Jerry_Brown,_SoS_'72_(croppedcloser).jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 150,
+                Width: (int) 112,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=143) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/George_Wallace_%28D-AL%29_%283x4%29.jpg/112px-George_Wallace_%28D-AL%29_%283x4%29.jpg",
+                Identifier: (string) (len=64) "bb0eb4a1748c7b879532f705ad96430629a2def6487ebdc7807279e509331fdc",
+                Name: (string) (len=36) "File:George_Wallace_(D-AL)_(3x4).jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 150,
+                Width: (int) 112,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=95) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/FrankChurch.jpg/111px-FrankChurch.jpg",
+                Identifier: (string) (len=64) "dd762b880b46a21c8f2fb6434599be74ba12aafab09c6038b5b29aebbefb9175",
+                Name: (string) (len=20) "File:FrankChurch.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 150,
+                Width: (int) 111,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) (len=12) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Jimmy_Carter",
+                Text: (string) (len=12) "Jimmy Carter",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Mo_Udall",
+                Text: (string) (len=8) "Mo Udall",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Henry_M._Jackson",
+                Text: (string) (len=16) "Henry M. Jackson",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Georgia_(U.S._state)",
+                Text: (string) (len=7) "Georgia",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Arizona",
+                Text: (string) (len=7) "Arizona",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Washington_(state)",
+                Text: (string) (len=10) "Washington",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Jerry_Brown",
+                Text: (string) (len=11) "Jerry Brown",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/George_Wallace",
+                Text: (string) (len=14) "George Wallace",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Frank_Church",
+                Text: (string) (len=12) "Frank Church",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/California",
+                Text: (string) (len=10) "California",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Alabama",
+                Text: (string) (len=7) "Alabama",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Idaho",
+                Text: (string) (len=5) "Idaho",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=3) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=123) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Jimmy_Carter_1977_cropped.jpg/112px-Jimmy_Carter_1977_cropped.jpg",
+                Identifier: (string) (len=64) "ff9d2a36caa333789b752d88f1fb92b752e81fafcddeb6ff1b59c27a048e7f1f",
+                Name: (string) (len=34) "File:Jimmy_Carter_1977_cropped.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 150,
+                Width: (int) 112,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=163) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Representative_Mo_Udall_Listens_%28cropped%29.png/112px-Representative_Mo_Udall_Listens_%28cropped%29.png",
+                Identifier: (string) (len=64) "3efeb20ef5ebd7a82a9dfc5614be62c7f42bde92c40033dd0e9ccf1336110750",
+                Name: (string) (len=50) "File:Representative_Mo_Udall_Listens_(cropped).png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 150,
+                Width: (int) 112,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=167) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Scoop_Jackson_campaigning_in_1976_%28cropped%29.jpg/112px-Scoop_Jackson_campaigning_in_1976_%28cropped%29.jpg",
+                Identifier: (string) (len=64) "cced12b7addab6b45c6b64cb1b5f28a764a9277c4c83af492c3b77504c702750",
+                Name: (string) (len=52) "File:Scoop_Jackson_campaigning_in_1976_(cropped).jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 150,
+                Width: (int) 112,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=48) "Candidate Jimmy Carter Mo Udall Henry M. Jackson",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Jimmy_Carter",
+                Text: (string) (len=12) "Jimmy Carter",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Mo_Udall",
+                Text: (string) (len=8) "Mo Udall",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Henry_M._Jackson",
+                Text: (string) (len=16) "Henry M. Jackson",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=37) "Home state Georgia Arizona Washington",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Georgia_(U.S._state)",
+                Text: (string) (len=7) "Georgia",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Arizona",
+                Text: (string) (len=7) "Arizona",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Washington_(state)",
+                Text: (string) (len=10) "Washington",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=28) "Delegate count 1,130 328 242",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "Contests won 24 1 4",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=42) "Popular vote 7,020,624 1,667,362 1,153,766",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=29) "Percentage 39.67% 9.42% 6.52%",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=3) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=161) "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Jerry_Brown%2C_SoS_%2772_%28croppedcloser%29.jpg/112px-Jerry_Brown%2C_SoS_%2772_%28croppedcloser%29.jpg",
+                Identifier: (string) (len=64) "2b188e6f77c6bbe2519bdcee85776d5851411c92957ae007113b1db0ad708aa8",
+                Name: (string) (len=45) "File:Jerry_Brown,_SoS_'72_(croppedcloser).jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 150,
+                Width: (int) 112,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=143) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/George_Wallace_%28D-AL%29_%283x4%29.jpg/112px-George_Wallace_%28D-AL%29_%283x4%29.jpg",
+                Identifier: (string) (len=64) "bb0eb4a1748c7b879532f705ad96430629a2def6487ebdc7807279e509331fdc",
+                Name: (string) (len=36) "File:George_Wallace_(D-AL)_(3x4).jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 150,
+                Width: (int) 112,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=95) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/FrankChurch.jpg/111px-FrankChurch.jpg",
+                Identifier: (string) (len=64) "dd762b880b46a21c8f2fb6434599be74ba12aafab09c6038b5b29aebbefb9175",
+                Name: (string) (len=20) "File:FrankChurch.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 150,
+                Width: (int) 111,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=49) "Candidate Jerry Brown George Wallace Frank Church",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Jerry_Brown",
+                Text: (string) (len=11) "Jerry Brown",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/George_Wallace",
+                Text: (string) (len=14) "George Wallace",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Frank_Church",
+                Text: (string) (len=12) "Frank Church",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=35) "Home state California Alabama Idaho",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/California",
+                Text: (string) (len=10) "California",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Alabama",
+                Text: (string) (len=7) "Alabama",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Idaho",
+                Text: (string) (len=5) "Idaho",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=25) "Delegate count 226 146 78",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "Contests won 3 2 4",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=40) "Popular vote 2,449,374 2,268,895 831,209",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=30) "Percentage 13.84% 12.82% 4.70%",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=67) "Carter Udall Brown Jackson Wallace Church Humphrey Byrd Uncommitted",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=3) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=163) "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Democratic_presidential_primary_map%2C_1976.svg/450px-Democratic_presidential_primary_map%2C_1976.svg.png",
+                Identifier: (string) (len=64) "6476a30f8105a1470c2c3bdbf8ee65b346fd6aa5e0182efc1b192beb0b8a5ee1",
+                Name: (string) (len=50) "File:Democratic_presidential_primary_map,_1976.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 278,
+                Width: (int) 450,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=199) "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/1976_Democratic_presidential_primaries_by_delegate_allocation.svg/450px-1976_Democratic_presidential_primaries_by_delegate_allocation.svg.png",
+                Identifier: (string) (len=64) "8c3fe6c19952d10f236ab5490579d68c250cdeff87684c0691d3ba51d06eb351",
+                Name: (string) (len=70) "File:1976_Democratic_presidential_primaries_by_delegate_allocation.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 278,
+                Width: (int) 450,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=177) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Results_of_the_1976_Democratic_National_Convention.svg/450px-Results_of_the_1976_Democratic_National_Convention.svg.png",
+                Identifier: (string) (len=64) "1268affe02e00c757aca68b80cb9fd16a248698cb57ddec9bb4143fc1f3bffcb",
+                Name: (string) (len=59) "File:Results_of_the_1976_Democratic_National_Convention.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 278,
+                Width: (int) 450,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=75) "Previous Democratic nominee George McGovern Democratic nominee Jimmy Carter",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/George_McGovern",
+                Text: (string) (len=15) "George McGovern",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Jimmy_Carter",
+                Text: (string) (len=12) "Jimmy Carter",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=43) "Previous Democratic nominee George McGovern",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=31) "Democratic nominee Jimmy Carter",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/George_McGovern",
+                Text: (string) (len=15) "George McGovern",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Jimmy_Carter",
+                Text: (string) (len=12) "Jimmy Carter",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

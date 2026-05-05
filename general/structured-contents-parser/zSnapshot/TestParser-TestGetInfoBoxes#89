@@ -1,0 +1,1384 @@
+([]*parser.Part) (len=2) {
+  (*parser.Part)({
+    Name: (string) (len=14) "Ficha de país",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=43) {
+          (*parser.Part)({
+            Name: (string) (len=16) "Reino de España",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=35) "Estado miembro de la Unión Europea",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=65) "https://es.wikipedia.org/wiki/Estado_miembro_de_la_Unión_Europea",
+                Text: (string) (len=14) "Estado miembro",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://es.wikipedia.org/wiki/Unión_Europea",
+                Text: (string) (len=14) "Unión Europea",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=2) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=121) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/135px-Bandera_de_Espa%C3%B1a.svg.png",
+                Identifier: (string) (len=64) "8be48e5f60788229278b41632f43d82f08f44a6b98e3c1ab57efb3aa48af0f98",
+                Name: (string) (len=30) "Archivo:Bandera_de_España.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 90,
+                Width: (int) 135,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=147) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Escudo_de_Espa%C3%B1a_%28variant%29.svg/105px-Escudo_de_Espa%C3%B1a_%28variant%29.svg.png",
+                Identifier: (string) (len=64) "c9e88621421ddc4afcdddbb246e4a9f758b4874384fbb0e1369ce80fb473abc0",
+                Name: (string) (len=39) "Archivo:Escudo_de_España_(variant).svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 105,
+                Width: (int) 105,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=60) "https://es.wikipedia.org/wiki/Archivo:Bandera_de_España.svg",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://es.wikipedia.org/wiki/Bandera_de_España",
+                Text: (string) (len=7) "Bandera",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=69) "https://es.wikipedia.org/wiki/Archivo:Escudo_de_España_(variant).svg",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://es.wikipedia.org/wiki/Escudo_de_España",
+                Text: (string) (len=6) "Escudo",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Bandera",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Escudo",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=2) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=121) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/135px-Bandera_de_Espa%C3%B1a.svg.png",
+                Identifier: (string) (len=64) "8be48e5f60788229278b41632f43d82f08f44a6b98e3c1ab57efb3aa48af0f98",
+                Name: (string) (len=30) "Archivo:Bandera_de_España.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 90,
+                Width: (int) 135,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=147) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Escudo_de_Espa%C3%B1a_%28variant%29.svg/105px-Escudo_de_Espa%C3%B1a_%28variant%29.svg.png",
+                Identifier: (string) (len=64) "c9e88621421ddc4afcdddbb246e4a9f758b4874384fbb0e1369ce80fb473abc0",
+                Name: (string) (len=39) "Archivo:Escudo_de_España_(variant).svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 105,
+                Width: (int) 105,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=60) "https://es.wikipedia.org/wiki/Archivo:Bandera_de_España.svg",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://es.wikipedia.org/wiki/Bandera_de_España",
+                Text: (string) (len=7) "Bandera",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=69) "https://es.wikipedia.org/wiki/Archivo:Escudo_de_España_(variant).svg",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://es.wikipedia.org/wiki/Escudo_de_España",
+                Text: (string) (len=6) "Escudo",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=47) "Lema: « Plus ultra » (latín: «Más allá»)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://es.wikipedia.org/wiki/Anexo:Lemas_nacionales",
+                Text: (string) (len=4) "Lema",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://es.wikipedia.org/wiki/Plus_ultra_(lema)",
+                Text: (string) (len=10) "Plus ultra",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://es.wikipedia.org/wiki/Latín",
+                Text: (string) (len=6) "latín",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=87) "Himno: Marcha Granadera o Marcha Real Española ¿Problemas al reproducir este archivo?",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://es.wikipedia.org/wiki/Himno_nacional",
+                Text: (string) (len=5) "Himno",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://es.wikipedia.org/wiki/Marcha_Real",
+                Text: (string) (len=40) "Marcha Granadera o Marcha Real Española",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://es.wikipedia.org/wiki/España#cite_note-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://es.wikipedia.org/wiki/Ayuda:Multimedia",
+                Text: (string) (len=39) "¿Problemas al reproducir este archivo?",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=50) "España Resto de la Unión Europea Resto de Europa",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=93) "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/EU-Spain.svg/250px-EU-Spain.svg.png",
+                Identifier: (string) (len=64) "4c6f5d6abc3fad751a71267e1a1b55b8a775d3470e012b971708d2d531bf4cad",
+                Name: (string) (len=20) "Archivo:EU-Spain.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 210,
+                Width: (int) 250,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://es.wikipedia.org/wiki/Archivo:EU-Spain.svg",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://es.wikipedia.org/wiki/Unión_Europea",
+                Text: (string) (len=14) "Unión Europea",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=31) "Capital (y ciudad más poblada)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=73) "Madrid 40°25′01″N 3°42′12″O / 40.416944444444, -3.7033333333333",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://es.wikipedia.org/wiki/Capital_(política)",
+                Text: (string) (len=7) "Capital",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=52) "https://es.wikipedia.org/wiki/Demografía_de_España",
+                Text: (string) (len=23) "(y ciudad más poblada)",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=58) "https://es.wikipedia.org/wiki/Archivo:Escudo_de_Madrid.svg",
+                Text: (string) (len=29) "Escudo de la Ciudad de Madrid",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://es.wikipedia.org/wiki/Madrid",
+                Text: (string) (len=6) "Madrid",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=131) "http://tools.wmflabs.org/geohack/geohack.php?language=es&pagename=Espa%C3%B1a&params=40.416944444444_N_-3.7033333333333_E_type:city",
+                Text: (string) (len=66) "40°25′01″N 3°42′12″O / 40.416944444444, -3.7033333333333",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Idioma oficial",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "Castellano",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://es.wikipedia.org/wiki/Idioma_oficial",
+                Text: (string) (len=14) "Idioma oficial",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://es.wikipedia.org/wiki/Español_de_España",
+                Text: (string) (len=10) "Castellano",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://es.wikipedia.org/wiki/España#cite_note-12",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Gentilicio",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Español, -la",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://es.wikipedia.org/wiki/Gentilicio",
+                Text: (string) (len=10) "Gentilicio",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://es.wikipedia.org/wiki/Españoles",
+                Text: (string) (len=13) "Español, -la",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=17) "Forma de gobierno",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "Monarquía parlamentaria",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://es.wikipedia.org/wiki/Forma_de_gobierno",
+                Text: (string) (len=17) "Forma de gobierno",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=54) "https://es.wikipedia.org/wiki/Monarquía_parlamentaria",
+                Text: (string) (len=24) "Monarquía parlamentaria",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=3) "Rey",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Felipe VI",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://es.wikipedia.org/wiki/Rey_de_España",
+                Text: (string) (len=3) "Rey",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://es.wikipedia.org/wiki/Felipe_VI_de_España",
+                Text: (string) (len=9) "Felipe VI",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=23) "Presidente del Gobierno",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "Pedro Sánchez",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=64) "https://es.wikipedia.org/wiki/Presidente_del_Gobierno_de_España",
+                Text: (string) (len=23) "Presidente del Gobierno",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://es.wikipedia.org/wiki/Pedro_Sánchez",
+                Text: (string) (len=14) "Pedro Sánchez",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=19) "Órgano legislativo",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "Cortes Generales",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://es.wikipedia.org/wiki/Órgano_legislativo",
+                Text: (string) (len=19) "Órgano legislativo",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://es.wikipedia.org/wiki/Cortes_Generales",
+                Text: (string) (len=16) "Cortes Generales",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=217) "Formación Reconquista Unión dinástica Monarquía compuesta Monarquía centralizada Monarquía constitucional Estado liberal Primera República Restauración Segunda República Dictadura franquista Democracia actual",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=172) "711-1492 20 de enero de 1469 14 de marzo de 1516 29 de junio de 1707 19 de marzo de 1812 1833-1868 1873-1874 30 de junio de 1874 1931-1939 1939-1975 29 de diciembre de 1978",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=12) {
+              (*parser.Link)({
+                URL: (string) (len=63) "https://es.wikipedia.org/wiki/Formación_territorial_de_España",
+                Text: (string) (len=10) "Formación",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://es.wikipedia.org/wiki/Reconquista",
+                Text: (string) (len=11) "Reconquista",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://es.wikipedia.org/wiki/Reyes_Católicos",
+                Text: (string) (len=17) "Unión dinástica",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://es.wikipedia.org/wiki/Monarquía_Hispánica",
+                Text: (string) (len=20) "Monarquía compuesta",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=54) "https://es.wikipedia.org/wiki/Decretos_de_Nueva_Planta",
+                Text: (string) (len=23) "Monarquía centralizada",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=61) "https://es.wikipedia.org/wiki/Constitución_española_de_1812",
+                Text: (string) (len=25) "Monarquía constitucional",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=61) "https://es.wikipedia.org/wiki/Reinado_de_Isabel_II_de_España",
+                Text: (string) (len=14) "Estado liberal",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=58) "https://es.wikipedia.org/wiki/Primera_República_Española",
+                Text: (string) (len=18) "Primera República",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=65) "https://es.wikipedia.org/wiki/Restauración_borbónica_en_España",
+                Text: (string) (len=13) "Restauración",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=58) "https://es.wikipedia.org/wiki/Segunda_República_Española",
+                Text: (string) (len=18) "Segunda República",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://es.wikipedia.org/wiki/Dictadura_de_Francisco_Franco",
+                Text: (string) (len=20) "Dictadura franquista",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=61) "https://es.wikipedia.org/wiki/Constitución_española_de_1978",
+                Text: (string) (len=17) "Democracia actual",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Superficie",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Puesto 52.º",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=58) "https://es.wikipedia.org/wiki/Anexo:Países_por_superficie",
+                Text: (string) (len=10) "Superficie",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=58) "https://es.wikipedia.org/wiki/Anexo:Países_por_superficie",
+                Text: (string) (len=12) "Puesto 52.º",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Total",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "505 944 km²",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://es.wikipedia.org/wiki/España#cite_note-14",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://es.wikipedia.org/wiki/Kilómetro_cuadrado",
+                Text: (string) (len=4) "km²",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Agua (%)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "1,04",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://es.wikipedia.org/wiki/España#cite_note-16",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Fronteras",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "1952,7 km",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://es.wikipedia.org/wiki/Frontera",
+                Text: (string) (len=9) "Fronteras",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://es.wikipedia.org/wiki/España#cite_note-17",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Línea de costa",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "4964 km",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://es.wikipedia.org/wiki/Línea_de_costa",
+                Text: (string) (len=15) "Línea de costa",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=61) "https://es.wikipedia.org/wiki/España#cite_note-superficie-13",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Punto más alto",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=5) "Teide",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=63) "https://es.wikipedia.org/wiki/Anexo:Países_por_punto_más_alto",
+                Text: (string) (len=15) "Punto más alto",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://es.wikipedia.org/wiki/Teide",
+                Text: (string) (len=5) "Teide",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=16) "Población total",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Puesto 31.º",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=85) "https://es.wikipedia.org/wiki/Anexo:Países_y_territorios_dependientes_por_población",
+                Text: (string) (len=16) "Población total",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=85) "https://es.wikipedia.org/wiki/Anexo:Países_y_territorios_dependientes_por_población",
+                Text: (string) (len=12) "Puesto 31.º",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Censo (2025)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "49 077 984 hab.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=65) "https://es.wikipedia.org/wiki/España#cite_note-INE_población-18",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Densidad",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "97 hab./km²",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=97) "https://es.wikipedia.org/wiki/Anexo:Países_y_territorios_dependientes_por_densidad_de_población",
+                Text: (string) (len=8) "Densidad",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "PIB (PPA)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Puesto 15.º",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://es.wikipedia.org/wiki/Producto_interno_bruto",
+                Text: (string) (len=3) "PIB",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=58) "https://es.wikipedia.org/wiki/Paridad_de_poder_adquisitivo",
+                Text: (string) (len=3) "PPA",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://es.wikipedia.org/wiki/Anexo:Países_por_PIB_(PPA)",
+                Text: (string) (len=12) "Puesto 15.º",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Total (2024)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=31) "~2 670 000 millones de dólares",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://es.wikipedia.org/wiki/Dólar_internacional",
+                Text: (string) (len=8) "dólares",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://es.wikipedia.org/wiki/España#cite_note-IMFWEOES-19",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Per cápita",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "55 090 dólares (33.º)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://es.wikipedia.org/wiki/Renta_per_cápita",
+                Text: (string) (len=11) "Per cápita",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://es.wikipedia.org/wiki/Dólar_internacional",
+                Text: (string) (len=8) "dólares",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://es.wikipedia.org/wiki/España#cite_note-IMFWEOES-19",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=69) "https://es.wikipedia.org/wiki/Anexo:Países_por_PIB_(PPA)_per_cápita",
+                Text: (string) (len=5) "33.º",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "PIB (nominal)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Puesto 15.º",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=61) "https://es.wikipedia.org/wiki/Anexo:Países_por_PIB_(nominal)",
+                Text: (string) (len=12) "Puesto 15.º",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Total (2024)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=31) "~1 730 000 millones de dólares",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=51) "https://es.wikipedia.org/wiki/Dólar_estadounidense",
+                Text: (string) (len=8) "dólares",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://es.wikipedia.org/wiki/España#cite_note-IMFWEOES-19",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Per cápita",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "35 790 dólares (30.º)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=51) "https://es.wikipedia.org/wiki/Dólar_estadounidense",
+                Text: (string) (len=8) "dólares",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://es.wikipedia.org/wiki/España#cite_note-IMFWEOES-19",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=73) "https://es.wikipedia.org/wiki/Anexo:Países_por_PIB_(nominal)_per_cápita",
+                Text: (string) (len=5) "30.º",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "IDH (2022)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=26) "0,911 (27.º) – Muy alto",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=58) "https://es.wikipedia.org/wiki/Índice_de_desarrollo_humano",
+                Text: (string) (len=3) "IDH",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=54) "https://es.wikipedia.org/wiki/España#cite_note-IDH-20",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "https://es.wikipedia.org/wiki/Anexo:Países_por_índice_de_desarrollo_humano",
+                Text: (string) (len=5) "27.º",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=19) "Coeficiente de Gini",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "31,5; medio (2023)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://es.wikipedia.org/wiki/Coeficiente_de_Gini",
+                Text: (string) (len=19) "Coeficiente de Gini",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://es.wikipedia.org/wiki/España#cite_note-21",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Moneda",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "Euro (€, EUR)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://es.wikipedia.org/wiki/Moneda_(divisa)",
+                Text: (string) (len=6) "Moneda",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://es.wikipedia.org/wiki/Euro",
+                Text: (string) (len=4) "Euro",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://es.wikipedia.org/wiki/España#cite_note-22",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://es.wikipedia.org/wiki/ISO_4217",
+                Text: (string) (len=3) "EUR",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Huso horario",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "CET (UTC+1)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://es.wikipedia.org/wiki/Huso_horario",
+                Text: (string) (len=12) "Huso horario",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://es.wikipedia.org/wiki/Hora_central_europea",
+                Text: (string) (len=11) "CET (UTC+1)",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://es.wikipedia.org/wiki/España#cite_note-23",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "En verano",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "CEST (UTC+2)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://es.wikipedia.org/wiki/Horario_de_verano",
+                Text: (string) (len=6) "verano",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=60) "https://es.wikipedia.org/wiki/Hora_central_europea_de_verano",
+                Text: (string) (len=12) "CEST (UTC+2)",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://es.wikipedia.org/wiki/España#cite_note-24",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Código ISO",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "724 / ESP / ES",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://es.wikipedia.org/wiki/ISO_3166-1",
+                Text: (string) (len=11) "Código ISO",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://es.wikipedia.org/wiki/España#cite_note-26",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=16) "Dominio internet",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=3) ".es",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=115) "https://es.wikipedia.org/wiki/Dominio_de_nivel_superior_geográfico#Lista_de_dominios_de_nivel_superior_geográfico",
+                Text: (string) (len=16) "Dominio internet",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=33) "https://es.wikipedia.org/wiki/.es",
+                Text: (string) (len=3) ".es",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=19) "Prefijo telefónico",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=3) "+34",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=67) "https://es.wikipedia.org/wiki/Anexo:Prefijos_telefónicos_mundiales",
+                Text: (string) (len=19) "Prefijo telefónico",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=20) "Prefijo radiofónico",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "AMA-AOZ, EAA-EHZ",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=58) "https://es.wikipedia.org/wiki/Anexo:Prefijos_radiofónicos",
+                Text: (string) (len=20) "Prefijo radiofónico",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=27) "Siglas país para aeronaves",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "EC, EM",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://es.wikipedia.org/wiki/Matrícula_(aeronaves)",
+                Text: (string) (len=27) "Siglas país para aeronaves",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://es.wikipedia.org/wiki/España#cite_note-27",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://es.wikipedia.org/wiki/España#cite_note-28",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=30) "Siglas país para automóviles",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=1) "E",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=94) "https://es.wikipedia.org/wiki/Anexo:Códigos_internacionales_de_matriculación_de_automóviles",
+                Text: (string) (len=30) "Siglas país para automóviles",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Código del COI",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=3) "ESP",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=69) "https://es.wikipedia.org/wiki/Anexo:Códigos_del_COI_para_los_países",
+                Text: (string) (len=15) "Código del COI",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=19) "Lado de conducción",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "Derecho",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://es.wikipedia.org/wiki/Sentido_de_la_circulación",
+                Text: (string) (len=19) "Lado de conducción",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=110) "Membresía UE · OTAN · ONU · OCDE · OSCE · OEI · ABINIA · AED · BERD · CdE · EuroMed · G-12 · G-20",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=14) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://es.wikipedia.org/wiki/Unión_Europea",
+                Text: (string) (len=2) "UE",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "https://es.wikipedia.org/wiki/Organización_del_Tratado_del_Atlántico_Norte",
+                Text: (string) (len=4) "OTAN",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=66) "https://es.wikipedia.org/wiki/Organización_de_las_Naciones_Unidas",
+                Text: (string) (len=3) "ONU",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=91) "https://es.wikipedia.org/wiki/Organización_para_la_Cooperación_y_el_Desarrollo_Económico",
+                Text: (string) (len=4) "OCDE",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=89) "https://es.wikipedia.org/wiki/Organización_para_la_Seguridad_y_la_Cooperación_en_Europa",
+                Text: (string) (len=4) "OSCE",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=114) "https://es.wikipedia.org/wiki/Organización_de_Estados_Iberoamericanos_para_la_Educación,_la_Ciencia_y_la_Cultura",
+                Text: (string) (len=3) "OEI",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=134) "https://es.wikipedia.org/wiki/Asociación_de_Estados_Iberoamericanos_para_el_Desarrollo_de_las_Bibliotecas_Nacionales_de_Iberoamérica",
+                Text: (string) (len=6) "ABINIA",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=56) "https://es.wikipedia.org/wiki/Agencia_Europea_de_Defensa",
+                Text: (string) (len=3) "AED",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=83) "https://es.wikipedia.org/wiki/Banco_Europeo_para_la_Reconstrucción_y_el_Desarrollo",
+                Text: (string) (len=4) "BERD",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://es.wikipedia.org/wiki/Consejo_de_Europa",
+                Text: (string) (len=3) "CdE",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://es.wikipedia.org/wiki/EuroMed",
+                Text: (string) (len=7) "EuroMed",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://es.wikipedia.org/wiki/Grupo_de_los_Doce",
+                Text: (string) (len=4) "G-12",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=85) "https://es.wikipedia.org/wiki/Grupo_de_los_20_(países_industrializados_y_emergentes)",
+                Text: (string) (len=4) "G-20",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://es.wikipedia.org/wiki/España#cite_note-29",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=17) "Wikipedia Grabada",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=7) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "Escucha este artículo",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "1.ª parte",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=67) "https://es.wikipedia.org/wiki/Archivo:Es-España_1_of_4-article.ogg",
+                Text: (string) (len=10) "1.ª parte",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "2.ª parte",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=67) "https://es.wikipedia.org/wiki/Archivo:Es-España_2_of_4-article.ogg",
+                Text: (string) (len=10) "2.ª parte",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "3.ª parte",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=67) "https://es.wikipedia.org/wiki/Archivo:Es-España_3_of_4-article.ogg",
+                Text: (string) (len=10) "3.ª parte",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "4.ª parte",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=67) "https://es.wikipedia.org/wiki/Archivo:Es-España_4_of_4-article.ogg",
+                Text: (string) (len=10) "4.ª parte",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=207) "Esta narración de audio fue creada a partir de una versión específica de este artículo (concretamente del 7 de febrero de 2012) y no refleja las posibles ediciones subsiguientes. Más artículos grabados",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=60) "https://es.wikipedia.org/wiki/Wikiproyecto:Wikipedia_grabada",
+                Text: (string) (len=24) "Más artículos grabados",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=41) "¿Problemas al reproducir estos archivos?",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://es.wikipedia.org/wiki/Ayuda:Multimedia",
+                Text: (string) (len=41) "¿Problemas al reproducir estos archivos?",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

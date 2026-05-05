@@ -1,0 +1,1408 @@
+(map[string]interface {}) (len=2) {
+  (string) (len=8) "sections": ([]*parser.Part) (len=2) {
+    (*parser.Part)({
+      Name: (string) (len=8) "Abstract",
+      Type: (string) (len=7) "section",
+      Value: (string) "",
+      Values: ([]string) <nil>,
+      HasParts: ([]*parser.Part) (len=3) {
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=718) "ISO/IEC 8859-2:1999, Information technology — 8-bit single-byte coded graphic character sets — Part 2: Latin alphabet No. 2, is part of the ISO/IEC 8859 series of ASCII-based standard character encodings, first edition published in 1987. It is informally referred to as \"Latin-2\". It is generally intended for Central or \"Eastern European\" languages that are written in the Latin script. Note that ISO/IEC 8859-2 is very different from code page 852 (MS-DOS Latin 2, PC Latin 2) which is also referred to as \"Latin-2\" in Czech and Slovak regions. Almost half the use of the encoding is for Polish, and it's the main legacy encoding for Polish, while virtually all use of it has been replaced by UTF-8 (on the web).",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=4) {
+            (*parser.Link)({
+              URL: (string) (len=42) "https://en.wikipedia.org/wiki/ISO/IEC_8859",
+              Text: (string) (len=12) "ISO/IEC 8859",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=48) "https://en.wikipedia.org/wiki/Character_encoding",
+              Text: (string) (len=19) "character encodings",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=56) "https://en.wikipedia.org/wiki/ISO/IEC_8859-2#cite_note-1",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=56) "https://en.wikipedia.org/wiki/ISO/IEC_8859-2#cite_note-2",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=2) {
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-1",
+              Group: (string) "",
+              Text: (string) (len=3) "[1]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-2",
+              Group: (string) "",
+              Text: (string) (len=3) "[2]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=466) "ISO-8859-2 is the IANA preferred charset name for this standard when supplemented with the C0 and C1 control codes from ISO/IEC 6429. Less than 0.04% of all web pages use ISO-8859-2 as of October 2022. Microsoft has assigned code page 28592 a.k.a. Windows-28592 to ISO-8859-2 in Windows. IBM assigned code page 912 to ISO 8859-2, until that code page was extended in 1999. Code page 1111 is similar, but replaces byte B0 ° (degree sign) with U+02DA ˚ (ring above).",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=8) {
+            (*parser.Link)({
+              URL: (string) (len=65) "https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority",
+              Text: (string) (len=4) "IANA",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=53) "https://en.wikipedia.org/wiki/C0_and_C1_control_codes",
+              Text: (string) (len=23) "C0 and C1 control codes",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=42) "https://en.wikipedia.org/wiki/ISO/IEC_6429",
+              Text: (string) (len=12) "ISO/IEC 6429",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=56) "https://en.wikipedia.org/wiki/ISO/IEC_8859-2#cite_note-3",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=56) "https://en.wikipedia.org/wiki/ISO/IEC_8859-2#cite_note-4",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=43) "https://en.wikipedia.org/wiki/Code_page_912",
+              Text: (string) (len=13) "code page 912",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=56) "https://en.wikipedia.org/wiki/ISO/IEC_8859-2#cite_note-5",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=56) "https://en.wikipedia.org/wiki/ISO/IEC_8859-2#cite_note-6",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=4) {
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-3",
+              Group: (string) "",
+              Text: (string) (len=3) "[3]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-4",
+              Group: (string) "",
+              Text: (string) (len=3) "[4]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-5",
+              Group: (string) "",
+              Text: (string) (len=3) "[5]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-6",
+              Group: (string) "",
+              Text: (string) (len=3) "[6]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=223) "Windows-1250 is similar to ISO-8859-2 and has all the printable characters it has and more. However a few of them are rearranged (unlike Windows-1252, which keeps all printable characters from ISO-8859-1 in the same place).",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=3) {
+            (*parser.Link)({
+              URL: (string) (len=42) "https://en.wikipedia.org/wiki/Windows-1250",
+              Text: (string) (len=12) "Windows-1250",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=42) "https://en.wikipedia.org/wiki/Windows-1252",
+              Text: (string) (len=12) "Windows-1252",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=40) "https://en.wikipedia.org/wiki/ISO-8859-1",
+              Text: (string) (len=10) "ISO-8859-1",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) {
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        })
+      },
+      Images: ([]*parser.Image) <nil>,
+      Links: ([]*parser.Link) <nil>,
+      Citations: ([]*parser.Citation) <nil>,
+      TableReferences: ([]parser.TableReference) <nil>
+    }),
+    (*parser.Part)({
+      Name: (string) (len=16) "Code page layout",
+      Type: (string) (len=7) "section",
+      Value: (string) "",
+      Values: ([]string) <nil>,
+      HasParts: ([]*parser.Part) (len=2) {
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=74) "Differences from ISO-8859-1 have the Unicode code point number underneath.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=1) {
+            (*parser.Link)({
+              URL: (string) (len=40) "https://en.wikipedia.org/wiki/ISO-8859-1",
+              Text: (string) (len=10) "ISO-8859-1",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) {
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=5) "table",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) (len=1) {
+            (parser.TableReference) {
+              Identifier: (string) (len=23) "code_page_layout_table1",
+              ConfidenceScore: (float64) 1
+            }
+          }
+        })
+      },
+      Images: ([]*parser.Image) <nil>,
+      Links: ([]*parser.Link) <nil>,
+      Citations: ([]*parser.Citation) <nil>,
+      TableReferences: ([]parser.TableReference) <nil>
+    })
+  },
+  (string) (len=6) "tables": ([]*parser.OrderedTable) (len=1) {
+    (*parser.OrderedTable)({
+      ID: (string) (len=23) "code_page_layout_table1",
+      Table: (*parser.TableWithHeaders)({
+        Headers: ([][]parser.Cell) <nil>,
+        Footers: ([][]parser.Cell) <nil>,
+        Rows: ([][]parser.Cell) (len=17) {
+          ([]parser.Cell) (len=17) {
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "0",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "1",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "2",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "3",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "4",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "5",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "6",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "7",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "8",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "9",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "A",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "B",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "C",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "D",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "E",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "F",
+              Inner: (parser.TablesWithHeaders) <nil>
+            }
+          },
+          ([]parser.Cell) (len=17) {
+            (parser.Cell) {
+              Value: (string) (len=2) "0x",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            }
+          },
+          ([]parser.Cell) (len=17) {
+            (parser.Cell) {
+              Value: (string) (len=2) "1x",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            }
+          },
+          ([]parser.Cell) (len=17) {
+            (parser.Cell) {
+              Value: (string) (len=2) "2x",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "SP",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "!",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "\"",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "#",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "$",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "%",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "&",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "'",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "(",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) ")",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "*",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "+",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) ",",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "-",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) ".",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "/",
+              Inner: (parser.TablesWithHeaders) <nil>
+            }
+          },
+          ([]parser.Cell) (len=17) {
+            (parser.Cell) {
+              Value: (string) (len=2) "3x",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "0",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "1",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "2",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "3",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "4",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "5",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "6",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "7",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "8",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "9",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) ":",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) ";",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "<",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "=",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) ">",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "?",
+              Inner: (parser.TablesWithHeaders) <nil>
+            }
+          },
+          ([]parser.Cell) (len=17) {
+            (parser.Cell) {
+              Value: (string) (len=2) "4x",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "@",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "A",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "B",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "C",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "D",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "E",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "F",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "G",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "H",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "I",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "J",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "K",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "L",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "M",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "N",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "O",
+              Inner: (parser.TablesWithHeaders) <nil>
+            }
+          },
+          ([]parser.Cell) (len=17) {
+            (parser.Cell) {
+              Value: (string) (len=2) "5x",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "P",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "Q",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "R",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "S",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "T",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "U",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "V",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "W",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "X",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "Y",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "Z",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "[",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "\\",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "]",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "^",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "_",
+              Inner: (parser.TablesWithHeaders) <nil>
+            }
+          },
+          ([]parser.Cell) (len=17) {
+            (parser.Cell) {
+              Value: (string) (len=2) "6x",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "`",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "a",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "b",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "c",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "d",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "e",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "f",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "g",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "h",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "i",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "j",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "k",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "l",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "m",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "n",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "o",
+              Inner: (parser.TablesWithHeaders) <nil>
+            }
+          },
+          ([]parser.Cell) (len=17) {
+            (parser.Cell) {
+              Value: (string) (len=2) "7x",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "p",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "q",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "r",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "s",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "t",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "u",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "v",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "w",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "x",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "y",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "z",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "{",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "|",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "}",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=1) "~",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            }
+          },
+          ([]parser.Cell) (len=17) {
+            (parser.Cell) {
+              Value: (string) (len=2) "8x",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            }
+          },
+          ([]parser.Cell) (len=17) {
+            (parser.Cell) {
+              Value: (string) (len=2) "9x",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) "",
+              Inner: (parser.TablesWithHeaders) <nil>
+            }
+          },
+          ([]parser.Cell) (len=17) {
+            (parser.Cell) {
+              Value: (string) (len=2) "Ax",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=4) "NBSP",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ą 0104",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "˘ 02D8",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ł 0141",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "¤",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ľ 013D",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ś 015A",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "§",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "¨",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Š 0160",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ş 015E",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ť 0164",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ź 0179",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=3) "SHY",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ž 017D",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ż 017B",
+              Inner: (parser.TablesWithHeaders) <nil>
+            }
+          },
+          ([]parser.Cell) (len=17) {
+            (parser.Cell) {
+              Value: (string) (len=2) "Bx",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "°",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ą 0105",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "˛ 02DB",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ł 0142",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "´",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ľ 013E",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ś 015B",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ˇ 02C7",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "¸",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "š 0161",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ş 015F",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ť 0165",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ź 017A",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "˝ 02DD",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ž 017E",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ż 017C",
+              Inner: (parser.TablesWithHeaders) <nil>
+            }
+          },
+          ([]parser.Cell) (len=17) {
+            (parser.Cell) {
+              Value: (string) (len=2) "Cx",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ŕ 0154",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "Á",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "Â",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ă 0102",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "Ä",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ĺ 0139",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ć 0106",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "Ç",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Č 010C",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "É",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ę 0118",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "Ë",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ě 011A",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "Í",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "Î",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ď 010E",
+              Inner: (parser.TablesWithHeaders) <nil>
+            }
+          },
+          ([]parser.Cell) (len=17) {
+            (parser.Cell) {
+              Value: (string) (len=2) "Dx",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Đ 0110",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ń 0143",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ň 0147",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "Ó",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "Ô",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ő 0150",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "Ö",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "×",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ř 0158",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ů 016E",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "Ú",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ű 0170",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "Ü",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "Ý",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "Ţ 0162",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "ß",
+              Inner: (parser.TablesWithHeaders) <nil>
+            }
+          },
+          ([]parser.Cell) (len=17) {
+            (parser.Cell) {
+              Value: (string) (len=2) "Ex",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ŕ 0155",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "á",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "â",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ă 0103",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "ä",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ĺ 013A",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ć 0107",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "ç",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "č 010D",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "é",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ę 0119",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "ë",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ě 011B",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "í",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "î",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ď 010F",
+              Inner: (parser.TablesWithHeaders) <nil>
+            }
+          },
+          ([]parser.Cell) (len=17) {
+            (parser.Cell) {
+              Value: (string) (len=2) "Fx",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "đ 0111",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ń 0144",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ň 0148",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "ó",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "ô",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ő 0151",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "ö",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "÷",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ř 0159",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ů 016F",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "ú",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ű 0171",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "ü",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=2) "ý",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "ţ 0163",
+              Inner: (parser.TablesWithHeaders) <nil>
+            },
+            (parser.Cell) {
+              Value: (string) (len=7) "˙ 02D9",
+              Inner: (parser.TablesWithHeaders) <nil>
+            }
+          }
+        },
+        ConfidenceScore: (float64) 1
+      })
+    })
+  }
+}

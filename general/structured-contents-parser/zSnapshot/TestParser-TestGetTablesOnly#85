@@ -1,0 +1,22 @@
+([]*parser.OrderedTable) (len=1) {
+  (*parser.OrderedTable)({
+    ID: (string) (len=33) "life.later_years_and_death_table1",
+    Table: (*parser.TableWithHeaders)({
+      Headers: ([][]parser.Cell) <nil>,
+      Footers: ([][]parser.Cell) <nil>,
+      Rows: ([][]parser.Cell) (len=1) {
+        ([]parser.Cell) (len=2) {
+          (parser.Cell) {
+            Value: (string) (len=147) "Good frend for Iesvs sake forbeare, To digg the dvst encloased heare. Bleste be yͤ man yͭ spares thes stones, And cvrst be he yͭ moves my bones.",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=151) "Good friend, for Jesus' sake forbear, To dig the dust enclosed here. Blessed be the man that spares these stones, And cursed be he that moves my bones.",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      ConfidenceScore: (float64) 1
+    })
+  })
+}

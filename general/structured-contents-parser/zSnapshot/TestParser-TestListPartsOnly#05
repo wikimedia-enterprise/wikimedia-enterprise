@@ -1,0 +1,911 @@
+([]*parser.Part) (len=2) {
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=21) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=426) "Einstein, Albert (1901). Written at Zurich, Switzerland. Paul Karl Ludwig Drude (ed.). \"Folgerungen aus den Capillaritätserscheinungen\". Annalen der Physik. Vierte Folge (in German). 4 (all series: 309) (3). Leipzig, Germany: Verlag von Johann Ambrosius Barth (published 1 March 1901): 513– 523. Bibcode: 1901AnP...309..513E. doi: 10.1002/andp.19013090306 – via Wiley Online Library, Hoboken, New Jersey, US (March 2006).",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=7) {
+          (*parser.Link)({
+            URL: (string) (len=52) "https://en.wikipedia.org/wiki/Paul_Karl_Ludwig_Drude",
+            Text: (string) (len=22) "Paul Karl Ludwig Drude",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=33) "https://zenodo.org/record/1423995",
+            Text: (string) (len=49) "\"Folgerungen aus den Capillaritätserscheinungen\"",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/Annalen_der_Physik",
+            Text: (string) (len=18) "Annalen der Physik",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+            Text: (string) (len=7) "Bibcode",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://ui.adsabs.harvard.edu/abs/1901AnP...309..513E",
+            Text: (string) (len=19) "1901AnP...309..513E",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+            Text: (string) (len=3) "doi",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://doi.org/10.1002%2Fandp.19013090306",
+            Text: (string) (len=24) "10.1002/andp.19013090306",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=482) "Einstein, Albert (1905a). Written at Berne, Switzerland. Paul Karl Ludwig Drude (ed.). \"Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt\" (PDF). Annalen der Physik. Vierte Folge (in German). 17 (all series: 322) (6). Leipzig, Germany: Verlag von Johann Ambrosius Barth (published 9 June 1905): 132– 148. Bibcode: 1905AnP...322..132E. doi: 10.1002/andp.19053220607 – via Wiley Online Library, Hoboken, New Jersey, US (10 March 2006).",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=7) {
+          (*parser.Link)({
+            URL: (string) (len=52) "https://en.wikipedia.org/wiki/Paul_Karl_Ludwig_Drude",
+            Text: (string) (len=22) "Paul Karl Ludwig Drude",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=85) "http://www.physik.uni-augsburg.de/annalen/history/einstein-papers/1905_17_132-148.pdf",
+            Text: (string) (len=96) "\"Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt\"",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/Annalen_der_Physik",
+            Text: (string) (len=18) "Annalen der Physik",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+            Text: (string) (len=7) "Bibcode",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://ui.adsabs.harvard.edu/abs/1905AnP...322..132E",
+            Text: (string) (len=19) "1905AnP...322..132E",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+            Text: (string) (len=3) "doi",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://doi.org/10.1002%2Fandp.19053220607",
+            Text: (string) (len=24) "10.1002/andp.19053220607",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=300) "Einstein, Albert (1905b). Eine neue Bestimmung der Moleküldimensionen (PDF). Dissertationen Universität Zürich (PhD Thesis) (in German). Berne, Switzerland: Wyss Buchdruckerei (published 20 July 1905). doi: 10.3929/ethz-a-000565688. hdl: 20.500.11850/139872 – via ETH Bibliothek, Zürich (2008).",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=7) {
+          (*parser.Link)({
+            URL: (string) (len=68) "http://e-collection.library.ethz.ch/eserv/eth:30378/eth-30378-01.pdf",
+            Text: (string) (len=44) "Eine neue Bestimmung der Moleküldimensionen",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Universität_Zürich",
+            Text: (string) (len=20) "Universität Zürich",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+            Text: (string) (len=3) "doi",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://doi.org/10.3929%2Fethz-a-000565688",
+            Text: (string) (len=24) "10.3929/ethz-a-000565688",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Hdl_(identifier)",
+            Text: (string) (len=3) "hdl",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://hdl.handle.net/20.500.11850%2F139872",
+            Text: (string) (len=19) "20.500.11850/139872",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=33) "https://en.wikipedia.org/wiki/ETH",
+            Text: (string) (len=3) "ETH",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=531) "Einstein, Albert (1905c). Written at Berne, Switzerland. Paul Karl Ludwig Drude (ed.). \"Über die von der molekularkinetischen Theorie der Wärme geforderte Bewegung von in ruhenden Flüssigkeiten suspendierten Teilchen\". Annalen der Physik. Vierte Folge (in German). 17 (all series: 322) (8). Leipzig, Germany: Verlag von Johann Ambrosius Barth (published 18 July 1905): 549– 560. Bibcode: 1905AnP...322..549E. doi: 10.1002/andp.19053220806. hdl: 10915/2785 – via Wiley Online Library, Hoboken, New Jersey, US (10 March 2006).",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=9) {
+          (*parser.Link)({
+            URL: (string) (len=52) "https://en.wikipedia.org/wiki/Paul_Karl_Ludwig_Drude",
+            Text: (string) (len=22) "Paul Karl Ludwig Drude",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "http://sedici.unlp.edu.ar/handle/10915/2785",
+            Text: (string) (len=133) "\"Über die von der molekularkinetischen Theorie der Wärme geforderte Bewegung von in ruhenden Flüssigkeiten suspendierten Teilchen\"",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/Annalen_der_Physik",
+            Text: (string) (len=18) "Annalen der Physik",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+            Text: (string) (len=7) "Bibcode",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://ui.adsabs.harvard.edu/abs/1905AnP...322..549E",
+            Text: (string) (len=19) "1905AnP...322..549E",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+            Text: (string) (len=3) "doi",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://doi.org/10.1002%2Fandp.19053220806",
+            Text: (string) (len=24) "10.1002/andp.19053220806",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Hdl_(identifier)",
+            Text: (string) (len=3) "hdl",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=35) "https://hdl.handle.net/10915%2F2785",
+            Text: (string) (len=10) "10915/2785",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=464) "Einstein, Albert (1905d). Written at Berne, Switzerland. Paul Karl Ludwig Drude (ed.). \"Zur Elektrodynamik bewegter Körper\". Annalen der Physik (Submitted manuscript). Vierte Folge (in German). 17 (all series: 322) (10). Leipzig, Germany: Verlag von Johann Ambrosius Barth (published 26 September 1905): 891– 921. Bibcode: 1905AnP...322..891E. doi: 10.1002/andp.19053221004. hdl: 10915/2786 – via Wiley Online Library, Hoboken, New Jersey, US (10 March 2006).",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=9) {
+          (*parser.Link)({
+            URL: (string) (len=52) "https://en.wikipedia.org/wiki/Paul_Karl_Ludwig_Drude",
+            Text: (string) (len=22) "Paul Karl Ludwig Drude",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "http://sedici.unlp.edu.ar/handle/10915/2786",
+            Text: (string) (len=37) "\"Zur Elektrodynamik bewegter Körper\"",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/Annalen_der_Physik",
+            Text: (string) (len=18) "Annalen der Physik",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+            Text: (string) (len=7) "Bibcode",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://ui.adsabs.harvard.edu/abs/1905AnP...322..891E",
+            Text: (string) (len=19) "1905AnP...322..891E",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+            Text: (string) (len=3) "doi",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://doi.org/10.1002%2Fandp.19053221004",
+            Text: (string) (len=24) "10.1002/andp.19053221004",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Hdl_(identifier)",
+            Text: (string) (len=3) "hdl",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=35) "https://hdl.handle.net/10915%2F2786",
+            Text: (string) (len=10) "10915/2786",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=456) "Einstein, Albert (1905e). Written at Berne, Switzerland. Paul Karl Ludwig Drude (ed.). \"Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig?\". Annalen der Physik. Vierte Folge (in German). 18 (all series: 323) (13). Leipzig, Germany: Verlag von Johann Ambrosius Barth (published 21 November 1905): 639– 641. Bibcode: 1905AnP...323..639E. doi: 10.1002/andp.19053231314 – via Wiley Online Library, Hoboken, New Jersey, US (10 March 2006).",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=7) {
+          (*parser.Link)({
+            URL: (string) (len=52) "https://en.wikipedia.org/wiki/Paul_Karl_Ludwig_Drude",
+            Text: (string) (len=22) "Paul Karl Ludwig Drude",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=33) "https://zenodo.org/record/1424057",
+            Text: (string) (len=70) "\"Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig?\"",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/Annalen_der_Physik",
+            Text: (string) (len=18) "Annalen der Physik",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+            Text: (string) (len=7) "Bibcode",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://ui.adsabs.harvard.edu/abs/1905AnP...323..639E",
+            Text: (string) (len=19) "1905AnP...323..639E",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+            Text: (string) (len=3) "doi",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://doi.org/10.1002%2Fandp.19053231314",
+            Text: (string) (len=24) "10.1002/andp.19053231314",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=316) "Einstein, Albert (1915). \"Die Feldgleichungen der Gravitation\" (Online page images). Sitzungsberichte 1915 (in German). Berlin, Germany: Königlich Preussische Akademie der Wissenschaften (published 2 December 1915): 844– 847 – via ECHO, Cultural Heritage Online, Max Planck Institute for the History of Science.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=46) "http://echo.mpiwg-berlin.mpg.de/MPIWG:ZZB2HK6W",
+            Text: (string) (len=37) "\"Die Feldgleichungen der Gravitation\"",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=58) "https://en.wikipedia.org/wiki/Prussian_Academy_of_Sciences",
+            Text: (string) (len=50) "Königlich Preussische Akademie der Wissenschaften",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Max_Planck_Institute",
+            Text: (string) (len=20) "Max Planck Institute",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=321) "Einstein, Albert (1916). \"Näherungsweise Integration der Feldgleichungen der Gravitation\" (Online page images). Sitzungsberichte 1916. Berlin, Germany: Königlich Preussische Akademie der Wissenschaften: 688– 696. Bibcode: 1916SPAW.......688E. Retrieved 24 January 2022 – via SAO/NASA Astrophysics Data System (ADS).",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=53) "https://ui.adsabs.harvard.edu/abs/1916SPAW.......688E",
+            Text: (string) (len=65) "\"Näherungsweise Integration der Feldgleichungen der Gravitation\"",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=58) "https://en.wikipedia.org/wiki/Prussian_Academy_of_Sciences",
+            Text: (string) (len=50) "Königlich Preussische Akademie der Wissenschaften",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+            Text: (string) (len=7) "Bibcode",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://ui.adsabs.harvard.edu/abs/1916SPAW.......688E",
+            Text: (string) (len=19) "1916SPAW.......688E",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=209) "Einstein, Albert (1917a). \"Kosmologische Betrachtungen zur allgemeinen Relativitätstheorie\" (Online page images). Sitzungsberichte 1917 (in German). Königlich Preussische Akademie der Wissenschaften, Berlin.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=46) "http://echo.mpiwg-berlin.mpg.de/MPIWG:H428RSAN",
+            Text: (string) (len=66) "\"Kosmologische Betrachtungen zur allgemeinen Relativitätstheorie\"",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=58) "https://en.wikipedia.org/wiki/Prussian_Academy_of_Sciences",
+            Text: (string) (len=50) "Königlich Preussische Akademie der Wissenschaften",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=146) "Einstein, Albert (1917b). \"Zur Quantentheorie der Strahlung\". Physikalische Zeitschrift (in German). 18: 121– 128. Bibcode: 1917PhyZ...18..121E.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+            Text: (string) (len=7) "Bibcode",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://ui.adsabs.harvard.edu/abs/1917PhyZ...18..121E",
+            Text: (string) (len=19) "1917PhyZ...18..121E",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=214) "Einstein, Albert (31 January 1918). \"Über Gravitationswellen\". Sitzungsberichte der Königlich Preussischen Akademie der Wissenschaften Berlin: 154– 167. Bibcode: 1918SPAW.......154E. Retrieved 14 November 2020.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=111) "https://echo.mpiwg-berlin.mpg.de/ECHOdocuView?url=/permanent/echo/einstein/sitzungsberichte/W7ZU8V1E/index.meta",
+            Text: (string) (len=26) "\"Über Gravitationswellen\"",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+            Text: (string) (len=7) "Bibcode",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://ui.adsabs.harvard.edu/abs/1918SPAW.......154E",
+            Text: (string) (len=19) "1918SPAW.......154E",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=338) "Einstein, Albert (1923). Written at Gothenburg. Grundgedanken und Probleme der Relativitätstheorie (Speech). Lecture delivered to the Nordic Assembly of Naturalists at Gothenburg, 11 July 1923. Nobel Lectures, Physics 1901–1921 (in German and English). Stockholm: Nobelprice.org (published 3 February 2015) – via Nobel Media AB 2014.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=84) "https://www.nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-lecture.html",
+            Text: (string) (len=51) "Grundgedanken und Probleme der Relativitätstheorie",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=421) "Einstein, Albert (1924). \"Quantentheorie des einatomigen idealen Gases\". Sitzungsberichte der Preussischen Akademie der Wissenschaften, Physikalisch-Mathematische Klasse (in German): 261– 267. Archived from the original (Online page images) on 14 October 2016. Retrieved 26 February 2015 – via ECHO, Cultural Heritage Online, Max Planck Institute for the History of Science. First of a series of papers on this topic.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=165) "https://web.archive.org/web/20161014072015/http://echo.mpiwg-berlin.mpg.de/ECHOdocuView?url=%2Fpermanent%2Fecho%2Feinstein%2Fsitzungsberichte%2FPG8B073X%2Findex.meta",
+            Text: (string) (len=46) "\"Quantentheorie des einatomigen idealen Gases\"",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "http://echo.mpiwg-berlin.mpg.de/MPIWG:DRQK5WYB",
+            Text: (string) (len=12) "the original",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Max_Planck_Institute",
+            Text: (string) (len=20) "Max Planck Institute",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=308) "Einstein, Albert (12 March 1926). Written at Berlin. \"Die Ursache der Mäanderbildung der Flußläufe und des sogenannten Baerschen Gesetzes\". Die Naturwissenschaften (in German). 14 (11). Heidelberg, Germany: 223– 224. Bibcode: 1926NW.....14..223E. doi: 10.1007/BF01510300. ISSN 1432-1904. S2CID 39899416.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=10) {
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/Baer's_law",
+            Text: (string) (len=10) "Baer's law",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/Meander",
+            Text: (string) (len=8) "meanders",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+            Text: (string) (len=7) "Bibcode",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://ui.adsabs.harvard.edu/abs/1926NW.....14..223E",
+            Text: (string) (len=19) "1926NW.....14..223E",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+            Text: (string) (len=3) "doi",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=36) "https://doi.org/10.1007%2FBF01510300",
+            Text: (string) (len=18) "10.1007/BF01510300",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISSN_(identifier)",
+            Text: (string) (len=4) "ISSN",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://search.worldcat.org/issn/1432-1904",
+            Text: (string) (len=9) "1432-1904",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/S2CID_(identifier)",
+            Text: (string) (len=5) "S2CID",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://api.semanticscholar.org/CorpusID:39899416",
+            Text: (string) (len=8) "39899416",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=159) "Einstein, Albert (1931). \"Zum kosmologischen Problem der allgemeinen Relativitätstheorie\". Sonderasugabe aus den Sitzungsb. König. Preuss. Akad.: 235– 237.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=268) "Einstein, A.; de Sitter, W. (1932). \"On the relation between the expansion and the mean density of the universe\". Proceedings of the National Academy of Sciences. 18 (3): 213– 214. Bibcode: 1932PNAS...18..213E. doi: 10.1073/pnas.18.3.213. PMC 1076193. PMID 16587663.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=9) {
+          (*parser.Link)({
+            URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1076193",
+            Text: (string) (len=76) "\"On the relation between the expansion and the mean density of the universe\"",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+            Text: (string) (len=7) "Bibcode",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://ui.adsabs.harvard.edu/abs/1932PNAS...18..213E",
+            Text: (string) (len=19) "1932PNAS...18..213E",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+            Text: (string) (len=3) "doi",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=39) "https://doi.org/10.1073%2Fpnas.18.3.213",
+            Text: (string) (len=21) "10.1073/pnas.18.3.213",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+            Text: (string) (len=3) "PMC",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1076193",
+            Text: (string) (len=7) "1076193",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+            Text: (string) (len=4) "PMID",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/16587663",
+            Text: (string) (len=8) "16587663",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=186) "Einstein, Albert; Rosen, Nathan (1935). \"The Particle Problem in the General Theory of Relativity\". Physical Review. 48 (1): 73. Bibcode: 1935PhRv...48...73E. doi: 10.1103/PhysRev.48.73.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=6) {
+          (*parser.Link)({
+            URL: (string) (len=39) "https://doi.org/10.1103%2FPhysRev.48.73",
+            Text: (string) (len=58) "\"The Particle Problem in the General Theory of Relativity\"",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=45) "https://en.wikipedia.org/wiki/Physical_Review",
+            Text: (string) (len=15) "Physical Review",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+            Text: (string) (len=7) "Bibcode",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://ui.adsabs.harvard.edu/abs/1935PhRv...48...73E",
+            Text: (string) (len=19) "1935PhRv...48...73E",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+            Text: (string) (len=3) "doi",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=39) "https://doi.org/10.1103%2FPhysRev.48.73",
+            Text: (string) (len=21) "10.1103/PhysRev.48.73",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=286) "Einstein, Albert; Podolsky, Boris; Rosen, Nathan (15 May 1935). \"Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?\". Physical Review (Submitted manuscript). 47 (10): 777– 780. Bibcode: 1935PhRv...47..777E. doi: 10.1103/PhysRev.47.777 – via APS Journals.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=5) {
+          (*parser.Link)({
+            URL: (string) (len=33) "https://cds.cern.ch/record/405662",
+            Text: (string) (len=80) "\"Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?\"",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+            Text: (string) (len=7) "Bibcode",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://ui.adsabs.harvard.edu/abs/1935PhRv...47..777E",
+            Text: (string) (len=19) "1935PhRv...47..777E",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+            Text: (string) (len=3) "doi",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=40) "https://doi.org/10.1103%2FPhysRev.47.777",
+            Text: (string) (len=22) "10.1103/PhysRev.47.777",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=182) "Einstein, Albert (1950). \"On the Generalized Theory of Gravitation\". Scientific American. CLXXXII (4): 13– 17. Bibcode: 1950SciAm.182d..13E. doi: 10.1038/scientificamerican0450-13.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+            Text: (string) (len=7) "Bibcode",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://ui.adsabs.harvard.edu/abs/1950SciAm.182d..13E",
+            Text: (string) (len=19) "1950SciAm.182d..13E",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+            Text: (string) (len=3) "doi",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=51) "https://doi.org/10.1038%2Fscientificamerican0450-13",
+            Text: (string) (len=33) "10.1038/scientificamerican0450-13",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=88) "A reprint of this book was published by Edition Erbrich in 1982, ISBN 978-3-88682-005-4.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+            Text: (string) (len=4) "ISBN",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-3-88682-005-4",
+            Text: (string) (len=17) "978-3-88682-005-4",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=167) "Further information about the volumes published so far can be found on the webpages of the Einstein Papers Project and on the Princeton University Press Einstein Page.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=59) "https://en.wikipedia.org/wiki/Albert_Einstein#cite_note-337",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=59) "https://en.wikipedia.org/wiki/Albert_Einstein#cite_note-338",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=219) "Einstein, Albert; et al. (4 December 1948). \"To the editors of The New York Times \". The New York Times. Melville, New York. ISBN 978-0-7354-0359-8. Archived from the original on 17 December 2007. Retrieved 25 May 2006.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=5) {
+          (*parser.Link)({
+            URL: (string) (len=92) "https://web.archive.org/web/20071217113044/http://phys4.harvard.edu/~wilson/NYTimes1948.html",
+            Text: (string) (len=39) "\"To the editors of The New York Times \"",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/The_New_York_Times",
+            Text: (string) (len=18) "The New York Times",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+            Text: (string) (len=4) "ISBN",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-7354-0359-8",
+            Text: (string) (len=17) "978-0-7354-0359-8",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "http://phys4.harvard.edu/~wilson/NYTimes1948.html",
+            Text: (string) (len=12) "the original",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=366) "Einstein, Albert (May 1949). Sweezy, Paul; Huberman, Leo (eds.). \"Why Socialism?\". Monthly Review. 1 (1): 9– 15. doi: 10.14452/MR-001-01-1949-05_3. — — — — — — (May 2009). \"Why Socialism? (Reprise)\". Monthly Review. New York: Monthly Review Foundation. Archived from the original on 11 January 2006. Retrieved 16 January 2006 – via MonthlyReview.org.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=7) {
+          (*parser.Link)({
+            URL: (string) (len=50) "http://monthlyreview.org/2009/05/01/why-socialism/",
+            Text: (string) (len=16) "\"Why Socialism?\"",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/Monthly_Review",
+            Text: (string) (len=14) "Monthly Review",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+            Text: (string) (len=3) "doi",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://doi.org/10.14452%2FMR-001-01-1949-05_3",
+            Text: (string) (len=28) "10.14452/MR-001-01-1949-05_3",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=41) "http://www.monthlyreview.org/598einst.htm",
+            Text: (string) (len=26) "\"Why Socialism? (Reprise)\"",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/Monthly_Review",
+            Text: (string) (len=14) "Monthly Review",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=84) "https://web.archive.org/web/20060111081948/http://www.monthlyreview.org/598einst.htm",
+            Text: (string) (len=8) "Archived",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=253) "Einstein, Albert (September 1960). Foreword to Gandhi Wields the Weapon of Moral Power: Three Case Histories. Introduction by Bharatan Kumarappa. Ahmedabad: Navajivan Publishing House. pp. v–vi. OCLC 2325889. Foreword originally written in April 1953.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=78) "https://archive.org/download/gandhiwieldsweap00shar/gandhiwieldsweap00shar.pdf",
+            Text: (string) (len=75) "Foreword to Gandhi Wields the Weapon of Moral Power: Three Case Histories .",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/OCLC_(identifier)",
+            Text: (string) (len=4) "OCLC",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://www.worldcat.org/oclc/2325889",
+            Text: (string) (len=7) "2325889",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=74) "The chasing a light beam thought experiment is described on pages 48–51.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

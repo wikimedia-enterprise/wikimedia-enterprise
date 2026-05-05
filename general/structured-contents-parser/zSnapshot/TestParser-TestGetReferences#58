@@ -1,0 +1,1165 @@
+([]*parser.Reference) (len=38) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=110) "Russian doll. (n.d.). Collins English Dictionary Complete & Unabridged 10th Edition. Retrieved April 14, 2016.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=45) "http://www.dictionary.com/browse/russian-doll",
+          Text: (string) (len=12) "Russian doll",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=56) "https://en.wikipedia.org/wiki/Collins_English_Dictionary",
+          Text: (string) (len=26) "Collins English Dictionary",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=54) "Oxford English Dictionary Online. Accessed 2011-03-25.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=19) "http://www.oed.com/",
+          Text: (string) (len=32) "Oxford English Dictionary Online",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=18) "September 22, 2019",
+      (string) (len=9) "publisher": (string) (len=14) "Russian Legacy",
+      (string) (len=5) "title": (string) (len=40) "Matryoshka: Russian Wooden Nesting Dolls",
+      (string) (len=3) "url": (string) (len=54) "https://russianlegacy.com/matryoshka-nesting-dolls.htm"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=89) "\"Matryoshka: Russian Wooden Nesting Dolls\". Russian Legacy. Retrieved September 22, 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=54) "https://russianlegacy.com/matryoshka-nesting-dolls.htm",
+          Text: (string) (len=42) "\"Matryoshka: Russian Wooden Nesting Dolls\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=10) "2011-10-23",
+      (string) (len=12) "archive-date": (string) (len=10) "2011-08-17",
+      (string) (len=11) "archive-url": (string) (len=92) "https://web.archive.org/web/20110817043128/http://www.russianlife.com/article.cfm?Number=196",
+      (string) (len=5) "title": (string) (len=29) "Matryoshka – Soul of Russia",
+      (string) (len=3) "url": (string) (len=49) "http://www.russianlife.com/article.cfm?Number=196",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=4) "work": (string) (len=16) "[[Russian Life]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=110) "\"Matryoshka – Soul of Russia\". Russian Life. Archived from the original on 2011-08-17. Retrieved 2011-10-23.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=92) "https://web.archive.org/web/20110817043128/http://www.russianlife.com/article.cfm?Number=196",
+          Text: (string) (len=31) "\"Matryoshka – Soul of Russia\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://en.wikipedia.org/wiki/Russian_Life",
+          Text: (string) (len=12) "Russian Life",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "http://www.russianlife.com/article.cfm?Number=196",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=10) "2016-04-30",
+      (string) (len=5) "first": (string) (len=8) "James H.",
+      (string) (len=4) "isbn": (string) (len=17) "978-0-8018-7976-0",
+      (string) (len=4) "last": (string) (len=10) "Billington",
+      (string) (len=5) "pages": (string) (len=8) "148, 208",
+      (string) (len=9) "publisher": (string) (len=27) "Woodrow Wilson Center Press",
+      (string) (len=5) "title": (string) (len=26) "Russia in search of itself",
+      (string) (len=3) "url": (string) (len=77) "https://books.google.com/books?id=zRVi2XpqJuIC&q=Japanese+Matryoshka&pg=PA148",
+      (string) (len=4) "year": (string) (len=4) "2004"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=147) "Billington, James H. (2004). Russia in search of itself. Woodrow Wilson Center Press. pp.\u00a0148, 208. ISBN\u00a0978-0-8018-7976-0. Retrieved 2016-04-30.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=77) "https://books.google.com/books?id=zRVi2XpqJuIC&q=Japanese+Matryoshka&pg=PA148",
+          Text: (string) (len=26) "Russia in search of itself",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-8018-7976-0",
+          Text: (string) (len=17) "978-0-8018-7976-0",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=13) "31 March 2019",
+      (string) (len=6) "first1": (string) (len=7) "Gillian",
+      (string) (len=5) "last1": (string) (len=6) "Holmes",
+      (string) (len=9) "publisher": (string) (len=13) "Advameg, Inc.",
+      (string) (len=5) "title": (string) (len=15) "Matryoshka Doll",
+      (string) (len=3) "url": (string) (len=52) "http://www.madehow.com/Volume-6/Matryoshka-Doll.html",
+      (string) (len=7) "website": (string) (len=21) "How Products Are Made"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=97) "Holmes, Gillian. \"Matryoshka Doll\". How Products Are Made. Advameg, Inc. Retrieved 31 March 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=52) "http://www.madehow.com/Volume-6/Matryoshka-Doll.html",
+          Text: (string) (len=17) "\"Matryoshka Doll\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=12) "archive-date": (string) (len=13) "March 1, 2014",
+      (string) (len=11) "archive-url": (string) (len=111) "https://web.archive.org/web/20140301205606/http://int.rgo.ru/news/eastern-roots-of-the-most-famous-russian-toy/",
+      (string) (len=4) "date": (string) (len=10) "2011-03-24",
+      (string) (len=9) "publisher": (string) (len=28) "Russian Geographical Society",
+      (string) (len=5) "title": (string) (len=44) "Eastern roots of the most famous Russian toy",
+      (string) (len=3) "url": (string) (len=68) "http://int.rgo.ru/news/eastern-roots-of-the-most-famous-russian-toy/",
+      (string) (len=10) "url-status": (string) (len=4) "dead"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=134) "\"Eastern roots of the most famous Russian toy\". Russian Geographical Society. 2011-03-24. Archived from the original on March 1, 2014.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=111) "https://web.archive.org/web/20140301205606/http://int.rgo.ru/news/eastern-roots-of-the-most-famous-russian-toy/",
+          Text: (string) (len=46) "\"Eastern roots of the most famous Russian toy\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=68) "http://int.rgo.ru/news/eastern-roots-of-the-most-famous-russian-toy/",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=5) "first": (string) (len=4) "Rett",
+      (string) (len=4) "isbn": (string) (len=13) "0-9725027-1-8",
+      (string) (len=4) "last": (string) (len=4) "Ertl",
+      (string) (len=8) "location": (string) (len=16) "Boulder, CO, USA",
+      (string) (len=5) "pages": (string) (len=1) "8",
+      (string) (len=9) "publisher": (string) (len=21) "Vernissage Press, LLC",
+      (string) (len=5) "title": (string) (len=33) "The Art of the Russian Matryoshka",
+      (string) (len=4) "year": (string) (len=4) "2003"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=122) "Ertl, Rett (2003). The Art of the Russian Matryoshka. Boulder, CO, USA: Vernissage Press, LLC. p.\u00a08. ISBN\u00a00-9725027-1-8.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/0-9725027-1-8",
+          Text: (string) (len=13) "0-9725027-1-8",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=10) "2018-08-31",
+      (string) (len=4) "date": (string) (len=10) "2015-08-08",
+      (string) (len=5) "first": (string) (len=5) "Elena",
+      (string) (len=8) "language": (string) (len=5) "en-US",
+      (string) (len=4) "last": (string) (len=12) "Kostomárova",
+      (string) (len=5) "title": (string) (len=67) "More than just a pretty face: The secrets of the Russian matryoshka",
+      (string) (len=3) "url": (string) (len=85) "https://www.rbth.com/arts/2015/08/08/the_secrets_of_the_russian_matryoshka_48375.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=126) "Kostomárova, Elena (2015-08-08). \"More than just a pretty face: The secrets of the Russian matryoshka\". Retrieved 2018-08-31.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=85) "https://www.rbth.com/arts/2015/08/08/the_secrets_of_the_russian_matryoshka_48375.html",
+          Text: (string) (len=69) "\"More than just a pretty face: The secrets of the Russian matryoshka\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=71) "\"Три матрешки\" (Three matryoshkas), Vokrug sveta, July 1980.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=42) "http://www.vokrugsveta.ru/vs/article/1660/",
+          Text: (string) (len=23) "Три матрешки",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://en.wikipedia.org/wiki/Vokrug_sveta",
+          Text: (string) (len=12) "Vokrug sveta",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-11",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=5) "first": (string) (len=4) "Rett",
+      (string) (len=4) "isbn": (string) (len=13) "0-9725027-1-8",
+      (string) (len=4) "last": (string) (len=4) "Ertl",
+      (string) (len=8) "location": (string) (len=16) "Boulder, CO, USA",
+      (string) (len=5) "pages": (string) (len=1) "6",
+      (string) (len=9) "publisher": (string) (len=21) "Vernissage Press, LLC",
+      (string) (len=5) "title": (string) (len=33) "The Art of the Russian Matryoshka",
+      (string) (len=4) "year": (string) (len=4) "2003"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=122) "Ertl, Rett (2003). The Art of the Russian Matryoshka. Boulder, CO, USA: Vernissage Press, LLC. p.\u00a06. ISBN\u00a00-9725027-1-8.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/0-9725027-1-8",
+          Text: (string) (len=13) "0-9725027-1-8",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-12",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=5) "first": (string) (len=4) "Rett",
+      (string) (len=4) "isbn": (string) (len=13) "0-9725027-1-8",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=4) "last": (string) (len=4) "Ertl",
+      (string) (len=8) "location": (string) (len=16) "Boulder, CO, USA",
+      (string) (len=5) "pages": (string) (len=6) "9–10",
+      (string) (len=9) "publisher": (string) (len=21) "Vernissage Press, LLC",
+      (string) (len=5) "title": (string) (len=33) "The Art of the Russian Matryoshka",
+      (string) (len=4) "year": (string) (len=4) "2003"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=128) "Ertl, Rett (2003). The Art of the Russian Matryoshka. Boulder, CO, USA: Vernissage Press, LLC. pp.\u00a09–10. ISBN\u00a00-9725027-1-8.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/0-9725027-1-8",
+          Text: (string) (len=13) "0-9725027-1-8",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-13",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=10) "2024-10-13",
+      (string) (len=5) "title": (string) (len=53) "A Short History of Zagorsk and Sergiev-Posad Folk Art",
+      (string) (len=3) "url": (string) (len=81) "https://therussianshop.com/a-short-history-of-zagorsk-and-sergiev-posad-folk-art/",
+      (string) (len=7) "website": (string) (len=18) "therussianshop.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=98) "\"A Short History of Zagorsk and Sergiev-Posad Folk Art\". therussianshop.com. Retrieved 2024-10-13.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=81) "https://therussianshop.com/a-short-history-of-zagorsk-and-sergiev-posad-folk-art/",
+          Text: (string) (len=55) "\"A Short History of Zagorsk and Sergiev-Posad Folk Art\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-14",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=5) "first": (string) (len=4) "Rett",
+      (string) (len=4) "isbn": (string) (len=13) "0-9725027-1-8",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=4) "last": (string) (len=4) "Ertl",
+      (string) (len=8) "location": (string) (len=16) "Boulder, CO, USA",
+      (string) (len=5) "pages": (string) (len=9) "131–134",
+      (string) (len=9) "publisher": (string) (len=21) "Vernissage Press, LLC",
+      (string) (len=5) "title": (string) (len=33) "The Art of the Russian Matryoshka",
+      (string) (len=4) "year": (string) (len=4) "2003"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=131) "Ertl, Rett (2003). The Art of the Russian Matryoshka. Boulder, CO, USA: Vernissage Press, LLC. pp.\u00a0131–134. ISBN\u00a00-9725027-1-8.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/0-9725027-1-8",
+          Text: (string) (len=13) "0-9725027-1-8",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-15",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=10) "2024-10-13",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "title": (string) (len=48) "Collectible Nesting Dolls from Polkhovsky Maidan",
+      (string) (len=3) "url": (string) (len=81) "https://therussianshop.com/blog/collectible-nesting-dolls-from-polkhovsky-maidan/",
+      (string) (len=7) "website": (string) (len=12) "Maison Russe"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=87) "\"Collectible Nesting Dolls from Polkhovsky Maidan\". Maison Russe. Retrieved 2024-10-13.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=81) "https://therussianshop.com/blog/collectible-nesting-dolls-from-polkhovsky-maidan/",
+          Text: (string) (len=50) "\"Collectible Nesting Dolls from Polkhovsky Maidan\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-16",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=5) "first": (string) (len=4) "Rett",
+      (string) (len=4) "isbn": (string) (len=13) "0-9725027-1-8",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=4) "last": (string) (len=4) "Ertl",
+      (string) (len=8) "location": (string) (len=16) "Boulder, CO, USA",
+      (string) (len=5) "pages": (string) (len=9) "135–139",
+      (string) (len=9) "publisher": (string) (len=21) "Vernissage Press, LLC",
+      (string) (len=5) "title": (string) (len=33) "The Art of the Russian Matryoshka",
+      (string) (len=4) "year": (string) (len=4) "2003"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=131) "Ertl, Rett (2003). The Art of the Russian Matryoshka. Boulder, CO, USA: Vernissage Press, LLC. pp.\u00a0135–139. ISBN\u00a00-9725027-1-8.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/0-9725027-1-8",
+          Text: (string) (len=13) "0-9725027-1-8",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-17",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=114) "\"The hardworking women behind the matryoshkas hope for an Olympic boost\". July 18, 2011, Natalya Radulova, Ogonyok",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=115) "http://rbth.com/articles/2011/07/15/the_hardworking_women_behind_the_matryoshkas_hope_for_an_olympic_boo_13151.html",
+          Text: (string) (len=70) "The hardworking women behind the matryoshkas hope for an Olympic boost",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=37) "https://en.wikipedia.org/wiki/Ogonyok",
+          Text: (string) (len=7) "Ogonyok",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-18",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=5) "first": (string) (len=4) "Rett",
+      (string) (len=4) "isbn": (string) (len=13) "0-9725027-1-8",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=4) "last": (string) (len=4) "Ertl",
+      (string) (len=8) "location": (string) (len=16) "Boulder, CO, USA",
+      (string) (len=5) "pages": (string) (len=9) "139–141",
+      (string) (len=9) "publisher": (string) (len=21) "Vernissage Press, LLC",
+      (string) (len=5) "title": (string) (len=33) "The Art of the Russian Matryoshka",
+      (string) (len=4) "year": (string) (len=4) "2003"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=131) "Ertl, Rett (2003). The Art of the Russian Matryoshka. Boulder, CO, USA: Vernissage Press, LLC. pp.\u00a0139–141. ISBN\u00a00-9725027-1-8.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/0-9725027-1-8",
+          Text: (string) (len=13) "0-9725027-1-8",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-19",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=10) "2024-10-13",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "title": (string) (len=56) "Collectible Nesting Dolls from Kirov, Vyatka and Nolinsk",
+      (string) (len=3) "url": (string) (len=88) "https://therussianshop.com/blog/collectible-nesting-dolls-from-kirov-vyatka-and-nolinsk/",
+      (string) (len=7) "website": (string) (len=12) "Maison Russe"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=95) "\"Collectible Nesting Dolls from Kirov, Vyatka and Nolinsk\". Maison Russe. Retrieved 2024-10-13.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=88) "https://therussianshop.com/blog/collectible-nesting-dolls-from-kirov-vyatka-and-nolinsk/",
+          Text: (string) (len=58) "\"Collectible Nesting Dolls from Kirov, Vyatka and Nolinsk\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-20",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=5) "first": (string) (len=4) "Rett",
+      (string) (len=4) "isbn": (string) (len=13) "0-9725027-1-8",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=4) "last": (string) (len=4) "Ertl",
+      (string) (len=8) "location": (string) (len=16) "Boulder, CO, USA",
+      (string) (len=5) "pages": (string) (len=9) "139–141",
+      (string) (len=9) "publisher": (string) (len=21) "Vernissage Press, LLC",
+      (string) (len=5) "title": (string) (len=33) "The Art of the Russian Matryoshka",
+      (string) (len=4) "year": (string) (len=4) "2003"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=131) "Ertl, Rett (2003). The Art of the Russian Matryoshka. Boulder, CO, USA: Vernissage Press, LLC. pp.\u00a0139–141. ISBN\u00a00-9725027-1-8.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/0-9725027-1-8",
+          Text: (string) (len=13) "0-9725027-1-8",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-21",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=5) "first": (string) (len=4) "Rett",
+      (string) (len=4) "isbn": (string) (len=13) "0-9725027-1-8",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=4) "last": (string) (len=4) "Ertl",
+      (string) (len=8) "location": (string) (len=16) "Boulder, CO, USA",
+      (string) (len=5) "pages": (string) (len=3) "155",
+      (string) (len=9) "publisher": (string) (len=21) "Vernissage Press, LLC",
+      (string) (len=5) "title": (string) (len=33) "The Art of the Russian Matryoshka",
+      (string) (len=4) "year": (string) (len=4) "2003"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=124) "Ertl, Rett (2003). The Art of the Russian Matryoshka. Boulder, CO, USA: Vernissage Press, LLC. p.\u00a0155. ISBN\u00a00-9725027-1-8.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/0-9725027-1-8",
+          Text: (string) (len=13) "0-9725027-1-8",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-22",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=5) "first": (string) (len=4) "Rett",
+      (string) (len=4) "isbn": (string) (len=13) "0-9725027-1-8",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=4) "last": (string) (len=4) "Ertl",
+      (string) (len=8) "location": (string) (len=16) "Boulder, CO, USA",
+      (string) (len=5) "pages": (string) (len=3) "159",
+      (string) (len=9) "publisher": (string) (len=21) "Vernissage Press, LLC",
+      (string) (len=5) "title": (string) (len=33) "The Art of the Russian Matryoshka",
+      (string) (len=4) "year": (string) (len=4) "2003"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=124) "Ertl, Rett (2003). The Art of the Russian Matryoshka. Boulder, CO, USA: Vernissage Press, LLC. p.\u00a0159. ISBN\u00a00-9725027-1-8.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/0-9725027-1-8",
+          Text: (string) (len=13) "0-9725027-1-8",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-23",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=12) "May 15, 2019",
+      (string) (len=4) "date": (string) (len=14) "March 11, 2014",
+      (string) (len=6) "first1": (string) (len=5) "Roman",
+      (string) (len=6) "format": (string) (len=5) "Video",
+      (string) (len=5) "last1": (string) (len=9) "Karkachev",
+      (string) (len=5) "title": (string) (len=43) "How Nesting Dolls Are Made – Full Version",
+      (string) (len=3) "url": (string) (len=43) "https://www.youtube.com/watch?v=70scy4tFaUM",
+      (string) (len=3) "via": (string) (len=11) "[[YouTube]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=129) "Karkachev, Roman (March 11, 2014). \"How Nesting Dolls Are Made – Full Version\" (Video). Retrieved May 15, 2019 – via YouTube.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=43) "https://www.youtube.com/watch?v=70scy4tFaUM",
+          Text: (string) (len=45) "\"How Nesting Dolls Are Made – Full Version\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=37) "https://en.wikipedia.org/wiki/YouTube",
+          Text: (string) (len=7) "YouTube",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-24",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=5) "first": (string) (len=4) "Rett",
+      (string) (len=4) "isbn": (string) (len=13) "0-9725027-1-8",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=4) "last": (string) (len=4) "Ertl",
+      (string) (len=8) "location": (string) (len=16) "Boulder, CO, USA",
+      (string) (len=5) "pages": (string) (len=7) "45–59",
+      (string) (len=9) "publisher": (string) (len=21) "Vernissage Press, LLC",
+      (string) (len=5) "title": (string) (len=33) "The Art of the Russian Matryoshka",
+      (string) (len=4) "year": (string) (len=4) "2003"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=129) "Ertl, Rett (2003). The Art of the Russian Matryoshka. Boulder, CO, USA: Vernissage Press, LLC. pp.\u00a045–59. ISBN\u00a00-9725027-1-8.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/0-9725027-1-8",
+          Text: (string) (len=13) "0-9725027-1-8",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-25",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=5) "first": (string) (len=4) "Rett",
+      (string) (len=4) "isbn": (string) (len=13) "0-9725027-1-8",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=4) "last": (string) (len=4) "Ertl",
+      (string) (len=8) "location": (string) (len=16) "Boulder, CO, USA",
+      (string) (len=5) "pages": (string) (len=7) "41–45",
+      (string) (len=9) "publisher": (string) (len=21) "Vernissage Press, LLC",
+      (string) (len=5) "title": (string) (len=33) "The Art of the Russian Matryoshka",
+      (string) (len=4) "year": (string) (len=4) "2003"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=129) "Ertl, Rett (2003). The Art of the Russian Matryoshka. Boulder, CO, USA: Vernissage Press, LLC. pp.\u00a041–45. ISBN\u00a00-9725027-1-8.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/0-9725027-1-8",
+          Text: (string) (len=13) "0-9725027-1-8",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-26",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=10) "2017-07-05",
+      (string) (len=4) "date": (string) (len=13) "February 2020",
+      (string) (len=5) "title": (string) (len=16) "Matryoshka dolls",
+      (string) (len=3) "url": (string) (len=64) "https://www.stpgoods.com/russian-dolls/nesting-dolls-matryoshkas",
+      (string) (len=4) "work": (string) (len=8) "STPgoods"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=66) "\"Matryoshka dolls\". STPgoods. February 2020. Retrieved 2017-07-05.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=64) "https://www.stpgoods.com/russian-dolls/nesting-dolls-matryoshkas",
+          Text: (string) (len=18) "\"Matryoshka dolls\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-27",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=15) "15 January 2017",
+      (string) (len=4) "date": (string) (len=13) "25 April 2003",
+      (string) (len=5) "title": (string) (len=41) "Largest Russian nesting doll (matryoshka)",
+      (string) (len=3) "url": (string) (len=92) "http://www.guinnessworldrecords.com/world-records/largest-russian-nesting-doll-(matryoshka)/",
+      (string) (len=4) "work": (string) (len=24) "guinnessworldrecords.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "\"Largest Russian nesting doll (matryoshka)\". guinnessworldrecords.com. 25 April 2003. Retrieved 15 January 2017.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=92) "http://www.guinnessworldrecords.com/world-records/largest-russian-nesting-doll-(matryoshka)/",
+          Text: (string) (len=43) "\"Largest Russian nesting doll (matryoshka)\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-28",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=15) "11 October 2019",
+      (string) (len=4) "date": (string) (len=14) "4 January 2016",
+      (string) (len=6) "first1": (string) (len=5) "Chido",
+      (string) (len=5) "last1": (string) (len=4) "Dunn",
+      (string) (len=9) "publisher": (string) (len=3) "ITV",
+      (string) (len=5) "title": (string) (len=52) "Panama leaks: how are the rich getting away with it?",
+      (string) (len=3) "url": (string) (len=87) "https://www.itv.com/news/2016-04-04/panama-leaks-how-are-the-rich-getting-away-with-it/"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=117) "Dunn, Chido (4 January 2016). \"Panama leaks: how are the rich getting away with it?\". ITV. Retrieved 11 October 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=87) "https://www.itv.com/news/2016-04-04/panama-leaks-how-are-the-rich-getting-away-with-it/",
+          Text: (string) (len=54) "\"Panama leaks: how are the rich getting away with it?\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-29",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=4) "date": (string) (len=13) "July 23, 2020",
+      (string) (len=6) "first1": (string) (len=4) "Ryan",
+      (string) (len=5) "last1": (string) (len=8) "Pickrell",
+      (string) (len=5) "title": (string) (len=140) "Science: A Russian satellite caught shadowing a US spy satellite earlier this year launched a mysterious space weapon, US Space Command says",
+      (string) (len=3) "url": (string) (len=79) "https://www.yahoo.com/news/russian-satellite-caught-shadowing-us-151217976.html",
+      (string) (len=3) "via": (string) (len=10) "[[Yahoo!]]",
+      (string) (len=4) "work": (string) (len=20) "[[Business Insider]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=208) "Pickrell, Ryan (July 23, 2020). \"Science: A Russian satellite caught shadowing a US spy satellite earlier this year launched a mysterious space weapon, US Space Command says\". Business Insider – via Yahoo!.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=79) "https://www.yahoo.com/news/russian-satellite-caught-shadowing-us-151217976.html",
+          Text: (string) (len=142) "\"Science: A Russian satellite caught shadowing a US spy satellite earlier this year launched a mysterious space weapon, US Space Command says\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Business_Insider",
+          Text: (string) (len=16) "Business Insider",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=36) "https://en.wikipedia.org/wiki/Yahoo!",
+          Text: (string) (len=6) "Yahoo!",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-30",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=7) "edition": (string) (len=16) "1st Midland Book",
+      (string) (len=5) "first": (string) (len=6) "Joanna",
+      (string) (len=4) "isbn": (string) (len=17) "978-0-253-20842-2",
+      (string) (len=4) "last": (string) (len=5) "Hubbs",
+      (string) (len=8) "location": (string) (len=11) "Bloomington",
+      (string) (len=4) "oclc": (string) (len=8) "29539185",
+      (string) (len=9) "orig-year": (string) (len=4) "1988",
+      (string) (len=4) "page": (string) (len=2) "19",
+      (string) (len=9) "publisher": (string) (len=28) "[[Indiana University Press]]",
+      (string) (len=5) "title": (string) (len=51) "Mother Russia: The Feminine Myth in Russian Culture",
+      (string) (len=4) "year": (string) (len=4) "1993"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=193) "Hubbs, Joanna (1993) [1988]. Mother Russia: The Feminine Myth in Russian Culture (1st Midland Book\u00a0ed.). Bloomington: Indiana University Press. p.\u00a019. ISBN\u00a0978-0-253-20842-2. OCLC\u00a029539185.",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=54) "https://en.wikipedia.org/wiki/Indiana_University_Press",
+          Text: (string) (len=24) "Indiana University Press",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-253-20842-2",
+          Text: (string) (len=17) "978-0-253-20842-2",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/OCLC_(identifier)",
+          Text: (string) (len=4) "OCLC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=41) "https://search.worldcat.org/oclc/29539185",
+          Text: (string) (len=8) "29539185",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-31",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=10) "2018-09-30",
+      (string) (len=4) "date": (string) (len=10) "2015-08-08",
+      (string) (len=5) "first": (string) (len=5) "Elena",
+      (string) (len=8) "language": (string) (len=5) "en-US",
+      (string) (len=4) "last": (string) (len=12) "Kostomárova",
+      (string) (len=5) "pages": (string) (len=6) "8–12",
+      (string) (len=5) "title": (string) (len=67) "More than just a pretty face: The secrets of the Russian matryoshka",
+      (string) (len=3) "url": (string) (len=85) "https://www.rbth.com/arts/2015/08/08/the_secrets_of_the_russian_matryoshka_48375.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=139) "Kostomárova, Elena (2015-08-08). \"More than just a pretty face: The secrets of the Russian matryoshka\". pp.\u00a08–12. Retrieved 2018-09-30.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=85) "https://www.rbth.com/arts/2015/08/08/the_secrets_of_the_russian_matryoshka_48375.html",
+          Text: (string) (len=69) "\"More than just a pretty face: The secrets of the Russian matryoshka\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-32",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=10) "2021-06-23",
+      (string) (len=5) "title": (string) (len=148) "Knigi-janzen.de - Магнит в форме матрешки \"Россия матушка\" {{!}} Купить в интернет-магазине.",
+      (string) (len=3) "url": (string) (len=47) "https://www.knigi-janzen.de/view.php?gid=678827",
+      (string) (len=7) "website": (string) (len=19) "www.knigi-janzen.de"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=189) "\"Knigi-janzen.de - Магнит в форме матрешки \"Россия матушка\" | Купить в интернет-магазине\". www.knigi-janzen.de. Retrieved 2021-06-23.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://www.knigi-janzen.de/view.php?gid=678827",
+          Text: (string) (len=145) "\"Knigi-janzen.de - Магнит в форме матрешки \"Россия матушка\" | Купить в интернет-магазине\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-33",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=4) "date": (string) (len=4) "2012",
+      (string) (len=7) "edition": (string) (len=17) "Quality paperback",
+      (string) (len=5) "first": (string) (len=4) "Rami",
+      (string) (len=4) "isbn": (string) (len=17) "978-1-59473-372-7",
+      (string) (len=4) "last": (string) (len=7) "Shapiro",
+      (string) (len=8) "location": (string) (len=13) "Woodstock, VT",
+      (string) (len=4) "oclc": (string) (len=9) "767566167",
+      (string) (len=6) "others": (string) (len=14) "Shapiro, Aaron",
+      (string) (len=4) "page": (string) (len=3) "137",
+      (string) (len=9) "publisher": (string) (len=18) "SkyLight Paths Pub",
+      (string) (len=5) "title": (string) (len=65) "Writing – The Sacred Art: Beyond the Page to Spiritual Practice"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=215) "Shapiro, Rami (2012). Writing – The Sacred Art: Beyond the Page to Spiritual Practice. Shapiro, Aaron (Quality paperback\u00a0ed.). Woodstock, VT: SkyLight Paths Pub. p.\u00a0137. ISBN\u00a0978-1-59473-372-7. OCLC\u00a0767566167.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-1-59473-372-7",
+          Text: (string) (len=17) "978-1-59473-372-7",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/OCLC_(identifier)",
+          Text: (string) (len=4) "OCLC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://search.worldcat.org/oclc/767566167",
+          Text: (string) (len=9) "767566167",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-34",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=4) "date": (string) (len=4) "2012",
+      (string) (len=5) "first": (string) (len=5) "Janet",
+      (string) (len=4) "isbn": (string) (len=17) "978-1-4691-5764-1",
+      (string) (len=4) "last": (string) (len=6) "Baljeu",
+      (string) (len=4) "oclc": (string) (len=9) "934717840",
+      (string) (len=9) "publisher": (string) (len=7) "Xlibris",
+      (string) (len=5) "title": (string) (len=28) "Downloading Spirit: Babushka"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=102) "Baljeu, Janet (2012). Downloading Spirit: Babushka. Xlibris. ISBN\u00a0978-1-4691-5764-1. OCLC\u00a0934717840.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-1-4691-5764-1",
+          Text: (string) (len=17) "978-1-4691-5764-1",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/OCLC_(identifier)",
+          Text: (string) (len=4) "OCLC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://search.worldcat.org/oclc/934717840",
+          Text: (string) (len=9) "934717840",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-35",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "date": (string) (len=4) "2007",
+      (string) (len=7) "edition": (string) (len=3) "1st",
+      (string) (len=5) "first": (string) (len=4) "John",
+      (string) (len=4) "isbn": (string) (len=17) "978-1-4019-1085-3",
+      (string) (len=4) "last": (string) (len=7) "Holland",
+      (string) (len=8) "location": (string) (len=12) "Carlsbad, CA",
+      (string) (len=4) "oclc": (string) (len=8) "70836680",
+      (string) (len=4) "page": (string) (len=1) "3",
+      (string) (len=9) "publisher": (string) (len=9) "Hay House",
+      (string) (len=5) "title": (string) (len=53) "Power of the Soul: Inside Wisdom for an Outside World"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=160) "Holland, John (2007). Power of the Soul: Inside Wisdom for an Outside World (1st\u00a0ed.). Carlsbad, CA: Hay House. p.\u00a03. ISBN\u00a0978-1-4019-1085-3. OCLC\u00a070836680.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-1-4019-1085-3",
+          Text: (string) (len=17) "978-1-4019-1085-3",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/OCLC_(identifier)",
+          Text: (string) (len=4) "OCLC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=41) "https://search.worldcat.org/oclc/70836680",
+          Text: (string) (len=8) "70836680",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-36",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=12) "archive-date": (string) (len=10) "8 May 2020",
+      (string) (len=11) "archive-url": (string) (len=98) "https://web.archive.org/web/20200508124720/http://www.unicode.org/emoji/charts/emoji-released.html",
+      (string) (len=9) "publisher": (string) (len=11) "Unicode.org",
+      (string) (len=5) "title": (string) (len=35) "Emoji Recently Added, Unicode v13.0",
+      (string) (len=3) "url": (string) (len=56) "https://www.unicode.org/emoji/charts/emoji-released.html",
+      (string) (len=7) "website": (string) (len=18) "Unicode Consortium"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=113) "\"Emoji Recently Added, Unicode v13.0\". Unicode Consortium. Unicode.org. Archived from the original on 8 May 2020.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=98) "https://web.archive.org/web/20200508124720/http://www.unicode.org/emoji/charts/emoji-released.html",
+          Text: (string) (len=37) "\"Emoji Recently Added, Unicode v13.0\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=56) "https://www.unicode.org/emoji/charts/emoji-released.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-37",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=10) "7 May 2020",
+      (string) (len=6) "first1": (string) (len=3) "Jef",
+      (string) (len=6) "first2": (string) (len=8) "Samantha",
+      (string) (len=5) "last1": (string) (len=4) "Gray",
+      (string) (len=5) "last2": (string) (len=5) "Sunne",
+      (string) (len=9) "publisher": (string) (len=11) "Unicode.org",
+      (string) (len=5) "title": (string) (len=29) "Proposal for Matryoshka Emoji",
+      (string) (len=3) "url": (string) (len=59) "https://www.unicode.org/L2/L2019/19096-matryoshka-emoji.pdf"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=101) "Gray, Jef; Sunne, Samantha. \"Proposal for Matryoshka Emoji\" (PDF). Unicode.org. Retrieved 7 May 2020.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=59) "https://www.unicode.org/L2/L2019/19096-matryoshka-emoji.pdf",
+          Text: (string) (len=31) "\"Proposal for Matryoshka Emoji\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-38",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=10) "2021-09-24",
+      (string) (len=12) "archive-date": (string) (len=16) "February 8, 2019",
+      (string) (len=11) "archive-url": (string) (len=102) "https://web.archive.org/web/20190208070404/http://www.xinhuanet.com/english/2019-02/08/c_137806353.htm",
+      (string) (len=5) "title": (string) (len=98) "Across China: Russian matryoshka dolls find home in northeast China - Xinhua {{!}} English.news.cn",
+      (string) (len=3) "url": (string) (len=59) "http://www.xinhuanet.com/english/2019-02/08/c_137806353.htm",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=7) "website": (string) (len=17) "www.xinhuanet.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=186) "\"Across China: Russian matryoshka dolls find home in northeast China - Xinhua | English.news.cn\". www.xinhuanet.com. Archived from the original on February 8, 2019. Retrieved 2021-09-24.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=102) "https://web.archive.org/web/20190208070404/http://www.xinhuanet.com/english/2019-02/08/c_137806353.htm",
+          Text: (string) (len=96) "\"Across China: Russian matryoshka dolls find home in northeast China - Xinhua | English.news.cn\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=59) "http://www.xinhuanet.com/english/2019-02/08/c_137806353.htm",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

@@ -1,0 +1,3211 @@
+([]*parser.Reference) (len=116) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=7) "ctx_ver": (string) (len=11) "Z39.88-2004",
+      (string) (len=8) "is_coins": (string) (len=4) "true",
+      (string) (len=6) "rfr_id": (string) (len=74) "info:sid/en.wikipedia.org:January–February 2019 North American cold wave",
+      (string) (len=10) "rft.btitle": (string) (len=57) "Coldest Temperatures Ever Measured in the Contiguous U.S.",
+      (string) (len=9) "rft.genre": (string) (len=7) "unknown",
+      (string) (len=6) "rft_id": (string) (len=82) "https://www.wunderground.com/cat6/Coldest-Temperatures-Ever-Measured-Contiguous-US",
+      (string) (len=11) "rft_val_fmt": (string) (len=25) "info:ofi/fmt:kev:mtx:book"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=59) "\"Coldest Temperatures Ever Measured in the Contiguous U.S.\"",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=82) "https://www.wunderground.com/cat6/Coldest-Temperatures-Ever-Measured-Contiguous-US",
+          Text: (string) (len=59) "\"Coldest Temperatures Ever Measured in the Contiguous U.S.\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=7) "ctx_ver": (string) (len=11) "Z39.88-2004",
+      (string) (len=8) "is_coins": (string) (len=4) "true",
+      (string) (len=6) "rfr_id": (string) (len=74) "info:sid/en.wikipedia.org:January–February 2019 North American cold wave",
+      (string) (len=10) "rft.atitle": (string) (len=61) "Polar vortex death toll rises to 21 as US cold snap continues",
+      (string) (len=8) "rft.date": (string) (len=7) "2019-02",
+      (string) (len=9) "rft.genre": (string) (len=7) "article",
+      (string) (len=10) "rft.jtitle": (string) (len=8) "BBC News",
+      (string) (len=6) "rft_id": (string) (len=49) "https://www.bbc.com/news/world-us-canada-47088684",
+      (string) (len=11) "rft_val_fmt": (string) (len=28) "info:ofi/fmt:kev:mtx:journal"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=170) "\"Polar vortex death toll rises to 21 as US cold snap continues\". BBC News. BBC. February 2019. Archived from the original on February 1, 2019. Retrieved February 1, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=49) "https://www.bbc.com/news/world-us-canada-47088684",
+          Text: (string) (len=63) "\"Polar vortex death toll rises to 21 as US cold snap continues\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=92) "https://web.archive.org/web/20190201190820/https://www.bbc.com/news/world-us-canada-47088684",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=7) "ctx_ver": (string) (len=11) "Z39.88-2004",
+      (string) (len=8) "is_coins": (string) (len=4) "true",
+      (string) (len=6) "rfr_id": (string) (len=74) "info:sid/en.wikipedia.org:January–February 2019 North American cold wave",
+      (string) (len=10) "rft.btitle": (string) (len=97) "Death of man found near Commonwealth Stadium cold weather-related: police &#124; Edmonton Journal",
+      (string) (len=8) "rft.date": (string) (len=10) "2019-02-03",
+      (string) (len=9) "rft.genre": (string) (len=7) "unknown",
+      (string) (len=6) "rft_id": (string) (len=116) "https://edmontonjournal.com/news/local-news/death-of-man-found-near-commonwealth-stadium-cold-weather-related-police",
+      (string) (len=11) "rft_val_fmt": (string) (len=25) "info:ofi/fmt:kev:mtx:book"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=189) "\"Death of man found near Commonwealth Stadium cold weather-related: police | Edmonton Journal\". February 3, 2019. Archived from the original on February 4, 2019. Retrieved February 4, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=116) "https://edmontonjournal.com/news/local-news/death-of-man-found-near-commonwealth-stadium-cold-weather-related-police",
+          Text: (string) (len=94) "\"Death of man found near Commonwealth Stadium cold weather-related: police | Edmonton Journal\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=159) "https://web.archive.org/web/20190204064338/https://edmontonjournal.com/news/local-news/death-of-man-found-near-commonwealth-stadium-cold-weather-related-police",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=7) "ctx_ver": (string) (len=11) "Z39.88-2004",
+      (string) (len=8) "is_coins": (string) (len=4) "true",
+      (string) (len=6) "rfr_id": (string) (len=74) "info:sid/en.wikipedia.org:January–February 2019 North American cold wave",
+      (string) (len=10) "rft.atitle": (string) (len=38) "Global Catastrophe Recap December 2019",
+      (string) (len=9) "rft.genre": (string) (len=7) "unknown",
+      (string) (len=10) "rft.jtitle": (string) (len=12) "Aon Benfield",
+      (string) (len=6) "rft_id": (string) (len=102) "https://www.aon.com/reinsurance/getmedia/511b74ce-0070-451b-926e-d8517be0502b/20200121-if-dec.pdf.aspx",
+      (string) (len=11) "rft_val_fmt": (string) (len=28) "info:ofi/fmt:kev:mtx:journal"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=83) "\"Global Catastrophe Recap December 2019\". Aon Benfield. Retrieved November 1, 2022.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=102) "https://www.aon.com/reinsurance/getmedia/511b74ce-0070-451b-926e-d8517be0502b/20200121-if-dec.pdf.aspx",
+          Text: (string) (len=40) "\"Global Catastrophe Recap December 2019\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=16) "February 4, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "February 3, 2019",
+      (string) (len=11) "archive-url": (string) (len=114) "https://web.archive.org/web/20190203214731/https://www.noaa.gov/multimedia/infographic/science-behind-polar-vortex",
+      (string) (len=4) "date": (string) (len=12) "Jan 29, 2019",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=5) "title": (string) (len=35) "The Science behind the Polar Vortex",
+      (string) (len=3) "url": (string) (len=71) "https://www.noaa.gov/multimedia/infographic/science-behind-polar-vortex",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=24) "National Weather Service"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=158) "\"The Science behind the Polar Vortex\". National Weather Service. January 29, 2019. Archived from the original on February 3, 2019. Retrieved February 4, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=71) "https://www.noaa.gov/multimedia/infographic/science-behind-polar-vortex",
+          Text: (string) (len=37) "\"The Science behind the Polar Vortex\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=114) "https://web.archive.org/web/20190203214731/https://www.noaa.gov/multimedia/infographic/science-behind-polar-vortex",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=14) {
+      (string) (len=11) "access-date": (string) (len=16) "February 2, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "February 2, 2019",
+      (string) (len=11) "archive-url": (string) (len=117) "https://web.archive.org/web/20190202032957/https://weather.com/news/news/2019-01-28-winter-storm-jayden-impacts-preps",
+      (string) (len=4) "date": (string) (len=16) "January 29, 2019",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=6) "first1": (string) (len=3) "Ron",
+      (string) (len=6) "first2": (string) (len=3) "Pam",
+      (string) (len=5) "last1": (string) (len=8) "Brackett",
+      (string) (len=5) "last2": (string) (len=6) "Wright",
+      (string) (len=9) "publisher": (string) (len=23) "[[The Weather Channel]]",
+      (string) (len=5) "title": (string) (len=113) "Winter Storm Jayden: More Than 1,300 Flights Canceled, State Offices and Schools Closed in Midwest, South; 3 Dead",
+      (string) (len=3) "url": (string) (len=74) "https://weather.com/news/news/2019-01-28-winter-storm-jayden-impacts-preps",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=7) "website": (string) (len=11) "Weather.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=273) "Brackett, Ron; Wright, Pam (January 29, 2019). \"Winter Storm Jayden: More Than 1,300 Flights Canceled, State Offices and Schools Closed in Midwest, South; 3 Dead\". Weather.com. The Weather Channel. Archived from the original on February 2, 2019. Retrieved February 2, 2019.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=74) "https://weather.com/news/news/2019-01-28-winter-storm-jayden-impacts-preps",
+          Text: (string) (len=115) "\"Winter Storm Jayden: More Than 1,300 Flights Canceled, State Offices and Schools Closed in Midwest, South; 3 Dead\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://en.wikipedia.org/wiki/The_Weather_Channel",
+          Text: (string) (len=19) "The Weather Channel",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=117) "https://web.archive.org/web/20190202032957/https://weather.com/news/news/2019-01-28-winter-storm-jayden-impacts-preps",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=10) "webarchive",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "date": (string) (len=16) "February 4, 2019",
+      (string) (len=3) "url": (string) (len=145) "https://web.archive.org/web/20190204143226/https://edmontonjournal.com/news/local-news/edmonton-feels-the-cold-as-polar-vortex-makes-its-way-west"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=143) "Edmonton feels the cold as polar vortex makes its way west Archived February 4, 2019, at the Wayback Machine Edmonton Journal, February 2, 2019",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=102) "https://edmontonjournal.com/news/local-news/edmonton-feels-the-cold-as-polar-vortex-makes-its-way-west",
+          Text: (string) (len=58) "Edmonton feels the cold as polar vortex makes its way west",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=145) "https://web.archive.org/web/20190204143226/https://edmontonjournal.com/news/local-news/edmonton-feels-the-cold-as-polar-vortex-makes-its-way-west",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Wayback_Machine",
+          Text: (string) (len=15) "Wayback Machine",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=8) "language": (string) (len=5) "en-CA",
+      (string) (len=5) "title": (string) (len=87) "Sorry, B.C. — Polar vortex moves west as central, eastern Canada get a hint of spring",
+      (string) (len=3) "url": (string) (len=145) "https://www.msn.com/en-ca/weather/topstories/sorry-bc-%E2%80%94-polar-vortex-moves-west-as-central-eastern-canada-get-a-hint-of-spring/ar-BBTaGZb",
+      (string) (len=7) "website": (string) (len=3) "MSN"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=95) "\"Sorry, B.C. — Polar vortex moves west as central, eastern Canada get a hint of spring\". MSN.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=145) "https://www.msn.com/en-ca/weather/topstories/sorry-bc-%E2%80%94-polar-vortex-moves-west-as-central-eastern-canada-get-a-hint-of-spring/ar-BBTaGZb",
+          Text: (string) (len=89) "\"Sorry, B.C. — Polar vortex moves west as central, eastern Canada get a hint of spring\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=11) "access-date": (string) (len=14) "March 24, 2019",
+      (string) (len=4) "date": (string) (len=13) "March 5, 2019",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=6) "first1": (string) (len=3) "Ron",
+      (string) (len=6) "first2": (string) (len=3) "Pam",
+      (string) (len=5) "last1": (string) (len=8) "Brackett",
+      (string) (len=5) "last2": (string) (len=6) "Wright",
+      (string) (len=9) "publisher": (string) (len=23) "[[The Weather Channel]]",
+      (string) (len=5) "title": (string) (len=81) "The Coldest March Outbreak in Years Breaks Records in Rockies, Plains and Midwest",
+      (string) (len=3) "url": (string) (len=96) "https://weather.com/forecast/national/news/2019-02-26-march-cold-outbreak-midwest-plains-rockies",
+      (string) (len=7) "website": (string) (len=11) "Weather.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=188) "Brackett, Ron; Wright, Pam (March 5, 2019). \"The Coldest March Outbreak in Years Breaks Records in Rockies, Plains and Midwest\". Weather.com. The Weather Channel. Retrieved March 24, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=96) "https://weather.com/forecast/national/news/2019-02-26-march-cold-outbreak-midwest-plains-rockies",
+          Text: (string) (len=83) "\"The Coldest March Outbreak in Years Breaks Records in Rockies, Plains and Midwest\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://en.wikipedia.org/wiki/The_Weather_Channel",
+          Text: (string) (len=19) "The Weather Channel",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=11) "access-date": (string) (len=16) "January 31, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "January 30, 2019",
+      (string) (len=11) "archive-url": (string) (len=146) "https://web.archive.org/web/20190130180052/http://blogs.discovermagazine.com/crux/2019/01/29/polar-vortex-record-cold-temperatures-climate-change/",
+      (string) (len=4) "date": (string) (len=16) "January 29, 2019",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=5) "first": (string) (len=8) "Jennifer",
+      (string) (len=4) "last": (string) (len=7) "Francis",
+      (string) (len=5) "title": (string) (len=53) "Why Climate Change is Bringing the Polar Vortex South",
+      (string) (len=3) "url": (string) (len=103) "http://blogs.discovermagazine.com/crux/2019/01/29/polar-vortex-record-cold-temperatures-climate-change/",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=32) "[[Discover (magazine)|Discover]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=180) "Francis, Jennifer (January 29, 2019). \"Why Climate Change is Bringing the Polar Vortex South\". Discover. Archived from the original on January 30, 2019. Retrieved January 31, 2019.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=103) "http://blogs.discovermagazine.com/crux/2019/01/29/polar-vortex-record-cold-temperatures-climate-change/",
+          Text: (string) (len=55) "\"Why Climate Change is Bringing the Polar Vortex South\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://en.wikipedia.org/wiki/Discover_(magazine)",
+          Text: (string) (len=8) "Discover",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=146) "https://web.archive.org/web/20190130180052/http://blogs.discovermagazine.com/crux/2019/01/29/polar-vortex-record-cold-temperatures-climate-change/",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-11",
+    Group: (string) "",
+    Type: (string) (len=10) "webarchive",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "date": (string) (len=16) "January 31, 2019",
+      (string) (len=3) "url": (string) (len=106) "https://web.archive.org/web/20190131203618/https://www.nytimes.com/2019/01/31/us/weather-polar-vortex.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=146) "Polar Vortex Live Updates: Bitter Cold Weather Spreads East Archived January 31, 2019, at the Wayback Machine The New York Times, January 31, 2019",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=63) "https://www.nytimes.com/2019/01/31/us/weather-polar-vortex.html",
+          Text: (string) (len=59) "Polar Vortex Live Updates: Bitter Cold Weather Spreads East",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=106) "https://web.archive.org/web/20190131203618/https://www.nytimes.com/2019/01/31/us/weather-polar-vortex.html",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Wayback_Machine",
+          Text: (string) (len=15) "Wayback Machine",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-12",
+    Group: (string) "",
+    Type: (string) (len=10) "webarchive",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "date": (string) (len=16) "January 31, 2019",
+      (string) (len=3) "url": (string) (len=154) "https://web.archive.org/web/20190131175905/https://www.nbcnews.com/news/weather/relief-coming-blast-chilled-midwest-not-until-after-another-record-n965136"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=166) "Polar vortex 2019: Relief coming for the Midwest that is suffering another record-low day Archived January 31, 2019, at the Wayback Machine NBC News, January 31, 2019",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=111) "https://www.nbcnews.com/news/weather/relief-coming-blast-chilled-midwest-not-until-after-another-record-n965136",
+          Text: (string) (len=89) "Polar vortex 2019: Relief coming for the Midwest that is suffering another record-low day",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=154) "https://web.archive.org/web/20190131175905/https://www.nbcnews.com/news/weather/relief-coming-blast-chilled-midwest-not-until-after-another-record-n965136",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Wayback_Machine",
+          Text: (string) (len=15) "Wayback Machine",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-13",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=16) "February 2, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "February 2, 2019",
+      (string) (len=11) "archive-url": (string) (len=119) "https://web.archive.org/web/20190202232507/https://globalnews.ca/news/4851800/polar-vortex-ontario-quebec-winter-storm/",
+      (string) (len=4) "date": (string) (len=16) "January 16, 2019",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=5) "title": (string) (len=113) "Polar vortex splits into three, setting up Ontario and Quebec for −30C cold and a weekend storm | Globalnews.ca",
+      (string) (len=3) "url": (string) (len=76) "https://globalnews.ca/news/4851800/polar-vortex-ontario-quebec-winter-storm/",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=7) "website": (string) (len=13) "globalnews.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=225) "\"Polar vortex splits into three, setting up Ontario and Quebec for −30C cold and a weekend storm | Globalnews.ca\". globalnews.ca. January 16, 2019. Archived from the original on February 2, 2019. Retrieved February 2, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=76) "https://globalnews.ca/news/4851800/polar-vortex-ontario-quebec-winter-storm/",
+          Text: (string) (len=115) "\"Polar vortex splits into three, setting up Ontario and Quebec for −30C cold and a weekend storm | Globalnews.ca\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=119) "https://web.archive.org/web/20190202232507/https://globalnews.ca/news/4851800/polar-vortex-ontario-quebec-winter-storm/",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-14",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=9) "publisher": (string) (len=20) "Government of Canada",
+      (string) (len=5) "title": (string) (len=40) "Hourly Data Report for February 03, 2019",
+      (string) (len=3) "url": (string) (len=376) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?timeframe=1&hlyRange=2008-12-22%7C2019-02-04&dlyRange=1999-05-01%7C2019-02-04&mlyRange=2000-06-01%7C2007-11-01&StationID=27211&Prov=AB&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=5&searchMethod=contains&txtStationName=Calgary&Year=2019&Month=2&Day=3#"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=65) "\"Hourly Data Report for February 03, 2019\". Government of Canada.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=376) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?timeframe=1&hlyRange=2008-12-22%7C2019-02-04&dlyRange=1999-05-01%7C2019-02-04&mlyRange=2000-06-01%7C2007-11-01&StationID=27211&Prov=AB&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=5&searchMethod=contains&txtStationName=Calgary&Year=2019&Month=2&Day=3#",
+          Text: (string) (len=42) "\"Hourly Data Report for February 03, 2019\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-15",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=4) "date": (string) (len=15) "31 October 2011",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "title": (string) (len=65) "Historical Data - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=376) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?timeframe=1&hlyRange=2008-12-22%7C2019-02-04&dlyRange=1999-05-01%7C2019-02-04&mlyRange=2000-06-01%7C2007-11-01&StationID=27211&Prov=AB&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=5&searchMethod=contains&txtStationName=Calgary&Year=2019&Month=2&Day=5#",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=108) "\"Historical Data - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. 31 October 2011.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=376) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?timeframe=1&hlyRange=2008-12-22%7C2019-02-04&dlyRange=1999-05-01%7C2019-02-04&mlyRange=2000-06-01%7C2007-11-01&StationID=27211&Prov=AB&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=5&searchMethod=contains&txtStationName=Calgary&Year=2019&Month=2&Day=5#",
+          Text: (string) (len=67) "\"Historical Data - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-16",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=4) "date": (string) (len=15) "31 October 2011",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "title": (string) (len=87) "Edmonton Blatchford - Historical Data - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=376) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=1999-06-23%7C2019-02-06&dlyRange=1996-03-01%7C2019-02-06&mlyRange=1996-03-01%7C2007-11-01&StationID=27214&Prov=AB&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=2&searchMethod=contains&Month=2&Day=5&txtStationName=Edmonton&timeframe=1&Year=2019",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=130) "\"Edmonton Blatchford - Historical Data - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. 31 October 2011.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=376) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=1999-06-23%7C2019-02-06&dlyRange=1996-03-01%7C2019-02-06&mlyRange=1996-03-01%7C2007-11-01&StationID=27214&Prov=AB&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=2&searchMethod=contains&Month=2&Day=5&txtStationName=Edmonton&timeframe=1&Year=2019",
+          Text: (string) (len=89) "\"Edmonton Blatchford - Historical Data - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-17",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=11) "access-date": (string) (len=16) "February 4, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "February 3, 2019",
+      (string) (len=11) "archive-url": (string) (len=146) "https://web.archive.org/web/20190203232441/https://edmontonjournal.com/news/local-news/edmonton-weather-frostbite-in-minutes-sums-it-up-succinctly",
+      (string) (len=4) "date": (string) (len=16) "February 3, 2019",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=5) "first": (string) (len=6) "Trevor",
+      (string) (len=4) "last": (string) (len=4) "Robb",
+      (string) (len=5) "title": (string) (len=55) "Edmonton weather: Extreme cold warnings blanket Alberta",
+      (string) (len=3) "url": (string) (len=103) "https://edmontonjournal.com/news/local-news/edmonton-weather-frostbite-in-minutes-sums-it-up-succinctly",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=7) "website": (string) (len=16) "Edmonton Journal"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=185) "Robb, Trevor (February 3, 2019). \"Edmonton weather: Extreme cold warnings blanket Alberta\". Edmonton Journal. Archived from the original on February 3, 2019. Retrieved February 4, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=103) "https://edmontonjournal.com/news/local-news/edmonton-weather-frostbite-in-minutes-sums-it-up-succinctly",
+          Text: (string) (len=57) "\"Edmonton weather: Extreme cold warnings blanket Alberta\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=146) "https://web.archive.org/web/20190203232441/https://edmontonjournal.com/news/local-news/edmonton-weather-frostbite-in-minutes-sums-it-up-succinctly",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-18",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=11) "access-date": (string) (len=16) "February 3, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "February 2, 2019",
+      (string) (len=11) "archive-url": (string) (len=154) "https://web.archive.org/web/20190202225055/https://edmontonjournal.com/news/local-news/edmonton-weather-extreme-cold-warning-in-effect-40-to-45-wind-chill",
+      (string) (len=4) "date": (string) (len=16) "February 2, 2019",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=5) "first": (string) (len=6) "Trevor",
+      (string) (len=4) "last": (string) (len=4) "Robb",
+      (string) (len=5) "title": (string) (len=75) "Edmonton weather: Extreme cold warning in effect; −40 to −45 wind chill",
+      (string) (len=3) "url": (string) (len=111) "https://edmontonjournal.com/news/local-news/edmonton-weather-extreme-cold-warning-in-effect-40-to-45-wind-chill",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=7) "website": (string) (len=16) "Edmonton Journal"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=205) "Robb, Trevor (February 2, 2019). \"Edmonton weather: Extreme cold warning in effect; −40 to −45 wind chill\". Edmonton Journal. Archived from the original on February 2, 2019. Retrieved February 3, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=111) "https://edmontonjournal.com/news/local-news/edmonton-weather-extreme-cold-warning-in-effect-40-to-45-wind-chill",
+          Text: (string) (len=77) "\"Edmonton weather: Extreme cold warning in effect; −40 to −45 wind chill\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=154) "https://web.archive.org/web/20190202225055/https://edmontonjournal.com/news/local-news/edmonton-weather-extreme-cold-warning-in-effect-40-to-45-wind-chill",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-19",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-03-04",
+      (string) (len=4) "date": (string) (len=10) "2011-10-31",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "title": (string) (len=82) "Daily Data Report for March 2019 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=255) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=2012-07-09%7C2018-05-12&dlyRange=2012-07-12%7C2018-05-12&mlyRange=%7C&StationID=50430&Prov=AB&urlExtension=_e.html&searchType=stnName&optLimit=specDate&StartYear=1840&EndYear=2018&selRow",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=142) "\"Daily Data Report for March 2019 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. 2011-10-31. Retrieved 2019-03-04.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=255) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=2012-07-09%7C2018-05-12&dlyRange=2012-07-12%7C2018-05-12&mlyRange=%7C&StationID=50430&Prov=AB&urlExtension=_e.html&searchType=stnName&optLimit=specDate&StartYear=1840&EndYear=2018&selRow",
+          Text: (string) (len=84) "\"Daily Data Report for March 2019 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-20",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-03-04",
+      (string) (len=4) "date": (string) (len=10) "2011-10-31",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "title": (string) (len=82) "Daily Data Report for March 2019 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=357) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=2011-01-11%7C2019-03-02&dlyRange=2011-01-13%7C2019-03-02&mlyRange=%7C&StationID=49268&Prov=AB&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=2&searchMethod=contains&Month=3&Day=2&txtStationName=lethbridge&timeframe=2&Year=2019",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=142) "\"Daily Data Report for March 2019 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. 2011-10-31. Retrieved 2019-03-04.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=357) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=2011-01-11%7C2019-03-02&dlyRange=2011-01-13%7C2019-03-02&mlyRange=%7C&StationID=49268&Prov=AB&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=2&searchMethod=contains&Month=3&Day=2&txtStationName=lethbridge&timeframe=2&Year=2019",
+          Text: (string) (len=84) "\"Daily Data Report for March 2019 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-21",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-03-04",
+      (string) (len=4) "date": (string) (len=10) "2011-10-31",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "title": (string) (len=82) "Daily Data Report for March 2019 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=359) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=2010-09-20%7C2019-03-02&dlyRange=2010-09-23%7C2019-03-02&mlyRange=%7C&StationID=48949&Prov=AB&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=0&searchMethod=contains&Month=3&Day=2&txtStationName=medicine+hat&timeframe=2&Year=2019",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=142) "\"Daily Data Report for March 2019 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. 2011-10-31. Retrieved 2019-03-04.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=359) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=2010-09-20%7C2019-03-02&dlyRange=2010-09-23%7C2019-03-02&mlyRange=%7C&StationID=48949&Prov=AB&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=0&searchMethod=contains&Month=3&Day=2&txtStationName=medicine+hat&timeframe=2&Year=2019",
+          Text: (string) (len=84) "\"Daily Data Report for March 2019 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-22",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=9) "publisher": (string) (len=20) "Government of Canada",
+      (string) (len=5) "title": (string) (len=40) "Hourly Data Report for February 04, 2019",
+      (string) (len=3) "url": (string) (len=362) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?timeframe=1&hlyRange=2013-06-11%7C2019-02-04&dlyRange=2013-06-13%7C2019-02-04&mlyRange=%7C&StationID=51442&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=2&searchMethod=contains&txtStationName=Vancouver+Int&Year=2019&Month=2&Day=4#"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=65) "\"Hourly Data Report for February 04, 2019\". Government of Canada.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=362) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?timeframe=1&hlyRange=2013-06-11%7C2019-02-04&dlyRange=2013-06-13%7C2019-02-04&mlyRange=%7C&StationID=51442&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=2&searchMethod=contains&txtStationName=Vancouver+Int&Year=2019&Month=2&Day=4#",
+          Text: (string) (len=42) "\"Hourly Data Report for February 04, 2019\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-23",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=4) "date": (string) (len=15) "31 October 2011",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "title": (string) (len=80) "Abbotsford A - Historical Data - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=358) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2016-01-13%7C2019-02-06&dlyRange=2018-10-29%7C2019-02-06&mlyRange=%7C&StationID=54238&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=2&searchMethod=contains&Month=2&Day=4&txtStationName=Abbotsford&timeframe=1&Year=2019",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=123) "\"Abbotsford A - Historical Data - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. 31 October 2011.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=358) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2016-01-13%7C2019-02-06&dlyRange=2018-10-29%7C2019-02-06&mlyRange=%7C&StationID=54238&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=2&searchMethod=contains&Month=2&Day=4&txtStationName=Abbotsford&timeframe=1&Year=2019",
+          Text: (string) (len=82) "\"Abbotsford A - Historical Data - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-24",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-02-09",
+      (string) (len=4) "date": (string) (len=10) "2011-10-31",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "title": (string) (len=85) "Daily Data Report for February 2019 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=376) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=1994-02-01%7C2018-05-02&dlyRange=1992-12-01%7C2018-05-02&mlyRange=1992-01-01%7C2007-02-01&StationID=6812&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2018&selRowPerPage=25&Line=40&searchMethod=contains&txtStationName=victoria&timeframe=2&Day=1&Year=2019&Month=2#",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=145) "\"Daily Data Report for February 2019 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. 2011-10-31. Retrieved 2019-02-09.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=376) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=1994-02-01%7C2018-05-02&dlyRange=1992-12-01%7C2018-05-02&mlyRange=1992-01-01%7C2007-02-01&StationID=6812&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2018&selRowPerPage=25&Line=40&searchMethod=contains&txtStationName=victoria&timeframe=2&Day=1&Year=2019&Month=2#",
+          Text: (string) (len=87) "\"Daily Data Report for February 2019 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-25",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-02-09",
+      (string) (len=4) "date": (string) (len=10) "2011-10-31",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "title": (string) (len=84) "Daily Data Report for January 2017 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=375) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=1994-02-01%7C2018-05-02&dlyRange=1992-12-01%7C2018-05-02&mlyRange=1992-01-01%7C2007-02-01&StationID=6812&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2018&selRowPerPage=25&Line=40&searchMethod=contains&txtStationName=victoria&timeframe=2&Day=1&Year=2017&Month=1",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=144) "\"Daily Data Report for January 2017 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. 2011-10-31. Retrieved 2019-02-09.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=375) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=1994-02-01%7C2018-05-02&dlyRange=1992-12-01%7C2018-05-02&mlyRange=1992-01-01%7C2007-02-01&StationID=6812&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2018&selRowPerPage=25&Line=40&searchMethod=contains&txtStationName=victoria&timeframe=2&Day=1&Year=2017&Month=1",
+          Text: (string) (len=86) "\"Daily Data Report for January 2017 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-26",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=17) "February 11, 2019",
+      (string) (len=4) "date": (string) (len=16) "October 31, 2011",
+      (string) (len=5) "title": (string) (len=90) "Hourly Data Report for February 05, 2019 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=376) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=1994-02-01%7C2018-05-02&dlyRange=1992-12-01%7C2018-05-02&mlyRange=1992-01-01%7C2007-02-01&StationID=6812&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2018&selRowPerPage=25&Line=40&searchMethod=contains&txtStationName=victoria&timeframe=1&Day=5&Year=2019&Month=2",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=163) "\"Hourly Data Report for February 05, 2019 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. October 31, 2011. Retrieved February 11, 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=376) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=1994-02-01%7C2018-05-02&dlyRange=1992-12-01%7C2018-05-02&mlyRange=1992-01-01%7C2007-02-01&StationID=6812&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2018&selRowPerPage=25&Line=40&searchMethod=contains&txtStationName=victoria&timeframe=1&Day=5&Year=2019&Month=2",
+          Text: (string) (len=92) "\"Hourly Data Report for February 05, 2019 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-27",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=4) "date": (string) (len=16) "October 31, 2011",
+      (string) (len=5) "title": (string) (len=90) "Hourly Data Report for February 04, 2019 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=362) "https://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2009-10-08%7C2019-02-12&dlyRange=2009-10-22%7C2019-02-12&mlyRange=%7C&StationID=48370&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=1&searchMethod=contains&Month=2&Day=4&txtStationName=Prince+George&timeframe=1&Year=2019",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=134) "\"Hourly Data Report for February 04, 2019 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. October 31, 2011.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=362) "https://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2009-10-08%7C2019-02-12&dlyRange=2009-10-22%7C2019-02-12&mlyRange=%7C&StationID=48370&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=1&searchMethod=contains&Month=2&Day=4&txtStationName=Prince+George&timeframe=1&Year=2019",
+          Text: (string) (len=92) "\"Hourly Data Report for February 04, 2019 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-28",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=4) "date": (string) (len=16) "October 31, 2011",
+      (string) (len=5) "title": (string) (len=90) "Hourly Data Report for February 11, 2019 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=363) "https://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2009-10-08%7C2019-02-12&dlyRange=2009-10-22%7C2019-02-12&mlyRange=%7C&StationID=48370&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=1&searchMethod=contains&Month=2&Day=11&txtStationName=Prince+George&timeframe=1&Year=2019",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=134) "\"Hourly Data Report for February 11, 2019 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. October 31, 2011.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=363) "https://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2009-10-08%7C2019-02-12&dlyRange=2009-10-22%7C2019-02-12&mlyRange=%7C&StationID=48370&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=1&searchMethod=contains&Month=2&Day=11&txtStationName=Prince+George&timeframe=1&Year=2019",
+          Text: (string) (len=92) "\"Hourly Data Report for February 11, 2019 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-29",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=17) "February 11, 2019",
+      (string) (len=4) "date": (string) (len=16) "October 31, 2011",
+      (string) (len=5) "title": (string) (len=90) "Hourly Data Report for February 05, 2019 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=383) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=1976-01-20%7C2019-02-08&dlyRange=1925-11-01%7C2019-02-08&mlyRange=1925-01-01%7C2007-02-01&StationID=888&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=0&searchMethod=contains&Month=2&Day=5&txtStationName=Vancouver+Harbour&timeframe=1&Year=2019",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=163) "\"Hourly Data Report for February 05, 2019 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. October 31, 2011. Retrieved February 11, 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=383) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=1976-01-20%7C2019-02-08&dlyRange=1925-11-01%7C2019-02-08&mlyRange=1925-01-01%7C2007-02-01&StationID=888&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=0&searchMethod=contains&Month=2&Day=5&txtStationName=Vancouver+Harbour&timeframe=1&Year=2019",
+          Text: (string) (len=92) "\"Hourly Data Report for February 05, 2019 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-30",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=4) "date": (string) (len=16) "October 31, 2011",
+      (string) (len=5) "title": (string) (len=90) "Hourly Data Report for February 11, 2019 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=385) "https://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=1976-01-20%7C2019-02-12&dlyRange=1925-11-01%7C2019-02-12&mlyRange=1925-01-01%7C2007-02-01&StationID=888&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=0&searchMethod=contains&Month=2&Day=11&txtStationName=Vancouver+Harbour&timeframe=1&Year=2019",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=134) "\"Hourly Data Report for February 11, 2019 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. October 31, 2011.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=385) "https://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=1976-01-20%7C2019-02-12&dlyRange=1925-11-01%7C2019-02-12&mlyRange=1925-01-01%7C2007-02-01&StationID=888&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=0&searchMethod=contains&Month=2&Day=11&txtStationName=Vancouver+Harbour&timeframe=1&Year=2019",
+          Text: (string) (len=92) "\"Hourly Data Report for February 11, 2019 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-31",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-03-04",
+      (string) (len=4) "date": (string) (len=10) "2019-03-01",
+      (string) (len=5) "first": (string) (len=7) "Vincent",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=4) "last": (string) (len=5) "Plana",
+      (string) (len=5) "title": (string) (len=49) "Vancouver just had its coldest February on record",
+      (string) (len=3) "url": (string) (len=63) "https://dailyhive.com/vancouver/vancouver-coldest-february-2019",
+      (string) (len=7) "website": (string) (len=10) "Daily Hive"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=115) "Plana, Vincent (2019-03-01). \"Vancouver just had its coldest February on record\". Daily Hive. Retrieved 2019-03-04.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=63) "https://dailyhive.com/vancouver/vancouver-coldest-february-2019",
+          Text: (string) (len=51) "\"Vancouver just had its coldest February on record\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-32",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-03-04",
+      (string) (len=4) "date": (string) (len=13) "March 3, 2019",
+      (string) (len=5) "first": (string) (len=4) "Chad",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=4) "last": (string) (len=6) "Pawson",
+      (string) (len=5) "title": (string) (len=72) "Vancouver's wild winter weather could aid battle against invasive beetle",
+      (string) (len=3) "url": (string) (len=105) "https://www.cbc.ca/news/canada/british-columbia/cold-winter-impact-on-vancouver-japanese-beetle-1.5040009",
+      (string) (len=7) "website": (string) (len=3) "CBC"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=132) "Pawson, Chad (March 3, 2019). \"Vancouver's wild winter weather could aid battle against invasive beetle\". CBC. Retrieved 2019-03-04.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=105) "https://www.cbc.ca/news/canada/british-columbia/cold-winter-impact-on-vancouver-japanese-beetle-1.5040009",
+          Text: (string) (len=74) "\"Vancouver's wild winter weather could aid battle against invasive beetle\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-33",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=4) "date": (string) (len=15) "31 October 2011",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "title": (string) (len=75) "Kelowna - Historical Data - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=355) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2009-08-27%7C2019-02-06&dlyRange=2009-09-03%7C2019-02-06&mlyRange=%7C&StationID=48369&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=1&searchMethod=contains&Month=2&Day=5&txtStationName=Kelowna&timeframe=1&Year=2019",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=118) "\"Kelowna - Historical Data - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. 31 October 2011.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=355) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2009-08-27%7C2019-02-06&dlyRange=2009-09-03%7C2019-02-06&mlyRange=%7C&StationID=48369&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=1&searchMethod=contains&Month=2&Day=5&txtStationName=Kelowna&timeframe=1&Year=2019",
+          Text: (string) (len=77) "\"Kelowna - Historical Data - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-34",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=4) "date": (string) (len=16) "October 31, 2011",
+      (string) (len=5) "title": (string) (len=90) "Hourly Data Report for February 10, 2019 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=357) "https://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2009-08-27%7C2019-02-06&dlyRange=2009-09-03%7C2019-02-06&mlyRange=%7C&StationID=48369&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=1&searchMethod=contains&Month=2&Day=10&txtStationName=Kelowna&timeframe=1&Year=2019",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=134) "\"Hourly Data Report for February 10, 2019 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. October 31, 2011.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=357) "https://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2009-08-27%7C2019-02-06&dlyRange=2009-09-03%7C2019-02-06&mlyRange=%7C&StationID=48369&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=1&searchMethod=contains&Month=2&Day=10&txtStationName=Kelowna&timeframe=1&Year=2019",
+          Text: (string) (len=92) "\"Hourly Data Report for February 10, 2019 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-35",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-02-09",
+      (string) (len=4) "date": (string) (len=10) "2011-10-31",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "title": (string) (len=85) "Daily Data Report for February 2019 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=355) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=2010-06-16%7C2018-05-02&dlyRange=2010-06-16%7C2018-05-02&mlyRange=%7C&StationID=48708&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=specDate&StartYear=1840&EndYear=2018&selRowPerPage=25&Line=0&searchMethod=contains&txtStationName=ashcroft&timeframe=2&Day=2&Year=2019&Month=2#",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=145) "\"Daily Data Report for February 2019 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. 2011-10-31. Retrieved 2019-02-09.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=355) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=2010-06-16%7C2018-05-02&dlyRange=2010-06-16%7C2018-05-02&mlyRange=%7C&StationID=48708&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=specDate&StartYear=1840&EndYear=2018&selRowPerPage=25&Line=0&searchMethod=contains&txtStationName=ashcroft&timeframe=2&Day=2&Year=2019&Month=2#",
+          Text: (string) (len=87) "\"Daily Data Report for February 2019 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-36",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=4) "date": (string) (len=15) "31 October 2011",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "title": (string) (len=77) "Nanaimo A - Historical Data - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=355) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2014-10-23%7C2019-02-06&dlyRange=2018-10-29%7C2019-02-06&mlyRange=%7C&StationID=52941&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=1&searchMethod=contains&Month=2&Day=5&txtStationName=Nanaimo&timeframe=1&Year=2019",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=120) "\"Nanaimo A - Historical Data - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. 31 October 2011.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=355) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2014-10-23%7C2019-02-06&dlyRange=2018-10-29%7C2019-02-06&mlyRange=%7C&StationID=52941&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=1&searchMethod=contains&Month=2&Day=5&txtStationName=Nanaimo&timeframe=1&Year=2019",
+          Text: (string) (len=79) "\"Nanaimo A - Historical Data - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-37",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=16) "January 31, 2019",
+      (string) (len=4) "date": (string) (len=16) "October 31, 2011",
+      (string) (len=5) "title": (string) (len=84) "Daily Data Report for January 2019 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=375) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=2013-12-10%7C2018-05-02&dlyRange=1996-10-01%7C2018-05-02&mlyRange=1996-10-01%7C2007-11-01&StationID=27174&Prov=MB&urlExtension=_e.html&searchType=stnName&optLimit=specDate&StartYear=1840&EndYear=2018&selRowPerPage=25&Line=0&searchMethod=contains&txtStationName=winnipeg&timeframe=2&Day=1&Year=2019&Month=1#",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=156) "\"Daily Data Report for January 2019 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. October 31, 2011. Retrieved January 31, 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=375) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=2013-12-10%7C2018-05-02&dlyRange=1996-10-01%7C2018-05-02&mlyRange=1996-10-01%7C2007-11-01&StationID=27174&Prov=MB&urlExtension=_e.html&searchType=stnName&optLimit=specDate&StartYear=1840&EndYear=2018&selRowPerPage=25&Line=0&searchMethod=contains&txtStationName=winnipeg&timeframe=2&Day=1&Year=2019&Month=1#",
+          Text: (string) (len=86) "\"Daily Data Report for January 2019 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-38",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=16) "January 31, 2019",
+      (string) (len=4) "date": (string) (len=16) "October 31, 2011",
+      (string) (len=5) "title": (string) (len=85) "Daily Data Report for February 2007 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=374) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=2013-12-10%7C2018-05-02&dlyRange=1996-10-01%7C2018-05-02&mlyRange=1996-10-01%7C2007-11-01&StationID=27174&Prov=MB&urlExtension=_e.html&searchType=stnName&optLimit=specDate&StartYear=1840&EndYear=2018&selRowPerPage=25&Line=0&searchMethod=contains&txtStationName=winnipeg&timeframe=2&Day=1&Year=2007&Month=2",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=157) "\"Daily Data Report for February 2007 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. October 31, 2011. Retrieved January 31, 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=374) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=2013-12-10%7C2018-05-02&dlyRange=1996-10-01%7C2018-05-02&mlyRange=1996-10-01%7C2007-11-01&StationID=27174&Prov=MB&urlExtension=_e.html&searchType=stnName&optLimit=specDate&StartYear=1840&EndYear=2018&selRowPerPage=25&Line=0&searchMethod=contains&txtStationName=winnipeg&timeframe=2&Day=1&Year=2007&Month=2",
+          Text: (string) (len=87) "\"Daily Data Report for February 2007 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-39",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-03-04",
+      (string) (len=4) "date": (string) (len=10) "2011-10-31",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "title": (string) (len=85) "Daily Data Report for February 2019 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=358) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=2013-01-15%7C2019-02-06&dlyRange=2013-01-17%7C2019-02-06&mlyRange=%7C&StationID=51058&Prov=NT&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=0&searchMethod=contains&Month=2&Day=2&txtStationName=Yellowknife&timeframe=2&Year=2019",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=145) "\"Daily Data Report for February 2019 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. 2011-10-31. Retrieved 2019-03-04.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=358) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=2013-01-15%7C2019-02-06&dlyRange=2013-01-17%7C2019-02-06&mlyRange=%7C&StationID=51058&Prov=NT&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=0&searchMethod=contains&Month=2&Day=2&txtStationName=Yellowknife&timeframe=2&Year=2019",
+          Text: (string) (len=87) "\"Daily Data Report for February 2019 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-40",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=4) "date": (string) (len=15) "31 October 2011",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "title": (string) (len=81) "Yellowknife A - Historical Data - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=359) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2013-01-15%7C2019-02-06&dlyRange=2013-01-17%7C2019-02-06&mlyRange=%7C&StationID=51058&Prov=NT&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=0&searchMethod=contains&Month=2&Day=2&txtStationName=Yellowknife&timeframe=1&Year=2019",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=124) "\"Yellowknife A - Historical Data - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. 31 October 2011.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=359) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2013-01-15%7C2019-02-06&dlyRange=2013-01-17%7C2019-02-06&mlyRange=%7C&StationID=51058&Prov=NT&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=0&searchMethod=contains&Month=2&Day=2&txtStationName=Yellowknife&timeframe=1&Year=2019",
+          Text: (string) (len=83) "\"Yellowknife A - Historical Data - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-41",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=16) "February 3, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "February 3, 2019",
+      (string) (len=11) "archive-url": (string) (len=161) "https://web.archive.org/web/20190203085347/https://www.msn.com/en-ca/weather/topstories/extremely-dangerous-cold-weather-grips-prairies-ontario-quebec/ar-BBSWOpM",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=9) "publisher": (string) (len=3) "MSN",
+      (string) (len=5) "title": (string) (len=66) "'Extremely dangerous' cold weather grips Prairies, Ontario, Quebec",
+      (string) (len=3) "url": (string) (len=118) "https://www.msn.com/en-ca/weather/topstories/extremely-dangerous-cold-weather-grips-prairies-ontario-quebec/ar-BBSWOpM",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=150) "\"'Extremely dangerous' cold weather grips Prairies, Ontario, Quebec\". MSN. Archived from the original on February 3, 2019. Retrieved February 3, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=118) "https://www.msn.com/en-ca/weather/topstories/extremely-dangerous-cold-weather-grips-prairies-ontario-quebec/ar-BBSWOpM",
+          Text: (string) (len=69) "\" 'Extremely dangerous' cold weather grips Prairies, Ontario, Quebec\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=161) "https://web.archive.org/web/20190203085347/https://www.msn.com/en-ca/weather/topstories/extremely-dangerous-cold-weather-grips-prairies-ontario-quebec/ar-BBSWOpM",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-42",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=16) "February 3, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "February 3, 2019",
+      (string) (len=11) "archive-url": (string) (len=402) "https://web.archive.org/web/20190203085215/http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2016-01-13%7C2019-01-30&dlyRange=2018-10-29%7C2019-01-30&mlyRange=%7C&StationID=54138&Prov=NU&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=0&searchMethod=contains&Month=1&Day=30&txtStationName=Baker+Lake&timeframe=1&Year=2019",
+      (string) (len=4) "date": (string) (len=16) "October 31, 2011",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=5) "title": (string) (len=49) "Hourly Data Report for January 30, 2019 - Climate",
+      (string) (len=3) "url": (string) (len=359) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2016-01-13%7C2019-01-30&dlyRange=2018-10-29%7C2019-01-30&mlyRange=%7C&StationID=54138&Prov=NU&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=0&searchMethod=contains&Month=1&Day=30&txtStationName=Baker+Lake&timeframe=1&Year=2019",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=37) "Environment and Climate Change Canada"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=185) "\"Hourly Data Report for January 30, 2019 - Climate\". Environment and Climate Change Canada. October 31, 2011. Archived from the original on February 3, 2019. Retrieved February 3, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=359) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2016-01-13%7C2019-01-30&dlyRange=2018-10-29%7C2019-01-30&mlyRange=%7C&StationID=54138&Prov=NU&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=0&searchMethod=contains&Month=1&Day=30&txtStationName=Baker+Lake&timeframe=1&Year=2019",
+          Text: (string) (len=51) "\"Hourly Data Report for January 30, 2019 - Climate\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=402) "https://web.archive.org/web/20190203085215/http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2016-01-13%7C2019-01-30&dlyRange=2018-10-29%7C2019-01-30&mlyRange=%7C&StationID=54138&Prov=NU&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=0&searchMethod=contains&Month=1&Day=30&txtStationName=Baker+Lake&timeframe=1&Year=2019",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-43",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=9) "publisher": (string) (len=20) "Government of Canada",
+      (string) (len=5) "title": (string) (len=34) "Daily Data Report for January 2019",
+      (string) (len=3) "url": (string) (len=110) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=1723&Year=2019&Month=1&Day=1&timeframe=2"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=59) "\"Daily Data Report for January 2019\". Government of Canada.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=110) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=1723&Year=2019&Month=1&Day=1&timeframe=2",
+          Text: (string) (len=36) "\"Daily Data Report for January 2019\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-44",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=16) "January 31, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "January 31, 2019",
+      (string) (len=11) "archive-url": (string) (len=121) "https://web.archive.org/web/20190131081500/https://www.cbc.ca/news/canada/ottawa/ottawa-weather-january-29-2019-1.4996675",
+      (string) (len=4) "date": (string) (len=16) "January 29, 2019",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=9) "publisher": (string) (len=8) "CBC News",
+      (string) (len=5) "title": (string) (len=42) "Ottawa logs its snowiest January on record",
+      (string) (len=3) "url": (string) (len=78) "https://www.cbc.ca/news/canada/ottawa/ottawa-weather-january-29-2019-1.4996675",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=149) "\"Ottawa logs its snowiest January on record\". CBC News. January 29, 2019. Archived from the original on January 31, 2019. Retrieved January 31, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=78) "https://www.cbc.ca/news/canada/ottawa/ottawa-weather-january-29-2019-1.4996675",
+          Text: (string) (len=44) "\"Ottawa logs its snowiest January on record\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=121) "https://web.archive.org/web/20190131081500/https://www.cbc.ca/news/canada/ottawa/ottawa-weather-january-29-2019-1.4996675",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-45",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=16) "February 9, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "February 3, 2019",
+      (string) (len=11) "archive-url": (string) (len=404) "https://web.archive.org/web/20190203085024/http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2009-12-10%7C2019-01-30&dlyRange=2010-02-02%7C2019-01-30&mlyRange=%7C&StationID=48549&Prov=ON&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=2&searchMethod=contains&Month=1&Day=30&txtStationName=Toronto+City&timeframe=1&Year=2019",
+      (string) (len=4) "date": (string) (len=16) "October 31, 2011",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=5) "title": (string) (len=84) "Daily Data Report for January 2019 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=139) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=51459&Month=1&Day=1&Year=2019&timeframe=2&StartYear=1840&EndYear=2019",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=204) "\"Daily Data Report for January 2019 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. October 31, 2011. Archived from the original on February 3, 2019. Retrieved February 9, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=139) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=51459&Month=1&Day=1&Year=2019&timeframe=2&StartYear=1840&EndYear=2019",
+          Text: (string) (len=86) "\"Daily Data Report for January 2019 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=404) "https://web.archive.org/web/20190203085024/http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2009-12-10%7C2019-01-30&dlyRange=2010-02-02%7C2019-01-30&mlyRange=%7C&StationID=48549&Prov=ON&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=2&searchMethod=contains&Month=1&Day=30&txtStationName=Toronto+City&timeframe=1&Year=2019",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-46",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=11) "access-date": (string) (len=16) "February 3, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "February 3, 2019",
+      (string) (len=11) "archive-url": (string) (len=175) "https://web.archive.org/web/20190203092355/https://www.independent.co.uk/travel/news-and-advice/niagara-falls-freezes-over-polar-vortex-frozen-ice-ontario-canada-a8757056.html",
+      (string) (len=4) "date": (string) (len=16) "January 31, 2019",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=6) "first1": (string) (len=5) "Helen",
+      (string) (len=5) "last1": (string) (len=6) "Coffey",
+      (string) (len=5) "title": (string) (len=72) "Niagara Falls Turns Into Winter Wonderland As It Completely Freezes Over",
+      (string) (len=3) "url": (string) (len=132) "https://www.independent.co.uk/travel/news-and-advice/niagara-falls-freezes-over-polar-vortex-frozen-ice-ontario-canada-a8757056.html",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=15) "The Independent"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=202) "Coffey, Helen (January 31, 2019). \"Niagara Falls Turns Into Winter Wonderland As It Completely Freezes Over\". The Independent. Archived from the original on February 3, 2019. Retrieved February 3, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=132) "https://www.independent.co.uk/travel/news-and-advice/niagara-falls-freezes-over-polar-vortex-frozen-ice-ontario-canada-a8757056.html",
+          Text: (string) (len=74) "\"Niagara Falls Turns Into Winter Wonderland As It Completely Freezes Over\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=175) "https://web.archive.org/web/20190203092355/https://www.independent.co.uk/travel/news-and-advice/niagara-falls-freezes-over-polar-vortex-frozen-ice-ontario-canada-a8757056.html",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-47",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=11) "access-date": (string) (len=16) "February 2, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "February 3, 2019",
+      (string) (len=11) "archive-url": (string) (len=86) "https://web.archive.org/web/20190203052640/https://www.chch.com/niagaras-frozen-falls/",
+      (string) (len=4) "date": (string) (len=16) "January 25, 2019",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=6) "first1": (string) (len=5) "Kelly",
+      (string) (len=5) "last1": (string) (len=10) "Noseworthy",
+      (string) (len=5) "title": (string) (len=22) "Niagara's Frozen Falls",
+      (string) (len=3) "url": (string) (len=43) "https://www.chch.com/niagaras-frozen-falls/",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=9) "CHCH News"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=150) "Noseworthy, Kelly (January 25, 2019). \"Niagara's Frozen Falls\". CHCH News. Archived from the original on February 3, 2019. Retrieved February 2, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=43) "https://www.chch.com/niagaras-frozen-falls/",
+          Text: (string) (len=24) "\"Niagara's Frozen Falls\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=86) "https://web.archive.org/web/20190203052640/https://www.chch.com/niagaras-frozen-falls/",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-48",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=16) "January 31, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "January 31, 2019",
+      (string) (len=11) "archive-url": (string) (len=129) "https://web.archive.org/web/20190131011229/https://www.cbc.ca/news/canada/windsor/extreme-cold-new-record-windsor-essex-1.4998369",
+      (string) (len=4) "date": (string) (len=16) "January 30, 2019",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=9) "publisher": (string) (len=33) "Canadian Broadcasting Corporation",
+      (string) (len=5) "title": (string) (len=47) "Extreme cold for region, record low for Windsor",
+      (string) (len=3) "url": (string) (len=86) "https://www.cbc.ca/news/canada/windsor/extreme-cold-new-record-windsor-essex-1.4998369",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=179) "\"Extreme cold for region, record low for Windsor\". Canadian Broadcasting Corporation. January 30, 2019. Archived from the original on January 31, 2019. Retrieved January 31, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=86) "https://www.cbc.ca/news/canada/windsor/extreme-cold-new-record-windsor-essex-1.4998369",
+          Text: (string) (len=49) "\"Extreme cold for region, record low for Windsor\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=129) "https://web.archive.org/web/20190131011229/https://www.cbc.ca/news/canada/windsor/extreme-cold-new-record-windsor-essex-1.4998369",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-49",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=16) "February 3, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "February 3, 2019",
+      (string) (len=11) "archive-url": (string) (len=406) "https://web.archive.org/web/20190203085330/http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2014-10-23%7C2019-01-30&dlyRange=2018-10-29%7C2019-01-30&mlyRange=%7C&StationID=53000&Prov=ON&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=2&searchMethod=contains&Month=1&Day=30&txtStationName=St.+Catharines&timeframe=1&Year=2019",
+      (string) (len=4) "date": (string) (len=16) "October 31, 2011",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=5) "title": (string) (len=89) "Hourly Data Report for January 30, 2019 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=363) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2014-10-23%7C2019-01-30&dlyRange=2018-10-29%7C2019-01-30&mlyRange=%7C&StationID=53000&Prov=ON&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=2&searchMethod=contains&Month=1&Day=30&txtStationName=St.+Catharines&timeframe=1&Year=2019",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=209) "\"Hourly Data Report for January 30, 2019 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. October 31, 2011. Archived from the original on February 3, 2019. Retrieved February 3, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=363) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2014-10-23%7C2019-01-30&dlyRange=2018-10-29%7C2019-01-30&mlyRange=%7C&StationID=53000&Prov=ON&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=2&searchMethod=contains&Month=1&Day=30&txtStationName=St.+Catharines&timeframe=1&Year=2019",
+          Text: (string) (len=91) "\"Hourly Data Report for January 30, 2019 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=406) "https://web.archive.org/web/20190203085330/http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2014-10-23%7C2019-01-30&dlyRange=2018-10-29%7C2019-01-30&mlyRange=%7C&StationID=53000&Prov=ON&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=2&searchMethod=contains&Month=1&Day=30&txtStationName=St.+Catharines&timeframe=1&Year=2019",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-50",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=16) "February 3, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "February 3, 2019",
+      (string) (len=11) "archive-url": (string) (len=119) "https://web.archive.org/web/20190203085114/https://www.theweathernetwork.com/ca/alerts/high-alert/ontario/st-catharines",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=5) "title": (string) (len=31) "Alerts: St. Catharines, Ontario",
+      (string) (len=3) "url": (string) (len=75) "http://www.theweathernetwork.com/ca/alerts/high-alert/ontario/st-catharines",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=7) "website": (string) (len=19) "The Weather Network"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=131) "\"Alerts: St. Catharines, Ontario\". The Weather Network. Archived from the original on February 3, 2019. Retrieved February 3, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=75) "http://www.theweathernetwork.com/ca/alerts/high-alert/ontario/st-catharines",
+          Text: (string) (len=33) "\"Alerts: St. Catharines, Ontario\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=119) "https://web.archive.org/web/20190203085114/https://www.theweathernetwork.com/ca/alerts/high-alert/ontario/st-catharines",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-51",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=16) "February 3, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "February 3, 2019",
+      (string) (len=11) "archive-url": (string) (len=423) "https://web.archive.org/web/20190203085332/http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=1994-02-01%7C2019-01-30&dlyRange=1992-12-02%7C2019-01-30&mlyRange=2006-04-01%7C2006-12-01&StationID=9005&Prov=ON&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=1&searchMethod=contains&Month=1&Day=30&txtStationName=Port+Colborne&timeframe=2&Year=2019",
+      (string) (len=4) "date": (string) (len=16) "October 31, 2011",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=5) "title": (string) (len=84) "Daily Data Report for January 2019 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=380) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=1994-02-01%7C2019-01-30&dlyRange=1992-12-02%7C2019-01-30&mlyRange=2006-04-01%7C2006-12-01&StationID=9005&Prov=ON&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=1&searchMethod=contains&Month=1&Day=30&txtStationName=Port+Colborne&timeframe=2&Year=2019",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=204) "\"Daily Data Report for January 2019 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. October 31, 2011. Archived from the original on February 3, 2019. Retrieved February 3, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=380) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=1994-02-01%7C2019-01-30&dlyRange=1992-12-02%7C2019-01-30&mlyRange=2006-04-01%7C2006-12-01&StationID=9005&Prov=ON&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=1&searchMethod=contains&Month=1&Day=30&txtStationName=Port+Colborne&timeframe=2&Year=2019",
+          Text: (string) (len=86) "\"Daily Data Report for January 2019 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=423) "https://web.archive.org/web/20190203085332/http://climate.weather.gc.ca/climate_data/daily_data_e.html?hlyRange=1994-02-01%7C2019-01-30&dlyRange=1992-12-02%7C2019-01-30&mlyRange=2006-04-01%7C2006-12-01&StationID=9005&Prov=ON&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=1&searchMethod=contains&Month=1&Day=30&txtStationName=Port+Colborne&timeframe=2&Year=2019",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-52",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=11) "access-date": (string) (len=16) "February 3, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "February 3, 2019",
+      (string) (len=11) "archive-url": (string) (len=153) "https://web.archive.org/web/20190203143712/https://www.stcatharinesstandard.ca/news-story/9151858-fort-erie-gets-hammered-in-latest-storm-to-hit-niagara/",
+      (string) (len=4) "date": (string) (len=16) "January 30, 2019",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=5) "first": (string) (len=4) "Kris",
+      (string) (len=4) "last": (string) (len=5) "Dubé",
+      (string) (len=5) "title": (string) (len=56) "Fort Erie gets 'hammered' in latest storm to hit Niagara",
+      (string) (len=3) "url": (string) (len=110) "https://www.stcatharinesstandard.ca/news-story/9151858-fort-erie-gets-hammered-in-latest-storm-to-hit-niagara/",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=7) "website": (string) (len=23) "StCatharinesStandard.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=192) "Dubé, Kris (January 30, 2019). \"Fort Erie gets 'hammered' in latest storm to hit Niagara\". StCatharinesStandard.ca. Archived from the original on February 3, 2019. Retrieved February 3, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=110) "https://www.stcatharinesstandard.ca/news-story/9151858-fort-erie-gets-hammered-in-latest-storm-to-hit-niagara/",
+          Text: (string) (len=58) "\"Fort Erie gets 'hammered' in latest storm to hit Niagara\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=153) "https://web.archive.org/web/20190203143712/https://www.stcatharinesstandard.ca/news-story/9151858-fort-erie-gets-hammered-in-latest-storm-to-hit-niagara/",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-53",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=11) "access-date": (string) (len=16) "February 2, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "February 2, 2019",
+      (string) (len=11) "archive-url": (string) (len=121) "https://web.archive.org/web/20190202212202/https://dailyhive.com/montreal/montreal-snowstorm-coldest-century-january-2019",
+      (string) (len=4) "date": (string) (len=16) "January 21, 2019",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=5) "first": (string) (len=5) "Tyler",
+      (string) (len=4) "last": (string) (len=5) "Jadah",
+      (string) (len=5) "title": (string) (len=67) "This weekend's snowstorm was likely Montreal's coldest in 100 years",
+      (string) (len=3) "url": (string) (len=78) "https://dailyhive.com/montreal/montreal-snowstorm-coldest-century-january-2019",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=7) "website": (string) (len=10) "Daily Hive"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=191) "Jadah, Tyler (January 21, 2019). \"This weekend's snowstorm was likely Montreal's coldest in 100 years\". Daily Hive. Archived from the original on February 2, 2019. Retrieved February 2, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=78) "https://dailyhive.com/montreal/montreal-snowstorm-coldest-century-january-2019",
+          Text: (string) (len=69) "\"This weekend's snowstorm was likely Montreal's coldest in 100 years\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=121) "https://web.archive.org/web/20190202212202/https://dailyhive.com/montreal/montreal-snowstorm-coldest-century-january-2019",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-54",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=16) "February 2, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "January 26, 2019",
+      (string) (len=11) "archive-url": (string) (len=162) "https://web.archive.org/web/20190126033537/https://www.cbc.ca/news/canada/montreal/montreal-s-f%C3%AAte-des-neiges-cancelled-due-to-extreme-cold-weather-1.4985741",
+      (string) (len=4) "date": (string) (len=16) "January 20, 2019",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=9) "publisher": (string) (len=8) "CBC News",
+      (string) (len=5) "title": (string) (len=65) "Montreal's Fête des neiges cancelled due to extreme cold weather",
+      (string) (len=3) "url": (string) (len=119) "https://www.cbc.ca/news/canada/montreal/montreal-s-f%C3%AAte-des-neiges-cancelled-due-to-extreme-cold-weather-1.4985741",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=172) "\"Montreal's Fête des neiges cancelled due to extreme cold weather\". CBC News. January 20, 2019. Archived from the original on January 26, 2019. Retrieved February 2, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=119) "https://www.cbc.ca/news/canada/montreal/montreal-s-f%C3%AAte-des-neiges-cancelled-due-to-extreme-cold-weather-1.4985741",
+          Text: (string) (len=67) "\"Montreal's Fête des neiges cancelled due to extreme cold weather\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=162) "https://web.archive.org/web/20190126033537/https://www.cbc.ca/news/canada/montreal/montreal-s-f%C3%AAte-des-neiges-cancelled-due-to-extreme-cold-weather-1.4985741",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-55",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=11) "access-date": (string) (len=16) "February 2, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "February 2, 2019",
+      (string) (len=11) "archive-url": (string) (len=143) "https://web.archive.org/web/20190202212334/https://montrealgazette.com/news/quebec/montreal-woman-93-freezes-to-death-outside-seniors-residence",
+      (string) (len=4) "date": (string) (len=16) "January 22, 2019",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=8) "location": (string) (len=8) "Montreal",
+      (string) (len=5) "title": (string) (len=67) "Gilles Duceppe's mother freezes to death outside seniors' residence",
+      (string) (len=3) "url": (string) (len=100) "https://montrealgazette.com/news/quebec/montreal-woman-93-freezes-to-death-outside-seniors-residence",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=11) "The Gazette"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=187) "\"Gilles Duceppe's mother freezes to death outside seniors' residence\". The Gazette. Montreal. January 22, 2019. Archived from the original on February 2, 2019. Retrieved February 2, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=100) "https://montrealgazette.com/news/quebec/montreal-woman-93-freezes-to-death-outside-seniors-residence",
+          Text: (string) (len=69) "\"Gilles Duceppe's mother freezes to death outside seniors' residence\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=143) "https://web.archive.org/web/20190202212334/https://montrealgazette.com/news/quebec/montreal-woman-93-freezes-to-death-outside-seniors-residence",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-56",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=17) "February 11, 2019",
+      (string) (len=5) "title": (string) (len=90) "Hourly Data Report for February 06, 2019 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=357) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2012-03-20%7C2019-02-06&dlyRange=2018-10-30%7C2019-02-06&mlyRange=%7C&StationID=50091&Prov=SK&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=6&searchMethod=contains&Month=2&Day=6&txtStationName=Saskatoon&timeframe=1&Year=2019",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=145) "\"Hourly Data Report for February 06, 2019 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. Retrieved February 11, 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=357) "http://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2012-03-20%7C2019-02-06&dlyRange=2018-10-30%7C2019-02-06&mlyRange=%7C&StationID=50091&Prov=SK&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=1840&EndYear=2019&selRowPerPage=25&Line=6&searchMethod=contains&Month=2&Day=6&txtStationName=Saskatoon&timeframe=1&Year=2019",
+          Text: (string) (len=92) "\"Hourly Data Report for February 06, 2019 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-57",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=17) "February 11, 2019",
+      (string) (len=5) "title": (string) (len=85) "Daily Data Report for February 2019 - Climate - Environment and Climate Change Canada",
+      (string) (len=3) "url": (string) (len=75) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=28011",
+      (string) (len=7) "website": (string) (len=21) "climate.weather.gc.ca"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=140) "\"Daily Data Report for February 2019 - Climate - Environment and Climate Change Canada\". climate.weather.gc.ca. Retrieved February 11, 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=75) "http://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=28011",
+          Text: (string) (len=87) "\"Daily Data Report for February 2019 - Climate - Environment and Climate Change Canada\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-58",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=10) "2020-02-12",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "title": (string) (len=39) "Temperature - Annual data for Saskatoon",
+      (string) (len=3) "url": (string) (len=64) "https://saskatoon.weatherstats.ca/charts/temperature-yearly.html",
+      (string) (len=7) "website": (string) (len=54) "Amateur Weather Statistics for Saskatoon, Saskatchewan"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=120) "\"Temperature - Annual data for Saskatoon\". Amateur Weather Statistics for Saskatoon, Saskatchewan. Retrieved 2020-02-12.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=64) "https://saskatoon.weatherstats.ca/charts/temperature-yearly.html",
+          Text: (string) (len=41) "\"Temperature - Annual data for Saskatoon\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-59",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2020-02-12",
+      (string) (len=4) "date": (string) (len=10) "2019-03-04",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=9) "publisher": (string) (len=21) "Saskatoon StarPhoenix",
+      (string) (len=5) "title": (string) (len=69) "By the numbers: Farewell February, milder March expected in Saskatoon",
+      (string) (len=3) "url": (string) (len=110) "https://thestarphoenix.com/news/local-news/by-the-numbers-farewell-february-milder-march-expected-in-saskatoon"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=129) "\"By the numbers: Farewell February, milder March expected in Saskatoon\". Saskatoon StarPhoenix. 2019-03-04. Retrieved 2020-02-12.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=110) "https://thestarphoenix.com/news/local-news/by-the-numbers-farewell-february-milder-march-expected-in-saskatoon",
+          Text: (string) (len=71) "\"By the numbers: Farewell February, milder March expected in Saskatoon\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-60",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=17) "February 11, 2019",
+      (string) (len=12) "archive-date": (string) (len=13) "July 12, 2021",
+      (string) (len=11) "archive-url": (string) (len=92) "https://web.archive.org/web/20210712004649/https://w2.weather.gov/climate/xmacis.php?wfo=eka",
+      (string) (len=5) "title": (string) (len=37) "National Weather Service - NWS Eureka",
+      (string) (len=3) "url": (string) (len=49) "https://w2.weather.gov/climate/xmacis.php?wfo=eka",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=7) "website": (string) (len=14) "w2.weather.gov"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=130) "\"National Weather Service - NWS Eureka\". w2.weather.gov. Archived from the original on July 12, 2021. Retrieved February 11, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=92) "https://web.archive.org/web/20210712004649/https://w2.weather.gov/climate/xmacis.php?wfo=eka",
+          Text: (string) (len=39) "\"National Weather Service - NWS Eureka\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://w2.weather.gov/climate/xmacis.php?wfo=eka",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-61",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=114) "Snow falls at sea level in Northern California, beaches in Humboldt Co. dusted in powder, SFGate, February 4, 2019",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=112) "https://www.sfgate.com/weather/article/snow-beach-California-sea-level-Eureka-Arcata-13605020.php#photo-16906738",
+          Text: (string) (len=88) "Snow falls at sea level in Northern California, beaches in Humboldt Co. dusted in powder",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-62",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=11) "access-date": (string) "",
+      (string) (len=5) "title": (string) (len=52) "Snowfall around the Bay Area - Snow February 5, 2019",
+      (string) (len=3) "url": (string) (len=97) "https://www.sfgate.com/weather/slideshow/Photos-from-article-Here-s-where-snowfall-has-189681.php"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=55) "\"Snowfall around the Bay Area - Snow February 5, 2019\".",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=97) "https://www.sfgate.com/weather/slideshow/Photos-from-article-Here-s-where-snowfall-has-189681.php",
+          Text: (string) (len=54) "\"Snowfall around the Bay Area - Snow February 5, 2019\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-63",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=14) "March 24, 2019",
+      (string) (len=5) "title": (string) (len=65) "A February to remembrrr in L.A.: It never even reached 70 degrees",
+      (string) (len=3) "url": (string) (len=78) "https://www.latimes.com/local/lanow/la-me-ln-cold-february-20190228-story.html",
+      (string) (len=7) "website": (string) (len=21) "[[Los Angeles Times]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=113) "\"A February to remembrrr in L.A.: It never even reached 70 degrees\". Los Angeles Times. Retrieved March 24, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=78) "https://www.latimes.com/local/lanow/la-me-ln-cold-february-20190228-story.html",
+          Text: (string) (len=67) "\"A February to remembrrr in L.A.: It never even reached 70 degrees\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/Los_Angeles_Times",
+          Text: (string) (len=17) "Los Angeles Times",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-64",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=14) "March 24, 2019",
+      (string) (len=5) "title": (string) (len=61) "A bit of snow in Los Angeles, and suddenly it's #snowmaggedon",
+      (string) (len=3) "url": (string) (len=92) "https://www.nbcnews.com/news/weather/bit-snow-los-angeles-suddenly-it-s-snowmaggedon-n974306",
+      (string) (len=7) "website": (string) (len=12) "[[NBC News]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=100) "\"A bit of snow in Los Angeles, and suddenly it's #snowmaggedon\". NBC News. Retrieved March 24, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=92) "https://www.nbcnews.com/news/weather/bit-snow-los-angeles-suddenly-it-s-snowmaggedon-n974306",
+          Text: (string) (len=63) "\"A bit of snow in Los Angeles, and suddenly it's #snowmaggedon\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=38) "https://en.wikipedia.org/wiki/NBC_News",
+          Text: (string) (len=8) "NBC News",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-65",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=14) "March 24, 2019",
+      (string) (len=5) "title": (string) (len=62) "California drought officially over after more than seven years",
+      (string) (len=3) "url": (string) (len=118) "https://www.nbcnews.com/storyline/california-drought/california-drought-officially-over-after-more-seven-years-n983461",
+      (string) (len=7) "website": (string) (len=12) "[[NBC News]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=101) "\"California drought officially over after more than seven years\". NBC News. Retrieved March 24, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=118) "https://www.nbcnews.com/storyline/california-drought/california-drought-officially-over-after-more-seven-years-n983461",
+          Text: (string) (len=64) "\"California drought officially over after more than seven years\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=38) "https://en.wikipedia.org/wiki/NBC_News",
+          Text: (string) (len=8) "NBC News",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-66",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=137) "Streit, David (January 31, 2019). \"D.C.-area forecast: Bitter arctic air today with snow showers possible tomorrow\". The Washington Post.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=141) "https://www.washingtonpost.com/weather/2019/01/31/dc-area-forecast-bitter-arctic-air-today-with-snow-showers-possible-tomorrow/?noredirect=on",
+          Text: (string) (len=79) "D.C.-area forecast: Bitter arctic air today with snow showers possible tomorrow",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-67",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=10) "2018-02-27",
+      (string) (len=9) "publisher": (string) (len=51) "[[National Oceanic and Atmospheric Administration]]",
+      (string) (len=5) "title": (string) (len=34) "NowData - NOAA Online Weather Data",
+      (string) (len=3) "url": (string) (len=50) "http://www.nws.noaa.gov/climate/xmacis.php?wfo=lwx"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=108) "\"NowData - NOAA Online Weather Data\". National Oceanic and Atmospheric Administration. Retrieved 2018-02-27.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=50) "http://www.nws.noaa.gov/climate/xmacis.php?wfo=lwx",
+          Text: (string) (len=36) "\"NowData - NOAA Online Weather Data\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=77) "https://en.wikipedia.org/wiki/National_Oceanic_and_Atmospheric_Administration",
+          Text: (string) (len=47) "National Oceanic and Atmospheric Administration",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-68",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-02-08",
+      (string) (len=12) "archive-date": (string) (len=17) "November 10, 2018",
+      (string) (len=11) "archive-url": (string) (len=91) "https://web.archive.org/web/20181110040544/http://w2.weather.gov/climate/xmacis.php?wfo=lot",
+      (string) (len=4) "date": (string) (len=16) "January 30, 2019",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=5) "title": (string) (len=34) "NOWDATA - NOAA Online Weather Data",
+      (string) (len=3) "url": (string) (len=49) "https://w2.weather.gov/climate/xmacis.php?wfo=lot",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=132) "\"NOWDATA - NOAA Online Weather Data\". January 30, 2019. Archived from the original on November 10, 2018. Retrieved February 8, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=49) "https://w2.weather.gov/climate/xmacis.php?wfo=lot",
+          Text: (string) (len=36) "\"NOWDATA - NOAA Online Weather Data\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=91) "https://web.archive.org/web/20181110040544/http://w2.weather.gov/climate/xmacis.php?wfo=lot",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-69",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-07-16",
+      (string) (len=4) "date": (string) (len=10) "2019-03-07",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "title": (string) (len=113) "Jan. 31, 2019 officially beats Illinois 20-year-old state low {{sic|nolink=y|reason=error in source|tempurature}}",
+      (string) (len=3) "url": (string) (len=100) "https://wqad.com/2019/03/07/jan-31-2019-officially-beats-illinois-20-year-old-state-low-tempurature/",
+      (string) (len=7) "website": (string) (len=8) "WQAD.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=126) "\"Jan. 31, 2019 officially beats Illinois 20-year-old state low tempurature [sic]\". WQAD.com. 2019-03-07. Retrieved 2019-07-16.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=100) "https://wqad.com/2019/03/07/jan-31-2019-officially-beats-illinois-20-year-old-state-low-tempurature/",
+          Text: (string) (len=76) "\"Jan. 31, 2019 officially beats Illinois 20-year-old state low tempurature \"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-70",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=11) "access-date": (string) (len=16) "February 2, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "February 1, 2019",
+      (string) (len=11) "archive-url": (string) (len=146) "https://web.archive.org/web/20190201212257/https://www.chicagotribune.com/news/weather/ct-met-polar-vortex-illinois-record-low-20190131-story.html",
+      (string) (len=4) "date": (string) (len=16) "January 31, 2019",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=6) "first1": (string) (len=5) "Elvia",
+      (string) (len=5) "last1": (string) (len=7) "Malagon",
+      (string) (len=5) "title": (string) (len=70) "Did the polar vortex help set new record low temperature for Illinois?",
+      (string) (len=3) "url": (string) (len=103) "https://www.chicagotribune.com/news/weather/ct-met-polar-vortex-illinois-record-low-20190131-story.html",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=15) "Chicago Tribune"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=201) "Malagon, Elvia (January 31, 2019). \"Did the polar vortex help set new record low temperature for Illinois?\". Chicago Tribune. Archived from the original on February 1, 2019. Retrieved February 2, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=103) "https://www.chicagotribune.com/news/weather/ct-met-polar-vortex-illinois-record-low-20190131-story.html",
+          Text: (string) (len=72) "\"Did the polar vortex help set new record low temperature for Illinois?\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=146) "https://web.archive.org/web/20190201212257/https://www.chicagotribune.com/news/weather/ct-met-polar-vortex-illinois-record-low-20190131-story.html",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-71",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=15) "8 February 2019",
+      (string) (len=4) "date": (string) (len=15) "2 February 2019",
+      (string) (len=6) "first1": (string) (len=6) "Thomas",
+      (string) (len=5) "last1": (string) (len=5) "Czaja",
+      (string) (len=9) "newspaper": (string) (len=17) "Chicago Sun-Times",
+      (string) (len=5) "title": (string) (len=48) "4th Chicago death attributed to bitter cold snap",
+      (string) (len=3) "url": (string) (len=107) "https://chicago.suntimes.com/news/2-cold-deaths-reported-cook-county-upping-total-to-25-since-start-season/"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=130) "Czaja, Thomas (2 February 2019). \"4th Chicago death attributed to bitter cold snap\". Chicago Sun-Times. Retrieved 8 February 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=107) "https://chicago.suntimes.com/news/2-cold-deaths-reported-cook-county-upping-total-to-25-since-start-season/",
+          Text: (string) (len=50) "\"4th Chicago death attributed to bitter cold snap\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-72",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=111) "More Than 1,600 Flights Canceled at Chicago Airports As Dangerous Cold Continues, NBC Chicago, January 31, 2019",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=90) "https://www.nbcchicago.com/news/local/flight-cancellations-ohare-midway-chicago-cold/6553/",
+          Text: (string) (len=80) "More Than 1,600 Flights Canceled at Chicago Airports As Dangerous Cold Continues",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-73",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=15) "4 February 2019",
+      (string) (len=5) "title": (string) (len=42) "Cold Temperatures of January 30–31, 2019",
+      (string) (len=3) "url": (string) (len=39) "https://www.weather.gov/ind/jan2019cold",
+      (string) (len=7) "website": (string) (len=24) "National Weather Service"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=98) "\"Cold Temperatures of January 30–31, 2019\". National Weather Service. Retrieved 4 February 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=39) "https://www.weather.gov/ind/jan2019cold",
+          Text: (string) (len=44) "\"Cold Temperatures of January 30–31, 2019\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-74",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=15) "4 February 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "January 22, 2016",
+      (string) (len=11) "archive-url": (string) (len=147) "https://web.archive.org/web/20160122064332/http://forecast.weather.gov/product.php?site=PAH&issuedby=PAH&product=PNS&format=CI&version=2&glossary=0",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=5) "title": (string) (len=28) "Public Information Statement",
+      (string) (len=3) "url": (string) (len=105) "https://forecast.weather.gov/product.php?site=PAH&issuedby=PAH&product=PNS&format=CI&version=2&glossary=0",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=7) "website": (string) (len=24) "National Weather Service"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=133) "\"Public Information Statement\". National Weather Service. Archived from the original on January 22, 2016. Retrieved February 4, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=105) "https://forecast.weather.gov/product.php?site=PAH&issuedby=PAH&product=PNS&format=CI&version=2&glossary=0",
+          Text: (string) (len=30) "\"Public Information Statement\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=147) "https://web.archive.org/web/20160122064332/http://forecast.weather.gov/product.php?site=PAH&issuedby=PAH&product=PNS&format=CI&version=2&glossary=0",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-75",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=15) "4 February 2019",
+      (string) (len=12) "archive-date": (string) (len=15) "7 February 2019",
+      (string) (len=11) "archive-url": (string) (len=190) "https://web.archive.org/web/20190207015928/https://www.theoaklandpress.com/news/state/the-impact-of-the-frigid-cold-snowstorm-by-the-numbers/article_9d1c97ca-24c5-11e9-83d8-f70864f893de.html",
+      (string) (len=5) "title": (string) (len=56) "The impact of the frigid cold, snowstorm, by the numbers",
+      (string) (len=3) "url": (string) (len=147) "https://www.theoaklandpress.com/news/state/the-impact-of-the-frigid-cold-snowstorm-by-the-numbers/article_9d1c97ca-24c5-11e9-83d8-f70864f893de.html",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=4) "work": (string) (len=17) "The Oakland Press"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=152) "\"The impact of the frigid cold, snowstorm, by the numbers\". The Oakland Press. Archived from the original on 7 February 2019. Retrieved 4 February 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=190) "https://web.archive.org/web/20190207015928/https://www.theoaklandpress.com/news/state/the-impact-of-the-frigid-cold-snowstorm-by-the-numbers/article_9d1c97ca-24c5-11e9-83d8-f70864f893de.html",
+          Text: (string) (len=58) "\"The impact of the frigid cold, snowstorm, by the numbers\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=147) "https://www.theoaklandpress.com/news/state/the-impact-of-the-frigid-cold-snowstorm-by-the-numbers/article_9d1c97ca-24c5-11e9-83d8-f70864f893de.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-76",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=15) "4 February 2019",
+      (string) (len=4) "date": (string) (len=15) "31 January 2019",
+      (string) (len=6) "first1": (string) (len=8) "Margaret",
+      (string) (len=5) "last1": (string) (len=6) "Fosmoe",
+      (string) (len=5) "title": (string) (len=74) "South Bend sets record for Jan. 30 but doesn't break all-time record...yet",
+      (string) (len=3) "url": (string) (len=142) "https://www.southbendtribune.com/news/local/south-bend-sets-record-for-jan-but-doesn-t-break/article_c7744cb4-a247-5c9f-b173-4e45fa17c01f.html",
+      (string) (len=4) "work": (string) (len=18) "South Bend Tribune"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=160) "Fosmoe, Margaret (31 January 2019). \"South Bend sets record for Jan. 30 but doesn't break all-time record...yet\". South Bend Tribune. Retrieved 4 February 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=142) "https://www.southbendtribune.com/news/local/south-bend-sets-record-for-jan-but-doesn-t-break/article_c7744cb4-a247-5c9f-b173-4e45fa17c01f.html",
+          Text: (string) (len=76) "\"South Bend sets record for Jan. 30 but doesn't break all-time record...yet\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-77",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=15) "7 February 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "February 9, 2019",
+      (string) (len=11) "archive-url": (string) (len=127) "https://web.archive.org/web/20190209180149/https://www.wthr.com/article/ips-and-universities-close-wednesday-due-dangerous-cold",
+      (string) (len=4) "date": (string) (len=15) "30 January 2019",
+      (string) (len=9) "publisher": (string) (len=4) "WTHR",
+      (string) (len=5) "title": (string) (len=62) "IPS and universities close for Wednesday due to dangerous cold",
+      (string) (len=3) "url": (string) (len=84) "https://www.wthr.com/article/ips-and-universities-close-wednesday-due-dangerous-cold",
+      (string) (len=10) "url-status": (string) (len=4) "dead"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=163) "\"IPS and universities close for Wednesday due to dangerous cold\". WTHR. 30 January 2019. Archived from the original on February 9, 2019. Retrieved 7 February 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=127) "https://web.archive.org/web/20190209180149/https://www.wthr.com/article/ips-and-universities-close-wednesday-due-dangerous-cold",
+          Text: (string) (len=64) "\"IPS and universities close for Wednesday due to dangerous cold\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=84) "https://www.wthr.com/article/ips-and-universities-close-wednesday-due-dangerous-cold",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-78",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=5) "title": (string) (len=82) "University of Iowa student dies after being found unresponsive during polar vortex",
+      (string) (len=3) "url": (string) (len=155) "https://www.press-citizen.com/story/news/education/university-of-iowa/2019/01/30/university-iowa-student-believed-have-died-due-extreme-weather/2723808002/",
+      (string) (len=7) "website": (string) (len=23) "Iowa City Press-Citizen"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=110) "\"University of Iowa student dies after being found unresponsive during polar vortex\". Iowa City Press-Citizen.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=155) "https://www.press-citizen.com/story/news/education/university-of-iowa/2019/01/30/university-iowa-student-believed-have-died-due-extreme-weather/2723808002/",
+          Text: (string) (len=84) "\"University of Iowa student dies after being found unresponsive during polar vortex\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-79",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-02-08",
+      (string) (len=4) "date": (string) (len=15) "28 January 2019",
+      (string) (len=5) "first": (string) (len=6) "Thomas",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=4) "last": (string) (len=7) "Novelly",
+      (string) (len=5) "title": (string) (len=60) "Will the polar vortex affect Louisville? Here's what to know",
+      (string) (len=3) "url": (string) (len=126) "https://www.courier-journal.com/story/weather/local/winter/2019/01/28/polar-vortex-2019-affect-louisville-kentucky/2702488002/",
+      (string) (len=7) "website": (string) (len=19) "The Courier-Journal"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=141) "Novelly, Thomas (28 January 2019). \"Will the polar vortex affect Louisville? Here's what to know\". The Courier-Journal. Retrieved 2019-02-08.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=126) "https://www.courier-journal.com/story/weather/local/winter/2019/01/28/polar-vortex-2019-affect-louisville-kentucky/2702488002/",
+          Text: (string) (len=62) "\"Will the polar vortex affect Louisville? Here's what to know\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-80",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-02-08",
+      (string) (len=5) "first": (string) (len=7) "Susanna",
+      (string) (len=4) "last": (string) (len=6) "Heller",
+      (string) (len=5) "title": (string) (len=103) "The Kentucky governor criticized schools for closing down during the polar vortex: 'We're getting soft'",
+      (string) (len=3) "url": (string) (len=100) "https://www.thisisinsider.com/kentucky-gov-matt-bevin-criticized-school-canceled-polar-vortex-2019-1",
+      (string) (len=7) "website": (string) (len=7) "Insider"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=154) "Heller, Susanna. \"The Kentucky governor criticized schools for closing down during the polar vortex: 'We're getting soft'\". Insider. Retrieved 2019-02-08.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=100) "https://www.thisisinsider.com/kentucky-gov-matt-bevin-criticized-school-canceled-polar-vortex-2019-1",
+          Text: (string) (len=106) "\"The Kentucky governor criticized schools for closing down during the polar vortex: 'We're getting soft' \"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-81",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-02-08",
+      (string) (len=4) "date": (string) (len=15) "5 February 2019",
+      (string) (len=5) "first": (string) (len=4) "Char",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=4) "last": (string) (len=5) "Adams",
+      (string) (len=5) "title": (string) (len=83) "Two Brothers Found Dead of Hypothermia Outside Kentucky Home: They 'Froze to Death'",
+      (string) (len=3) "url": (string) (len=69) "https://people.com/human-interest/fugate-brothers-dead-cold-kentucky/",
+      (string) (len=7) "website": (string) (len=10) "people.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=151) "Adams, Char (5 February 2019). \"Two Brothers Found Dead of Hypothermia Outside Kentucky Home: They 'Froze to Death'\". people.com. Retrieved 2019-02-08.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=69) "https://people.com/human-interest/fugate-brothers-dead-cold-kentucky/",
+          Text: (string) (len=86) "\"Two Brothers Found Dead of Hypothermia Outside Kentucky Home: They 'Froze to Death' \"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-82",
+    Group: (string) "",
+    Type: (string) (len=10) "webarchive",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "date": (string) (len=16) "January 30, 2019",
+      (string) (len=3) "url": (string) (len=144) "https://web.archive.org/web/20190130000330/https://www.wilx.com/content/news/Gov-Whitmer-declares-state-of-emergency-in-Michigan--505006832.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=126) "Gov. Whitmer declares state of emergency in Michigan  Archived January 30, 2019, at the Wayback Machine WILX, January 28, 2019",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=101) "https://www.wilx.com/content/news/Gov-Whitmer-declares-state-of-emergency-in-Michigan--505006832.html",
+          Text: (string) (len=52) "Gov. Whitmer declares state of emergency in Michigan",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=144) "https://web.archive.org/web/20190130000330/https://www.wilx.com/content/news/Gov-Whitmer-declares-state-of-emergency-in-Michigan--505006832.html",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Wayback_Machine",
+          Text: (string) (len=15) "Wayback Machine",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-83",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=12) "archive-date": (string) (len=16) "January 31, 2019",
+      (string) (len=11) "archive-url": (string) (len=165) "https://web.archive.org/web/20190131205304/https://www.usnews.com/news/national-news/articles/2019-01-30/extreme-cold-from-polar-vortex-kills-3-in-wisconsin-michigan",
+      (string) (len=4) "date": (string) (len=16) "January 30, 2019",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=5) "title": (string) (len=61) "Extreme Cold From Polar Vortex Kills 3 in Wisconsin, Michigan",
+      (string) (len=3) "url": (string) (len=122) "https://www.usnews.com/news/national-news/articles/2019-01-30/extreme-cold-from-polar-vortex-kills-3-in-wisconsin-michigan",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=24) "U.S. News & World Report"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=156) "\"Extreme Cold From Polar Vortex Kills 3 in Wisconsin, Michigan\". U.S. News & World Report. January 30, 2019. Archived from the original on January 31, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=122) "https://www.usnews.com/news/national-news/articles/2019-01-30/extreme-cold-from-polar-vortex-kills-3-in-wisconsin-michigan",
+          Text: (string) (len=63) "\"Extreme Cold From Polar Vortex Kills 3 in Wisconsin, Michigan\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=165) "https://web.archive.org/web/20190131205304/https://www.usnews.com/news/national-news/articles/2019-01-30/extreme-cold-from-polar-vortex-kills-3-in-wisconsin-michigan",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-84",
+    Group: (string) "",
+    Type: (string) (len=10) "webarchive",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "date": (string) (len=16) "January 31, 2019",
+      (string) (len=3) "url": (string) (len=171) "https://web.archive.org/web/20190131202605/https://www.wnem.com/news/east-lansing-man-found-dead-outdoors-in-extreme-cold/article_7a76c844-2574-11e9-9ae1-d75c3578041b.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=128) "East Lansing man found dead outdoors in extreme cold Archived January 31, 2019, at the Wayback Machine WNEM-TV, January 31, 2019",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=128) "https://www.wnem.com/news/east-lansing-man-found-dead-outdoors-in-extreme-cold/article_7a76c844-2574-11e9-9ae1-d75c3578041b.html",
+          Text: (string) (len=52) "East Lansing man found dead outdoors in extreme cold",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=171) "https://web.archive.org/web/20190131202605/https://www.wnem.com/news/east-lansing-man-found-dead-outdoors-in-extreme-cold/article_7a76c844-2574-11e9-9ae1-d75c3578041b.html",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Wayback_Machine",
+          Text: (string) (len=15) "Wayback Machine",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-85",
+    Group: (string) "",
+    Type: (string) (len=10) "webarchive",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "date": (string) (len=16) "January 31, 2019",
+      (string) (len=3) "url": (string) (len=133) "https://web.archive.org/web/20190131203644/https://www.mlive.com/news/flint/2019/01/flint-breaks-cold-weather-record-set-in-1963.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=144) "Flint breaks cold weather record set in 1963 Archived January 31, 2019, at the Wayback Machine The Flint Journal via MLive.com, January 31, 2019",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=90) "https://www.mlive.com/news/flint/2019/01/flint-breaks-cold-weather-record-set-in-1963.html",
+          Text: (string) (len=44) "Flint breaks cold weather record set in 1963",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=133) "https://web.archive.org/web/20190131203644/https://www.mlive.com/news/flint/2019/01/flint-breaks-cold-weather-record-set-in-1963.html",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Wayback_Machine",
+          Text: (string) (len=15) "Wayback Machine",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-86",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=104) "Dangerous cold continues in Metro Detroit: Wind chills at −30 degrees and below WDIV, January 31, 2019",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=116) "https://www.clickondetroit.com/weather/dangerous-cold-continues-in-metro-detroit-wind-chills-at-30-degrees-and-below",
+          Text: (string) (len=81) "Dangerous cold continues in Metro Detroit: Wind chills at −30 degrees and below",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-87",
+    Group: (string) "",
+    Type: (string) (len=10) "webarchive",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "date": (string) (len=16) "January 31, 2019",
+      (string) (len=3) "url": (string) (len=142) "https://web.archive.org/web/20190131201740/https://www.wnem.com/news/hell-mi-has-frozen-over/article_423f1d98-255e-11e9-8d28-4b89b94f0f70.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=101) "Hell (MI) has frozen over Archived January 31, 2019, at the Wayback Machine WNEM-TV, January 31, 2019",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=99) "https://www.wnem.com/news/hell-mi-has-frozen-over/article_423f1d98-255e-11e9-8d28-4b89b94f0f70.html",
+          Text: (string) (len=25) "Hell (MI) has frozen over",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=142) "https://web.archive.org/web/20190131201740/https://www.wnem.com/news/hell-mi-has-frozen-over/article_423f1d98-255e-11e9-8d28-4b89b94f0f70.html",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Wayback_Machine",
+          Text: (string) (len=15) "Wayback Machine",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-88",
+    Group: (string) "",
+    Type: (string) (len=10) "webarchive",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "date": (string) (len=16) "February 1, 2019",
+      (string) (len=3) "url": (string) (len=150) "https://web.archive.org/web/20190201025609/https://www.mlive.com/news/2019/01/you-can-turn-your-heat-back-up-after-midnight-consumers-energy-says.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=146) "You can turn your heat back up after midnight, Consumers Energy says Archived February 1, 2019, at the Wayback Machine MLive.com, January 31, 2019",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=107) "https://www.mlive.com/news/2019/01/you-can-turn-your-heat-back-up-after-midnight-consumers-energy-says.html",
+          Text: (string) (len=68) "You can turn your heat back up after midnight, Consumers Energy says",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=150) "https://web.archive.org/web/20190201025609/https://www.mlive.com/news/2019/01/you-can-turn-your-heat-back-up-after-midnight-consumers-energy-says.html",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Wayback_Machine",
+          Text: (string) (len=15) "Wayback Machine",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-89",
+    Group: (string) "",
+    Type: (string) (len=10) "webarchive",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "date": (string) (len=16) "January 31, 2019",
+      (string) (len=3) "url": (string) (len=164) "https://web.archive.org/web/20190131224951/https://nbc25news.com/news/local/consumers-energy-apologizes-for-equipment-failure-thanks-residents-for-turning-down-heat"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=165) "Consumers Energy apologizes for equipment failure, thanks residents for turning down heat Archived January 31, 2019, at the Wayback Machine WEYI-TV, January 31, 2019",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=121) "https://nbc25news.com/news/local/consumers-energy-apologizes-for-equipment-failure-thanks-residents-for-turning-down-heat",
+          Text: (string) (len=89) "Consumers Energy apologizes for equipment failure, thanks residents for turning down heat",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=164) "https://web.archive.org/web/20190131224951/https://nbc25news.com/news/local/consumers-energy-apologizes-for-equipment-failure-thanks-residents-for-turning-down-heat",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Wayback_Machine",
+          Text: (string) (len=15) "Wayback Machine",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-90",
+    Group: (string) "",
+    Type: (string) (len=10) "webarchive",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "date": (string) (len=16) "February 1, 2019",
+      (string) (len=3) "url": (string) (len=156) "https://web.archive.org/web/20190201211823/https://www.abc12.com/content/news/Mail-delivery-resumes-after-weather-related-State-of-Emergency--505192471.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=138) "Mail delivery resumes after weather-related State of Emergency Archived February 1, 2019, at the Wayback Machine WJRT-TV, February 1, 2019",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=113) "https://www.abc12.com/content/news/Mail-delivery-resumes-after-weather-related-State-of-Emergency--505192471.html",
+          Text: (string) (len=62) "Mail delivery resumes after weather-related State of Emergency",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=156) "https://web.archive.org/web/20190201211823/https://www.abc12.com/content/news/Mail-delivery-resumes-after-weather-related-State-of-Emergency--505192471.html",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Wayback_Machine",
+          Text: (string) (len=15) "Wayback Machine",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-91",
+    Group: (string) "",
+    Type: (string) (len=10) "webarchive",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "date": (string) (len=16) "February 2, 2019",
+      (string) (len=3) "url": (string) (len=169) "https://web.archive.org/web/20190202095133/https://www.abc12.com/content/news/Some-Mid-Michigan-students-getting-full-week-off-as-schools-close-for-Friday-505146161.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=150) "Some Mid-Michigan students get fifth day off amid record cold temperatures Archived February 2, 2019, at the Wayback Machine WJRT-TV, February 1, 2019",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=126) "https://www.abc12.com/content/news/Some-Mid-Michigan-students-getting-full-week-off-as-schools-close-for-Friday-505146161.html",
+          Text: (string) (len=74) "Some Mid-Michigan students get fifth day off amid record cold temperatures",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=169) "https://web.archive.org/web/20190202095133/https://www.abc12.com/content/news/Some-Mid-Michigan-students-getting-full-week-off-as-schools-close-for-Friday-505146161.html",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Wayback_Machine",
+          Text: (string) (len=15) "Wayback Machine",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-92",
+    Group: (string) "",
+    Type: (string) (len=10) "webarchive",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "date": (string) (len=16) "February 1, 2019",
+      (string) (len=3) "url": (string) (len=200) "https://web.archive.org/web/20190201065359/https://www.washingtonpost.com/weather/2019/01/30/chicago-faces-its-coldest-day-record-midwest-plunges-into-deep-freeze/?noredirect=on&utm_term=.87d9bff71417"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=168) "Midwest temperatures ‘could approach all-time record values’ Wednesday night Archived February 1, 2019, at the Wayback Machine The Washington Post, January 30, 2019",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=134) "https://www.washingtonpost.com/weather/2019/01/30/chicago-faces-its-coldest-day-record-midwest-plunges-into-deep-freeze/?noredirect=on",
+          Text: (string) (len=80) "Midwest temperatures ‘could approach all-time record values’ Wednesday night",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=200) "https://web.archive.org/web/20190201065359/https://www.washingtonpost.com/weather/2019/01/30/chicago-faces-its-coldest-day-record-midwest-plunges-into-deep-freeze/?noredirect=on&utm_term=.87d9bff71417",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Wayback_Machine",
+          Text: (string) (len=15) "Wayback Machine",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-93",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=11) "access-date": (string) (len=16) "January 31, 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "January 30, 2019",
+      (string) (len=11) "archive-url": (string) (len=147) "https://web.archive.org/web/20190130212721/https://bringmethenews.com/minnesota-weather/heres-a-list-of-the-coldest-wind-chills-in-minnesota-so-far",
+      (string) (len=2) "df": (string) (len=7) "mdy-all",
+      (string) (len=5) "first": (string) (len=3) "Joe",
+      (string) (len=4) "last": (string) (len=6) "Nelson",
+      (string) (len=5) "title": (string) (len=60) "Here's a list of the coldest wind chills in Minnesota so far",
+      (string) (len=3) "url": (string) (len=104) "https://bringmethenews.com/minnesota-weather/heres-a-list-of-the-coldest-wind-chills-in-minnesota-so-far",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=7) "website": (string) (len=17) "Bring Me The News"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=171) "Nelson, Joe. \"Here's a list of the coldest wind chills in Minnesota so far\". Bring Me The News. Archived from the original on January 30, 2019. Retrieved January 31, 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=104) "https://bringmethenews.com/minnesota-weather/heres-a-list-of-the-coldest-wind-chills-in-minnesota-so-far",
+          Text: (string) (len=62) "\"Here's a list of the coldest wind chills in Minnesota so far\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=147) "https://web.archive.org/web/20190130212721/https://bringmethenews.com/minnesota-weather/heres-a-list-of-the-coldest-wind-chills-in-minnesota-so-far",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-94",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-02-08",
+      (string) (len=9) "publisher": (string) (len=51) "[[National Oceanic and Atmospheric Administration]]",
+      (string) (len=5) "title": (string) (len=36) "NowData – NOAA Online Weather Data",
+      (string) (len=3) "url": (string) (len=49) "https://w2.weather.gov/climate/xmacis.php?wfo=mpx"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=110) "\"NowData – NOAA Online Weather Data\". National Oceanic and Atmospheric Administration. Retrieved 2019-02-08.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=49) "https://w2.weather.gov/climate/xmacis.php?wfo=mpx",
+          Text: (string) (len=38) "\"NowData – NOAA Online Weather Data\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=77) "https://en.wikipedia.org/wiki/National_Oceanic_and_Atmospheric_Administration",
+          Text: (string) (len=47) "National Oceanic and Atmospheric Administration",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-95",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "date": (string) (len=16) "January 31, 2019",
+      (string) (len=6) "first1": (string) (len=9) "Mary Lynn",
+      (string) (len=6) "first2": (string) (len=4) "Mike",
+      (string) (len=6) "first3": (string) (len=4) "John",
+      (string) (len=5) "last1": (string) (len=5) "Smith",
+      (string) (len=5) "last2": (string) (len=8) "Hughlett",
+      (string) (len=5) "last3": (string) (len=6) "Reinan",
+      (string) (len=5) "title": (string) (len=84) "With deep freeze still on, Minnesota utility asks customers to turn down thermostats",
+      (string) (len=3) "url": (string) (len=110) "http://www.startribune.com/index.php/deep-freeze-brings-natural-gas-shortage-frostbite-to-minnesota/505074202/",
+      (string) (len=7) "website": (string) (len=12) "Star Tribune"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=168) "Smith, Mary Lynn; Hughlett, Mike; Reinan, John (January 31, 2019). \"With deep freeze still on, Minnesota utility asks customers to turn down thermostats\". Star Tribune.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=110) "http://www.startribune.com/index.php/deep-freeze-brings-natural-gas-shortage-frostbite-to-minnesota/505074202/",
+          Text: (string) (len=86) "\"With deep freeze still on, Minnesota utility asks customers to turn down thermostats\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-96",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=73) "Montana’s Dangerously Cold Winter Sets Records, US News, March 12, 2019",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=119) "https://www.usnews.com/news/best-states/articles/2019-03-12/montana-makes-national-records-with-dangerously-cold-winter",
+          Text: (string) (len=48) "Montana’s Dangerously Cold Winter Sets Records",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-97",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=91) "Great Falls breaks record for consecutive freezing days, Great Falls Tribune, March 5, 2019",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=113) "https://www.greatfallstribune.com/story/news/2019/03/05/31-days-freezing-and-counting-cold-spell-ages/3066544002/",
+          Text: (string) (len=55) "Great Falls breaks record for consecutive freezing days",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-98",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=43) "February 2019 National Climate Report, NOAA",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=74) "https://www.ncei.noaa.gov/access/monitoring/monthly-report/national/201902",
+          Text: (string) (len=37) "February 2019 National Climate Report",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-99",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=109) "National weather experts say Montana just endured \"life-threatening\" historic cold snap, WLUR, March 11, 2019",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=160) "https://www.kulr8.com/news/montana/national-weather-experts-say-montana-just-endured-life-threatening-historic/article_786091e7-2e9b-5715-8466-b285febe0078.html",
+          Text: (string) (len=87) "National weather experts say Montana just endured \"life-threatening\" historic cold snap",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-100",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=80) "32 below in Great Falls shatters cold record, Great Falls Tribune, March 3, 2019",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=105) "https://www.greatfallstribune.com/story/news/2019/03/03/good-morning-great-falls-its-32-below/3049540002/",
+          Text: (string) (len=44) "32 below in Great Falls shatters cold record",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-101",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=4) "date": (string) (len=15) "31 January 2019",
+      (string) (len=6) "first1": (string) (len=3) "Azi",
+      (string) (len=6) "first2": (string) (len=4) "Andy",
+      (string) (len=5) "last1": (string) (len=8) "Paybarah",
+      (string) (len=5) "last2": (string) (len=6) "Newman",
+      (string) (len=9) "newspaper": (string) (len=18) "The New York Times",
+      (string) (len=5) "title": (string) (len=33) "N.Y. Today: Brutally Cold Weather",
+      (string) (len=3) "url": (string) (len=77) "https://www.nytimes.com/2019/01/31/nyregion/newyorktoday/ny-cold-weather.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=103) "Paybarah, Azi; Newman, Andy (31 January 2019). \"N.Y. Today: Brutally Cold Weather\". The New York Times.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=77) "https://www.nytimes.com/2019/01/31/nyregion/newyorktoday/ny-cold-weather.html",
+          Text: (string) (len=35) "\"N.Y. Today: Brutally Cold Weather\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-102",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=75) "Arctic Blast Brings Record Cold To NYC, The Weather Gamut, January 31, 2019",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=114) "https://www.weathergamut.com/2019/01/31/arctic-blast-brings-record-cold-to-nyc/record-cold-day-in-nyc-jan-31-2019/",
+          Text: (string) (len=38) "Arctic Blast Brings Record Cold To NYC",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-103",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=96) "Polar vortex hits US northeast as more deaths blamed on extreme cold, France24, February 1, 2019",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=100) "https://www.france24.com/en/20190201-polar-vortex-hits-usa-northeast-more-deaths-blamed-extreme-cold",
+          Text: (string) (len=68) "Polar vortex hits US northeast as more deaths blamed on extreme cold",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-104",
+    Group: (string) "",
+    Type: (string) (len=10) "webarchive",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "date": (string) (len=16) "January 31, 2019",
+      (string) (len=3) "url": (string) (len=116) "https://web.archive.org/web/20190131202047/https://buffalonews.com/2019/01/31/man-found-dead-in-amherst-bus-shelter/"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=141) "Death of well-known homeless man appears weather related Archived January 31, 2019, at the Wayback Machine The Buffalo News, January 31, 2019",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=73) "https://buffalonews.com/2019/01/31/man-found-dead-in-amherst-bus-shelter/",
+          Text: (string) (len=56) "Death of well-known homeless man appears weather related",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=116) "https://web.archive.org/web/20190131202047/https://buffalonews.com/2019/01/31/man-found-dead-in-amherst-bus-shelter/",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Wayback_Machine",
+          Text: (string) (len=15) "Wayback Machine",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-105",
+    Group: (string) "",
+    Type: (string) (len=10) "webarchive",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "date": (string) (len=16) "January 31, 2019",
+      (string) (len=3) "url": (string) (len=140) "https://web.archive.org/web/20190131205347/https://buffalonews.com/2019/01/31/windchill-warning-in-effect-as-bitter-dangerous-cold-persists/"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=148) "Wind chill warning in effect as bitter, dangerous cold persists Archived January 31, 2019, at the Wayback Machine The Buffalo News, January 31, 2019",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=97) "https://buffalonews.com/2019/01/31/windchill-warning-in-effect-as-bitter-dangerous-cold-persists/",
+          Text: (string) (len=63) "Wind chill warning in effect as bitter, dangerous cold persists",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=140) "https://web.archive.org/web/20190131205347/https://buffalonews.com/2019/01/31/windchill-warning-in-effect-as-bitter-dangerous-cold-persists/",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Wayback_Machine",
+          Text: (string) (len=15) "Wayback Machine",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-106",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=16) "February 4, 2019",
+      (string) (len=4) "date": (string) (len=16) "February 4, 2019",
+      (string) (len=6) "first1": (string) (len=7) "Stephen",
+      (string) (len=5) "last1": (string) (len=6) "Nessen",
+      (string) (len=9) "publisher": (string) (len=3) "NPR",
+      (string) (len=5) "title": (string) (len=70) "Power Restored To Brooklyn Jail Where Inmates Went A Week Without Heat",
+      (string) (len=3) "url": (string) (len=111) "https://www.npr.org/2019/02/04/691260314/power-restored-to-brooklyn-jail-where-inmates-went-a-week-without-heat"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=142) "Nessen, Stephen (February 4, 2019). \"Power Restored To Brooklyn Jail Where Inmates Went A Week Without Heat\". NPR. Retrieved February 4, 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=111) "https://www.npr.org/2019/02/04/691260314/power-restored-to-brooklyn-jail-where-inmates-went-a-week-without-heat",
+          Text: (string) (len=72) "\"Power Restored To Brooklyn Jail Where Inmates Went A Week Without Heat\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-107",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=16) "February 3, 2019",
+      (string) (len=4) "date": (string) (len=16) "February 2, 2019",
+      (string) (len=6) "first1": (string) (len=6) "Kalhan",
+      (string) (len=5) "last1": (string) (len=10) "Rosenblatt",
+      (string) (len=9) "publisher": (string) (len=8) "NBC News",
+      (string) (len=5) "title": (string) (len=94) "Outrage grows over reports of Brooklyn prison with little heat, electricity during frigid week",
+      (string) (len=3) "url": (string) (len=118) "https://www.nbcnews.com/news/us-news/outrage-grows-over-reports-brooklyn-prison-little-heat-electricity-during-n966186"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=174) "Rosenblatt, Kalhan (February 2, 2019). \"Outrage grows over reports of Brooklyn prison with little heat, electricity during frigid week\". NBC News. Retrieved February 3, 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=118) "https://www.nbcnews.com/news/us-news/outrage-grows-over-reports-brooklyn-prison-little-heat-electricity-during-n966186",
+          Text: (string) (len=96) "\"Outrage grows over reports of Brooklyn prison with little heat, electricity during frigid week\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-108",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=16) "February 4, 2019",
+      (string) (len=4) "date": (string) (len=16) "February 1, 2019",
+      (string) (len=6) "first1": (string) (len=5) "Annie",
+      (string) (len=5) "last1": (string) (len=7) "Correal",
+      (string) (len=5) "title": (string) (len=87) "No Heat for Days at a Jail in Brooklyn Where Hundreds of Inmates Are Sick and 'Frantic'",
+      (string) (len=3) "url": (string) (len=71) "https://www.nytimes.com/2019/02/01/nyregion/mdc-brooklyn-jail-heat.html",
+      (string) (len=7) "website": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=173) "Correal, Annie (February 1, 2019). \"No Heat for Days at a Jail in Brooklyn Where Hundreds of Inmates Are Sick and 'Frantic'\". The New York Times. Retrieved February 4, 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=71) "https://www.nytimes.com/2019/02/01/nyregion/mdc-brooklyn-jail-heat.html",
+          Text: (string) (len=90) "\"No Heat for Days at a Jail in Brooklyn Where Hundreds of Inmates Are Sick and 'Frantic' \"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-109",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=15) "6 February 2019",
+      (string) (len=4) "date": (string) (len=16) "February 5, 2019",
+      (string) (len=6) "first1": (string) (len=4) "Chad",
+      (string) (len=5) "last1": (string) (len=6) "Arnold",
+      (string) (len=5) "title": (string) (len=82) "Justice Department to investigate federal prison in NY after weeklong power outage",
+      (string) (len=3) "url": (string) (len=117) "https://www.usatoday.com/story/news/nation/2019/02/04/brooklyn-metropolitan-detention-center-power-outage/2769731002/",
+      (string) (len=4) "work": (string) (len=13) "[[USA Today]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=156) "Arnold, Chad (February 5, 2019). \"Justice Department to investigate federal prison in NY after weeklong power outage\". USA Today. Retrieved 6 February 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=117) "https://www.usatoday.com/story/news/nation/2019/02/04/brooklyn-metropolitan-detention-center-power-outage/2769731002/",
+          Text: (string) (len=84) "\"Justice Department to investigate federal prison in NY after weeklong power outage\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=39) "https://en.wikipedia.org/wiki/USA_Today",
+          Text: (string) (len=9) "USA Today",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-110",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=16) "February 8, 2019",
+      (string) (len=4) "date": (string) (len=16) "February 3, 2019",
+      (string) (len=6) "first1": (string) (len=9) "Christine",
+      (string) (len=6) "first2": (string) (len=5) "Heidi",
+      (string) (len=5) "last1": (string) (len=9) "Clarridge",
+      (string) (len=5) "last2": (string) (len=7) "Groover",
+      (string) (len=5) "title": (string) (len=85) "Seattle's first snow of the year wreaks havoc on traffic, cancels schools and flights",
+      (string) (len=3) "url": (string) (len=115) "https://www.seattletimes.com/seattle-news/weather/winter-weather-returns-bringing-snow-south-through-region-sunday/",
+      (string) (len=4) "work": (string) (len=17) "The Seattle Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=192) "Clarridge, Christine; Groover, Heidi (February 3, 2019). \"Seattle's first snow of the year wreaks havoc on traffic, cancels schools and flights\". The Seattle Times. Retrieved February 8, 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=115) "https://www.seattletimes.com/seattle-news/weather/winter-weather-returns-bringing-snow-south-through-region-sunday/",
+          Text: (string) (len=87) "\"Seattle's first snow of the year wreaks havoc on traffic, cancels schools and flights\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-111",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=16) "February 8, 2019",
+      (string) (len=4) "date": (string) (len=16) "February 5, 2019",
+      (string) (len=5) "first": (string) (len=4) "Asia",
+      (string) (len=4) "last": (string) (len=6) "Fields",
+      (string) (len=5) "title": (string) (len=90) "Seattle-area schools delay classes as ice lingers; officials warn 'this is just round one'",
+      (string) (len=3) "url": (string) (len=150) "https://www.seattletimes.com/seattle-news/transportation/while-road-conditions-in-some-of-seattle-have-improved-officials-warn-this-is-just-round-one/",
+      (string) (len=4) "work": (string) (len=17) "The Seattle Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=173) "Fields, Asia (February 5, 2019). \"Seattle-area schools delay classes as ice lingers; officials warn 'this is just round one'\". The Seattle Times. Retrieved February 8, 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=150) "https://www.seattletimes.com/seattle-news/transportation/while-road-conditions-in-some-of-seattle-have-improved-officials-warn-this-is-just-round-one/",
+          Text: (string) (len=93) "\"Seattle-area schools delay classes as ice lingers; officials warn 'this is just round one' \"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-112",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=16) "February 8, 2019",
+      (string) (len=4) "date": (string) (len=16) "February 8, 2019",
+      (string) (len=5) "first": (string) (len=4) "Asia",
+      (string) (len=4) "last": (string) (len=6) "Fields",
+      (string) (len=5) "title": (string) (len=69) "Snowstorm hits Seattle region as governor declares state of emergency",
+      (string) (len=3) "url": (string) (len=123) "https://www.seattletimes.com/seattle-news/weather/snowstorm-hammers-seattle-region-as-governor-declares-state-of-emergency/",
+      (string) (len=4) "work": (string) (len=17) "The Seattle Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=152) "Fields, Asia (February 8, 2019). \"Snowstorm hits Seattle region as governor declares state of emergency\". The Seattle Times. Retrieved February 8, 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=123) "https://www.seattletimes.com/seattle-news/weather/snowstorm-hammers-seattle-region-as-governor-declares-state-of-emergency/",
+          Text: (string) (len=71) "\"Snowstorm hits Seattle region as governor declares state of emergency\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-113",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=16) "February 8, 2019",
+      (string) (len=4) "date": (string) (len=16) "February 8, 2019",
+      (string) (len=5) "first": (string) (len=5) "Doyle",
+      (string) (len=4) "last": (string) (len=4) "Rice",
+      (string) (len=5) "title": (string) (len=77) "'Brutal winter weather': Snowstorm to paste Seattle for second time this week",
+      (string) (len=3) "url": (string) (len=125) "https://www.usatoday.com/story/news/nation/2019/02/08/seattle-snowstorm-rare-winter-blast-paste-pacific-northwest/2810575002/",
+      (string) (len=4) "work": (string) (len=9) "USA Today"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=151) "Rice, Doyle (February 8, 2019). \"'Brutal winter weather': Snowstorm to paste Seattle for second time this week\". USA Today. Retrieved February 8, 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=125) "https://www.usatoday.com/story/news/nation/2019/02/08/seattle-snowstorm-rare-winter-blast-paste-pacific-northwest/2810575002/",
+          Text: (string) (len=80) "\" 'Brutal winter weather': Snowstorm to paste Seattle for second time this week\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-114",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=16) "February 8, 2019",
+      (string) (len=4) "date": (string) (len=16) "February 8, 2019",
+      (string) (len=9) "publisher": (string) (len=3) "CNN",
+      (string) (len=5) "title": (string) (len=95) "Washington governor declares state of emergency as state braces for its 2nd snowstorm this week",
+      (string) (len=3) "url": (string) (len=76) "https://www.cnn.com/2019/02/08/us/seattle-snow-weather-friday-wxc/index.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=149) "\"Washington governor declares state of emergency as state braces for its 2nd snowstorm this week\". CNN. February 8, 2019. Retrieved February 8, 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=76) "https://www.cnn.com/2019/02/08/us/seattle-snow-weather-friday-wxc/index.html",
+          Text: (string) (len=97) "\"Washington governor declares state of emergency as state braces for its 2nd snowstorm this week\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-115",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=6) "number": (string) (len=19) "1623319067032707072",
+      (string) (len=5) "title": (string) (len=77) "The 17.5\" between the 8th & 11th was the highest 4 day snow total since 1969.",
+      (string) (len=4) "user": (string) (len=10) "NWSSeattle"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=136) "@NWSSeattle (February  8, 2023). \"The 17.5\" between the 8th & 11th was the highest 4 day snow total since 1969\" (Tweet) – via Twitter.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=51) "https://x.com/NWSSeattle/status/1623319067032707072",
+          Text: (string) (len=78) "\"The 17.5\" between the 8th & 11th was the highest 4 day snow total since 1969\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://en.wikipedia.org/wiki/Tweet_(social_media)",
+          Text: (string) (len=5) "Tweet",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=37) "https://en.wikipedia.org/wiki/Twitter",
+          Text: (string) (len=7) "Twitter",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-116",
+    Group: (string) "",
+    Type: (string) (len=10) "webarchive",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=4) "date": (string) (len=16) "January 29, 2019",
+      (string) (len=3) "url": (string) (len=168) "https://web.archive.org/web/20190129152758/https://www.jsonline.com/story/weather/2019/01/28/wisconsin-snowstorm-milwaukee-wakes-up-blizzard-like-conditions/2698625002/"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=203) "Road conditions deteriorating rapidly as Evers declares a state of emergency and frigid temperatures move in Archived January 29, 2019, at the Wayback Machine Milwaukee Journal Sentinel, January 28, 2019",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=125) "https://www.jsonline.com/story/weather/2019/01/28/wisconsin-snowstorm-milwaukee-wakes-up-blizzard-like-conditions/2698625002/",
+          Text: (string) (len=108) "Road conditions deteriorating rapidly as Evers declares a state of emergency and frigid temperatures move in",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=168) "https://web.archive.org/web/20190129152758/https://www.jsonline.com/story/weather/2019/01/28/wisconsin-snowstorm-milwaukee-wakes-up-blizzard-like-conditions/2698625002/",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Wayback_Machine",
+          Text: (string) (len=15) "Wayback Machine",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}
