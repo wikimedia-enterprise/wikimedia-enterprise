@@ -5,13 +5,13 @@ import (
 	"time"
 
 	"wikimedia-enterprise/services/structured-data/config/env"
-	"wikimedia-enterprise/services/structured-data/submodules/log"
 	pr "wikimedia-enterprise/services/structured-data/submodules/prometheus"
 	"wikimedia-enterprise/services/structured-data/submodules/schema"
 	"wikimedia-enterprise/services/structured-data/submodules/subscriber"
 	"wikimedia-enterprise/services/structured-data/submodules/tracing"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
+	"github.com/wikimedia-enterprise/log"
 	"go.uber.org/dig"
 )
 

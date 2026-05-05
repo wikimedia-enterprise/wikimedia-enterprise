@@ -4,9 +4,9 @@ import (
 	"testing"
 	"wikimedia-enterprise/services/structured-data/packages/builder"
 	"wikimedia-enterprise/services/structured-data/submodules/schema"
-	"wikimedia-enterprise/services/structured-data/submodules/wmf"
 
 	"github.com/stretchr/testify/suite"
+	"github.com/wikimedia-enterprise/wmf"
 )
 
 type scoresBuilderTestSuite struct {

@@ -2,11 +2,13 @@
 package log
 
 import (
+	"context"
 	"log"
 	"os"
 	"sort"
 	"time"
 
+	"go.opentelemetry.io/otel/trace"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )
@@ -305,4 +307,12 @@ func (l *Log) Panic(msg any, fds ...Field) {
 // entries. Applications should take care to call Sync before exiting.
 func (l *Log) Sync() error {
 	return l.zap.Sync()
+}
+
+func TraceID(ctx context.Context) Field {
+	sc := trace.SpanContextFromContext(ctx)
+	if !sc.IsValid() {
+		return Any("traceid", "")
+	}
+	return Any("traceid", sc.TraceID().String())
 }

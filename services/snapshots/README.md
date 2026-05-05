@@ -86,6 +86,11 @@ Need to make sure that `go`, `docker` and `docker-compose` are installed on your
    go test ./... -v
    ```
 
+1. Run kafka integration tests:
+   ```
+   go test ./libraries/kafka -tags=integration -run BrokerRestart -v
+   ```
+
 1. In order to run linter you need to have `golangci-lint` [installed](https://golangci-lint.run/usage/install/). After that you can run:
 
    ```bash

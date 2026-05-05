@@ -7,8 +7,8 @@ import (
 	"time"
 	"wikimedia-enterprise/services/content-integrity/config/env"
 	"wikimedia-enterprise/services/content-integrity/libraries/collector"
-	"wikimedia-enterprise/services/content-integrity/submodules/log"
 
+	"github.com/wikimedia-enterprise/log"
 	"go.uber.org/dig"
 	"golang.org/x/exp/slices"
 )

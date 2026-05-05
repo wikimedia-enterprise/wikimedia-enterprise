@@ -2,7 +2,8 @@ package builder
 
 import (
 	"wikimedia-enterprise/services/structured-data/submodules/schema"
-	"wikimedia-enterprise/services/structured-data/submodules/wmf"
+
+	"github.com/wikimedia-enterprise/wmf"
 )
 
 // ScoresBuilder follows the builder pattern for the Scores schema.

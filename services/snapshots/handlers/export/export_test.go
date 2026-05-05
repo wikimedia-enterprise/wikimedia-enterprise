@@ -31,6 +31,8 @@ import (
 	"github.com/stretchr/testify/suite"
 )
 
+var transientReadAllErr = kafka.NewError(kafka.ErrTransport, "transport failure", false)
+
 type hashReaderTestSuite struct {
 	suite.Suite
 	rdr *export.HashReader
@@ -413,7 +415,13 @@ func (s *handlerTestSuite) TestExport() {
 	} else if s.eur != nil {
 		s.Assert().Equal(s.eur, err)
 	} else if s.era != nil {
-		s.Assert().Equal(s.era, err)
+		// Export ignores transient Kafka errors
+		if libkafka.IsTransientKafkaErr(s.era) {
+			s.Assert().NoError(err)
+			s.Assert().Equal(s.res, res)
+		} else {
+			s.Assert().Equal(s.era, err)
+		}
 	} else if s.eho != nil {
 		s.Assert().Equal(s.eho, err)
 	} else if s.epo != nil {
@@ -457,6 +465,18 @@ func TestHandler(t *testing.T) {
 			stp:        stp,
 			tpc:        "aws.structured-data.enwiki-articles-compacted.v1",
 			era:        errors.New("read all error"),
+		},
+		{
+			req: &pb.ExportRequest{
+				Namespace: 0,
+				Project:   "enwiki",
+				Language:  "en",
+			},
+			res:        &pb.ExportResponse{Total: 4},
+			partitions: []int{20, 40},
+			stp:        stp,
+			tpc:        "aws.structured-data.enwiki-articles-compacted.v1",
+			era:        transientReadAllErr, // transient should be ignored
 		},
 		{
 			req: &pb.ExportRequest{

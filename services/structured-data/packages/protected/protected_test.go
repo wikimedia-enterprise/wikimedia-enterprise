@@ -6,10 +6,10 @@ import (
 	"net/url"
 	"testing"
 	"wikimedia-enterprise/services/structured-data/packages/protected"
-	"wikimedia-enterprise/services/structured-data/submodules/wmf"
 
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
+	"github.com/wikimedia-enterprise/wmf"
 )
 
 type protectedTestSuite struct {

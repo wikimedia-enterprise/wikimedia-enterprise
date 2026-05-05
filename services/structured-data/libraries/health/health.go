@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"time"
 	"wikimedia-enterprise/services/structured-data/config/env"
-	"wikimedia-enterprise/services/structured-data/submodules/log"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/wikimedia-enterprise/health-checker/health"
+	"github.com/wikimedia-enterprise/log"
 )
 
 func logHealthCheck(name string, _ string, result error) {

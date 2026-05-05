@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-redis/redis/v8"
 	"github.com/golang-jwt/jwt"
+	"github.com/redis/go-redis/v9"
 )
 
 // AuthProvider is an interface that wraps GetUser function

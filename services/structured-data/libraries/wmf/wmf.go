@@ -3,7 +3,8 @@ package wmf
 import (
 	"wikimedia-enterprise/services/structured-data/config/env"
 	"wikimedia-enterprise/services/structured-data/submodules/tracing"
-	"wikimedia-enterprise/services/structured-data/submodules/wmf"
+
+	"github.com/wikimedia-enterprise/wmf"
 )
 
 // NewAPI create new wmf API with custom configuration.

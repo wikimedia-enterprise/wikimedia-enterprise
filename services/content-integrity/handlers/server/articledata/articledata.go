@@ -7,8 +7,8 @@ import (
 	"fmt"
 	pb "wikimedia-enterprise/services/content-integrity/handlers/server/protos"
 	"wikimedia-enterprise/services/content-integrity/libraries/integrity"
-	"wikimedia-enterprise/services/content-integrity/submodules/log"
 
+	"github.com/wikimedia-enterprise/log"
 	"go.uber.org/dig"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

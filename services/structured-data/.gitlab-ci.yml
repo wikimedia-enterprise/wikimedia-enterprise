@@ -1,7 +1,7 @@
 include:
   - project: "wikimedia-enterprise/general/cdtools"
     ref: main
-    file: "/ci/go_multiple_apps.yml"
+    file: "/ci/go_multiple_apps_eks.yml"
   - project: "wikimedia-enterprise/general/cdtools"
     ref: main
     file: "/ci/deploy/prep_argocd.yml"
@@ -10,9 +10,9 @@ stages:
   - test
   - analyses
   - build
-  - deploy
+  - push
   - app-restart
-  
+
 #---------------------
 # Service definitions
 #---------------------
@@ -91,78 +91,47 @@ build:prod:articlevisibility:
     - .build_prod
 
 #-----------------
-# Deploy Jobs DEV
+# Push Jobs DEV
 #-----------------
-deploy:dev:articlebulk:
+push:dev:articlebulk:
   extends:
     - .articlebulk
-    - .deploy_dev
+    - .push_dev
 
-deploy:dev:articledelete:
+push:dev:articledelete:
   extends:
     - .articledelete
-    - .deploy_dev
+    - .push_dev
 
-deploy:dev:articleupdate:
+push:dev:articleupdate:
   extends:
     - .articleupdate
-    - .deploy_dev
+    - .push_dev
 
-deploy:dev:articlevisibility:
+push:dev:articlevisibility:
   extends:
     - .articlevisibility
-    - .deploy_dev
+    - .push_dev
 
 #-----------------
-# Deploy Jobs UAT
+# Push Jobs PROD
 #-----------------
-# deploy:uat:articlebulk:
-#   extends:
-#     - .articlebulk
-#     - .deploy_uat
-
-# deploy:uat:articledelete:
-#   extends:
-#     - .articledelete
-#     - .deploy_uat
-
-# deploy:uat:articleupdate:
-#   extends:
-#     - .articleupdate
-#     - .deploy_uat
-
-# deploy:uat:articlevisibility:
-#   extends:
-#     - .articlevisibility
-#     - .deploy_uat
-
-#-----------------
-# Deploy Jobs PROD
-#-----------------
-deploy:prod:articlebulk:
+push:prod:articlebulk:
   extends:
     - .articlebulk
-    - .deploy_prod
-  # needs:
-  # - build:articlebulk
+    - .push_prod
 
-deploy:prod:articledelete:
+push:prod:articledelete:
   extends:
     - .articledelete
-    - .deploy_prod
-  # needs:
-  # - build:articledelete
+    - .push_prod
 
-deploy:prod:articleupdate:
+push:prod:articleupdate:
   extends:
     - .articleupdate
-    - .deploy_prod
-  # needs:
-  # - build:articleupdate
+    - .push_prod
 
-deploy:prod:articlevisibility:
+push:prod:articlevisibility:
   extends:
     - .articlevisibility
-    - .deploy_prod
-  # needs:
-  #   - build:articlevisibility
+    - .push_prod

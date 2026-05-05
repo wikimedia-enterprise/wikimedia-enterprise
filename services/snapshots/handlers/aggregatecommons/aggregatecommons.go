@@ -17,13 +17,13 @@ import (
 	"github.com/aws/aws-sdk-go/service/s3/s3manager"
 	"github.com/djherbis/nio/v3"
 	"github.com/klauspost/pgzip"
+	"github.com/wikimedia-enterprise/log"
 	"go.uber.org/dig"
 
 	"wikimedia-enterprise/services/snapshots/config/env"
 	pb "wikimedia-enterprise/services/snapshots/handlers/protos"
 	"wikimedia-enterprise/services/snapshots/libraries/s3tracerproxy"
 	"wikimedia-enterprise/services/snapshots/libraries/uploader"
-	"wikimedia-enterprise/services/snapshots/submodules/log"
 
 	nbf "github.com/djherbis/buffer"
 )

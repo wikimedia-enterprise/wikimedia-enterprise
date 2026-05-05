@@ -24,7 +24,8 @@ from pipelines.utils.utils import (
     get_batch_size,
     get_exclude_events,
     chunks,
-    slack_failure_callback
+    slack_failure_callback,
+    retry_failed_tasks_callback
 )
 
 from pipelines.protos.snapshots_pb2_grpc import SnapshotsStub
@@ -39,18 +40,19 @@ logger = getLogger("airflow.task")
 
 # Initialize service env variable name
 # addr_name = "STRUCTURED_SNAPSHOTS_SERVICE_ADDR"
+default_args = {"provide_context": True}
+enable_retries = False
+if enable_retries:
+    default_args["retries"] = 1
+    default_args["retry_delay"] = timedelta(seconds=30)
 
 dag_args = dict(
     dag_id="structured-snapshots",
     start_date=datetime(2022, 1, 1, 0, 0, 0),
     schedule_interval="@daily",
     catchup=False,
-    on_failure_callback=slack_failure_callback,
-    default_args=dict(
-        provide_context=True,
-        retries=0,
-        retry_delay=timedelta(seconds=30),
-    ),
+    on_failure_callback=retry_failed_tasks_callback,
+    default_args=default_args,
 )
 
 

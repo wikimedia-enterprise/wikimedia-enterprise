@@ -7,9 +7,8 @@ import (
 	"wikimedia-enterprise/services/content-integrity/submodules/schema"
 	"wikimedia-enterprise/services/content-integrity/submodules/subscriber"
 
-	"wikimedia-enterprise/services/content-integrity/submodules/log"
-
 	"github.com/confluentinc/confluent-kafka-go/kafka"
+	"github.com/wikimedia-enterprise/log"
 	"go.uber.org/dig"
 )
 

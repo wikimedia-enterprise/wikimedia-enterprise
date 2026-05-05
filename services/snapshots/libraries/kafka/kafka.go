@@ -4,13 +4,71 @@ package kafka
 import (
 	"context"
 	"errors"
+	"strings"
 	"time"
 	"wikimedia-enterprise/services/snapshots/config/env"
-	"wikimedia-enterprise/services/snapshots/submodules/log"
 
 	"github.com/avast/retry-go"
 	"github.com/confluentinc/confluent-kafka-go/kafka"
+	"github.com/wikimedia-enterprise/log"
 )
+
+// IsTransientKafkaErr returns true for errors
+// that are expected during broker restarts / network blips.
+// We retry and allow librdkafka to recover automatically; we don't enforce a local retry cap.
+// The guardrail is the gRPC ctx deadline set by the Airflow DAG clients (batches/snapshots),
+// which will cancel the request and cause this loop to exit via ctx.Done().
+func IsTransientKafkaErr(err error) bool {
+	if err == nil {
+		return false
+	}
+	var ke kafka.Error
+	if errors.As(err, &ke) {
+		switch ke.Code() {
+		case kafka.ErrTransport,
+			kafka.ErrAllBrokersDown,
+			kafka.ErrNotLeaderForPartition,
+			kafka.ErrLeaderNotAvailable,
+			kafka.ErrNetworkException,
+			kafka.ErrRequestTimedOut,
+			kafka.ErrTimedOut,
+			kafka.ErrNotCoordinator,
+			kafka.ErrCoordinatorLoadInProgress,
+			kafka.ErrNotController:
+			return true
+		default:
+			return false
+		}
+	}
+
+	// Fallback for non-typed / wrapped errors (e.g. "connection refused" bubbles up)
+	s := strings.ToLower(err.Error())
+	return strings.Contains(s, "connection refused") ||
+		strings.Contains(s, "all brokers down") ||
+		strings.Contains(s, "local: timed out") ||
+		strings.Contains(s, "timed out") ||
+		strings.Contains(s, "connection setup timed out") ||
+		strings.Contains(s, "setup timed out in state connect") ||
+		strings.Contains(s, "broker transport failure") ||
+		strings.Contains(s, "failed: connect") ||
+		strings.Contains(s, "connect to ipv4") ||
+		strings.Contains(s, "connect to ipv6") ||
+		strings.Contains(s, "not leader for partition") ||
+		strings.Contains(s, "leader not available")
+}
+
+// kafkaRetryOpts builds the shared retry-go configuration for Kafka calls.
+// It retries transient Kafka errors, respects context cancellation, and applies
+// a bounded backoff strategy.
+func kafkaRetryOpts(ctx context.Context) []retry.Option {
+	return []retry.Option{
+		retry.Context(ctx),
+		retry.RetryIf(IsTransientKafkaErr),
+		retry.Delay(500 * time.Millisecond),
+		retry.MaxDelay(5 * time.Second),
+		retry.LastErrorOnly(true),
+	}
+}
 
 // ErrReadAllEndMessage this message can be passed to ReadAll callback function to stop the consumption.
 var ErrReadAllEndMessage = errors.New("read all end message")
@@ -79,13 +137,18 @@ func (c *Consumer) ReadAll(ctx context.Context, since int, topic string, partiti
 	if since > 0 {
 		var otp []kafka.TopicPartition
 
-		gof := func() (err error) {
-			otp, err = c.Consumer.OffsetsForTimes([]kafka.TopicPartition{tp}, 60000)
+		if err := retry.Do(
+			func() error {
+				var err error
+				otp, err = c.Consumer.OffsetsForTimes([]kafka.TopicPartition{tp}, 60000)
+				return err
+			},
+			kafkaRetryOpts(ctx)...,
+		); err != nil {
+			if ctx.Err() != nil {
+				return nil
+			}
 			return err
-		}
-
-		if err := retry.Do(gof); err != nil {
-			return err.(retry.Error)[0]
 		}
 
 		tp = otp[0]
@@ -99,17 +162,22 @@ func (c *Consumer) ReadAll(ctx context.Context, since int, topic string, partiti
 	var highWatermark int64
 	if c.LogWatermark || c.UseWatermark {
 		var low int64
-		gof := func() (err error) {
-			low, highWatermark, err = c.Consumer.QueryWatermarkOffsets(topic, int32(partition), 1000)
-			return err
-		}
 
-		if err := retry.Do(gof); err != nil {
+		if err := retry.Do(
+			func() error {
+				var err error
+				low, highWatermark, err = c.Consumer.QueryWatermarkOffsets(topic, int32(partition), 1000)
+				return err
+			},
+			kafkaRetryOpts(ctx)...,
+		); err != nil {
 			log.Warn("error retrieving watermark", idrField, partitionField)
 
 			if c.UseWatermark {
-				// If using watermarks, we can't afford to continue without them.
-				return err.(retry.Error)[0]
+				if ctx.Err() != nil {
+					return nil
+				}
+				return err
 			}
 		}
 
@@ -123,7 +191,15 @@ func (c *Consumer) ReadAll(ctx context.Context, since int, topic string, partiti
 	}
 
 	log.Info("assigning partition offset", idrField, partitionField, log.Any("offset", tp.Offset))
-	if err := c.Consumer.Assign([]kafka.TopicPartition{tp}); err != nil {
+	if err := retry.Do(
+		func() error {
+			return c.Consumer.Assign([]kafka.TopicPartition{tp})
+		},
+		kafkaRetryOpts(ctx)...,
+	); err != nil {
+		if ctx.Err() != nil {
+			return nil
+		}
 		return err
 	}
 
@@ -141,11 +217,8 @@ func (c *Consumer) ReadAll(ctx context.Context, since int, topic string, partiti
 			return nil
 		default:
 			if err != nil {
-				switch err.Error() {
-				case kafka.ErrTransport.String(), kafka.ErrBadMsg.String():
-					log.Error("read all, message error", log.Any("error", err), idrField, partitionField)
-					continue
-				case kafka.ErrTimedOut.String():
+
+				if ke, ok := err.(kafka.Error); ok && ke.Code() == kafka.ErrTimedOut {
 					log.Warn("received timeout err", log.Any("error", err), idrField, partitionField)
 
 					if c.UseWatermark {
@@ -161,10 +234,20 @@ func (c *Consumer) ReadAll(ctx context.Context, since int, topic string, partiti
 
 					log.Error("read all, finished with timeout err", log.Any("error", err), idrField, partitionField)
 					return nil
-				default:
-					log.Error("read all, default error finished with err", log.Any("error", err), idrField, partitionField)
-					return err
 				}
+				if IsTransientKafkaErr(err) {
+					log.Info(
+						"read all, transient kafka error (will retry)",
+						log.Any("error", err),
+						idrField, partitionField,
+					)
+					time.Sleep(500 * time.Millisecond)
+					continue
+				}
+
+				// Everything else bubbles
+				log.Error("read all, default error finished with err", log.Any("error", err), idrField, partitionField)
+				return err
 			}
 
 			if c.UseWatermark {

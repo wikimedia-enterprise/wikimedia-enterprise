@@ -22,7 +22,6 @@ import (
 	"wikimedia-enterprise/services/snapshots/libraries/s3tracerproxy"
 	"wikimedia-enterprise/services/snapshots/libraries/uploader"
 	"wikimedia-enterprise/services/snapshots/submodules/config"
-	"wikimedia-enterprise/services/snapshots/submodules/log"
 	"wikimedia-enterprise/services/snapshots/submodules/schema"
 
 	nbf "github.com/djherbis/buffer"
@@ -30,6 +29,7 @@ import (
 	"github.com/klauspost/pgzip"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
+	"github.com/wikimedia-enterprise/log"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/s3"
@@ -454,7 +454,21 @@ func (h *Handler) Export(ctx context.Context, req *pb.ExportRequest) (*pb.Export
 		// wait for all consumers to finish
 		for i := 0; i < len(pts); i++ {
 			if err := <-erp; err != nil {
-				erm = err
+				if ctx.Err() != nil {
+					continue
+				}
+				if libkafka.IsTransientKafkaErr(err) {
+					log.Warn("ignoring transient kafka error from partition consumer", idrField, log.Any("error", err))
+					continue
+				}
+
+				// Non-transient: record it (keep first one)
+				if erm == nil {
+					erm = err
+				} else {
+					log.Error("additional partition error (already have one)", idrField, log.Any("error", err))
+				}
+
 			}
 		}
 

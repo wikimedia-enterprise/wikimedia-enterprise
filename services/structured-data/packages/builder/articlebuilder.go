@@ -6,7 +6,8 @@ import (
 	"time"
 	"wikimedia-enterprise/services/structured-data/submodules/parser"
 	"wikimedia-enterprise/services/structured-data/submodules/schema"
-	"wikimedia-enterprise/services/structured-data/submodules/wmf"
+
+	"github.com/wikimedia-enterprise/wmf"
 )
 
 const (

@@ -4,9 +4,9 @@ import (
 	"errors"
 	"testing"
 	"wikimedia-enterprise/services/structured-data/libraries/aggregate"
-	"wikimedia-enterprise/services/structured-data/submodules/wmf"
 
 	"github.com/stretchr/testify/suite"
+	"github.com/wikimedia-enterprise/wmf"
 )
 
 type isNonFatalErrTestSuite struct {
