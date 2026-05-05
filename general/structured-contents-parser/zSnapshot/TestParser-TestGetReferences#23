@@ -1,0 +1,435 @@
+([]*parser.Reference) (len=17) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=6) "harvnb",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=6) "Rotman",
+      (string) (len=1) "2": (string) (len=4) "2006",
+      (string) (len=3) "loc": (string) (len=6) "p. 156"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=19) "Rotman 2006, p. 156",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=53) "https://en.wikipedia.org/wiki/Coset#CITEREFRotman2006",
+          Text: (string) (len=11) "Rotman 2006",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=6) "harvnb",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=4) "Dean",
+      (string) (len=1) "2": (string) (len=4) "1990",
+      (string) (len=3) "loc": (string) (len=6) "p. 100"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=17) "Dean 1990, p. 100",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=51) "https://en.wikipedia.org/wiki/Coset#CITEREFDean1990",
+          Text: (string) (len=9) "Dean 1990",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2020-12-09",
+      (string) (len=12) "archive-date": (string) (len=10) "2022-01-22",
+      (string) (len=11) "archive-url": (string) (len=91) "https://web.archive.org/web/20220122151749/http://abstract.ups.edu/aata/section-cosets.html",
+      (string) (len=5) "title": (string) (len=11) "AATA Cosets",
+      (string) (len=3) "url": (string) (len=48) "http://abstract.ups.edu/aata/section-cosets.html",
+      (string) (len=10) "url-status": (string) (len=4) "dead"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=78) "\"AATA Cosets\". Archived from the original on 2022-01-22. Retrieved 2020-12-09.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=91) "https://web.archive.org/web/20220122151749/http://abstract.ups.edu/aata/section-cosets.html",
+          Text: (string) (len=13) "\"AATA Cosets\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "http://abstract.ups.edu/aata/section-cosets.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=6) "harvnb",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=6) "Rotman",
+      (string) (len=1) "2": (string) (len=4) "2006",
+      (string) (len=3) "loc": (string) (len=5) "p.155"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=18) "Rotman 2006, p.155",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=53) "https://en.wikipedia.org/wiki/Coset#CITEREFRotman2006",
+          Text: (string) (len=11) "Rotman 2006",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=6) "harvnb",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=8) "Fraleigh",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=6) "p. 117"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=21) "Fraleigh 1994, p. 117",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=55) "https://en.wikipedia.org/wiki/Coset#CITEREFFraleigh1994",
+          Text: (string) (len=13) "Fraleigh 1994",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=6) "harvnb",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=8) "Fraleigh",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=6) "p. 169"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=21) "Fraleigh 1994, p. 169",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=55) "https://en.wikipedia.org/wiki/Coset#CITEREFFraleigh1994",
+          Text: (string) (len=13) "Fraleigh 1994",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=6) "harvnb",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=5) "Joshi",
+      (string) (len=1) "2": (string) (len=4) "1989",
+      (string) (len=3) "loc": (string) (len=6) "p. 323"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=18) "Joshi 1989, p. 323",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://en.wikipedia.org/wiki/Coset#CITEREFJoshi1989",
+          Text: (string) (len=10) "Joshi 1989",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=6) "harvnb",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=6) "Rotman",
+      (string) (len=1) "2": (string) (len=4) "2006",
+      (string) (len=3) "loc": (string) (len=6) "p. 155"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=19) "Rotman 2006, p. 155",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=53) "https://en.wikipedia.org/wiki/Coset#CITEREFRotman2006",
+          Text: (string) (len=11) "Rotman 2006",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=6) "harvnb",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=6) "Burton",
+      (string) (len=1) "2": (string) (len=4) "1988",
+      (string) (len=3) "loc": (string) (len=12) "pp. 128, 135"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=25) "Burton 1988, pp. 128, 135",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=53) "https://en.wikipedia.org/wiki/Coset#CITEREFBurton1988",
+          Text: (string) (len=11) "Burton 1988",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=6) "harvnb",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=8) "Jacobson",
+      (string) (len=1) "2": (string) (len=4) "2009",
+      (string) (len=3) "loc": (string) (len=5) "p. 52"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=20) "Jacobson 2009, p. 52",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=55) "https://en.wikipedia.org/wiki/Coset#CITEREFJacobson2009",
+          Text: (string) (len=13) "Jacobson 2009",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-11",
+    Group: (string) "",
+    Type: (string) (len=6) "harvnb",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=6) "Miller",
+      (string) (len=1) "2": (string) (len=4) "2012",
+      (string) (len=3) "loc": (string) (len=14) "p. 24 footnote"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=27) "Miller 2012, p. 24 footnote",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=53) "https://en.wikipedia.org/wiki/Coset#CITEREFMiller2012",
+          Text: (string) (len=11) "Miller 2012",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-12",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=79) "The transpose matrix is used so that the vectors can be written as row vectors.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-13",
+    Group: (string) "",
+    Type: (string) (len=6) "harvnb",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=6) "Rotman",
+      (string) (len=1) "2": (string) (len=4) "2006",
+      (string) (len=3) "loc": (string) (len=6) "p. 423"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=19) "Rotman 2006, p. 423",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=53) "https://en.wikipedia.org/wiki/Coset#CITEREFRotman2006",
+          Text: (string) (len=11) "Rotman 2006",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-14",
+    Group: (string) "",
+    Type: (string) (len=6) "harvnb",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=5) "Scott",
+      (string) (len=1) "2": (string) (len=4) "1987",
+      (string) (len=3) "loc": (string) (len=5) "p. 19"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=17) "Scott 1987, p. 19",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://en.wikipedia.org/wiki/Coset#CITEREFScott1987",
+          Text: (string) (len=10) "Scott 1987",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-15",
+    Group: (string) "",
+    Type: (string) (len=6) "harvnb",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=4) "Hall",
+      (string) (len=1) "2": (string) (len=4) "1959",
+      (string) (len=3) "loc": (string) (len=11) "pp. 14–15"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=22) "Hall 1959, pp. 14–15",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=51) "https://en.wikipedia.org/wiki/Coset#CITEREFHall1959",
+          Text: (string) (len=9) "Hall 1959",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-16",
+    Group: (string) "",
+    Type: (string) (len=3) "cs2",
+    Metadata: (map[string]string) (len=13) {
+      (string) (len=7) "chapter": (string) (len=33) "Double Cosets in Algebraic Groups",
+      (string) (len=3) "doi": (string) (len=28) "10.1007/978-94-011-5308-9_13",
+      (string) (len=13) "editor1-first": (string) (len=4) "R.W.",
+      (string) (len=12) "editor1-last": (string) (len=6) "Carter",
+      (string) (len=13) "editor2-first": (string) (len=2) "J.",
+      (string) (len=12) "editor2-last": (string) (len=4) "Saxl",
+      (string) (len=5) "first": (string) (len=7) "Gary M.",
+      (string) (len=4) "isbn": (string) (len=17) "978-0-7923-5292-1",
+      (string) (len=4) "last": (string) (len=5) "Seitz",
+      (string) (len=5) "pages": (string) (len=9) "241–257",
+      (string) (len=9) "publisher": (string) (len=8) "Springer",
+      (string) (len=5) "title": (string) (len=41) "Algebraic Groups and their Representation",
+      (string) (len=4) "year": (string) (len=4) "1998"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=220) "Seitz, Gary M. (1998), \"Double Cosets in Algebraic Groups\", in Carter, R.W.; Saxl, J. (eds.), Algebraic Groups and their Representation, Springer, pp.\u00a0241–257, doi:10.1007/978-94-011-5308-9_13, ISBN\u00a0978-0-7923-5292-1",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://doi.org/10.1007%2F978-94-011-5308-9_13",
+          Text: (string) (len=28) "10.1007/978-94-011-5308-9_13",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-7923-5292-1",
+          Text: (string) (len=17) "978-0-7923-5292-1",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-17",
+    Group: (string) "",
+    Type: (string) (len=3) "cs2",
+    Metadata: (map[string]string) (len=12) {
+      (string) (len=5) "arxiv": (string) (len=12) "math/0305256",
+      (string) (len=3) "doi": (string) (len=30) "10.1016/j.jalgebra.2003.08.011",
+      (string) (len=5) "first": (string) (len=8) "W. Ethan",
+      (string) (len=5) "issue": (string) (len=1) "2",
+      (string) (len=7) "journal": (string) (len=18) "Journal of Algebra",
+      (string) (len=4) "last": (string) (len=9) "Duckworth",
+      (string) (len=5) "pages": (string) (len=9) "718–733",
+      (string) (len=9) "publisher": (string) (len=8) "Elsevier",
+      (string) (len=5) "s2cid": (string) (len=8) "17839580",
+      (string) (len=5) "title": (string) (len=60) "Infiniteness of double coset collections in algebraic groups",
+      (string) (len=6) "volume": (string) (len=3) "273",
+      (string) (len=4) "year": (string) (len=4) "2004"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=213) "Duckworth, W. Ethan (2004), \"Infiniteness of double coset collections in algebraic groups\", Journal of Algebra, 273 (2), Elsevier: 718–733, arXiv:math/0305256, doi:10.1016/j.jalgebra.2003.08.011, S2CID\u00a017839580",
+      Links: ([]*parser.Link) (len=6) {
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/ArXiv_(identifier)",
+          Text: (string) (len=5) "arXiv",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=34) "https://arxiv.org/abs/math/0305256",
+          Text: (string) (len=12) "math/0305256",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://doi.org/10.1016%2Fj.jalgebra.2003.08.011",
+          Text: (string) (len=30) "10.1016/j.jalgebra.2003.08.011",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/S2CID_(identifier)",
+          Text: (string) (len=5) "S2CID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://api.semanticscholar.org/CorpusID:17839580",
+          Text: (string) (len=8) "17839580",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

@@ -1,0 +1,43 @@
+([]*parser.OrderedTable) (len=1) {
+  (*parser.OrderedTable)({
+    ID: (string) (len=34) "business_model.acquisitions_table1",
+    Table: (*parser.TableWithHeaders)({
+      Headers: ([][]parser.Cell) (len=1) {
+        ([]parser.Cell) (len=2) {
+          (parser.Cell) {
+            Value: (string) (len=4) "Year",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=20) "Notable acquisitions",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      Footers: ([][]parser.Cell) <nil>,
+      Rows: ([][]parser.Cell) (len=2) {
+        ([]parser.Cell) (len=2) {
+          (parser.Cell) {
+            Value: (string) (len=5) "2020s",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=38) "ShowingTime, VRX Media, Follow up boss",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=2) {
+          (parser.Cell) {
+            Value: (string) (len=5) "2010s",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=94) "Dotloop, HotPads, Mortgage Lenders of America, Naked Apartments, RentJuice, StreetEasy, Trulia",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      ConfidenceScore: (float64) 1
+    })
+  })
+}

@@ -1,0 +1,151 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=6) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=164) "Ian Goodfellow, Yoshua Bengio and Aaron Courville: Deep Learning (Adaptive Computation and Machine Learning), MIT Press, Cambridge (USA), 2016. ISBN 978-0262035613.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+            Text: (string) (len=4) "ISBN",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=64) "https://en.wikipedia.org/wiki/Special:BookSources/978-0262035613",
+            Text: (string) (len=14) "978-0262035613",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=145) "Dzmitry Bahdanau; Kyunghyun Cho; Yoshua Bengio (2014). \"Neural Machine Translation by Jointly Learning to Align and Translate\". arXiv: 1409.0473.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/ArXiv_(identifier)",
+            Text: (string) (len=5) "arXiv",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=31) "https://arxiv.org/abs/1409.0473",
+            Text: (string) (len=9) "1409.0473",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=31) "https://arxiv.org/archive/cs.CL",
+            Text: (string) (len=5) "cs.CL",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=224) "Léon Bottou, Patrick Haffner, Paul G. Howard, Patrice Simard, Yoshua Bengio, Yann LeCun: High Quality Document Image Compression with DjVu, In: Journal of Electronic Imaging, Band 7, 1998, S. 410–425 doi: 10.1117/1.482609",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=51) "http://yann.lecun.com/exdb/publis/pdf/bottou-98.pdf",
+            Text: (string) (len=49) "High Quality Document Image Compression with DjVu",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+            Text: (string) (len=3) "doi",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=34) "https://doi.org/10.1117%2F1.482609",
+            Text: (string) (len=16) "10.1117/1.482609",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=265) "Bengio, Yoshua; Schuurmans, Dale; Lafferty, John; Williams, Chris K. I. and Culotta, Aron (eds.), Advances in Neural Information Processing Systems 22 (NIPS'22), December 7th–10th, 2009, Vancouver, BC, Neural Information Processing Systems (NIPS) Foundation, 2009",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=133) "Y. Bengio, Dong-Hyun Lee, Jorg Bornschein, Thomas Mesnard, Zhouhan Lin: Towards Biologically Plausible Deep Learning, arXiv.org, 2016",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=32) "https://arxiv.org/abs/1502.04156",
+            Text: (string) (len=44) "Towards Biologically Plausible Deep Learning",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=195) "Bengio contributed one chapter to Architects of Intelligence: The Truth About AI from the People Building it, Packt Publishing, 2018, ISBN 978-1-78-913151-2, by the American futurist Martin Ford.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+            Text: (string) (len=4) "ISBN",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-1-78-913151-2",
+            Text: (string) (len=17) "978-1-78-913151-2",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Martin_Ford_(author)",
+            Text: (string) (len=11) "Martin Ford",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=60) "https://en.wikipedia.org/wiki/Yoshua_Bengio#cite_note-RR1-57",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

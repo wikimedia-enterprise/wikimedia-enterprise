@@ -1,0 +1,1125 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=15) "Infobox country",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) (len=48) "Republic of Malta Repubblika ta' Malta (Maltese)",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=15) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=17) "Flag Coat of arms",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=2) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=103) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Malta.svg/125px-Flag_of_Malta.svg.png",
+                Identifier: (string) (len=64) "1c8227b9e7433e4d35976a66f5b1f0ef21a20494ea748c64d0f83a4982dc50e4",
+                Name: (string) (len=22) "File:Flag_of_Malta.svg",
+                AlternativeText: (string) (len=13) "Flag of Malta",
+                Caption: (string) (len=13) "Flag of Malta",
+                Height: (int) 83,
+                Width: (int) 125,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=118) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Malta.svg/90px-Coat_of_arms_of_Malta.svg.png",
+                Identifier: (string) (len=64) "e11b63f4950f25a20d95b65c6cea978e19df1904630ea5d144f011aaae778f96",
+                Name: (string) (len=30) "File:Coat_of_arms_of_Malta.svg",
+                AlternativeText: (string) (len=21) "Coat of arms of Malta",
+                Caption: (string) (len=21) "Coat of arms of Malta",
+                Height: (int) 115,
+                Width: (int) 90,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Flag_of_Malta",
+                Text: (string) (len=4) "Flag",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malta",
+                Text: (string) (len=12) "Coat of arms",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=63) "Motto: Virtute et constantia (Latin) \"Strength and persistence\"",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Latin_language",
+                Text: (string) (len=5) "Latin",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=49) "Anthem: L-Innu Malti (Maltese) \"The Maltese Hymn\"",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/L-Innu_Malti",
+                Text: (string) (len=12) "L-Innu Malti",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Maltese_language",
+                Text: (string) (len=7) "Maltese",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=116) "Location of Malta (green circle) – in Europe (light green & dark grey) – in the European Union (light green) –",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=93) "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/EU-Malta.svg/250px-EU-Malta.svg.png",
+                Identifier: (string) (len=64) "d658945e3894f51b8afe4367bb1fc6e5b908c5fd3ab948199a1cd88a9ada7ca4",
+                Name: (string) (len=17) "File:EU-Malta.svg",
+                AlternativeText: (string) (len=134) "Location of\u00a0Malta\u00a0(green circle)–\u00a0in Europe\u00a0(light green &\u00a0dark grey)–\u00a0in the European Union\u00a0(light green)\u00a0 –\u00a0 [Legend]",
+                Caption: (string) (len=1784) "<div style=\"text-align:center;line-height:1.15em;\" data-parsoid='{\"stx\":\"html\"}'>Location of<span typeof=\"mw:Entity\" data-parsoid='{\"src\":\"&nbsp;\",\"srcContent\":\"\u00a0\"}'>\u00a0</span>Malta<span typeof=\"mw:Entity\" data-parsoid='{\"src\":\"&nbsp;\",\"srcContent\":\"\u00a0\"}'>\u00a0</span>(green circle)<p style=\"text-align:left;margin-left:1.2ex;margin-top:0px;margin-bottom:0px;line-height:1.15em;\" data-parsoid='{\"stx\":\"html\"}'>–<span typeof=\"mw:Entity\" data-parsoid='{\"src\":\"&nbsp;\",\"srcContent\":\"\u00a0\"}'>\u00a0</span>in <a rel=\"mw:WikiLink\" href=\"./Europe\" title=\"Europe\" data-parsoid='{\"stx\":\"simple\",\"a\":{\"href\":\"./Europe\"},\"sa\":{\"href\":\"Europe\"}}'>Europe</a><span typeof=\"mw:Entity\" data-parsoid='{\"src\":\"&nbsp;\",\"srcContent\":\"\u00a0\"}'>\u00a0</span>(light green &<span typeof=\"mw:Entity\" data-parsoid='{\"src\":\"&nbsp;\",\"srcContent\":\"\u00a0\"}'>\u00a0</span>dark grey)<br data-parsoid='{\"stx\":\"html\",\"selfClose\":true}'/>–<span typeof=\"mw:Entity\" data-parsoid='{\"src\":\"&nbsp;\",\"srcContent\":\"\u00a0\"}'>\u00a0</span>in the <a rel=\"mw:WikiLink\" href=\"./European_Union\" title=\"European Union\" data-parsoid='{\"stx\":\"simple\",\"a\":{\"href\":\"./European_Union\"},\"sa\":{\"href\":\"European Union\"}}'>European Union</a><span typeof=\"mw:Entity\" data-parsoid='{\"src\":\"&nbsp;\",\"srcContent\":\"\u00a0\"}'>\u00a0</span>(light green)<span typeof=\"mw:Entity\" data-parsoid='{\"src\":\"&nbsp;\",\"srcContent\":\"\u00a0\"}'>\u00a0</span> –<span typeof=\"mw:Entity\" data-parsoid='{\"src\":\"&nbsp;\",\"srcContent\":\"\u00a0\"}'>\u00a0</span> <span typeof=\"mw:Entity\" data-parsoid='{\"src\":\"&#91;\",\"srcContent\":\"[\"}'>[</span><a rel=\"mw:WikiLink\" href=\"./File:EU-Malta.svg\" title=\"File:EU-Malta.svg\" data-parsoid='{\"stx\":\"piped\",\"a\":{\"href\":\"./File:EU-Malta.svg\"},\"sa\":{\"href\":\":File:EU-Malta.svg\"}}'>Legend</a><span typeof=\"mw:Entity\" data-parsoid='{\"src\":\"&#93;\",\"srcContent\":\"]\"}'>]</span></p></div>",
+                Height: (int) 210,
+                Width: (int) 250,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Europe",
+                Text: (string) (len=6) "Europe",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/European_Union",
+                Text: (string) (len=14) "European Union",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Capital",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=52) "Valletta 35°54′N 14°31′E / 35.900°N 14.517°E",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Valletta",
+                Text: (string) (len=8) "Valletta",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=89) "https://geohack.toolforge.org/geohack.php?pagename=Malta&params=35_54_N_14_31_E_type:city",
+                Text: (string) (len=43) "35°54′N 14°31′E / 35.900°N 14.517°E",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=27) "Largest administrative unit",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "St. Paul's Bay",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Local_councils_of_Malta",
+                Text: (string) (len=19) "administrative unit",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/St._Paul's_Bay",
+                Text: (string) (len=14) "St. Paul's Bay",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Malta#cite_note-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=18) "Official languages",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=2) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Maltese",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/Maltese_language",
+                    Text: (string) (len=7) "Maltese",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "English",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/English_language",
+                    Text: (string) (len=7) "English",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=47) "https://en.wikipedia.org/wiki/Malta#cite_note-2",
+                    Text: (string) "",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Other languages",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=29) "Maltese Sign Language Italian",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Maltese_Sign_Language",
+                Text: (string) (len=21) "Maltese Sign Language",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Malta#cite_note-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Maltese_Italian",
+                Text: (string) (len=7) "Italian",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=20) "Ethnic groups (2021)",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=6) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=15) "89.1% Caucasian",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=44) "https://en.wikipedia.org/wiki/Caucasian_race",
+                    Text: (string) (len=9) "Caucasian",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=47) "https://en.wikipedia.org/wiki/Malta#cite_note-5",
+                    Text: (string) "",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "5.2% Asian",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=42) "https://en.wikipedia.org/wiki/Asian_people",
+                    Text: (string) (len=5) "Asian",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=9) "1.7% Arab",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=35) "https://en.wikipedia.org/wiki/Arabs",
+                    Text: (string) (len=4) "Arab",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=12) "1.5% African",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=52) "https://en.wikipedia.org/wiki/Demographics_of_Africa",
+                    Text: (string) (len=7) "African",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=22) "1.3% Hispanic / Latino",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=38) "https://en.wikipedia.org/wiki/Hispanic",
+                    Text: (string) (len=8) "Hispanic",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/Latino_(demonym)",
+                    Text: (string) (len=6) "Latino",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=25) "1.2% More than one origin",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Ethnic_group",
+                Text: (string) (len=13) "Ethnic groups",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Malta#cite_note-4",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Religion (2021)",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=4) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=16) "5.1% no religion",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=40) "https://en.wikipedia.org/wiki/Irreligion",
+                    Text: (string) (len=11) "no religion",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "3.9% Islam",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=44) "https://en.wikipedia.org/wiki/Islam_in_Malta",
+                    Text: (string) (len=5) "Islam",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=13) "1.4% Hinduism",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=47) "https://en.wikipedia.org/wiki/Hinduism_in_Malta",
+                    Text: (string) (len=8) "Hinduism",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "1.1% other",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=61) "https://en.wikipedia.org/wiki/Malta#cite_note-2021_census-1-6",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=65) "https://en.wikipedia.org/wiki/Malta#cite_note-Census_statistics-7",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Demonym(s)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "Maltese",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Demonym",
+                Text: (string) (len=10) "Demonym(s)",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Maltese_people",
+                Text: (string) (len=7) "Maltese",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Government",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=30) "Unitary parliamentary republic",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Politics_of_Malta",
+                Text: (string) (len=10) "Government",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/Unitary_parliamentary_republic",
+                Text: (string) (len=30) "Unitary parliamentary republic",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "President",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "Myriam Spiteri Debono",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/President_of_Malta",
+                Text: (string) (len=9) "President",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Myriam_Spiteri_Debono",
+                Text: (string) (len=21) "Myriam Spiteri Debono",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Prime Minister",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Robert Abela",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Prime_Minister_of_Malta",
+                Text: (string) (len=14) "Prime Minister",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Robert_Abela",
+                Text: (string) (len=12) "Robert Abela",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Legislature",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "Parliament of Malta",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Parliament_of_Malta",
+                Text: (string) (len=19) "Parliament of Malta",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=36) "Independence from the United Kingdom",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) (len=14) "State of Malta",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "21 September 1964",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/State_of_Malta",
+                Text: (string) (len=14) "State of Malta",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Republic",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "13 December 1974",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=4) "Area",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) (len=5) "Total",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=28) "316 km 2 (122 sq mi) (187th)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Malta#cite_note-Zammit-8",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=72) "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area",
+                Text: (string) (len=5) "187th",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Water (%)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=5) "0.001",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=10) "Population",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=17) {
+          (*parser.Part)({
+            Name: (string) (len=11) "2021 census",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "542,051",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Malta#cite_note-NSO-9",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Density",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=32) "1,649/km 2 (4,270.9/sq mi) (8th)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=86) "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population_density",
+                Text: (string) (len=3) "8th",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "GDP (PPP)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "2024 estimate",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Gross_domestic_product",
+                Text: (string) (len=3) "GDP",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Purchasing_power_parity",
+                Text: (string) (len=3) "PPP",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Total",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "$36.870 billion (140th)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/Malta#cite_note-IMFWEO.MT-10",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)",
+                Text: (string) (len=5) "140th",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Per capita",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "$67,682 (20th)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/Malta#cite_note-IMFWEO.MT-10",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)_per_capita",
+                Text: (string) (len=4) "20th",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "GDP (nominal)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "2024 estimate",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Gross_domestic_product",
+                Text: (string) (len=3) "GDP",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Total",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "$22.737 billion (118th)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/Malta#cite_note-IMFWEO.MT-10",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=64) "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)",
+                Text: (string) (len=5) "118th",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Per capita",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "$41,738 (25th)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/Malta#cite_note-IMFWEO.MT-10",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=75) "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)_per_capita",
+                Text: (string) (len=4) "25th",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Gini (2020)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "31.4 medium inequality",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Gini_coefficient",
+                Text: (string) (len=4) "Gini",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/Malta#cite_note-eurogini-11",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "HDI (2022)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "0.915 very high (25th)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Human_Development_Index",
+                Text: (string) (len=3) "HDI",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Malta#cite_note-UNHDR-12",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=74) "https://en.wikipedia.org/wiki/List_of_countries_by_Human_Development_Index",
+                Text: (string) (len=4) "25th",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Currency",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "Euro (€) (EUR)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=34) "https://en.wikipedia.org/wiki/Euro",
+                Text: (string) (len=4) "Euro",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Euro_sign",
+                Text: (string) (len=3) "€",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/ISO_4217",
+                Text: (string) (len=3) "EUR",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Time zone",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=30) "UTC +1 (Central European Time)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Coordinated_Universal_Time",
+                Text: (string) (len=3) "UTC",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Summer (DST)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=37) "UTC +2 (Central European Summer Time)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Daylight_saving_time",
+                Text: (string) (len=3) "DST",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Coordinated_Universal_Time",
+                Text: (string) (len=3) "UTC",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Calling code",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "+356",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Telephone_numbers_in_Malta",
+                Text: (string) (len=12) "Calling code",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Telephone_numbers_in_Malta",
+                Text: (string) (len=4) "+356",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "ISO 3166 code",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=2) "MT",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/ISO_3166",
+                Text: (string) (len=13) "ISO 3166 code",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/ISO_3166-2:MT",
+                Text: (string) (len=2) "MT",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Internet TLD",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=3) ".mt",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/Country_code_top-level_domain",
+                Text: (string) (len=12) "Internet TLD",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=33) "https://en.wikipedia.org/wiki/.mt",
+                Text: (string) (len=3) ".mt",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Malta#endnote_b",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=2) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=160) "^ 2021 Malta census Chapter 4: Racial Origin according to the most recent national census. Meanwhile 77.8% of the population were Maltese citizens or nationals.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=41) "https://en.wikipedia.org/wiki/Malta#ref_a",
+                    Text: (string) (len=1) "^",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=65) "https://en.wikipedia.org/wiki/Malta#cite_note-Census2021_1_116-13",
+                    Text: (string) "",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=57) "^ Also.eu, shared with other European Union member states",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=41) "https://en.wikipedia.org/wiki/Malta#ref_b",
+                    Text: (string) (len=1) "^",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

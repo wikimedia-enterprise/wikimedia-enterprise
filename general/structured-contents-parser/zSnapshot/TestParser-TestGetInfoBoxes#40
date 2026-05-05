@@ -1,0 +1,619 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=14) "Infobox person",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) (len=6) "Grimes",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=17) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=14) "Grimes in 2014",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=159) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Grimes_Governors_Ball_2014_03_%28cropped%29.png/220px-Grimes_Governors_Ball_2014_03_%28cropped%29.png",
+                Identifier: (string) (len=64) "e5eab0f8827e2b96cd18ff87a273e9f07cf9beed9062154e97cbfdc7afd1a3ac",
+                Name: (string) (len=48) "File:Grimes_Governors_Ball_2014_03_(cropped).png",
+                AlternativeText: (string) (len=142) "A woman with long wavy bleached hair wears a black shirt and looks excited performing behind a microphone as pale green light illuminates her.",
+                Caption: (string) (len=14) "Grimes in 2014",
+                Height: (int) 290,
+                Width: (int) 220,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Born",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=71) "Claire Elise Boucher March 17, 1988 Vancouver, British Columbia, Canada",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Vancouver",
+                Text: (string) (len=9) "Vancouver",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/British_Columbia",
+                Text: (string) (len=16) "British Columbia",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Other names",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=1) "c",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Speed_of_light",
+                Text: (string) (len=1) "c",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Grimes#cite_note-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Alma mater",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=30) "McGill University (unfinished)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/McGill_University",
+                Text: (string) (len=17) "McGill University",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Occupations",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=6) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=8) "Musician",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=6) "singer",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "songwriter",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=15) "record producer",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=20) "music video director",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=13) "visual artist",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Years active",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "2007–present",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Partner",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "Elon Musk (2018–2021)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Elon_Musk",
+                Text: (string) (len=9) "Elon Musk",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Children",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=1) "3",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Relatives",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "Jay Worthy (stepbrother)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/LNDN_DRGS",
+                Text: (string) (len=10) "Jay Worthy",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Awards",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Full list",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=79) "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Grimes",
+                Text: (string) (len=9) "Full list",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "Musical career",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Origin",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "Montreal, Quebec, Canada",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Montreal",
+                Text: (string) (len=8) "Montreal",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Quebec",
+                Text: (string) (len=6) "Quebec",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Genres",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=6) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=9) "Synth-pop",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=39) "https://en.wikipedia.org/wiki/Synth-pop",
+                    Text: (string) (len=9) "Synth-pop",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "electropop",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=40) "https://en.wikipedia.org/wiki/Electropop",
+                    Text: (string) (len=10) "electropop",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "art pop",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=37) "https://en.wikipedia.org/wiki/Art_pop",
+                    Text: (string) (len=7) "art pop",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=9) "indie pop",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=39) "https://en.wikipedia.org/wiki/Indie_pop",
+                    Text: (string) (len=9) "indie pop",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=9) "dream pop",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=39) "https://en.wikipedia.org/wiki/Dream_pop",
+                    Text: (string) (len=9) "dream pop",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=9) "dance-pop",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=39) "https://en.wikipedia.org/wiki/Dance-pop",
+                    Text: (string) (len=9) "dance-pop",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Instruments",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=4) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=6) "Vocals",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=9) "keyboards",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=12) "synthesizers",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=6) "guitar",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Discography",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "Grimes discography",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Grimes_discography",
+                Text: (string) (len=18) "Grimes discography",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Labels",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=5) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Arbutus",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=45) "https://en.wikipedia.org/wiki/Arbutus_Records",
+                    Text: (string) (len=7) "Arbutus",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=3) "4AD",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=33) "https://en.wikipedia.org/wiki/4AD",
+                    Text: (string) (len=3) "4AD",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "Roc Nation",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=40) "https://en.wikipedia.org/wiki/Roc_Nation",
+                    Text: (string) (len=10) "Roc Nation",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=6) "Nazgul",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=8) "Columbia",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/Columbia_Records",
+                    Text: (string) (len=8) "Columbia",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Formerly of",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Membrain",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

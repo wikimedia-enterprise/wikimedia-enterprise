@@ -1,0 +1,83 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=188) "The Ganges. A painting of the Ganges entering the plains near Haridwar by William Purser with a poetical illustration by Letitia Elizabeth Landon in Fisher's Drawing Room Scrap Book, 1838.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=145) "https://en.wikisource.org/wiki/Letitia%20Elizabeth%20Landon%20(L.%20E.%20L.)%20in%20Fisher's%20Drawing%20Room%20Scrap%20Book,%201838/The%20Ganges",
+            Text: (string) (len=10) "The Ganges",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=38) "https://en.wikipedia.org/wiki/Haridwar",
+            Text: (string) (len=8) "Haridwar",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=54) "https://en.wikipedia.org/wiki/Letitia_Elizabeth_Landon",
+            Text: (string) (len=24) "Letitia Elizabeth Landon",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Ganges#cite_note-178",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=181) "Colgong on the Ganges. A painting of the Ganges near Kahalgaon by J. M. W. Turner with a poetical illustration by Letitia Elizabeth Landon in Fisher's Drawing Room Scrap Book, 1839.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=5) {
+          (*parser.Link)({
+            URL: (string) (len=160) "https://en.wikisource.org/wiki/Letitia%20Elizabeth%20Landon%20(L.%20E.%20L.)%20in%20Fisher's%20Drawing%20Room%20Scrap%20Book,%201839/Colgong%20on%20the%20Ganges",
+            Text: (string) (len=21) "Colgong on the Ganges",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=39) "https://en.wikipedia.org/wiki/Kahalgaon",
+            Text: (string) (len=9) "Kahalgaon",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=45) "https://en.wikipedia.org/wiki/J._M._W._Turner",
+            Text: (string) (len=15) "J. M. W. Turner",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=54) "https://en.wikipedia.org/wiki/Letitia_Elizabeth_Landon",
+            Text: (string) (len=24) "Letitia Elizabeth Landon",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Ganges#cite_note-179",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

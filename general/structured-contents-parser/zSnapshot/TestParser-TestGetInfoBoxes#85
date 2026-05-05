@@ -1,0 +1,618 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=14) "Infobox person",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) (len=19) "William Shakespeare",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=16) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=59) "The Chandos portrait, likely depicting Shakespeare, c. 1611",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=161) "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/William_Shakespeare_by_John_Taylor%2C_edited.jpg/220px-William_Shakespeare_by_John_Taylor%2C_edited.jpg",
+                Identifier: (string) (len=64) "b9fb5d86829c52aed45a4ac6e1a2565e038364586148cbb57cd13f53cbaaae3b",
+                Name: (string) (len=51) "File:William_Shakespeare_by_John_Taylor,_edited.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) (len=61) "The Chandos portrait, likely depicting Shakespeare, c.\u20091611",
+                Height: (int) 280,
+                Width: (int) 220,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Chandos_portrait",
+                Text: (string) (len=16) "Chandos portrait",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Born",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=59) "c. 23 April 1564 Stratford-upon-Avon, Warwickshire, England",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Stratford-upon-Avon",
+                Text: (string) (len=19) "Stratford-upon-Avon",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Died",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=71) "23 April 1616 (aged 51–52) Stratford-upon-Avon, Warwickshire, England",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Resting place",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=47) "Church of the Holy Trinity, Stratford-upon-Avon",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=77) "https://en.wikipedia.org/wiki/Church_of_the_Holy_Trinity,_Stratford-upon-Avon",
+                Text: (string) (len=47) "Church of the Holy Trinity, Stratford-upon-Avon",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Occupations",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=3) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "Playwright",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=4) "poet",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=5) "actor",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Years active",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "c. 1585–1613",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=3) "Era",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=2) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=11) "Elizabethan",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=45) "https://en.wikipedia.org/wiki/Elizabethan_era",
+                    Text: (string) (len=11) "Elizabethan",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=8) "Jacobean",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=42) "https://en.wikipedia.org/wiki/Jacobean_era",
+                    Text: (string) (len=8) "Jacobean",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Organisations",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=2) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=22) "Lord Chamberlain's Men",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=52) "https://en.wikipedia.org/wiki/Lord_Chamberlain's_Men",
+                    Text: (string) (len=22) "Lord Chamberlain's Men",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "King's Men",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=58) "https://en.wikipedia.org/wiki/King's_Men_(playing_company)",
+                    Text: (string) (len=10) "King's Men",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Works",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "Shakespeare bibliography",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Shakespeare_bibliography",
+                Text: (string) (len=24) "Shakespeare bibliography",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Movement",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "English Renaissance",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/English_Renaissance",
+                Text: (string) (len=19) "English Renaissance",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Spouse",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "Anne Hathaway (m. 1582)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=65) "https://en.wikipedia.org/wiki/Anne_Hathaway_(wife_of_Shakespeare)",
+                Text: (string) (len=13) "Anne Hathaway",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Children",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=3) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=12) "Susanna Hall",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=42) "https://en.wikipedia.org/wiki/Susanna_Hall",
+                    Text: (string) (len=12) "Susanna Hall",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=18) "Hamnet Shakespeare",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=48) "https://en.wikipedia.org/wiki/Hamnet_Shakespeare",
+                    Text: (string) (len=18) "Hamnet Shakespeare",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=13) "Judith Quiney",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=43) "https://en.wikipedia.org/wiki/Judith_Quiney",
+                    Text: (string) (len=13) "Judith Quiney",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Parents",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=2) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=16) "John Shakespeare",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/John_Shakespeare",
+                    Text: (string) (len=16) "John Shakespeare",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "Mary Arden",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/Mary_Shakespeare",
+                    Text: (string) (len=10) "Mary Arden",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "Writing career",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Language",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=20) "Early Modern English",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Early_Modern_English",
+                Text: (string) (len=20) "Early Modern English",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Genres",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=6) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=12) "Play (comedy",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=49) "https://en.wikipedia.org/wiki/Shakespeare's_plays",
+                    Text: (string) (len=4) "Play",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=50) "https://en.wikipedia.org/wiki/Shakespearean_comedy",
+                    Text: (string) (len=6) "comedy",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "history",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=51) "https://en.wikipedia.org/wiki/Shakespearean_history",
+                    Text: (string) (len=7) "history",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=8) "tragedy)",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=51) "https://en.wikipedia.org/wiki/Shakespearean_tragedy",
+                    Text: (string) (len=7) "tragedy",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=14) "Poetry (sonnet",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=51) "https://en.wikipedia.org/wiki/Shakespeare's_sonnets",
+                    Text: (string) (len=6) "sonnet",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=14) "narrative poem",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/Narrative_poetry",
+                    Text: (string) (len=14) "narrative poem",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=8) "epitaph)",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=37) "https://en.wikipedia.org/wiki/Epitaph",
+                    Text: (string) (len=7) "epitaph",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=9) "Signature",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=135) "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/William_Shakespeare_Signature.svg/150px-William_Shakespeare_Signature.svg.png",
+                Identifier: (string) (len=64) "5ba58bff4891450c49d1254e3d89c56cd447a906a5d75f47e30e0d8bfc9e2766",
+                Name: (string) (len=38) "File:William_Shakespeare_Signature.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 31,
+                Width: (int) 150,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

@@ -1,0 +1,357 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=12) "Good article",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=12) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=43) "Cactus Temporal range: Late Eocene - Recent",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Eocene",
+                Text: (string) (len=6) "Eocene",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=107) "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Various_Cactaceae.jpg/275px-Various_Cactaceae.jpg",
+                Identifier: (string) (len=64) "b0e1cc0ac5ecfd7d7651606a7e8b1b6823adf5cec6b3d33b548476a0282a38e6",
+                Name: (string) (len=26) "File:Various_Cactaceae.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 393,
+                Width: (int) 275,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=65) "Various Cactaceae from Brockhaus' Konversations-Lexikon v. 2 1892",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=25) "Scientific classification",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Taxonomy_(biology)",
+                Text: (string) (len=25) "Scientific classification",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/Template:Taxonomy/Cactaceae",
+                Text: (string) (len=24) "Edit this classification",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Kingdom",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "Plantae",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Plant",
+                Text: (string) (len=7) "Plantae",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Clade",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Tracheophytes",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Vascular_plant",
+                Text: (string) (len=13) "Tracheophytes",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Clade",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "Angiosperms",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Flowering_plant",
+                Text: (string) (len=11) "Angiosperms",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Clade",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Eudicots",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Eudicots",
+                Text: (string) (len=8) "Eudicots",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Order",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "Caryophyllales",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Caryophyllales",
+                Text: (string) (len=14) "Caryophyllales",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Family",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "Cactaceae Juss.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Cactus",
+                Text: (string) (len=9) "Cactaceae",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Antoine_Laurent_de_Jussieu",
+                Text: (string) (len=5) "Juss.",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/Cactus#cite_note-APGIII2009-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Subfamilies",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=4) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "Cactoideae",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=40) "https://en.wikipedia.org/wiki/Cactoideae",
+                    Text: (string) (len=10) "Cactoideae",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=14) "Maihuenioideae",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=44) "https://en.wikipedia.org/wiki/Maihuenioideae",
+                    Text: (string) (len=14) "Maihuenioideae",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=12) "Opuntioideae",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=42) "https://en.wikipedia.org/wiki/Opuntioideae",
+                    Text: (string) (len=12) "Opuntioideae",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=13) "Pereskioideae",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=43) "https://en.wikipedia.org/wiki/Pereskioideae",
+                    Text: (string) (len=13) "Pereskioideae",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=61) "https://en.wikipedia.org/wiki/Classification_of_the_Cactaceae",
+                Text: (string) (len=31) "Classification of the Cactaceae",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Synonyms",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=2) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=17) "Opuntiaceae Desv.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=39) "Leuchtenbergiaceae Salm-Dyck ex Pfeiff.",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Synonym_(taxonomy)",
+                Text: (string) (len=8) "Synonyms",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/Cactus#cite_note-gbif.org-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

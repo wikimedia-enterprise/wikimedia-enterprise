@@ -1,0 +1,1046 @@
+([]*parser.Reference) (len=43) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=3) "cs2",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2023-01-21",
+      (string) (len=8) "language": (string) (len=5) "en-GB",
+      (string) (len=9) "publisher": (string) (len=23) "Oxford University Press",
+      (string) (len=5) "title": (string) (len=13) "thesaurus, n.",
+      (string) (len=3) "url": (string) (len=37) "https://www.oed.com/view/Entry/200648",
+      (string) (len=4) "work": (string) (len=10) "OED Online"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=74) "\"thesaurus, n.\", OED Online, Oxford University Press, retrieved 2023-01-21",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=37) "https://www.oed.com/view/Entry/200648",
+          Text: (string) (len=15) "\"thesaurus, n.\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=4) "date": (string) (len=4) "2009",
+      (string) (len=7) "edition": (string) (len=3) "3rd",
+      (string) (len=4) "isbn": (string) (len=17) "978-0-19-956081-3",
+      (string) (len=8) "location": (string) (len=6) "Oxford",
+      (string) (len=4) "oclc": (string) (len=9) "321014234",
+      (string) (len=6) "others": (string) (len=13) "Maurice Waite",
+      (string) (len=9) "publisher": (string) (len=23) "Oxford University Press",
+      (string) (len=5) "title": (string) (len=28) "Oxford thesaurus of English.",
+      (string) (len=3) "url": (string) (len=39) "https://www.worldcat.org/oclc/321014234"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=175) "Oxford thesaurus of English. Maurice Waite (3rd\u00a0ed.). Oxford: Oxford University Press. 2009. ISBN\u00a0978-0-19-956081-3. OCLC\u00a0321014234.{{cite book}}:  CS1 maint: others (link)",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=39) "https://www.worldcat.org/oclc/321014234",
+          Text: (string) (len=27) "Oxford thesaurus of English",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-19-956081-3",
+          Text: (string) (len=17) "978-0-19-956081-3",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/OCLC_(identifier)",
+          Text: (string) (len=4) "OCLC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://search.worldcat.org/oclc/321014234",
+          Text: (string) (len=9) "321014234",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/Template:Cite_book",
+          Text: (string) (len=9) "cite book",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=56) "https://en.wikipedia.org/wiki/Category:CS1_maint:_others",
+          Text: (string) (len=4) "link",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=68) "Roget, Peter. 1852. Thesaurus of English Language Words and Phrases.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=4) "date": (string) (len=4) "2005",
+      (string) (len=4) "isbn": (string) (len=17) "978-0-87779-637-4",
+      (string) (len=8) "location": (string) (len=26) "Springfield, Massachusetts",
+      (string) (len=4) "oclc": (string) (len=8) "57506786",
+      (string) (len=9) "publisher": (string) (len=15) "Merriam-Webster",
+      (string) (len=5) "title": (string) (len=30) "The Merriam-Webster thesaurus.",
+      (string) (len=3) "url": (string) (len=38) "https://www.worldcat.org/oclc/57506786"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=122) "The Merriam-Webster thesaurus. Springfield, Massachusetts: Merriam-Webster. 2005. ISBN\u00a0978-0-87779-637-4. OCLC\u00a057506786.",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=38) "https://www.worldcat.org/oclc/57506786",
+          Text: (string) (len=29) "The Merriam-Webster thesaurus",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-87779-637-4",
+          Text: (string) (len=17) "978-0-87779-637-4",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/OCLC_(identifier)",
+          Text: (string) (len=4) "OCLC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=41) "https://search.worldcat.org/oclc/57506786",
+          Text: (string) (len=8) "57506786",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=13) "9780547041018"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=128) "American Heritage Dictionary of the English Language, 5th edition, Houghton Mifflin Harcourt 2011, ISBN\u00a09780547041018, p. xxvii",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9780547041018",
+          Text: (string) (len=13) "9780547041018",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=142) "Edwin L. Battistella, \"Beware the thesaurus\", OUPblog, \"Oxford University Press's Academic Insights for the Thinking World\", February 11, 2018",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=50) "https://en.wikipedia.org/wiki/Edwin_L._Battistella",
+          Text: (string) (len=20) "Edwin L. Battistella",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://blog.oup.com/2018/02/beware-the-thesaurus/",
+          Text: (string) (len=17) "February 11, 2018",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=41) "\"thesaurus\". Online Etymology Dictionary.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=50) "http://www.etymonline.com/index.php?term=thesaurus",
+          Text: (string) (len=11) "\"thesaurus\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=57) "https://en.wikipedia.org/wiki/Online_Etymology_Dictionary",
+          Text: (string) (len=27) "Online Etymology Dictionary",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=71) "R. S. P. Beekes, Etymological Dictionary of Greek, Brill, 2009, p. 548.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=49) "https://en.wikipedia.org/wiki/Robert_S._P._Beekes",
+          Text: (string) (len=15) "R. S. P. Beekes",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=30) "Oxford English Dictionary s.v.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=55) "https://en.wikipedia.org/wiki/Oxford_English_Dictionary",
+          Text: (string) (len=25) "Oxford English Dictionary",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=37) "https://www.oed.com/view/Entry/200648",
+          Text: (string) (len=4) "s.v.",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=8) "Embleton",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-11",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=89) "B. Lafaye, Dictionnaire des synonymes de la langue française, Hachette 1869, 3rd edition",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-12",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=100) "John Wilkins, An Essay Towards a Real Character, and a Philosophical Language, London 1668 full text",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=98) "https://archive.org/details/AnEssayTowardsARealCharacterAndAPhilosophicalLanguage/page/n7/mode/2up",
+          Text: (string) (len=9) "full text",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-13",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=276) "John Wilkins, William Lloyd (anonymously), An Alphabetical Dictionary Wherein all English Words According to their Various Significations, Are either referred to their Places in the Philosophical Tables, Or explained by such Words as are in those Tables, London 1668 full text",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://books.google.com/books?id=ErlplQnAWz4C",
+          Text: (string) (len=9) "full text",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-14",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "3484391235"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=451) "Natascia Leonardi, \"An Analysis of a Seventeenth Century Conceptual Dictionary with an Alphabetical List of Entries and a Network Definition Structure: John Wilkins' and William Lloyd's An Alphabetical Dictionary (1668)\" in Historical Dictionaries and Historical Dictionary Research, papers from the International Conference on Historical Lexicography and Lexicology, University of Leicester, 2002, Max Niemeyer Verlag 2004, ISBN\u00a03484391235, p. 39-52",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://en.wikipedia.org/wiki/Special:BookSources/3484391235",
+          Text: (string) (len=10) "3484391235",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-15",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=146) "Gabriel Girard, La Justesse de la langue françoise, ou les différentes significations des mots qui passent pour synonymes, Paris 1718, full text",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=70) "http://visualiseur.bnf.fr/Visualiseur?Destination=Gallica&O=NUMM-50626",
+          Text: (string) (len=9) "full text",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-16",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=165) "John Trusler (anonymously), The Difference between Words esteemed Synonyms, in the English Language; and the proper choice of them determined, London, 1766 full text",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=73) "https://babel.hathitrust.org/cgi/pt?id=uc1.31175014957412&view=1up&seq=13",
+          Text: (string) (len=9) "full text",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-17",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=132) "Hester Lynch Piozzi, British Synonymy; or, an Attempt Regulating the Choice of Words in Familiar Conversation, Dublin 1794 full text",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=72) "https://babel.hathitrust.org/cgi/pt?id=mdp.39015024527288&view=1up&seq=7",
+          Text: (string) (len=9) "full text",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-18",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=119) "James Leslie, Dictionary of the Synonymous Words and Technical Terms in the English Language, Edinburgh, 1806 full text",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=72) "https://babel.hathitrust.org/cgi/pt?id=nyp.33433069257057&view=1up&seq=1",
+          Text: (string) (len=9) "full text",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-19",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=167) "George Crabb, English Synonyms Explained, in Alphabetical Order with Copious Illustrations and Examples Drawn from the Best Writers, 2nd edition, London 1818 full text",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=57) "https://babel.hathitrust.org/cgi/pt?id=nyp.33433069256901",
+          Text: (string) (len=9) "full text",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-20",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=13) "26 March 2018",
+      (string) (len=3) "doi": (string) (len=41) "10.1093/acprof:oso/9780199254729.001.0001",
+      (string) (len=6) "first1": (string) (len=6) "Werner",
+      (string) (len=4) "isbn": (string) (len=17) "978-0-19-925472-9",
+      (string) (len=5) "last1": (string) (len=7) "Hüllen",
+      (string) (len=5) "title": (string) (len=33) "Introduction - Oxford Scholarship",
+      (string) (len=3) "url": (string) (len=110) "http://www.oxfordscholarship.com/view/10.1093/acprof:oso/9780199254729.001.0001/acprof-9780199254729-chapter-1",
+      (string) (len=7) "website": (string) (len=21) "oxfordscholarship.com",
+      (string) (len=4) "year": (string) (len=4) "2003"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=180) "Hüllen, Werner (2003). \"Introduction - Oxford Scholarship\". oxfordscholarship.com. doi:10.1093/acprof:oso/9780199254729.001.0001. ISBN\u00a0978-0-19-925472-9. Retrieved 26 March 2018.",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=110) "http://www.oxfordscholarship.com/view/10.1093/acprof:oso/9780199254729.001.0001/acprof-9780199254729-chapter-1",
+          Text: (string) (len=35) "\"Introduction - Oxford Scholarship\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://doi.org/10.1093%2Facprof%3Aoso%2F9780199254729.001.0001",
+          Text: (string) (len=41) "10.1093/acprof:oso/9780199254729.001.0001",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-19-925472-9",
+          Text: (string) (len=17) "978-0-19-925472-9",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-21",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=13) {
+      (string) (len=12) "contribution": (string) (len=34) "Prefact to the first edition, 1852",
+      (string) (len=16) "contribution-url": (string) (len=68) "https://archive.org/details/rogetsthesauruso00lloy/page/n22/mode/1up",
+      (string) (len=23) "contribution-url-access": (string) (len=12) "registration",
+      (string) (len=4) "date": (string) (len=4) "1982",
+      (string) (len=7) "edition": (string) (len=3) "New",
+      (string) (len=12) "editor-first": (string) (len=8) "Susan M.",
+      (string) (len=11) "editor-last": (string) (len=5) "Lloyd",
+      (string) (len=5) "first": (string) (len=5) "P. M.",
+      (string) (len=4) "last": (string) (len=5) "Roget",
+      (string) (len=8) "location": (string) (len=6) "Harlow",
+      (string) (len=4) "page": (string) (len=3) "xix",
+      (string) (len=9) "publisher": (string) (len=7) "Longman",
+      (string) (len=5) "title": (string) (len=46) "Roget's Thesaurus of English Words and Phrases"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=169) "Roget, P. M. (1982). \"Prefact to the first edition, 1852\". In Lloyd, Susan M. (ed.). Roget's Thesaurus of English Words and Phrases (New\u00a0ed.). Harlow: Longman. p.\u00a0xix.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=68) "https://archive.org/details/rogetsthesauruso00lloy/page/n22/mode/1up",
+          Text: (string) (len=36) "\"Prefact to the first edition, 1852\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-22",
+    Group: (string) "",
+    Type: (string) (len=9) "smallcaps",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=2) "ii"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=135) "Peter Mark Roget, Thesaurus of English words and phrases, classified so as to facilitate the expression of ideas, 1853, V.ii.iv, p. 204",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=55) "https://books.google.com/books?id=2c4WAAAAQAAJ&pg=PA204",
+          Text: (string) (len=17) "V. ii .iv, p. 204",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-23",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=22) "Roget, op.cit. p. xxvi",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=54) "https://books.google.com/books?id=2c4WAAAAQAAJ&pg=PR26",
+          Text: (string) (len=7) "p. xxvi",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-24",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=21) "Roget, op.cit. p. 349",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=55) "https://books.google.com/books?id=2c4WAAAAQAAJ&pg=PA349",
+          Text: (string) (len=6) "p. 349",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-25",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "0141004428"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=135) "e.g., George Davidson, ed., Thesaurus of English words and phrases (150th Anniversary Edition), Penguin, 2002, ISBN\u00a00141004428, p. 454",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://en.wikipedia.org/wiki/Special:BookSources/0141004428",
+          Text: (string) (len=10) "0141004428",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-26",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=13) "9780061715228"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=115) "Barbara Ann Kipfer, ed., Roget's International Thesaurus, 7th edition, Collins Reference, 2010, ISBN\u00a09780061715228",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/Barbara_Ann_Kipfer",
+          Text: (string) (len=18) "Barbara Ann Kipfer",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9780061715228",
+          Text: (string) (len=13) "9780061715228",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-27",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=13) "9782033201074"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=72) "Daniel Péchoin, Thésaurus Larousse, Larousse 1991, ISBN\u00a09782033201074",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9782033201074",
+          Text: (string) (len=13) "9782033201074",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-28",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=13) "9780199208999"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=177) "Christian Kay, Jane Roberts, Michael Samuels, Irené Wotherspoon, Historical Thesaurus of the Oxford English Dictionary, Oxford University Press 2009, ISBN\u00a09780199208999, p. ix",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9780199208999",
+          Text: (string) (len=13) "9780199208999",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-29",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "0582893224"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=82) "Longman Synonym Dictionary, Rodale Press and Longman Group, 1986, ISBN\u00a00582893224",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://en.wikipedia.org/wiki/Special:BookSources/0582893224",
+          Text: (string) (len=10) "0582893224",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-30",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "0028632818"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=130) "Charlton Laird, Michael Agnes, eds., Webster's New World Roget's A-Z Thesaurus, Macmillan USA, 3rd edition, 1971, ISBN\u00a00028632818",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://en.wikipedia.org/wiki/Special:BookSources/0028632818",
+          Text: (string) (len=10) "0028632818",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-31",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "0195133757"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=120) "Christine A. Lindberg, The Oxford American Thesaurus of Current English, Oxford University Press, 1999, ISBN\u00a00195133757",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://en.wikipedia.org/wiki/Special:BookSources/0195133757",
+          Text: (string) (len=10) "0195133757",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-32",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=13) "9780199560813"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=67) "Oxford Thesaurus of English, 3rd edition, 2009, ISBN\u00a09780199560813",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9780199560813",
+          Text: (string) (len=13) "9780199560813",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-33",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "0877799067"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "Merriam-Webster's Dictionary of Synonyms\u00a0: Choose Words with Precision, 1994, ISBN\u00a00877799067 uses an asterisk",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://en.wikipedia.org/wiki/Special:BookSources/0877799067",
+          Text: (string) (len=10) "0877799067",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-34",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "2850364568"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "Henri Bertaud du Chazaud, Dictionnaire de synonyms et contraires, Le Robert \"Les Usuels\", 1998, ISBN\u00a02850364568",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://en.wikipedia.org/wiki/Special:BookSources/2850364568",
+          Text: (string) (len=10) "2850364568",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-35",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "2040120092"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=98) "Roger Boussinot, Dictionnaire des synonymes, analogies et antonymes, Bordas 1981, ISBN\u00a02040120092",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://en.wikipedia.org/wiki/Special:BookSources/2040120092",
+          Text: (string) (len=10) "2040120092",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-36",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=209) "Francis Andrew March, Francis A. March, Jr., March's Thesaurus and Dictionary of the English Language (issued under the editorial supervision of Norman Cousins), Doubleday, 1968, p. 598 full text, 1906 edition",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=44) "https://en.wikipedia.org/wiki/Norman_Cousins",
+          Text: (string) (len=14) "Norman Cousins",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://books.google.com/books?id=7QUxAQAAMAAJ",
+          Text: (string) (len=23) "full text, 1906 edition",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-37",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=65) "Pierre Benjamin Lafaye, Synonymes français, Paris 1841 full text",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://books.google.com/books?id=19cSAAAAYAAJ",
+          Text: (string) (len=9) "full text",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-38",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "2010112199"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=88) "Henri Bénac, Dictionnaire des synonymes, Hachette 1956, ISBN\u00a02010112199 (1982 edition)",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://en.wikipedia.org/wiki/Special:BookSources/2010112199",
+          Text: (string) (len=10) "2010112199",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-39",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "0521372771"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=102) "R.E. Batchelor, M.H. Offord, Using French Synonyms, Cambridge University Press, 1993, ISBN\u00a00521372771",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://en.wikipedia.org/wiki/Special:BookSources/0521372771",
+          Text: (string) (len=10) "0521372771",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-40",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "0521563488"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=110) "Marie-Noëlle Lamy, The Cambridge French-English Thesaurus, Cambridge University Press, 1998, ISBN\u00a00521563488",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://en.wikipedia.org/wiki/Special:BookSources/0521563488",
+          Text: (string) (len=10) "0521563488",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-41",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=4) "date": (string) (len=4) "2009",
+      (string) (len=6) "first1": (string) (len=8) "Alistair",
+      (string) (len=6) "first2": (string) (len=4) "Sean",
+      (string) (len=7) "journal": (string) (len=18) "W3C Recommendation",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "last1": (string) (len=5) "Miles",
+      (string) (len=5) "last2": (string) (len=9) "Bechhofer",
+      (string) (len=5) "pages": (string) (len=3) "W3C",
+      (string) (len=5) "title": (string) (len=51) "SKOS simple knowledge organization system reference",
+      (string) (len=3) "url": (string) (len=37) "https://www.w3.org/TR/skos-reference/",
+      (string) (len=6) "volume": (string) (len=2) "18"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=124) "Miles, Alistair; Bechhofer, Sean (2009). \"SKOS simple knowledge organization system reference\". W3C Recommendation. 18: W3C.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=37) "https://www.w3.org/TR/skos-reference/",
+          Text: (string) (len=53) "\"SKOS simple knowledge organization system reference\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-42",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=240) "Yarowsky, David. \"Word-sense disambiguation using statistical models of Roget's categories trained on large corpora.\" Proceedings of the 14th conference on Computational linguistics-Volume 2. Association for Computational Linguistics, 1992.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=48) "https://aclanthology.info/pdf/C/C92/C92-2070.pdf",
+          Text: (string) (len=97) "Word-sense disambiguation using statistical models of Roget's categories trained on large corpora",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-43",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=137) "Siddharthan, Advaith. \"An architecture for a text simplification system.\" Language Engineering Conference, 2002. Proceedings. IEEE, 2002.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

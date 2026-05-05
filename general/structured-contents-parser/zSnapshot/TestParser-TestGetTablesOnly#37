@@ -1,0 +1,557 @@
+([]*parser.OrderedTable) (len=1) {
+  (*parser.OrderedTable)({
+    ID: (string) (len=16) "discharge_table1",
+    Table: (*parser.TableWithHeaders)({
+      Headers: ([][]parser.Cell) (len=2) {
+        ([]parser.Cell) (len=8) {
+          (parser.Cell) {
+            Value: (string) (len=4) "Year",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=15) "Discharge (m/s)",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=15) "Discharge (m/s)",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=15) "Discharge (m/s)",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "Year",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=15) "Discharge (m/s)",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=15) "Discharge (m/s)",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=15) "Discharge (m/s)",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=8) {
+          (parser.Cell) {
+            Value: (string) (len=4) "Year",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=14) "Annual average",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=15) "Average minimum",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=15) "Average maximum",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "Year",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=14) "Annual average",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=15) "Average minimum",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=15) "Average maximum",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      Footers: ([][]parser.Cell) <nil>,
+      Rows: ([][]parser.Cell) (len=14) {
+        ([]parser.Cell) (len=8) {
+          (parser.Cell) {
+            Value: (string) (len=4) "1998",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "21,200",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "11,260",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "32,139",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "2011",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "8,315",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "4,942",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "15,648",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=8) {
+          (parser.Cell) {
+            Value: (string) (len=4) "1999",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "20,227",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "12,308",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "27,275",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "2012",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "10,531",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "5,529",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "16,404",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=8) {
+          (parser.Cell) {
+            Value: (string) (len=4) "2000",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "18,953",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "11,558",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "26,789",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "2013",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "14,350",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "8,559",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "19,534",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=8) {
+          (parser.Cell) {
+            Value: (string) (len=4) "2001",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "14,825",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "9,371",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "19,872",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "2014",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "12,409",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "7,118",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "17,682",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=8) {
+          (parser.Cell) {
+            Value: (string) (len=4) "2002",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "10,495",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "5,636",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "16,783",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "2015",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "12,104",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "7,256",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "17,030",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=8) {
+          (parser.Cell) {
+            Value: (string) (len=4) "2003",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "12,580",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "6,881",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "19,516",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "2016",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "15,220",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "9,035",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "23,490",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=8) {
+          (parser.Cell) {
+            Value: (string) (len=4) "2004",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "9,735",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "5,468",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "14,631",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "2017",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "11,919",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "6,856",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "17,604",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=8) {
+          (parser.Cell) {
+            Value: (string) (len=4) "2005",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "12,200",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "7,019",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "18,397",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "2018",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "11,967",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "6,176",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "18,805",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=8) {
+          (parser.Cell) {
+            Value: (string) (len=4) "2006",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "11,522",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "7,741",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "16,718",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "2019",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "14,923",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "7,079",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "24,757",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=8) {
+          (parser.Cell) {
+            Value: (string) (len=4) "2007",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "14,816",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "9,574",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "20,325",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "2020",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "15,882",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "9,837",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "23,491",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=8) {
+          (parser.Cell) {
+            Value: (string) (len=4) "2008",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "16,183",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "9,968",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "22,870",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "2021",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "17,818",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "9,543",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "27,003",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=8) {
+          (parser.Cell) {
+            Value: (string) (len=4) "2009",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "9,241",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "4,524",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "13,282",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "2022",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "14,142",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "7,148",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "22,569",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=8) {
+          (parser.Cell) {
+            Value: (string) (len=4) "2010",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "7,148",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "3,343",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "12,375",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "2023",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "9,417",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "1,645",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "18,744",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=8) {
+          (parser.Cell) {
+            Value: (string) (len=35) "Average (1998/01/01 to 2023/12/31):",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=35) "Average (1998/01/01 to 2023/12/31):",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=35) "Average (1998/01/01 to 2023/12/31):",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=35) "Average (1998/01/01 to 2023/12/31):",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=35) "Average (1998/01/01 to 2023/12/31):",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=8) "13,389.3",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "7,514.4",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=8) "20,143.6",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      ConfidenceScore: (float64) 0.8
+    })
+  })
+}

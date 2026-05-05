@@ -1,0 +1,4042 @@
+([]*parser.Reference) (len=158) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=13) "Brief History"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=29) "ECMA-35 (1994), Brief History",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=7) "annex D",
+      (string) (len=1) "p": (string) (len=2) "51"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=31) "ECMA-35 (1994), p.\u00a051, annex D",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=7) "ctx_ver": (string) (len=11) "Z39.88-2004",
+      (string) (len=8) "is_coins": (string) (len=4) "true",
+      (string) (len=6) "rfr_id": (string) (len=38) "info:sid/en.wikipedia.org:ISO/IEC 2022",
+      (string) (len=10) "rft.atitle": (string) (len=60) "Technique 2: Using standard alternate graphic character sets",
+      (string) (len=8) "rft.date": (string) (len=10) "2007-12-05",
+      (string) (len=9) "rft.genre": (string) (len=7) "unknown",
+      (string) (len=10) "rft.jtitle": (string) (len=79) "MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media",
+      (string) (len=6) "rft_id": (string) (len=69) "https://www.loc.gov/marc/specifications/speccharmarc8.html#technique2",
+      (string) (len=11) "rft_val_fmt": (string) (len=28) "info:ofi/fmt:kev:mtx:journal"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=241) "\"Technique 2: Using standard alternate graphic character sets\". MARC 21 Specifications for Record Structure, Character Sets, and Exchange Media. Library of Congress. 2007-12-05. Archived from the original on 2020-07-22. Retrieved 2020-07-19.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=69) "https://www.loc.gov/marc/specifications/speccharmarc8.html#technique2",
+          Text: (string) (len=62) "\"Technique 2: Using standard alternate graphic character sets\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://en.wikipedia.org/wiki/Library_of_Congress",
+          Text: (string) (len=19) "Library of Congress",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=112) "https://web.archive.org/web/20200722125744/https://www.loc.gov/marc/specifications/speccharmarc8.html#technique2",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=10) "2022-04-27",
+      (string) (len=12) "archive-date": (string) (len=10) "2022-04-25",
+      (string) (len=11) "archive-url": (string) (len=123) "https://web.archive.org/web/20220425142341/https://www.ecma-international.org/publications-and-standards/standards/ecma-35/",
+      (string) (len=9) "publisher": (string) (len=22) "[[Ecma International]]",
+      (string) (len=5) "title": (string) (len=69) "ECMA-35: Character code structure and extension techniques (web page)",
+      (string) (len=3) "url": (string) (len=80) "https://www.ecma-international.org/publications-and-standards/standards/ecma-35/",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=156) "\"ECMA-35: Character code structure and extension techniques (web page)\". Ecma International. Archived from the original on 2022-04-25. Retrieved 2022-04-27.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=80) "https://www.ecma-international.org/publications-and-standards/standards/ecma-35/",
+          Text: (string) (len=71) "\"ECMA-35: Character code structure and extension techniques (web page)\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/Ecma_International",
+          Text: (string) (len=18) "Ecma International",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=123) "https://web.archive.org/web/20220425142341/https://www.ecma-international.org/publications-and-standards/standards/ecma-35/",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=11) "chapter 8.1",
+      (string) (len=2) "pp": (string) (len=7) "15–16"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=41) "ECMA-35 (1994), pp.\u00a015–16, chapter 8.1",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=10) "chapter 13"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=26) "ECMA-35 (1994), chapter 13",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=15) "chapters 12, 14"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=31) "ECMA-35 (1994), chapters 12, 14",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=10) "chapter 11"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=26) "ECMA-35 (1994), chapter 11",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=20) "ISO/IEC FDIS 8859-10",
+      (string) (len=1) "2": (string) (len=4) "1998",
+      (string) (len=3) "loc": (string) (len=19) "chapter 1 (\"Scope\")",
+      (string) (len=1) "p": (string) (len=1) "1"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=55) "ISO/IEC FDIS 8859-10 (1998), p.\u00a01, chapter 1 (\"Scope\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=74) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO/IEC_FDIS_8859-101998",
+          Text: (string) (len=27) "ISO/IEC FDIS 8859-10 (1998)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=8) "ECMA-144",
+      (string) (len=1) "2": (string) (len=4) "2000",
+      (string) (len=3) "loc": (string) (len=19) "chapter 1 (\"Scope\")",
+      (string) (len=1) "p": (string) (len=1) "1"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=43) "ECMA-144 (2000), p.\u00a01, chapter 1 (\"Scope\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=62) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-1442000",
+          Text: (string) (len=15) "ECMA-144 (2000)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-11",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=5) "Lunde",
+      (string) (len=1) "2": (string) (len=4) "2008",
+      (string) (len=3) "loc": (string) (len=54) "Chapter 4 (\"Encoding Methods\"), section \"EUC encoding\"",
+      (string) (len=2) "pp": (string) (len=7) "242-245"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=84) "Lunde (2008), pp.\u00a0242–245, Chapter 4 (\"Encoding Methods\"), section \"EUC encoding\"",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=59) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFLunde2008",
+          Text: (string) (len=12) "Lunde (2008)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-12",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=5) "Lunde",
+      (string) (len=1) "2": (string) (len=4) "2008",
+      (string) (len=3) "loc": (string) (len=71) "Chapter 4 (\"Encoding Methods\"), section \"EUC versus ISO-2022 encodings\"",
+      (string) (len=2) "pp": (string) (len=7) "253-255"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=102) "Lunde (2008), pp.\u00a0253–255, Chapter 4 (\"Encoding Methods\"), section \"EUC versus ISO-2022 encodings\".",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=59) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFLunde2008",
+          Text: (string) (len=12) "Lunde (2008)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-13",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=10) "ISO-IR-196",
+      (string) (len=1) "2": (string) (len=4) "1996"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=17) "ISO-IR-196 (1996)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=64) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR-1961996",
+          Text: (string) (len=17) "ISO-IR-196 (1996)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-14",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=13) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-10-04",
+      (string) (len=12) "archive-date": (string) (len=10) "2019-10-10",
+      (string) (len=11) "archive-url": (string) (len=129) "https://web.archive.org/web/20191010041907/https://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h3-Controls-beginning-with-ESC",
+      (string) (len=6) "first1": (string) (len=6) "Edward",
+      (string) (len=6) "first2": (string) (len=7) "Stephen",
+      (string) (len=6) "first3": (string) (len=6) "Thomas",
+      (string) (len=5) "last1": (string) (len=3) "Moy",
+      (string) (len=5) "last2": (string) (len=6) "Gildea",
+      (string) (len=5) "last3": (string) (len=6) "Dickey",
+      (string) (len=5) "title": (string) (len=27) "Controls beginning with ESC",
+      (string) (len=3) "url": (string) (len=86) "https://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h3-Controls-beginning-with-ESC",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=23) "XTerm Control Sequences"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=165) "Moy, Edward; Gildea, Stephen; Dickey, Thomas. \"Controls beginning with ESC\". XTerm Control Sequences. Archived from the original on 2019-10-10. Retrieved 2019-10-04.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=86) "https://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h3-Controls-beginning-with-ESC",
+          Text: (string) (len=29) "\"Controls beginning with ESC\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=129) "https://web.archive.org/web/20191010041907/https://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h3-Controls-beginning-with-ESC",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-15",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=13) "chapters 6, 7"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=29) "ECMA-35 (1994), chapters 6, 7",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-16",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=9) "chapter 8"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=25) "ECMA-35 (1994), chapter 8",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-17",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=9) "chapter 9"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=25) "ECMA-35 (1994), chapter 9",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-18",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=10) "chapter 15"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=26) "ECMA-35 (1994), chapter 15",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-19",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=5) "Lunde",
+      (string) (len=1) "2": (string) (len=4) "2008",
+      (string) (len=3) "loc": (string) (len=59) "Chapter 4 (\"Encoding Methods\"), section \"ISO-2022 encoding\"",
+      (string) (len=2) "pp": (string) (len=7) "228-234"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=89) "Lunde (2008), pp.\u00a0228–234, Chapter 4 (\"Encoding Methods\"), section \"ISO-2022 encoding\"",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=59) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFLunde2008",
+          Text: (string) (len=12) "Lunde (2008)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-24",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=5) "Lunde",
+      (string) (len=1) "2": (string) (len=4) "2008",
+      (string) (len=3) "loc": (string) (len=99) "Chapter 1 (\"CJKV Information Processing Overview\"), section \"What are Row-Cell and Plane-Row-Cell?\"",
+      (string) (len=2) "pp": (string) (len=5) "19-20"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=127) "Lunde (2008), pp.\u00a019–20, Chapter 1 (\"CJKV Information Processing Overview\"), section \"What are Row-Cell and Plane-Row-Cell?\"",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=59) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFLunde2008",
+          Text: (string) (len=12) "Lunde (2008)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-25",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=15) "definition 4.11",
+      (string) (len=1) "p": (string) (len=1) "4"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=38) "ECMA-35 (1994), p.\u00a04, definition 4.11",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-26",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=15) "definition 4.18",
+      (string) (len=1) "p": (string) (len=1) "5"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=38) "ECMA-35 (1994), p.\u00a05, definition 4.18",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-27",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=9) "ISO-IR-14",
+      (string) (len=1) "2": (string) (len=4) "1975"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=109) "See, for instance, ISO-IR-14 (1975), defining the G0 designation of the JIS X 0201 Roman set as ESC 2/8 4/10.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR-141975",
+          Text: (string) (len=16) "ISO-IR-14 (1975)",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=36) "https://en.wikipedia.org/wiki/JISCII",
+          Text: (string) (len=20) "JIS X 0201 Roman set",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-28",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=11) "chapter 5.1",
+      (string) (len=1) "p": (string) (len=1) "5"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=34) "ECMA-35 (1994), p.\u00a05, chapter 5.1",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-29",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=8) "RFC 1468",
+      (string) (len=1) "2": (string) (len=4) "1993"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=103) "See, for instance, RFC 1468 (1993), defining the G0 designation of the JIS X 0201 Roman set as ESC ( J.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=62) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFRFC_14681993",
+          Text: (string) (len=15) "RFC 1468 (1993)",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=36) "https://en.wikipedia.org/wiki/JISCII",
+          Text: (string) (len=20) "JIS X 0201 Roman set",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-30",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=11) "chapter 6.2",
+      (string) (len=1) "p": (string) (len=1) "7"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=34) "ECMA-35 (1994), p.\u00a07, chapter 6.2",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-31",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=13) "chapter 6.3.2",
+      (string) (len=1) "p": (string) (len=2) "10"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "ECMA-35 (1994), p.\u00a010, chapter 6.3.2",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-32",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=15) "definition 4.17",
+      (string) (len=1) "p": (string) (len=1) "4"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=38) "ECMA-35 (1994), p.\u00a04, definition 4.17",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-33",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=15) "definition 4.14",
+      (string) (len=1) "p": (string) (len=1) "4"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=38) "ECMA-35 (1994), p.\u00a04, definition 4.14",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-34",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=12) "chapter 13.1",
+      (string) (len=1) "p": (string) (len=2) "28"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=36) "ECMA-35 (1994), p.\u00a028, chapter 13.1",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-35",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=14) "chapter 13.3.3",
+      (string) (len=1) "p": (string) (len=2) "33"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=38) "ECMA-35 (1994), p.\u00a033, chapter 13.3.3",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-36",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-48",
+      (string) (len=1) "2": (string) (len=4) "1991",
+      (string) (len=3) "loc": (string) (len=11) "chapter 5.4",
+      (string) (len=2) "pp": (string) (len=5) "24-26"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=41) "ECMA-48 (1991), pp.\u00a024–26, chapter 5.4",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-481991",
+          Text: (string) (len=14) "ECMA-48 (1991)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-37",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=13) "chapter 6.4.3",
+      (string) (len=1) "p": (string) (len=2) "11"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "ECMA-35 (1994), p.\u00a011, chapter 6.4.3",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-38",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=10) "ISO-IR-208",
+      (string) (len=1) "2": (string) (len=4) "1999"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=17) "ISO-IR-208 (1999)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=64) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR-2081999",
+          Text: (string) (len=17) "ISO-IR-208 (1999)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-39",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=10) "ISO-IR-155",
+      (string) (len=1) "2": (string) (len=4) "1990"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=17) "ISO-IR-155 (1990)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=64) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR-1551990",
+          Text: (string) (len=17) "ISO-IR-155 (1990)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-40",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=10) "ISO-IR-164",
+      (string) (len=1) "2": (string) (len=4) "1992"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=17) "ISO-IR-164 (1992)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=64) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR-1641992",
+          Text: (string) (len=17) "ISO-IR-164 (1992)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-41",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=13) "chapter 6.3.3",
+      (string) (len=1) "p": (string) (len=2) "10"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "ECMA-35 (1994), p.\u00a010, chapter 6.3.3",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-42",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-09-14",
+      (string) (len=12) "archive-date": (string) (len=10) "2022-04-30",
+      (string) (len=11) "archive-url": (string) (len=133) "https://web.archive.org/web/20220430005007/https://github.com/pborman/ansi/blob/8707152fc11286b76d2377dbd6256b8237443948/ansi.go#L134",
+      (string) (len=6) "author": (string) (len=272) "((Google Inc.)) <!-- Yes, this is really a citation to open source code released by Google, the company (not merely found in a Google search), check e.g. the source code copyright notice. Albeit, it was exported from the defunct Google Code to Github by a third party. -->",
+      (string) (len=11) "author-link": (string) (len=12) "Google, Inc.",
+      (string) (len=4) "date": (string) (len=4) "2014",
+      (string) (len=5) "title": (string) (len=17) "ansi.go, line 134",
+      (string) (len=3) "url": (string) (len=90) "https://github.com/pborman/ansi/blob/8707152fc11286b76d2377dbd6256b8237443948/ansi.go#L134",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=35) "ANSI escape sequence library for Go"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=141) "Google Inc. (2014). \"ansi.go, line 134\". ANSI escape sequence library for Go. Archived from the original on 2022-04-30. Retrieved 2019-09-14.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://en.wikipedia.org/wiki/Google,_Inc.",
+          Text: (string) (len=11) "Google Inc.",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=90) "https://github.com/pborman/ansi/blob/8707152fc11286b76d2377dbd6256b8237443948/ansi.go#L134",
+          Text: (string) (len=19) "\"ansi.go, line 134\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=133) "https://web.archive.org/web/20220430005007/https://github.com/pborman/ansi/blob/8707152fc11286b76d2377dbd6256b8237443948/ansi.go#L134",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-43",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-43",
+      (string) (len=1) "2": (string) (len=4) "1991",
+      (string) (len=3) "loc": (string) (len=63) "chapter 7 (\"Specification of the characters of the 8-bit code\")",
+      (string) (len=1) "p": (string) (len=1) "5"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=86) "ECMA-43 (1991), p.\u00a05, chapter 7 (\"Specification of the characters of the 8-bit code\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-431991",
+          Text: (string) (len=14) "ECMA-43 (1991)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-44",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=20) "ISO/IEC FDIS 8859-10",
+      (string) (len=1) "2": (string) (len=4) "1998",
+      (string) (len=3) "loc": (string) (len=54) "chapter 6 (\"Specification of the coded character set\")",
+      (string) (len=1) "p": (string) (len=1) "3"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=90) "ISO/IEC FDIS 8859-10 (1998), p.\u00a03, chapter 6 (\"Specification of the coded character set\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=74) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO/IEC_FDIS_8859-101998",
+          Text: (string) (len=27) "ISO/IEC FDIS 8859-10 (1998)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-45",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=8) "ECMA-144",
+      (string) (len=1) "2": (string) (len=4) "2000",
+      (string) (len=3) "loc": (string) (len=54) "chapter 6 (\"Specification of the coded character set\")",
+      (string) (len=1) "p": (string) (len=1) "3"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=78) "ECMA-144 (2000), p.\u00a03, chapter 6 (\"Specification of the coded character set\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=62) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-1442000",
+          Text: (string) (len=15) "ECMA-144 (2000)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-46",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-43",
+      (string) (len=1) "2": (string) (len=4) "1991",
+      (string) (len=3) "loc": (string) (len=40) "annex C (\"Composite graphic characters\")",
+      (string) (len=1) "p": (string) (len=2) "19"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=64) "ECMA-43 (1991), p.\u00a019, annex C (\"Composite graphic characters\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-431991",
+          Text: (string) (len=14) "ECMA-43 (1991)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-47",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=13) "chapter 6.4.1",
+      (string) (len=1) "p": (string) (len=2) "10"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "ECMA-35 (1994), p.\u00a010, chapter 6.4.1",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-48",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=13) "chapter 6.4.4",
+      (string) (len=1) "p": (string) (len=2) "11"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "ECMA-35 (1994), p.\u00a011, chapter 6.4.4",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-49",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=13) "chapter 6.4.2",
+      (string) (len=1) "p": (string) (len=2) "11"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "ECMA-35 (1994), p.\u00a011, chapter 6.4.2",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-50",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=10) "ISO-IR-104",
+      (string) (len=1) "2": (string) (len=4) "1985"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=17) "ISO-IR-104 (1985)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=64) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR-1041985",
+          Text: (string) (len=17) "ISO-IR-104 (1985)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-51",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=8) "ISO-IR-1",
+      (string) (len=1) "2": (string) (len=4) "1975"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=15) "ISO-IR-1 (1975)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=62) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR-11975",
+          Text: (string) (len=15) "ISO-IR-1 (1975)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-52",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=13) "chapter 8.5.1",
+      (string) (len=1) "p": (string) (len=2) "19"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "ECMA-35 (1994), p.\u00a019, chapter 8.5.1",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-53",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=13) "chapter 8.5.2",
+      (string) (len=1) "p": (string) (len=2) "19"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "ECMA-35 (1994), p.\u00a019, chapter 8.5.2",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-54",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-43",
+      (string) (len=1) "2": (string) (len=4) "1991",
+      (string) (len=3) "loc": (string) (len=22) "chapter 7.6 (\"C1 set\")",
+      (string) (len=1) "p": (string) (len=1) "8"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=45) "ECMA-43 (1991), p.\u00a08, chapter 7.6 (\"C1 set\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-431991",
+          Text: (string) (len=14) "ECMA-43 (1991)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-55",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=14) "chapter 13.2.1",
+      (string) (len=1) "p": (string) (len=2) "29"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=38) "ECMA-35 (1994), p.\u00a029, chapter 13.2.1",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-56",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=13) "chapter 6.5.1",
+      (string) (len=1) "p": (string) (len=2) "12"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "ECMA-35 (1994), p.\u00a012, chapter 6.5.1",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-57",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=13) "chapter 6.5.2",
+      (string) (len=1) "p": (string) (len=2) "12"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "ECMA-35 (1994), p.\u00a012, chapter 6.5.2",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-58",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=6) "ISO-IR",
+      (string) (len=3) "loc": (string) (len=40) "chapter 2.7 (\"Single control functions\")",
+      (string) (len=1) "p": (string) (len=2) "19"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=56) "ISO-IR, p.\u00a019, chapter 2.7 (\"Single control functions\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=56) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR",
+          Text: (string) (len=6) "ISO-IR",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-59",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=13) "chapter 6.5.4",
+      (string) (len=1) "p": (string) (len=2) "12"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "ECMA-35 (1994), p.\u00a012, chapter 6.5.4",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-60",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-48",
+      (string) (len=1) "2": (string) (len=4) "1991",
+      (string) (len=3) "loc": (string) (len=11) "chapter 5.5"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=27) "ECMA-48 (1991), chapter 5.5",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-481991",
+          Text: (string) (len=14) "ECMA-48 (1991)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-61",
+    Group: (string) "",
+    Type: (string) (len=3) "cs1",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=4) "date": (string) (len=10) "1976-12-30",
+      (string) (len=6) "number": (string) (len=2) "35",
+      (string) (len=7) "sponsor": (string) (len=14) "ISO/TC 97/SC 2",
+      (string) (len=12) "sponsor-link": (string) (len=26) "ISO/IEC JTC 1/SC 2#History",
+      (string) (len=5) "title": (string) (len=28) "Reset to Initial State (RIS)"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=147) "ISO/TC 97/SC 2 (1976-12-30). Reset to Initial State (RIS) (PDF). ITSCJ/IPSJ. ISO-IR-35.{{citation}}:  CS1 maint: numeric names: authors list (link)",
+      Links: ([]*parser.Link) (len=6) {
+        (*parser.Link)({
+          URL: (string) (len=56) "https://en.wikipedia.org/wiki/ISO/IEC_JTC_1/SC_2#History",
+          Text: (string) (len=14) "ISO/TC 97/SC 2",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=35) "https://itscj.ipsj.or.jp/ir/035.pdf",
+          Text: (string) (len=28) "Reset to Initial State (RIS)",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=69) "https://en.wikipedia.org/wiki/Information_Processing_Society_of_Japan",
+          Text: (string) (len=4) "IPSJ",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=36) "https://en.wikipedia.org/wiki/ISO-IR",
+          Text: (string) (len=6) "ISO-IR",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/Template:Citation",
+          Text: (string) (len=8) "citation",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=77) "https://en.wikipedia.org/wiki/Category:CS1_maint:_numeric_names:_authors_list",
+          Text: (string) (len=4) "link",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-62",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=13) "chapter 6.5.3",
+      (string) (len=1) "p": (string) (len=2) "12"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "ECMA-35 (1994), p.\u00a012, chapter 6.5.3",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-63",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=20) "chapter 7.3, table 2",
+      (string) (len=1) "p": (string) (len=2) "14"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=44) "ECMA-35 (1994), p.\u00a014, chapter 7.3, table 2",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-64",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=9) "ISO-IR-14",
+      (string) (len=1) "2": (string) (len=4) "1975"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=16) "ISO-IR-14 (1975)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR-141975",
+          Text: (string) (len=16) "ISO-IR-14 (1975)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-65",
+    Group: (string) "",
+    Type: (string) (len=3) "cs1",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-12-25",
+      (string) (len=12) "archive-date": (string) (len=10) "2020-08-02",
+      (string) (len=11) "archive-url": (string) (len=134) "https://web.archive.org/web/20200802044255/https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-T.51-199508-I!Amd1!PDF-E&type=items",
+      (string) (len=6) "author": (string) (len=5) "ITU-T",
+      (string) (len=11) "author-link": (string) (len=5) "ITU-T",
+      (string) (len=4) "date": (string) (len=10) "1995-08-11",
+      (string) (len=4) "mode": (string) (len=3) "cs1",
+      (string) (len=5) "title": (string) (len=38) "Recommendation T.51 (1992) Amendment 1",
+      (string) (len=3) "url": (string) (len=91) "https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-T.51-199508-I!Amd1!PDF-E&type=items",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=123) "ITU-T (1995-08-11). Recommendation T.51 (1992) Amendment 1. Archived from the original on 2020-08-02. Retrieved 2019-12-25.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=35) "https://en.wikipedia.org/wiki/ITU-T",
+          Text: (string) (len=5) "ITU-T",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=91) "https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-T.51-199508-I!Amd1!PDF-E&type=items",
+          Text: (string) (len=38) "Recommendation T.51 (1992) Amendment 1",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=134) "https://web.archive.org/web/20200802044255/https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-T.51-199508-I!Amd1!PDF-E&type=items",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-66",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=10) "ISO-IR-106",
+      (string) (len=1) "2": (string) (len=4) "1985"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=17) "ISO-IR-106 (1985)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=64) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR-1061985",
+          Text: (string) (len=17) "ISO-IR-106 (1985)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-67",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=20) "chapter 7.3, note 23",
+      (string) (len=1) "p": (string) (len=2) "15"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=44) "ECMA-35 (1994), p.\u00a015, chapter 7.3, note 23",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-68",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=10) "ISO-IR-140",
+      (string) (len=1) "2": (string) (len=4) "1987"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=17) "ISO-IR-140 (1987)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=64) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR-1401987",
+          Text: (string) (len=17) "ISO-IR-140 (1987)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-69",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=8) "ISO-IR-7",
+      (string) (len=1) "2": (string) (len=4) "1975"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=15) "ISO-IR-7 (1975)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=62) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR-71975",
+          Text: (string) (len=15) "ISO-IR-7 (1975)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-70",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=9) "ISO-IR-26",
+      (string) (len=1) "2": (string) (len=4) "1976"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=16) "ISO-IR-26 (1976)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR-261976",
+          Text: (string) (len=16) "ISO-IR-26 (1976)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-71",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=9) "ISO-IR-36",
+      (string) (len=1) "2": (string) (len=4) "1977"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=16) "ISO-IR-36 (1977)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR-361977",
+          Text: (string) (len=16) "ISO-IR-36 (1977)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-72",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1980",
+      (string) (len=3) "loc": (string) (len=13) "chapter 5.1.7",
+      (string) (len=1) "p": (string) (len=1) "8"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=36) "ECMA-35 (1980), p.\u00a08, chapter 5.1.7",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351980",
+          Text: (string) (len=14) "ECMA-35 (1980)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-73",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=10) "ISO-IR-105",
+      (string) (len=1) "2": (string) (len=4) "1985"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=17) "ISO-IR-105 (1985)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=64) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR-1051985",
+          Text: (string) (len=17) "ISO-IR-105 (1985)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-74",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=13) "chapter 8.3.1",
+      (string) (len=1) "p": (string) (len=2) "17"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "ECMA-35 (1994), p.\u00a017, chapter 8.3.1",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-75",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=13) "chapter 9.3.1",
+      (string) (len=1) "p": (string) (len=2) "23"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "ECMA-35 (1994), p.\u00a023, chapter 9.3.1",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-76",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=11) "chapter 8.4",
+      (string) (len=1) "p": (string) (len=2) "19"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=35) "ECMA-35 (1994), p.\u00a019, chapter 8.4",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-77",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=13) "chapter 8.3.2",
+      (string) (len=1) "p": (string) (len=2) "17"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "ECMA-35 (1994), p.\u00a017, chapter 8.3.2",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-78",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=11) "chapter 9.4",
+      (string) (len=2) "pp": (string) (len=5) "23-24"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=41) "ECMA-35 (1994), pp.\u00a023–24, chapter 9.4",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-79",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=12) "chapter 11.1",
+      (string) (len=1) "p": (string) (len=2) "27"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=36) "ECMA-35 (1994), p.\u00a027, chapter 11.1",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-80",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=13) "chapter 8.3.3",
+      (string) (len=1) "p": (string) (len=2) "17"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "ECMA-35 (1994), p.\u00a017, chapter 8.3.3",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-81",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=7) "annex B",
+      (string) (len=1) "p": (string) (len=2) "47"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=31) "ECMA-35 (1994), p.\u00a047, annex B",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-82",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=6) "ISO-IR",
+      (string) (len=3) "loc": (string) (len=26) "chapter 1 (\"Introduction\")",
+      (string) (len=1) "p": (string) (len=1) "2"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=41) "ISO-IR, p.\u00a02, chapter 1 (\"Introduction\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=56) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR",
+          Text: (string) (len=6) "ISO-IR",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-83",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=12) "ISO/IEC 2375",
+      (string) (len=1) "2": (string) (len=4) "2003"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=19) "ISO/IEC 2375 (2003)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=66) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO/IEC_23752003",
+          Text: (string) (len=19) "ISO/IEC 2375 (2003)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-84",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=5) "title": (string) (len=38) "Handling of the SGML declaration in SP",
+      (string) (len=3) "url": (string) (len=37) "http://www.jclark.com/sp/sgmldecl.htm",
+      (string) (len=4) "work": (string) (len=64) "SP: an SGML System Conforming to International Standard ISO 8879"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=107) "\"Handling of the SGML declaration in SP\". SP: an SGML System Conforming to International Standard ISO 8879.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=37) "http://www.jclark.com/sp/sgmldecl.htm",
+          Text: (string) (len=40) "\"Handling of the SGML declaration in SP\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-85",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=9) "publisher": (string) (len=7) "[[W3C]]",
+      (string) (len=5) "title": (string) (len=30) "20: SGML Declaration of HTML 4",
+      (string) (len=3) "url": (string) (len=48) "https://www.w3.org/TR/html401/sgml/sgmldecl.html",
+      (string) (len=4) "work": (string) (len=23) "HTML 4.01 Specification"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=63) "\"20: SGML Declaration of HTML 4\". HTML 4.01 Specification. W3C.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=48) "https://www.w3.org/TR/html401/sgml/sgmldecl.html",
+          Text: (string) (len=32) "\"20: SGML Declaration of HTML 4\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://en.wikipedia.org/wiki/W3C",
+          Text: (string) (len=3) "W3C",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-86",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=6) "ISO-IR",
+      (string) (len=3) "loc": (string) (len=80) "chapter 2.2 (\"94-Character graphic character set with second Intermediate byte\")",
+      (string) (len=1) "p": (string) (len=2) "10"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=96) "ISO-IR, p.\u00a010, chapter 2.2 (\"94-Character graphic character set with second Intermediate byte\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=56) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR",
+          Text: (string) (len=6) "ISO-IR",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-87",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=12) "ARIB STD-B24",
+      (string) (len=1) "2": (string) (len=4) "2008",
+      (string) (len=3) "loc": (string) (len=17) "part 2, Table 7-3",
+      (string) (len=1) "p": (string) (len=2) "39"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=46) "ARIB STD-B24 (2008), p.\u00a039, part 2, Table 7-3",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=66) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFARIB_STD-B242008",
+          Text: (string) (len=19) "ARIB STD-B24 (2008)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-88",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=13) {
+      (string) (len=11) "access-date": (string) (len=10) "2020-01-08",
+      (string) (len=12) "archive-date": (string) (len=10) "2019-12-29",
+      (string) (len=11) "archive-url": (string) (len=101) "https://web.archive.org/web/20191229100224/https://www.in-ulm.de/~mascheck/various/alternate_charset/",
+      (string) (len=6) "first1": (string) (len=4) "Sven",
+      (string) (len=6) "first2": (string) (len=6) "Stefan",
+      (string) (len=6) "first3": (string) (len=10) "Richard L.",
+      (string) (len=5) "last1": (string) (len=8) "Mascheck",
+      (string) (len=5) "last2": (string) (len=9) "Le Breton",
+      (string) (len=5) "last3": (string) (len=8) "Hamilton",
+      (string) (len=5) "title": (string) (len=47) "About the 'alternate linedrawing character set'",
+      (string) (len=3) "url": (string) (len=58) "https://www.in-ulm.de/~mascheck/various/alternate_charset/",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=7) "website": (string) (len=15) "~sven_mascheck/"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=187) "Mascheck, Sven; Le Breton, Stefan; Hamilton, Richard L. \"About the 'alternate linedrawing character set'\". ~sven_mascheck/. Archived from the original on 2019-12-29. Retrieved 2020-01-08.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=58) "https://www.in-ulm.de/~mascheck/various/alternate_charset/",
+          Text: (string) (len=50) "\"About the 'alternate linedrawing character set' \"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=101) "https://web.archive.org/web/20191229100224/https://www.in-ulm.de/~mascheck/various/alternate_charset/",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-89",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=12) "chapter 14.4",
+      (string) (len=1) "p": (string) (len=2) "36"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=36) "ECMA-35 (1994), p.\u00a036, chapter 14.4",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-90",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=23) "chapter 14.4.2, note 48",
+      (string) (len=1) "p": (string) (len=2) "36"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=47) "ECMA-35 (1994), p.\u00a036, chapter 14.4.2, note 48",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-91",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=23) "chapter 14.4.2, note 47",
+      (string) (len=1) "p": (string) (len=2) "36"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=47) "ECMA-35 (1994), p.\u00a036, chapter 14.4.2, note 47",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-92",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=11) "ETS 300 706",
+      (string) (len=1) "2": (string) (len=4) "1997",
+      (string) (len=3) "loc": (string) (len=50) "chapter 14 (\"Dynamically Re-definable Characters\")",
+      (string) (len=1) "p": (string) (len=3) "103"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=79) "ETS 300 706 (1997), p.\u00a0103, chapter 14 (\"Dynamically Re-definable Characters\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=65) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFETS_300_7061997",
+          Text: (string) (len=18) "ETS 300 706 (1997)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-93",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=14) "chapter 14.3.2",
+      (string) (len=2) "pp": (string) (len=5) "35-36"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=44) "ECMA-35 (1994), pp.\u00a035–36, chapter 14.3.2",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-94",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=13) "ISO/IEC 10646",
+      (string) (len=1) "2": (string) (len=4) "2017",
+      (string) (len=3) "loc": (string) (len=55) "chapter 12.4 (\"Identification of control function set\")",
+      (string) (len=2) "pp": (string) (len=5) "19-20"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=91) "ISO/IEC 10646 (2017), pp.\u00a019–20, chapter 12.4 (\"Identification of control function set\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO/IEC_106462017",
+          Text: (string) (len=20) "ISO/IEC 10646 (2017)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-95",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=7) "table 5",
+      (string) (len=1) "p": (string) (len=2) "32"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=31) "ECMA-35 (1994), p.\u00a032, table 5",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-96",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=12) "chapter 15.2",
+      (string) (len=2) "pp": (string) (len=5) "37-41"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=42) "ECMA-35 (1994), pp.\u00a037–41, chapter 15.2",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-97",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=14) "chapter 14.2.2",
+      (string) (len=1) "p": (string) (len=2) "34"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=38) "ECMA-35 (1994), p.\u00a034, chapter 14.2.2",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-98",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=14) "chapter 14.2.3",
+      (string) (len=1) "p": (string) (len=2) "34"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=38) "ECMA-35 (1994), p.\u00a034, chapter 14.2.3",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-99",
+    Group: (string) "",
+    Type: (string) (len=3) "cs1",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=11) "access-date": (string) (len=10) "2020-01-17",
+      (string) (len=12) "archive-date": (string) (len=10) "2020-08-02",
+      (string) (len=11) "archive-url": (string) (len=86) "https://web.archive.org/web/20200802022139/https://vt100.net/docs/vt510-rm/DECDWL.html",
+      (string) (len=6) "author": (string) (len=7) "Digital",
+      (string) (len=11) "author-link": (string) (len=29) "Digital Equipment Corporation",
+      (string) (len=4) "mode": (string) (len=3) "cs1",
+      (string) (len=5) "title": (string) (len=41) "DECDWL—Double-Width, Single-Height Line",
+      (string) (len=3) "url": (string) (len=43) "https://vt100.net/docs/vt510-rm/DECDWL.html",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=43) "VT510 Video Terminal Programmer Information"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=162) "Digital. \"DECDWL—Double-Width, Single-Height Line\". VT510 Video Terminal Programmer Information. Archived from the original on 2020-08-02. Retrieved 2020-01-17.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=59) "https://en.wikipedia.org/wiki/Digital_Equipment_Corporation",
+          Text: (string) (len=7) "Digital",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=43) "https://vt100.net/docs/vt510-rm/DECDWL.html",
+          Text: (string) (len=43) "\"DECDWL—Double-Width, Single-Height Line\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=86) "https://web.archive.org/web/20200802022139/https://vt100.net/docs/vt510-rm/DECDWL.html",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-100",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=12) {
+      (string) (len=7) "ctx_ver": (string) (len=11) "Z39.88-2004",
+      (string) (len=8) "is_coins": (string) (len=4) "true",
+      (string) (len=6) "rfr_id": (string) (len=38) "info:sid/en.wikipedia.org:ISO/IEC 2022",
+      (string) (len=10) "rft.atitle": (string) (len=27) "Encode::JP::Emoji::Encoding",
+      (string) (len=11) "rft.aufirst": (string) (len=6) "Yusuke",
+      (string) (len=10) "rft.aulast": (string) (len=8) "Kawasaki",
+      (string) (len=8) "rft.date": (string) (len=4) "2010",
+      (string) (len=9) "rft.genre": (string) (len=7) "unknown",
+      (string) (len=10) "rft.jtitle": (string) (len=15) "Encode-JP-Emoji",
+      (string) (len=9) "rft.pages": (string) (len=8) "Line 268",
+      (string) (len=6) "rft_id": (string) (len=91) "https://github.com/kawanet/Encode-JP-Emoji/blob/master/lib/Encode/JP/Emoji/Encoding.pm#L268",
+      (string) (len=11) "rft_val_fmt": (string) (len=28) "info:ofi/fmt:kev:mtx:journal"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=146) "Kawasaki, Yusuke (2010). \"Encode::JP::Emoji::Encoding\". Encode-JP-Emoji. Line 268. Archived from the original on 2022-04-30. Retrieved 2020-05-28.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=91) "https://github.com/kawanet/Encode-JP-Emoji/blob/master/lib/Encode/JP/Emoji/Encoding.pm#L268",
+          Text: (string) (len=29) "\"Encode::JP::Emoji::Encoding\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=134) "https://web.archive.org/web/20220430005007/https://github.com/kawanet/Encode-JP-Emoji/blob/master/lib/Encode/JP/Emoji/Encoding.pm#L268",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-103",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=42) "ECMA-35 (1994), pp.\u00a036–37, chapter 14.5",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-105",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=43) "ECMA-35 (1980), pp.\u00a014–15, chapter 5.3.7",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351980",
+          Text: (string) (len=14) "ECMA-35 (1980)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-107",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=6) "ISO-IR",
+      (string) (len=3) "loc": (string) (len=53) "chapter 2.8.1 (\"Coding systems with Standard return\")",
+      (string) (len=1) "p": (string) (len=2) "20"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=69) "ISO-IR, p.\u00a020, chapter 2.8.1 (\"Coding systems with Standard return\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=56) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR",
+          Text: (string) (len=6) "ISO-IR",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-108",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=12) "chapter 15.4",
+      (string) (len=2) "pp": (string) (len=5) "41-42"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=42) "ECMA-35 (1994), pp.\u00a041–42, chapter 15.4",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-109",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=6) "ISO-IR",
+      (string) (len=3) "loc": (string) (len=56) "chapter 2.8.2 (\"Coding systems without Standard return\")",
+      (string) (len=1) "p": (string) (len=2) "21"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=72) "ISO-IR, p.\u00a021, chapter 2.8.2 (\"Coding systems without Standard return\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=56) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR",
+          Text: (string) (len=6) "ISO-IR",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-110",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-35",
+      (string) (len=1) "2": (string) (len=4) "1994",
+      (string) (len=3) "loc": (string) (len=12) "chapter 15.3",
+      (string) (len=1) "p": (string) (len=2) "41"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=36) "ECMA-35 (1994), p.\u00a041, chapter 15.3",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-351994",
+          Text: (string) (len=14) "ECMA-35 (1994)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-111",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=13) "ISO/IEC 10646",
+      (string) (len=1) "2": (string) (len=4) "2017",
+      (string) (len=3) "loc": (string) (len=56) "chapter 12.2 (\"Identification of a UCS encoding scheme\")",
+      (string) (len=1) "p": (string) (len=2) "19"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=86) "ISO/IEC 10646 (2017), p.\u00a019, chapter 12.2 (\"Identification of a UCS encoding scheme\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO/IEC_106462017",
+          Text: (string) (len=20) "ISO/IEC 10646 (2017)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-112",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=13) "ISO/IEC 10646",
+      (string) (len=1) "2": (string) (len=4) "2017",
+      (string) (len=3) "loc": (string) (len=54) "chapter 12.1 (\"Purpose and context of identification\")",
+      (string) (len=2) "pp": (string) (len=7) "18–19"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=90) "ISO/IEC 10646 (2017), pp.\u00a018–19, chapter 12.1 (\"Purpose and context of identification\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO/IEC_106462017",
+          Text: (string) (len=20) "ISO/IEC 10646 (2017)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-113",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=10) "ISO-IR-192",
+      (string) (len=1) "2": (string) (len=4) "1996"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=17) "ISO-IR-192 (1996)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=64) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR-1921996",
+          Text: (string) (len=17) "ISO-IR-192 (1996)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-114",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=10) "ISO-IR-195",
+      (string) (len=1) "2": (string) (len=4) "1996"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=17) "ISO-IR-195 (1996)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=64) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR-1951996",
+          Text: (string) (len=17) "ISO-IR-195 (1996)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-115",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=13) "ISO/IEC 10646",
+      (string) (len=1) "2": (string) (len=4) "2017",
+      (string) (len=3) "loc": (string) (len=68) "chapter 12.5 (\"Identification of the coding system of ISO/IEC 2022\")",
+      (string) (len=1) "p": (string) (len=2) "20"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=98) "ISO/IEC 10646 (2017), p.\u00a020, chapter 12.5 (\"Identification of the coding system of ISO/IEC 2022\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO/IEC_106462017",
+          Text: (string) (len=20) "ISO/IEC 10646 (2017)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-116",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=9) "Scheifler",
+      (string) (len=1) "2": (string) (len=4) "1989",
+      (string) (len=3) "loc": (string) (len=144) "[https://www.x.org/releases/current/doc/xorg-docs/ctext/ctext.html#Non_Standard_Character_Set_Encodings § Non-Standard Character Set Encodings]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=57) "Scheifler (1989), § Non-Standard Character Set Encodings",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFScheifler1989",
+          Text: (string) (len=16) "Scheifler (1989)",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=102) "https://www.x.org/releases/current/doc/xorg-docs/ctext/ctext.html#Non_Standard_Character_Set_Encodings",
+          Text: (string) (len=39) "§ Non-Standard Character Set Encodings",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-117",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=5) "Lunde",
+      (string) (len=1) "2": (string) (len=4) "2008",
+      (string) (len=3) "loc": (string) (len=59) "Chapter 4 (\"Encoding Methods\"), section \"ISO-2022 encoding\"",
+      (string) (len=2) "pp": (string) (len=7) "229-230"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=223) "Lunde (2008), pp.\u00a0229–230, Chapter 4 (\"Encoding Methods\"), section \"ISO-2022 encoding\" \"Those encodings that have been extensively used in the past, or continue to be used today for some purposes, have been highlighted.\"",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=59) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFLunde2008",
+          Text: (string) (len=12) "Lunde (2008)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-118",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=12) "archive-date": (string) (len=10) "2015-01-07",
+      (string) (len=11) "archive-url": (string) (len=103) "https://web.archive.org/web/20150107121522/http://www-01.ibm.com/software/globalization/ccsid/acri.html",
+      (string) (len=9) "publisher": (string) (len=7) "[[IBM]]",
+      (string) (len=5) "title": (string) (len=46) "Additional Coding-related Required Information",
+      (string) (len=3) "url": (string) (len=60) "http://www-01.ibm.com/software/globalization/ccsid/acri.html",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=4) "work": (string) (len=51) "IBM Globalization - Coded Character Set Identifiers"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=149) "\"Additional Coding-related Required Information\". IBM Globalization - Coded Character Set Identifiers. IBM. Archived from the original on 2015-01-07.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=103) "https://web.archive.org/web/20150107121522/http://www-01.ibm.com/software/globalization/ccsid/acri.html",
+          Text: (string) (len=48) "\"Additional Coding-related Required Information\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://en.wikipedia.org/wiki/IBM",
+          Text: (string) (len=3) "IBM",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "http://www-01.ibm.com/software/globalization/ccsid/acri.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-119",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=24) "WHATWG Encoding Standard",
+      (string) (len=3) "loc": (string) (len=89) "[https://encoding.spec.whatwg.org/#security-background section 2 (\"Security background\")]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=59) "WHATWG Encoding Standard, section 2 (\"Security background\")",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=74) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFWHATWG_Encoding_Standard",
+          Text: (string) (len=24) "WHATWG Encoding Standard",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=53) "https://encoding.spec.whatwg.org/#security-background",
+          Text: (string) (len=33) "section 2 (\"Security background\")",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-120",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=24) "WHATWG Encoding Standard",
+      (string) (len=3) "loc": (string) (len=119) "chapter 4.2 (\"Names and labels\"), [https://encoding.spec.whatwg.org/#ref-for-replacement%E2%91%A1 anchor \"replacement\"]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=80) "WHATWG Encoding Standard, chapter 4.2 (\"Names and labels\"), anchor \"replacement\"",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=74) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFWHATWG_Encoding_Standard",
+          Text: (string) (len=24) "WHATWG Encoding Standard",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=62) "https://encoding.spec.whatwg.org/#ref-for-replacement%E2%91%A1",
+          Text: (string) (len=20) "anchor \"replacement\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-121",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=24) "WHATWG Encoding Standard",
+      (string) (len=3) "loc": (string) (len=76) "[https://encoding.spec.whatwg.org/#replacement section 14.1 (\"replacement\")]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=54) "WHATWG Encoding Standard, section 14.1 (\"replacement\")",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=74) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFWHATWG_Encoding_Standard",
+          Text: (string) (len=24) "WHATWG Encoding Standard",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://encoding.spec.whatwg.org/#replacement",
+          Text: (string) (len=28) "section 14.1 (\"replacement\")",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-122",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=8) "RFC 1468",
+      (string) (len=1) "2": (string) (len=4) "1993"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=15) "RFC 1468 (1993)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=62) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFRFC_14681993",
+          Text: (string) (len=15) "RFC 1468 (1993)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-123",
+    Group: (string) "",
+    Type: (string) (len=3) "cs1",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-09-16",
+      (string) (len=12) "archive-date": (string) (len=10) "2019-06-16",
+      (string) (len=11) "archive-url": (string) (len=118) "https://web.archive.org/web/20190616012252/https://docs.microsoft.com/en-us/windows/desktop/intl/code-page-identifiers",
+      (string) (len=4) "mode": (string) (len=3) "cs1",
+      (string) (len=9) "publisher": (string) (len=9) "Microsoft",
+      (string) (len=5) "title": (string) (len=21) "Code Page Identifiers",
+      (string) (len=3) "url": (string) (len=75) "https://docs.microsoft.com/en-us/windows/desktop/intl/code-page-identifiers",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=18) "Windows Dev Center"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=119) "\"Code Page Identifiers\". Windows Dev Center. Microsoft. Archived from the original on 2019-06-16. Retrieved 2019-09-16.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=75) "https://docs.microsoft.com/en-us/windows/desktop/intl/code-page-identifiers",
+          Text: (string) (len=23) "\"Code Page Identifiers\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=118) "https://web.archive.org/web/20190616012252/https://docs.microsoft.com/en-us/windows/desktop/intl/code-page-identifiers",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-124",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=24) "WHATWG Encoding Standard",
+      (string) (len=3) "loc": (string) (len=76) "[https://encoding.spec.whatwg.org/#iso-2022-jp section 12.2 (\"ISO-2022-JP\")]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=54) "WHATWG Encoding Standard, section 12.2 (\"ISO-2022-JP\")",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=74) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFWHATWG_Encoding_Standard",
+          Text: (string) (len=24) "WHATWG Encoding Standard",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://encoding.spec.whatwg.org/#iso-2022-jp",
+          Text: (string) (len=28) "section 12.2 (\"ISO-2022-JP\")",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-126",
+    Group: (string) "",
+    Type: (string) (len=3) "cs1",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-09-15",
+      (string) (len=12) "archive-date": (string) (len=10) "2022-04-30",
+      (string) (len=11) "archive-url": (string) (len=164) "https://web.archive.org/web/20220430005008/https://github.com/python/cpython/blob/d3faf43f9ba7da0ae504c9186b10d0fa3a8eb300/Modules/cjkcodecs/_codecs_iso2022.c#L1122",
+      (string) (len=5) "first": (string) (len=8) "Hye-Shik",
+      (string) (len=4) "last": (string) (len=5) "Chang",
+      (string) (len=4) "mode": (string) (len=3) "cs1",
+      (string) (len=9) "publisher": (string) (len=26) "Python Software Foundation",
+      (string) (len=5) "title": (string) (len=46) "Modules/cjkcodecs/_codecs_iso2022.c, line 1122",
+      (string) (len=3) "url": (string) (len=121) "https://github.com/python/cpython/blob/d3faf43f9ba7da0ae504c9186b10d0fa3a8eb300/Modules/cjkcodecs/_codecs_iso2022.c#L1122",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=19) "cPython source tree"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=179) "Chang, Hye-Shik. \"Modules/cjkcodecs/_codecs_iso2022.c, line 1122\". cPython source tree. Python Software Foundation. Archived from the original on 2022-04-30. Retrieved 2019-09-15.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=121) "https://github.com/python/cpython/blob/d3faf43f9ba7da0ae504c9186b10d0fa3a8eb300/Modules/cjkcodecs/_codecs_iso2022.c#L1122",
+          Text: (string) (len=48) "\"Modules/cjkcodecs/_codecs_iso2022.c, line 1122\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=164) "https://web.archive.org/web/20220430005008/https://github.com/python/cpython/blob/d3faf43f9ba7da0ae504c9186b10d0fa3a8eb300/Modules/cjkcodecs/_codecs_iso2022.c#L1122",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-127",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-09-16",
+      (string) (len=12) "archive-date": (string) (len=10) "2019-07-28",
+      (string) (len=11) "archive-url": (string) (len=109) "https://web.archive.org/web/20190728163453/https://docs.python.org/3.7/library/codecs.html#standard-encodings",
+      (string) (len=9) "publisher": (string) (len=26) "Python Software Foundation",
+      (string) (len=5) "title": (string) (len=64) "codecs — Codec registry and base classes § Standard Encodings",
+      (string) (len=3) "url": (string) (len=66) "https://docs.python.org/3.7/library/codecs.html#standard-encodings",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=26) "Python 3.7.4 documentation"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=187) "\"codecs — Codec registry and base classes § Standard Encodings\". Python 3.7.4 documentation. Python Software Foundation. Archived from the original on 2019-07-28. Retrieved 2019-09-16.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=66) "https://docs.python.org/3.7/library/codecs.html#standard-encodings",
+          Text: (string) (len=66) "\"codecs — Codec registry and base classes § Standard Encodings\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=109) "https://web.archive.org/web/20190728163453/https://docs.python.org/3.7/library/codecs.html#standard-encodings",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-128",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=9) "publisher": (string) (len=45) "[[Digital Equipment Corporation]], [[Compaq]]",
+      (string) (len=5) "title": (string) (len=34) "2: Codesets and Codeset Conversion",
+      (string) (len=3) "url": (string) (len=86) "http://www.itec.suny.edu/scsys/unix/doc/V4.0F/docs/html/SUPPDOCS/JAPANDOC/JAPANCH2.HTM",
+      (string) (len=4) "work": (string) (len=60) "DIGITAL UNIX Technical Reference for Using Japanese Features"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=152) "\"2: Codesets and Codeset Conversion\". DIGITAL UNIX Technical Reference for Using Japanese Features. Digital Equipment Corporation, Compaq.[dead link\u200d]",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=86) "http://www.itec.suny.edu/scsys/unix/doc/V4.0F/docs/html/SUPPDOCS/JAPANDOC/JAPANCH2.HTM",
+          Text: (string) (len=36) "\"2: Codesets and Codeset Conversion\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=59) "https://en.wikipedia.org/wiki/Digital_Equipment_Corporation",
+          Text: (string) (len=29) "Digital Equipment Corporation",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=36) "https://en.wikipedia.org/wiki/Compaq",
+          Text: (string) (len=6) "Compaq",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/Wikipedia:Link_rot",
+          Text: (string) (len=9) "dead link",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-129",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=5) "Lunde",
+      (string) (len=1) "2": (string) (len=4) "2008",
+      (string) (len=3) "loc": (string) (len=96) "Chapter 4 (\"Encoding Methods\"), section \"The predecessor of ISO-2022-JP encoding—JIS encoding\"",
+      (string) (len=2) "pp": (string) (len=7) "236-238"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=126) "Lunde (2008), pp.\u00a0236–238, Chapter 4 (\"Encoding Methods\"), section \"The predecessor of ISO-2022-JP encoding—JIS encoding\"",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=59) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFLunde2008",
+          Text: (string) (len=12) "Lunde (2008)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-130",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=8) "RFC 1554",
+      (string) (len=1) "2": (string) (len=4) "1993"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=15) "RFC 1554 (1993)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=62) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFRFC_15541993",
+          Text: (string) (len=15) "RFC 1554 (1993)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-131",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=8) "RFC 2237",
+      (string) (len=1) "2": (string) (len=4) "1997"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=15) "RFC 2237 (1997)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=62) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFRFC_22371997",
+          Text: (string) (len=15) "RFC 2237 (1997)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-132",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=10) "2022-01-04",
+      (string) (len=12) "archive-date": (string) (len=10) "2022-01-04",
+      (string) (len=11) "archive-url": (string) (len=89) "https://web.archive.org/web/20220104083401/https://www.ibm.com/support/pages/apar/PQ02042",
+      (string) (len=4) "date": (string) (len=10) "2021-01-19",
+      (string) (len=9) "publisher": (string) (len=7) "[[IBM]]",
+      (string) (len=5) "title": (string) (len=79) "PQ02042: New Function to Provide C/370 iconv() Support for Japanese ISO-2022-JP",
+      (string) (len=3) "url": (string) (len=46) "https://www.ibm.com/support/pages/apar/PQ02042",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=163) "\"PQ02042: New Function to Provide C/370 iconv() Support for Japanese ISO-2022-JP\". IBM. 2021-01-19. Archived from the original on 2022-01-04. Retrieved 2022-01-04.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://www.ibm.com/support/pages/apar/PQ02042",
+          Text: (string) (len=81) "\"PQ02042: New Function to Provide C/370 iconv() Support for Japanese ISO-2022-JP\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://en.wikipedia.org/wiki/IBM",
+          Text: (string) (len=3) "IBM",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=89) "https://web.archive.org/web/20220104083401/https://www.ibm.com/support/pages/apar/PQ02042",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-133",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=12) "archive-date": (string) (len=10) "2014-11-29",
+      (string) (len=11) "archive-url": (string) (len=108) "https://web.archive.org/web/20141129211812/http://www-01.ibm.com/software/globalization/ccsid/ccsid5055.html",
+      (string) (len=9) "publisher": (string) (len=7) "[[IBM]]",
+      (string) (len=5) "title": (string) (len=10) "CCSID 9148",
+      (string) (len=3) "url": (string) (len=65) "http://www-01.ibm.com/software/globalization/ccsid/ccsid9148.html",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=4) "work": (string) (len=51) "IBM Globalization - Coded Character Set Identifiers"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=113) "\"CCSID 9148\". IBM Globalization - Coded Character Set Identifiers. IBM. Archived from the original on 2014-11-29.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=108) "https://web.archive.org/web/20141129211812/http://www-01.ibm.com/software/globalization/ccsid/ccsid5055.html",
+          Text: (string) (len=12) "\"CCSID 9148\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://en.wikipedia.org/wiki/IBM",
+          Text: (string) (len=3) "IBM",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=65) "http://www-01.ibm.com/software/globalization/ccsid/ccsid9148.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-134",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=12) "archive-date": (string) (len=10) "2014-12-02",
+      (string) (len=11) "archive-url": (string) (len=107) "https://web.archive.org/web/20141202004846/http://www-01.ibm.com/software/globalization/ccsid/ccsid956.html",
+      (string) (len=9) "publisher": (string) (len=7) "[[IBM]]",
+      (string) (len=5) "title": (string) (len=9) "CCSID 956",
+      (string) (len=3) "url": (string) (len=64) "http://www-01.ibm.com/software/globalization/ccsid/ccsid956.html",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=4) "work": (string) (len=51) "IBM Globalization - Coded Character Set Identifiers"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "\"CCSID 956\". IBM Globalization - Coded Character Set Identifiers. IBM. Archived from the original on 2014-12-02.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=107) "https://web.archive.org/web/20141202004846/http://www-01.ibm.com/software/globalization/ccsid/ccsid956.html",
+          Text: (string) (len=11) "\"CCSID 956\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://en.wikipedia.org/wiki/IBM",
+          Text: (string) (len=3) "IBM",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=64) "http://www-01.ibm.com/software/globalization/ccsid/ccsid956.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-135",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=12) "archive-date": (string) (len=10) "2014-11-30",
+      (string) (len=11) "archive-url": (string) (len=107) "https://web.archive.org/web/20141130011055/http://www-01.ibm.com/software/globalization/ccsid/ccsid957.html",
+      (string) (len=9) "publisher": (string) (len=7) "[[IBM]]",
+      (string) (len=5) "title": (string) (len=9) "CCSID 957",
+      (string) (len=3) "url": (string) (len=64) "http://www-01.ibm.com/software/globalization/ccsid/ccsid957.html",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=4) "work": (string) (len=51) "IBM Globalization - Coded Character Set Identifiers"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "\"CCSID 957\". IBM Globalization - Coded Character Set Identifiers. IBM. Archived from the original on 2014-11-30.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=107) "https://web.archive.org/web/20141130011055/http://www-01.ibm.com/software/globalization/ccsid/ccsid957.html",
+          Text: (string) (len=11) "\"CCSID 957\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://en.wikipedia.org/wiki/IBM",
+          Text: (string) (len=3) "IBM",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=64) "http://www-01.ibm.com/software/globalization/ccsid/ccsid957.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-136",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=12) "archive-date": (string) (len=10) "2014-12-01",
+      (string) (len=11) "archive-url": (string) (len=107) "https://web.archive.org/web/20141201220819/http://www-01.ibm.com/software/globalization/ccsid/ccsid958.html",
+      (string) (len=9) "publisher": (string) (len=7) "[[IBM]]",
+      (string) (len=5) "title": (string) (len=9) "CCSID 958",
+      (string) (len=3) "url": (string) (len=64) "http://www-01.ibm.com/software/globalization/ccsid/ccsid958.html",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=4) "work": (string) (len=51) "IBM Globalization - Coded Character Set Identifiers"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "\"CCSID 958\". IBM Globalization - Coded Character Set Identifiers. IBM. Archived from the original on 2014-12-01.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=107) "https://web.archive.org/web/20141201220819/http://www-01.ibm.com/software/globalization/ccsid/ccsid958.html",
+          Text: (string) (len=11) "\"CCSID 958\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://en.wikipedia.org/wiki/IBM",
+          Text: (string) (len=3) "IBM",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=64) "http://www-01.ibm.com/software/globalization/ccsid/ccsid958.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-137",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=12) "archive-date": (string) (len=10) "2014-12-02",
+      (string) (len=11) "archive-url": (string) (len=107) "https://web.archive.org/web/20141202010322/http://www-01.ibm.com/software/globalization/ccsid/ccsid959.html",
+      (string) (len=9) "publisher": (string) (len=7) "[[IBM]]",
+      (string) (len=5) "title": (string) (len=9) "CCSID 959",
+      (string) (len=3) "url": (string) (len=64) "http://www-01.ibm.com/software/globalization/ccsid/ccsid959.html",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=4) "work": (string) (len=51) "IBM Globalization - Coded Character Set Identifiers"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "\"CCSID 959\". IBM Globalization - Coded Character Set Identifiers. IBM. Archived from the original on 2014-12-02.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=107) "https://web.archive.org/web/20141202010322/http://www-01.ibm.com/software/globalization/ccsid/ccsid959.html",
+          Text: (string) (len=11) "\"CCSID 959\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://en.wikipedia.org/wiki/IBM",
+          Text: (string) (len=3) "IBM",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=64) "http://www-01.ibm.com/software/globalization/ccsid/ccsid959.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-138",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=12) "archive-date": (string) (len=10) "2014-11-29",
+      (string) (len=11) "archive-url": (string) (len=108) "https://web.archive.org/web/20141129224035/http://www-01.ibm.com/software/globalization/ccsid/ccsid5052.html",
+      (string) (len=9) "publisher": (string) (len=7) "[[IBM]]",
+      (string) (len=5) "title": (string) (len=10) "CCSID 5052",
+      (string) (len=3) "url": (string) (len=65) "http://www-01.ibm.com/software/globalization/ccsid/ccsid5052.html",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=4) "work": (string) (len=51) "IBM Globalization - Coded Character Set Identifiers"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=113) "\"CCSID 5052\". IBM Globalization - Coded Character Set Identifiers. IBM. Archived from the original on 2014-11-29.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=108) "https://web.archive.org/web/20141129224035/http://www-01.ibm.com/software/globalization/ccsid/ccsid5052.html",
+          Text: (string) (len=12) "\"CCSID 5052\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://en.wikipedia.org/wiki/IBM",
+          Text: (string) (len=3) "IBM",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=65) "http://www-01.ibm.com/software/globalization/ccsid/ccsid5052.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-139",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=12) "archive-date": (string) (len=10) "2014-11-29",
+      (string) (len=11) "archive-url": (string) (len=108) "https://web.archive.org/web/20141129224035/http://www-01.ibm.com/software/globalization/ccsid/ccsid5052.html",
+      (string) (len=9) "publisher": (string) (len=7) "[[IBM]]",
+      (string) (len=5) "title": (string) (len=10) "CCSID 5053",
+      (string) (len=3) "url": (string) (len=65) "http://www-01.ibm.com/software/globalization/ccsid/ccsid5053.html",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=4) "work": (string) (len=51) "IBM Globalization - Coded Character Set Identifiers"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=113) "\"CCSID 5053\". IBM Globalization - Coded Character Set Identifiers. IBM. Archived from the original on 2014-11-29.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=108) "https://web.archive.org/web/20141129224035/http://www-01.ibm.com/software/globalization/ccsid/ccsid5052.html",
+          Text: (string) (len=12) "\"CCSID 5053\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://en.wikipedia.org/wiki/IBM",
+          Text: (string) (len=3) "IBM",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=65) "http://www-01.ibm.com/software/globalization/ccsid/ccsid5053.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-140",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=12) "archive-date": (string) (len=10) "2014-11-29",
+      (string) (len=11) "archive-url": (string) (len=108) "https://web.archive.org/web/20141129223621/http://www-01.ibm.com/software/globalization/ccsid/ccsid5054.html",
+      (string) (len=9) "publisher": (string) (len=7) "[[IBM]]",
+      (string) (len=5) "title": (string) (len=10) "CCSID 5054",
+      (string) (len=3) "url": (string) (len=65) "http://www-01.ibm.com/software/globalization/ccsid/ccsid5054.html",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=4) "work": (string) (len=51) "IBM Globalization - Coded Character Set Identifiers"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=113) "\"CCSID 5054\". IBM Globalization - Coded Character Set Identifiers. IBM. Archived from the original on 2014-11-29.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=108) "https://web.archive.org/web/20141129223621/http://www-01.ibm.com/software/globalization/ccsid/ccsid5054.html",
+          Text: (string) (len=12) "\"CCSID 5054\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://en.wikipedia.org/wiki/IBM",
+          Text: (string) (len=3) "IBM",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=65) "http://www-01.ibm.com/software/globalization/ccsid/ccsid5054.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-141",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=12) "archive-date": (string) (len=10) "2014-11-29",
+      (string) (len=11) "archive-url": (string) (len=108) "https://web.archive.org/web/20141129211812/http://www-01.ibm.com/software/globalization/ccsid/ccsid5055.html",
+      (string) (len=9) "publisher": (string) (len=7) "[[IBM]]",
+      (string) (len=5) "title": (string) (len=10) "CCSID 5055",
+      (string) (len=3) "url": (string) (len=65) "http://www-01.ibm.com/software/globalization/ccsid/ccsid5055.html",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=4) "work": (string) (len=51) "IBM Globalization - Coded Character Set Identifiers"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=113) "\"CCSID 5055\". IBM Globalization - Coded Character Set Identifiers. IBM. Archived from the original on 2014-11-29.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=108) "https://web.archive.org/web/20141129211812/http://www-01.ibm.com/software/globalization/ccsid/ccsid5055.html",
+          Text: (string) (len=12) "\"CCSID 5055\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://en.wikipedia.org/wiki/IBM",
+          Text: (string) (len=3) "IBM",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=65) "http://www-01.ibm.com/software/globalization/ccsid/ccsid5055.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-142",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=8) "RFC 1557",
+      (string) (len=1) "2": (string) (len=4) "1993"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=15) "RFC 1557 (1993)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=62) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFRFC_15571993",
+          Text: (string) (len=15) "RFC 1557 (1993)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-143",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2007-07-12",
+      (string) (len=12) "archive-date": (string) (len=10) "2007-09-26",
+      (string) (len=11) "archive-url": (string) (len=96) "https://web.archive.org/web/20070926100143/http://examples.oreilly.com/cjkvinfo/AppL/ksx1001.pdf",
+      (string) (len=5) "title": (string) (len=14) "KS X 1001:1992",
+      (string) (len=3) "url": (string) (len=53) "http://examples.oreilly.com/cjkvinfo/AppL/ksx1001.pdf",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=93) "\"KS X 1001:1992\" (PDF). Archived (PDF) from the original on 2007-09-26. Retrieved 2007-07-12.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=53) "http://examples.oreilly.com/cjkvinfo/AppL/ksx1001.pdf",
+          Text: (string) (len=16) "\"KS X 1001:1992\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=96) "https://web.archive.org/web/20070926100143/http://examples.oreilly.com/cjkvinfo/AppL/ksx1001.pdf",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-144",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=10) "ISO-IR-149",
+      (string) (len=1) "2": (string) (len=4) "1988"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=17) "ISO-IR-149 (1988)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=64) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFISO-IR-1491988",
+          Text: (string) (len=17) "ISO-IR-149 (1988)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-145",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=8) "RFC 1922",
+      (string) (len=1) "2": (string) (len=4) "1996"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=15) "RFC 1922 (1996)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=62) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFRFC_19221996",
+          Text: (string) (len=15) "RFC 1922 (1996)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-146",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=5) "title": (string) (len=13) "CVE-2024-2961",
+      (string) (len=3) "url": (string) (len=46) "https://nvd.nist.gov/vuln/detail/CVE-2024-2961"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=16) "\"CVE-2024-2961\".",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://nvd.nist.gov/vuln/detail/CVE-2024-2961",
+          Text: (string) (len=15) "\"CVE-2024-2961\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-147",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=5) "title": (string) (len=42) "GLIBC Vulnerability on Servers Serving PHP",
+      (string) (len=3) "url": (string) (len=59) "https://rockylinux.org/news/glibc-vulnerability-april-2024/"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=45) "\"GLIBC Vulnerability on Servers Serving PHP\".",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=59) "https://rockylinux.org/news/glibc-vulnerability-april-2024/",
+          Text: (string) (len=44) "\"GLIBC Vulnerability on Servers Serving PHP\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-148",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-43",
+      (string) (len=1) "2": (string) (len=4) "1991",
+      (string) (len=3) "loc": (string) (len=20) "chapter 8 (\"Levels\")",
+      (string) (len=2) "pp": (string) (len=4) "9-10"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=49) "ECMA-43 (1991), pp.\u00a09–10, chapter 8 (\"Levels\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-431991",
+          Text: (string) (len=14) "ECMA-43 (1991)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-149",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-43",
+      (string) (len=1) "2": (string) (len=4) "1985",
+      (string) (len=3) "loc": (string) (len=26) "chapter 7.3 (\"The G0 set\")",
+      (string) (len=2) "pp": (string) (len=4) "7-11"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=55) "ECMA-43 (1985), pp.\u00a07–11, chapter 7.3 (\"The G0 set\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-431985",
+          Text: (string) (len=14) "ECMA-43 (1985)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-150",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-43",
+      (string) (len=1) "2": (string) (len=4) "1991",
+      (string) (len=3) "loc": (string) (len=22) "chapter 7.4 (\"G0 set\")",
+      (string) (len=2) "pp": (string) (len=3) "6-8"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=50) "ECMA-43 (1991), pp.\u00a06–8, chapter 7.4 (\"G0 set\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-431991",
+          Text: (string) (len=14) "ECMA-43 (1991)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-151",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-43",
+      (string) (len=1) "2": (string) (len=4) "1991",
+      (string) (len=3) "loc": (string) (len=44) "chapter 10.3 (\"Identification of a version\")",
+      (string) (len=1) "p": (string) (len=2) "11"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=68) "ECMA-43 (1991), p.\u00a011, chapter 10.3 (\"Identification of a version\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-431991",
+          Text: (string) (len=14) "ECMA-43 (1991)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-152",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-43",
+      (string) (len=1) "2": (string) (len=4) "1991",
+      (string) (len=3) "loc": (string) (len=116) "annex E (\"Main differences between the second edition (1985) and the present (third) edition of this ECMA Standard\")",
+      (string) (len=1) "p": (string) (len=2) "23"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=140) "ECMA-43 (1991), p.\u00a023, annex E (\"Main differences between the second edition (1985) and the present (third) edition of this ECMA Standard\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-431991",
+          Text: (string) (len=14) "ECMA-43 (1991)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-153",
+    Group: (string) "",
+    Type: (string) (len=3) "cs1",
+    Metadata: (map[string]string) (len=12) {
+      (string) (len=11) "access-date": (string) (len=10) "2020-01-14",
+      (string) (len=12) "archive-date": (string) (len=10) "2022-01-25",
+      (string) (len=11) "archive-url": (string) (len=105) "https://web.archive.org/web/20220125080439/https://www.iptc.org/std/IPTC7901/1.0/specification/7901V5.pdf",
+      (string) (len=6) "author": (string) (len=4) "IPTC",
+      (string) (len=11) "author-link": (string) (len=4) "IPTC",
+      (string) (len=4) "date": (string) (len=4) "1995",
+      (string) (len=7) "edition": (string) (len=3) "5th",
+      (string) (len=2) "id": (string) (len=13) "IPTC TEC 7901",
+      (string) (len=4) "mode": (string) (len=3) "cs1",
+      (string) (len=5) "title": (string) (len=35) "The IPTC Recommended Message Format",
+      (string) (len=3) "url": (string) (len=62) "https://www.iptc.org/std/IPTC7901/1.0/specification/7901V5.pdf",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=151) "IPTC (1995). The IPTC Recommended Message Format (PDF) (5th\u00a0ed.). IPTC TEC 7901. Archived (PDF) from the original on 2022-01-25. Retrieved 2020-01-14.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=34) "https://en.wikipedia.org/wiki/IPTC",
+          Text: (string) (len=4) "IPTC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=62) "https://www.iptc.org/std/IPTC7901/1.0/specification/7901V5.pdf",
+          Text: (string) (len=35) "The IPTC Recommended Message Format",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=105) "https://web.archive.org/web/20220125080439/https://www.iptc.org/std/IPTC7901/1.0/specification/7901V5.pdf",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-154",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-43",
+      (string) (len=1) "2": (string) (len=4) "1991",
+      (string) (len=3) "loc": (string) (len=43) "chapter 9.2 (\"Unique coding of characters\")",
+      (string) (len=2) "pp": (string) (len=2) "10"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=68) "ECMA-43 (1991), pp.\u00a010, chapter 9.2 (\"Unique coding of characters\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-431991",
+          Text: (string) (len=14) "ECMA-43 (1991)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-155",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-10-02",
+      (string) (len=12) "archive-date": (string) (len=10) "2020-08-01",
+      (string) (len=11) "archive-url": (string) (len=108) "https://web.archive.org/web/20200801214714/https://www.terena.org/activities/multiling/euroml/section08.html",
+      (string) (len=5) "first": (string) (len=7) "Johan W",
+      (string) (len=4) "last": (string) (len=10) "van Wingen",
+      (string) (len=9) "publisher": (string) (len=6) "Terena",
+      (string) (len=5) "title": (string) (len=56) "8. Code Extension, ISO 2022 and 2375, ISO 4873 and 10367",
+      (string) (len=3) "url": (string) (len=65) "https://www.terena.org/activities/multiling/euroml/section08.html",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=41) "Character sets. Letters, tokens and codes",
+      (string) (len=4) "year": (string) (len=4) "1999"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=202) "van Wingen, Johan W (1999). \"8. Code Extension, ISO 2022 and 2375, ISO 4873 and 10367\". Character sets. Letters, tokens and codes. Terena. Archived from the original on 2020-08-01. Retrieved 2019-10-02.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=65) "https://www.terena.org/activities/multiling/euroml/section08.html",
+          Text: (string) (len=58) "\"8. Code Extension, ISO 2022 and 2375, ISO 4873 and 10367\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=108) "https://web.archive.org/web/20200801214714/https://www.terena.org/activities/multiling/euroml/section08.html",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-156",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) (len=7) "ECMA-43",
+      (string) (len=1) "2": (string) (len=4) "1991",
+      (string) (len=3) "loc": (string) (len=50) "chapter 10 (\"Identification of version and level\")",
+      (string) (len=2) "pp": (string) (len=5) "10-11"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=80) "ECMA-43 (1991), pp.\u00a010–11, chapter 10 (\"Identification of version and level\")",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFECMA-431991",
+          Text: (string) (len=14) "ECMA-43 (1991)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-157",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=11) "access-date": (string) (len=10) "2020-06-18",
+      (string) (len=12) "archive-date": (string) (len=10) "2019-06-23",
+      (string) (len=11) "archive-url": (string) (len=94) "https://web.archive.org/web/20190623065058/https://www.ibm.com/downloads/cas/G01BQVRV#page=157",
+      (string) (len=6) "author": (string) (len=3) "IBM",
+      (string) (len=11) "author-link": (string) (len=3) "IBM",
+      (string) (len=5) "pages": (string) (len=9) "157–162",
+      (string) (len=5) "title": (string) (len=49) "Character Data Representation Architecture (CDRA)",
+      (string) (len=3) "url": (string) (len=51) "https://www.ibm.com/downloads/cas/G01BQVRV#page=157",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=7) "website": (string) (len=7) "[[IBM]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=142) "IBM. \"Character Data Representation Architecture (CDRA)\". IBM. pp.\u00a0157–162. Archived from the original on 2019-06-23. Retrieved 2020-06-18.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=33) "https://en.wikipedia.org/wiki/IBM",
+          Text: (string) (len=3) "IBM",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=51) "https://www.ibm.com/downloads/cas/G01BQVRV#page=157",
+          Text: (string) (len=51) "\"Character Data Representation Architecture (CDRA)\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://en.wikipedia.org/wiki/IBM",
+          Text: (string) (len=3) "IBM",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=94) "https://web.archive.org/web/20190623065058/https://www.ibm.com/downloads/cas/G01BQVRV#page=157",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-158",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=9) "Scheifler",
+      (string) (len=1) "2": (string) (len=4) "1989"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=16) "Scheifler (1989)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFScheifler1989",
+          Text: (string) (len=16) "Scheifler (1989)",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-159",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=9) "Scheifler",
+      (string) (len=1) "2": (string) (len=4) "1989",
+      (string) (len=3) "loc": (string) (len=108) "[https://www.x.org/releases/current/doc/xorg-docs/ctext/ctext.html#Control_Characters § Control Characters]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=39) "Scheifler (1989), § Control Characters",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFScheifler1989",
+          Text: (string) (len=16) "Scheifler (1989)",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=84) "https://www.x.org/releases/current/doc/xorg-docs/ctext/ctext.html#Control_Characters",
+          Text: (string) (len=21) "§ Control Characters",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-160",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=9) "Scheifler",
+      (string) (len=1) "2": (string) (len=4) "1989",
+      (string) (len=3) "loc": (string) (len=100) "[https://www.x.org/releases/current/doc/xorg-docs/ctext/ctext.html#Directionality § Directionality]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=35) "Scheifler (1989), § Directionality",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFScheifler1989",
+          Text: (string) (len=16) "Scheifler (1989)",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=80) "https://www.x.org/releases/current/doc/xorg-docs/ctext/ctext.html#Directionality",
+          Text: (string) (len=17) "§ Directionality",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-161",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=9) "Scheifler",
+      (string) (len=1) "2": (string) (len=4) "1989",
+      (string) (len=3) "loc": (string) (len=136) "[https://www.x.org/releases/current/doc/xorg-docs/ctext/ctext.html#Standard_Character_Set_Encodings § Standard Character Set Encodings]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=53) "Scheifler (1989), § Standard Character Set Encodings",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFScheifler1989",
+          Text: (string) (len=16) "Scheifler (1989)",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=98) "https://www.x.org/releases/current/doc/xorg-docs/ctext/ctext.html#Standard_Character_Set_Encodings",
+          Text: (string) (len=35) "§ Standard Character Set Encodings",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-162",
+    Group: (string) "",
+    Type: (string) (len=5) "harvp",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=1) "1": (string) (len=9) "Scheifler",
+      (string) (len=1) "2": (string) (len=4) "1989",
+      (string) (len=3) "loc": (string) (len=126) "[https://www.x.org/releases/current/doc/xorg-docs/ctext/ctext.html#Approved_Standard_Encodings § Approved Standard Encodings]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=48) "Scheifler (1989), § Approved Standard Encodings",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/ISO/IEC_2022#CITEREFScheifler1989",
+          Text: (string) (len=16) "Scheifler (1989)",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=93) "https://www.x.org/releases/current/doc/xorg-docs/ctext/ctext.html#Approved_Standard_Encodings",
+          Text: (string) (len=30) "§ Approved Standard Encodings",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-163",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2020-05-21",
+      (string) (len=12) "archive-date": (string) (len=10) "2020-02-16",
+      (string) (len=11) "archive-url": (string) (len=120) "https://web.archive.org/web/20200216125138/http://dicom.nema.org/medical/dicom/2016d/output/chtml/part02/sect_D.6.2.html",
+      (string) (len=5) "title": (string) (len=84) "DICOM PS3.2 2016d - Conformance; D.6.2 Character Sets; D.6 Support of Character Sets",
+      (string) (len=3) "url": (string) (len=77) "http://dicom.nema.org/medical/dicom/2016d/output/chtml/part02/sect_D.6.2.html",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=151) "\"DICOM PS3.2 2016d - Conformance; D.6.2 Character Sets; D.6 Support of Character Sets\". Archived from the original on 2020-02-16. Retrieved 2020-05-21.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=77) "http://dicom.nema.org/medical/dicom/2016d/output/chtml/part02/sect_D.6.2.html",
+          Text: (string) (len=86) "\"DICOM PS3.2 2016d - Conformance; D.6.2 Character Sets; D.6 Support of Character Sets\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=120) "https://web.archive.org/web/20200216125138/http://dicom.nema.org/medical/dicom/2016d/output/chtml/part02/sect_D.6.2.html",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-164",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2009-07-25",
+      (string) (len=12) "archive-date": (string) (len=10) "2013-04-30",
+      (string) (len=11) "archive-url": (string) (len=164) "https://web.archive.org/web/20130430124636/http://sourceforge.net/mailarchive/message.php?msg_id=23D1952C4CB5164E9B9AA2905736DBEE06A10C5F%40BANMLVEM04.e2k.ad.ge.com",
+      (string) (len=5) "title": (string) (len=24) "DICOM ISO 2022 variation",
+      (string) (len=3) "url": (string) (len=121) "http://sourceforge.net/mailarchive/message.php?msg_id=23D1952C4CB5164E9B9AA2905736DBEE06A10C5F%40BANMLVEM04.e2k.ad.ge.com",
+      (string) (len=10) "url-status": (string) (len=4) "dead"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=91) "\"DICOM ISO 2022 variation\". Archived from the original on 2013-04-30. Retrieved 2009-07-25.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=164) "https://web.archive.org/web/20130430124636/http://sourceforge.net/mailarchive/message.php?msg_id=23D1952C4CB5164E9B9AA2905736DBEE06A10C5F%40BANMLVEM04.e2k.ad.ge.com",
+          Text: (string) (len=26) "\"DICOM ISO 2022 variation\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=121) "http://sourceforge.net/mailarchive/message.php?msg_id=23D1952C4CB5164E9B9AA2905736DBEE06A10C5F%40BANMLVEM04.e2k.ad.ge.com",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-165",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-02-21",
+      (string) (len=12) "archive-date": (string) (len=10) "2019-02-21",
+      (string) (len=11) "archive-url": (string) (len=107) "https://web.archive.org/web/20190221224112/https://hsivonen.fi/unicode-feedback/empty-iso-2022-jp-draft.pdf",
+      (string) (len=4) "date": (string) (len=10) "2018-12-17",
+      (string) (len=5) "first": (string) (len=5) "Henri",
+      (string) (len=4) "last": (string) (len=7) "Sivonen",
+      (string) (len=5) "title": (string) (len=113) "(UNSUBMITTED DRAFT) No U+FFFD Generation for Zero-Length ASCII-State Content between ISO-2022-JP Escape Sequences",
+      (string) (len=3) "url": (string) (len=64) "https://hsivonen.fi/unicode-feedback/empty-iso-2022-jp-draft.pdf",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=221) "Sivonen, Henri (2018-12-17). \"(UNSUBMITTED DRAFT) No U+FFFD Generation for Zero-Length ASCII-State Content between ISO-2022-JP Escape Sequences\" (PDF). Archived (PDF) from the original on 2019-02-21. Retrieved 2019-02-21.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=64) "https://hsivonen.fi/unicode-feedback/empty-iso-2022-jp-draft.pdf",
+          Text: (string) (len=115) "\"(UNSUBMITTED DRAFT) No U+FFFD Generation for Zero-Length ASCII-State Content between ISO-2022-JP Escape Sequences\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=107) "https://web.archive.org/web/20190221224112/https://hsivonen.fi/unicode-feedback/empty-iso-2022-jp-draft.pdf",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-166",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2018-06-18",
+      (string) (len=12) "archive-date": (string) (len=10) "2017-05-19",
+      (string) (len=11) "archive-url": (string) (len=94) "https://web.archive.org/web/20170519153033/https://bugzilla.mozilla.org/show_bug.cgi?id=935453",
+      (string) (len=5) "title": (string) (len=77) "935453 - Gather telemetry about HZ and other encodings we might try to remove",
+      (string) (len=3) "url": (string) (len=51) "https://bugzilla.mozilla.org/show_bug.cgi?id=935453",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=144) "\"935453 - Gather telemetry about HZ and other encodings we might try to remove\". Archived from the original on 2017-05-19. Retrieved 2018-06-18.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=51) "https://bugzilla.mozilla.org/show_bug.cgi?id=935453",
+          Text: (string) (len=79) "\"935453 - Gather telemetry about HZ and other encodings we might try to remove\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=94) "https://web.archive.org/web/20170519153033/https://bugzilla.mozilla.org/show_bug.cgi?id=935453",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-167",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=13) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-02-21",
+      (string) (len=12) "archive-date": (string) (len=10) "2019-02-22",
+      (string) (len=11) "archive-url": (string) (len=117) "https://web.archive.org/web/20190222025553/http://www.unicode.org/reports/tr36/tr36-15.html#Some_Output_For_All_Input",
+      (string) (len=4) "date": (string) (len=10) "2014-09-19",
+      (string) (len=6) "first1": (string) (len=4) "Mark",
+      (string) (len=6) "first2": (string) (len=6) "Michel",
+      (string) (len=5) "last1": (string) (len=5) "Davis",
+      (string) (len=5) "last2": (string) (len=8) "Suignard",
+      (string) (len=9) "publisher": (string) (len=18) "Unicode Consortium",
+      (string) (len=5) "title": (string) (len=31) "3.6.2 Some Output For All Input",
+      (string) (len=3) "url": (string) (len=75) "https://www.unicode.org/reports/tr36/tr36-15.html#Some_Output_For_All_Input",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=75) "Unicode Technical Report #36: Unicode Security Considerations (revision 15)"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=239) "Davis, Mark; Suignard, Michel (2014-09-19). \"3.6.2 Some Output For All Input\". Unicode Technical Report #36: Unicode Security Considerations (revision 15). Unicode Consortium. Archived from the original on 2019-02-22. Retrieved 2019-02-21.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=75) "https://www.unicode.org/reports/tr36/tr36-15.html#Some_Output_For_All_Input",
+          Text: (string) (len=33) "\"3.6.2 Some Output For All Input\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=117) "https://web.archive.org/web/20190222025553/http://www.unicode.org/reports/tr36/tr36-15.html#Some_Output_For_All_Input",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

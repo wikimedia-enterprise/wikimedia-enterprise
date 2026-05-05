@@ -1,0 +1,1227 @@
+([]*parser.Part) (len=2) {
+  (*parser.Part)({
+    Name: (string) (len=20) "Infobox song contest",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=6) {
+      (*parser.Part)({
+        Name: (string) (len=28) "Eurovision Song Contest 2023",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=15) "United by Music",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/Eurovision_Song_Contest_2023_logo.svg/250px-Eurovision_Song_Contest_2023_logo.svg.png",
+                Identifier: (string) (len=64) "143e56c4965a84b4caadf9854e57e97ae202ae686243da953740b4c14127c598",
+                Name: (string) (len=42) "File:Eurovision_Song_Contest_2023_logo.svg",
+                AlternativeText: (string) (len=33) "Eurovision Song Contest 2023 logo",
+                Caption: (string) "",
+                Height: (int) 188,
+                Width: (int) 250,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=5) "Dates",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) (len=12) "Semi-final 1",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "9 May 2023",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Semi-final 2",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "11 May 2023",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Final",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "13 May 2023",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=4) "Host",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=7) {
+          (*parser.Part)({
+            Name: (string) (len=5) "Venue",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=41) "Liverpool Arena Liverpool, United Kingdom",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Liverpool_Arena",
+                Text: (string) (len=15) "Liverpool Arena",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Presenter(s)",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=4) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=12) "Alesha Dixon",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=42) "https://en.wikipedia.org/wiki/Alesha_Dixon",
+                    Text: (string) (len=12) "Alesha Dixon",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=17) "Hannah Waddingham",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=47) "https://en.wikipedia.org/wiki/Hannah_Waddingham",
+                    Text: (string) (len=17) "Hannah Waddingham",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=12) "Julia Sanina",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=42) "https://en.wikipedia.org/wiki/Julia_Sanina",
+                    Text: (string) (len=12) "Julia Sanina",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=21) "Graham Norton (final)",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=43) "https://en.wikipedia.org/wiki/Graham_Norton",
+                    Text: (string) (len=13) "Graham Norton",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=18) "Executive producer",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "Andrew Cartmell",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Director",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=3) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=13) "Nikki Parsons",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=17) "Richard Valentine",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=14) "Ollie Bartlett",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=20) "Executive supervisor",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "Martin Österdahl",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Martin_Österdahl",
+                Text: (string) (len=17) "Martin Österdahl",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=16) "Host broadcaster",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=38) "British Broadcasting Corporation (BBC)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=33) "https://en.wikipedia.org/wiki/BBC",
+                Text: (string) (len=32) "British Broadcasting Corporation",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Website",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=34) "eurovision.tv/event/liverpool-2023",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://eurovision.tv/event/liverpool-2023",
+                Text: (string) (len=34) "eurovision.tv/event/liverpool-2023",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=12) "Participants",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=6) {
+          (*parser.Part)({
+            Name: (string) (len=17) "Number of entries",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=2) "37",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=19) "Number of finalists",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=2) "26",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=18) "Debuting countries",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "None",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=19) "Returning countries",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "None",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=23) "Non-returning countries",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=3) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=8) "Bulgaria",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=69) "https://en.wikipedia.org/wiki/Bulgaria_in_the_Eurovision_Song_Contest",
+                    Text: (string) (len=8) "Bulgaria",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "Montenegro",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=71) "https://en.wikipedia.org/wiki/Montenegro_in_the_Eurovision_Song_Contest",
+                    Text: (string) (len=10) "Montenegro",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=15) "North Macedonia",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=76) "https://en.wikipedia.org/wiki/North_Macedonia_in_the_Eurovision_Song_Contest",
+                    Text: (string) (len=15) "North Macedonia",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=1) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=114) "Finalist countries Countries eliminated in the semi-finals Countries that participated in the past but not in 2023",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/ESC_2023_Map_2.svg/298px-ESC_2023_Map_2.svg.png",
+                Identifier: (string) (len=64) "755d0a5c900857fe5fdb696529c01e4bb2237a608b0f7999441b50fcd5327e63",
+                Name: (string) (len=23) "File:ESC_2023_Map_2.svg",
+                AlternativeText: (string) (len=41) "A coloured map of the countries of Europe",
+                Caption: (string) "",
+                Height: (int) 237,
+                Width: (int) 298,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=88) "https://en.wikipedia.org/wiki/Template:Infobox_song_contest/Eurovision_Song_Contest_2023",
+                Text: (string) (len=17) "Participation map",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=4) "Vote",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) (len=13) "Voting system",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=236) "Each country awards one set in the semi-finals, or two sets in the final of 12, 10, 8–1 points to ten songs. In all three shows, online votes from viewers in non-participating countries are aggregated and awarded as one set of points.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Winning song",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "Sweden \" Tattoo \"",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=67) "https://en.wikipedia.org/wiki/Sweden_in_the_Eurovision_Song_Contest",
+                Text: (string) (len=6) "Sweden",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Tattoo_(Loreen_song)",
+                Text: (string) (len=6) "Tattoo",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=21) "ESC 2023 participants",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) (len=67) "Eurovision Song Contest 2023 – Participation summaries by country",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=37) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Albania",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=73) "https://en.wikipedia.org/wiki/Albania_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=7) "Albania",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Armenia",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=73) "https://en.wikipedia.org/wiki/Armenia_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=7) "Armenia",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=9) "Australia",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=75) "https://en.wikipedia.org/wiki/Australia_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=9) "Australia",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Austria",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=73) "https://en.wikipedia.org/wiki/Austria_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=7) "Austria",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "Azerbaijan",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=76) "https://en.wikipedia.org/wiki/Azerbaijan_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=10) "Azerbaijan",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Belgium",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=73) "https://en.wikipedia.org/wiki/Belgium_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=7) "Belgium",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Croatia",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=73) "https://en.wikipedia.org/wiki/Croatia_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=7) "Croatia",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=6) "Cyprus",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=72) "https://en.wikipedia.org/wiki/Cyprus_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=6) "Cyprus",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Czechia",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=80) "https://en.wikipedia.org/wiki/Czech_Republic_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=7) "Czechia",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Denmark",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=73) "https://en.wikipedia.org/wiki/Denmark_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=7) "Denmark",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Estonia",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=73) "https://en.wikipedia.org/wiki/Estonia_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=7) "Estonia",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Finland",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=73) "https://en.wikipedia.org/wiki/Finland_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=7) "Finland",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=6) "France",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=72) "https://en.wikipedia.org/wiki/France_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=6) "France",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Georgia",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=73) "https://en.wikipedia.org/wiki/Georgia_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=7) "Georgia",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Germany",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=73) "https://en.wikipedia.org/wiki/Germany_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=7) "Germany",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=6) "Greece",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=72) "https://en.wikipedia.org/wiki/Greece_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=6) "Greece",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Iceland",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=73) "https://en.wikipedia.org/wiki/Iceland_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=7) "Iceland",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Ireland",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=73) "https://en.wikipedia.org/wiki/Ireland_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=7) "Ireland",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=6) "Israel",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=72) "https://en.wikipedia.org/wiki/Israel_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=6) "Israel",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=5) "Italy",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=71) "https://en.wikipedia.org/wiki/Italy_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=5) "Italy",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=6) "Latvia",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=72) "https://en.wikipedia.org/wiki/Latvia_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=6) "Latvia",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=9) "Lithuania",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=75) "https://en.wikipedia.org/wiki/Lithuania_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=9) "Lithuania",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=5) "Malta",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=71) "https://en.wikipedia.org/wiki/Malta_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=5) "Malta",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Moldova",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=73) "https://en.wikipedia.org/wiki/Moldova_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=7) "Moldova",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=11) "Netherlands",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=77) "https://en.wikipedia.org/wiki/Netherlands_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=11) "Netherlands",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=6) "Norway",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=72) "https://en.wikipedia.org/wiki/Norway_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=6) "Norway",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=6) "Poland",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=72) "https://en.wikipedia.org/wiki/Poland_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=6) "Poland",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=8) "Portugal",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=74) "https://en.wikipedia.org/wiki/Portugal_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=8) "Portugal",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Romania",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=73) "https://en.wikipedia.org/wiki/Romania_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=7) "Romania",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "San Marino",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=76) "https://en.wikipedia.org/wiki/San_Marino_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=10) "San Marino",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=6) "Serbia",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=72) "https://en.wikipedia.org/wiki/Serbia_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=6) "Serbia",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=8) "Slovenia",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=74) "https://en.wikipedia.org/wiki/Slovenia_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=8) "Slovenia",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=5) "Spain",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=71) "https://en.wikipedia.org/wiki/Spain_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=5) "Spain",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=6) "Sweden",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=72) "https://en.wikipedia.org/wiki/Sweden_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=6) "Sweden",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=11) "Switzerland",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=77) "https://en.wikipedia.org/wiki/Switzerland_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=11) "Switzerland",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Ukraine",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=73) "https://en.wikipedia.org/wiki/Ukraine_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=7) "Ukraine",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=14) "United Kingdom",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=80) "https://en.wikipedia.org/wiki/United_Kingdom_in_the_Eurovision_Song_Contest_2023",
+                    Text: (string) (len=14) "United Kingdom",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

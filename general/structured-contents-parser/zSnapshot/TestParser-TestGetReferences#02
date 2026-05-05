@@ -1,0 +1,2929 @@
+([]*parser.Reference) (len=91) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=4) "date": (string) (len=15) "August 19, 2003",
+      (string) (len=5) "first": (string) (len=3) "Kit",
+      (string) (len=4) "last": (string) (len=6) "Oldham",
+      (string) (len=5) "title": (string) (len=25) "Jackson, Henry M. \"Scoop\"",
+      (string) (len=3) "url": (string) (len=57) "http://www.historylink.org/essays/output.cfm?file_id=5516",
+      (string) (len=4) "work": (string) (len=19) "[[HistoryLink.org]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=76) "Oldham, Kit (August 19, 2003). \"Jackson, Henry M. \"Scoop\"\". HistoryLink.org.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=57) "http://www.historylink.org/essays/output.cfm?file_id=5516",
+          Text: (string) (len=28) "\"Jackson, Henry M. \"Scoop\" \"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/HistoryLink.org",
+          Text: (string) (len=15) "HistoryLink.org",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=12) "archive-date": (string) (len=10) "2005-11-27",
+      (string) (len=11) "archive-url": (string) (len=104) "https://web.archive.org/web/20051127164324/http://www.washington.historylink.org/output.cfm?file_id=5611",
+      (string) (len=6) "author": (string) (len=26) "David Wilma and Kit Oldham",
+      (string) (len=4) "date": (string) (len=16) "November 7, 2003",
+      (string) (len=5) "title": (string) (len=170) "State voters elect Dixy Lee Ray as first woman governor of Washington, re-elect Senator Henry Jackson and House incumbents, and prefer Ford to Carter on November 2, 1976.",
+      (string) (len=3) "url": (string) (len=61) "http://www.washington.historylink.org/output.cfm?file_id=5611",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=4) "work": (string) (len=15) "HistoryLink.org"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=278) "David Wilma and Kit Oldham (November 7, 2003). \"State voters elect Dixy Lee Ray as first woman governor of Washington, re-elect Senator Henry Jackson and House incumbents, and prefer Ford to Carter on November 2, 1976\". HistoryLink.org. Archived from the original on 2005-11-27.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=104) "https://web.archive.org/web/20051127164324/http://www.washington.historylink.org/output.cfm?file_id=5611",
+          Text: (string) (len=171) "\"State voters elect Dixy Lee Ray as first woman governor of Washington, re-elect Senator Henry Jackson and House incumbents, and prefer Ford to Carter on November 2, 1976\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=61) "http://www.washington.historylink.org/output.cfm?file_id=5611",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=8) "magazine",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "author-link": (string) (len=12) "Reihan Salam",
+      (string) (len=4) "date": (string) (len=12) "May 27, 2003",
+      (string) (len=5) "first": (string) (len=6) "Reihan",
+      (string) (len=4) "last": (string) (len=5) "Salam",
+      (string) (len=8) "magazine": (string) (len=27) "[[The New Republic]] Online",
+      (string) (len=5) "title": (string) (len=12) "Double Scoop",
+      (string) (len=3) "url": (string) (len=52) "http://www.tnr.com/doc.mhtml?i=express&s=salam052703"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=70) "Salam, Reihan (May 27, 2003). \"Double Scoop\". The New Republic Online.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://en.wikipedia.org/wiki/Reihan_Salam",
+          Text: (string) (len=13) "Salam, Reihan",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "http://www.tnr.com/doc.mhtml?i=express&s=salam052703",
+          Text: (string) (len=14) "\"Double Scoop\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/The_New_Republic",
+          Text: (string) (len=16) "The New Republic",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=12) "archive-date": (string) (len=10) "2014-10-13",
+      (string) (len=11) "archive-url": (string) (len=106) "https://web.archive.org/web/20141013161806/http://cgi.cnn.com/ALLPOLITICS/1996/analysis/back.time/9605/10/",
+      (string) (len=4) "date": (string) (len=12) "May 10, 1976",
+      (string) (len=5) "title": (string) (len=31) "Jimmy Carter's Big Breakthrough",
+      (string) (len=3) "url": (string) (len=63) "http://cgi.cnn.com/ALLPOLITICS/1996/analysis/back.time/9605/10/",
+      (string) (len=4) "work": (string) (len=17) "[[Time Magazine]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=105) "\"Jimmy Carter's Big Breakthrough\". Time Magazine. May 10, 1976. Archived from the original on 2014-10-13.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=106) "https://web.archive.org/web/20141013161806/http://cgi.cnn.com/ALLPOLITICS/1996/analysis/back.time/9605/10/",
+          Text: (string) (len=33) "\"Jimmy Carter's Big Breakthrough\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=43) "https://en.wikipedia.org/wiki/Time_Magazine",
+          Text: (string) (len=13) "Time Magazine",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "http://cgi.cnn.com/ALLPOLITICS/1996/analysis/back.time/9605/10/",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 18, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=16) "January 26, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=52) "WALLACE BEATS CARTER, 3-1, IN MISSISSIPPI'S CAUCUSES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=85) "https://timesmachine.nytimes.com/timesmachine/1976/01/26/113445062.html?pageNumber=16",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=143) "\"WALLACE BEATS CARTER, 3-1, IN MISSISSIPPI'S CAUCUSES\". The New York Times. New York, New York. January 26, 1976. Retrieved September 18, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=85) "https://timesmachine.nytimes.com/timesmachine/1976/01/26/113445062.html?pageNumber=16",
+          Text: (string) (len=54) "\"WALLACE BEATS CARTER, 3-1, IN MISSISSIPPI'S CAUCUSES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 18, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=17) "February 15, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=16) "Lawton, Oklahoma",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=52) "EX-GEORGIA GOVERNOR HOLDS EDGE IN DEMOCRAT BALLOTING",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=41) "https://www.newspapers.com/image/36606919",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=23) "The Lawton Constitution"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=147) "\"EX-GEORGIA GOVERNOR HOLDS EDGE IN DEMOCRAT BALLOTING\". The Lawton Constitution. Lawton, Oklahoma. February 15, 1976. Retrieved September 18, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=41) "https://www.newspapers.com/image/36606919",
+          Text: (string) (len=54) "\"EX-GEORGIA GOVERNOR HOLDS EDGE IN DEMOCRAT BALLOTING\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-13",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 18, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=17) "February 15, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=20) "Jackson, Mississippi",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=28) "DEMOCRATS TO CAUCUS SATURDAY",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=43) "https://www.newspapers.com/image/181018229/",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The Clarion-Ledger"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=122) "\"DEMOCRATS TO CAUCUS SATURDAY\". The Clarion-Ledger. Jackson, Mississippi. February 15, 1976. Retrieved September 18, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=43) "https://www.newspapers.com/image/181018229/",
+          Text: (string) (len=30) "\"DEMOCRATS TO CAUCUS SATURDAY\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-15",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 18, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=17) "February 22, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=36) "WALLACE WINS 9 MISSISSIPPI DELEGATES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=85) "https://timesmachine.nytimes.com/timesmachine/1976/02/22/122818202.html?pageNumber=45",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=128) "\"WALLACE WINS 9 MISSISSIPPI DELEGATES\". The New York Times. New York, New York. February 22, 1976. Retrieved September 18, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=85) "https://timesmachine.nytimes.com/timesmachine/1976/02/22/122818202.html?pageNumber=45",
+          Text: (string) (len=38) "\"WALLACE WINS 9 MISSISSIPPI DELEGATES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-17",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 22, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=17) "February 25, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=22) "Minneapolis, Minnesota",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=25) "DFL FOR HHH ONE MORE TIME",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=43) "https://www.newspapers.com/image/190306791/",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=20) "The Minneapolis Star"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=123) "\"DFL FOR HHH ONE MORE TIME\". The Minneapolis Star. Minneapolis, Minnesota. February 25, 1976. Retrieved September 22, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=43) "https://www.newspapers.com/image/190306791/",
+          Text: (string) (len=27) "\"DFL FOR HHH ONE MORE TIME\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-20",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 18, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "March 2, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=55) "FORD WON 18 OF 21 DELEGATES IN PRIMARY IN NEW HAMPSHIRE",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/03/02/96990996.html?pageNumber=20",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=143) "\"FORD WON 18 OF 21 DELEGATES IN PRIMARY IN NEW HAMPSHIRE\". The New York Times. New York, New York. March 2, 1976. Retrieved September 18, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/03/02/96990996.html?pageNumber=20",
+          Text: (string) (len=57) "\"FORD WON 18 OF 21 DELEGATES IN PRIMARY IN NEW HAMPSHIRE\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-22",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 18, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "March 4, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=24) "FINAL TALLIES IN 2 RACES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/03/04/75577085.html?pageNumber=18",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "\"FINAL TALLIES IN 2 RACES\". The New York Times. New York, New York. March 4, 1976. Retrieved September 18, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/03/04/75577085.html?pageNumber=18",
+          Text: (string) (len=26) "\"FINAL TALLIES IN 2 RACES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-24",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 19, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=14) "March 10, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=19) "Bennington, Vermont",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=54) "VERMONT'S NEW PRIMARY DREW SOME 27% OF ELIGIBLE VOTERS",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/546928393",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=21) "The Bennington Banner"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=170) "\"VERMONT'S NEW PRIMARY DREW SOME 27% OF ELIGIBLE VOTERS\". The Bennington Banner. Bennington, Vermont. March 10, 1976. Retrieved September 19, 2023.(subscription required)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/546928393",
+          Text: (string) (len=56) "\"VERMONT'S NEW PRIMARY DREW SOME 27% OF ELIGIBLE VOTERS\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-27",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 19, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "March 3, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=21) "Vancouver, Washington",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=43) "FORD APPARENT WINNER IN WASHINGTON CAUCUSES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/815737283",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=13) "The Columbian"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=129) "\"FORD APPARENT WINNER IN WASHINGTON CAUCUSES\". The Columbian. Vancouver, Washington. March 3, 1976. Retrieved September 19, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/815737283",
+          Text: (string) (len=45) "\"FORD APPARENT WINNER IN WASHINGTON CAUCUSES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-29",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 19, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=14) "March 11, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=31) "FINAL TOTALS IN FLORIDA PRIMARY",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/03/11/75579503.html?pageNumber=33",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=120) "\"FINAL TOTALS IN FLORIDA PRIMARY\". The New York Times. New York, New York. March 11, 1976. Retrieved September 19, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/03/11/75579503.html?pageNumber=33",
+          Text: (string) (len=33) "\"FINAL TOTALS IN FLORIDA PRIMARY\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-31",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 19, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=14) "March 18, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=34) "LATE VOTE TOTALS IN ILLINOIS RACES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/03/18/75581483.html?pageNumber=34",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=123) "\"LATE VOTE TOTALS IN ILLINOIS RACES\". The New York Times. New York, New York. March 18, 1976. Retrieved September 19, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/03/18/75581483.html?pageNumber=34",
+          Text: (string) (len=36) "\"LATE VOTE TOTALS IN ILLINOIS RACES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-32",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 19, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=14) "March 18, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=34) "FORD AND CARTER AMASSING DELEGATES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/03/18/75582051.html?pageNumber=34",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=123) "\"FORD AND CARTER AMASSING DELEGATES\". The New York Times. New York, New York. March 18, 1976. Retrieved September 19, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/03/18/75582051.html?pageNumber=34",
+          Text: (string) (len=36) "\"FORD AND CARTER AMASSING DELEGATES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-37",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 18, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=14) "March 20, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=31) "OKLAHOMA PARTY SPLITS ON CARTER",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/03/21/76382994.html?pageNumber=44",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=120) "\"OKLAHOMA PARTY SPLITS ON CARTER\". The New York Times. New York, New York. March 20, 1976. Retrieved September 18, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/03/21/76382994.html?pageNumber=44",
+          Text: (string) (len=33) "\"OKLAHOMA PARTY SPLITS ON CARTER\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-39",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 19, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=14) "March 21, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=27) "FINAL TOTALS IN N. CAROLINA",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/03/25/75712533.html?pageNumber=30",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=116) "\"FINAL TOTALS IN N. CAROLINA\". The New York Times. New York, New York. March 21, 1976. Retrieved September 19, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/03/25/75712533.html?pageNumber=30",
+          Text: (string) (len=29) "\"FINAL TOTALS IN N. CAROLINA\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-42",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 19, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "April 1, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=60) "SOUTH CAROLINA DEMOCRATS GIVE CARTER 9 OF THEIR 31 DELEGATES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/04/01/75713327.html?pageNumber=22",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=148) "\"SOUTH CAROLINA DEMOCRATS GIVE CARTER 9 OF THEIR 31 DELEGATES\". The New York Times. New York, New York. April 1, 1976. Retrieved September 19, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/04/01/75713327.html?pageNumber=22",
+          Text: (string) (len=62) "\"SOUTH CAROLINA DEMOCRATS GIVE CARTER 9 OF THEIR 31 DELEGATES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-45",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 19, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "April 1, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=63) "CARTER TAKES THE LEAD IN DELEGATE SELECTIONS IN KANSAS COUNTIES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/04/05/75586740.html?pageNumber=24",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=151) "\"CARTER TAKES THE LEAD IN DELEGATE SELECTIONS IN KANSAS COUNTIES\". The New York Times. New York, New York. April 1, 1976. Retrieved September 19, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/04/05/75586740.html?pageNumber=24",
+          Text: (string) (len=65) "\"CARTER TAKES THE LEAD IN DELEGATE SELECTIONS IN KANSAS COUNTIES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-47",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 19, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "April 4, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=15) "Tulsa, Oklahoma",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=36) "TULSAN PULLS UPSET FOR KEY DEMO POST",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/889229617",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=15) "The Tulsa World"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=118) "\"TULSAN PULLS UPSET FOR KEY DEMO POST\". The Tulsa World. Tulsa, Oklahoma. April 4, 1976. Retrieved September 19, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/889229617",
+          Text: (string) (len=38) "\"TULSAN PULLS UPSET FOR KEY DEMO POST\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-50",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 19, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "April 1, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=33) "CARTER IS VICTOR IN 2 STATE RACES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/04/04/139796332.html?pageNumber=1",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=121) "\"CARTER IS VICTOR IN 2 STATE RACES\". The New York Times. New York, New York. April 1, 1976. Retrieved September 19, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/04/04/139796332.html?pageNumber=1",
+          Text: (string) (len=35) "\"CARTER IS VICTOR IN 2 STATE RACES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-53",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 23, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "April 5, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "Tacoma, Washington",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=46) "JACKSON LIKELY TO SWEEP PUERTO RICAN DELEGATES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/735773559",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=16) "The News Tribune"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=132) "\"JACKSON LIKELY TO SWEEP PUERTO RICAN DELEGATES\". The News Tribune. Tacoma, Washington. April 5, 1976. Retrieved September 23, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/735773559",
+          Text: (string) (len=48) "\"JACKSON LIKELY TO SWEEP PUERTO RICAN DELEGATES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-54",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 23, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "June 30, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=24) "Columbia, South Carolina",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=32) "2 BLACKS NAMED TO PA. DELEGATION",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/750679679",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=9) "The State"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=117) "\"2 BLACKS NAMED TO PA. DELEGATION\". The State. Columbia, South Carolina. June 30, 1976. Retrieved September 23, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/750679679",
+          Text: (string) (len=34) "\"2 BLACKS NAMED TO PA. DELEGATION\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-56",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=12) "2 April 2018",
+      (string) (len=4) "date": (string) (len=12) "8 April 1976",
+      (string) (len=5) "title": (string) (len=36) "State's Delegates to the Conventions",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/04/08/92220893.html?pageNumber=31",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=97) "\"State's Delegates to the Conventions\". The New York Times. 8 April 1976. Retrieved 2 April 2018.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/04/08/92220893.html?pageNumber=31",
+          Text: (string) (len=38) "\"State's Delegates to the Conventions\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-57",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=12) "2 April 2018",
+      (string) (len=4) "date": (string) (len=12) "8 April 1976",
+      (string) (len=5) "title": (string) (len=152) "Jackson Won in New York By Narrowly Based Voting; Did Best in Queens and Brooklyn and With Jews and Moderates – Crangle Hails 'Draft Humphrey' Success",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/04/08/92220888.html?pageNumber=30",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=213) "\"Jackson Won in New York By Narrowly Based Voting; Did Best in Queens and Brooklyn and With Jews and Moderates – Crangle Hails 'Draft Humphrey' Success\". The New York Times. 8 April 1976. Retrieved 2 April 2018.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/04/08/92220888.html?pageNumber=30",
+          Text: (string) (len=154) "\"Jackson Won in New York By Narrowly Based Voting; Did Best in Queens and Brooklyn and With Jews and Moderates – Crangle Hails 'Draft Humphrey' Success\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-59",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 19, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "April 7, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=16) "FORD EASY VICTOR",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=96) "https://timesmachine.nytimes.com/timesmachine/1976/04/07/79759520.html?pageNumber=1pageNumber=30",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=104) "\"FORD EASY VICTOR\". The New York Times. New York, New York. April 7, 1976. Retrieved September 19, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=96) "https://timesmachine.nytimes.com/timesmachine/1976/04/07/79759520.html?pageNumber=1pageNumber=30",
+          Text: (string) (len=18) "\"FORD EASY VICTOR\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-60",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 19, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "April 8, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "Madison, Wisconsin",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=18) "CARTER... HOW, WHY",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/402291337",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=27) "The Wisconsin State Journal"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=115) "\"CARTER... HOW, WHY\". The Wisconsin State Journal. Madison, Wisconsin. April 8, 1976. Retrieved September 19, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/402291337",
+          Text: (string) (len=20) "\"CARTER... HOW, WHY\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-62",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 19, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "April 7, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=49) "CARTER AND UDALL LEAD AS DELEGATES PICKED IN IOWA",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/04/11/76846492.html?pageNumber=41",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=137) "\"CARTER AND UDALL LEAD AS DELEGATES PICKED IN IOWA\". The New York Times. New York, New York. April 7, 1976. Retrieved September 19, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/04/11/76846492.html?pageNumber=41",
+          Text: (string) (len=51) "\"CARTER AND UDALL LEAD AS DELEGATES PICKED IN IOWA\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-63",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 19, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=14) "April 11, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=16) "Des Moines, Iowa",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=37) "CARTER WINS 17 OF IOWA'S 47 DELEGATES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=43) "https://www.newspapers.com/image/338759728/",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=23) "The Des Moines Register"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=129) "\"CARTER WINS 17 OF IOWA'S 47 DELEGATES\". The Des Moines Register. Des Moines, Iowa. April 11, 1976. Retrieved September 19, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=43) "https://www.newspapers.com/image/338759728/",
+          Text: (string) (len=39) "\"CARTER WINS 17 OF IOWA'S 47 DELEGATES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-65",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 19, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=14) "April 22, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=38) "DEMOCRATS IN MISSOURI AVOIDING CHOICES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/04/22/75239683.html?pageNumber=25",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=127) "\"DEMOCRATS IN MISSOURI AVOIDING CHOICES\". The New York Times. New York, New York. April 22, 1976. Retrieved September 19, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/04/22/75239683.html?pageNumber=25",
+          Text: (string) (len=40) "\"DEMOCRATS IN MISSOURI AVOIDING CHOICES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-66",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 19, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=14) "April 22, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=19) "St. Louis, Missouri",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=51) "DEMOCRATS ELECT 547 OF 839 DELEGATES AS UNCOMMITTED",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/140702142",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=27) "The St. Louis Post-Dispatch"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=150) "\"DEMOCRATS ELECT 547 OF 839 DELEGATES AS UNCOMMITTED\". The St. Louis Post-Dispatch. St. Louis, Missouri. April 22, 1976. Retrieved September 19, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/140702142",
+          Text: (string) (len=53) "\"DEMOCRATS ELECT 547 OF 839 DELEGATES AS UNCOMMITTED\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-68",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 21, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "May 30, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=17) "Fairbanks, Alaska",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=56) "GRAVEL 'THINK TANK' PROPOSAL OPENS DEMOCRATIC CONVENTION",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=41) "https://www.newspapers.com/image/31821244",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=30) "The Fairbanks Daily News-Miner"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=154) "\"GRAVEL 'THINK TANK' PROPOSAL OPENS DEMOCRATIC CONVENTION\". The Fairbanks Daily News-Miner. Fairbanks, Alaska. May 30, 1976. Retrieved September 21, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=41) "https://www.newspapers.com/image/31821244",
+          Text: (string) (len=58) "\"GRAVEL 'THINK TANK' PROPOSAL OPENS DEMOCRATIC CONVENTION\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-71",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 23, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=14) "April 26, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=20) "St. Cloud, Minnesota",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=48) "FORD, HHH BIG WINNERS AT STATE DISTRICT MEETINGS",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=43) "https://www.newspapers.com/image/222616849/",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=19) "The St. Cloud Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=140) "\"FORD, HHH BIG WINNERS AT STATE DISTRICT MEETINGS\". The St. Cloud Times. St. Cloud, Minnesota. April 26, 1976. Retrieved September 23, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=43) "https://www.newspapers.com/image/222616849/",
+          Text: (string) (len=50) "\"FORD, HHH BIG WINNERS AT STATE DISTRICT MEETINGS\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-73",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 20, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=14) "April 26, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=31) "ARIZONA PRIMARY IS WON BY UDALL",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/04/26/75242739.html?pageNumber=21",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=120) "\"ARIZONA PRIMARY IS WON BY UDALL\". The New York Times. New York, New York. April 26, 1976. Retrieved September 20, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/04/26/75242739.html?pageNumber=21",
+          Text: (string) (len=33) "\"ARIZONA PRIMARY IS WON BY UDALL\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-76",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 20, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=14) "March 29, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=24) "TUESDAY'S VOTING EFFECTS",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/04/29/75589647.html?pageNumber=29",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=113) "\"TUESDAY'S VOTING EFFECTS\". The New York Times. New York, New York. March 29, 1976. Retrieved September 20, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/04/29/75589647.html?pageNumber=29",
+          Text: (string) (len=26) "\"TUESDAY'S VOTING EFFECTS\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-77",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 20, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=14) "March 29, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=26) "Philadelphia, Pennsylvania",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=46) "SIZE OF CARTER WIN PRESSURES NEUTRAL DELEGATES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=43) "https://www.newspapers.com/image/173066718/",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=25) "The Philadelphia Inquirer"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=150) "\"SIZE OF CARTER WIN PRESSURES NEUTRAL DELEGATES\". The Philadelphia Inquirer. Philadelphia, Pennsylvania. March 29, 1976. Retrieved September 20, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=43) "https://www.newspapers.com/image/173066718/",
+          Text: (string) (len=48) "\"SIZE OF CARTER WIN PRESSURES NEUTRAL DELEGATES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-80",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 23, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=11) "May 4, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=21) "Shreveport, Louisiana",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=42) "RESULTS OF DELEGATE ELECTION SAID OFFICIAL",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/472885153",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=9) "The Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=122) "\"RESULTS OF DELEGATE ELECTION SAID OFFICIAL\". The Times. Shreveport, Louisiana. May 4, 1976. Retrieved September 23, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/472885153",
+          Text: (string) (len=44) "\"RESULTS OF DELEGATE ELECTION SAID OFFICIAL\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-81",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 23, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=11) "May 9, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=21) "Shreveport, Louisiana",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=39) "PANEL OKAYS STATE DEMOCRATIC DELEGATION",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/214908858",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=9) "The Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=119) "\"PANEL OKAYS STATE DEMOCRATIC DELEGATION\". The Times. Shreveport, Louisiana. May 9, 1976. Retrieved September 23, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/214908858",
+          Text: (string) (len=41) "\"PANEL OKAYS STATE DEMOCRATIC DELEGATION\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-83",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 20, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=11) "May 3, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=45) "DEMOCRATIC VOTE PROPELS REAGAN TO TEXAS SWEEP",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/05/03/107213480.html?pageNumber=1",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=131) "\"DEMOCRATIC VOTE PROPELS REAGAN TO TEXAS SWEEP\". The New York Times. New York, New York. May 3, 1976. Retrieved September 20, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/05/03/107213480.html?pageNumber=1",
+          Text: (string) (len=47) "\"DEMOCRATIC VOTE PROPELS REAGAN TO TEXAS SWEEP\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-86",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 23, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=11) "May 3, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=17) "Winona, Minnesota",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=48) "FORD, HHH BIG WINNERS AT STATE DISTRICT MEETINGS",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/414748823",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=21) "The Winona Daily News"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=136) "\"FORD, HHH BIG WINNERS AT STATE DISTRICT MEETINGS\". The Winona Daily News. Winona, Minnesota. May 3, 1976. Retrieved September 23, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/414748823",
+          Text: (string) (len=50) "\"FORD, HHH BIG WINNERS AT STATE DISTRICT MEETINGS\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-88",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 20, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=11) "May 6, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=47) "RESULTS IN ALABAMA SHOW WALLACE STRENGTH FADING",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/05/06/75591612.html?pageNumber=43",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=133) "\"RESULTS IN ALABAMA SHOW WALLACE STRENGTH FADING\". The New York Times. New York, New York. May 6, 1976. Retrieved September 20, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/05/06/75591612.html?pageNumber=43",
+          Text: (string) (len=49) "\"RESULTS IN ALABAMA SHOW WALLACE STRENGTH FADING\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-90",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 20, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=11) "May 5, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=29) "GEORGIANS BACK CARTER, REAGAN",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=83) "https://timesmachine.nytimes.com/timesmachine/1976/05/05/75590287.html?pageNumber=1",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=115) "\"GEORGIANS BACK CARTER, REAGAN\". The New York Times. New York, New York. May 5, 1976. Retrieved September 20, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=83) "https://timesmachine.nytimes.com/timesmachine/1976/05/05/75590287.html?pageNumber=1",
+          Text: (string) (len=31) "\"GEORGIANS BACK CARTER, REAGAN\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-92",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 20, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=11) "May 5, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=21) "Indianapolis, Indiana",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=30) "REAGAN LEADS FORD, CARTER WINS",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/105899129",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=21) "The Indianapolis Star"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=122) "\"REAGAN LEADS FORD, CARTER WINS\". The Indianapolis Star. Indianapolis, Indiana. May 5, 1976. Retrieved September 20, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/105899129",
+          Text: (string) (len=32) "\"REAGAN LEADS FORD, CARTER WINS\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-94",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 20, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=11) "May 6, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=33) "INVALID VOTES MAR CAPITAL PRIMARY",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/05/06/75591610.html?pageNumber=43",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=119) "\"INVALID VOTES MAR CAPITAL PRIMARY\". The New York Times. New York, New York. May 6, 1976. Retrieved September 20, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/05/06/75591610.html?pageNumber=43",
+          Text: (string) (len=35) "\"INVALID VOTES MAR CAPITAL PRIMARY\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-95",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 20, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "June 25, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=50) "CARTER LOSES TWO DELEGATES IN FEDERAL COURT RULING",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=83) "https://timesmachine.nytimes.com/timesmachine/1976/06/25/96404857.html?pageNumber=8",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=138) "\"CARTER LOSES TWO DELEGATES IN FEDERAL COURT RULING\". The New York Times. New York, New York. June 25, 1976. Retrieved September 20, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=83) "https://timesmachine.nytimes.com/timesmachine/1976/06/25/96404857.html?pageNumber=8",
+          Text: (string) (len=52) "\"CARTER LOSES TWO DELEGATES IN FEDERAL COURT RULING\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-97",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 20, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=11) "May 9, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=15) "Casper, Wyoming",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=33) "NATIONAL DELEGATES PICKED BY DEMS",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=43) "https://www.newspapers.com/image/447240372/",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=23) "The Casper Star-Tribune"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=121) "\"NATIONAL DELEGATES PICKED BY DEMS\". The Casper Star-Tribune. Casper, Wyoming. May 9, 1976. Retrieved September 20, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=43) "https://www.newspapers.com/image/447240372/",
+          Text: (string) (len=35) "\"NATIONAL DELEGATES PICKED BY DEMS\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-99",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 23, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "May 10, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=13) "Bangor, Maine",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=26) "UDALL SLOWS CARTER IN MAIN",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=43) "https://www.newspapers.com/image/664122969/",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=21) "The Bangor Daily News"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=111) "\"UDALL SLOWS CARTER IN MAIN\". The Bangor Daily News. Bangor, Maine. May 10, 1976. Retrieved September 23, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=43) "https://www.newspapers.com/image/664122969/",
+          Text: (string) (len=28) "\"UDALL SLOWS CARTER IN MAIN\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-100",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 20, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "May 13, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=52) "GOV. GRASSO SAYS THE DEMOCRATIC RACE IS NOT OVER YET",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/05/13/75592942.html?pageNumber=29",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=139) "\"GOV. GRASSO SAYS THE DEMOCRATIC RACE IS NOT OVER YET\". The New York Times. New York, New York. May 13, 1976. Retrieved September 20, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/05/13/75592942.html?pageNumber=29",
+          Text: (string) (len=54) "\"GOV. GRASSO SAYS THE DEMOCRATIC RACE IS NOT OVER YET\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-102",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 20, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "May 13, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=60) "{{sic|?|UNCOMMIT|ED|hide=y}} SLATE PREVAILS IN MISSOURI VOTE",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/05/13/75592915.html?pageNumber=26",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=129) "\"UNCOMMITED SLATE PREVAILS IN MISSOURI VOTE\". The New York Times. New York, New York. May 13, 1976. Retrieved September 20, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/05/13/75592915.html?pageNumber=26",
+          Text: (string) (len=44) "\"UNCOMMITED SLATE PREVAILS IN MISSOURI VOTE\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-104",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 20, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "May 13, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=46) "CHURCH VICTORY GIVES NEW HOPE TO CARTER'S FOES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/05/13/75593465.html?pageNumber=26",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=133) "\"CHURCH VICTORY GIVES NEW HOPE TO CARTER'S FOES\". The New York Times. New York, New York. May 13, 1976. Retrieved September 20, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/05/13/75593465.html?pageNumber=26",
+          Text: (string) (len=48) "\"CHURCH VICTORY GIVES NEW HOPE TO CARTER'S FOES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-107",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 23, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "May 16, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=23) "Albuquerque, New Mexico",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=35) "CITY WOMAN EARNS DEMOCRATIC VICTORY",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/157976116",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=23) "The Albuquerque Journal"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=132) "\"CITY WOMAN EARNS DEMOCRATIC VICTORY\". The Albuquerque Journal. Albuquerque, New Mexico. May 16, 1976. Retrieved September 23, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/157976116",
+          Text: (string) (len=37) "\"CITY WOMAN EARNS DEMOCRATIC VICTORY\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-108",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 23, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "June 8, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=11) "Provo, Utah",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=51) "HALF OF UTAH DELEGATES UNCOMMITTED, PRIMARY REVEALS",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/468274738",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=16) "The Daily Herald"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=129) "\"HALF OF UTAH DELEGATES UNCOMMITTED, PRIMARY REVEALS\". The Daily Herald. Provo, Utah. June 8, 1976. Retrieved September 23, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/468274738",
+          Text: (string) (len=53) "\"HALF OF UTAH DELEGATES UNCOMMITTED, PRIMARY REVEALS\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-110",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 20, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "May 19, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "Salibury, Maryland",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=63) "BROWN SCORES UPSET OVER CARTER; PAUL SARBANES STOPS JOE TYDINGS",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/291542585",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=15) "The Daily Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=147) "\"BROWN SCORES UPSET OVER CARTER; PAUL SARBANES STOPS JOE TYDINGS\". The Daily Times. Salibury, Maryland. May 19, 1976. Retrieved September 20, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/291542585",
+          Text: (string) (len=65) "\"BROWN SCORES UPSET OVER CARTER; PAUL SARBANES STOPS JOE TYDINGS\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-112",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 20, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "May 30, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=17) "Detroit, Michigan",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=35) "CARTER GETS HALF OF STATE DELEGATES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=57) "https://www.newspapers.com/image/98246011/?terms=delegate",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=22) "The Detroit Free Press"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=125) "\"CARTER GETS HALF OF STATE DELEGATES\". The Detroit Free Press. Detroit, Michigan. May 30, 1976. Retrieved September 20, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=57) "https://www.newspapers.com/image/98246011/?terms=delegate",
+          Text: (string) (len=37) "\"CARTER GETS HALF OF STATE DELEGATES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-115",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 20, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "May 23, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=16) "Rutland, Vermont",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=58) "DELEGATES RAP CARTER, SALMON; UDALL, BROWN PICK UP SUPPORT",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/611098420",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=24) "The Rutland Daily Herald"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=149) "\"DELEGATES RAP CARTER, SALMON; UDALL, BROWN PICK UP SUPPORT\". The Rutland Daily Herald. Rutland, Vermont. May 23, 1976. Retrieved September 20, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/611098420",
+          Text: (string) (len=60) "\"DELEGATES RAP CARTER, SALMON; UDALL, BROWN PICK UP SUPPORT\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-117",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 23, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "May 24, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=17) "Roanoke, Virginia",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=43) "AFTER A BRAWL, CARTER WINS 10 OF STATE'S 12",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/916405738",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=14) "The World News"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=125) "\"AFTER A BRAWL, CARTER WINS 10 OF STATE'S 12\". The World News. Roanoke, Virginia. May 24, 1976. Retrieved September 23, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/916405738",
+          Text: (string) (len=45) "\"AFTER A BRAWL, CARTER WINS 10 OF STATE'S 12\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-118",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 23, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "May 23, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=19) "Spokane, Washington",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=43) "FORD APPARENT WINNER IN WASHINGTON CAUCUSES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/570949658",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=20) "The Spokesman-Review"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=133) "\"FORD APPARENT WINNER IN WASHINGTON CAUCUSES\". The Spokesman-Review. Spokane, Washington. May 23, 1976. Retrieved September 23, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/570949658",
+          Text: (string) (len=45) "\"FORD APPARENT WINNER IN WASHINGTON CAUCUSES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-119",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 21, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "May 27, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=19) "Birmingham, Alabama",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=45) "35TH ALABAMA DELEGATE MAY SPARK DEMO SQUABBLE",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/794440694",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=26) "The Birmingham Post-Herald"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=141) "\"35TH ALABAMA DELEGATE MAY SPARK DEMO SQUABBLE\". The Birmingham Post-Herald. Birmingham, Alabama. May 27, 1976. Retrieved September 21, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/794440694",
+          Text: (string) (len=47) "\"35TH ALABAMA DELEGATE MAY SPARK DEMO SQUABBLE\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-121",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 21, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "May 27, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=21) "RESULTS OF NEW VOTING",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/05/27/75714702.html?pageNumber=25",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=108) "\"RESULTS OF NEW VOTING\". The New York Times. New York, New York. May 27, 1976. Retrieved September 21, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/05/27/75714702.html?pageNumber=25",
+          Text: (string) (len=23) "\"RESULTS OF NEW VOTING\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-124",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 21, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "May 27, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=35) "MISSOURI GAIN LESS THAN CARTER GOAL",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/05/27/75714701.html?pageNumber=25",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=122) "\"MISSOURI GAIN LESS THAN CARTER GOAL\". The New York Times. New York, New York. May 27, 1976. Retrieved September 21, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/05/27/75714701.html?pageNumber=25",
+          Text: (string) (len=37) "\"MISSOURI GAIN LESS THAN CARTER GOAL\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-129",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 21, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "May 30, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=16) "Des Moines, Iowa",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=38) "CARTER WINS BIG DELEGATE VOTE IN STATE",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/355804638",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=23) "The Des Moines Register"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=128) "\"CARTER WINS BIG DELEGATE VOTE IN STATE\". The Des Moines Register. Des Moines, Iowa. May 30, 1976. Retrieved September 21, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/355804638",
+          Text: (string) (len=40) "\"CARTER WINS BIG DELEGATE VOTE IN STATE\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-131",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 21, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "May 30, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=34) "HAWAII DEMOCRATS PICK 17 DELEGATES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/05/31/86394267.html?pageNumber=12",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=121) "\"HAWAII DEMOCRATS PICK 17 DELEGATES\". The New York Times. New York, New York. May 30, 1976. Retrieved September 21, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/05/31/86394267.html?pageNumber=12",
+          Text: (string) (len=36) "\"HAWAII DEMOCRATS PICK 17 DELEGATES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-133",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 21, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "June 3, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=21) "RESULTS OF NEW VOTING",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/06/03/75607896.html?pageNumber=31",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=108) "\"RESULTS OF NEW VOTING\". The New York Times. New York, New York. June 3, 1976. Retrieved September 21, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/06/03/75607896.html?pageNumber=31",
+          Text: (string) (len=23) "\"RESULTS OF NEW VOTING\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-137",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 21, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=12) "June 7, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=40) "7 STATES COMPLETE SELECTION OF DELEGATES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/06/07/76400694.html?pageNumber=21",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=127) "\"7 STATES COMPLETE SELECTION OF DELEGATES\". The New York Times. New York, New York. June 7, 1976. Retrieved September 21, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/06/07/76400694.html?pageNumber=21",
+          Text: (string) (len=42) "\"7 STATES COMPLETE SELECTION OF DELEGATES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-139",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 21, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "June 10, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=18) "New York, New York",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=21) "RESULTS OF NEW VOTING",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/06/10/75619340.html?pageNumber=41",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=109) "\"RESULTS OF NEW VOTING\". The New York Times. New York, New York. June 10, 1976. Retrieved September 21, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1976/06/10/75619340.html?pageNumber=41",
+          Text: (string) (len=23) "\"RESULTS OF NEW VOTING\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-144",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 23, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "June 13, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=20) "Wilmington, Delaware",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=43) "AFTER A BRAWL, CARTER WINS 10 OF STATE'S 12",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/156508917",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=16) "The Morning News"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=131) "\"AFTER A BRAWL, CARTER WINS 10 OF STATE'S 12\". The Morning News. Wilmington, Delaware. June 13, 1976. Retrieved September 23, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/156508917",
+          Text: (string) (len=45) "\"AFTER A BRAWL, CARTER WINS 10 OF STATE'S 12\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-145",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 23, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "June 13, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=23) "Bridgeport, Connecticut",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=33) "CARTER GETS 19, UDALL 16 IN STATE",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/60583462/",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=19) "The Bridgeport Post"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=127) "\"CARTER GETS 19, UDALL 16 IN STATE\". The Bridgeport Post. Bridgeport, Connecticut. June 13, 1976. Retrieved September 23, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/60583462/",
+          Text: (string) (len=35) "\"CARTER GETS 19, UDALL 16 IN STATE\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-146",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 23, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "June 14, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=19) "Olympia, Washington",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=36) "DIANE OBERQUELL AMONG DEMO DELEGATES",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/803256951",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=12) "The Olympian"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=119) "\"DIANE OBERQUELL AMONG DEMO DELEGATES\". The Olympian. Olympia, Washington. June 14, 1976. Retrieved September 23, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/803256951",
+          Text: (string) (len=38) "\"DIANE OBERQUELL AMONG DEMO DELEGATES\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-147",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 23, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "June 27, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=26) "Colorado Springs, Colorado",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=34) "NORTH DAKOTA DEMO PICKS ARE LISTED",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=41) "https://www.newspapers.com/image/58207237",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=38) "The Colorado Springs Gazette-Telegraph"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=150) "\"NORTH DAKOTA DEMO PICKS ARE LISTED\". The Colorado Springs Gazette-Telegraph. Colorado Springs, Colorado. June 27, 1976. Retrieved September 23, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=41) "https://www.newspapers.com/image/58207237",
+          Text: (string) (len=36) "\"NORTH DAKOTA DEMO PICKS ARE LISTED\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-148",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=11) "access-date": (string) (len=18) "September 23, 2023",
+      (string) (len=12) "archive-date": (string) "",
+      (string) (len=11) "archive-url": (string) "",
+      (string) (len=4) "date": (string) (len=13) "June 26, 1976",
+      (string) (len=6) "first1": (string) "",
+      (string) (len=6) "first2": (string) "",
+      (string) (len=8) "language": (string) (len=7) "English",
+      (string) (len=5) "last1": (string) "",
+      (string) (len=5) "last2": (string) "",
+      (string) (len=8) "location": (string) (len=22) "Bismarck, North Dakota",
+      (string) (len=5) "quote": (string) "",
+      (string) (len=5) "title": (string) (len=34) "NORTH DAKOTA DEMO PICKS ARE LISTED",
+      (string) (len=11) "trans-title": (string) "",
+      (string) (len=3) "url": (string) (len=42) "https://www.newspapers.com/image/345809157",
+      (string) (len=10) "url-status": (string) "",
+      (string) (len=3) "via": (string) "",
+      (string) (len=4) "work": (string) (len=20) "The Bismarck Tribune"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=128) "\"NORTH DAKOTA DEMO PICKS ARE LISTED\". The Bismarck Tribune. Bismarck, North Dakota. June 26, 1976. Retrieved September 23, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://www.newspapers.com/image/345809157",
+          Text: (string) (len=36) "\"NORTH DAKOTA DEMO PICKS ARE LISTED\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-149",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=4) "date": (string) (len=16) "7 September 2015",
+      (string) (len=5) "title": (string) (len=90) "17 Democrats Ran for President in 1976. Can Today's GOP Learn Anything from What Happened?",
+      (string) (len=3) "url": (string) (len=92) "https://www.politico.com/magazine/story/2015/09/2016-election-1976-democratic-primary-213125",
+      (string) (len=7) "website": (string) (len=12) "[[Politico]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=121) "\"17 Democrats Ran for President in 1976. Can Today's GOP Learn Anything from What Happened?\". Politico. 7 September 2015.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=92) "https://www.politico.com/magazine/story/2015/09/2016-election-1976-democratic-primary-213125",
+          Text: (string) (len=92) "\"17 Democrats Ran for President in 1976. Can Today's GOP Learn Anything from What Happened?\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=38) "https://en.wikipedia.org/wiki/Politico",
+          Text: (string) (len=8) "Politico",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-150",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=4) "date": (string) (len=11) "18 Jan 1974",
+      (string) (len=5) "first": (string) (len=5) "David",
+      (string) (len=4) "last": (string) (len=6) "Broder",
+      (string) (len=4) "page": (string) (len=2) "A2",
+      (string) (len=5) "title": (string) (len=36) "Mondale Will Test Bid for Presidency",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=96) "Broder, David (18 Jan 1974). \"Mondale Will Test Bid for Presidency\". The New York Times. p.\u00a0A2.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-151",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=4) "date": (string) (len=12) "15 July 1973",
+      (string) (len=4) "page": (string) (len=2) "37",
+      (string) (len=5) "title": (string) (len=55) "Gallup Poll Shows Kennedy Is Leading For '76 Nomination",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=100) "\"Gallup Poll Shows Kennedy Is Leading For '76 Nomination\". The New York Times. 15 July 1973. p.\u00a037.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-158",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=4) "date": (string) (len=11) "27 Sep 1974",
+      (string) (len=5) "first": (string) (len=6) "George",
+      (string) (len=4) "last": (string) (len=6) "Gallup",
+      (string) (len=4) "page": (string) (len=2) "26",
+      (string) (len=5) "title": (string) (len=33) "Wallace Leading Party's '76 Field",
+      (string) (len=4) "work": (string) (len=20) "The Hartford Courant"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=96) "Gallup, George (27 Sep 1974). \"Wallace Leading Party's '76 Field\". The Hartford Courant. p.\u00a026.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-161",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=4) "date": (string) (len=10) "5 Dec 1974",
+      (string) (len=4) "page": (string) (len=3) "A23",
+      (string) (len=5) "title": (string) (len=53) "Gallup Poll: Democratic leader in '76 fails to emerge",
+      (string) (len=4) "work": (string) (len=17) "The Baltimore Sun"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=96) "\"Gallup Poll: Democratic leader in '76 fails to emerge\". The Baltimore Sun. 5 Dec 1974. p.\u00a0A23.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-163",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=4) "date": (string) (len=11) "31 Mar 1975",
+      (string) (len=4) "page": (string) (len=2) "A5",
+      (string) (len=5) "title": (string) (len=68) "Wallace leads Democratic hopefuls for 1976 race, Gallup poll reports",
+      (string) (len=4) "work": (string) (len=17) "The Baltimore Sun"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=111) "\"Wallace leads Democratic hopefuls for 1976 race, Gallup poll reports\". The Baltimore Sun. 31 Mar 1975. p.\u00a0A5.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-165",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=4) "date": (string) (len=11) "25 May 1975",
+      (string) (len=4) "page": (string) (len=2) "44",
+      (string) (len=5) "title": (string) (len=84) "Kennedy Is First in Gallup Survey: Gets 36% to Wallace's 15% Among Democratic Voters",
+      (string) (len=3) "url": (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1975/05/25/94895426.html?pageNumber=44",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=128) "\"Kennedy Is First in Gallup Survey: Gets 36% to Wallace's 15% Among Democratic Voters\". The New York Times. 25 May 1975. p.\u00a044.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=84) "https://timesmachine.nytimes.com/timesmachine/1975/05/25/94895426.html?pageNumber=44",
+          Text: (string) (len=86) "\"Kennedy Is First in Gallup Survey: Gets 36% to Wallace's 15% Among Democratic Voters\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-166",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=4) "date": (string) (len=10) "7 Aug 1975",
+      (string) (len=5) "first": (string) (len=6) "George",
+      (string) (len=4) "last": (string) (len=6) "Gallup",
+      (string) (len=4) "page": (string) (len=3) "A13",
+      (string) (len=5) "title": (string) (len=27) "Wallace, Humphrey Run Close",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=88) "Gallup, George (7 Aug 1975). \"Wallace, Humphrey Run Close\". The New York Times. p.\u00a0A13.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-167",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=4) "date": (string) (len=11) "26 Oct 1975",
+      (string) (len=5) "first": (string) (len=6) "George",
+      (string) (len=4) "last": (string) (len=6) "Gallup",
+      (string) (len=4) "page": (string) (len=2) "B5",
+      (string) (len=5) "title": (string) (len=47) "Humphrey Moves Ahead of Wallace in Voter Survey",
+      (string) (len=4) "work": (string) (len=17) "Los Angeles Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=107) "Gallup, George (26 Oct 1975). \"Humphrey Moves Ahead of Wallace in Voter Survey\". Los Angeles Times. p.\u00a0B5.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-168",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=4) "date": (string) (len=11) "26 Oct 1975",
+      (string) (len=5) "first": (string) (len=6) "George",
+      (string) (len=4) "last": (string) (len=6) "Gallup",
+      (string) (len=4) "page": (string) (len=2) "1A",
+      (string) (len=5) "title": (string) (len=36) "Without Kennedy, Humphrey Top Choice",
+      (string) (len=4) "work": (string) (len=20) "The Hartford Courant"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=99) "Gallup, George (26 Oct 1975). \"Without Kennedy, Humphrey Top Choice\". The Hartford Courant. p.\u00a01A.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-169",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=4) "date": (string) (len=11) "14 Dec 1975",
+      (string) (len=5) "first": (string) (len=11) "Christopher",
+      (string) (len=4) "last": (string) (len=5) "Lydon",
+      (string) (len=4) "page": (string) (len=1) "1",
+      (string) (len=5) "title": (string) (len=48) "Humphrey, at 30% in Poll, Widens Democratic Lead",
+      (string) (len=4) "work": (string) (len=18) "The New York Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "Lydon, Christopher (14 Dec 1975). \"Humphrey, at 30% in Poll, Widens Democratic Lead\". The New York Times. p.\u00a01.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-170",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=4) "date": (string) (len=11) "22 Jan 1976",
+      (string) (len=5) "first": (string) (len=6) "George",
+      (string) (len=4) "last": (string) (len=6) "Gallup",
+      (string) (len=4) "page": (string) (len=2) "13",
+      (string) (len=5) "title": (string) (len=30) "29% of Democrats Shown for HHH",
+      (string) (len=4) "work": (string) (len=20) "The Hartford Courant"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=93) "Gallup, George (22 Jan 1976). \"29% of Democrats Shown for HHH\". The Hartford Courant. p.\u00a013.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-171",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=4) "date": (string) (len=11) "29 May 1975",
+      (string) (len=5) "first": (string) (len=6) "George",
+      (string) (len=4) "last": (string) (len=6) "Gallup",
+      (string) (len=5) "title": (string) (len=53) "Democrats favor Kennedy over Jackson, Muskie, Wallace",
+      (string) (len=4) "work": (string) (len=16) "The Boston Globe"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=104) "Gallup, George (29 May 1975). \"Democrats favor Kennedy over Jackson, Muskie, Wallace\". The Boston Globe.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-172",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=113) "Jules Witcover, No Way to Pick A President: How Money and Hired Guns Have Debased American Elections, 2001, p.166",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-173",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=127) "George C. Edwards, John Howard Kessel, Bert A. Rockman, Researching the presidency: vital questions, new approaches, 1993, p.60",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-174",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=12) "2 April 2018",
+      (string) (len=5) "title": (string) (len=108) "Winnowed In!... But For Just How Long? ... Looking forward to the second month of Primary/Caucus season 2004",
+      (string) (len=3) "url": (string) (len=46) "http://www.thegreenpapers.com/PCom/?20040129-0",
+      (string) (len=7) "website": (string) (len=22) "www.thegreenpapers.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=159) "\"Winnowed In!... But For Just How Long? ... Looking forward to the second month of Primary/Caucus season 2004\". www.thegreenpapers.com. Retrieved 2 April 2018.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=46) "http://www.thegreenpapers.com/PCom/?20040129-0",
+          Text: (string) (len=110) "\"Winnowed In!... But For Just How Long? ... Looking forward to the second month of Primary/Caucus season 2004\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-175",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=12) "2 April 2018",
+      (string) (len=5) "title": (string) (len=61) "Serious Winnowing ... both on and after 'Super Duper' Tuesday",
+      (string) (len=3) "url": (string) (len=46) "http://www.thegreenpapers.com/PCom/?20080201-0",
+      (string) (len=7) "website": (string) (len=22) "www.thegreenpapers.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "\"Serious Winnowing ... both on and after 'Super Duper' Tuesday\". www.thegreenpapers.com. Retrieved 2 April 2018.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=46) "http://www.thegreenpapers.com/PCom/?20080201-0",
+          Text: (string) (len=63) "\"Serious Winnowing ... both on and after 'Super Duper' Tuesday\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-176",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=12) "2 April 2018",
+      (string) (len=5) "title": (string) (len=62) "Our Campaigns - US President - D Primaries Race - Feb 01, 1976",
+      (string) (len=3) "url": (string) (len=56) "http://www.ourcampaigns.com/RaceDetail.html?RaceID=55206",
+      (string) (len=7) "website": (string) (len=20) "www.ourcampaigns.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=111) "\"Our Campaigns - US President - D Primaries Race - Feb 01, 1976\". www.ourcampaigns.com. Retrieved 2 April 2018.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=56) "http://www.ourcampaigns.com/RaceDetail.html?RaceID=55206",
+          Text: (string) (len=64) "\"Our Campaigns - US President - D Primaries Race - Feb 01, 1976\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-177",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=5) "title": (string) (len=63) "Our Campaigns - DC US President - D Primary Race - May 04, 1976",
+      (string) (len=3) "url": (string) (len=57) "https://www.ourcampaigns.com/RaceDetail.html?RaceID=36117"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=66) "\"Our Campaigns - DC US President - D Primary Race - May 04, 1976\".",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=57) "https://www.ourcampaigns.com/RaceDetail.html?RaceID=36117",
+          Text: (string) (len=65) "\"Our Campaigns - DC US President - D Primary Race - May 04, 1976\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=13) "cite_note-178",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=12) "2 April 2018",
+      (string) (len=5) "title": (string) (len=63) "Our Campaigns - US President - D Convention Race - Jul 12, 1976",
+      (string) (len=3) "url": (string) (len=56) "http://www.ourcampaigns.com/RaceDetail.html?RaceID=58483",
+      (string) (len=7) "website": (string) (len=20) "www.ourcampaigns.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "\"Our Campaigns - US President - D Convention Race - Jul 12, 1976\". www.ourcampaigns.com. Retrieved 2 April 2018.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=56) "http://www.ourcampaigns.com/RaceDetail.html?RaceID=58483",
+          Text: (string) (len=65) "\"Our Campaigns - US President - D Convention Race - Jul 12, 1976\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

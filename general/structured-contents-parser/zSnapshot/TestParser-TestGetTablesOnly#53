@@ -1,0 +1,283 @@
+([]*parser.OrderedTable) (len=1) {
+  (*parser.OrderedTable)({
+    ID: (string) (len=17) "demography_table1",
+    Table: (*parser.TableWithHeaders)({
+      Headers: ([][]parser.Cell) (len=3) {
+        ([]parser.Cell) (len=4) {
+          (parser.Cell) {
+            Value: (string) (len=16) "Country of birth",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=16) "Country of birth",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=10) "Population",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "Percent",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=4) {
+          (parser.Cell) {
+            Value: (string) (len=14) "United Kingdom",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=14) "United Kingdom",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "5,223,986",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "59.4",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=4) {
+          (parser.Cell) {
+            Value: (string) (len=18) "Non-United Kingdom",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=18) "Non-United Kingdom",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "3,575,739",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "40.6",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      Footers: ([][]parser.Cell) <nil>,
+      Rows: ([][]parser.Cell) (len=12) {
+        ([]parser.Cell) (len=4) {
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "India",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "322,644",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=3) "3.7",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=4) {
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "Romania",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "175,991",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=3) "2.0",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=4) {
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "Poland",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "149,397",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=3) "1.7",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=4) {
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=10) "Bangladesh",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "138,895",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=3) "1.6",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=4) {
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=8) "Pakistan",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "129,774",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=3) "1.5",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=4) {
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "Italy",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "126,059",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=3) "1.4",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=4) {
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "Nigeria",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "117,145",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=3) "1.3",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=4) {
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "Ireland",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "96,566",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=3) "1.1",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=4) {
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "Sri Lanka",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "80,379",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=3) "0.9",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=4) {
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "France",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "77,715",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=3) "0.9",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=4) {
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "Others",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "2,161,174",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "24.6",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=4) {
+          (parser.Cell) {
+            Value: (string) (len=5) "Total",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "Total",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "8,799,725",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "100.0",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      ConfidenceScore: (float64) 0.9
+    })
+  })
+}

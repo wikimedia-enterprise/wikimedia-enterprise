@@ -1,0 +1,482 @@
+([]*parser.Reference) (len=16) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=4) "base",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "PM29000338"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "Notice no\u00a0PM29000338, sur la plateforme ouverte du patrimoine, base Palissy, ministère français de la Culture",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=57) "https://www.pop.culture.gouv.fr/notice/palissy/PM29000338",
+          Text: (string) (len=21) "Notice n o PM29000338",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://fr.wikipedia.org/wiki/Base_Palissy",
+          Text: (string) (len=12) "base Palissy",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://fr.wikipedia.org/wiki/Ministère_de_la_Culture_(France)",
+          Text: (string) (len=34) "ministère français de la Culture",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=4) "base",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "IM29002704"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=158) "Yves-Pascal Castel et Claude Quillivic, Notice no\u00a0IM29002704, sur la plateforme ouverte du patrimoine, base Palissy, ministère français de la Culture, 1977",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=48) "https://fr.wikipedia.org/wiki/Yves-Pascal_Castel",
+          Text: (string) (len=18) "Yves-Pascal Castel",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=57) "https://www.pop.culture.gouv.fr/notice/palissy/IM29002704",
+          Text: (string) (len=21) "Notice n o IM29002704",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://fr.wikipedia.org/wiki/Base_Palissy",
+          Text: (string) (len=12) "base Palissy",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://fr.wikipedia.org/wiki/Ministère_de_la_Culture_(France)",
+          Text: (string) (len=34) "ministère français de la Culture",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=4) "base",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "PM29000879"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "Notice no\u00a0PM29000879, sur la plateforme ouverte du patrimoine, base Palissy, ministère français de la Culture",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=57) "https://www.pop.culture.gouv.fr/notice/palissy/PM29000879",
+          Text: (string) (len=21) "Notice n o PM29000879",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://fr.wikipedia.org/wiki/Base_Palissy",
+          Text: (string) (len=12) "base Palissy",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://fr.wikipedia.org/wiki/Ministère_de_la_Culture_(France)",
+          Text: (string) (len=34) "ministère français de la Culture",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=7) "ouvrage",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=6) "année": (string) (len=4) "1982",
+      (string) (len=7) "auteur1": (string) (len=22) "[[Pierre-Marie Auzas]]",
+      (string) (len=4) "isbn": (string) "",
+      (string) (len=6) "langue": (string) (len=9) "français",
+      (string) (len=4) "lieu": (string) "",
+      (string) (len=13) "lire en ligne": (string) "",
+      (string) (len=13) "pages totales": (string) "",
+      (string) (len=7) "passage": (string) (len=3) "244",
+      (string) (len=5) "titre": (string) (len=33) "Le trésor de Saint-Jean-du-Doigt",
+      (string) (len=4) "tome": (string) (len=15) "{{rom-maj|LIX}}",
+      (string) (len=8) "éditeur": (string) (len=64) "Mémoires de la société d'histoire et archéologie de Bretagne"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=143) "Pierre-Marie Auzas, Le trésor de Saint-Jean-du-Doigt, t.\u00a0LIX, Mémoires de la société d'histoire et archéologie de Bretagne, 1982, p.\u00a0244",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=48) "https://fr.wikipedia.org/wiki/Pierre-Marie_Auzas",
+          Text: (string) (len=18) "Pierre-Marie Auzas",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=7) "ouvrage",
+    Metadata: (map[string]string) (len=13) {
+      (string) (len=6) "année": (string) (len=4) "1988",
+      (string) (len=4) "isbn": (string) "",
+      (string) (len=6) "langue": (string) "",
+      (string) (len=4) "lieu": (string) (len=7) "Quimper",
+      (string) (len=13) "lire en ligne": (string) (len=82) "http://diocese-quimper.fr/images/stories/bibliotheque/pdf/pdf-Couffon/SAINTJED.pdf",
+      (string) (len=4) "nom1": (string) (len=7) "Couffon",
+      (string) (len=4) "nom2": (string) (len=7) "Le Bars",
+      (string) (len=13) "pages totales": (string) (len=3) "551",
+      (string) (len=7) "passage": (string) "",
+      (string) (len=8) "prénom1": (string) (len=5) "René",
+      (string) (len=8) "prénom2": (string) (len=6) "Alfred",
+      (string) (len=5) "titre": (string) (len=78) "Diocèse de Quimper et de Léon, nouveau répertoire des églises et chapelles",
+      (string) (len=8) "éditeur": (string) (len=23) "Association diocésaine"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=176) "René Couffon et Alfred Le Bars, Diocèse de Quimper et de Léon, nouveau répertoire des églises et chapelles, Quimper, Association diocésaine, 1988, 551\u00a0p. (lire en ligne)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=82) "http://diocese-quimper.fr/images/stories/bibliotheque/pdf/pdf-Couffon/SAINTJED.pdf",
+          Text: (string) (len=13) "lire en ligne",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=4) "base",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "PM29001548"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "Notice no\u00a0PM29001548, sur la plateforme ouverte du patrimoine, base Palissy, ministère français de la Culture",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=57) "https://www.pop.culture.gouv.fr/notice/palissy/PM29001548",
+          Text: (string) (len=21) "Notice n o PM29001548",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://fr.wikipedia.org/wiki/Base_Palissy",
+          Text: (string) (len=12) "base Palissy",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://fr.wikipedia.org/wiki/Ministère_de_la_Culture_(France)",
+          Text: (string) (len=34) "ministère français de la Culture",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=7) "palissy",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "PM29001821"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "Notice no\u00a0PM29001821, sur la plateforme ouverte du patrimoine, base Palissy, ministère français de la Culture",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=57) "https://www.pop.culture.gouv.fr/notice/palissy/PM29001821",
+          Text: (string) (len=21) "Notice n o PM29001821",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://fr.wikipedia.org/wiki/Base_Palissy",
+          Text: (string) (len=12) "base Palissy",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://fr.wikipedia.org/wiki/Ministère_de_la_Culture_(France)",
+          Text: (string) (len=34) "ministère français de la Culture",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=12) "consulté le": (string) (len=10) "2016-07-14",
+      (string) (len=4) "site": (string) (len=19) "www.culture.gouv.fr",
+      (string) (len=5) "titre": (string) (len=47) "Bretagne d'or et d'argent - Les grands trésors",
+      (string) (len=3) "url": (string) (len=72) "http://www.culture.gouv.fr/culture/inventai/itiinv/bretauag/bzhauag8.htm"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=111) "«\u00a0Bretagne d'or et d'argent - Les grands trésors\u00a0», sur www.culture.gouv.fr (consulté le 14 juillet 2016)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=72) "http://www.culture.gouv.fr/culture/inventai/itiinv/bretauag/bzhauag8.htm",
+          Text: (string) (len=47) "Bretagne d'or et d'argent - Les grands trésors",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=4) "base",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "PM29001374"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "Notice no\u00a0PM29001374, sur la plateforme ouverte du patrimoine, base Palissy, ministère français de la Culture",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=57) "https://www.pop.culture.gouv.fr/notice/palissy/PM29001374",
+          Text: (string) (len=21) "Notice n o PM29001374",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://fr.wikipedia.org/wiki/Base_Palissy",
+          Text: (string) (len=12) "base Palissy",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://fr.wikipedia.org/wiki/Ministère_de_la_Culture_(France)",
+          Text: (string) (len=34) "ministère français de la Culture",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=4) "base",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "PM22000264"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "Notice no\u00a0PM22000264, sur la plateforme ouverte du patrimoine, base Palissy, ministère français de la Culture",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=57) "https://www.pop.culture.gouv.fr/notice/palissy/PM22000264",
+          Text: (string) (len=21) "Notice n o PM22000264",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://fr.wikipedia.org/wiki/Base_Palissy",
+          Text: (string) (len=12) "base Palissy",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://fr.wikipedia.org/wiki/Ministère_de_la_Culture_(France)",
+          Text: (string) (len=34) "ministère français de la Culture",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-11",
+    Group: (string) "",
+    Type: (string) (len=4) "base",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "IM29003694"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "Notice no\u00a0IM29003694, sur la plateforme ouverte du patrimoine, base Palissy, ministère français de la Culture",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=57) "https://www.pop.culture.gouv.fr/notice/palissy/IM29003694",
+          Text: (string) (len=21) "Notice n o IM29003694",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://fr.wikipedia.org/wiki/Base_Palissy",
+          Text: (string) (len=12) "base Palissy",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://fr.wikipedia.org/wiki/Ministère_de_la_Culture_(France)",
+          Text: (string) (len=34) "ministère français de la Culture",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-12",
+    Group: (string) "",
+    Type: (string) (len=4) "base",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "PM29001028"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "Notice no\u00a0PM29001028, sur la plateforme ouverte du patrimoine, base Palissy, ministère français de la Culture",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=57) "https://www.pop.culture.gouv.fr/notice/palissy/PM29001028",
+          Text: (string) (len=21) "Notice n o PM29001028",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://fr.wikipedia.org/wiki/Base_Palissy",
+          Text: (string) (len=12) "base Palissy",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://fr.wikipedia.org/wiki/Ministère_de_la_Culture_(France)",
+          Text: (string) (len=34) "ministère français de la Culture",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-13",
+    Group: (string) "",
+    Type: (string) (len=4) "base",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "PM29000448"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "Notice no\u00a0PM29000448, sur la plateforme ouverte du patrimoine, base Palissy, ministère français de la Culture",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=57) "https://www.pop.culture.gouv.fr/notice/palissy/PM29000448",
+          Text: (string) (len=21) "Notice n o PM29000448",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://fr.wikipedia.org/wiki/Base_Palissy",
+          Text: (string) (len=12) "base Palissy",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://fr.wikipedia.org/wiki/Ministère_de_la_Culture_(France)",
+          Text: (string) (len=34) "ministère français de la Culture",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-14",
+    Group: (string) "",
+    Type: (string) (len=4) "base",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "PM29000991"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "Notice no\u00a0PM29000991, sur la plateforme ouverte du patrimoine, base Palissy, ministère français de la Culture",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=57) "https://www.pop.culture.gouv.fr/notice/palissy/PM29000991",
+          Text: (string) (len=21) "Notice n o PM29000991",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://fr.wikipedia.org/wiki/Base_Palissy",
+          Text: (string) (len=12) "base Palissy",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://fr.wikipedia.org/wiki/Ministère_de_la_Culture_(France)",
+          Text: (string) (len=34) "ministère français de la Culture",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-15",
+    Group: (string) "",
+    Type: (string) (len=4) "base",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "PM29001138"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "Notice no\u00a0PM29001138, sur la plateforme ouverte du patrimoine, base Palissy, ministère français de la Culture",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=57) "https://www.pop.culture.gouv.fr/notice/palissy/PM29001138",
+          Text: (string) (len=21) "Notice n o PM29001138",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://fr.wikipedia.org/wiki/Base_Palissy",
+          Text: (string) (len=12) "base Palissy",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://fr.wikipedia.org/wiki/Ministère_de_la_Culture_(France)",
+          Text: (string) (len=34) "ministère français de la Culture",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-16",
+    Group: (string) "",
+    Type: (string) (len=4) "base",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=10) "PM29001016"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=112) "Notice no\u00a0PM29001016, sur la plateforme ouverte du patrimoine, base Palissy, ministère français de la Culture",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=57) "https://www.pop.culture.gouv.fr/notice/palissy/PM29001016",
+          Text: (string) (len=21) "Notice n o PM29001016",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://fr.wikipedia.org/wiki/Base_Palissy",
+          Text: (string) (len=12) "base Palissy",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://fr.wikipedia.org/wiki/Ministère_de_la_Culture_(France)",
+          Text: (string) (len=34) "ministère français de la Culture",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

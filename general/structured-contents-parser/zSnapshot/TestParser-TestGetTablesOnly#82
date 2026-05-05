@@ -1,0 +1,638 @@
+([]*parser.OrderedTable) (len=2) {
+  (*parser.OrderedTable)({
+    ID: (string) (len=30) "demographics.population_table1",
+    Table: (*parser.TableWithHeaders)({
+      Headers: ([][]parser.Cell) (len=1) {
+        ([]parser.Cell) (len=2) {
+          (parser.Cell) {
+            Value: (string) (len=5) "State",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=21) "Population (millions)",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      Footers: ([][]parser.Cell) <nil>,
+      Rows: ([][]parser.Cell) (len=10) {
+        ([]parser.Cell) (len=2) {
+          (parser.Cell) {
+            Value: (string) (len=10) "California",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "39.4",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=2) {
+          (parser.Cell) {
+            Value: (string) (len=5) "Texas",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "31.3",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=2) {
+          (parser.Cell) {
+            Value: (string) (len=7) "Florida",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "23.4",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=2) {
+          (parser.Cell) {
+            Value: (string) (len=8) "New York",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "19.9",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=2) {
+          (parser.Cell) {
+            Value: (string) (len=12) "Pennsylvania",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "13.1",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=2) {
+          (parser.Cell) {
+            Value: (string) (len=8) "Illinois",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "12.7",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=2) {
+          (parser.Cell) {
+            Value: (string) (len=4) "Ohio",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "11.9",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=2) {
+          (parser.Cell) {
+            Value: (string) (len=7) "Georgia",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "11.2",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=2) {
+          (parser.Cell) {
+            Value: (string) (len=14) "North Carolina",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "11.0",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=2) {
+          (parser.Cell) {
+            Value: (string) (len=8) "Michigan",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "10.1",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      ConfidenceScore: (float64) 0.9
+    })
+  }),
+  (*parser.OrderedTable)({
+    ID: (string) (len=32) "demographics.urbanization_table1",
+    Table: (*parser.TableWithHeaders)({
+      Headers: ([][]parser.Cell) (len=2) {
+        ([]parser.Cell) (len=10) {
+          (parser.Cell) {
+            Value: (string) (len=111) "v\nt\ne Largest metropolitan areas in the United States 2023 MSA population estimates from the U.S. Census Bureau",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=111) "v\nt\ne Largest metropolitan areas in the United States 2023 MSA population estimates from the U.S. Census Bureau",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=111) "v\nt\ne Largest metropolitan areas in the United States 2023 MSA population estimates from the U.S. Census Bureau",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=111) "v\nt\ne Largest metropolitan areas in the United States 2023 MSA population estimates from the U.S. Census Bureau",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=111) "v\nt\ne Largest metropolitan areas in the United States 2023 MSA population estimates from the U.S. Census Bureau",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=111) "v\nt\ne Largest metropolitan areas in the United States 2023 MSA population estimates from the U.S. Census Bureau",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=111) "v\nt\ne Largest metropolitan areas in the United States 2023 MSA population estimates from the U.S. Census Bureau",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=111) "v\nt\ne Largest metropolitan areas in the United States 2023 MSA population estimates from the U.S. Census Bureau",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=111) "v\nt\ne Largest metropolitan areas in the United States 2023 MSA population estimates from the U.S. Census Bureau",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=111) "v\nt\ne Largest metropolitan areas in the United States 2023 MSA population estimates from the U.S. Census Bureau",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=10) {
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "Rank",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "Name",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "Region",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "Pop.",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "Rank",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "Name",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "Region",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "Pop.",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      Footers: ([][]parser.Cell) <nil>,
+      Rows: ([][]parser.Cell) (len=10) {
+        ([]parser.Cell) (len=10) {
+          (parser.Cell) {
+            Value: (string) (len=20) "New York Los Angeles",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "1",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=8) "New York",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "Northeast",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=10) "19,498,249",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=2) "11",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "Boston",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "Northeast",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "4,919,179",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=27) "Chicago Dallas–Fort Worth",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=10) {
+          (parser.Cell) {
+            Value: (string) (len=20) "New York Los Angeles",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "2",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=11) "Los Angeles",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "West",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=10) "12,799,100",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=2) "12",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=26) "Riverside–San Bernardino",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "West",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "4,688,053",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=27) "Chicago Dallas–Fort Worth",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=10) {
+          (parser.Cell) {
+            Value: (string) (len=20) "New York Los Angeles",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "3",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "Chicago",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "Midwest",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "9,262,825",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=2) "13",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=13) "San Francisco",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "West",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "4,566,961",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=27) "Chicago Dallas–Fort Worth",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=10) {
+          (parser.Cell) {
+            Value: (string) (len=20) "New York Los Angeles",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "4",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=19) "Dallas–Fort Worth",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "South",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "8,100,037",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=2) "14",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "Detroit",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "Midwest",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "4,342,304",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=27) "Chicago Dallas–Fort Worth",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=10) {
+          (parser.Cell) {
+            Value: (string) (len=20) "New York Los Angeles",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "5",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "Houston",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "South",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "7,510,253",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=2) "15",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "Seattle",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "West",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "4,044,837",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=27) "Chicago Dallas–Fort Worth",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=10) {
+          (parser.Cell) {
+            Value: (string) (len=20) "New York Los Angeles",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "6",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "Atlanta",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "South",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "6,307,261",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=2) "16",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=24) "Minneapolis–Saint Paul",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "Midwest",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "3,712,020",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=27) "Chicago Dallas–Fort Worth",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=10) {
+          (parser.Cell) {
+            Value: (string) (len=20) "New York Los Angeles",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "7",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=16) "Washington, D.C.",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "South",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "6,304,975",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=2) "17",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=22) "Tampa–St. Petersburg",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "South",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "3,342,963",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=27) "Chicago Dallas–Fort Worth",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=10) {
+          (parser.Cell) {
+            Value: (string) (len=20) "New York Los Angeles",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "8",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=12) "Philadelphia",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "Northeast",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "6,246,160",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=2) "18",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "San Diego",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "West",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "3,269,973",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=27) "Chicago Dallas–Fort Worth",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=10) {
+          (parser.Cell) {
+            Value: (string) (len=20) "New York Los Angeles",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "9",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "Miami",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "South",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "6,183,199",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=2) "19",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "Denver",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "West",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "3,005,131",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=27) "Chicago Dallas–Fort Worth",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=10) {
+          (parser.Cell) {
+            Value: (string) (len=20) "New York Los Angeles",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=2) "10",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "Phoenix",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "West",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "5,070,110",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=2) "20",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "Baltimore",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "South",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "2,834,316",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=27) "Chicago Dallas–Fort Worth",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      ConfidenceScore: (float64) 1
+    })
+  })
+}

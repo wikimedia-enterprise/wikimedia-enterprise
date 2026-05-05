@@ -1,0 +1,3313 @@
+([]*parser.Reference) (len=76) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=12) "archive-date": (string) (len=10) "2022-10-09",
+      (string) (len=11) "archive-url": (string) (len=115) "https://ghostarchive.org/archive/20221009/https://apps.who.int/iris/bitstream/handle/10665/43190/9241593024_eng.pdf",
+      (string) (len=4) "date": (string) (len=4) "2005",
+      (string) (len=4) "page": (string) (len=2) "22",
+      (string) (len=9) "publisher": (string) (len=25) "World Health Organization",
+      (string) (len=3) "ref": (string) (len=41) "{{harvid|World Health Organization|2005}}",
+      (string) (len=6) "series": (string) (len=53) "The Surveillance of Risk Factors Report Series (SuRF)",
+      (string) (len=5) "title": (string) (len=17) "The SuRF Report 2",
+      (string) (len=3) "url": (string) (len=73) "https://apps.who.int/iris/bitstream/handle/10665/43190/9241593024_eng.pdf",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=168) "The SuRF Report 2 (PDF). The Surveillance of Risk Factors Report Series (SuRF). World Health Organization. 2005. p.\u00a022. Archived (PDF) from the original on 2022-10-09.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=73) "https://apps.who.int/iris/bitstream/handle/10665/43190/9241593024_eng.pdf",
+          Text: (string) (len=17) "The SuRF Report 2",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=115) "https://ghostarchive.org/archive/20221009/https://apps.who.int/iris/bitstream/handle/10665/43190/9241593024_eng.pdf",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "date": (string) (len=11) "August 2016",
+      (string) (len=3) "doi": (string) (len=29) "10.1016/S0140-6736(16)30175-1",
+      (string) (len=5) "issue": (string) (len=5) "10046",
+      (string) (len=7) "journal": (string) (len=6) "Lancet",
+      (string) (len=5) "pages": (string) (len=8) "776–86",
+      (string) (len=3) "pmc": (string) (len=7) "4995441",
+      (string) (len=4) "pmid": (string) (len=8) "27423262",
+      (string) (len=5) "title": (string) (len=128) "Body-mass index and all-cause mortality: individual-participant-data meta-analysis of 239 prospective studies in four continents",
+      (string) (len=8) "vauthors": (string) (len=649) "Di Angelantonio E, Bhupathiraju S, Wormser D, Gao P, Kaptoge S, Berrington de Gonzalez A, Cairns BJ, Huxley R, Jackson C, Joshy G, Lewington S, Manson JE, Murphy N, Patel AV, Samet JM, Woodward M, Zheng W, Zhou M, Bansal N, Barricarte A, Carter B, Cerhan JR, Smith GD, Fang X, Franco OH, Green J, Halsey J, Hildebrand JS, Jung KJ, Korda RJ, McLerran DF, Moore SC, O'Keeffe LM, Paige E, Ramond A, Reeves GK, Rolland B, Sacerdote C, Sattar N, Sofianopoulou E, Stevens J, Thun M, Ueshima H, Yang L, Yun YD, Willeit P, Banks E, Beral V, Chen Z, Gapstur SM, Gunter MJ, Hartge P, Jee SH, Lam TH, Peto R, Potter JD, Willett WC, Thompson SG, Danesh J, Hu FB",
+      (string) (len=6) "volume": (string) (len=3) "388"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=340) "Di Angelantonio E, Bhupathiraju S, Wormser D, Gao P, Kaptoge S, Berrington de Gonzalez A, et\u00a0al. (August 2016). \"Body-mass index and all-cause mortality: individual-participant-data meta-analysis of 239 prospective studies in four continents\". Lancet. 388 (10046): 776–86. doi:10.1016/S0140-6736(16)30175-1. PMC\u00a04995441. PMID\u00a027423262.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4995441",
+          Text: (string) (len=130) "\"Body-mass index and all-cause mortality: individual-participant-data meta-analysis of 239 prospective studies in four continents\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=51) "https://doi.org/10.1016%2FS0140-6736%2816%2930175-1",
+          Text: (string) (len=29) "10.1016/S0140-6736(16)30175-1",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4995441",
+          Text: (string) (len=7) "4995441",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/27423262",
+          Text: (string) (len=8) "27423262",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "date": (string) (len=12) "January 2008",
+      (string) (len=3) "doi": (string) (len=18) "10.1093/ndt/gfm517",
+      (string) (len=10) "doi-access": (string) "",
+      (string) (len=5) "issue": (string) (len=1) "1",
+      (string) (len=7) "journal": (string) (len=37) "Nephrology, Dialysis, Transplantation",
+      (string) (len=5) "pages": (string) (len=7) "47–51",
+      (string) (len=4) "pmid": (string) (len=8) "17890752",
+      (string) (len=5) "title": (string) (len=73) "Adolphe Quetelet (1796–1874) – the average man and indices of obesity",
+      (string) (len=8) "vauthors": (string) (len=9) "Eknoyan G",
+      (string) (len=6) "volume": (string) (len=2) "23"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=198) "Eknoyan G (January 2008). \"Adolphe Quetelet (1796–1874) – the average man and indices of obesity\". Nephrology, Dialysis, Transplantation. 23 (1): 47–51. doi:10.1093/ndt/gfm517. PMID\u00a017890752.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=38) "https://doi.org/10.1093%2Fndt%2Fgfm517",
+          Text: (string) (len=18) "10.1093/ndt/gfm517",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/17890752",
+          Text: (string) (len=8) "17890752",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=66) "Quetelet A. A Treatise on Man and the Development of his Faculties",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=4) "date": (string) (len=10) "2006-11-04",
+      (string) (len=3) "doi": (string) (len=25) "10.1080/15017410600608491",
+      (string) (len=10) "doi-access": (string) (len=4) "free",
+      (string) (len=5) "first": (string) (len=5) "Arvid",
+      (string) (len=5) "issue": (string) (len=1) "4",
+      (string) (len=7) "journal": (string) (len=43) "Scandinavian Journal of Disability Research",
+      (string) (len=8) "language": (string) (len=5) "en-US",
+      (string) (len=4) "last": (string) (len=7) "Heiberg",
+      (string) (len=5) "pages": (string) (len=9) "232–246",
+      (string) (len=5) "title": (string) (len=84) "Notes on the History of Normality – Reflections on the Work of Quetelet and Galton",
+      (string) (len=6) "volume": (string) (len=1) "8"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=205) "Heiberg A (2006-11-04). \"Notes on the History of Normality – Reflections on the Work of Quetelet and Galton\". Scandinavian Journal of Disability Research. 8 (4): 232–246. doi:10.1080/15017410600608491.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=43) "https://doi.org/10.1080%2F15017410600608491",
+          Text: (string) (len=86) "\"Notes on the History of Normality – Reflections on the Work of Quetelet and Galton\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=43) "https://doi.org/10.1080%2F15017410600608491",
+          Text: (string) (len=25) "10.1080/15017410600608491",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=4) "date": (string) (len=9) "June 2014",
+      (string) (len=3) "doi": (string) (len=18) "10.1093/ije/dyu061",
+      (string) (len=10) "doi-access": (string) (len=4) "free",
+      (string) (len=5) "issue": (string) (len=1) "3",
+      (string) (len=7) "journal": (string) (len=37) "International Journal of Epidemiology",
+      (string) (len=5) "pages": (string) (len=9) "665–669",
+      (string) (len=4) "pmid": (string) (len=8) "24691955",
+      (string) (len=5) "title": (string) (len=75) "Commentary: Origins and evolution of body mass index (BMI): continuing saga",
+      (string) (len=3) "url": (string) (len=68) "https://academic.oup.com/ije/article-pdf/43/3/665/9728399/dyu061.pdf",
+      (string) (len=8) "vauthors": (string) (len=21) "Blackburn H, Jacobs D",
+      (string) (len=6) "volume": (string) (len=2) "43"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=217) "Blackburn H, Jacobs D (June 2014). \"Commentary: Origins and evolution of body mass index (BMI): continuing saga\" (PDF). International Journal of Epidemiology. 43 (3): 665–669. doi:10.1093/ije/dyu061. PMID\u00a024691955.",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=68) "https://academic.oup.com/ije/article-pdf/43/3/665/9728399/dyu061.pdf",
+          Text: (string) (len=77) "\"Commentary: Origins and evolution of body mass index (BMI): continuing saga\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=38) "https://doi.org/10.1093%2Fije%2Fdyu061",
+          Text: (string) (len=18) "10.1093/ije/dyu061",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/24691955",
+          Text: (string) (len=8) "24691955",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=8) "magazine",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=16) "15 December 2013",
+      (string) (len=12) "archive-date": (string) (len=16) "7 September 2011",
+      (string) (len=11) "archive-url": (string) (len=74) "https://web.archive.org/web/20110907125413/http://www.slate.com/id/2223095",
+      (string) (len=4) "date": (string) (len=13) "July 20, 2009",
+      (string) (len=8) "magazine": (string) (len=26) "[[Slate (magazine)|Slate]]",
+      (string) (len=5) "title": (string) (len=72) "Beyond BMI: Why doctors won't stop using an outdated measure for obesity",
+      (string) (len=3) "url": (string) (len=32) "http://www.slate.com/id/2223095/",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=8) "vauthors": (string) (len=13) "Singer-Vine J"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=189) "Singer-Vine J (July 20, 2009). \"Beyond BMI: Why doctors won't stop using an outdated measure for obesity\". Slate. Archived from the original on 7 September 2011. Retrieved 15 December 2013.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=32) "http://www.slate.com/id/2223095/",
+          Text: (string) (len=74) "\"Beyond BMI: Why doctors won't stop using an outdated measure for obesity\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Slate_(magazine)",
+          Text: (string) (len=5) "Slate",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=74) "https://web.archive.org/web/20110907125413/http://www.slate.com/id/2223095",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=4) "date": (string) (len=9) "July 1972",
+      (string) (len=3) "doi": (string) (len=28) "10.1016/0021-9681(72)90027-6",
+      (string) (len=5) "issue": (string) (len=1) "6",
+      (string) (len=7) "journal": (string) (len=27) "Journal of Chronic Diseases",
+      (string) (len=5) "pages": (string) (len=9) "329–343",
+      (string) (len=4) "pmid": (string) (len=7) "4650929",
+      (string) (len=5) "title": (string) (len=38) "Indices of relative weight and obesity",
+      (string) (len=8) "vauthors": (string) (len=51) "Keys A, Fidanza F, Karvonen MJ, Kimura N, Taylor HL",
+      (string) (len=6) "volume": (string) (len=2) "25"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=203) "Keys A, Fidanza F, Karvonen MJ, Kimura N, Taylor HL (July 1972). \"Indices of relative weight and obesity\". Journal of Chronic Diseases. 25 (6): 329–343. doi:10.1016/0021-9681(72)90027-6. PMID\u00a04650929.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://doi.org/10.1016%2F0021-9681%2872%2990027-6",
+          Text: (string) (len=28) "10.1016/0021-9681(72)90027-6",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=39) "https://pubmed.ncbi.nlm.nih.gov/4650929",
+          Text: (string) (len=7) "4650929",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-11",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=16) "19 December 2014",
+      (string) (len=12) "archive-date": (string) (len=16) "19 December 2014",
+      (string) (len=11) "archive-url": (string) (len=103) "https://web.archive.org/web/20141219195703/http://www.nhlbi.nih.gov/health/educational/lose_wt/risk.htm",
+      (string) (len=9) "publisher": (string) (len=40) "National Heart, Lung and Blood Institute",
+      (string) (len=5) "title": (string) (len=37) "Assessing Your Weight and Health Risk",
+      (string) (len=3) "url": (string) (len=60) "http://www.nhlbi.nih.gov/health/educational/lose_wt/risk.htm",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=158) "\"Assessing Your Weight and Health Risk\". National Heart, Lung and Blood Institute. Archived from the original on 19 December 2014. Retrieved 19 December 2014.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=60) "http://www.nhlbi.nih.gov/health/educational/lose_wt/risk.htm",
+          Text: (string) (len=39) "\"Assessing Your Weight and Health Risk\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=103) "https://web.archive.org/web/20141219195703/http://www.nhlbi.nih.gov/health/educational/lose_wt/risk.htm",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-12",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=16) "19 December 2014",
+      (string) (len=12) "archive-date": (string) (len=16) "18 December 2014",
+      (string) (len=11) "archive-url": (string) (len=103) "https://web.archive.org/web/20141218121754/http://www.nhs.uk/Conditions/Obesity/Pages/Introduction.aspx",
+      (string) (len=9) "publisher": (string) (len=31) "[[National Health Service|NHS]]",
+      (string) (len=5) "title": (string) (len=16) "Defining obesity",
+      (string) (len=3) "url": (string) (len=60) "http://www.nhs.uk/Conditions/Obesity/Pages/Introduction.aspx",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=100) "\"Defining obesity\". NHS. Archived from the original on 18 December 2014. Retrieved 19 December 2014.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=60) "http://www.nhs.uk/Conditions/Obesity/Pages/Introduction.aspx",
+          Text: (string) (len=18) "\"Defining obesity\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=53) "https://en.wikipedia.org/wiki/National_Health_Service",
+          Text: (string) (len=3) "NHS",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=103) "https://web.archive.org/web/20141218121754/http://www.nhs.uk/Conditions/Obesity/Pages/Introduction.aspx",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-13",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=12) {
+      (string) (len=12) "archive-date": (string) (len=10) "2007-02-10",
+      (string) (len=11) "archive-url": (string) (len=87) "https://web.archive.org/web/20070210134151/http://whqlibdoc.who.int/trs/WHO_TRS_854.pdf",
+      (string) (len=5) "issue": (string) (len=3) "854",
+      (string) (len=7) "journal": (string) (len=49) "World Health Organization Technical Report Series",
+      (string) (len=5) "pages": (string) (len=7) "1–452",
+      (string) (len=4) "pmid": (string) (len=7) "8594834",
+      (string) (len=5) "title": (string) (len=94) "Physical status: the use and interpretation of anthropometry. Report of a WHO Expert Committee",
+      (string) (len=3) "url": (string) (len=128) "<!-- derived from:http://www.who.int/childgrowth/publications/physical_status/en/-->http://whqlibdoc.who.int/trs/WHO_TRS_854.pdf",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=8) "vauthors": (string) (len=35) "<!--Staff writer(s); no by-line.-->",
+      (string) (len=6) "volume": (string) (len=3) "854",
+      (string) (len=4) "year": (string) (len=4) "1995"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=243) "\"Physical status: the use and interpretation of anthropometry. Report of a WHO Expert Committee\" (PDF). World Health Organization Technical Report Series. 854 (854): 1–452. 1995. PMID\u00a08594834. Archived (PDF) from the original on 2007-02-10.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=44) "http://whqlibdoc.who.int/trs/WHO_TRS_854.pdf",
+          Text: (string) (len=96) "\"Physical status: the use and interpretation of anthropometry. Report of a WHO Expert Committee\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=39) "https://pubmed.ncbi.nlm.nih.gov/8594834",
+          Text: (string) (len=7) "8594834",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=87) "https://web.archive.org/web/20070210134151/http://whqlibdoc.who.int/trs/WHO_TRS_854.pdf",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-14",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2018-01-26",
+      (string) (len=4) "date": (string) (len=10) "2017-08-29",
+      (string) (len=8) "language": (string) (len=5) "en-us",
+      (string) (len=5) "title": (string) (len=36) "About Adult BMI {{!}} Healthy Weight",
+      (string) (len=3) "url": (string) (len=68) "https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html",
+      (string) (len=7) "website": (string) (len=3) "CDC"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=74) "\"About Adult BMI | Healthy Weight\". CDC. 2017-08-29. Retrieved 2018-01-26.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=68) "https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html",
+          Text: (string) (len=34) "\"About Adult BMI | Healthy Weight\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-15",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=45) "World Health Organization 2005, pp.\u00a021–22.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=82) "https://en.wikipedia.org/wiki/Body_mass_index#CITEREFWorld_Health_Organization2005",
+          Text: (string) (len=30) "World Health Organization 2005",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)({
+      Value: (string) (len=168) "The SuRF Report 2 (PDF). The Surveillance of Risk Factors Report Series (SuRF). World Health Organization. 2005. p.\u00a022. Archived (PDF) from the original on 2022-10-09.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=73) "https://apps.who.int/iris/bitstream/handle/10665/43190/9241593024_eng.pdf",
+          Text: (string) (len=17) "The SuRF Report 2",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=115) "https://ghostarchive.org/archive/20221009/https://apps.who.int/iris/bitstream/handle/10665/43190/9241593024_eng.pdf",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-17",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=10) "2013-12-16",
+      (string) (len=12) "archive-date": (string) (len=10) "2013-10-29",
+      (string) (len=11) "archive-url": (string) (len=140) "https://web.archive.org/web/20131029061522/http://www.cdc.gov/nccdphp/dnpa/healthyweight/assessing/bmi/childrens_BMI/about_childrens_BMI.htm",
+      (string) (len=9) "publisher": (string) (len=26) "Center for Disease Control",
+      (string) (len=5) "title": (string) (len=43) "Body Mass Index: BMI for Children and Teens",
+      (string) (len=3) "url": (string) (len=98) "https://www.cdc.gov/nccdphp/dnpa/healthyweight/assessing/bmi/childrens_BMI/about_childrens_BMI.htm",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=138) "\"Body Mass Index: BMI for Children and Teens\". Center for Disease Control. Archived from the original on 2013-10-29. Retrieved 2013-12-16.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=98) "https://www.cdc.gov/nccdphp/dnpa/healthyweight/assessing/bmi/childrens_BMI/about_childrens_BMI.htm",
+          Text: (string) (len=45) "\"Body Mass Index: BMI for Children and Teens\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=140) "https://web.archive.org/web/20131029061522/http://www.cdc.gov/nccdphp/dnpa/healthyweight/assessing/bmi/childrens_BMI/about_childrens_BMI.htm",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-18",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=7) "chapter": (string) (len=59) "Chapter 2: Use of Percentiles and Z-Scores in Anthropometry",
+      (string) (len=4) "isbn": (string) (len=17) "978-1-4419-1787-4",
+      (string) (len=8) "location": (string) (len=8) "New York",
+      (string) (len=5) "pages": (string) (len=2) "29",
+      (string) (len=9) "publisher": (string) (len=8) "Springer",
+      (string) (len=5) "title": (string) (len=25) "Handbook of Anthropometry",
+      (string) (len=8) "vauthors": (string) (len=6) "Wang Y",
+      (string) (len=4) "year": (string) (len=4) "2012"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=157) "Wang Y (2012). \"Chapter 2: Use of Percentiles and Z-Scores in Anthropometry\". Handbook of Anthropometry. New York: Springer. p.\u00a029. ISBN\u00a0978-1-4419-1787-4.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-1-4419-1787-4",
+          Text: (string) (len=17) "978-1-4419-1787-4",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-19",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=16) "16 December 2013",
+      (string) (len=12) "archive-date": (string) (len=10) "2012-06-25",
+      (string) (len=11) "archive-url": (string) (len=125) "https://web.archive.org/web/20120625003857/http://www.archive2.official-documents.co.uk/document/deps/doh/survey02/summ03.htm",
+      (string) (len=5) "title": (string) (len=66) "Health Survey for England: The Health of Children and Young People",
+      (string) (len=3) "url": (string) (len=82) "http://www.archive2.official-documents.co.uk/document/deps/doh/survey02/summ03.htm",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=7) "website": (string) (len=33) "Archive2.official-documents.co.uk"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=174) "\"Health Survey for England: The Health of Children and Young People\". Archive2.official-documents.co.uk. Archived from the original on 2012-06-25. Retrieved 16 December 2013.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=125) "https://web.archive.org/web/20120625003857/http://www.archive2.official-documents.co.uk/document/deps/doh/survey02/summ03.htm",
+          Text: (string) (len=68) "\"Health Survey for England: The Health of Children and Young People\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=82) "http://www.archive2.official-documents.co.uk/document/deps/doh/survey02/summ03.htm",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-20",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=3) "doi": (string) (len=24) "10.4103/1596-4078.182319",
+      (string) (len=10) "doi-access": (string) (len=4) "free",
+      (string) (len=15) "doi-broken-date": (string) (len=15) "1 November 2024",
+      (string) (len=5) "issue": (string) (len=9) "15:71–4",
+      (string) (len=7) "journal": (string) (len=18) "Niger J Health Sci",
+      (string) (len=4) "page": (string) (len=2) "71",
+      (string) (len=5) "s2cid": (string) (len=9) "132117809",
+      (string) (len=5) "title": (string) (len=84) "Challenges of body mass index classification: New criteria for young adult Nigerians",
+      (string) (len=8) "vauthors": (string) (len=32) "Ogunlade O, Adalumo OA, Asafa MA",
+      (string) (len=6) "volume": (string) (len=2) "15",
+      (string) (len=4) "year": (string) (len=4) "2015"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=312) "Ogunlade O, Adalumo OA, Asafa MA (2015). \"Challenges of body mass index classification: New criteria for young adult Nigerians\". Niger J Health Sci. 15 (15:71–4): 71. doi:10.4103/1596-4078.182319 (inactive 1 November 2024). S2CID\u00a0132117809.{{cite journal}}:  CS1 maint: DOI inactive as of November 2024 (link)",
+      Links: ([]*parser.Link) (len=6) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://doi.org/10.4103%2F1596-4078.182319",
+          Text: (string) (len=24) "10.4103/1596-4078.182319",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/S2CID_(identifier)",
+          Text: (string) (len=5) "S2CID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://api.semanticscholar.org/CorpusID:132117809",
+          Text: (string) (len=9) "132117809",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=51) "https://en.wikipedia.org/wiki/Template:Cite_journal",
+          Text: (string) (len=12) "cite journal",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=82) "https://en.wikipedia.org/wiki/Category:CS1_maint:_DOI_inactive_as_of_November_2024",
+          Text: (string) (len=4) "link",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-21",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=7) "author1": (string) (len=23) "WHO Expert Consultation",
+      (string) (len=4) "date": (string) (len=12) "January 2004",
+      (string) (len=3) "doi": (string) (len=29) "10.1016/S0140-6736(03)15268-3",
+      (string) (len=5) "issue": (string) (len=4) "9403",
+      (string) (len=7) "journal": (string) (len=6) "Lancet",
+      (string) (len=5) "pages": (string) (len=9) "157–163",
+      (string) (len=4) "pmid": (string) (len=8) "14726171",
+      (string) (len=5) "s2cid": (string) (len=8) "15637224",
+      (string) (len=5) "title": (string) (len=109) "Appropriate body-mass index for Asian populations and its implications for policy and intervention strategies",
+      (string) (len=6) "volume": (string) (len=3) "363"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=251) "WHO Expert Consultation (January 2004). \"Appropriate body-mass index for Asian populations and its implications for policy and intervention strategies\". Lancet. 363 (9403): 157–163. doi:10.1016/S0140-6736(03)15268-3. PMID\u00a014726171. S2CID\u00a015637224.",
+      Links: ([]*parser.Link) (len=6) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=51) "https://doi.org/10.1016%2FS0140-6736%2803%2915268-3",
+          Text: (string) (len=29) "10.1016/S0140-6736(03)15268-3",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/14726171",
+          Text: (string) (len=8) "14726171",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/S2CID_(identifier)",
+          Text: (string) (len=5) "S2CID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://api.semanticscholar.org/CorpusID:15637224",
+          Text: (string) (len=8) "15637224",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-22",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-04-21",
+      (string) (len=12) "archive-date": (string) (len=10) "2021-03-08",
+      (string) (len=11) "archive-url": (string) (len=103) "https://web.archive.org/web/20210308091202/https://www.fitnessofbody.com/2019/04/body-weight-chart.html",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=9) "publisher": (string) (len=42) "Fitness of Body – Health & Wellness site",
+      (string) (len=5) "title": (string) (len=45) "Body weight chart – ideal goal weight chart",
+      (string) (len=3) "url": (string) (len=60) "https://www.fitnessofbody.com/2019/04/body-weight-chart.html",
+      (string) (len=10) "url-status": (string) (len=4) "dead"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=156) "\"Body weight chart – ideal goal weight chart\". Fitness of Body – Health & Wellness site. Archived from the original on 2021-03-08. Retrieved 2019-04-21.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=103) "https://web.archive.org/web/20210308091202/https://www.fitnessofbody.com/2019/04/body-weight-chart.html",
+          Text: (string) (len=47) "\"Body weight chart – ideal goal weight chart\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://www.fitnessofbody.com/2019/04/body-weight-chart.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-23",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=11) "access-date": (string) (len=10) "2013-05-25",
+      (string) (len=12) "archive-date": (string) (len=10) "2013-06-28",
+      (string) (len=11) "archive-url": (string) (len=111) "https://web.archive.org/web/20130628232937/http://www.mhlw.go.jp/topics/bukyoku/kenkou/seikatu/himan/about.html",
+      (string) (len=8) "language": (string) (len=2) "ja",
+      (string) (len=9) "publisher": (string) (len=59) "Ministry of Health, Labor and Welfare<!--厚生労働省-->",
+      (string) (len=5) "title": (string) (len=49) "{{as written|肥満って、 どんな状態？}}",
+      (string) (len=11) "trans-title": (string) (len=36) "What is obesity, what kind of state?",
+      (string) (len=3) "url": (string) (len=68) "http://www.mhlw.go.jp/topics/bukyoku/kenkou/seikatu/himan/about.html",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=4) "work": (string) (len=47) "Obesity Homepage<!--肥満ホームページ-->"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=211) "\"肥満って、 どんな状態？\" [What is obesity, what kind of state?]. Obesity Homepage (in Japanese). Ministry of Health, Labor and Welfare. Archived from the original on 2013-06-28. Retrieved 2013-05-25.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=111) "https://web.archive.org/web/20130628232937/http://www.mhlw.go.jp/topics/bukyoku/kenkou/seikatu/himan/about.html",
+          Text: (string) (len=36) "\"肥満って、 どんな状態？\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=68) "http://www.mhlw.go.jp/topics/bukyoku/kenkou/seikatu/himan/about.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-24",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=4) "date": (string) (len=12) "January 2004",
+      (string) (len=3) "doi": (string) (len=22) "10.1038/sj.ijo.0802486",
+      (string) (len=10) "doi-access": (string) "",
+      (string) (len=5) "issue": (string) (len=1) "1",
+      (string) (len=7) "journal": (string) (len=64) "International Journal of Obesity and Related Metabolic Disorders",
+      (string) (len=5) "pages": (string) (len=9) "152–158",
+      (string) (len=4) "pmid": (string) (len=8) "14557832",
+      (string) (len=5) "s2cid": (string) (len=6) "287574",
+      (string) (len=5) "title": (string) (len=149) "Overweight Japanese with body mass indexes of 23.0–24.9 have higher risks for obesity-associated disorders: a comparison of Japanese and Mongolians",
+      (string) (len=8) "vauthors": (string) (len=85) "Shiwaku K, Anuurad E, Enkhmaa B, Nogi A, Kitajima K, Shimono K, Yamane Y, Oyunsuren T",
+      (string) (len=6) "volume": (string) (len=2) "28"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=384) "Shiwaku K, Anuurad E, Enkhmaa B, Nogi A, Kitajima K, Shimono K, et\u00a0al. (January 2004). \"Overweight Japanese with body mass indexes of 23.0–24.9 have higher risks for obesity-associated disorders: a comparison of Japanese and Mongolians\". International Journal of Obesity and Related Metabolic Disorders. 28 (1): 152–158. doi:10.1038/sj.ijo.0802486. PMID\u00a014557832. S2CID\u00a0287574.",
+      Links: ([]*parser.Link) (len=6) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://doi.org/10.1038%2Fsj.ijo.0802486",
+          Text: (string) (len=22) "10.1038/sj.ijo.0802486",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/14557832",
+          Text: (string) (len=8) "14557832",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/S2CID_(identifier)",
+          Text: (string) (len=5) "S2CID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://api.semanticscholar.org/CorpusID:287574",
+          Text: (string) (len=6) "287574",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-25",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=4) "date": (string) (len=13) "December 2002",
+      (string) (len=3) "doi": (string) (len=30) "10.1046/j.1440-6047.11.s8.19.x",
+      (string) (len=7) "journal": (string) (len=42) "Asia Pacific Journal of Clinical Nutrition",
+      (string) (len=5) "pages": (string) (len=6) "S732-7",
+      (string) (len=5) "title": (string) (len=65) "Criteria and classification of obesity in Japan and Asia-Oceania.",
+      (string) (len=3) "url": (string) (len=53) "https://apjcn.nhri.org.tw/server/APJCN/11/s7/S732.pdf",
+      (string) (len=8) "vauthors": (string) (len=59) "Kanazawa M, Yoshiike N, Osaka T, Numba Y, Zimmet P, Inoue S",
+      (string) (len=6) "volume": (string) (len=2) "11"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=250) "Kanazawa M, Yoshiike N, Osaka T, Numba Y, Zimmet P, Inoue S (December 2002). \"Criteria and classification of obesity in Japan and Asia-Oceania\" (PDF). Asia Pacific Journal of Clinical Nutrition. 11: S732-7. doi:10.1046/j.1440-6047.11.s8.19.x.:\u200aS734",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=53) "https://apjcn.nhri.org.tw/server/APJCN/11/s7/S732.pdf",
+          Text: (string) (len=66) "\"Criteria and classification of obesity in Japan and Asia-Oceania\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://doi.org/10.1046%2Fj.1440-6047.11.s8.19.x",
+          Text: (string) (len=30) "10.1046/j.1440-6047.11.s8.19.x",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-26",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=11) "8 July 2021",
+      (string) (len=5) "title": (string) (len=21) "Body Mass Index (BMI)",
+      (string) (len=3) "url": (string) (len=45) "http://cardiology.com.sg/body-mass-index-bmi/",
+      (string) (len=7) "website": (string) (len=27) "Peter Yan Cardiology Clinic"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=76) "\"Body Mass Index (BMI)\". Peter Yan Cardiology Clinic. Retrieved 8 July 2021.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=45) "http://cardiology.com.sg/body-mass-index-bmi/",
+          Text: (string) (len=23) "\"Body Mass Index (BMI)\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-27",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=4) "date": (string) (len=10) "2022-07-26",
+      (string) (len=3) "doi": (string) (len=26) "10.3310/nihrevidence_52026",
+      (string) (len=7) "journal": (string) (len=13) "NIHR Evidence",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=9) "publisher": (string) (len=47) "National Institute for Health and Care Research",
+      (string) (len=5) "s2cid": (string) (len=9) "251299176",
+      (string) (len=5) "title": (string) (len=49) "Diabetes: putting people at the heart of services",
+      (string) (len=4) "type": (string) (len=21) "Plain English summary",
+      (string) (len=3) "url": (string) (len=88) "https://evidence.nihr.ac.uk/collection/diabetes-putting-people-at-the-heart-of-services/"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=202) "\"Diabetes: putting people at the heart of services\". NIHR Evidence (Plain English summary). National Institute for Health and Care Research. 2022-07-26. doi:10.3310/nihrevidence_52026. S2CID\u00a0251299176.",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=88) "https://evidence.nihr.ac.uk/collection/diabetes-putting-people-at-the-heart-of-services/",
+          Text: (string) (len=51) "\"Diabetes: putting people at the heart of services\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=44) "https://doi.org/10.3310%2Fnihrevidence_52026",
+          Text: (string) (len=26) "10.3310/nihrevidence_52026",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/S2CID_(identifier)",
+          Text: (string) (len=5) "S2CID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://api.semanticscholar.org/CorpusID:251299176",
+          Text: (string) (len=9) "251299176",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-28",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=4) "date": (string) (len=10) "2022-03-10",
+      (string) (len=3) "doi": (string) (len=19) "10.3310/alert_48878",
+      (string) (len=7) "journal": (string) (len=13) "NIHR Evidence",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=9) "publisher": (string) (len=47) "National Institute for Health and Care Research",
+      (string) (len=5) "s2cid": (string) (len=9) "247390548",
+      (string) (len=5) "title": (string) (len=108) "Are you at risk of diabetes? Research finds prevention should start at a different BMI for each ethnic group",
+      (string) (len=4) "type": (string) (len=21) "Plain English summary",
+      (string) (len=3) "url": (string) (len=106) "https://evidence.nihr.ac.uk/alert/diabetes-prevention-should-start-at-different-bmi-for-each-ethnic-group/"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=254) "\"Are you at risk of diabetes? Research finds prevention should start at a different BMI for each ethnic group\". NIHR Evidence (Plain English summary). National Institute for Health and Care Research. 2022-03-10. doi:10.3310/alert_48878. S2CID\u00a0247390548.",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=106) "https://evidence.nihr.ac.uk/alert/diabetes-prevention-should-start-at-different-bmi-for-each-ethnic-group/",
+          Text: (string) (len=110) "\"Are you at risk of diabetes? Research finds prevention should start at a different BMI for each ethnic group\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=37) "https://doi.org/10.3310%2Falert_48878",
+          Text: (string) (len=19) "10.3310/alert_48878",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/S2CID_(identifier)",
+          Text: (string) (len=5) "S2CID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://api.semanticscholar.org/CorpusID:247390548",
+          Text: (string) (len=9) "247390548",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-29",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "date": (string) (len=9) "July 2021",
+      (string) (len=3) "doi": (string) (len=29) "10.1016/S2213-8587(21)00088-7",
+      (string) (len=5) "issue": (string) (len=1) "7",
+      (string) (len=7) "journal": (string) (len=36) "The Lancet. Diabetes & Endocrinology",
+      (string) (len=5) "pages": (string) (len=9) "419–426",
+      (string) (len=3) "pmc": (string) (len=7) "8208895",
+      (string) (len=4) "pmid": (string) (len=8) "33989535",
+      (string) (len=5) "title": (string) (len=116) "Ethnicity-specific BMI cutoffs for obesity based on type 2 diabetes risk in England: a population-based cohort study",
+      (string) (len=8) "vauthors": (string) (len=91) "Caleyachetty R, Barber TM, Mohammed NI, Cappuccio FP, Hardy R, Mathur R, Banerjee A, Gill P",
+      (string) (len=6) "volume": (string) (len=1) "9"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=334) "Caleyachetty R, Barber TM, Mohammed NI, Cappuccio FP, Hardy R, Mathur R, et\u00a0al. (July 2021). \"Ethnicity-specific BMI cutoffs for obesity based on type 2 diabetes risk in England: a population-based cohort study\". The Lancet. Diabetes & Endocrinology. 9 (7): 419–426. doi:10.1016/S2213-8587(21)00088-7. PMC\u00a08208895. PMID\u00a033989535.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8208895",
+          Text: (string) (len=118) "\"Ethnicity-specific BMI cutoffs for obesity based on type 2 diabetes risk in England: a population-based cohort study\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=51) "https://doi.org/10.1016%2FS2213-8587%2821%2900088-7",
+          Text: (string) (len=29) "10.1016/S2213-8587(21)00088-7",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8208895",
+          Text: (string) (len=7) "8208895",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/33989535",
+          Text: (string) (len=8) "33989535",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-30",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=10) "2010-04-26",
+      (string) (len=12) "archive-date": (string) (len=17) "November 22, 2010",
+      (string) (len=11) "archive-url": (string) (len=95) "https://web.archive.org/web/20101122173108/http://www.cnn.com/HEALTH/9806/17/weight.guidelines/",
+      (string) (len=4) "date": (string) (len=13) "June 17, 1998",
+      (string) (len=9) "publisher": (string) (len=3) "CNN",
+      (string) (len=5) "title": (string) (len=33) "Who's fat? New definition adopted",
+      (string) (len=3) "url": (string) (len=52) "http://www.cnn.com/HEALTH/9806/17/weight.guidelines/",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=127) "\"Who's fat? New definition adopted\". CNN. June 17, 1998. Archived from the original on November 22, 2010. Retrieved 2010-04-26.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=52) "http://www.cnn.com/HEALTH/9806/17/weight.guidelines/",
+          Text: (string) (len=35) "\"Who's fat? New definition adopted\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=95) "https://web.archive.org/web/20101122173108/http://www.cnn.com/HEALTH/9806/17/weight.guidelines/",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-31",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=4) "date": (string) (len=10) "2015-04-07",
+      (string) (len=3) "doi": (string) (len=27) "10.1097/NT.0000000000000092",
+      (string) (len=5) "first": (string) (len=8) "Frank Q.",
+      (string) (len=5) "issue": (string) (len=1) "3",
+      (string) (len=7) "journal": (string) (len=15) "Nutrition Today",
+      (string) (len=4) "last": (string) (len=7) "Nuttall",
+      (string) (len=5) "pages": (string) (len=9) "117–128",
+      (string) (len=3) "pmc": (string) (len=7) "4890841",
+      (string) (len=4) "pmid": (string) (len=8) "27340299",
+      (string) (len=5) "title": (string) (len=63) "Body Mass Index – Obesity, BMI, and Health: A Critical Review",
+      (string) (len=6) "volume": (string) (len=2) "50"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=190) "Nuttall FQ (2015-04-07). \"Body Mass Index – Obesity, BMI, and Health: A Critical Review\". Nutrition Today. 50 (3): 117–128. doi:10.1097/NT.0000000000000092. PMC\u00a04890841. PMID\u00a027340299.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4890841",
+          Text: (string) (len=65) "\"Body Mass Index – Obesity, BMI, and Health: A Critical Review\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://doi.org/10.1097%2FNT.0000000000000092",
+          Text: (string) (len=27) "10.1097/NT.0000000000000092",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4890841",
+          Text: (string) (len=7) "4890841",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/27340299",
+          Text: (string) (len=8) "27340299",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-32",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=14) {
+      (string) (len=12) "archive-date": (string) (len=17) "December 10, 2006",
+      (string) (len=11) "archive-url": (string) (len=108) "https://web.archive.org/web/20061210180811/http://www.who.int/nutrition/publications/bmi_asia_strategies.pdf",
+      (string) (len=4) "date": (string) (len=16) "January 10, 2004",
+      (string) (len=3) "doi": (string) (len=29) "10.1016/s0140-6736(03)15268-3",
+      (string) (len=5) "issue": (string) (len=4) "9403",
+      (string) (len=7) "journal": (string) (len=10) "The Lancet",
+      (string) (len=4) "last": (string) (len=25) "World Health Organization",
+      (string) (len=5) "pages": (string) (len=9) "157–163",
+      (string) (len=4) "pmid": (string) (len=8) "14726171",
+      (string) (len=5) "s2cid": (string) (len=8) "15637224",
+      (string) (len=5) "title": (string) (len=109) "Appropriate body-mass index for Asian populations and its implications for policy and intervention strategies",
+      (string) (len=3) "url": (string) (len=66) "https://www.who.int/nutrition/publications/bmi_asia_strategies.pdf",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=6) "volume": (string) (len=3) "363"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=322) "World Health Organization (January 10, 2004). \"Appropriate body-mass index for Asian populations and its implications for policy and intervention strategies\" (PDF). The Lancet. 363 (9403): 157–163. doi:10.1016/s0140-6736(03)15268-3. PMID\u00a014726171. S2CID\u00a015637224. Archived from the original (PDF) on December 10, 2006.",
+      Links: ([]*parser.Link) (len=8) {
+        (*parser.Link)({
+          URL: (string) (len=108) "https://web.archive.org/web/20061210180811/http://www.who.int/nutrition/publications/bmi_asia_strategies.pdf",
+          Text: (string) (len=111) "\"Appropriate body-mass index for Asian populations and its implications for policy and intervention strategies\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=51) "https://doi.org/10.1016%2Fs0140-6736%2803%2915268-3",
+          Text: (string) (len=29) "10.1016/s0140-6736(03)15268-3",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/14726171",
+          Text: (string) (len=8) "14726171",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/S2CID_(identifier)",
+          Text: (string) (len=5) "S2CID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://api.semanticscholar.org/CorpusID:15637224",
+          Text: (string) (len=8) "15637224",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=66) "https://www.who.int/nutrition/publications/bmi_asia_strategies.pdf",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-33",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=4) "date": (string) (len=9) "June 2016",
+      (string) (len=3) "doi": (string) (len=22) "10.1001/jama.2016.6458",
+      (string) (len=10) "doi-access": (string) (len=4) "free",
+      (string) (len=5) "issue": (string) (len=2) "21",
+      (string) (len=7) "journal": (string) (len=4) "JAMA",
+      (string) (len=5) "pages": (string) (len=11) "2284–2291",
+      (string) (len=3) "pmc": (string) (len=8) "11197437",
+      (string) (len=4) "pmid": (string) (len=8) "27272580",
+      (string) (len=5) "title": (string) (len=65) "Trends in Obesity Among Adults in the United States, 2005 to 2014",
+      (string) (len=8) "vauthors": (string) (len=58) "Flegal KM, Kruszon-Moran D, Carroll MD, Fryar CD, Ogden CL",
+      (string) (len=6) "volume": (string) (len=3) "315"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=228) "Flegal KM, Kruszon-Moran D, Carroll MD, Fryar CD, Ogden CL (June 2016). \"Trends in Obesity Among Adults in the United States, 2005 to 2014\". JAMA. 315 (21): 2284–2291. doi:10.1001/jama.2016.6458. PMC\u00a011197437. PMID\u00a027272580.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=53) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11197437",
+          Text: (string) (len=67) "\"Trends in Obesity Among Adults in the United States, 2005 to 2014\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://doi.org/10.1001%2Fjama.2016.6458",
+          Text: (string) (len=22) "10.1001/jama.2016.6458",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=53) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11197437",
+          Text: (string) (len=8) "11197437",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/27272580",
+          Text: (string) (len=8) "27272580",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-34",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=12) "archive-date": (string) (len=10) "2022-10-09",
+      (string) (len=11) "archive-url": (string) (len=88) "https://ghostarchive.org/archive/20221009/https://www.cdc.gov/nchs/data/hus/2018/021.pdf",
+      (string) (len=5) "title": (string) (len=86) "Selected health conditions and risk factors, by age: the United States, selected years",
+      (string) (len=3) "url": (string) (len=46) "https://www.cdc.gov/nchs/data/hus/2018/021.pdf",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=143) "\"Selected health conditions and risk factors, by age: the United States, selected years\" (PDF). Archived (PDF) from the original on 2022-10-09.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://www.cdc.gov/nchs/data/hus/2018/021.pdf",
+          Text: (string) (len=88) "\"Selected health conditions and risk factors, by age: the United States, selected years\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=88) "https://ghostarchive.org/archive/20221009/https://www.cdc.gov/nchs/data/hus/2018/021.pdf",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-35",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=12) "archive-date": (string) (len=10) "2017-02-02",
+      (string) (len=11) "archive-url": (string) (len=98) "https://web.archive.org/web/20170202010330/https://www.cdc.gov/nchs/data/series/sr_03/sr03_039.pdf",
+      (string) (len=4) "date": (string) (len=4) "2016",
+      (string) (len=9) "publisher": (string) (len=55) "[[Centers for Disease Control and Prevention|CDC DHHS]]",
+      (string) (len=5) "title": (string) (len=68) "Anthropometric Reference Data for Children and Adults: United States",
+      (string) (len=3) "url": (string) (len=55) "https://www.cdc.gov/nchs/data/series/sr_03/sr03_039.pdf",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=141) "\"Anthropometric Reference Data for Children and Adults: United States\" (PDF). CDC DHHS. 2016. Archived (PDF) from the original on 2017-02-02.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=55) "https://www.cdc.gov/nchs/data/series/sr_03/sr03_039.pdf",
+          Text: (string) (len=70) "\"Anthropometric Reference Data for Children and Adults: United States\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=72) "https://en.wikipedia.org/wiki/Centers_for_Disease_Control_and_Prevention",
+          Text: (string) (len=8) "CDC DHHS",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=98) "https://web.archive.org/web/20170202010330/https://www.cdc.gov/nchs/data/series/sr_03/sr03_039.pdf",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-36",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=12) "archive-date": (string) (len=10) "2013-01-03",
+      (string) (len=11) "archive-url": (string) (len=99) "https://web.archive.org/web/20130103083355/http://www.nhlbi.nih.gov/guidelines/obesity/ob_gdlns.htm",
+      (string) (len=7) "chapter": (string) (len=17) "Executive Summary",
+      (string) (len=11) "chapter-url": (string) (len=43) "https://www.ncbi.nlm.nih.gov/books/NBK2008/",
+      (string) (len=4) "date": (string) (len=14) "September 1998",
+      (string) (len=5) "no-pp": (string) (len=1) "y",
+      (string) (len=5) "pages": (string) (len=8) "xi–xxx",
+      (string) (len=9) "publisher": (string) (len=45) "[[National Heart, Lung, and Blood Institute]]",
+      (string) (len=5) "title": (string) (len=125) "Clinical Guidelines on the Identification, Evaluation, and Treatment of Overweight and Obesity in Adults: The Evidence Report",
+      (string) (len=3) "url": (string) (len=56) "http://www.nhlbi.nih.gov/guidelines/obesity/ob_gdlns.htm",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=258) "\"Executive Summary\". Clinical Guidelines on the Identification, Evaluation, and Treatment of Overweight and Obesity in Adults: The Evidence Report. National Heart, Lung, and Blood Institute. September 1998. xi–xxx. Archived from the original on 2013-01-03.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=43) "https://www.ncbi.nlm.nih.gov/books/NBK2008/",
+          Text: (string) (len=19) "\"Executive Summary\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=56) "http://www.nhlbi.nih.gov/guidelines/obesity/ob_gdlns.htm",
+          Text: (string) (len=125) "Clinical Guidelines on the Identification, Evaluation, and Treatment of Overweight and Obesity in Adults: The Evidence Report",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=71) "https://en.wikipedia.org/wiki/National_Heart,_Lung,_and_Blood_Institute",
+          Text: (string) (len=41) "National Heart, Lung, and Blood Institute",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=99) "https://web.archive.org/web/20130103083355/http://www.nhlbi.nih.gov/guidelines/obesity/ob_gdlns.htm",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-37",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=4) "date": (string) (len=11) "August 2014",
+      (string) (len=3) "doi": (string) (len=29) "10.1016/S0140-6736(14)60892-8",
+      (string) (len=5) "issue": (string) (len=4) "9945",
+      (string) (len=7) "journal": (string) (len=6) "Lancet",
+      (string) (len=5) "pages": (string) (len=9) "755–765",
+      (string) (len=3) "pmc": (string) (len=7) "4151483",
+      (string) (len=4) "pmid": (string) (len=8) "25129328",
+      (string) (len=5) "title": (string) (len=107) "Body-mass index and risk of 22 specific cancers: a population-based cohort study of 5·24 million UK adults",
+      (string) (len=3) "url": (string) "",
+      (string) (len=8) "vauthors": (string) (len=71) "Bhaskaran K, Douglas I, Forbes H, dos-Santos-Silva I, Leon DA, Smeeth L",
+      (string) (len=6) "volume": (string) (len=3) "384"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=293) "Bhaskaran K, Douglas I, Forbes H, dos-Santos-Silva I, Leon DA, Smeeth L (August 2014). \"Body-mass index and risk of 22 specific cancers: a population-based cohort study of 5·24 million UK adults\". Lancet. 384 (9945): 755–765. doi:10.1016/S0140-6736(14)60892-8. PMC\u00a04151483. PMID\u00a025129328.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4151483",
+          Text: (string) (len=109) "\"Body-mass index and risk of 22 specific cancers: a population-based cohort study of 5·24 million UK adults\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=51) "https://doi.org/10.1016%2FS0140-6736%2814%2960892-8",
+          Text: (string) (len=29) "10.1016/S0140-6736(14)60892-8",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4151483",
+          Text: (string) (len=7) "4151483",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/25129328",
+          Text: (string) (len=8) "25129328",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-38",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=3) "doi": (string) (len=23) "10.1186/1471-2253-14-70",
+      (string) (len=10) "doi-access": (string) (len=4) "free",
+      (string) (len=7) "journal": (string) (len=18) "BMC Anesthesiology",
+      (string) (len=5) "pages": (string) (len=2) "70",
+      (string) (len=3) "pmc": (string) (len=7) "4145583",
+      (string) (len=4) "pmid": (string) (len=8) "25183952",
+      (string) (len=5) "title": (string) (len=118) "Multiple epidural steroid injections and body mass index linked with occurrence of epidural lipomatosis: a case series",
+      (string) (len=8) "vauthors": (string) (len=18) "Jaimes R, Rocco AG",
+      (string) (len=6) "volume": (string) (len=2) "14",
+      (string) (len=4) "year": (string) (len=4) "2014"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=235) "Jaimes R, Rocco AG (2014). \"Multiple epidural steroid injections and body mass index linked with occurrence of epidural lipomatosis: a case series\". BMC Anesthesiology. 14: 70. doi:10.1186/1471-2253-14-70. PMC\u00a04145583. PMID\u00a025183952.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4145583",
+          Text: (string) (len=120) "\"Multiple epidural steroid injections and body mass index linked with occurrence of epidural lipomatosis: a case series\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=41) "https://doi.org/10.1186%2F1471-2253-14-70",
+          Text: (string) (len=23) "10.1186/1471-2253-14-70",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4145583",
+          Text: (string) (len=7) "4145583",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/25183952",
+          Text: (string) (len=8) "25183952",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-39",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "date": (string) (len=13) "December 2015",
+      (string) (len=3) "doi": (string) (len=17) "10.1002/oby.21239",
+      (string) (len=5) "issue": (string) (len=2) "12",
+      (string) (len=7) "journal": (string) (len=7) "Obesity",
+      (string) (len=5) "pages": (string) (len=11) "2485–2490",
+      (string) (len=3) "pmc": (string) (len=7) "4701612",
+      (string) (len=4) "pmid": (string) (len=8) "26421898",
+      (string) (len=5) "title": (string) (len=81) "Smoking and reverse causation create an obesity paradox in cardiovascular disease",
+      (string) (len=8) "vauthors": (string) (len=20) "Stokes A, Preston SH",
+      (string) (len=6) "volume": (string) (len=2) "23"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=206) "Stokes A, Preston SH (December 2015). \"Smoking and reverse causation create an obesity paradox in cardiovascular disease\". Obesity. 23 (12): 2485–2490. doi:10.1002/oby.21239. PMC\u00a04701612. PMID\u00a026421898.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4701612",
+          Text: (string) (len=83) "\"Smoking and reverse causation create an obesity paradox in cardiovascular disease\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=35) "https://doi.org/10.1002%2Foby.21239",
+          Text: (string) (len=17) "10.1002/oby.21239",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4701612",
+          Text: (string) (len=7) "4701612",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/26421898",
+          Text: (string) (len=8) "26421898",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-40",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=12) "author-link1": (string) (len=16) "Asker Jeukendrup",
+      (string) (len=4) "isbn": (string) (len=17) "978-0-7360-3404-3",
+      (string) (len=9) "publisher": (string) (len=68) "Human Kinetics: An Introduction to Energy Production and Performance",
+      (string) (len=5) "title": (string) (len=16) "Sports Nutrition",
+      (string) (len=8) "vauthors": (string) (len=23) "Jeukendrup A, Gleeson M",
+      (string) (len=4) "year": (string) (len=4) "2005"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=158) "Jeukendrup A, Gleeson M (2005). Sports Nutrition. Human Kinetics: An Introduction to Energy Production and Performance. ISBN\u00a0978-0-7360-3404-3.[page\u00a0needed]",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Asker_Jeukendrup",
+          Text: (string) (len=12) "Jeukendrup A",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-7360-3404-3",
+          Text: (string) (len=17) "978-0-7360-3404-3",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=54) "https://en.wikipedia.org/wiki/Wikipedia:Citing_sources",
+          Text: (string) (len=11) "page needed",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-41",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=4) "isbn": (string) (len=17) "978-0-340-81025-5",
+      (string) (len=9) "publisher": (string) (len=9) "CRC Press",
+      (string) (len=5) "title": (string) (len=40) "Human Nutrition – a health perspective",
+      (string) (len=8) "vauthors": (string) (len=9) "Barasi ME",
+      (string) (len=4) "year": (string) (len=4) "2004"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=109) "Barasi ME (2004). Human Nutrition – a health perspective. CRC Press. ISBN\u00a0978-0-340-81025-5.[page\u00a0needed]",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-340-81025-5",
+          Text: (string) (len=17) "978-0-340-81025-5",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=54) "https://en.wikipedia.org/wiki/Wikipedia:Citing_sources",
+          Text: (string) (len=11) "page needed",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-42",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=14) {
+      (string) (len=7) "bibcode": (string) (len=19) "2018EnInt.119..109D",
+      (string) (len=4) "date": (string) (len=12) "October 2018",
+      (string) (len=3) "doi": (string) (len=28) "10.1016/j.envint.2018.06.023",
+      (string) (len=3) "hdl": (string) (len=13) "10044/1/61061",
+      (string) (len=10) "hdl-access": (string) (len=4) "free",
+      (string) (len=5) "issue": (string) (len=3) "119",
+      (string) (len=7) "journal": (string) (len=25) "Environment International",
+      (string) (len=5) "pages": (string) (len=9) "109–116",
+      (string) (len=4) "pmid": (string) (len=8) "29957352",
+      (string) (len=5) "s2cid": (string) (len=8) "49607716",
+      (string) (len=5) "title": (string) (len=111) "Transport mode choice and body mass index: Cross-sectional and longitudinal evidence from a European-wide study",
+      (string) (len=3) "url": (string) (len=68) "https://www.zora.uzh.ch/id/eprint/152336/1/Dons2018_preprint_BMI.pdf",
+      (string) (len=8) "vauthors": (string) (len=270) "Dons E, Rojas-Rueda D, Anaya-Boig E, Avila-Palencia I, Brand C, Cole-Hunter T, de Nazelle A, Eriksson U, Gaupp-Berghausen M, Gerike R, Kahlmeier S, Laeremans M, Mueller N, Nawrot T, Nieuwenhuijsen MJ, Orjuela JP, Racioppi F, Raser E, Standaert A, Int Panis L, Götschi T",
+      (string) (len=6) "volume": (string) (len=3) "119"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=387) "Dons E, Rojas-Rueda D, Anaya-Boig E, Avila-Palencia I, Brand C, Cole-Hunter T, et\u00a0al. (October 2018). \"Transport mode choice and body mass index: Cross-sectional and longitudinal evidence from a European-wide study\" (PDF). Environment International. 119 (119): 109–116. Bibcode:2018EnInt.119..109D. doi:10.1016/j.envint.2018.06.023. hdl:10044/1/61061. PMID\u00a029957352. S2CID\u00a049607716.",
+      Links: ([]*parser.Link) (len=11) {
+        (*parser.Link)({
+          URL: (string) (len=68) "https://www.zora.uzh.ch/id/eprint/152336/1/Dons2018_preprint_BMI.pdf",
+          Text: (string) (len=113) "\"Transport mode choice and body mass index: Cross-sectional and longitudinal evidence from a European-wide study\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+          Text: (string) (len=7) "Bibcode",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=53) "https://ui.adsabs.harvard.edu/abs/2018EnInt.119..109D",
+          Text: (string) (len=19) "2018EnInt.119..109D",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://doi.org/10.1016%2Fj.envint.2018.06.023",
+          Text: (string) (len=28) "10.1016/j.envint.2018.06.023",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Hdl_(identifier)",
+          Text: (string) (len=3) "hdl",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://hdl.handle.net/10044%2F1%2F61061",
+          Text: (string) (len=13) "10044/1/61061",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/29957352",
+          Text: (string) (len=8) "29957352",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/S2CID_(identifier)",
+          Text: (string) (len=5) "S2CID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://api.semanticscholar.org/CorpusID:49607716",
+          Text: (string) (len=8) "49607716",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-43",
+    Group: (string) "",
+    Type: (string) (len=8) "magazine",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=12) "archive-date": (string) (len=10) "2015-04-10",
+      (string) (len=11) "archive-url": (string) (len=99) "https://web.archive.org/web/20150410084813/http://time.com/3770696/france-banned-ultra-thin-models/",
+      (string) (len=8) "magazine": (string) (len=24) "[[Time (magazine)|Time]]",
+      (string) (len=5) "title": (string) (len=36) "France Just Banned Ultra-Thin Models",
+      (string) (len=3) "url": (string) (len=57) "https://time.com/3770696/france-banned-ultra-thin-models/",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=8) "vauthors": (string) (len=10) "Stampler L"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=99) "Stampler L. \"France Just Banned Ultra-Thin Models\". Time. Archived from the original on 2015-04-10.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=57) "https://time.com/3770696/france-banned-ultra-thin-models/",
+          Text: (string) (len=38) "\"France Just Banned Ultra-Thin Models\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Time_(magazine)",
+          Text: (string) (len=4) "Time",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=99) "https://web.archive.org/web/20150410084813/http://time.com/3770696/france-banned-ultra-thin-models/",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-44",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=12) "archive-date": (string) (len=10) "2014-12-10",
+      (string) (len=11) "archive-url": (string) (len=143) "https://web.archive.org/web/20141210120342/https://abcnews.go.com/International/israeli-law-bans-skinny-bmi-challenged-models/story?id=18116291",
+      (string) (len=6) "author": (string) (len=8) "ABC News",
+      (string) (len=5) "title": (string) (len=46) "Israeli Law Bans Skinny, BMI-Challenged Models",
+      (string) (len=3) "url": (string) (len=100) "https://abcnews.go.com/International/israeli-law-bans-skinny-bmi-challenged-models/story?id=18116291",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=8) "ABC News"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=111) "ABC News. \"Israeli Law Bans Skinny, BMI-Challenged Models\". ABC News. Archived from the original on 2014-12-10.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=100) "https://abcnews.go.com/International/israeli-law-bans-skinny-bmi-challenged-models/story?id=18116291",
+          Text: (string) (len=48) "\"Israeli Law Bans Skinny, BMI-Challenged Models\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=143) "https://web.archive.org/web/20141210120342/https://abcnews.go.com/International/israeli-law-bans-skinny-bmi-challenged-models/story?id=18116291",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-45",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "date": (string) (len=10) "April 2005",
+      (string) (len=3) "doi": (string) (len=24) "10.1001/jama.293.15.1861",
+      (string) (len=10) "doi-access": (string) "",
+      (string) (len=5) "issue": (string) (len=2) "15",
+      (string) (len=7) "journal": (string) (len=4) "JAMA",
+      (string) (len=5) "pages": (string) (len=11) "1861–1867",
+      (string) (len=4) "pmid": (string) (len=8) "15840860",
+      (string) (len=5) "title": (string) (len=66) "Excess deaths associated with underweight, overweight, and obesity",
+      (string) (len=8) "vauthors": (string) (len=46) "Flegal KM, Graubard BI, Williamson DF, Gail MH",
+      (string) (len=6) "volume": (string) (len=3) "293"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=205) "Flegal KM, Graubard BI, Williamson DF, Gail MH (April 2005). \"Excess deaths associated with underweight, overweight, and obesity\". JAMA. 293 (15): 1861–1867. doi:10.1001/jama.293.15.1861. PMID\u00a015840860.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://doi.org/10.1001%2Fjama.293.15.1861",
+          Text: (string) (len=24) "10.1001/jama.293.15.1861",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/15840860",
+          Text: (string) (len=8) "15840860",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-46",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "date": (string) (len=10) "March 2009",
+      (string) (len=3) "doi": (string) (len=29) "10.1016/S0140-6736(09)60318-4",
+      (string) (len=5) "issue": (string) (len=4) "9669",
+      (string) (len=7) "journal": (string) (len=6) "Lancet",
+      (string) (len=5) "pages": (string) (len=11) "1083–1096",
+      (string) (len=3) "pmc": (string) (len=7) "2662372",
+      (string) (len=4) "pmid": (string) (len=8) "19299006",
+      (string) (len=5) "title": (string) (len=112) "Body-mass index and cause-specific mortality in 900 000 adults: collaborative analyses of 57 prospective studies",
+      (string) (len=8) "vauthors": (string) (len=100) "Whitlock G, Lewington S, Sherliker P, Clarke R, Emberson J, Halsey J, Qizilbash N, Collins R, Peto R",
+      (string) (len=6) "volume": (string) (len=3) "373"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=305) "Whitlock G, Lewington S, Sherliker P, Clarke R, Emberson J, Halsey J, et\u00a0al. (March 2009). \"Body-mass index and cause-specific mortality in 900 000 adults: collaborative analyses of 57 prospective studies\". Lancet. 373 (9669): 1083–1096. doi:10.1016/S0140-6736(09)60318-4. PMC\u00a02662372. PMID\u00a019299006.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2662372",
+          Text: (string) (len=114) "\"Body-mass index and cause-specific mortality in 900 000 adults: collaborative analyses of 57 prospective studies\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=51) "https://doi.org/10.1016%2FS0140-6736%2809%2960318-4",
+          Text: (string) (len=29) "10.1016/S0140-6736(09)60318-4",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2662372",
+          Text: (string) (len=7) "2662372",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/19299006",
+          Text: (string) (len=8) "19299006",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-47",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "date": (string) (len=9) "July 2018",
+      (string) (len=3) "doi": (string) (len=24) "10.15280/jlm.2018.8.2.79",
+      (string) (len=5) "issue": (string) (len=1) "2",
+      (string) (len=7) "journal": (string) (len=29) "Journal of Lifestyle Medicine",
+      (string) (len=5) "pages": (string) (len=7) "79–98",
+      (string) (len=3) "pmc": (string) (len=7) "6239137",
+      (string) (len=4) "pmid": (string) (len=8) "30474004",
+      (string) (len=5) "title": (string) (len=60) "Body Mass Index in Master Athletes: Review of the Literature",
+      (string) (len=8) "vauthors": (string) (len=35) "Walsh J, Heazlewood IT, Climstein M",
+      (string) (len=6) "volume": (string) (len=1) "8"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=219) "Walsh J, Heazlewood IT, Climstein M (July 2018). \"Body Mass Index in Master Athletes: Review of the Literature\". Journal of Lifestyle Medicine. 8 (2): 79–98. doi:10.15280/jlm.2018.8.2.79. PMC\u00a06239137. PMID\u00a030474004.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6239137",
+          Text: (string) (len=62) "\"Body Mass Index in Master Athletes: Review of the Literature\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://doi.org/10.15280%2Fjlm.2018.8.2.79",
+          Text: (string) (len=24) "10.15280/jlm.2018.8.2.79",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6239137",
+          Text: (string) (len=7) "6239137",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/30474004",
+          Text: (string) (len=8) "30474004",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-48",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "date": (string) (len=9) "June 2007",
+      (string) (len=3) "doi": (string) (len=28) "10.1373/clinchem.2006.079814",
+      (string) (len=10) "doi-access": (string) (len=4) "free",
+      (string) (len=5) "issue": (string) (len=1) "6",
+      (string) (len=7) "journal": (string) (len=18) "Clinical Chemistry",
+      (string) (len=5) "pages": (string) (len=11) "1092–1098",
+      (string) (len=4) "pmid": (string) (len=8) "17478563",
+      (string) (len=5) "title": (string) (len=186) "A strong interaction between serum gamma-glutamyltransferase and obesity on the risk of prevalent type 2 diabetes: results from the Third National Health and Nutrition Examination Survey",
+      (string) (len=8) "vauthors": (string) (len=42) "Lim JS, Lee DH, Park JY, Jin SH, Jacobs DR",
+      (string) (len=6) "volume": (string) (len=2) "53"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=336) "Lim JS, Lee DH, Park JY, Jin SH, Jacobs DR (June 2007). \"A strong interaction between serum gamma-glutamyltransferase and obesity on the risk of prevalent type 2 diabetes: results from the Third National Health and Nutrition Examination Survey\". Clinical Chemistry. 53 (6): 1092–1098. doi:10.1373/clinchem.2006.079814. PMID\u00a017478563.",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://doi.org/10.1373%2Fclinchem.2006.079814",
+          Text: (string) (len=188) "\"A strong interaction between serum gamma-glutamyltransferase and obesity on the risk of prevalent type 2 diabetes: results from the Third National Health and Nutrition Examination Survey\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://doi.org/10.1373%2Fclinchem.2006.079814",
+          Text: (string) (len=28) "10.1373/clinchem.2006.079814",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/17478563",
+          Text: (string) (len=8) "17478563",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-49",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "date": (string) (len=11) "August 2006",
+      (string) (len=3) "doi": (string) (len=29) "10.1016/S0140-6736(06)69251-9",
+      (string) (len=5) "issue": (string) (len=4) "9536",
+      (string) (len=7) "journal": (string) (len=6) "Lancet",
+      (string) (len=5) "pages": (string) (len=9) "666–678",
+      (string) (len=4) "pmid": (string) (len=8) "16920472",
+      (string) (len=5) "s2cid": (string) (len=8) "23306195",
+      (string) (len=5) "title": (string) (len=143) "Association of bodyweight with total mortality and with cardiovascular events in coronary artery disease: a systematic review of cohort studies",
+      (string) (len=8) "vauthors": (string) (len=101) "Romero-Corral A, Montori VM, Somers VK, Korinek J, Thomas RJ, Allison TG, Mookadam F, Lopez-Jimenez F",
+      (string) (len=6) "volume": (string) (len=3) "368"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=342) "Romero-Corral A, Montori VM, Somers VK, Korinek J, Thomas RJ, Allison TG, et\u00a0al. (August 2006). \"Association of bodyweight with total mortality and with cardiovascular events in coronary artery disease: a systematic review of cohort studies\". Lancet. 368 (9536): 666–678. doi:10.1016/S0140-6736(06)69251-9. PMID\u00a016920472. S2CID\u00a023306195.",
+      Links: ([]*parser.Link) (len=6) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=51) "https://doi.org/10.1016%2FS0140-6736%2806%2969251-9",
+          Text: (string) (len=29) "10.1016/S0140-6736(06)69251-9",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/16920472",
+          Text: (string) (len=8) "16920472",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/S2CID_(identifier)",
+          Text: (string) (len=5) "S2CID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://api.semanticscholar.org/CorpusID:23306195",
+          Text: (string) (len=8) "23306195",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-50",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "date": (string) (len=9) "June 2008",
+      (string) (len=3) "doi": (string) (len=19) "10.1038/ijo.2008.11",
+      (string) (len=5) "issue": (string) (len=1) "6",
+      (string) (len=7) "journal": (string) (len=32) "International Journal of Obesity",
+      (string) (len=5) "pages": (string) (len=9) "959–966",
+      (string) (len=3) "pmc": (string) (len=7) "2877506",
+      (string) (len=4) "pmid": (string) (len=8) "18283284",
+      (string) (len=5) "title": (string) (len=81) "Accuracy of body mass index in diagnosing obesity in the adult general population",
+      (string) (len=8) "vauthors": (string) (len=145) "Romero-Corral A, Somers VK, Sierra-Johnson J, Thomas RJ, Collazo-Clavell ML, Korinek J, Allison TG, Batsis JA, Sert-Kuniyoshi FH, Lopez-Jimenez F",
+      (string) (len=6) "volume": (string) (len=2) "32"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=301) "Romero-Corral A, Somers VK, Sierra-Johnson J, Thomas RJ, Collazo-Clavell ML, Korinek J, et\u00a0al. (June 2008). \"Accuracy of body mass index in diagnosing obesity in the adult general population\". International Journal of Obesity. 32 (6): 959–966. doi:10.1038/ijo.2008.11. PMC\u00a02877506. PMID\u00a018283284.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2877506",
+          Text: (string) (len=83) "\"Accuracy of body mass index in diagnosing obesity in the adult general population\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=37) "https://doi.org/10.1038%2Fijo.2008.11",
+          Text: (string) (len=19) "10.1038/ijo.2008.11",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2877506",
+          Text: (string) (len=7) "2877506",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/18283284",
+          Text: (string) (len=8) "18283284",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-51",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "date": (string) (len=10) "April 2010",
+      (string) (len=3) "doi": (string) (len=20) "10.1210/jc.2009-1584",
+      (string) (len=10) "doi-access": (string) (len=4) "free",
+      (string) (len=5) "issue": (string) (len=1) "4",
+      (string) (len=7) "journal": (string) (len=52) "The Journal of Clinical Endocrinology and Metabolism",
+      (string) (len=5) "pages": (string) (len=11) "1777–1785",
+      (string) (len=4) "pmid": (string) (len=8) "20130075",
+      (string) (len=5) "title": (string) (len=102) "The predictive value of different measures of obesity for incident cardiovascular events and mortality",
+      (string) (len=8) "vauthors": (string) (len=166) "Schneider HJ, Friedrich N, Klotsche J, Pieper L, Nauck M, John U, Dörr M, Felix S, Lehnert H, Pittrow D, Silber S, Völzke H, Stalla GK, Wallaschofski H, Wittchen HU",
+      (string) (len=6) "volume": (string) (len=2) "95"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=310) "Schneider HJ, Friedrich N, Klotsche J, Pieper L, Nauck M, John U, et\u00a0al. (April 2010). \"The predictive value of different measures of obesity for incident cardiovascular events and mortality\". The Journal of Clinical Endocrinology and Metabolism. 95 (4): 1777–1785. doi:10.1210/jc.2009-1584. PMID\u00a020130075.",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=38) "https://doi.org/10.1210%2Fjc.2009-1584",
+          Text: (string) (len=104) "\"The predictive value of different measures of obesity for incident cardiovascular events and mortality\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=38) "https://doi.org/10.1210%2Fjc.2009-1584",
+          Text: (string) (len=20) "10.1210/jc.2009-1584",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/20130075",
+          Text: (string) (len=8) "20130075",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-52",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "date": (string) (len=9) "June 2011",
+      (string) (len=3) "doi": (string) (len=25) "10.1007/s10654-011-9572-7",
+      (string) (len=5) "issue": (string) (len=1) "6",
+      (string) (len=7) "journal": (string) (len=32) "European Journal of Epidemiology",
+      (string) (len=5) "pages": (string) (len=9) "457–461",
+      (string) (len=3) "pmc": (string) (len=7) "3115050",
+      (string) (len=4) "pmid": (string) (len=8) "21461943",
+      (string) (len=5) "title": (string) (len=138) "Informativeness of indices of blood pressure, obesity and serum lipids in relation to ischaemic heart disease mortality: the HUNT-II study",
+      (string) (len=8) "vauthors": (string) (len=37) "Mørkedal B, Romundstad PR, Vatten LJ",
+      (string) (len=6) "volume": (string) (len=2) "26"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=306) "Mørkedal B, Romundstad PR, Vatten LJ (June 2011). \"Informativeness of indices of blood pressure, obesity and serum lipids in relation to ischaemic heart disease mortality: the HUNT-II study\". European Journal of Epidemiology. 26 (6): 457–461. doi:10.1007/s10654-011-9572-7. PMC\u00a03115050. PMID\u00a021461943.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3115050",
+          Text: (string) (len=140) "\"Informativeness of indices of blood pressure, obesity and serum lipids in relation to ischaemic heart disease mortality: the HUNT-II study\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=43) "https://doi.org/10.1007%2Fs10654-011-9572-7",
+          Text: (string) (len=25) "10.1007/s10654-011-9572-7",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3115050",
+          Text: (string) (len=7) "3115050",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/21461943",
+          Text: (string) (len=8) "21461943",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-53",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=16) "15 December 2013",
+      (string) (len=12) "archive-date": (string) (len=16) "16 December 2013",
+      (string) (len=11) "archive-url": (string) (len=124) "https://web.archive.org/web/20131216071225/http://www.nhlbi.nih.gov/health/public/heart/obesity/lose_wt/risk.htm#limitations",
+      (string) (len=4) "date": (string) (len=12) "July 8, 2007",
+      (string) (len=9) "publisher": (string) (len=29) "National Institutes of Health",
+      (string) (len=5) "title": (string) (len=42) "Aim for a Healthy Weight: Assess your Risk",
+      (string) (len=3) "url": (string) (len=81) "http://www.nhlbi.nih.gov/health/public/heart/obesity/lose_wt/risk.htm#limitations",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=166) "\"Aim for a Healthy Weight: Assess your Risk\". National Institutes of Health. July 8, 2007. Archived from the original on 16 December 2013. Retrieved 15 December 2013.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=81) "http://www.nhlbi.nih.gov/health/public/heart/obesity/lose_wt/risk.htm#limitations",
+          Text: (string) (len=44) "\"Aim for a Healthy Weight: Assess your Risk\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=124) "https://web.archive.org/web/20131216071225/http://www.nhlbi.nih.gov/health/public/heart/obesity/lose_wt/risk.htm#limitations",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-54",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=3) "doi": (string) (len=15) "10.2307/2983064",
+      (string) (len=5) "issue": (string) (len=1) "3",
+      (string) (len=7) "journal": (string) (len=40) "Journal of the Royal Statistical Society",
+      (string) (len=5) "jstor": (string) (len=7) "2983064",
+      (string) (len=5) "pages": (string) (len=9) "379–392",
+      (string) (len=5) "title": (string) (len=68) "Spurious correlation and the fallacy of the ratio standard revisited",
+      (string) (len=8) "vauthors": (string) (len=10) "Kronmal RA",
+      (string) (len=6) "volume": (string) (len=3) "156",
+      (string) (len=4) "year": (string) (len=4) "1993"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=189) "Kronmal RA (1993). \"Spurious correlation and the fallacy of the ratio standard revisited\". Journal of the Royal Statistical Society. 156 (3): 379–392. doi:10.2307/2983064. JSTOR\u00a02983064.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://doi.org/10.2307%2F2983064",
+          Text: (string) (len=15) "10.2307/2983064",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/JSTOR_(identifier)",
+          Text: (string) (len=5) "JSTOR",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=36) "https://www.jstor.org/stable/2983064",
+          Text: (string) (len=7) "2983064",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-55",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=5) "first": (string) (len=7) "Sabrina",
+      (string) (len=4) "isbn": (string) (len=17) "978-1-4798-9178-8",
+      (string) (len=4) "last": (string) (len=7) "Strings",
+      (string) (len=4) "oclc": (string) (len=10) "1256003500",
+      (string) (len=9) "publisher": (string) (len=25) "New York University Press",
+      (string) (len=5) "title": (string) (len=57) "Fearing the black body : the racial origins of fat phobia",
+      (string) (len=3) "url": (string) (len=35) "http://worldcat.org/oclc/1256003500",
+      (string) (len=4) "year": (string) (len=4) "2019"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=147) "Strings S (2019). Fearing the black body\u00a0: the racial origins of fat phobia. New York University Press. ISBN\u00a0978-1-4798-9178-8. OCLC\u00a01256003500.",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=35) "http://worldcat.org/oclc/1256003500",
+          Text: (string) (len=57) "Fearing the black body : the racial origins of fat phobia",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-1-4798-9178-8",
+          Text: (string) (len=17) "978-1-4798-9178-8",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/OCLC_(identifier)",
+          Text: (string) (len=4) "OCLC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=43) "https://search.worldcat.org/oclc/1256003500",
+          Text: (string) (len=10) "1256003500",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-56",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=4) "date": (string) (len=16) "9 September 2023",
+      (string) (len=5) "title": (string) (len=95) "Body mass index and mortality in an ethnically diverse population: the Multiethnic Cohort Study",
+      (string) (len=3) "url": (string) (len=49) "https://pmc.ncbi.nlm.nih.gov/articles/PMC4494097/",
+      (string) (len=4) "work": (string) (len=16) "The Health Board"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=134) "\"Body mass index and mortality in an ethnically diverse population: the Multiethnic Cohort Study\". The Health Board. 9 September 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=49) "https://pmc.ncbi.nlm.nih.gov/articles/PMC4494097/",
+          Text: (string) (len=97) "\"Body mass index and mortality in an ethnically diverse population: the Multiethnic Cohort Study\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-57",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "date": (string) (len=8) "May 2010",
+      (string) (len=3) "doi": (string) (len=20) "10.1093/pch/15.5.258",
+      (string) (len=5) "issue": (string) (len=1) "5",
+      (string) (len=7) "journal": (string) (len=26) "Paediatrics & Child Health",
+      (string) (len=5) "pages": (string) (len=3) "258",
+      (string) (len=3) "pmc": (string) (len=7) "2912631",
+      (string) (len=4) "pmid": (string) (len=8) "21532785",
+      (string) (len=5) "title": (string) (len=20) "Letter to the editor",
+      (string) (len=8) "vauthors": (string) (len=9) "Taylor RS",
+      (string) (len=6) "volume": (string) (len=2) "15"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=142) "Taylor RS (May 2010). \"Letter to the editor\". Paediatrics & Child Health. 15 (5): 258. doi:10.1093/pch/15.5.258. PMC\u00a02912631. PMID\u00a021532785.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2912631",
+          Text: (string) (len=22) "\"Letter to the editor\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://doi.org/10.1093%2Fpch%2F15.5.258",
+          Text: (string) (len=20) "10.1093/pch/15.5.258",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2912631",
+          Text: (string) (len=7) "2912631",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/21532785",
+          Text: (string) (len=8) "21532785",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-58",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=4) "date": (string) (len=16) "9 September 2023",
+      (string) (len=5) "title": (string) (len=27) "What is the Ponderal Index?",
+      (string) (len=3) "url": (string) (len=56) "https://www.infobloom.com/what-is-the-ponderal-index.htm",
+      (string) (len=8) "vauthors": (string) (len=10) "Bonderud D",
+      (string) (len=4) "work": (string) (len=16) "The Health Board"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=79) "Bonderud D (9 September 2023). \"What is the Ponderal Index?\". The Health Board.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=56) "https://www.infobloom.com/what-is-the-ponderal-index.htm",
+          Text: (string) (len=29) "\"What is the Ponderal Index?\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-59",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "date": (string) (len=14) "September 2016",
+      (string) (len=3) "doi": (string) (len=21) "10.1093/pubmed/fdv067",
+      (string) (len=5) "issue": (string) (len=1) "3",
+      (string) (len=7) "journal": (string) (len=24) "Journal of Public Health",
+      (string) (len=5) "pages": (string) (len=9) "607–613",
+      (string) (len=3) "pmc": (string) (len=7) "5072155",
+      (string) (len=4) "pmid": (string) (len=8) "26036702",
+      (string) (len=5) "title": (string) (len=133) "Body mass index relates weight to height differently in women and older adults: serial cross-sectional surveys in England (1992-2011)",
+      (string) (len=8) "vauthors": (string) (len=56) "Sperrin M, Marshall AD, Higgins V, Renehan AG, Buchan IE",
+      (string) (len=6) "volume": (string) (len=2) "38"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=313) "Sperrin M, Marshall AD, Higgins V, Renehan AG, Buchan IE (September 2016). \"Body mass index relates weight to height differently in women and older adults: serial cross-sectional surveys in England (1992-2011)\". Journal of Public Health. 38 (3): 607–613. doi:10.1093/pubmed/fdv067. PMC\u00a05072155. PMID\u00a026036702.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5072155",
+          Text: (string) (len=135) "\"Body mass index relates weight to height differently in women and older adults: serial cross-sectional surveys in England (1992-2011)\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=41) "https://doi.org/10.1093%2Fpubmed%2Ffdv067",
+          Text: (string) (len=21) "10.1093/pubmed/fdv067",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5072155",
+          Text: (string) (len=7) "5072155",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/26036702",
+          Text: (string) (len=8) "26036702",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-60",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=12) "archive-date": (string) (len=10) "1 May 2017",
+      (string) (len=11) "archive-url": (string) (len=95) "https://web.archive.org/web/20170501153306/http://www.nytimes.com/2010/08/31/health/31brod.html",
+      (string) (len=4) "date": (string) (len=14) "31 August 2010",
+      (string) (len=5) "title": (string) (len=41) "Weight Index Doesn't Tell the Whole Truth",
+      (string) (len=3) "url": (string) (len=53) "https://www.nytimes.com/2010/08/31/health/31brod.html",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=8) "vauthors": (string) (len=8) "Brody JE",
+      (string) (len=4) "work": (string) (len=22) "[[The New York Times]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=133) "Brody JE (31 August 2010). \"Weight Index Doesn't Tell the Whole Truth\". The New York Times. Archived from the original on 1 May 2017.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=53) "https://www.nytimes.com/2010/08/31/health/31brod.html",
+          Text: (string) (len=43) "\"Weight Index Doesn't Tell the Whole Truth\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/The_New_York_Times",
+          Text: (string) (len=18) "The New York Times",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=95) "https://web.archive.org/web/20170501153306/http://www.nytimes.com/2010/08/31/health/31brod.html",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-61",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=7) "author1": (string) (len=39) "Diverse Populations Collaborative Group",
+      (string) (len=4) "date": (string) (len=14) "September 2005",
+      (string) (len=3) "doi": (string) (len=18) "10.1002/ajpa.20107",
+      (string) (len=5) "issue": (string) (len=1) "1",
+      (string) (len=7) "journal": (string) (len=41) "American Journal of Physical Anthropology",
+      (string) (len=5) "pages": (string) (len=9) "220–229",
+      (string) (len=4) "pmid": (string) (len=8) "15761809",
+      (string) (len=5) "title": (string) (len=109) "Weight-height relationships and body mass index: some observations from the Diverse Populations Collaboration",
+      (string) (len=6) "volume": (string) (len=3) "128"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=273) "Diverse Populations Collaborative Group (September 2005). \"Weight-height relationships and body mass index: some observations from the Diverse Populations Collaboration\". American Journal of Physical Anthropology. 128 (1): 220–229. doi:10.1002/ajpa.20107. PMID\u00a015761809.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=36) "https://doi.org/10.1002%2Fajpa.20107",
+          Text: (string) (len=18) "10.1002/ajpa.20107",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/15761809",
+          Text: (string) (len=8) "15761809",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-62",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "date": (string) (len=14) "September 2007",
+      (string) (len=3) "doi": (string) (len=22) "10.1186/1743-7075-4-19",
+      (string) (len=10) "doi-access": (string) (len=4) "free",
+      (string) (len=7) "journal": (string) (len=22) "Nutrition & Metabolism",
+      (string) (len=5) "pages": (string) (len=2) "19",
+      (string) (len=3) "pmc": (string) (len=7) "2082278",
+      (string) (len=4) "pmid": (string) (len=8) "17883858",
+      (string) (len=5) "title": (string) (len=58) "Physiological models of body composition and human obesity",
+      (string) (len=8) "vauthors": (string) (len=57) "Levitt DG, Heymsfield SB, Pierson RN, Shapses SA, Kral JG",
+      (string) (len=6) "volume": (string) (len=1) "4"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=226) "Levitt DG, Heymsfield SB, Pierson RN, Shapses SA, Kral JG (September 2007). \"Physiological models of body composition and human obesity\". Nutrition & Metabolism. 4: 19. doi:10.1186/1743-7075-4-19. PMC\u00a02082278. PMID\u00a017883858.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2082278",
+          Text: (string) (len=60) "\"Physiological models of body composition and human obesity\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://doi.org/10.1186%2F1743-7075-4-19",
+          Text: (string) (len=22) "10.1186/1743-7075-4-19",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2082278",
+          Text: (string) (len=7) "2082278",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/17883858",
+          Text: (string) (len=8) "17883858",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-63",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=12) "archive-date": (string) (len=10) "2015-07-23",
+      (string) (len=11) "archive-url": (string) (len=94) "https://web.archive.org/web/20150723131349/http://www.medicalnewstoday.com/articles/265215.php",
+      (string) (len=4) "date": (string) (len=14) "25 August 2013",
+      (string) (len=5) "title": (string) (len=36) "Why BMI is inaccurate and misleading",
+      (string) (len=3) "url": (string) (len=51) "http://www.medicalnewstoday.com/articles/265215.php",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=18) "Medical News Today"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=117) "\"Why BMI is inaccurate and misleading\". Medical News Today. 25 August 2013. Archived from the original on 2015-07-23.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=51) "http://www.medicalnewstoday.com/articles/265215.php",
+          Text: (string) (len=38) "\"Why BMI is inaccurate and misleading\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=94) "https://web.archive.org/web/20150723131349/http://www.medicalnewstoday.com/articles/265215.php",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-64",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=12) "archive-date": (string) (len=10) "2015-07-23",
+      (string) (len=11) "archive-url": (string) (len=94) "https://web.archive.org/web/20150723095030/http://www.medicalnewstoday.com/articles/255712.php",
+      (string) (len=5) "title": (string) (len=43) "BMI: is the body mass index formula flawed?",
+      (string) (len=3) "url": (string) (len=51) "http://www.medicalnewstoday.com/articles/255712.php",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=18) "Medical News Today"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=108) "\"BMI: is the body mass index formula flawed?\". Medical News Today. Archived from the original on 2015-07-23.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=51) "http://www.medicalnewstoday.com/articles/255712.php",
+          Text: (string) (len=45) "\"BMI: is the body mass index formula flawed?\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=94) "https://web.archive.org/web/20150723095030/http://www.medicalnewstoday.com/articles/255712.php",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-65",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=12) "archive-date": (string) (len=10) "2015-07-21",
+      (string) (len=11) "archive-url": (string) (len=112) "https://web.archive.org/web/20150721123646/http://www.livescience.com/39097-bmi-not-accurate-health-measure.html",
+      (string) (len=4) "date": (string) (len=14) "22 August 2013",
+      (string) (len=5) "title": (string) (len=64) "BMI Not a Good Measure of Healthy Body Weight, Researchers Argue",
+      (string) (len=3) "url": (string) (len=69) "http://www.livescience.com/39097-bmi-not-accurate-health-measure.html",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=8) "vauthors": (string) (len=7) "Lewis T",
+      (string) (len=4) "work": (string) (len=15) "LiveScience.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=152) "Lewis T (22 August 2013). \"BMI Not a Good Measure of Healthy Body Weight, Researchers Argue\". LiveScience.com. Archived from the original on 2015-07-21.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=69) "http://www.livescience.com/39097-bmi-not-accurate-health-measure.html",
+          Text: (string) (len=66) "\"BMI Not a Good Measure of Healthy Body Weight, Researchers Argue\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=112) "https://web.archive.org/web/20150721123646/http://www.livescience.com/39097-bmi-not-accurate-health-measure.html",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-66",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=23) {
+      (string) (len=4) "date": (string) (len=10) "2008-04-01",
+      (string) (len=6) "first1": (string) (len=3) "Abd",
+      (string) (len=6) "first2": (string) (len=8) "Kristien",
+      (string) (len=6) "first3": (string) (len=7) "Richard",
+      (string) (len=6) "first4": (string) (len=7) "Suzanne",
+      (string) (len=6) "first5": (string) (len=8) "Annmarie",
+      (string) (len=6) "first6": (string) (len=5) "Helen",
+      (string) (len=6) "first7": (string) (len=4) "Lisa",
+      (string) (len=6) "first8": (string) (len=4) "Asad",
+      (string) (len=4) "issn": (string) (len=9) "1470-3947",
+      (string) (len=7) "journal": (string) (len=19) "Endocrine Abstracts",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "last1": (string) (len=7) "Tahrani",
+      (string) (len=5) "last2": (string) (len=8) "Boelaert",
+      (string) (len=5) "last3": (string) (len=6) "Barnes",
+      (string) (len=5) "last4": (string) (len=5) "Palin",
+      (string) (len=5) "last5": (string) (len=5) "Field",
+      (string) (len=5) "last6": (string) (len=8) "Redmayne",
+      (string) (len=5) "last7": (string) (len=5) "Aytok",
+      (string) (len=5) "last8": (string) (len=5) "Rahim",
+      (string) (len=5) "title": (string) (len=51) "Body volume index: time to replace body mass index?",
+      (string) (len=3) "url": (string) (len=54) "https://www.endocrine-abstracts.org/ea/0015/ea0015p104",
+      (string) (len=6) "volume": (string) (len=2) "15"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=181) "Tahrani A, Boelaert K, Barnes R, Palin S, Field A, Redmayne H, et\u00a0al. (2008-04-01). \"Body volume index: time to replace body mass index?\". Endocrine Abstracts. 15. ISSN\u00a01470-3947.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=54) "https://www.endocrine-abstracts.org/ea/0015/ea0015p104",
+          Text: (string) (len=53) "\"Body volume index: time to replace body mass index?\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISSN_(identifier)",
+          Text: (string) (len=4) "ISSN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://search.worldcat.org/issn/1470-3947",
+          Text: (string) (len=9) "1470-3947",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-67",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "date": (string) (len=13) "February 2006",
+      (string) (len=3) "doi": (string) (len=18) "10.1093/ije/dyi254",
+      (string) (len=10) "doi-access": (string) "",
+      (string) (len=5) "issue": (string) (len=1) "1",
+      (string) (len=7) "journal": (string) (len=37) "International Journal of Epidemiology",
+      (string) (len=5) "pages": (string) (len=7) "55–60",
+      (string) (len=4) "pmid": (string) (len=8) "16339599",
+      (string) (len=5) "title": (string) (len=80) "The epidemiology of overweight and obesity: public health crisis or moral panic?",
+      (string) (len=8) "vauthors": (string) (len=52) "Campos P, Saguy A, Ernsberger P, Oliver E, Gaesser G",
+      (string) (len=6) "volume": (string) (len=2) "35"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=249) "Campos P, Saguy A, Ernsberger P, Oliver E, Gaesser G (February 2006). \"The epidemiology of overweight and obesity: public health crisis or moral panic?\". International Journal of Epidemiology. 35 (1): 55–60. doi:10.1093/ije/dyi254. PMID\u00a016339599.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=38) "https://doi.org/10.1093%2Fije%2Fdyi254",
+          Text: (string) (len=18) "10.1093/ije/dyi254",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/16339599",
+          Text: (string) (len=8) "16339599",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-68",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=5) "first": (string) (len=11) "Lawrence F.",
+      (string) (len=4) "isbn": (string) (len=13) "1-60021-296-4",
+      (string) (len=4) "last": (string) (len=7) "Ditmier",
+      (string) (len=8) "location": (string) (len=19) "Hauppauge, New York",
+      (string) (len=9) "publisher": (string) (len=23) "Nova Science Publishers",
+      (string) (len=5) "title": (string) (len=36) "New Developments in Obesity Research",
+      (string) (len=4) "year": (string) (len=4) "2006"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=137) "Ditmier LF (2006). New Developments in Obesity Research. Hauppauge, New York: Nova Science Publishers. ISBN\u00a01-60021-296-4.[page\u00a0needed]",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/1-60021-296-4",
+          Text: (string) (len=13) "1-60021-296-4",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=54) "https://en.wikipedia.org/wiki/Wikipedia:Citing_sources",
+          Text: (string) (len=11) "page needed",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-69",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=13) {
+      (string) (len=12) "archive-date": (string) (len=10) "2022-10-09",
+      (string) (len=11) "archive-url": (string) (len=90) "https://ghostarchive.org/archive/20221009/https://biomedres.us/pdfs/BJSTR.MS.ID.001381.pdf",
+      (string) (len=3) "doi": (string) (len=29) "10.26717/BJSTR.2018.06.001381",
+      (string) (len=10) "doi-access": (string) (len=4) "free",
+      (string) (len=6) "first1": (string) (len=8) "Jonathan",
+      (string) (len=5) "issue": (string) (len=1) "4",
+      (string) (len=7) "journal": (string) (len=23) "Biomed J Sci & Tech Res",
+      (string) (len=5) "last1": (string) (len=6) "v Roth",
+      (string) (len=5) "title": (string) (len=86) "Taller people should have Higher BMI's and Blood Pressure Measurements as their Normal",
+      (string) (len=3) "url": (string) (len=48) "https://biomedres.us/pdfs/BJSTR.MS.ID.001381.pdf",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=6) "volume": (string) (len=1) "6",
+      (string) (len=4) "year": (string) (len=4) "2018"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=227) "v Roth J (2018). \"Taller people should have Higher BMI's and Blood Pressure Measurements as their Normal\" (PDF). Biomed J Sci & Tech Res. 6 (4). doi:10.26717/BJSTR.2018.06.001381. Archived (PDF) from the original on 2022-10-09.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=48) "https://biomedres.us/pdfs/BJSTR.MS.ID.001381.pdf",
+          Text: (string) (len=88) "\"Taller people should have Higher BMI's and Blood Pressure Measurements as their Normal\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://doi.org/10.26717%2FBJSTR.2018.06.001381",
+          Text: (string) (len=29) "10.26717/BJSTR.2018.06.001381",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=90) "https://ghostarchive.org/archive/20221009/https://biomedres.us/pdfs/BJSTR.MS.ID.001381.pdf",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-70",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=6) "author": (string) (len=87) "Heymsfield Steven B, Gallagher Dympna, Mayer Laurel, Beetsch Joel ja Pietrobelli Angelo",
+      (string) (len=4) "date": (string) (len=9) "July 2007",
+      (string) (len=3) "doi": (string) (len=20) "10.1093/ajcn/86.1.82",
+      (string) (len=5) "issue": (string) (len=1) "1",
+      (string) (len=7) "journal": (string) (len=42) "The American Journal of Clinical Nutrition",
+      (string) (len=5) "pages": (string) (len=7) "82–91",
+      (string) (len=3) "pmc": (string) (len=7) "2729090",
+      (string) (len=4) "pmid": (string) (len=8) "17616766",
+      (string) (len=5) "title": (string) (len=79) "Scaling of human body composition to stature: new insights into body mass index",
+      (string) (len=3) "url": (string) (len=67) "https://www.sciencedirect.com/science/article/pii/S0002916523274547",
+      (string) (len=6) "volume": (string) (len=2) "86"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=365) "Heymsfield Steven B, Gallagher Dympna, Mayer Laurel, Beetsch Joel ja Pietrobelli Angelo (July 2007). \"Scaling of human body composition to stature: new insights into body mass index\". The American Journal of Clinical Nutrition. 86 (1): 82–91. doi:10.1093/ajcn/86.1.82. PMC\u00a02729090. PMID\u00a017616766.{{cite journal}}:  CS1 maint: multiple names: authors list (link)",
+      Links: ([]*parser.Link) (len=9) {
+        (*parser.Link)({
+          URL: (string) (len=67) "https://www.sciencedirect.com/science/article/pii/S0002916523274547",
+          Text: (string) (len=81) "\"Scaling of human body composition to stature: new insights into body mass index\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://doi.org/10.1093%2Fajcn%2F86.1.82",
+          Text: (string) (len=20) "10.1093/ajcn/86.1.82",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2729090",
+          Text: (string) (len=7) "2729090",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/17616766",
+          Text: (string) (len=8) "17616766",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=51) "https://en.wikipedia.org/wiki/Template:Cite_journal",
+          Text: (string) (len=12) "cite journal",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=78) "https://en.wikipedia.org/wiki/Category:CS1_maint:_multiple_names:_authors_list",
+          Text: (string) (len=4) "link",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-71",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=15) "5 February 2019",
+      (string) (len=9) "publisher": (string) (len=48) "Mathematical Institute, [[University of Oxford]]",
+      (string) (len=5) "title": (string) (len=25) "New BMI (Body Mass Index)",
+      (string) (len=3) "url": (string) (len=48) "https://people.maths.ox.ac.uk/trefethen/bmi.html",
+      (string) (len=8) "vauthors": (string) (len=11) "Trefethen N",
+      (string) (len=7) "website": (string) (len=8) "Ox.ac.uk"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=124) "Trefethen N. \"New BMI (Body Mass Index)\". Ox.ac.uk. Mathematical Institute, University of Oxford. Retrieved 5 February 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=48) "https://people.maths.ox.ac.uk/trefethen/bmi.html",
+          Text: (string) (len=27) "\"New BMI (Body Mass Index)\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://en.wikipedia.org/wiki/University_of_Oxford",
+          Text: (string) (len=20) "University of Oxford",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-72",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=4) "date": (string) (len=13) "February 2006",
+      (string) (len=5) "issue": (string) (len=1) "2",
+      (string) (len=7) "journal": (string) (len=20) "Connecticut Medicine",
+      (string) (len=5) "pages": (string) (len=7) "81–88",
+      (string) (len=4) "pmid": (string) (len=8) "16768059",
+      (string) (len=5) "title": (string) (len=83) "'How much should I weigh?'--Quetelet's equation, upper weight limits, and BMI prime",
+      (string) (len=8) "vauthors": (string) (len=8) "Gadzik J",
+      (string) (len=6) "volume": (string) (len=2) "70"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=167) "Gadzik J (February 2006). \"'How much should I weigh?'--Quetelet's equation, upper weight limits, and BMI prime\". Connecticut Medicine. 70 (2): 81–88. PMID\u00a016768059.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/16768059",
+          Text: (string) (len=8) "16768059",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-73",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=12) "29 July 2016",
+      (string) (len=12) "archive-date": (string) (len=10) "1 May 2017",
+      (string) (len=11) "archive-url": (string) (len=142) "https://web.archive.org/web/20170501084223/https://www.nhlbi.nih.gov/health-pro/guidelines/current/obesity-guidelines/e_textbook/txgd/4142.htm",
+      (string) (len=5) "title": (string) (len=73) "Obesity Education Initiative Electronic Textbook – Treatment Guidelines",
+      (string) (len=3) "url": (string) (len=98) "http://www.nhlbi.nih.gov/health-pro/guidelines/current/obesity-guidelines/e_textbook/txgd/4142.htm",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=7) "website": (string) (len=32) "US National Institutes of Health"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=176) "\"Obesity Education Initiative Electronic Textbook – Treatment Guidelines\". US National Institutes of Health. Archived from the original on 1 May 2017. Retrieved 29 July 2016.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=98) "http://www.nhlbi.nih.gov/health-pro/guidelines/current/obesity-guidelines/e_textbook/txgd/4142.htm",
+          Text: (string) (len=75) "\"Obesity Education Initiative Electronic Textbook – Treatment Guidelines\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=142) "https://web.archive.org/web/20170501084223/https://www.nhlbi.nih.gov/health-pro/guidelines/current/obesity-guidelines/e_textbook/txgd/4142.htm",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-74",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=12) "29 July 2016",
+      (string) (len=12) "archive-date": (string) (len=13) "6 August 2016",
+      (string) (len=11) "archive-url": (string) (len=93) "https://web.archive.org/web/20160806210351/http://www.nhs.uk/chq/Pages/849.aspx?CategoryID=51",
+      (string) (len=5) "title": (string) (len=31) "Why is my waist size important?",
+      (string) (len=3) "url": (string) (len=50) "http://www.nhs.uk/chq/Pages/849.aspx?CategoryID=51",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=7) "website": (string) (len=14) "UK HNS Choices"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=119) "\"Why is my waist size important?\". UK HNS Choices. Archived from the original on 6 August 2016. Retrieved 29 July 2016.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=50) "http://www.nhs.uk/chq/Pages/849.aspx?CategoryID=51",
+          Text: (string) (len=33) "\"Why is my waist size important?\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=93) "https://web.archive.org/web/20160806210351/http://www.nhs.uk/chq/Pages/849.aspx?CategoryID=51",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-75",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=12) "29 July 2016",
+      (string) (len=12) "archive-date": (string) (len=14) "21 August 2016",
+      (string) (len=11) "archive-url": (string) (len=135) "https://web.archive.org/web/20160821092935/https://www.hsph.harvard.edu/obesity-prevention-source/obesity-definition/abdominal-obesity/",
+      (string) (len=4) "date": (string) (len=10) "2012-10-21",
+      (string) (len=5) "title": (string) (len=18) "Waist Size Matters",
+      (string) (len=3) "url": (string) (len=92) "https://www.hsph.harvard.edu/obesity-prevention-source/obesity-definition/abdominal-obesity/",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=7) "website": (string) (len=31) "Harvard School of Public Health"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=136) "\"Waist Size Matters\". Harvard School of Public Health. 2012-10-21. Archived from the original on 21 August 2016. Retrieved 29 July 2016.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=92) "https://www.hsph.harvard.edu/obesity-prevention-source/obesity-definition/abdominal-obesity/",
+          Text: (string) (len=20) "\"Waist Size Matters\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=135) "https://web.archive.org/web/20160821092935/https://www.hsph.harvard.edu/obesity-prevention-source/obesity-definition/abdominal-obesity/",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-76",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=12) "7 April 2016",
+      (string) (len=12) "archive-date": (string) (len=13) "17 April 2016",
+      (string) (len=11) "archive-url": (string) (len=164) "https://web.archive.org/web/20160417064352/http://www.hospimedica.com/critical-care/articles/294746805/waist-height-ratio-better-than-bmi-for-gauging-mortality.html",
+      (string) (len=6) "author": (string) (len=39) "HospiMedica International staff writers",
+      (string) (len=4) "date": (string) (len=11) "18 Jun 2013",
+      (string) (len=5) "title": (string) (len=56) "Waist-Height Ratio Better Than BMI for Gauging Mortality",
+      (string) (len=3) "url": (string) (len=121) "http://www.hospimedica.com/critical-care/articles/294746805/waist-height-ratio-better-than-bmi-for-gauging-mortality.html",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=183) "HospiMedica International staff writers (18 Jun 2013). \"Waist-Height Ratio Better Than BMI for Gauging Mortality\". Archived from the original on 17 April 2016. Retrieved 7 April 2016.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=121) "http://www.hospimedica.com/critical-care/articles/294746805/waist-height-ratio-better-than-bmi-for-gauging-mortality.html",
+          Text: (string) (len=58) "\"Waist-Height Ratio Better Than BMI for Gauging Mortality\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=164) "https://web.archive.org/web/20160417064352/http://www.hospimedica.com/critical-care/articles/294746805/waist-height-ratio-better-than-bmi-for-gauging-mortality.html",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-77",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=10) "2015-12-31",
+      (string) (len=12) "archive-date": (string) (len=10) "2016-01-01",
+      (string) (len=11) "archive-url": (string) (len=158) "https://web.archive.org/web/20160101113606/http://www.realclearscience.com/journal_club/2015/12/30/a_new_potential_replacement_for_body_mass_index_109492.html",
+      (string) (len=4) "date": (string) (len=16) "29 December 2015",
+      (string) (len=5) "title": (string) (len=70) "A New Potential Replacement for Body Mass Index {{!}} RealClearScience",
+      (string) (len=3) "url": (string) (len=115) "http://www.realclearscience.com/journal_club/2015/12/30/a_new_potential_replacement_for_body_mass_index_109492.html",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=8) "vauthors": (string) (len=9) "Pomeroy R",
+      (string) (len=7) "website": (string) (len=20) "realclearscience.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=185) "Pomeroy R (29 December 2015). \"A New Potential Replacement for Body Mass Index | RealClearScience\". realclearscience.com. Archived from the original on 2016-01-01. Retrieved 2015-12-31.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=115) "http://www.realclearscience.com/journal_club/2015/12/30/a_new_potential_replacement_for_body_mass_index_109492.html",
+          Text: (string) (len=68) "\"A New Potential Replacement for Body Mass Index | RealClearScience\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=158) "https://web.archive.org/web/20160101113606/http://www.realclearscience.com/journal_club/2015/12/30/a_new_potential_replacement_for_body_mass_index_109492.html",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-78",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=12) {
+      (string) (len=7) "bibcode": (string) (len=19) "2015PLoSO..1044639R",
+      (string) (len=3) "doi": (string) (len=28) "10.1371/journal.pone.0144639",
+      (string) (len=10) "doi-access": (string) (len=4) "free",
+      (string) (len=5) "issue": (string) (len=2) "12",
+      (string) (len=7) "journal": (string) (len=8) "PLOS ONE",
+      (string) (len=5) "pages": (string) (len=8) "e0144639",
+      (string) (len=3) "pmc": (string) (len=7) "4692532",
+      (string) (len=4) "pmid": (string) (len=8) "26709925",
+      (string) (len=5) "title": (string) (len=76) "Surface-Based Body Shape Index and Its Relationship with All-Cause Mortality",
+      (string) (len=8) "vauthors": (string) (len=20) "Rahman SA, Adjeroh D",
+      (string) (len=6) "volume": (string) (len=2) "10",
+      (string) (len=4) "year": (string) (len=4) "2015"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=230) "Rahman SA, Adjeroh D (2015). \"Surface-Based Body Shape Index and Its Relationship with All-Cause Mortality\". PLOS ONE. 10 (12): e0144639. Bibcode:2015PLoSO..1044639R. doi:10.1371/journal.pone.0144639. PMC\u00a04692532. PMID\u00a026709925.",
+      Links: ([]*parser.Link) (len=9) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4692532",
+          Text: (string) (len=78) "\"Surface-Based Body Shape Index and Its Relationship with All-Cause Mortality\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://en.wikipedia.org/wiki/Bibcode_(identifier)",
+          Text: (string) (len=7) "Bibcode",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=53) "https://ui.adsabs.harvard.edu/abs/2015PLoSO..1044639R",
+          Text: (string) (len=19) "2015PLoSO..1044639R",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://doi.org/10.1371%2Fjournal.pone.0144639",
+          Text: (string) (len=28) "10.1371/journal.pone.0144639",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4692532",
+          Text: (string) (len=7) "4692532",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/26709925",
+          Text: (string) (len=8) "26709925",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-79",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=4) "date": (string) (len=10) "April 2008",
+      (string) (len=3) "doi": (string) (len=16) "10.1002/lt.21395",
+      (string) (len=10) "doi-access": (string) "",
+      (string) (len=5) "issue": (string) (len=1) "4",
+      (string) (len=7) "journal": (string) (len=21) "Liver Transplantation",
+      (string) (len=5) "pages": (string) (len=9) "563–570",
+      (string) (len=4) "pmid": (string) (len=8) "18383093",
+      (string) (len=5) "s2cid": (string) (len=8) "13072583",
+      (string) (len=5) "title": (string) (len=146) "Marked regression of abdominal fat amyloid in patients with familial amyloid polyneuropathy during long-term follow-up after liver transplantation",
+      (string) (len=8) "vauthors": (string) (len=50) "Tsuchiya A, Yazaki M, Kametani F, Takei Y, Ikeda S",
+      (string) (len=6) "volume": (string) (len=2) "14"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=311) "Tsuchiya A, Yazaki M, Kametani F, Takei Y, Ikeda S (April 2008). \"Marked regression of abdominal fat amyloid in patients with familial amyloid polyneuropathy during long-term follow-up after liver transplantation\". Liver Transplantation. 14 (4): 563–570. doi:10.1002/lt.21395. PMID\u00a018383093. S2CID\u00a013072583.",
+      Links: ([]*parser.Link) (len=6) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=34) "https://doi.org/10.1002%2Flt.21395",
+          Text: (string) (len=16) "10.1002/lt.21395",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/18383093",
+          Text: (string) (len=8) "18383093",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/S2CID_(identifier)",
+          Text: (string) (len=5) "S2CID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://api.semanticscholar.org/CorpusID:13072583",
+          Text: (string) (len=8) "13072583",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

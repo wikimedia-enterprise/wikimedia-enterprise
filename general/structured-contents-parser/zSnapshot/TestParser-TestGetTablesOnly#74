@@ -1,0 +1,1147 @@
+([]*parser.OrderedTable) (len=7) {
+  (*parser.OrderedTable)({
+    ID: (string) (len=16) "phonology_table1",
+    Table: (*parser.TableWithHeaders)({
+      Headers: ([][]parser.Cell) (len=1) {
+        ([]parser.Cell) (len=5) {
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "Front",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "Front",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "Back",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "Back",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      Footers: ([][]parser.Cell) <nil>,
+      Rows: ([][]parser.Cell) (len=3) {
+        ([]parser.Cell) (len=5) {
+          (parser.Cell) {
+            Value: (string) (len=5) "Close",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "i",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=3) "iː",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "u",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=3) "uː",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=5) {
+          (parser.Cell) {
+            Value: (string) (len=3) "Mid",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=3) "eː",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=3) "oː",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=5) {
+          (parser.Cell) {
+            Value: (string) (len=4) "Open",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "a",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=3) "aː",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      ConfidenceScore: (float64) 0.8
+    })
+  }),
+  (*parser.OrderedTable)({
+    ID: (string) (len=16) "phonology_table2",
+    Table: (*parser.TableWithHeaders)({
+      Headers: ([][]parser.Cell) (len=1) {
+        ([]parser.Cell) (len=17) {
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "Labial",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "Labial",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "Dental",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=6) "Dental",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=8) "Alveolar",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=8) "Alveolar",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=12) "Postalveolar",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=12) "Postalveolar",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "Palatal",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "Palatal",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "Velar",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "Velar",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=10) "Labiovelar",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=10) "Labiovelar",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "Glottal",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=7) "Glottal",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      Footers: ([][]parser.Cell) <nil>,
+      Rows: ([][]parser.Cell) (len=4) {
+        ([]parser.Cell) (len=17) {
+          (parser.Cell) {
+            Value: (string) (len=7) "Plosive",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "p",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "b",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "t",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=12) "d (earliest)",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "k",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=2) "ɡ",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=17) {
+          (parser.Cell) {
+            Value: (string) (len=9) "Affricate",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "t͡s",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "t͡ʃ",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "d͡ʒ",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=17) {
+          (parser.Cell) {
+            Value: (string) (len=9) "Fricative",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "f",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=2) "θ",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=12) "ð (earlier)",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "s",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "z",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=2) "ʃ",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=2) "ʒ",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "x",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=3) "xʷ",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "h",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=17) {
+          (parser.Cell) {
+            Value: (string) (len=8) "Sonorant",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "m",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "l (later)",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "n",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "r",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "j",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "(ŋ)",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "w",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=1) "w",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      ConfidenceScore: (float64) 0.8
+    })
+  }),
+  (*parser.OrderedTable)({
+    ID: (string) (len=31) "corpus.issyk_inscription_table1",
+    Table: (*parser.TableWithHeaders)({
+      Headers: ([][]parser.Cell) (len=1) {
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=4) "Line",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=15) "Transliteration",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=19) "English translation",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      Footers: ([][]parser.Cell) <nil>,
+      Rows: ([][]parser.Cell) (len=2) {
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=1) "1",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=79) "za(ṃ)-ri ko-la(ṃ) mi(ṃ)-vaṃ vaṃ-va pa-zaṃ pa-na de-ka mi(ṃ)-ri-to",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=81) "The vessel should hold wine of grapes, added cooked food, so much, to the mortal,",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=1) "2",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=48) "ña-ka mi pa-zaṃ vaṃ-va va-za(ṃ)-na vaṃ.",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=33) "then added cooked fresh butter on",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      ConfidenceScore: (float64) 1
+    })
+  }),
+  (*parser.OrderedTable)({
+    ID: (string) (len=28) "corpus.personal_names_table1",
+    Table: (*parser.TableWithHeaders)({
+      Headers: ([][]parser.Cell) (len=1) {
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=4) "Name",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=14) "Attested forms",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "Notes",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      Footers: ([][]parser.Cell) <nil>,
+      Rows: ([][]parser.Cell) (len=18) {
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=13) "*Ariyapaiϑah",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=61) "Ancient Greek: Αριαπειθης, romanized:\u00a0Ariapeithēs",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=152) "Composed of: *Ariya-, meaning \"Aryan\" and \"Iranic.\" *paiϑah-, meaning \"decoration\" and \"adornment.\" Compare with Avestan 𐬞𐬀𐬉𐬯𐬀 (paēsa).",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=16) "*Hiϑāmϑrauša",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=60) "Ancient Greek: Ιδανθυρσος, romanized:\u00a0Idanthursos",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=367) "Meaning \"prospering the ally.\" Composed of: a cognate of Avestan 𐬵𐬌𐬚𐬄𐬨 ([hiϑąm] Error: {{Transliteration}}: transliteration text not Latin script (pos 3: ϑ) (help)), meaning \"companion.\" a cognate of Avestan 𐬚𐬭𐬀𐬊𐬱 ([ϑraoš-] Error: {{Transliteration}}: transliteration text not Latin script (pos 1: ϑ) (help)), meaning \"to prosper.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=9) "*Hupāyā",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=45) "Ancient Greek: Οποιη, romanized:\u00a0Opoiē",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=98) "Composed of: *hu-, \"good.\" *pāyā-, \"protection\"; an abstraction of the root *pā-, \"to protect.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=8) "*Pālaka",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=50) "Ancient Greek: Παλακος, romanized:\u00a0Palakos",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=229) "From an earlier form *Pāδaka after the evolution of Proto-Iranic /d/ to Proto-Scythian /δ/ to Scythian /l/. Means \"tall-legged\" and \"long-legged.\" Composed of: *pāla-, \"foot,\" from earlier *pāδa-. *-ka, hypocoristic suffix.",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=12) "*Pṛtatavah",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=123) "Akkadian: 𒁹𒁇𒋫𒌅𒀀, romanized:\u00a0Bartatua or Partatua Ancient Greek: Προτοθυης, romanized:\u00a0Protothuēs",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=272) "Means \"who is mighty in battle.\" Composed of: *pṛta- \"battle.\" Compare with Avestan 𐬞𐬆𐬱𐬀𐬥𐬀 (pəšana) and Vedic Sanskrit पृत् (pṛt-), both meaning \"battle.\" *-tavah- \"strength, power.\" Compare with Avestan 𐬙𐬀𐬎𐬎𐬀𐬵 (-tauuah-).",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=13) "*Pr̥ϑutavā",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=123) "Akkadian: 𒁹𒁇𒋫𒌅𒀀, romanized:\u00a0Bartatua or Partatua Ancient Greek: Προτοθυης, romanized:\u00a0Protothuēs",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=271) "Composed of: *pr̥ϑu- \"wide, broad.\" Compare with Avestan 𐬞𐬆𐬭𐬆𐬚𐬎 ([pərᵊϑu-] Error: {{Transliteration}}: transliteration text not Latin script (pos 5: ϑ) (help)). *-tavah- \"strength, power.\" Compare with Avestan 𐬙𐬀𐬎𐬎𐬀𐬵 (-tauuah-).",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=12) "*Šaitafarna",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=131) "Ancient Greek: Σαιταφαρνος, romanized:\u00a0Saitapharnos or Ancient Greek: Σαιταφαρνης, romanized:\u00a0Saitapharnēs",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=158) "From a sibilisation of Proto-Scythian *Xšaitafarna, possibly meaning \"with a bright farna,\" itself composed of: *xšaita-, \"brilliant.\" *-farna, \"khvarenah.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=10) "*Šaϑraka",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=54) "Ancient Greek: Σατρακης, romanized:\u00a0Satrakēs",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=220) "From a sibilisation of Proto-Scythian *Xšaϑraka, itself composed of: *xšaϑra-, \"power.\" *-ka, hypocoristic suffix. Cognate with Ossetian Æхсæртæг (Æxsærtæg) and Æхсæртæггатӕ (Æxsærtæggatæ).",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=9) "*Šīraka",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=51) "Ancient Greek: Σιρακης, romanized:\u00a0Sirakēs",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=149) "From a sibilisation of Proto-Scythian *Xšīraka, possibly meaning \"milk-consumer,\" itself composed of: *xšīra-, \"milk.\" *-ka, hypocoristic suffix.",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=8) "*Skilura",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=56) "Ancient Greek: Σκιλουρος, romanized:\u00a0Skilouros",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=142) "From an earlier form *Skiδura after the evolution of Proto-Iranic /d/ to Proto-Scythian /δ/ to Scythian /l/. Means \"sharp\" and \"victorious.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=6) "*Skula",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=48) "Ancient Greek: Σκυλης, romanized:\u00a0Skulēs",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=122) "From the Scythian endonym *Skula, itself a later dialectal form of *Skuδa resulting from a sound change from /δ/ to /l/.",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=9) "*Spakāya",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=58) "Akkadian: 𒁹𒅖𒉺𒅗𒀀𒀀, romanized:\u00a0Išpakāya",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=60) "Hypocoristic derivation from the word *spaka, meaning \"dog.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=10) "*Spargapis",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=63) "Ancient Greek: Σπαργαπισης, romanized:\u00a0Spargapisēs",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=260) "Composed of: *sparga- \"scion\" and \"descendant.\" Compare with Avestan 𐬯𐬞𐬀𐬭𐬆𐬖𐬀 (sparᵊγa). *pis- \"decoration\" and \"adornment.\" Compare with Avestan 𐬞𐬀𐬉𐬯𐬀 (paēsa). *Spargapis and *Spargapaiϑah are variants of the same name.",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=14) "*Spargapaiϑah",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=67) "Ancient Greek: Σπαργαπειθης, romanized:\u00a0Spargapeithēs",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=264) "Composed of: *sparga- \"scion\" and \"descendant.\" Compare with Avestan 𐬯𐬞𐬀𐬭𐬆𐬖𐬀 (sparᵊγa). *paiϑah- \"decoration\" and \"adornment.\" Compare with Avestan 𐬞𐬀𐬉𐬯𐬀 (paēsa). *Spargapaiϑah and *Spargapis are variants of the same name.",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=11) "*Tigratavā",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=54) "Ancient Greek: Τιργαταω, romanized:\u00a0Tirgataō",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=216) "Means \"with the strength of an arrow.\" Composed of: *tigra- \"arrow.\" Compare with Avestan 𐬙𐬌𐬖𐬭𐬌 (tiγri-), \"arrow.\" *-tavah- \"strength, power.\" Compare with Avestan 𐬙𐬀𐬎𐬎𐬀𐬵 (-tauuah-).",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=10) "*Taumuriya",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=50) "Ancient Greek: Τομυρις, romanized:\u00a0Tomuris",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=154) "Derived from a cognate of Avestan 𐬙𐬀𐬊𐬑𐬨𐬀𐬥 (taoxman) and Old Persian 𐎫𐎢𐎶𐎠 (taumā), meaning \"seed,\" \"germ,\" and \"kinship.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=12) "*Uxtamazatā",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=63) "Ancient Greek: Οκταμασαδης, romanized:\u00a0Oktamasadēs",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=191) "Means \"possessing greatness through his words.\" Composed of: *uxta-, \"word.\" Compare with Avestan 𐬎𐬑𐬙𐬀 (uxta), \"spoken,\" and 𐬎𐬑𐬜𐬀 (uxδa), \"word.\" *-mazatā-, \"great.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=7) "*Varika",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=47) "Ancient Greek: Ορικος, romanized:\u00a0Orikos",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=177) "Hypocorostic derivation from the word *vari-, meaning \"chest armour, armour.\" Compare with Avestan 𐬬𐬀𐬌𐬭𐬌 (vaⁱri-), 𐬎𐬎𐬀𐬭𐬌 (uuari-) \"chest armour.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      ConfidenceScore: (float64) 1
+    })
+  }),
+  (*parser.OrderedTable)({
+    ID: (string) (len=26) "corpus.tribal_names_table1",
+    Table: (*parser.TableWithHeaders)({
+      Headers: ([][]parser.Cell) (len=1) {
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=4) "Name",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=14) "Attested forms",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "Notes",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      Footers: ([][]parser.Cell) <nil>,
+      Rows: ([][]parser.Cell) (len=5) {
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=14) "*Haxāϑrauša",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=57) "Ancient Greek: Αγαϑυρσοι, romanized:\u00a0Agathursoi",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=279) "Means \"prospering the friend/socius.\" Composed of: a cognate of Old Persian 𐏃𐎧𐎠 (haxā-), meaning \"friend.\" a cognate of Avestan 𐬚𐬭𐬀𐬊𐬱 ([ϑraoš-] Error: {{Transliteration}}: transliteration text not Latin script (pos 1: ϑ) (help)), meaning \"to prosper.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=9) "*Šīraka",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=50) "Ancient Greek: Σιρακες, romanized:\u00a0Sirakes",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=149) "From a sibilisation of Proto-Scythian *Xšīraka, possibly meaning \"milk-consumer,\" itself composed of: *xšīra-, \"milk.\" *-ka, hypocoristic suffix.",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=94) "[*Skuδa] Error: {{Transliteration}}: transliteration text not Latin script (pos 5: δ) (help)",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=199) "Akkadian: 𒅖𒆪𒍝𒀀𒀀, romanized:\u00a0Iškuzaya 𒊍𒄖𒍝𒀀𒀀 (Asguzaya)\n𒊍𒆪𒍝𒀀𒀀 (Askuzaya)\n𒀾𒄖𒍝𒀀𒀀 (Ašguzaya) Ancient Greek: Σκυθαι, romanized:\u00a0Skuthai",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=142) "*Skuδa, the Scythian endonym, From the Proto-Indo-European root skewd-, itself meaning lit.\u2009'shooter, archer', whence also English \"shoot\".",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=6) "*Skula",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=54) "Ancient Greek: Σκωλοτοι, romanized:\u00a0Skōlotoi",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=92) "Later form of *Skuδa resulting from the evolution of Proto-Scythian /δ/ into Scythian /l/.",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=10) "*Paralāta",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=56) "Ancient Greek: Παραλαται, romanized:\u00a0Paralatai",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=107) "Cognate with Young Avestan 𐬞𐬀𐬭𐬀𐬜𐬁𐬙𐬀\u200e (Paraδāta), meaning \"placed at the front.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      ConfidenceScore: (float64) 1
+    })
+  }),
+  (*parser.OrderedTable)({
+    ID: (string) (len=25) "corpus.place_names_table1",
+    Table: (*parser.TableWithHeaders)({
+      Headers: ([][]parser.Cell) (len=1) {
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=4) "Name",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=14) "Attested forms",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "Notes",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      Footers: ([][]parser.Cell) <nil>,
+      Rows: ([][]parser.Cell) (len=5) {
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=12) "*Baurustāna",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=61) "Ancient Greek: Βορυσθενης, romanized:\u00a0Borusthenēs",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=271) "Means \"place of beavers.\" Composed of: *bauru- \"beaver.\" Cognate of:\nAvestan 𐬠𐬀𐬡𐬭𐬀 (baβra) and 𐬠𐬀𐬡𐬭𐬌\u200e (baβri), meaning \"beaver\"\nSanskrit बभ्रु (babhrú) and बभ्रुक\u200b (bábhruka), meaning \"mongoose\" *stāna \"space.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=6) "*Dānu",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=47) "Ancient Greek: Ταναις, romanized:\u00a0Tanais",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=14) "Means \"river.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=10) "*Pantikapa",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=65) "Ancient Greek: Παντικαπαιον, romanized:\u00a0Pantikapaion",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=217) "Means \"fish-path.\" Composed of: *panti-, \"path.\" Compare with Avestan 𐬞𐬀𐬧\u200e𐬙𐬃\u200e (paṇ\u200etā̊), \"path.\" *kapa-, \"fish.\" Compare with Khotanese Saka kavā, Ossetian Кӕф kæf, and Pashto کب (Kab).",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=6) "*Rahā",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=36) "Ancient Greek: Ρα, romanized:\u00a0Rha",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=108) "Means \"wetness.\" Compare with Avestan 𐬭𐬀𐬢𐬵𐬁 (raŋhā) and Vedic Sanskrit रसा (rasā́).",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=5) "*Varu",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=44) "Ancient Greek: Οαρος, romanized:\u00a0Oaros",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=14) "Means \"broad.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      ConfidenceScore: (float64) 1
+    })
+  }),
+  (*parser.OrderedTable)({
+    ID: (string) (len=31) "corpus.scythian_theonyms_table1",
+    Table: (*parser.TableWithHeaders)({
+      Headers: ([][]parser.Cell) (len=1) {
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=4) "Name",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=14) "Attested forms",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "Notes",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      Footers: ([][]parser.Cell) <nil>,
+      Rows: ([][]parser.Cell) (len=10) {
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=10) "*Tapatī́",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=47) "Ancient Greek: Ταβιτι, romanized:\u00a0Tabiti",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=289) "Means “the Burning One” or “the Flaming One.”\nRelated to: Avestan 𐬙𐬁𐬞𐬀𐬌𐬌𐬈𐬌𐬙𐬌\u200e (tāpaiieⁱti), “to warm.” Sanskrit तापयति (tapayati), “to heat” and “to warm”; theonym तपती (Tapatī); तपस् (tápas) Latin tepeo.",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=4) "*Api",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=68) "Ancient Greek: Απι, romanized:\u00a0Api and Απια, romanized: Apia",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=47) "Related to Avestan 𐬀𐬞𐬌 (api), \"water.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=14) "*Targī̆tavah",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=56) "Ancient Greek: Ταργιταος, romanized:\u00a0Targitaos",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=185) "Means \"possessing the might of the goddess Tarkā.\" Composed of: *Targiya, \"of the goddess Tarkā.\" *-tavah- \"strength, power.\" Compare with Avestan 𐬙𐬀𐬎𐬎𐬀𐬵 (-tauuah-).",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=56) "Ancient Greek: Αρτιμπασα, romanized:\u00a0Artimpasa",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=87) "Composed of: Iranic theonym *Arti a term related to *paya, \"pasture\" and *pati, \"lord.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=8) "*Apatura",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=56) "Ancient Greek: Απατουρος, romanized:\u00a0Apatouros",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=121) "Means \"swift water.\" Composed of: *ap-, \"water.\" Related to Avestan 𐬀𐬞 (ap-), \"water.\" *tura-, \"quick\" or \"mighty.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=13) "*Gaiϑāsūra",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=59) "Ancient Greek: Γοιτοσυρος, romanized:\u00a0Goitosuros",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=168) "Composed of: *gaiϑā, \"herd\" and \"possessions.\" Cognate of 𐬔𐬀𐬊𐬌𐬌𐬀𐬊𐬌𐬙𐬌𐬱 (gaoiiaoⁱtiš), \"cow pasture.\" *sūra, \"strong\" and \"mighty.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=115) "Ancient Greek: Θαγιμασαδας, romanized:\u00a0Thagimasadas and Θαμιμασαδας, romanized: Thamimasadas",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=323) "Composed of: a possible cognate of Avestan 𐬚𐬡𐬁𐬴𐬀 ([ϑβāṣ̌a] Error: {{Transliteration}}: transliteration text not Latin script (pos 1: ϑ) (help)), \"firmament,\" and Vedic Sanskrit त्वक्ष् (tvakṣ-) or तक्ष् (takṣ-), \"to create by putting into motion.\" mazatā, meaning \"great.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=11) "*Lipoxšaya",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=53) "Ancient Greek: Λιποξαις, romanized:\u00a0Lipoxais",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=266) "From an earlier form *Δipoxšaya after the evolution of Proto-Iranic /d/ to Proto-Scythian /δ/ to Scythian /l/. Means \"king of radiance\" and \"king of heaven.\" Composed of: *lipa, from earlier *δipa, \"to be bright\" as well as \"sky\" and \"heaven.\" *-xšaya, \"ruler.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=12) "*R̥buxšaya",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=54) "Ancient Greek: Ἀρποξαις, romanized:\u00a0Arpoxais",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=161) "Means \"king of the airspace.\" Composed of: *r̥bu-, a cognate of Sanskrit ऋभु (Ṛbhú), the name of a group of deities of the airspace. *-xšaya, \"ruler.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=11) "*Kolaxšaya",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=68) "Ancient Greek: Κολαξαις, romanized:\u00a0Kolaxais Latin: Colaxes",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=336) "From an earlier form *Koδaxšaya after the evolution of Proto-Iranic /d/ to Proto-Scythian /δ/ to Scythian /l/. Means \"axe-wielding king,\" where the axe also has the meaning of \"sceptre,\" as well as \"blacksmith king,\" in the sense of \"ruling king of the lower world.\" Composed of: *kola, from earlier *koδa, \"axe.\" *-xšaya, \"ruler.\"",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      ConfidenceScore: (float64) 1
+    })
+  })
+}

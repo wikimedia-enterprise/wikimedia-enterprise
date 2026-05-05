@@ -1,0 +1,848 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=21) "Infobox football club",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) (len=7) "Benfica",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=13) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=102) "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/SL_Benfica_logo.svg/210px-SL_Benfica_logo.svg.png",
+                Identifier: (string) (len=64) "6fb748d7ef6eaef2619fd4c7c48a298d6ffbdfd46db6c87e83e69af95e41f6cf",
+                Name: (string) (len=24) "File:SL_Benfica_logo.svg",
+                AlternativeText: (string) (len=306) "Looking to its right, a wingspread golden eagle stands atop a bicycle wheel's grey tire. Below, on the spoked wheel, a horizontal green and red strip reads \"E PLURIBUS UNUM\", and a diagonal blue strip with the golden initials \"S. L. B.\" overlays a red and white shield with a golden football on its centre.",
+                Caption: (string) "",
+                Height: (int) 208,
+                Width: (int) 210,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Full name",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "Sport Lisboa e Benfica",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Nickname(s)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=104) "As Águias (The Eagles) Os Encarnados (The Reds) O Glorioso (The Glorious One) Benfiquistas (supporters)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Supporters_of_S.L._Benfica",
+                Text: (string) (len=12) "Benfiquistas",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Founded",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=34) "28 February 1904 (as Sport Lisboa)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Ground",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "Estádio da Luz",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Estádio_da_Luz",
+                Text: (string) (len=15) "Estádio da Luz",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Capacity",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "64,642",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/S.L._Benfica#cite_note-seating_capacity-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "President",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Rui Costa",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Rui_Costa",
+                Text: (string) (len=9) "Rui Costa",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Head coach",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "Bruno Lage",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Bruno_Lage",
+                Text: (string) (len=10) "Bruno Lage",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "League",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Primeira Liga",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Primeira_Liga",
+                Text: (string) (len=13) "Primeira Liga",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "2023–24",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "Primeira Liga, 2nd of 18",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/2023–24_Primeira_Liga",
+                Text: (string) (len=9) "2023–24",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Website",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "slbenfica.pt",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=25) "https://www.slbenfica.pt/",
+                Text: (string) (len=12) "slbenfica.pt",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=26) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=81) "https://upload.wikimedia.org/wikipedia/commons/f/fe/Kit_left_arm_benfica2425h.png",
+                Identifier: (string) (len=64) "f4f4e85f75c635c49fcbbb4a6f52ab07ff5ca73c81fa585081a2cbef2c5c7d43",
+                Name: (string) (len=34) "File:Kit_left_arm_benfica2425h.png",
+                AlternativeText: (string) "",
+                Caption: (string) (len=12) "Team colours",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=100) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Kit_left_arm.svg/31px-Kit_left_arm.svg.png",
+                Identifier: (string) (len=64) "9f2a3a9213cbc1b5cd84fd1d26513944a80f9ee2bd3a525c9d16256000fe64d8",
+                Name: (string) (len=21) "File:Kit_left_arm.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=77) "https://upload.wikimedia.org/wikipedia/commons/f/fd/Kit_body_benfica2425H.png",
+                Identifier: (string) (len=64) "36dc9e0da52809cd24edf3c02152ab535998f0eec341889f1faab6ded395b9ab",
+                Name: (string) (len=30) "File:Kit_body_benfica2425H.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 38,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=92) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kit_body.svg/38px-Kit_body.svg.png",
+                Identifier: (string) (len=64) "a1e5dc5de33466f8c1a306b50ed79ef5e42b13f99a494d8df5993e3683ba04ad",
+                Name: (string) (len=17) "File:Kit_body.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 38,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=82) "https://upload.wikimedia.org/wikipedia/commons/4/49/Kit_right_arm_benfica2425h.png",
+                Identifier: (string) (len=64) "8f61e8ed7d164d18b87f584713057dad23d0c78bf5a41a7b7badccd77ef47eee",
+                Name: (string) (len=35) "File:Kit_right_arm_benfica2425h.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=102) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Kit_right_arm.svg/31px-Kit_right_arm.svg.png",
+                Identifier: (string) (len=64) "199318fff46197127d76bb06e24d16f3a0e716fdaf8c5fce8906ba2cb9964ab7",
+                Name: (string) (len=22) "File:Kit_right_arm.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=97) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Kit_shorts.svg/100px-Kit_shorts.svg.png",
+                Identifier: (string) (len=64) "303e08dcbf5d47ceeb5d566cd26646803c86b2f50f050824893d0431b9f75368",
+                Name: (string) (len=19) "File:Kit_shorts.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 36,
+                Width: (int) 100,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kit_socks_long.svg/100px-Kit_socks_long.svg.png",
+                Identifier: (string) (len=64) "1937ddbeb6316570823ffcbb8566bb244d98ac472df8aefc2f5465855f7f16af",
+                Name: (string) (len=23) "File:Kit_socks_long.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 40,
+                Width: (int) 100,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=81) "https://upload.wikimedia.org/wikipedia/commons/d/d9/Kit_left_arm_benfica2425a.png",
+                Identifier: (string) (len=64) "29fad5075363f91e39bd2aedfa7128621b7d7aeb9a0eb6c4a554278226afdd5e",
+                Name: (string) (len=34) "File:Kit_left_arm_benfica2425a.png",
+                AlternativeText: (string) "",
+                Caption: (string) (len=12) "Team colours",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=100) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Kit_left_arm.svg/31px-Kit_left_arm.svg.png",
+                Identifier: (string) (len=64) "9f2a3a9213cbc1b5cd84fd1d26513944a80f9ee2bd3a525c9d16256000fe64d8",
+                Name: (string) (len=21) "File:Kit_left_arm.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=77) "https://upload.wikimedia.org/wikipedia/commons/a/a3/Kit_body_benfica2425A.png",
+                Identifier: (string) (len=64) "b6aef88aa91055bdbf9d85f96953a35da173a645ecaba5dd7e3bba234749e0d3",
+                Name: (string) (len=30) "File:Kit_body_benfica2425A.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 38,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=92) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kit_body.svg/38px-Kit_body.svg.png",
+                Identifier: (string) (len=64) "a1e5dc5de33466f8c1a306b50ed79ef5e42b13f99a494d8df5993e3683ba04ad",
+                Name: (string) (len=17) "File:Kit_body.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 38,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=82) "https://upload.wikimedia.org/wikipedia/commons/4/43/Kit_right_arm_benfica2425a.png",
+                Identifier: (string) (len=64) "a1e572715b5ad6a40b1b38f10f0882f311f9efda616ca73968af231d904bd534",
+                Name: (string) (len=35) "File:Kit_right_arm_benfica2425a.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=102) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Kit_right_arm.svg/31px-Kit_right_arm.svg.png",
+                Identifier: (string) (len=64) "199318fff46197127d76bb06e24d16f3a0e716fdaf8c5fce8906ba2cb9964ab7",
+                Name: (string) (len=22) "File:Kit_right_arm.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=97) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Kit_shorts.svg/100px-Kit_shorts.svg.png",
+                Identifier: (string) (len=64) "303e08dcbf5d47ceeb5d566cd26646803c86b2f50f050824893d0431b9f75368",
+                Name: (string) (len=19) "File:Kit_shorts.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 36,
+                Width: (int) 100,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kit_socks_long.svg/100px-Kit_socks_long.svg.png",
+                Identifier: (string) (len=64) "1937ddbeb6316570823ffcbb8566bb244d98ac472df8aefc2f5465855f7f16af",
+                Name: (string) (len=23) "File:Kit_socks_long.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 40,
+                Width: (int) 100,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=81) "https://upload.wikimedia.org/wikipedia/commons/d/d0/Kit_left_arm_benfica2425t.png",
+                Identifier: (string) (len=64) "a8654a48317bcac71bc60ee10a310475efc04e37c5a7826b7eb7b47059e2845c",
+                Name: (string) (len=34) "File:Kit_left_arm_benfica2425t.png",
+                AlternativeText: (string) "",
+                Caption: (string) (len=12) "Team colours",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=100) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Kit_left_arm.svg/31px-Kit_left_arm.svg.png",
+                Identifier: (string) (len=64) "9f2a3a9213cbc1b5cd84fd1d26513944a80f9ee2bd3a525c9d16256000fe64d8",
+                Name: (string) (len=21) "File:Kit_left_arm.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=77) "https://upload.wikimedia.org/wikipedia/commons/e/e4/Kit_body_benfica2425T.png",
+                Identifier: (string) (len=64) "e1a30c1262c49b53fdb6683e5bde0ae71cfa634be1867f5ea9904b62423cd378",
+                Name: (string) (len=30) "File:Kit_body_benfica2425T.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 38,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=92) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kit_body.svg/38px-Kit_body.svg.png",
+                Identifier: (string) (len=64) "a1e5dc5de33466f8c1a306b50ed79ef5e42b13f99a494d8df5993e3683ba04ad",
+                Name: (string) (len=17) "File:Kit_body.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 38,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=82) "https://upload.wikimedia.org/wikipedia/commons/2/21/Kit_right_arm_benfica2425t.png",
+                Identifier: (string) (len=64) "fdda159ff9a0df1feb6e7ea7fad7ee4a12d78d635e5c29738c95f9c1ffb2e4a5",
+                Name: (string) (len=35) "File:Kit_right_arm_benfica2425t.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=102) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Kit_right_arm.svg/31px-Kit_right_arm.svg.png",
+                Identifier: (string) (len=64) "199318fff46197127d76bb06e24d16f3a0e716fdaf8c5fce8906ba2cb9964ab7",
+                Name: (string) (len=22) "File:Kit_right_arm.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=79) "https://upload.wikimedia.org/wikipedia/commons/1/1b/Kit_shorts_benfica2425t.png",
+                Identifier: (string) (len=64) "32484fae44b25f439e8b66234f57f53685e97c8601b8a2b7b7389dec8a1c0964",
+                Name: (string) (len=32) "File:Kit_shorts_benfica2425t.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 36,
+                Width: (int) 100,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=97) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Kit_shorts.svg/100px-Kit_shorts.svg.png",
+                Identifier: (string) (len=64) "303e08dcbf5d47ceeb5d566cd26646803c86b2f50f050824893d0431b9f75368",
+                Name: (string) (len=19) "File:Kit_shorts.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 36,
+                Width: (int) 100,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=74) "https://upload.wikimedia.org/wikipedia/commons/e/ee/Kit_socks_blacktop.png",
+                Identifier: (string) (len=64) "e87e792979bea90ba6cb81094e2f0cae2bb8121a95ac42a67ff11f9fef035f4a",
+                Name: (string) (len=27) "File:Kit_socks_blacktop.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 25,
+                Width: (int) 100,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kit_socks_long.svg/100px-Kit_socks_long.svg.png",
+                Identifier: (string) (len=64) "1937ddbeb6316570823ffcbb8566bb244d98ac472df8aefc2f5465855f7f16af",
+                Name: (string) (len=23) "File:Kit_socks_long.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 40,
+                Width: (int) 100,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Kit_(association_football)",
+                Text: (string) (len=12) "Home colours",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Away_colours",
+                Text: (string) (len=12) "Away colours",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Third_jersey",
+                Text: (string) (len=13) "Third colours",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=39) "Home colours Away colours Third colours",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=26) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=81) "https://upload.wikimedia.org/wikipedia/commons/f/fe/Kit_left_arm_benfica2425h.png",
+                Identifier: (string) (len=64) "f4f4e85f75c635c49fcbbb4a6f52ab07ff5ca73c81fa585081a2cbef2c5c7d43",
+                Name: (string) (len=34) "File:Kit_left_arm_benfica2425h.png",
+                AlternativeText: (string) "",
+                Caption: (string) (len=12) "Team colours",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=100) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Kit_left_arm.svg/31px-Kit_left_arm.svg.png",
+                Identifier: (string) (len=64) "9f2a3a9213cbc1b5cd84fd1d26513944a80f9ee2bd3a525c9d16256000fe64d8",
+                Name: (string) (len=21) "File:Kit_left_arm.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=77) "https://upload.wikimedia.org/wikipedia/commons/f/fd/Kit_body_benfica2425H.png",
+                Identifier: (string) (len=64) "36dc9e0da52809cd24edf3c02152ab535998f0eec341889f1faab6ded395b9ab",
+                Name: (string) (len=30) "File:Kit_body_benfica2425H.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 38,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=92) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kit_body.svg/38px-Kit_body.svg.png",
+                Identifier: (string) (len=64) "a1e5dc5de33466f8c1a306b50ed79ef5e42b13f99a494d8df5993e3683ba04ad",
+                Name: (string) (len=17) "File:Kit_body.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 38,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=82) "https://upload.wikimedia.org/wikipedia/commons/4/49/Kit_right_arm_benfica2425h.png",
+                Identifier: (string) (len=64) "8f61e8ed7d164d18b87f584713057dad23d0c78bf5a41a7b7badccd77ef47eee",
+                Name: (string) (len=35) "File:Kit_right_arm_benfica2425h.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=102) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Kit_right_arm.svg/31px-Kit_right_arm.svg.png",
+                Identifier: (string) (len=64) "199318fff46197127d76bb06e24d16f3a0e716fdaf8c5fce8906ba2cb9964ab7",
+                Name: (string) (len=22) "File:Kit_right_arm.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=97) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Kit_shorts.svg/100px-Kit_shorts.svg.png",
+                Identifier: (string) (len=64) "303e08dcbf5d47ceeb5d566cd26646803c86b2f50f050824893d0431b9f75368",
+                Name: (string) (len=19) "File:Kit_shorts.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 36,
+                Width: (int) 100,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kit_socks_long.svg/100px-Kit_socks_long.svg.png",
+                Identifier: (string) (len=64) "1937ddbeb6316570823ffcbb8566bb244d98ac472df8aefc2f5465855f7f16af",
+                Name: (string) (len=23) "File:Kit_socks_long.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 40,
+                Width: (int) 100,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=81) "https://upload.wikimedia.org/wikipedia/commons/d/d9/Kit_left_arm_benfica2425a.png",
+                Identifier: (string) (len=64) "29fad5075363f91e39bd2aedfa7128621b7d7aeb9a0eb6c4a554278226afdd5e",
+                Name: (string) (len=34) "File:Kit_left_arm_benfica2425a.png",
+                AlternativeText: (string) "",
+                Caption: (string) (len=12) "Team colours",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=100) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Kit_left_arm.svg/31px-Kit_left_arm.svg.png",
+                Identifier: (string) (len=64) "9f2a3a9213cbc1b5cd84fd1d26513944a80f9ee2bd3a525c9d16256000fe64d8",
+                Name: (string) (len=21) "File:Kit_left_arm.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=77) "https://upload.wikimedia.org/wikipedia/commons/a/a3/Kit_body_benfica2425A.png",
+                Identifier: (string) (len=64) "b6aef88aa91055bdbf9d85f96953a35da173a645ecaba5dd7e3bba234749e0d3",
+                Name: (string) (len=30) "File:Kit_body_benfica2425A.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 38,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=92) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kit_body.svg/38px-Kit_body.svg.png",
+                Identifier: (string) (len=64) "a1e5dc5de33466f8c1a306b50ed79ef5e42b13f99a494d8df5993e3683ba04ad",
+                Name: (string) (len=17) "File:Kit_body.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 38,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=82) "https://upload.wikimedia.org/wikipedia/commons/4/43/Kit_right_arm_benfica2425a.png",
+                Identifier: (string) (len=64) "a1e572715b5ad6a40b1b38f10f0882f311f9efda616ca73968af231d904bd534",
+                Name: (string) (len=35) "File:Kit_right_arm_benfica2425a.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=102) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Kit_right_arm.svg/31px-Kit_right_arm.svg.png",
+                Identifier: (string) (len=64) "199318fff46197127d76bb06e24d16f3a0e716fdaf8c5fce8906ba2cb9964ab7",
+                Name: (string) (len=22) "File:Kit_right_arm.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=97) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Kit_shorts.svg/100px-Kit_shorts.svg.png",
+                Identifier: (string) (len=64) "303e08dcbf5d47ceeb5d566cd26646803c86b2f50f050824893d0431b9f75368",
+                Name: (string) (len=19) "File:Kit_shorts.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 36,
+                Width: (int) 100,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kit_socks_long.svg/100px-Kit_socks_long.svg.png",
+                Identifier: (string) (len=64) "1937ddbeb6316570823ffcbb8566bb244d98ac472df8aefc2f5465855f7f16af",
+                Name: (string) (len=23) "File:Kit_socks_long.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 40,
+                Width: (int) 100,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=81) "https://upload.wikimedia.org/wikipedia/commons/d/d0/Kit_left_arm_benfica2425t.png",
+                Identifier: (string) (len=64) "a8654a48317bcac71bc60ee10a310475efc04e37c5a7826b7eb7b47059e2845c",
+                Name: (string) (len=34) "File:Kit_left_arm_benfica2425t.png",
+                AlternativeText: (string) "",
+                Caption: (string) (len=12) "Team colours",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=100) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Kit_left_arm.svg/31px-Kit_left_arm.svg.png",
+                Identifier: (string) (len=64) "9f2a3a9213cbc1b5cd84fd1d26513944a80f9ee2bd3a525c9d16256000fe64d8",
+                Name: (string) (len=21) "File:Kit_left_arm.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=77) "https://upload.wikimedia.org/wikipedia/commons/e/e4/Kit_body_benfica2425T.png",
+                Identifier: (string) (len=64) "e1a30c1262c49b53fdb6683e5bde0ae71cfa634be1867f5ea9904b62423cd378",
+                Name: (string) (len=30) "File:Kit_body_benfica2425T.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 38,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=92) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kit_body.svg/38px-Kit_body.svg.png",
+                Identifier: (string) (len=64) "a1e5dc5de33466f8c1a306b50ed79ef5e42b13f99a494d8df5993e3683ba04ad",
+                Name: (string) (len=17) "File:Kit_body.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 38,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=82) "https://upload.wikimedia.org/wikipedia/commons/2/21/Kit_right_arm_benfica2425t.png",
+                Identifier: (string) (len=64) "fdda159ff9a0df1feb6e7ea7fad7ee4a12d78d635e5c29738c95f9c1ffb2e4a5",
+                Name: (string) (len=35) "File:Kit_right_arm_benfica2425t.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=102) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Kit_right_arm.svg/31px-Kit_right_arm.svg.png",
+                Identifier: (string) (len=64) "199318fff46197127d76bb06e24d16f3a0e716fdaf8c5fce8906ba2cb9964ab7",
+                Name: (string) (len=22) "File:Kit_right_arm.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 59,
+                Width: (int) 31,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=79) "https://upload.wikimedia.org/wikipedia/commons/1/1b/Kit_shorts_benfica2425t.png",
+                Identifier: (string) (len=64) "32484fae44b25f439e8b66234f57f53685e97c8601b8a2b7b7389dec8a1c0964",
+                Name: (string) (len=32) "File:Kit_shorts_benfica2425t.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 36,
+                Width: (int) 100,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=97) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Kit_shorts.svg/100px-Kit_shorts.svg.png",
+                Identifier: (string) (len=64) "303e08dcbf5d47ceeb5d566cd26646803c86b2f50f050824893d0431b9f75368",
+                Name: (string) (len=19) "File:Kit_shorts.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 36,
+                Width: (int) 100,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=74) "https://upload.wikimedia.org/wikipedia/commons/e/ee/Kit_socks_blacktop.png",
+                Identifier: (string) (len=64) "e87e792979bea90ba6cb81094e2f0cae2bb8121a95ac42a67ff11f9fef035f4a",
+                Name: (string) (len=27) "File:Kit_socks_blacktop.png",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 25,
+                Width: (int) 100,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kit_socks_long.svg/100px-Kit_socks_long.svg.png",
+                Identifier: (string) (len=64) "1937ddbeb6316570823ffcbb8566bb244d98ac472df8aefc2f5465855f7f16af",
+                Name: (string) (len=23) "File:Kit_socks_long.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 40,
+                Width: (int) 100,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Kit_(association_football)",
+                Text: (string) (len=12) "Home colours",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Away_colours",
+                Text: (string) (len=12) "Away colours",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Third_jersey",
+                Text: (string) (len=13) "Third colours",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

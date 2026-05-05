@@ -1,0 +1,94 @@
+([]*parser.Part) (len=2) {
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=60) "Meilleur classement général : 61 e en 2024 avec 115 points",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=67) "https://fr.wikipedia.org/wiki/Coupe_du_monde_de_ski_alpin_2023-2024",
+            Text: (string) (len=4) "2024",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=86) "Meilleur classement en slalom : 23 e en 2023 avec 91 points et en 2024 avec 115 points",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=67) "https://fr.wikipedia.org/wiki/Coupe_du_monde_de_ski_alpin_2022-2023",
+            Text: (string) (len=4) "2023",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=67) "https://fr.wikipedia.org/wiki/Coupe_du_monde_de_ski_alpin_2023-2024",
+            Text: (string) (len=4) "2024",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=101) "Meilleur résultat sur une épreuve de Coupe du monde : 2 e du slalom de Chamonix le 4 février 2023.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=49) "https://fr.wikipedia.org/wiki/Chamonix-Mont-Blanc",
+            Text: (string) (len=8) "Chamonix",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=42) "Champion des États-Unis de slalom en 2017",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

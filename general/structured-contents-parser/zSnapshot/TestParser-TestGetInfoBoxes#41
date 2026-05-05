@@ -1,0 +1,658 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=14) "Infobox person",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) (len=12) "Gwen Stefani",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=18) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=23) "Stefani in October 2016",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=237) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Barack_Obama_and_Gwen_Stefani_State_Dinner_performance_%28cropped%29_%28cropped%29.jpg/220px-Barack_Obama_and_Gwen_Stefani_State_Dinner_performance_%28cropped%29_%28cropped%29.jpg",
+                Identifier: (string) (len=64) "e2b580f208b6b796b7cfa88be64ee4e8b2d421eb7db4a07b346e74ee45aef984",
+                Name: (string) (len=83) "File:Barack_Obama_and_Gwen_Stefani_State_Dinner_performance_(cropped)_(cropped).jpg",
+                AlternativeText: (string) "",
+                Caption: (string) (len=23) "Stefani in October 2016",
+                Height: (int) 298,
+                Width: (int) 220,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Born",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=63) "Gwen Renée Stefani October 3, 1969 Fullerton, California, U.S.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Fullerton,_California",
+                Text: (string) (len=21) "Fullerton, California",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Other names",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=2) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=13) "Gwen Rossdale",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=54) "https://en.wikipedia.org/wiki/Gwen_Stefani#cite_note-1",
+                    Text: (string) "",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=12) "Gwen Shelton",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=54) "https://en.wikipedia.org/wiki/Gwen_Stefani#cite_note-2",
+                    Text: (string) "",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Education",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=38) "California State University, Fullerton",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=68) "https://en.wikipedia.org/wiki/California_State_University,_Fullerton",
+                Text: (string) (len=38) "California State University, Fullerton",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Occupations",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=4) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=17) "Singer-songwriter",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=15) "record producer",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=16) "fashion designer",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "actress",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Years active",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "1986–present",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Organization",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "L.A.M.B.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/L.A.M.B.",
+                Text: (string) (len=8) "L.A.M.B.",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Spouses",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=59) "Gavin Rossdale (m. 2002; div. 2016) Blake Shelton (m. 2021)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Gavin_Rossdale",
+                Text: (string) (len=14) "Gavin Rossdale",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Blake_Shelton",
+                Text: (string) (len=13) "Blake Shelton",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Partner",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "Tony Kanal (1987–1994)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Tony_Kanal",
+                Text: (string) (len=10) "Tony Kanal",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Children",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=1) "3",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Relatives",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "Eric Stefani (brother)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Eric_Stefani",
+                Text: (string) (len=12) "Eric Stefani",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Awards",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Full list",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=85) "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Gwen_Stefani",
+                Text: (string) (len=9) "Full list",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "Musical career",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Genres",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=8) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=3) "Pop",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=39) "https://en.wikipedia.org/wiki/Pop_music",
+                    Text: (string) (len=3) "Pop",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=62) "https://en.wikipedia.org/wiki/Gwen_Stefani#cite_note-NYTimes-3",
+                    Text: (string) "",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=8) "pop rock",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=38) "https://en.wikipedia.org/wiki/Pop_rock",
+                    Text: (string) (len=8) "pop rock",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=54) "https://en.wikipedia.org/wiki/Gwen_Stefani#cite_note-4",
+                    Text: (string) "",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=8) "ska punk",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=38) "https://en.wikipedia.org/wiki/Ska_punk",
+                    Text: (string) (len=8) "ska punk",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=70) "https://en.wikipedia.org/wiki/Gwen_Stefani#cite_note-AllMusic_genres-5",
+                    Text: (string) "",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=16) "alternative rock",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/Alternative_rock",
+                    Text: (string) (len=16) "alternative rock",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=72) "https://en.wikipedia.org/wiki/Gwen_Stefani#cite_note-AllMusicBiography-6",
+                    Text: (string) "",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=3) "R&B",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/Contemporary_R&B",
+                    Text: (string) (len=3) "R&B",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=72) "https://en.wikipedia.org/wiki/Gwen_Stefani#cite_note-AllMusicBiography-6",
+                    Text: (string) "",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "electro",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=45) "https://en.wikipedia.org/wiki/Electro_(music)",
+                    Text: (string) (len=7) "electro",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=72) "https://en.wikipedia.org/wiki/Gwen_Stefani#cite_note-AllMusicBiography-6",
+                    Text: (string) "",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=3) "ska",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=33) "https://en.wikipedia.org/wiki/Ska",
+                    Text: (string) (len=3) "ska",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=54) "https://en.wikipedia.org/wiki/Gwen_Stefani#cite_note-7",
+                    Text: (string) "",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=8) "new wave",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=44) "https://en.wikipedia.org/wiki/New_wave_music",
+                    Text: (string) (len=8) "new wave",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=72) "https://en.wikipedia.org/wiki/Gwen_Stefani#cite_note-AllMusicBiography-6",
+                    Text: (string) "",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Instruments",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Vocals",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Labels",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=2) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "Interscope",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=48) "https://en.wikipedia.org/wiki/Interscope_Records",
+                    Text: (string) (len=10) "Interscope",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Polydor",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=45) "https://en.wikipedia.org/wiki/Polydor_Records",
+                    Text: (string) (len=7) "Polydor",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=54) "https://en.wikipedia.org/wiki/Gwen_Stefani#cite_note-8",
+                    Text: (string) "",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Member of",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "No Doubt",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/No_Doubt",
+                Text: (string) (len=8) "No Doubt",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Website",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=15) "gwenstefani.com",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=22) "http://gwenstefani.com",
+                Text: (string) (len=15) "gwenstefani.com",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=9) "Signature",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=129) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Gwen_Stefani%27s_signature.svg/150px-Gwen_Stefani%27s_signature.svg.png",
+                Identifier: (string) (len=64) "3284adc6109fbb9979d545cc300a5c691b5b972019c8c3ae0caf8e5c3ca5a5aa",
+                Name: (string) (len=33) "File:Gwen_Stefani's_signature.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 108,
+                Width: (int) 150,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

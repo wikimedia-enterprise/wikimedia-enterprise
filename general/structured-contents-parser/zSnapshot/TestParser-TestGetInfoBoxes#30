@@ -1,0 +1,384 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=7) "Monarca",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=15) {
+          (*parser.Part)({
+            Name: (string) (len=22) "Federico II di Prussia",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=100) "Johann Georg Ziesenis, ritratto di Federico II, 1763, olio su tela . Potsdam, palazzo di Sanssouci .",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=185) "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Friedrich_der_Gro%C3%9Fe_%281870%29_-_Google_Art_Project.jpg/251px-Friedrich_der_Gro%C3%9Fe_%281870%29_-_Google_Art_Project.jpg",
+                Identifier: (string) (len=64) "0cab092ab7abc288501b25fd6b7fd0c6afc6e6002b19fac502bea722e437dc93",
+                Name: (string) (len=57) "File:Friedrich_der_Große_(1870)_-_Google_Art_Project.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 300,
+                Width: (int) 251,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) (len=6) {
+              (*parser.Link)({
+                URL: (string) (len=73) "https://it.wikipedia.org/wiki/Johann_Georg_Ziesenis?action=edit&redlink=1",
+                Text: (string) (len=21) "Johann Georg Ziesenis",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://it.wikipedia.org/wiki/1763",
+                Text: (string) (len=4) "1763",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://it.wikipedia.org/wiki/Pittura_a_olio",
+                Text: (string) (len=4) "olio",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://it.wikipedia.org/wiki/Pittura_su_tela",
+                Text: (string) (len=7) "su tela",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://it.wikipedia.org/wiki/Potsdam",
+                Text: (string) (len=7) "Potsdam",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://it.wikipedia.org/wiki/Palazzo_di_Sanssouci",
+                Text: (string) (len=20) "palazzo di Sanssouci",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=46) "Re di Prussia Principe elettore di Brandeburgo",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://it.wikipedia.org/wiki/Sovrani_di_Prussia",
+                Text: (string) (len=13) "Re di Prussia",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=64) "https://it.wikipedia.org/wiki/Federico_II_di_Prussia#cite_note-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=52) "https://it.wikipedia.org/wiki/Sovrani_di_Brandeburgo",
+                Text: (string) (len=32) "Principe elettore di Brandeburgo",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Stemma",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=116) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Arms_of_East_Prussia.svg/86px-Arms_of_East_Prussia.svg.png",
+                Identifier: (string) (len=64) "ca9b224241e922f3622e0ec58266c5c4b22d54277ee67d6e53c9e583ff11bf32",
+                Name: (string) (len=29) "File:Arms_of_East_Prussia.svg",
+                AlternativeText: (string) (len=6) "Stemma",
+                Caption: (string) (len=6) "Stemma",
+                Height: (int) 100,
+                Width: (int) 86,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "In carica",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=33) "31 maggio 1740 – 17 agosto 1786",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=34) "https://it.wikipedia.org/wiki/1740",
+                Text: (string) (len=4) "1740",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://it.wikipedia.org/wiki/1786",
+                Text: (string) (len=4) "1786",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Predecessore",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=20) "Federico Guglielmo I",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=61) "https://it.wikipedia.org/wiki/Federico_Guglielmo_I_di_Prussia",
+                Text: (string) (len=20) "Federico Guglielmo I",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Successore",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "Federico Guglielmo II",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=62) "https://it.wikipedia.org/wiki/Federico_Guglielmo_II_di_Prussia",
+                Text: (string) (len=21) "Federico Guglielmo II",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Nascita",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "Berlino, 24 gennaio 1712",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=37) "https://it.wikipedia.org/wiki/Berlino",
+                Text: (string) (len=7) "Berlino",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://it.wikipedia.org/wiki/1712",
+                Text: (string) (len=4) "1712",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Morte",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=44) "Sanssouci, Potsdam, 17 agosto 1786 (74 anni)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://it.wikipedia.org/wiki/Palazzo_di_Sanssouci",
+                Text: (string) (len=9) "Sanssouci",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://it.wikipedia.org/wiki/Potsdam",
+                Text: (string) (len=7) "Potsdam",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://it.wikipedia.org/wiki/1786",
+                Text: (string) (len=4) "1786",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=18) "Luogo di sepoltura",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=20) "Palazzo di Sanssouci",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://it.wikipedia.org/wiki/Palazzo_di_Sanssouci",
+                Text: (string) (len=20) "Palazzo di Sanssouci",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Casa reale",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Hohenzollern",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://it.wikipedia.org/wiki/Casato_di_Hohenzollern",
+                Text: (string) (len=12) "Hohenzollern",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Padre",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=31) "Federico Guglielmo I di Prussia",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=61) "https://it.wikipedia.org/wiki/Federico_Guglielmo_I_di_Prussia",
+                Text: (string) (len=31) "Federico Guglielmo I di Prussia",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Madre",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=25) "Sofia Dorotea di Hannover",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=55) "https://it.wikipedia.org/wiki/Sofia_Dorotea_di_Hannover",
+                Text: (string) (len=25) "Sofia Dorotea di Hannover",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Consorte",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=39) "Elisabetta Cristina di Brunswick-Bevern",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=83) "https://it.wikipedia.org/wiki/Elisabetta_Cristina_di_Brunswick-Wolfenbüttel-Bevern",
+                Text: (string) (len=39) "Elisabetta Cristina di Brunswick-Bevern",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Religione",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=43) "Calvinismo (ufficialmente) Deismo / Ateismo",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://it.wikipedia.org/wiki/Calvinismo",
+                Text: (string) (len=10) "Calvinismo",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://it.wikipedia.org/wiki/Deismo",
+                Text: (string) (len=6) "Deismo",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://it.wikipedia.org/wiki/Ateismo",
+                Text: (string) (len=7) "Ateismo",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Firma",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=5) "Firma",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=135) "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Frederick_the_Great_signature.svg/150px-Frederick_the_Great_signature.svg.png",
+                Identifier: (string) (len=64) "aa1cc4f4cfec4b3234ac9a54d5210a1047f9f8e619d050ac18974c9ce0bb74ba",
+                Name: (string) (len=38) "File:Frederick_the_Great_signature.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 118,
+                Width: (int) 150,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

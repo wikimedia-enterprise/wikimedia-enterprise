@@ -1,0 +1,1412 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=15) "Infobox country",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) (len=24) "United States of America",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=19) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=17) "Flag Coat of arms",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=2) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=185) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg/125px-Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg.png",
+                Identifier: (string) (len=64) "aaab1ccc5384f290b5f80bbb921e7bd6a02f6bcc54f679298b220721f8478564",
+                Name: (string) (len=59) "File:Flag_of_the_United_States_(DoS_ECA_Color_Standard).svg",
+                AlternativeText: (string) (len=2) "\u00a0",
+                Caption: (string) (len=21) "Flag of United States",
+                Height: (int) 66,
+                Width: (int) 125,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=158) "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Greater_coat_of_arms_of_the_United_States.svg/85px-Greater_coat_of_arms_of_the_United_States.svg.png",
+                Identifier: (string) (len=64) "262192c0efb4d0f2a1940a15292907b035a1866b6395a78f6b33bf4e4787507d",
+                Name: (string) (len=50) "File:Greater_coat_of_arms_of_the_United_States.svg",
+                AlternativeText: (string) (len=2) "\u00a0",
+                Caption: (string) (len=29) "Coat of arms of United States",
+                Height: (int) 90,
+                Width: (int) 85,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Flag_of_the_United_States",
+                Text: (string) (len=4) "Flag",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=69) "https://en.wikipedia.org/wiki/Great_Seal_of_the_United_States#Obverse",
+                Text: (string) (len=12) "Coat of arms",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=3) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=46) "\" E pluribus unum \" (Latin) \"Out of many, one\"",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=45) "https://en.wikipedia.org/wiki/E_pluribus_unum",
+                    Text: (string) (len=15) "E pluribus unum",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=44) "https://en.wikipedia.org/wiki/Latin_language",
+                    Text: (string) (len=5) "Latin",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=63) "\" Annuit cœptis \" (Latin) \"Providence favors our undertakings\"",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=44) "https://en.wikipedia.org/wiki/Annuit_cœptis",
+                    Text: (string) (len=14) "Annuit cœptis",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=44) "https://en.wikipedia.org/wiki/Latin_language",
+                    Text: (string) (len=5) "Latin",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=55) "\" Novus ordo seclorum \" (Latin) \"New order of the ages\"",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=49) "https://en.wikipedia.org/wiki/Novus_ordo_seclorum",
+                    Text: (string) (len=19) "Novus ordo seclorum",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=44) "https://en.wikipedia.org/wiki/Latin_language",
+                    Text: (string) (len=5) "Latin",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/In_God_We_Trust",
+                Text: (string) (len=15) "In God We Trust",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/United_States#cite_note-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=70) "https://en.wikipedia.org/wiki/United_States#cite_note-de_facto_Motto-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=36) "Anthem: \" The Star-Spangled Banner \"",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/The_Star-Spangled_Banner",
+                Text: (string) (len=24) "The Star-Spangled Banner",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/United_States#cite_note-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=3) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=109) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png",
+                Identifier: (string) (len=64) "b92ac101ce176a8cfcbf29b316c0edcb8ba6764eb4b89dc32055ffad2b382da2",
+                Name: (string) (len=25) "File:USA_orthographic.svg",
+                AlternativeText: (string) (len=45) "Orthographic map of the U.S. in North America",
+                Caption: (string) "",
+                Height: (int) 220,
+                Width: (int) 220,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=109) "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/US_insular_areas.svg/250px-US_insular_areas.svg.png",
+                Identifier: (string) (len=64) "9894bf22218a5e0668369f3205e54319ed265adb4d29cc174560d6c658bee85b",
+                Name: (string) (len=29) "File:US_insular_areas_SVG.svg",
+                AlternativeText: (string) (len=46) "World map showing the U.S. and its territories",
+                Caption: (string) "",
+                Height: (int) 127,
+                Width: (int) 250,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=121) "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/NOAA_Map_of_the_US_EEZ.svg/250px-NOAA_Map_of_the_US_EEZ.svg.png",
+                Identifier: (string) (len=64) "52c292a13497e706f99b52c353e089f25f008b91b27710ee7d003d05bd41d4c8",
+                Name: (string) (len=31) "File:NOAA_Map_of_the_US_EEZ.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 250,
+                Width: (int) 250,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Capital",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=59) "Washington, D.C. 38°53′N 77°1′W / 38.883°N 77.017°W",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Washington,_D.C.",
+                Text: (string) (len=16) "Washington, D.C.",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=87) "https://geohack.toolforge.org/geohack.php?pagename=United_States&params=38_53_N_77_1_W_",
+                Text: (string) (len=42) "38°53′N 77°1′W / 38.883°N 77.017°W",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Largest city",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=56) "New York City 40°43′N 74°0′W / 40.717°N 74.000°W",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/New_York_City",
+                Text: (string) (len=13) "New York City",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=87) "https://geohack.toolforge.org/geohack.php?pagename=United_States&params=40_43_N_74_0_W_",
+                Text: (string) (len=42) "40°43′N 74°0′W / 40.717°N 74.000°W",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=18) "Official languages",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=25) "None at the federal level",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=69) "https://en.wikipedia.org/wiki/Federal_government_of_the_United_States",
+                Text: (string) (len=13) "federal level",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=72) "https://en.wikipedia.org/wiki/United_States#cite_note-officiallanguage-4",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=17) "National language",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "English",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/National_language",
+                Text: (string) (len=17) "National language",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/American_English",
+                Text: (string) (len=7) "English",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/United_States#cite_note-5",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=20) "Ethnic groups (2020)",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=9) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=11) "61.6% White",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=45) "https://en.wikipedia.org/wiki/White_Americans",
+                    Text: (string) (len=5) "White",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=11) "12.4% Black",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=47) "https://en.wikipedia.org/wiki/African_Americans",
+                    Text: (string) (len=5) "Black",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=8) "6% Asian",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=45) "https://en.wikipedia.org/wiki/Asian_Americans",
+                    Text: (string) (len=5) "Asian",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=20) "1.1% Native American",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=67) "https://en.wikipedia.org/wiki/Native_Americans_in_the_United_States",
+                    Text: (string) (len=15) "Native American",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=21) "0.2% Pacific Islander",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=56) "https://en.wikipedia.org/wiki/Pacific_Islander_Americans",
+                    Text: (string) (len=16) "Pacific Islander",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=23) "10.2% two or more races",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=51) "https://en.wikipedia.org/wiki/Multiracial_Americans",
+                    Text: (string) (len=17) "two or more races",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "8.4% other",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=76) "https://en.wikipedia.org/wiki/Race_and_ethnicity_in_the_United_States_census",
+                    Text: (string) (len=5) "other",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=29) "81.3% non- Hispanic or Latino",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=59) "https://en.wikipedia.org/wiki/Hispanic_and_Latino_Americans",
+                    Text: (string) (len=18) "Hispanic or Latino",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=24) "18.7% Hispanic or Latino",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Ethnic_group",
+                Text: (string) (len=13) "Ethnic groups",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=70) "https://en.wikipedia.org/wiki/United_States#cite_note-2020CensusData-6",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=81) "https://en.wikipedia.org/wiki/United_States#cite_note-2020InteractiveCensusData-7",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/United_States#cite_note-8",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Religion (2023)",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=4) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=16) "22% unaffiliated",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=61) "https://en.wikipedia.org/wiki/Irreligion_in_the_United_States",
+                    Text: (string) (len=12) "unaffiliated",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "2% Judaism",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=43) "https://en.wikipedia.org/wiki/American_Jews",
+                    Text: (string) (len=7) "Judaism",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=17) "6% other religion",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=59) "https://en.wikipedia.org/wiki/Religion_in_the_United_States",
+                    Text: (string) (len=14) "other religion",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=13) "3% unanswered",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=66) "https://en.wikipedia.org/wiki/United_States#cite_note-Staff-2007-9",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Demonym(s)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "American",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Demonym",
+                Text: (string) (len=10) "Demonym(s)",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Americans",
+                Text: (string) (len=8) "American",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=64) "https://en.wikipedia.org/wiki/United_States#cite_note-demonym-10",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/United_States#cite_note-11",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Government",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=29) "Federal presidential republic",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Politics_of_United_States",
+                Text: (string) (len=10) "Government",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=61) "https://en.wikipedia.org/wiki/Federalism_in_the_United_States",
+                Text: (string) (len=7) "Federal",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "President",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Joe Biden",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/President_of_the_United_States",
+                Text: (string) (len=9) "President",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Joe_Biden",
+                Text: (string) (len=9) "Joe Biden",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Vice President",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Kamala Harris",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=65) "https://en.wikipedia.org/wiki/Vice_President_of_the_United_States",
+                Text: (string) (len=14) "Vice President",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Kamala_Harris",
+                Text: (string) (len=13) "Kamala Harris",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "House Speaker",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Mike Johnson",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=83) "https://en.wikipedia.org/wiki/Speaker_of_the_United_States_House_of_Representatives",
+                Text: (string) (len=13) "House Speaker",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Mike_Johnson",
+                Text: (string) (len=12) "Mike Johnson",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Chief Justice",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "John Roberts",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=64) "https://en.wikipedia.org/wiki/Chief_Justice_of_the_United_States",
+                Text: (string) (len=13) "Chief Justice",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/John_Roberts",
+                Text: (string) (len=12) "John Roberts",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Legislature",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Congress",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/United_States_Congress",
+                Text: (string) (len=8) "Congress",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Upper house",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Senate",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Upper_house",
+                Text: (string) (len=11) "Upper house",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/United_States_Senate",
+                Text: (string) (len=6) "Senate",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Lower house",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "House of Representatives",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Lower_house",
+                Text: (string) (len=11) "Lower house",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=68) "https://en.wikipedia.org/wiki/United_States_House_of_Representatives",
+                Text: (string) (len=24) "House of Representatives",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=31) "Independence from Great Britain",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=4) {
+          (*parser.Part)({
+            Name: (string) (len=11) "Declaration",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "July 4, 1776",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence",
+                Text: (string) (len=11) "Declaration",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Confederation",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "March 1, 1781",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Confederation_period",
+                Text: (string) (len=13) "Confederation",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Recognition",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "September 3, 1783",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1783)",
+                Text: (string) (len=11) "Recognition",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Constitution",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "June 21, 1788",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=63) "https://en.wikipedia.org/wiki/Constitution_of_the_United_States",
+                Text: (string) (len=12) "Constitution",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=4) "Area",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) (len=10) "Total area",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=38) "3,796,742 sq mi (9,833,520 km 2) (3rd)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=74) "https://en.wikipedia.org/wiki/United_States#cite_note-CensusGov2010HTML-12",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/United_States#cite_note-largestcountry-13",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=72) "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area",
+                Text: (string) (len=3) "3rd",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Water (%)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "7.0 (2010)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/United_States#cite_note-14",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Land area",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=38) "3,531,905 sq mi (9,147,590 km 2) (3rd)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=10) "Population",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=19) {
+          (*parser.Part)({
+            Name: (string) (len=13) "2024 estimate",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "340,110,988",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/United_States#cite_note-15",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "2020 census",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "331,449,281 (3rd)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/United_States#cite_note-pop-16",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/United_States#cite_note-17",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=78) "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population",
+                Text: (string) (len=3) "3rd",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Density",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=28) "87/sq mi (33.6/km 2) (185th)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=86) "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population_density",
+                Text: (string) (len=5) "185th",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "GDP (PPP)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "2024 estimate",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Gross_domestic_product",
+                Text: (string) (len=3) "GDP",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Purchasing_power_parity",
+                Text: (string) (len=3) "PPP",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Total",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "$29.168 trillion (2nd)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=66) "https://en.wikipedia.org/wiki/United_States#cite_note-IMFWEO.US-18",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)",
+                Text: (string) (len=3) "2nd",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Per capita",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "$86,601 (8th)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=66) "https://en.wikipedia.org/wiki/United_States#cite_note-IMFWEO.US-18",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)_per_capita",
+                Text: (string) (len=3) "8th",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "GDP (nominal)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "2024 estimate",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Gross_domestic_product",
+                Text: (string) (len=3) "GDP",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Total",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "$29.168 trillion (1st)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=66) "https://en.wikipedia.org/wiki/United_States#cite_note-IMFWEO.US-18",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=64) "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)",
+                Text: (string) (len=3) "1st",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Per capita",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "$86,601 (6th)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=66) "https://en.wikipedia.org/wiki/United_States#cite_note-IMFWEO.US-18",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=75) "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)_per_capita",
+                Text: (string) (len=3) "6th",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Gini (2023)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "41.6 medium inequality",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Gini_coefficient",
+                Text: (string) (len=4) "Gini",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/United_States#cite_note-19",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/United_States#cite_note-20",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "HDI (2022)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "0.927 very high (20th)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Human_Development_Index",
+                Text: (string) (len=3) "HDI",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=62) "https://en.wikipedia.org/wiki/United_States#cite_note-UNHDR-21",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=74) "https://en.wikipedia.org/wiki/List_of_countries_by_Human_Development_Index",
+                Text: (string) (len=4) "20th",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Currency",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "U.S. dollar ($) (USD)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/United_States_dollar",
+                Text: (string) (len=11) "U.S. dollar",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=31) "https://en.wikipedia.org/wiki/$",
+                Text: (string) (len=1) "$",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/ISO_4217",
+                Text: (string) (len=3) "USD",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Time zone",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=27) "UTC −4 to −12, +10, +11",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Coordinated_Universal_Time",
+                Text: (string) (len=3) "UTC",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Summer (DST)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "UTC −4 to −10",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Daylight_saving_time",
+                Text: (string) (len=3) "DST",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Coordinated_Universal_Time",
+                Text: (string) (len=3) "UTC",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=61) "https://en.wikipedia.org/wiki/United_States#cite_note-time-22",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Date format",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "mm/dd/yyyy",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/United_States#cite_note-23",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Drives on",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=5) "Right",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic",
+                Text: (string) (len=9) "Drives on",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=62) "https://en.wikipedia.org/wiki/United_States#cite_note-drive-24",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Calling code",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=2) "+1",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/North_American_Numbering_Plan",
+                Text: (string) (len=2) "+1",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "ISO 3166 code",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=2) "US",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/ISO_3166",
+                Text: (string) (len=13) "ISO 3166 code",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/ISO_3166-2:US",
+                Text: (string) (len=2) "US",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Internet TLD",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=3) ".us",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/Country_code_top-level_domain",
+                Text: (string) (len=12) "Internet TLD",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=33) "https://en.wikipedia.org/wiki/.us",
+                Text: (string) (len=3) ".us",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/United_States#cite_note-25",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

@@ -1,0 +1,458 @@
+([]*parser.Part) (len=2) {
+  (*parser.Part)({
+    Name: (string) (len=18) "Strumento musicale",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=11) {
+          (*parser.Part)({
+            Name: (string) (len=8) "Armonium",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=38) "Armonium occidentale, di tipo francese",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=111) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Harmonium_Alexandre.JPG/310px-Harmonium_Alexandre.JPG",
+                Identifier: (string) (len=64) "9aa52948dd16e59595fb63e75ddc2e10ba848b44bcc3e020e7b6f0e29f4d3afe",
+                Name: (string) (len=28) "File:Harmonium_Alexandre.JPG",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 330,
+                Width: (int) 310,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=59) "https://it.wikipedia.org/wiki/Armonium#Armonium_occidentale",
+                Text: (string) (len=20) "Armonium occidentale",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://it.wikipedia.org/wiki/Francia",
+                Text: (string) (len=8) "francese",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "Informazioni generali",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Origine",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "Europa occidentale",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://it.wikipedia.org/wiki/Europa_occidentale",
+                Text: (string) (len=18) "Europa occidentale",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Invenzione",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "XIX secolo",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://it.wikipedia.org/wiki/XIX_secolo",
+                Text: (string) (len=10) "XIX secolo",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Inventore",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "Gabriel-Joseph Grenié",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=74) "https://it.wikipedia.org/wiki/Gabriel-Joseph_Grenié?action=edit&redlink=1",
+                Text: (string) (len=22) "Gabriel-Joseph Grenié",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Classificazione",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=27) "412.132 Aerofoni a tastiera",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=62) "https://it.wikipedia.org/wiki/Classificazione_Hornbostel-Sachs",
+                Text: (string) (len=7) "412.132",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://it.wikipedia.org/wiki/Categoria:Aerofoni_a_tastiera",
+                Text: (string) (len=19) "Aerofoni a tastiera",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Famiglia",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Organi",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://it.wikipedia.org/wiki/Categoria:Organi",
+                Text: (string) (len=6) "Organi",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=3) "Uso",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=79) "Musica europea dell'Ottocento Musica contemporanea Musica dell'Asia Meridionale",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=61) "https://it.wikipedia.org/wiki/Storia_della_musica#L'Ottocento",
+                Text: (string) (len=29) "Musica europea dell'Ottocento",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://it.wikipedia.org/wiki/Musica_contemporanea",
+                Text: (string) (len=20) "Musica contemporanea",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=80) "https://it.wikipedia.org/wiki/Categoria:Strumenti_musicali_dell'Asia_Meridionale",
+                Text: (string) (len=28) "Musica dell'Asia Meridionale",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "Genealogia",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=31) "← Antecedenti Discendenti →",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Ascolto",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=98) "César Franck: 5ª parte tratta da L'organiste, suonata su un armonium Debain del 1878 (info file)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=43) "https://it.wikipedia.org/wiki/César_Franck",
+                Text: (string) (len=13) "César Franck",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://it.wikipedia.org/wiki/1878",
+                Text: (string) (len=4) "1878",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) (len=18) "Strumento musicale",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=10) {
+          (*parser.Part)({
+            Name: (string) (len=16) "Armonium indiano",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=38) "Musicista che suona l'armonium indiano",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Dr_Vidyadhar_Oke.jpg/330px-Dr_Vidyadhar_Oke.jpg",
+                Identifier: (string) (len=64) "3a2ad4a757bb033040f3f11e8e828332e837e3fad5f6711f99c0e87b80fb75eb",
+                Name: (string) (len=25) "File:Dr_Vidyadhar_Oke.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 260,
+                Width: (int) 330,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "Informazioni generali",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Origine",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "Asia meridionale",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://it.wikipedia.org/wiki/Asia_meridionale",
+                Text: (string) (len=16) "Asia meridionale",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Invenzione",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "XIX secolo",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://it.wikipedia.org/wiki/XIX_secolo",
+                Text: (string) (len=10) "XIX secolo",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Classificazione",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=27) "412.132 Aerofoni a tastiera",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=62) "https://it.wikipedia.org/wiki/Classificazione_Hornbostel-Sachs",
+                Text: (string) (len=7) "412.132",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://it.wikipedia.org/wiki/Categoria:Aerofoni_a_tastiera",
+                Text: (string) (len=19) "Aerofoni a tastiera",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Famiglia",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Organi",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://it.wikipedia.org/wiki/Categoria:Organi",
+                Text: (string) (len=6) "Organi",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=3) "Uso",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=61) "Musica folk Musica contemporanea Musica dell'Asia Meridionale",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://it.wikipedia.org/wiki/Musica_tradizionale",
+                Text: (string) (len=11) "Musica folk",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://it.wikipedia.org/wiki/Musica_contemporanea",
+                Text: (string) (len=20) "Musica contemporanea",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=80) "https://it.wikipedia.org/wiki/Categoria:Strumenti_musicali_dell'Asia_Meridionale",
+                Text: (string) (len=28) "Musica dell'Asia Meridionale",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "Genealogia",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://it.wikipedia.org/wiki/Minimoog",
+                Text: (string) (len=8) "Minimoog",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=31) "← Antecedenti Discendenti →",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Minimoog",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://it.wikipedia.org/wiki/Minimoog",
+                Text: (string) (len=8) "Minimoog",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

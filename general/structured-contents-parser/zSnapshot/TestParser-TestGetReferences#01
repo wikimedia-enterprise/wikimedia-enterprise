@@ -1,0 +1,276 @@
+([]*parser.Reference) (len=10) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=132) "\".NET Foundation\". Registration Data Search. Corporations Division. Washington State Secretary of State. Accessed on March 30, 2016.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=60) "http://www.sos.wa.gov/corps/search_detail.aspx?ubi=603389068",
+          Text: (string) (len=15) ".NET Foundation",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=56) "\"NET Foundation\". Guidestar. Accessed on March 30, 2016.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=43) "http://www.guidestar.org/profile/47-2119192",
+          Text: (string) (len=14) "NET Foundation",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=39) "https://en.wikipedia.org/wiki/Guidestar",
+          Text: (string) (len=9) "Guidestar",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=7) "ctx_ver": (string) (len=11) "Z39.88-2004",
+      (string) (len=8) "is_coins": (string) (len=4) "true",
+      (string) (len=6) "rfr_id": (string) (len=41) "info:sid/en.wikipedia.org:.NET Foundation",
+      (string) (len=10) "rft.btitle": (string) (len=42) "Board of Directors and Administrative Team",
+      (string) (len=9) "rft.genre": (string) (len=7) "unknown",
+      (string) (len=6) "rft_id": (string) (len=58) "https://dotnetfoundation.org/about/board-of-directors#team",
+      (string) (len=11) "rft_val_fmt": (string) (len=25) "info:ofi/fmt:kev:mtx:book"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=45) "\"Board of Directors and Administrative Team\".",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=58) "https://dotnetfoundation.org/about/board-of-directors#team",
+          Text: (string) (len=44) "\"Board of Directors and Administrative Team\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=4) "date": (string) (len=13) "April 3, 2014",
+      (string) (len=6) "first1": (string) (len=8) "Frederic",
+      (string) (len=5) "last1": (string) (len=9) "Lardinois",
+      (string) (len=5) "title": (string) (len=75) "Microsoft Launches .NET Foundation To Foster The .NET Open Source Ecosystem",
+      (string) (len=3) "url": (string) (len=108) "https://techcrunch.com/2014/04/03/microsoft-launches-net-foundation-to-foster-the-net-open-source-ecosystem/",
+      (string) (len=7) "website": (string) (len=14) "[[TechCrunch]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=127) "Lardinois, Frederic (April 3, 2014). \"Microsoft Launches .NET Foundation To Foster The .NET Open Source Ecosystem\". TechCrunch.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=108) "https://techcrunch.com/2014/04/03/microsoft-launches-net-foundation-to-foster-the-net-open-source-ecosystem/",
+          Text: (string) (len=77) "\"Microsoft Launches .NET Foundation To Foster The .NET Open Source Ecosystem\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://en.wikipedia.org/wiki/TechCrunch",
+          Text: (string) (len=10) "TechCrunch",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=11) "access-date": (string) (len=12) "May 21, 2015",
+      (string) (len=12) "archive-date": (string) (len=12) "May 21, 2015",
+      (string) (len=11) "archive-url": (string) (len=133) "https://web.archive.org/web/20150521154900/https://msopentech.com/blog/2014/04/03/net-foundation-established-foster-open-development/",
+      (string) (len=4) "date": (string) (len=13) "April 3, 2014",
+      (string) (len=6) "first1": (string) (len=4) "Jean",
+      (string) (len=5) "last1": (string) (len=5) "Paoli",
+      (string) (len=9) "publisher": (string) (len=12) "MS Open Tech",
+      (string) (len=5) "title": (string) (len=54) ".NET Foundation Established to Foster Open Development",
+      (string) (len=3) "url": (string) (len=90) "https://msopentech.com/blog/2014/04/03/net-foundation-established-foster-open-development/",
+      (string) (len=10) "url-status": (string) (len=4) "dead"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=168) "Paoli, Jean (April 3, 2014). \".NET Foundation Established to Foster Open Development\". MS Open Tech. Archived from the original on May 21, 2015. Retrieved May 21, 2015.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=133) "https://web.archive.org/web/20150521154900/https://msopentech.com/blog/2014/04/03/net-foundation-established-foster-open-development/",
+          Text: (string) (len=56) "\".NET Foundation Established to Foster Open Development\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=90) "https://msopentech.com/blog/2014/04/03/net-foundation-established-foster-open-development/",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=12) "May 21, 2015",
+      (string) (len=12) "archive-date": (string) (len=12) "May 14, 2016",
+      (string) (len=11) "archive-url": (string) (len=78) "https://web.archive.org/web/20160514230321/http://www.dotnetfoundation.org/faq",
+      (string) (len=9) "publisher": (string) (len=15) ".NET Foundation",
+      (string) (len=5) "title": (string) (len=32) "Frequently Asked Questions (FAQ)",
+      (string) (len=3) "url": (string) (len=36) "https://www.dotnetfoundation.org/faq",
+      (string) (len=10) "url-status": (string) (len=4) "dead"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=120) "\"Frequently Asked Questions (FAQ)\". .NET Foundation. Archived from the original on May 14, 2016. Retrieved May 21, 2015.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=78) "https://web.archive.org/web/20160514230321/http://www.dotnetfoundation.org/faq",
+          Text: (string) (len=34) "\"Frequently Asked Questions (FAQ)\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=36) "https://www.dotnetfoundation.org/faq",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=5) "title": (string) (len=15) ".NET Foundation",
+      (string) (len=3) "url": (string) (len=25) "https://github.com/dotnet",
+      (string) (len=7) "website": (string) (len=10) "[[GitHub]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=26) "\".NET Foundation\". GitHub.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=25) "https://github.com/dotnet",
+          Text: (string) (len=17) "\".NET Foundation\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=36) "https://en.wikipedia.org/wiki/GitHub",
+          Text: (string) (len=6) "GitHub",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=17) "November 18, 2022",
+      (string) (len=5) "title": (string) (len=26) ".NET Foundation Membership",
+      (string) (len=3) "url": (string) (len=55) "https://dotnetfoundation.org/membership/become-a-member",
+      (string) (len=7) "website": (string) (len=20) "dotnetfoundation.org"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=80) "\".NET Foundation Membership\". dotnetfoundation.org. Retrieved November 18, 2022.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=55) "https://dotnetfoundation.org/membership/become-a-member",
+          Text: (string) (len=28) "\".NET Foundation Membership\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=12) "archive-date": (string) (len=11) "May 9, 2020",
+      (string) (len=11) "archive-url": (string) (len=72) "https://web.archive.org/web/20200509082244/https://dotnetfoundation.org/",
+      (string) (len=5) "title": (string) (len=15) ".NET Foundation",
+      (string) (len=3) "url": (string) (len=28) "https://dotnetfoundation.org",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=7) "website": (string) (len=20) "dotnetfoundation.org"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=83) "\".NET Foundation\". dotnetfoundation.org. Archived from the original on May 9, 2020.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=28) "https://dotnetfoundation.org",
+          Text: (string) (len=17) "\".NET Foundation\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=72) "https://web.archive.org/web/20200509082244/https://dotnetfoundation.org/",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=18) "September 26, 2021",
+      (string) (len=12) "archive-date": (string) (len=18) "September 12, 2024",
+      (string) (len=11) "archive-url": (string) (len=96) "https://web.archive.org/web/20240912204437/https://dotnetfoundation.org/about/board-of-directors",
+      (string) (len=9) "publisher": (string) (len=15) ".NET Foundation",
+      (string) (len=5) "title": (string) (len=34) ".NET Foundation Board of Directors",
+      (string) (len=3) "url": (string) (len=53) "https://dotnetfoundation.org/about/board-of-directors"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=134) "\".NET Foundation Board of Directors\". .NET Foundation. Archived from the original on September 12, 2024. Retrieved September 26, 2021.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=96) "https://web.archive.org/web/20240912204437/https://dotnetfoundation.org/about/board-of-directors",
+          Text: (string) (len=36) "\".NET Foundation Board of Directors\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=53) "https://dotnetfoundation.org/about/board-of-directors",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

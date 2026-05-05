@@ -1,0 +1,69 @@
+([]*parser.OrderedTable) (len=1) {
+  (*parser.OrderedTable)({
+    ID: (string) (len=62) "secretary_of_state_20182021.nomination_and_confirmation_table1",
+    Table: (*parser.TableWithHeaders)({
+      Headers: ([][]parser.Cell) (len=2) {
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=20) "Confirmation process",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=20) "Confirmation process",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=20) "Confirmation process",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=11) "Voting body",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=9) "Vote date",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=12) "Vote results",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      Footers: ([][]parser.Cell) <nil>,
+      Rows: ([][]parser.Cell) (len=2) {
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=37) "Senate Committee on Foreign Relations",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=10) "2018-04-12",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=4) "11-9",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=11) "Full Senate",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=10) "2018-04-23",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=5) "57-42",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      ConfidenceScore: (float64) 0.9
+    })
+  })
+}

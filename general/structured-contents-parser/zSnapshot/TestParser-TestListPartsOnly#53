@@ -1,0 +1,393 @@
+([]*parser.Part) (len=2) {
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=12) "ordered_list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=10) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=25) "British Museum: 6,820,686",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/British_Museum",
+            Text: (string) (len=14) "British Museum",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=27) "National Gallery: 5,908,254",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/National_Gallery",
+            Text: (string) (len=16) "National Gallery",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=52) "Natural History Museum (South Kensington): 5,284,023",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=60) "https://en.wikipedia.org/wiki/Natural_History_Museum,_London",
+            Text: (string) (len=22) "Natural History Museum",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=27) "Southbank Centre: 5,102,883",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Southbank_Centre",
+            Text: (string) (len=16) "Southbank Centre",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=22) "Tate Modern: 4,712,581",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=41) "https://en.wikipedia.org/wiki/Tate_Modern",
+            Text: (string) (len=11) "Tate Modern",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=56) "Victoria and Albert Museum (South Kensington): 3,432,325",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=56) "https://en.wikipedia.org/wiki/Victoria_and_Albert_Museum",
+            Text: (string) (len=26) "Victoria and Albert Museum",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=25) "Science Museum: 3,356,212",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=52) "https://en.wikipedia.org/wiki/Science_Museum,_London",
+            Text: (string) (len=14) "Science Museum",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=25) "Somerset House: 3,235,104",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/Somerset_House",
+            Text: (string) (len=14) "Somerset House",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=26) "Tower of London: 2,785,249",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=45) "https://en.wikipedia.org/wiki/Tower_of_London",
+            Text: (string) (len=15) "Tower of London",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=36) "National Portrait Gallery: 2,145,486",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=63) "https://en.wikipedia.org/wiki/National_Portrait_Gallery,_London",
+            Text: (string) (len=25) "National Portrait Gallery",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=6) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=237) "Heathrow Airport, in Hillingdon, West London, was for many years the busiest airport in the world for international traffic, and is the major hub of the nation's flag carrier, British Airways. In March 2008 its fifth terminal was opened.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=6) {
+          (*parser.Link)({
+            URL: (string) (len=46) "https://en.wikipedia.org/wiki/Heathrow_Airport",
+            Text: (string) (len=16) "Heathrow Airport",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=58) "https://en.wikipedia.org/wiki/London_Borough_of_Hillingdon",
+            Text: (string) (len=10) "Hillingdon",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://en.wikipedia.org/wiki/World's_busiest_airport",
+            Text: (string) (len=15) "busiest airport",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=45) "https://en.wikipedia.org/wiki/British_Airways",
+            Text: (string) (len=15) "British Airways",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=61) "https://en.wikipedia.org/wiki/London#cite_note-london_135-285",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=61) "https://en.wikipedia.org/wiki/London#cite_note-london_137-286",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=194) "Gatwick Airport, south of London in West Sussex, handles flights to more destinations than any other UK airport and is the main base of easyJet, the UK's largest airline by number of passengers.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=45) "https://en.wikipedia.org/wiki/Gatwick_Airport",
+            Text: (string) (len=15) "Gatwick Airport",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=41) "https://en.wikipedia.org/wiki/West_Sussex",
+            Text: (string) (len=11) "West Sussex",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/EasyJet",
+            Text: (string) (len=7) "easyJet",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/London#cite_note-287",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=255) "London Stansted Airport, north-east of London in Essex, has flights that serve the greatest number of European destinations of any UK airport and is the main base of Ryanair, the world's largest international airline by number of international passengers.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=53) "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+            Text: (string) (len=23) "London Stansted Airport",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/Essex",
+            Text: (string) (len=5) "Essex",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/Ryanair",
+            Text: (string) (len=7) "Ryanair",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/London#cite_note-288",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=147) "Luton Airport, to the north of London in Bedfordshire, is used by several budget airlines (especially easyJet and Wizz Air) for short-haul flights.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Luton_Airport",
+            Text: (string) (len=13) "Luton Airport",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Bedfordshire",
+            Text: (string) (len=12) "Bedfordshire",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=38) "https://en.wikipedia.org/wiki/Wizz_Air",
+            Text: (string) (len=8) "Wizz Air",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/London#cite_note-289",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=241) "London City Airport, the most central airport and the one with the shortest runway, in Newham, East London, is focused on business travellers, with a mixture of full-service short-haul scheduled flights and considerable business jet traffic.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=49) "https://en.wikipedia.org/wiki/London_City_Airport",
+            Text: (string) (len=19) "London City Airport",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=54) "https://en.wikipedia.org/wiki/London_Borough_of_Newham",
+            Text: (string) (len=6) "Newham",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Business_jet",
+            Text: (string) (len=12) "business jet",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/London#cite_note-290",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=288) "London Southend Airport, east of London in Essex, is a smaller, regional airport that caters for short-haul flights on a limited, though growing, number of airlines. In 2017, international passengers made up over 95% of the total at Southend, the highest proportion of any London airport.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=53) "https://en.wikipedia.org/wiki/London_Southend_Airport",
+            Text: (string) (len=23) "London Southend Airport",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/London#cite_note-291",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/London#cite_note-292",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

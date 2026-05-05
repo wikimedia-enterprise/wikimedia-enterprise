@@ -1,0 +1,19 @@
+([]*parser.Link) (len=1) {
+  (*parser.Link)({
+    URL: (string) (len=47) "https://en.wikipedia.org/wiki/George_Washington",
+    Text: (string) (len=17) "George Washington",
+    Images: ([]*parser.Image) (len=1) {
+      (*parser.Image)({
+        ContentUrl: (string) (len=187) "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/120px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
+        Identifier: (string) (len=64) "3f8191ae9c32179fcb15ad20f0d6a0b567bfc0093798e9cb73a0228e49472014",
+        Name: (string) (len=26) "File:George_Washington.jpg",
+        AlternativeText: (string) "",
+        Caption: (string) "",
+        Height: (int) 159,
+        Width: (int) 120,
+        EncodingFormat: (string) (len=10) "image/jpeg",
+        MediaType: (string) ""
+      })
+    }
+  })
+}

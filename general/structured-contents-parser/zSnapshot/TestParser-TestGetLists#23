@@ -1,0 +1,335 @@
+([]*parser.Part) (len=5) {
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=18) "IT = T = { I, b },",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=19) "aT = { a, ab }, and",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=23) "a 2 T = { a 2, a 2 b }.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=18) "TI = T = { I, b },",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=34) "Ta = { a, ba } = { a, a 2 b }, and",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=35) "Ta 2 = { a 2, ba 2 } = { a 2, ab }.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=5) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=9) "g H = g H",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=17) "Hg −1 = Hg −1",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=11) "g H ⊂ g H",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=9) "g ∈ g H",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=14) "g −1 g ∈ H",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=63) "G / H denotes the set of left cosets { gH : g in G } of H in G.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=64) "H \\ G denotes the set of right cosets { Hg : g in G } of H in G.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=121) "K \\ G / H denotes the set of double cosets { KgH : g in G } of H and K in G, sometimes referred to as double coset space.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=71) "G // H denotes the double coset space H \\ G / H of the subgroup H in G.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=91) "Cosets of Q in R are used in the construction of Vitali sets, a type of non-measurable set.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/Vitali_set",
+            Text: (string) (len=11) "Vitali sets",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/Non-measurable_set",
+            Text: (string) (len=18) "non-measurable set",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=53) "Cosets are central in the definition of the transfer.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=53) "https://en.wikipedia.org/wiki/Transfer_(group_theory)",
+            Text: (string) (len=8) "transfer",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=142) "Cosets are important in computational group theory. For example, Thistlethwaite's algorithm for solving Rubik's Cube relies heavily on cosets.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=91) "https://en.wikipedia.org/wiki/Optimal_solutions_for_Rubik's_Cube#Thistlethwaite's_algorithm",
+            Text: (string) (len=26) "Thistlethwaite's algorithm",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=42) "https://en.wikipedia.org/wiki/Rubik's_Cube",
+            Text: (string) (len=12) "Rubik's Cube",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=234) "In geometry, a Clifford–Klein form is a double coset space Γ \\ G / H, where G is a reductive Lie group, H is a closed subgroup, and Γ is a discrete subgroup (of G) that acts properly discontinuously on the homogeneous space G / H.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=51) "https://en.wikipedia.org/wiki/Clifford–Klein_form",
+            Text: (string) (len=21) "Clifford–Klein form",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://en.wikipedia.org/wiki/Reductive_Lie_group",
+            Text: (string) (len=19) "reductive Lie group",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=54) "https://en.wikipedia.org/wiki/Properly_discontinuously",
+            Text: (string) (len=24) "properly discontinuously",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/Homogeneous_space",
+            Text: (string) (len=17) "homogeneous space",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

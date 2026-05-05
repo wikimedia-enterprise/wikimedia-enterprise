@@ -1,0 +1,1291 @@
+([]*parser.Reference) (len=38) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=7) "ctx_ver": (string) (len=11) "Z39.88-2004",
+      (string) (len=8) "is_coins": (string) (len=4) "true",
+      (string) (len=6) "rfr_id": (string) (len=31) "info:sid/en.wikipedia.org:Vitis",
+      (string) (len=6) "rft.au": (string) (len=19) "Roland Wilbur Brown",
+      (string) (len=10) "rft.btitle": (string) (len=55) "Paleocene Flora of the Rocky Mountains and Great Plains",
+      (string) (len=9) "rft.genre": (string) (len=4) "book",
+      (string) (len=11) "rft_val_fmt": (string) (len=25) "info:ofi/fmt:kev:mtx:book"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=77) "Roland Wilbur Brown. Paleocene Flora of the Rocky Mountains and Great Plains.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=7) "ctx_ver": (string) (len=11) "Z39.88-2004",
+      (string) (len=8) "is_coins": (string) (len=4) "true",
+      (string) (len=6) "rfr_id": (string) (len=31) "info:sid/en.wikipedia.org:Vitis",
+      (string) (len=10) "rft.atitle": (string) (len=15) "<i>Vitis L.</i>",
+      (string) (len=6) "rft.au": (string) (len=4) "NRCS",
+      (string) (len=9) "rft.genre": (string) (len=7) "unknown",
+      (string) (len=10) "rft.jtitle": (string) (len=15) "PLANTS Database",
+      (string) (len=6) "rft_id": (string) (len=51) "https://plants.sc.egov.usda.gov/plant-profile/VITIS",
+      (string) (len=11) "rft_val_fmt": (string) (len=28) "info:ofi/fmt:kev:mtx:journal"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=105) "NRCS. \"Vitis L.\". PLANTS Database. United States Department of Agriculture (USDA). Retrieved 7 June 2022.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=68) "https://en.wikipedia.org/wiki/Natural_Resources_Conservation_Service",
+          Text: (string) (len=4) "NRCS",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=51) "https://plants.sc.egov.usda.gov/plant-profile/VITIS",
+          Text: (string) (len=12) "\" Vitis L. \"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=69) "https://en.wikipedia.org/wiki/United_States_Department_of_Agriculture",
+          Text: (string) (len=39) "United States Department of Agriculture",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=7) "ctx_ver": (string) (len=11) "Z39.88-2004",
+      (string) (len=8) "is_coins": (string) (len=4) "true",
+      (string) (len=6) "rfr_id": (string) (len=31) "info:sid/en.wikipedia.org:Vitis",
+      (string) (len=10) "rft.atitle": (string) (len=31) "Species in GRIN for genus Vitis",
+      (string) (len=6) "rft.au": (string) (len=4) "GRIN",
+      (string) (len=9) "rft.genre": (string) (len=7) "unknown",
+      (string) (len=10) "rft.jtitle": (string) (len=19) "Taxonomy for Plants",
+      (string) (len=6) "rft_id": (string) (len=57) "http://www.ars-grin.gov/cgi-bin/npgs/html/splist.pl?12735",
+      (string) (len=11) "rft_val_fmt": (string) (len=28) "info:ofi/fmt:kev:mtx:journal"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=247) "GRIN. \"Species in GRIN for genus Vitis\". Taxonomy for Plants. National Germplasm Resources Laboratory, Beltsville, Maryland: USDA, ARS, National Genetic Resources Program. Archived from the original on September 24, 2015. Retrieved April 20, 2010.",
+      Links: ([]*parser.Link) (len=6) {
+        (*parser.Link)({
+          URL: (string) (len=69) "https://en.wikipedia.org/wiki/Germplasm_Resources_Information_Network",
+          Text: (string) (len=4) "GRIN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=100) "https://web.archive.org/web/20150924095609/http://www.ars-grin.gov/cgi-bin/npgs/html/splist.pl?12735",
+          Text: (string) (len=34) "\"Species in GRIN for genus Vitis \"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://en.wikipedia.org/wiki/Beltsville,_Maryland",
+          Text: (string) (len=20) "Beltsville, Maryland",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=69) "https://en.wikipedia.org/wiki/United_States_Department_of_Agriculture",
+          Text: (string) (len=4) "USDA",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=59) "https://en.wikipedia.org/wiki/Agricultural_Research_Service",
+          Text: (string) (len=3) "ARS",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=57) "http://www.ars-grin.gov/cgi-bin/npgs/html/splist.pl?12735",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=7) "ctx_ver": (string) (len=11) "Z39.88-2004",
+      (string) (len=8) "is_coins": (string) (len=4) "true",
+      (string) (len=6) "rfr_id": (string) (len=31) "info:sid/en.wikipedia.org:Vitis",
+      (string) (len=10) "rft.atitle": (string) (len=106) "Grape (Vitis vinifera) seeds from Antiquity and the Middle Ages Excavated in Hungary - LM and SEM analysis",
+      (string) (len=6) "rft.au": (string) (len=15) "László Heszky",
+      (string) (len=8) "rft.date": (string) (len=4) "2008",
+      (string) (len=9) "rft.genre": (string) (len=7) "article",
+      (string) (len=10) "rft.jtitle": (string) (len=26) "Anadolu Univ J Sci Technol",
+      (string) (len=6) "rft_id": (string) (len=77) "http://w3.mkk.szie.hu/dep/genetika/pdf/Guner%20et%20al%202008%20(inpress).pdf",
+      (string) (len=11) "rft_val_fmt": (string) (len=28) "info:ofi/fmt:kev:mtx:journal"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=416) "V. kelungensis, V. yeshanensis Ahmet Güner; Gábor Gyulai; Zoltán Tóth; Gülsüm Asena Başlı; Zoltán Szabó; Ferenc Gyulai; András Bittsánszky; Luther Waters Jr.; László Heszky (2008). \"Grape (Vitis vinifera) seeds from Antiquity and the Middle Ages Excavated in Hungary - LM and SEM analysis\" (PDF). Anadolu Univ J Sci Technol. Archived from the original (PDF) on October 23, 2012. Retrieved May 23, 2010.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=127) "https://wayback.archive-it.org/all/20121023113640/http://w3.mkk.szie.hu/dep/genetika/pdf/Guner%20et%20al%202008%20(inpress).pdf",
+          Text: (string) (len=108) "\"Grape (Vitis vinifera) seeds from Antiquity and the Middle Ages Excavated in Hungary - LM and SEM analysis\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=77) "http://w3.mkk.szie.hu/dep/genetika/pdf/Guner%20et%20al%202008%20(inpress).pdf",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=7) "ctx_ver": (string) (len=11) "Z39.88-2004",
+      (string) (len=8) "is_coins": (string) (len=4) "true",
+      (string) (len=6) "rfr_id": (string) (len=31) "info:sid/en.wikipedia.org:Vitis",
+      (string) (len=10) "rft.atitle": (string) (len=8) "Vitis L.",
+      (string) (len=9) "rft.genre": (string) (len=7) "unknown",
+      (string) (len=10) "rft.jtitle": (string) (len=26) "Plants of the World Online",
+      (string) (len=6) "rft_id": (string) (len=67) "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325876-2",
+      (string) (len=11) "rft_val_fmt": (string) (len=28) "info:ofi/fmt:kev:mtx:journal"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=94) "\"Vitis L.\" Plants of the World Online. Royal Botanic Gardens, Kew. Retrieved 11 February 2024.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=67) "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:325876-2",
+          Text: (string) (len=10) "\"Vitis L.\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=13) "9781905819157"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=145) "Wine & Spirits Education Trust \"Wine and Spirits: Understanding Wine Quality\" pgs 2-5, Second Revised Edition (2012), London, ISBN\u00a09781905819157",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9781905819157",
+          Text: (string) (len=13) "9781905819157",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=4) "lccn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=7) "6316478"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=149) "Gleason and Cronquist volume 2, New Britton and Brown Illustrated Flora of the Northeastern United States and Adjacent Canada, p. 517. LCCN\u00a063-16478",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/LCCN_(identifier)",
+          Text: (string) (len=4) "LCCN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://www.loc.gov/item/63016478",
+          Text: (string) (len=8) "63-16478",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=12) {
+      (string) (len=11) "access-date": (string) (len=10) "2016-04-02",
+      (string) (len=12) "archive-date": (string) (len=10) "2016-03-19",
+      (string) (len=11) "archive-url": (string) (len=71) "https://web.archive.org/web/20160319150604/http://data.kew.org/cvalues/",
+      (string) (len=4) "date": (string) (len=4) "2012",
+      (string) (len=6) "first1": (string) (len=4) "M.D.",
+      (string) (len=6) "first2": (string) (len=4) "I.J.",
+      (string) (len=5) "last1": (string) (len=7) "Bennett",
+      (string) (len=5) "last2": (string) (len=6) "Leitch",
+      (string) (len=9) "publisher": (string) (len=26) "Royal Botanic Gardens, Kew",
+      (string) (len=5) "title": (string) (len=68) "Royal Botanic Gardens, Kew: Plant DNA C-values database, release 6.0",
+      (string) (len=3) "url": (string) (len=32) "http://www.data.kew.org/cvalues/",
+      (string) (len=10) "url-status": (string) (len=4) "dead"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=199) "Bennett, M.D.; Leitch, I.J. (2012). \"Royal Botanic Gardens, Kew: Plant DNA C-values database, release 6.0\". Royal Botanic Gardens, Kew. Archived from the original on 2016-03-19. Retrieved 2016-04-02.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=71) "https://web.archive.org/web/20160319150604/http://data.kew.org/cvalues/",
+          Text: (string) (len=70) "\"Royal Botanic Gardens, Kew: Plant DNA C-values database, release 6.0\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=32) "http://www.data.kew.org/cvalues/",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2019-08-06",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=9) "publisher": (string) (len=22) "University of Arkansas",
+      (string) (len=5) "title": (string) (len=47) "Vitis rotundifolia Muscadine Grape, Scuppernong",
+      (string) (len=3) "url": (string) (len=123) "https://www.uaex.edu/yard-garden/resource-library/plant-week/vitis-rotundifolia-muscadine-grape-scuppernong-11-13-2015.aspx",
+      (string) (len=7) "website": (string) (len=66) "Plant of the Week: Vitis rotundifolia Muscadine Grape, Scuppernong"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=164) "\"Vitis rotundifolia Muscadine Grape, Scuppernong\". Plant of the Week: Vitis rotundifolia Muscadine Grape, Scuppernong. University of Arkansas. Retrieved 2019-08-06.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=123) "https://www.uaex.edu/yard-garden/resource-library/plant-week/vitis-rotundifolia-muscadine-grape-scuppernong-11-13-2015.aspx",
+          Text: (string) (len=49) "\"Vitis rotundifolia Muscadine Grape, Scuppernong\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=14) {
+      (string) (len=3) "doi": (string) (len=25) "10.21273/hortsci.31.2.269",
+      (string) (len=10) "doi-access": (string) (len=4) "free",
+      (string) (len=6) "first1": (string) (len=5) "Jiang",
+      (string) (len=6) "first2": (string) (len=7) "Olusola",
+      (string) (len=4) "issn": (string) (len=9) "0018-5345",
+      (string) (len=5) "issue": (string) (len=1) "2",
+      (string) (len=7) "journal": (string) (len=11) "HortScience",
+      (string) (len=5) "last1": (string) (len=2) "Lu",
+      (string) (len=5) "last2": (string) (len=9) "Lamikanra",
+      (string) (len=5) "pages": (string) (len=9) "269–271",
+      (string) (len=9) "publisher": (string) (len=42) "American Society for Horticultural Science",
+      (string) (len=5) "title": (string) (len=66) "Barriers to Intersubgeneric Crosses between Muscadinia and Euvitis",
+      (string) (len=6) "volume": (string) (len=2) "31",
+      (string) (len=4) "year": (string) (len=4) "1996"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=231) "Lu, Jiang; Lamikanra, Olusola (1996). \"Barriers to Intersubgeneric Crosses between Muscadinia and Euvitis\". HortScience. 31 (2). American Society for Horticultural Science: 269–271. doi:10.21273/hortsci.31.2.269. ISSN\u00a00018-5345.",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=43) "https://doi.org/10.21273%2Fhortsci.31.2.269",
+          Text: (string) (len=68) "\"Barriers to Intersubgeneric Crosses between Muscadinia and Euvitis\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=43) "https://doi.org/10.21273%2Fhortsci.31.2.269",
+          Text: (string) (len=25) "10.21273/hortsci.31.2.269",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISSN_(identifier)",
+          Text: (string) (len=4) "ISSN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://search.worldcat.org/issn/0018-5345",
+          Text: (string) (len=9) "0018-5345",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-11",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=4) "isbn": (string) (len=17) "978-1-60239-692-0",
+      (string) (len=8) "language": (string) (len=5) "en-US",
+      (string) (len=8) "location": (string) (len=8) "New York",
+      (string) (len=4) "oclc": (string) (len=9) "277203364",
+      (string) (len=6) "others": (string) (len=40) "[[United States Department of the Army]]",
+      (string) (len=5) "pages": (string) (len=3) "118",
+      (string) (len=9) "publisher": (string) (len=23) "[[Skyhorse Publishing]]",
+      (string) (len=5) "title": (string) (len=40) "The Complete Guide to Edible Wild Plants",
+      (string) (len=3) "url": (string) (len=39) "https://www.worldcat.org/oclc/277203364",
+      (string) (len=4) "year": (string) (len=4) "2009"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=207) "The Complete Guide to Edible Wild Plants. United States Department of the Army. New York: Skyhorse Publishing. 2009. p.\u00a0118. ISBN\u00a0978-1-60239-692-0. OCLC\u00a0277203364.{{cite book}}:  CS1 maint: others (link)",
+      Links: ([]*parser.Link) (len=9) {
+        (*parser.Link)({
+          URL: (string) (len=39) "https://www.worldcat.org/oclc/277203364",
+          Text: (string) (len=40) "The Complete Guide to Edible Wild Plants",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=66) "https://en.wikipedia.org/wiki/United_States_Department_of_the_Army",
+          Text: (string) (len=36) "United States Department of the Army",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://en.wikipedia.org/wiki/Skyhorse_Publishing",
+          Text: (string) (len=19) "Skyhorse Publishing",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-1-60239-692-0",
+          Text: (string) (len=17) "978-1-60239-692-0",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/OCLC_(identifier)",
+          Text: (string) (len=4) "OCLC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://search.worldcat.org/oclc/277203364",
+          Text: (string) (len=9) "277203364",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/Template:Cite_book",
+          Text: (string) (len=9) "cite book",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=56) "https://en.wikipedia.org/wiki/Category:CS1_maint:_others",
+          Text: (string) (len=4) "link",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-12",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=6) "author": (string) (len=11) "Everhart SE",
+      (string) (len=5) "issue": (string) (len=1) "1",
+      (string) (len=7) "journal": (string) (len=54) "Castanea (From University of Nebraska Digital Commons)",
+      (string) (len=5) "pages": (string) (len=9) "141–149",
+      (string) (len=5) "title": (string) (len=124) "Upper Canopy Collection and Identification of Grapevines (''Vitis'') from Selected Forests in the Southeastern United States",
+      (string) (len=3) "url": (string) (len=86) "http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1364&context=plantpathpapers",
+      (string) (len=6) "volume": (string) (len=2) "75",
+      (string) (len=4) "year": (string) (len=4) "2010"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=218) "Everhart SE (2010). \"Upper Canopy Collection and Identification of Grapevines (Vitis) from Selected Forests in the Southeastern United States\". Castanea (From University of Nebraska Digital Commons). 75 (1): 141–149.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=86) "http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1364&context=plantpathpapers",
+          Text: (string) (len=122) "\"Upper Canopy Collection and Identification of Grapevines (Vitis) from Selected Forests in the Southeastern United States\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-13",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=5) "first": (string) (len=6) "Pierre",
+      (string) (len=4) "isbn": (string) (len=13) "2-01-236331-8",
+      (string) (len=4) "last": (string) (len=5) "Galet",
+      (string) (len=9) "publisher": (string) (len=17) "Hachette Pratique",
+      (string) (len=5) "title": (string) (len=41) "Dictionnaire encyclopédique des cépages",
+      (string) (len=4) "year": (string) (len=4) "2000"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=104) "Galet, Pierre (2000). Dictionnaire encyclopédique des cépages. Hachette Pratique. ISBN\u00a02-01-236331-8.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/2-01-236331-8",
+          Text: (string) (len=13) "2-01-236331-8",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-14",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=4) "date": (string) (len=10) "2023-10-20",
+      (string) (len=3) "doi": (string) (len=15) "10.3417/2023812",
+      (string) (len=5) "first": (string) (len=5) "Erica",
+      (string) (len=7) "journal": (string) (len=39) "Annals of the Missouri Botanical Garden",
+      (string) (len=4) "last": (string) (len=9) "Hannickel",
+      (string) (len=5) "pages": (string) (len=9) "465–478",
+      (string) (len=5) "title": (string) (len=78) "Vitis, Wine, and Medicine: The Other Careers of George Engelmann (1809–1884)",
+      (string) (len=3) "url": (string) (len=40) "https://www.wikidata.org/wiki/Q123423861",
+      (string) (len=6) "volume": (string) (len=3) "108"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=190) "Hannickel, Erica (2023-10-20). \"Vitis, Wine, and Medicine: The Other Careers of George Engelmann (1809–1884)\". Annals of the Missouri Botanical Garden. 108: 465–478. doi:10.3417/2023812.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=40) "https://www.wikidata.org/wiki/Q123423861",
+          Text: (string) (len=80) "\"Vitis, Wine, and Medicine: The Other Careers of George Engelmann (1809–1884)\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://doi.org/10.3417%2F2023812",
+          Text: (string) (len=15) "10.3417/2023812",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-15",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=4) "isbn": (string) (len=17) "979-10-91799-89-8",
+      (string) (len=8) "location": (string) (len=5) "Paris",
+      (string) (len=9) "publisher": (string) (len=49) "OIV - International Organization of Vine and Wine",
+      (string) (len=5) "title": (string) (len=47) "Distribution of the world's grapevine varieties",
+      (string) (len=3) "url": (string) (len=91) "http://www.oiv.int/public/medias/5888/en-distribution-of-the-worlds-grapevine-varieties.pdf",
+      (string) (len=4) "year": (string) (len=4) "2017"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=145) "\"Distribution of the world's grapevine varieties\" (PDF). Paris: OIV - International Organization of Vine and Wine. 2017. ISBN\u00a0979-10-91799-89-8.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=91) "http://www.oiv.int/public/medias/5888/en-distribution-of-the-worlds-grapevine-varieties.pdf",
+          Text: (string) (len=49) "\"Distribution of the world's grapevine varieties\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/979-10-91799-89-8",
+          Text: (string) (len=17) "979-10-91799-89-8",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-16",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=5) "title": (string) (len=39) "SEINet Portal Network - Vitis arizonica",
+      (string) (len=3) "url": (string) (len=79) "http://swbiodiversity.org/seinet/taxa/index.php?taxauthid=1&taxon=3578&clid=25#"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=42) "\"SEINet Portal Network - Vitis arizonica\".",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=79) "http://swbiodiversity.org/seinet/taxa/index.php?taxauthid=1&taxon=3578&clid=25#",
+          Text: (string) (len=41) "\"SEINet Portal Network - Vitis arizonica\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-17",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=11) "access-date": (string) (len=11) "7 June 2022",
+      (string) (len=6) "symbol": (string) (len=4) "VIVU",
+      (string) (len=5) "taxon": (string) (len=16) "Vitis vulpina L."
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=113) "NRCS. \"Vitis vulpina L.\". PLANTS Database. United States Department of Agriculture (USDA). Retrieved 7 June 2022.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=68) "https://en.wikipedia.org/wiki/Natural_Resources_Conservation_Service",
+          Text: (string) (len=4) "NRCS",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://plants.sc.egov.usda.gov/plant-profile/VIVU",
+          Text: (string) (len=20) "\" Vitis vulpina L. \"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=69) "https://en.wikipedia.org/wiki/United_States_Department_of_Agriculture",
+          Text: (string) (len=39) "United States Department of Agriculture",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-18",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=15) {
+      (string) (len=11) "access-date": (string) (len=17) "November 16, 2009",
+      (string) (len=7) "author1": (string) (len=8) "Jain, E.",
+      (string) (len=7) "author2": (string) (len=11) "Bairoch, A.",
+      (string) (len=7) "author3": (string) (len=10) "Duvaud, S.",
+      (string) (len=7) "author4": (string) (len=8) "Phan, I.",
+      (string) (len=7) "author5": (string) (len=12) "Redaschi, N.",
+      (string) (len=7) "author6": (string) (len=11) "Suzek, B.E.",
+      (string) (len=7) "author7": (string) (len=12) "Martin, M.J.",
+      (string) (len=7) "author8": (string) (len=12) "McGarvey, P.",
+      (string) (len=7) "author9": (string) (len=13) "Gasteiger, E.",
+      (string) (len=4) "date": (string) (len=16) "November 3, 2009",
+      (string) (len=9) "publisher": (string) (len=22) "The UniProt Consortium",
+      (string) (len=5) "title": (string) (len=51) "''Vitis riparia'' (Frost grape) (''Vitis vulpina'')",
+      (string) (len=3) "url": (string) (len=38) "https://www.uniprot.org/taxonomy/96939",
+      (string) (len=4) "work": (string) (len=40) "The Universal Protein Resource (UniProt)"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=275) "Jain, E.; Bairoch, A.; Duvaud, S.; Phan, I.; Redaschi, N.; Suzek, B.E.; Martin, M.J.; McGarvey, P.; Gasteiger, E. (November 3, 2009). \"Vitis riparia (Frost grape) (Vitis vulpina)\". The Universal Protein Resource (UniProt). The UniProt Consortium. Retrieved November 16, 2009.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=38) "https://www.uniprot.org/taxonomy/96939",
+          Text: (string) (len=46) "\" Vitis riparia (Frost grape) (Vitis vulpina)\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-19",
+    Group: (string) "",
+    Type: (string) (len=3) "cs2",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=7) "author1": (string) (len=11) "Lewis, C.T.",
+      (string) (len=7) "author2": (string) (len=9) "Short, C.",
+      (string) (len=8) "location": (string) (len=6) "Oxford",
+      (string) (len=9) "publisher": (string) (len=15) "Clarendon Press",
+      (string) (len=5) "title": (string) (len=18) "A Latin Dictionary",
+      (string) (len=4) "year": (string) (len=4) "1958"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=74) "Lewis, C.T.; Short, C. (1958), A Latin Dictionary, Oxford: Clarendon Press",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-20",
+    Group: (string) "",
+    Type: (string) (len=3) "cs2",
+    Metadata: (map[string]string) (len=20) {
+      (string) (len=7) "author1": (string) (len=11) "McNeill, J.",
+      (string) (len=8) "author10": (string) (len=9) "Prado, J.",
+      (string) (len=8) "author11": (string) (len=26) "Prud'homme Van Reine, W.F.",
+      (string) (len=8) "author12": (string) (len=11) "Smith, G.F.",
+      (string) (len=8) "author13": (string) (len=14) "Wiersema, J.H.",
+      (string) (len=8) "author14": (string) (len=13) "Turland, N.J.",
+      (string) (len=7) "author2": (string) (len=12) "Barrie, F.R.",
+      (string) (len=7) "author3": (string) (len=10) "Buck, W.R.",
+      (string) (len=7) "author4": (string) (len=12) "Demoulin, V.",
+      (string) (len=7) "author5": (string) (len=11) "Greuter, W.",
+      (string) (len=7) "author6": (string) (len=16) "Hawksworth, D.L.",
+      (string) (len=7) "author7": (string) (len=15) "Herendeen, P.S.",
+      (string) (len=7) "author8": (string) (len=9) "Knapp, S.",
+      (string) (len=7) "author9": (string) (len=11) "Marhold, K.",
+      (string) (len=4) "isbn": (string) (len=17) "978-3-87429-425-6",
+      (string) (len=9) "publisher": (string) (len=24) "A.R.G. Gantner Verlag KG",
+      (string) (len=5) "title": (string) (len=171) "International Code of Nomenclature for algae, fungi, and plants (Melbourne Code) adopted by the Eighteenth International Botanical Congress Melbourne, Australia, July 2011",
+      (string) (len=3) "url": (string) (len=51) "http://www.iapt-taxon.org/nomen/main.php?page=title",
+      (string) (len=6) "volume": (string) (len=21) "Regnum Vegetabile 154",
+      (string) (len=4) "year": (string) (len=4) "2012"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=479) "McNeill, J.; Barrie, F.R.; Buck, W.R.; Demoulin, V.; Greuter, W.; Hawksworth, D.L.; Herendeen, P.S.; Knapp, S.; Marhold, K.; Prado, J.; Prud'homme Van Reine, W.F.; Smith, G.F.; Wiersema, J.H.; Turland, N.J. (2012), International Code of Nomenclature for algae, fungi, and plants (Melbourne Code) adopted by the Eighteenth International Botanical Congress Melbourne, Australia, July 2011, vol.\u00a0Regnum Vegetabile 154, A.R.G. Gantner Verlag KG, ISBN\u00a0978-3-87429-425-6 Article 23.5",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=51) "http://www.iapt-taxon.org/nomen/main.php?page=title",
+          Text: (string) (len=171) "International Code of Nomenclature for algae, fungi, and plants (Melbourne Code) adopted by the Eighteenth International Botanical Congress Melbourne, Australia, July 2011",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-3-87429-425-6",
+          Text: (string) (len=17) "978-3-87429-425-6",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-21",
+    Group: (string) "",
+    Type: (string) (len=3) "cs2",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=7) "ctx_ver": (string) (len=11) "Z39.88-2004",
+      (string) (len=8) "is_coins": (string) (len=4) "true",
+      (string) (len=6) "rfr_id": (string) (len=31) "info:sid/en.wikipedia.org:Vitis",
+      (string) (len=6) "rft.au": (string) (len=12) "Stearn, W.T.",
+      (string) (len=10) "rft.btitle": (string) (len=85) "Botanical Latin: History, grammar, syntax, terminology and vocabulary, Fourth edition",
+      (string) (len=8) "rft.date": (string) (len=4) "1992",
+      (string) (len=9) "rft.genre": (string) (len=4) "book",
+      (string) (len=7) "rft.pub": (string) (len=17) "David and Charles",
+      (string) (len=11) "rft_val_fmt": (string) (len=25) "info:ofi/fmt:kev:mtx:book"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=125) "Stearn, W.T. (1992), Botanical Latin: History, grammar, syntax, terminology and vocabulary, Fourth edition, David and Charles",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-23",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=11) "access-date": (string) (len=16) "7 September 2017",
+      (string) (len=5) "title": (string) (len=52) "OIV Statistical Report on World Vitiviniculture 2016",
+      (string) (len=3) "url": (string) (len=78) "http://www.oiv.int/public/medias/5029/world-vitiviniculture-situation-2016.pdf"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=89) "\"OIV Statistical Report on World Vitiviniculture 2016\" (PDF). Retrieved 7 September 2017.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=78) "http://www.oiv.int/public/medias/5029/world-vitiviniculture-situation-2016.pdf",
+          Text: (string) (len=54) "\"OIV Statistical Report on World Vitiviniculture 2016\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-24",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=5) "first": (string) (len=5) "Carol",
+      (string) (len=4) "isbn": (string) (len=13) "9781845334345",
+      (string) (len=4) "last": (string) (len=5) "Klein",
+      (string) (len=8) "location": (string) (len=14) "United Kingdom",
+      (string) (len=5) "pages": (string) (len=3) "224",
+      (string) (len=9) "publisher": (string) (len=16) "Mitchell Beazley",
+      (string) (len=5) "title": (string) (len=19) "Grow your own fruit",
+      (string) (len=4) "year": (string) (len=4) "2009"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=105) "Klein, Carol (2009). Grow your own fruit. United Kingdom: Mitchell Beazley. p.\u00a0224. ISBN\u00a09781845334345.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9781845334345",
+          Text: (string) (len=13) "9781845334345",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-25",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=16) "18 February 2019",
+      (string) (len=4) "date": (string) (len=9) "July 2017",
+      (string) (len=4) "page": (string) (len=3) "107",
+      (string) (len=9) "publisher": (string) (len=27) "Royal Horticultural Society",
+      (string) (len=5) "title": (string) (len=23) "AGM Plants - Ornamental",
+      (string) (len=3) "url": (string) (len=64) "https://www.rhs.org.uk/plants/pdfs/agm-lists/agm-ornamentals.pdf"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=109) "\"AGM Plants - Ornamental\" (PDF). Royal Horticultural Society. July 2017. p.\u00a0107. Retrieved 18 February 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=64) "https://www.rhs.org.uk/plants/pdfs/agm-lists/agm-ornamentals.pdf",
+          Text: (string) (len=25) "\"AGM Plants - Ornamental\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-26",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=12) "5 March 2021",
+      (string) (len=9) "publisher": (string) (len=3) "RHS",
+      (string) (len=5) "title": (string) (len=25) "''Vitis'' 'Boskoop Glory'",
+      (string) (len=3) "url": (string) (len=69) "https://www.rhs.org.uk/Plants/57774/Vitis-Boskoop-Glory-(O-B)/Details"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=53) "\"Vitis 'Boskoop Glory'\". RHS. Retrieved 5 March 2021.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=69) "https://www.rhs.org.uk/Plants/57774/Vitis-Boskoop-Glory-(O-B)/Details",
+          Text: (string) (len=25) "\" Vitis 'Boskoop Glory' \"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-27",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=12) "5 March 2021",
+      (string) (len=9) "publisher": (string) (len=3) "RHS",
+      (string) (len=5) "title": (string) (len=39) "RHS Plant Selector - ''Vitis'' 'Brant '",
+      (string) (len=3) "url": (string) (len=61) "https://www.rhs.org.uk/Plants/80403/Vitis-Brant-(O-B)/Details"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=67) "\"RHS Plant Selector - Vitis 'Brant '\". RHS. Retrieved 5 March 2021.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://www.rhs.org.uk/Plants/80403/Vitis-Brant-(O-B)/Details",
+          Text: (string) (len=38) "\"RHS Plant Selector - Vitis 'Brant ' \"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-28",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=12) "5 March 2021",
+      (string) (len=9) "publisher": (string) (len=3) "RHS",
+      (string) (len=5) "title": (string) (len=35) "''Vitis'' 'Claret Cloak' ('Frovit')",
+      (string) (len=3) "url": (string) (len=70) "https://www.rhs.org.uk/Plants/115590/Vitis-Claret-Cloak-Frovit/Details"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=63) "\"Vitis 'Claret Cloak' ('Frovit')\". RHS. Retrieved 5 March 2021.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=70) "https://www.rhs.org.uk/Plants/115590/Vitis-Claret-Cloak-Frovit/Details",
+          Text: (string) (len=34) "\" Vitis 'Claret Cloak' ('Frovit')\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-29",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=12) "5 March 2021",
+      (string) (len=9) "publisher": (string) (len=3) "RHS",
+      (string) (len=5) "title": (string) (len=48) "RHS Plant Selector - ''Vitis'' 'New York Muscat'",
+      (string) (len=3) "url": (string) (len=72) "https://www.rhs.org.uk/Plants/203614/Vitis-New-York-Muscat-(O-B)/Details"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=76) "\"RHS Plant Selector - Vitis 'New York Muscat'\". RHS. Retrieved 5 March 2021.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=72) "https://www.rhs.org.uk/Plants/203614/Vitis-New-York-Muscat-(O-B)/Details",
+          Text: (string) (len=47) "\"RHS Plant Selector - Vitis 'New York Muscat' \"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-30",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=11) "1 June 2013",
+      (string) (len=12) "archive-date": (string) (len=12) "July 7, 2013",
+      (string) (len=11) "archive-url": (string) (len=92) "https://archive.today/20130707074346/http://apps.rhs.org.uk/plantselector/plant?plantid=4675",
+      (string) (len=5) "title": (string) (len=41) "RHS Plant Selector - ''Vitis'' 'Purpurea'",
+      (string) (len=3) "url": (string) (len=55) "http://apps.rhs.org.uk/plantselector/plant?plantid=4675",
+      (string) (len=10) "url-status": (string) (len=4) "dead"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=107) "\"RHS Plant Selector - Vitis 'Purpurea'\". Archived from the original on July 7, 2013. Retrieved 1 June 2013.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=92) "https://archive.today/20130707074346/http://apps.rhs.org.uk/plantselector/plant?plantid=4675",
+          Text: (string) (len=40) "\"RHS Plant Selector - Vitis 'Purpurea' \"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=55) "http://apps.rhs.org.uk/plantselector/plant?plantid=4675",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-31",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=17) {
+      (string) (len=4) "date": (string) (len=4) "2010",
+      (string) (len=3) "doi": (string) (len=24) "10.1094/PHYTO-01-10-0023",
+      (string) (len=10) "doi-access": (string) (len=4) "free",
+      (string) (len=6) "first1": (string) (len=4) "Omer",
+      (string) (len=6) "first2": (string) (len=12) "Marin Talbot",
+      (string) (len=6) "first3": (string) (len=10) "Michael G.",
+      (string) (len=4) "issn": (string) (len=9) "0031-949X",
+      (string) (len=5) "issue": (string) (len=2) "11",
+      (string) (len=7) "journal": (string) (len=14) "Phytopathology",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "last1": (string) (len=7) "Frenkel",
+      (string) (len=5) "last2": (string) (len=6) "Brewer",
+      (string) (len=5) "last3": (string) (len=8) "Milgroom",
+      (string) (len=5) "pages": (string) (len=11) "1185–1193",
+      (string) (len=4) "pmid": (string) (len=8) "20932167",
+      (string) (len=5) "title": (string) (len=143) "Variation in Pathogenicity and Aggressiveness of Erysiphe necator from Different Vitis spp. and Geographic Origins in the Eastern United States",
+      (string) (len=6) "volume": (string) (len=3) "100"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=314) "Frenkel, Omer; Brewer, Marin Talbot; Milgroom, Michael G. (2010). \"Variation in Pathogenicity and Aggressiveness of Erysiphe necator from Different Vitis spp. and Geographic Origins in the Eastern United States\". Phytopathology. 100 (11): 1185–1193. doi:10.1094/PHYTO-01-10-0023. ISSN\u00a00031-949X. PMID\u00a020932167.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://doi.org/10.1094%2FPHYTO-01-10-0023",
+          Text: (string) (len=145) "\"Variation in Pathogenicity and Aggressiveness of Erysiphe necator from Different Vitis spp. and Geographic Origins in the Eastern United States\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://doi.org/10.1094%2FPHYTO-01-10-0023",
+          Text: (string) (len=24) "10.1094/PHYTO-01-10-0023",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISSN_(identifier)",
+          Text: (string) (len=4) "ISSN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://search.worldcat.org/issn/0031-949X",
+          Text: (string) (len=9) "0031-949X",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/20932167",
+          Text: (string) (len=8) "20932167",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-32",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=23) {
+      (string) (len=4) "date": (string) (len=4) "2016",
+      (string) (len=3) "doi": (string) (len=23) "10.1111/1750-3841.13522",
+      (string) (len=6) "first1": (string) (len=5) "Kelly",
+      (string) (len=6) "first2": (string) (len=7) "Charles",
+      (string) (len=6) "first3": (string) (len=4) "Asli",
+      (string) (len=6) "first4": (string) (len=5) "Linda",
+      (string) (len=6) "first5": (string) (len=7) "Patrick",
+      (string) (len=6) "first6": (string) (len=6) "Dennis",
+      (string) (len=4) "issn": (string) (len=9) "1750-3841",
+      (string) (len=5) "issue": (string) (len=2) "11",
+      (string) (len=7) "journal": (string) (len=23) "Journal of Food Science",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "last1": (string) (len=5) "Brown",
+      (string) (len=5) "last2": (string) (len=4) "Sims",
+      (string) (len=5) "last3": (string) (len=7) "Odabasi",
+      (string) (len=5) "last4": (string) (len=9) "Bartoshuk",
+      (string) (len=5) "last5": (string) (len=6) "Conner",
+      (string) (len=5) "last6": (string) (len=4) "Gray",
+      (string) (len=5) "pages": (string) (len=13) "S2808–S2816",
+      (string) (len=4) "pmid": (string) (len=8) "27741360",
+      (string) (len=5) "quote": (string) (len=76) "Nearly all table grapes that are sold in commercial markets are V. vinifera.",
+      (string) (len=5) "title": (string) (len=55) "Consumer Acceptability of Fresh-Market Muscadine Grapes",
+      (string) (len=6) "volume": (string) (len=2) "81"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=348) "Brown, Kelly; Sims, Charles; Odabasi, Asli; Bartoshuk, Linda; Conner, Patrick; Gray, Dennis (2016). \"Consumer Acceptability of Fresh-Market Muscadine Grapes\". Journal of Food Science. 81 (11): S2808 – S2816. doi:10.1111/1750-3841.13522. ISSN\u00a01750-3841. PMID\u00a027741360. Nearly all table grapes that are sold in commercial markets are V. vinifera.",
+      Links: ([]*parser.Link) (len=6) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=41) "https://doi.org/10.1111%2F1750-3841.13522",
+          Text: (string) (len=23) "10.1111/1750-3841.13522",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISSN_(identifier)",
+          Text: (string) (len=4) "ISSN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://search.worldcat.org/issn/1750-3841",
+          Text: (string) (len=9) "1750-3841",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/27741360",
+          Text: (string) (len=8) "27741360",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-33",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=15) {
+      (string) (len=4) "date": (string) (len=4) "2017",
+      (string) (len=3) "doi": (string) (len=24) "10.3390/beverages3030042",
+      (string) (len=10) "doi-access": (string) (len=4) "free",
+      (string) (len=6) "first1": (string) (len=8) "Fernanda",
+      (string) (len=6) "first2": (string) (len=6) "Teresa",
+      (string) (len=6) "first3": (string) (len=5) "Alice",
+      (string) (len=5) "issue": (string) (len=1) "4",
+      (string) (len=7) "journal": (string) (len=9) "Beverages",
+      (string) (len=8) "language": (string) (len=2) "en",
+      (string) (len=5) "last1": (string) (len=5) "Cosme",
+      (string) (len=5) "last2": (string) (len=5) "Pinto",
+      (string) (len=5) "last3": (string) (len=6) "Vilela",
+      (string) (len=5) "pages": (string) (len=2) "42",
+      (string) (len=5) "title": (string) (len=128) "Oenology in the Kitchen: The Sensory Experience Offered by Culinary Dishes Cooked with Alcoholic Drinks, Grapes and Grape Leaves",
+      (string) (len=6) "volume": (string) (len=1) "3"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=237) "Cosme, Fernanda; Pinto, Teresa; Vilela, Alice (2017). \"Oenology in the Kitchen: The Sensory Experience Offered by Culinary Dishes Cooked with Alcoholic Drinks, Grapes and Grape Leaves\". Beverages. 3 (4): 42. doi:10.3390/beverages3030042.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://doi.org/10.3390%2Fbeverages3030042",
+          Text: (string) (len=130) "\"Oenology in the Kitchen: The Sensory Experience Offered by Culinary Dishes Cooked with Alcoholic Drinks, Grapes and Grape Leaves\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://doi.org/10.3390%2Fbeverages3030042",
+          Text: (string) (len=24) "10.3390/beverages3030042",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-34",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=142) "Wulkan, Reba, \"The Grape and the Vine: A Motif in Contemporary Jewish Textiles\" (1998). Textile Society of America Symposium Proceedings. 217.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-35",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=14) {
+      (string) (len=4) "date": (string) (len=4) "2021",
+      (string) (len=3) "doi": (string) (len=20) "10.26351/JSRS/30-1/5",
+      (string) (len=6) "first1": (string) (len=6) "Yishai",
+      (string) (len=6) "first2": (string) (len=6) "Nissan",
+      (string) (len=4) "issn": (string) (len=9) "2617-8737",
+      (string) (len=5) "issue": (string) (len=1) "1",
+      (string) (len=7) "journal": (string) (len=34) "Judea and Samaria Research Studies",
+      (string) (len=5) "last1": (string) (len=6) "Netzer",
+      (string) (len=5) "last2": (string) (len=6) "Netzer",
+      (string) (len=5) "pages": (string) (len=9) "127–145",
+      (string) (len=5) "s2cid": (string) (len=9) "241465067",
+      (string) (len=5) "title": (string) (len=60) "Hebrew Vine and Wine Terms from Ancient Times to the Present",
+      (string) (len=3) "url": (string) (len=272) "https://www.ariel.ac.il/wp/judea-and-samaria-research-studies/2021/07/05/%d7%92%d6%b6%d6%bc%d7%a4%d6%b6%d7%9f-%d7%91%d7%9e%d7%95%d7%91%d7%9f-%d7%92%d6%b8%d6%bc%d7%a4%d6%b6%d7%9f-%d7%9e%d7%95%d7%a0%d7%97%d7%99-%d7%92%d7%a4%d7%9f-%d7%95%d7%99%d7%99%d7%9f-%d7%9e%d7%99%d7%9e/",
+      (string) (len=6) "volume": (string) (len=2) "30"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=218) "Netzer, Yishai; Netzer, Nissan (2021). \"Hebrew Vine and Wine Terms from Ancient Times to the Present\". Judea and Samaria Research Studies. 30 (1): 127–145. doi:10.26351/JSRS/30-1/5. ISSN\u00a02617-8737. S2CID\u00a0241465067.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=272) "https://www.ariel.ac.il/wp/judea-and-samaria-research-studies/2021/07/05/%d7%92%d6%b6%d6%bc%d7%a4%d6%b6%d7%9f-%d7%91%d7%9e%d7%95%d7%91%d7%9f-%d7%92%d6%b8%d6%bc%d7%a4%d6%b6%d7%9f-%d7%9e%d7%95%d7%a0%d7%97%d7%99-%d7%92%d7%a4%d7%9f-%d7%95%d7%99%d7%99%d7%9f-%d7%9e%d7%99%d7%9e/",
+          Text: (string) (len=62) "\"Hebrew Vine and Wine Terms from Ancient Times to the Present\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://doi.org/10.26351%2FJSRS%2F30-1%2F5",
+          Text: (string) (len=20) "10.26351/JSRS/30-1/5",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISSN_(identifier)",
+          Text: (string) (len=4) "ISSN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://search.worldcat.org/issn/2617-8737",
+          Text: (string) (len=9) "2617-8737",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/S2CID_(identifier)",
+          Text: (string) (len=5) "S2CID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://api.semanticscholar.org/CorpusID:241465067",
+          Text: (string) (len=9) "241465067",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-36",
+    Group: (string) "",
+    Type: (string) (len=10) "bibleverse",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=1) "1": (string) "",
+      (string) (len=1) "2": (string) (len=11) "Deuteronomy",
+      (string) (len=1) "3": (string) (len=3) "8:8",
+      (string) (len=1) "4": (string) (len=2) "HE"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=15) "Deuteronomy 8:8",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=42) "https://mechon-mamre.org/p/pt/pt0508.htm#8",
+          Text: (string) (len=15) "Deuteronomy 8:8",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-37",
+    Group: (string) "",
+    Type: (string) (len=10) "bibleverse",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=1) "1": (string) (len=6) "Isaiah",
+      (string) (len=1) "2": (string) (len=3) "5:7"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=22) "Isaiah 5:7, Hosea 9:10",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=59) "https://bible.oremus.org/?passage=Isaiah%205:7&version=nrsv",
+          Text: (string) (len=10) "Isaiah 5:7",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=59) "https://bible.oremus.org/?passage=Hosea%209:10&version=nrsv",
+          Text: (string) (len=10) "Hosea 9:10",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-38",
+    Group: (string) "",
+    Type: (string) (len=13) "encyclopaedia",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=6) "author": (string) (len=17) "Clement W. Coumbe",
+      (string) (len=6) "inline": (string) (len=1) "1",
+      (string) (len=7) "wstitle": (string) (len=25) "Vine in Art and Symbolism",
+      (string) (len=4) "year": (string) (len=4) "1920"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=187) "This article incorporates text from a publication now in the public domain:\u00a0Clement W. Coumbe (1920). \"Vine in Art and Symbolism\"\u00a0. In Rines, George Edwin (ed.). Encyclopedia Americana.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=43) "https://en.wikipedia.org/wiki/Public_domain",
+          Text: (string) (len=13) "public domain",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=90) "https://en.wikisource.org/wiki/The_Encyclopedia_Americana_(1920)/Vine_in_Art_and_Symbolism",
+          Text: (string) (len=27) "\"Vine in Art and Symbolism\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://en.wikipedia.org/wiki/Encyclopedia_Americana",
+          Text: (string) (len=22) "Encyclopedia Americana",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-39",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=6) "first1": (string) (len=6) "Carlos",
+      (string) (len=4) "isbn": (string) (len=13) "9780958034630",
+      (string) (len=5) "last1": (string) (len=7) "Gelbert",
+      (string) (len=8) "location": (string) (len=6) "Sydney",
+      (string) (len=9) "publisher": (string) (len=18) "Living Water Books",
+      (string) (len=5) "title": (string) (len=9) "Ginza Rba",
+      (string) (len=3) "url": (string) (len=50) "https://livingwaterbooks.com.au/product/ginza-rba/",
+      (string) (len=4) "year": (string) (len=4) "2011"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=83) "Gelbert, Carlos (2011). Ginza Rba. Sydney: Living Water Books. ISBN\u00a09780958034630.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=50) "https://livingwaterbooks.com.au/product/ginza-rba/",
+          Text: (string) (len=9) "Ginza Rba",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9780958034630",
+          Text: (string) (len=13) "9780958034630",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

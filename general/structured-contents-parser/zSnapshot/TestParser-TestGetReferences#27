@@ -1,0 +1,336 @@
+([]*parser.Reference) (len=10) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=4) "date": (string) (len=4) "2012",
+      (string) (len=7) "edition": (string) (len=1) "3",
+      (string) (len=5) "first": (string) (len=5) "Peter",
+      (string) (len=4) "isbn": (string) (len=17) "978-1-4443-3429-6",
+      (string) (len=4) "last": (string) (len=9) "Ladefoged",
+      (string) (len=8) "location": (string) (len=10) "Malden, MA",
+      (string) (len=4) "oclc": (string) (len=9) "740281727",
+      (string) (len=6) "others": (string) (len=21) "Sandra Ferrari Disner",
+      (string) (len=5) "pages": (string) (len=9) "195–196",
+      (string) (len=5) "title": (string) (len=21) "Vowels and consonants",
+      (string) (len=3) "url": (string) (len=39) "https://www.worldcat.org/oclc/740281727"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=209) "Ladefoged, Peter (2012). Vowels and consonants. Sandra Ferrari Disner (3\u00a0ed.). Malden, MA. pp.\u00a0195–196. ISBN\u00a0978-1-4443-3429-6. OCLC\u00a0740281727.{{cite book}}:  CS1 maint: location missing publisher (link)",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=39) "https://www.worldcat.org/oclc/740281727",
+          Text: (string) (len=21) "Vowels and consonants",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-1-4443-3429-6",
+          Text: (string) (len=17) "978-1-4443-3429-6",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/OCLC_(identifier)",
+          Text: (string) (len=4) "OCLC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://search.worldcat.org/oclc/740281727",
+          Text: (string) (len=9) "740281727",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/Template:Cite_book",
+          Text: (string) (len=9) "cite book",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=76) "https://en.wikipedia.org/wiki/Category:CS1_maint:_location_missing_publisher",
+          Text: (string) (len=4) "link",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "Gussenhoven & Jacobs 2017, p.\u00a064-65.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=78) "https://en.wikipedia.org/wiki/Distinctive_feature#CITEREFGussenhovenJacobs2017",
+          Text: (string) (len=25) "Gussenhoven & Jacobs 2017",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)({
+      Value: (string) (len=103) "Gussenhoven, Carlos; Jacobs, Haike (2017). Understanding Phonology. Routledge. ISBN\u00a0978-1-138-96141-8.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/Carlos_Gussenhoven",
+          Text: (string) (len=19) "Gussenhoven, Carlos",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-1-138-96141-8",
+          Text: (string) (len=17) "978-1-138-96141-8",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=37) "Gussenhoven & Jacobs 2017, p.\u00a072-73.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=78) "https://en.wikipedia.org/wiki/Distinctive_feature#CITEREFGussenhovenJacobs2017",
+          Text: (string) (len=25) "Gussenhoven & Jacobs 2017",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)({
+      Value: (string) (len=103) "Gussenhoven, Carlos; Jacobs, Haike (2017). Understanding Phonology. Routledge. ISBN\u00a0978-1-138-96141-8.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/Carlos_Gussenhoven",
+          Text: (string) (len=19) "Gussenhoven, Carlos",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-1-138-96141-8",
+          Text: (string) (len=17) "978-1-138-96141-8",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2021-05-19",
+      (string) (len=8) "language": (string) (len=5) "en-au",
+      (string) (len=4) "last": (string) (len=14) "Administration",
+      (string) (len=5) "title": (string) (len=20) "Distinctive features",
+      (string) (len=3) "url": (string) (len=242) "https://www.mq.edu.au/about/about-the-university/faculties-and-departments/medicine-and-health-sciences/departments-and-centres/department-of-linguistics/our-research/phonetics-and-phonology/speech/phonetics-and-phonology/distinctive-features",
+      (string) (len=7) "website": (string) (len=20) "Macquarie University"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=83) "Administration. \"Distinctive features\". Macquarie University. Retrieved 2021-05-19.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=242) "https://www.mq.edu.au/about/about-the-university/faculties-and-departments/medicine-and-health-sciences/departments-and-centres/department-of-linguistics/our-research/phonetics-and-phonology/speech/phonetics-and-phonology/distinctive-features",
+          Text: (string) (len=22) "\"Distinctive features\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=34) "Gussenhoven & Jacobs 2017, p.\u00a065.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=78) "https://en.wikipedia.org/wiki/Distinctive_feature#CITEREFGussenhovenJacobs2017",
+          Text: (string) (len=25) "Gussenhoven & Jacobs 2017",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)({
+      Value: (string) (len=103) "Gussenhoven, Carlos; Jacobs, Haike (2017). Understanding Phonology. Routledge. ISBN\u00a0978-1-138-96141-8.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/Carlos_Gussenhoven",
+          Text: (string) (len=19) "Gussenhoven, Carlos",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-1-138-96141-8",
+          Text: (string) (len=17) "978-1-138-96141-8",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=40) "Gussenhoven & Jacobs 2017, pp.\u00a066–81.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=78) "https://en.wikipedia.org/wiki/Distinctive_feature#CITEREFGussenhovenJacobs2017",
+          Text: (string) (len=25) "Gussenhoven & Jacobs 2017",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)({
+      Value: (string) (len=103) "Gussenhoven, Carlos; Jacobs, Haike (2017). Understanding Phonology. Routledge. ISBN\u00a0978-1-138-96141-8.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/Carlos_Gussenhoven",
+          Text: (string) (len=19) "Gussenhoven, Carlos",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-1-138-96141-8",
+          Text: (string) (len=17) "978-1-138-96141-8",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=11) "19 May 2021",
+      (string) (len=12) "archive-date": (string) (len=11) "13 May 2021",
+      (string) (len=11) "archive-url": (string) (len=91) "https://web.archive.org/web/20210513182213/https://aix1.uottawa.ca/~oarnaou/distinctive.htm",
+      (string) (len=5) "first": (string) (len=4) "Olga",
+      (string) (len=4) "last": (string) (len=9) "Arnaudova",
+      (string) (len=5) "title": (string) (len=32) "Overview of Distinctive Features",
+      (string) (len=3) "url": (string) (len=47) "http://aix1.uottawa.ca/~oarnaou/distinctive.htm",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=7) "website": (string) (len=20) "University of Ottawa"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=140) "Arnaudova, Olga. \"Overview of Distinctive Features\". University of Ottawa. Archived from the original on 13 May 2021. Retrieved 19 May 2021.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=91) "https://web.archive.org/web/20210513182213/https://aix1.uottawa.ca/~oarnaou/distinctive.htm",
+          Text: (string) (len=34) "\"Overview of Distinctive Features\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "http://aix1.uottawa.ca/~oarnaou/distinctive.htm",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=11) "19 May 2021",
+      (string) (len=12) "archive-date": (string) (len=17) "17 September 2021",
+      (string) (len=11) "archive-url": (string) (len=109) "https://web.archive.org/web/20210917132058/https://sites.fas.harvard.edu/~interns/eng101quiz/definitions.html",
+      (string) (len=5) "title": (string) (len=56) "The Distinctive Features of English Phonemes Definitions",
+      (string) (len=3) "url": (string) (len=65) "http://sites.fas.harvard.edu/~interns/eng101quiz/definitions.html",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=7) "website": (string) (len=40) "[[Harvard Faculty of Arts and Sciences]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=169) "\"The Distinctive Features of English Phonemes Definitions\". Harvard Faculty of Arts and Sciences. Archived from the original on 17 September 2021. Retrieved 19 May 2021.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=109) "https://web.archive.org/web/20210917132058/https://sites.fas.harvard.edu/~interns/eng101quiz/definitions.html",
+          Text: (string) (len=58) "\"The Distinctive Features of English Phonemes Definitions\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=66) "https://en.wikipedia.org/wiki/Harvard_Faculty_of_Arts_and_Sciences",
+          Text: (string) (len=36) "Harvard Faculty of Arts and Sciences",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=65) "http://sites.fas.harvard.edu/~interns/eng101quiz/definitions.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=209) "Godsave, Bruce. 1974. An investigation of the feasibility of using a particular distinctive feature matrix for recording and categorizing fingerspelling errors. University of Cincinnati, doctoral dissertation.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=96) "p. 73. Norrick, Neal. 1985. How Proverbs Mean: Semantic Studies in English Proverbs. de Gruyter.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

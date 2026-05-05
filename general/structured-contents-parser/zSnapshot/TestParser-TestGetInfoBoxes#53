@@ -1,0 +1,1461 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=18) "Infobox settlement",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=7) {
+      (*parser.Part)({
+        Name: (string) (len=6) "London",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=12) "Capital city",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=11) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=224) "River Thames and Tower Bridge with The Shard and Southwark (left), and Tower of London and City of London (right) London Eye Nelson's Column St Paul's Westminster Abbey Canary Wharf Palace of Westminster with Big Ben (right)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=7) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=135) "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/London_Skyline_%28125508655%29.jpeg/278px-London_Skyline_%28125508655%29.jpeg",
+                Identifier: (string) (len=64) "c89a8007c1e73dbb954c172d18cb6db650a2be7c3b481bb188efa9541120763c",
+                Name: (string) (len=36) "File:London_Skyline_(125508655).jpeg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 156,
+                Width: (int) 278,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=134) "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/London_Eye_at_sunset_2013-07-19.jpg/87px-London_Eye_at_sunset_2013-07-19.jpg",
+                Identifier: (string) (len=64) "20e487f9502557c2340c37de2ed61d7fdec88da33cca2437c534a89c9cd614d4",
+                Name: (string) (len=40) "File:London_Eye_at_sunset_2013-07-19.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 142,
+                Width: (int) 87,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=199) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/London%2C_Trafalgar_Square%2C_Nelson%27s_Column_--_2016_--_4851.jpg/101px-London%2C_Trafalgar_Square%2C_Nelson%27s_Column_--_2016_--_4851.jpg",
+                Identifier: (string) (len=64) "41cf1041bea44781abc7901ba79c1d1e03b72c9c386b0297bfb3e3d02b138597",
+                Name: (string) (len=66) "File:London,_Trafalgar_Square,_Nelson's_Column_--_2016_--_4851.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 141,
+                Width: (int) 101,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=196) "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/St_Paul%27s_Cathedral_Dome_from_One_New_Change_-_Vertical_Crop.jpg/82px-St_Paul%27s_Cathedral_Dome_from_One_New_Change_-_Vertical_Crop.jpg",
+                Identifier: (string) (len=64) "3d74d33d29a94c4e3f1cb9083a3aa73354dc1b7990aa836f16e3c26d4330a204",
+                Name: (string) (len=69) "File:St_Paul's_Cathedral_Dome_from_One_New_Change_-_Vertical_Crop.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 140,
+                Width: (int) 82,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=124) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Westminster_Abbey_St_Peter.jpg/85px-Westminster_Abbey_St_Peter.jpg",
+                Identifier: (string) (len=64) "3659aefcfcfb55ff566e258ebe5a059ee1cbe596bebb204e87d42b1dd31aa7e5",
+                Name: (string) (len=35) "File:Westminster_Abbey_St_Peter.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 106,
+                Width: (int) 85,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=169) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Canary_Wharf_from_Limehouse_London_June_2016_HDR.jpg/189px-Canary_Wharf_from_Limehouse_London_June_2016_HDR.jpg",
+                Identifier: (string) (len=64) "f1b35aa3be4fa04e8723b82d98393067c45c89087486c6f65c2a18b91b11a064",
+                Name: (string) (len=57) "File:Canary_Wharf_from_Limehouse_London_June_2016_HDR.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 106,
+                Width: (int) 189,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=147) "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Houses_of_Parliament_in_2022_alt_crop.jpg/278px-Houses_of_Parliament_in_2022_alt_crop.jpg",
+                Identifier: (string) (len=64) "0291eb29edeb7a6435ba532b24f0e29f84d1be5c9816cd7669f9d168329cc31a",
+                Name: (string) (len=46) "File:Houses_of_Parliament_in_2022_alt_crop.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 112,
+                Width: (int) 278,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) (len=13) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/River_Thames",
+                Text: (string) (len=12) "River Thames",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Tower_Bridge",
+                Text: (string) (len=12) "Tower Bridge",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/The_Shard",
+                Text: (string) (len=9) "The Shard",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Southwark",
+                Text: (string) (len=9) "Southwark",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Tower_of_London",
+                Text: (string) (len=15) "Tower of London",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/City_of_London",
+                Text: (string) (len=14) "City of London",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/London_Eye",
+                Text: (string) (len=10) "London Eye",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Nelson's_Column",
+                Text: (string) (len=15) "Nelson's Column",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/St_Paul's",
+                Text: (string) (len=9) "St Paul's",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Westminster_Abbey",
+                Text: (string) (len=17) "Westminster Abbey",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Canary_Wharf",
+                Text: (string) (len=12) "Canary Wharf",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Palace_of_Westminster",
+                Text: (string) (len=21) "Palace of Westminster",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Big_Ben",
+                Text: (string) (len=7) "Big Ben",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=168) "https://maps.wikimedia.org/img/osm-intl,8,a,a,270x200.png?lang=en&domain=en.wikipedia.org&title=London&revid=1269148500&groups=_e31168f8c9b1d6ce99804a2b299563b80c687a00",
+                Identifier: (string) (len=64) "cd52241bc7991ec04f287727cf68a1a782f92bd3f2dd74fbf5b21510487437d1",
+                Name: (string) "",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 200,
+                Width: (int) 270,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) ""
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=30) "https://en.wikipedia.org/wiki/",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=71) "London Location within the United Kingdom London Location within Europe",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=2) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=139) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/United_Kingdom_adm_location_map.svg/250px-United_Kingdom_adm_location_map.svg.png",
+                Identifier: (string) (len=64) "a1b22dbe6b7171b5550f856d2ad358bbdabca0f687a9546e39e2120f67b0cb6f",
+                Name: (string) (len=40) "File:United_Kingdom_adm_location_map.svg",
+                AlternativeText: (string) (len=39) "London is located in the United Kingdom",
+                Caption: (string) (len=39) "London is located in the United Kingdom",
+                Height: (int) 386,
+                Width: (int) 250,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Europe_blank_laea_location_map.svg/250px-Europe_blank_laea_location_map.svg.png",
+                Identifier: (string) (len=64) "f3b16715cf50064466d16a4e6d1b055fc858129c54924295725a458afc0b4eeb",
+                Name: (string) (len=39) "File:Europe_blank_laea_location_map.svg",
+                AlternativeText: (string) (len=27) "London is located in Europe",
+                Caption: (string) (len=27) "London is located in Europe",
+                Height: (int) 214,
+                Width: (int) 250,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=67) "Coordinates: 51°30′26″N 0°7′39″W / 51.50722°N 0.12750°W",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=113) "https://geohack.toolforge.org/geohack.php?pagename=London&params=51_30_26_N_0_7_39_W_region:GB_type:city(8866180)",
+                Text: (string) (len=54) "51°30′26″N 0°7′39″W / 51.50722°N 0.12750°W",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Sovereign state",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "United Kingdom",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/List_of_sovereign_states",
+                Text: (string) (len=15) "Sovereign state",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/United_Kingdom",
+                Text: (string) (len=14) "United Kingdom",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Country",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "England",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=61) "https://en.wikipedia.org/wiki/Countries_of_the_United_Kingdom",
+                Text: (string) (len=7) "Country",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/England",
+                Text: (string) (len=7) "England",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Region",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "London",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Regions_of_England",
+                Text: (string) (len=6) "Region",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Greater_London",
+                Text: (string) (len=6) "London",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=19) "Ceremonial counties",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=2) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=14) "Greater London",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=44) "https://en.wikipedia.org/wiki/Greater_London",
+                    Text: (string) (len=14) "Greater London",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=14) "City of London",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=44) "https://en.wikipedia.org/wiki/City_of_London",
+                    Text: (string) (len=14) "City of London",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/Ceremonial_counties_of_England",
+                Text: (string) (len=19) "Ceremonial counties",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=17) "Settled by Romans",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "AD 47, as Londinium",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Roman_Empire",
+                Text: (string) (len=6) "Romans",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Londinium",
+                Text: (string) (len=9) "Londinium",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/London#cite_note-auto1-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=17) "Administrative HQ",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "City Hall, Newham",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/City_Hall,_London_(Newham)",
+                Text: (string) (len=17) "City Hall, Newham",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=16) "Local government",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=41) "32 London boroughs and the City of London",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Districts_of_England",
+                Text: (string) (len=16) "Local government",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/London_boroughs",
+                Text: (string) (len=15) "London boroughs",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/City_of_London",
+                Text: (string) (len=14) "City of London",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=10) "Government",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) (len=4) "Type",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=45) "Executive mayoralty and deliberative assembly",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=64) "https://en.wikipedia.org/wiki/Directly_elected_mayors_in_England",
+                Text: (string) (len=19) "Executive mayoralty",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Deliberative_assembly",
+                Text: (string) (len=21) "deliberative assembly",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Body",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "Greater London Authority",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Greater_London_Authority",
+                Text: (string) (len=24) "Greater London Authority",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Mayor",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "Sadiq Khan (L)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Mayor_of_London",
+                Text: (string) (len=5) "Mayor",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Sadiq_Khan",
+                Text: (string) (len=10) "Sadiq Khan",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Labour_Party_(UK)",
+                Text: (string) (len=1) "L",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "London Assembly",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "14 constituencies",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/London_Assembly",
+                Text: (string) (len=15) "London Assembly",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/London_Assembly_constituencies",
+                Text: (string) (len=17) "14 constituencies",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "UK Parliament",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "74 constituencies",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=62) "https://en.wikipedia.org/wiki/Parliament_of_the_United_Kingdom",
+                Text: (string) (len=13) "UK Parliament",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "https://en.wikipedia.org/wiki/List_of_Parliamentary_constituencies_in_London",
+                Text: (string) (len=17) "74 constituencies",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=4) "Area",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) (len=5) "Total",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "607 sq mi (1,572 km 2)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/London#cite_note-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Urban",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "671 sq mi (1,738 km 2)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Metro",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "3,236 sq mi (8,382 km 2)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=17) "Population (2022)",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=6) {
+          (*parser.Part)({
+            Name: (string) (len=5) "Total",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "8,866,180",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/London#cite_note-4",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Rank",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=2) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=13) "1st in the UK",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=66) "https://en.wikipedia.org/wiki/List_of_cities_in_the_United_Kingdom",
+                    Text: (string) (len=3) "1st",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=13) "3rd in Europe",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=86) "https://en.wikipedia.org/wiki/List_of_European_cities_by_population_within_city_limits",
+                    Text: (string) (len=3) "3rd",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Density",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=25) "14,600/sq mi (5,640/km 2)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Urban (2011)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "9,787,428",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Urban_area",
+                Text: (string) (len=5) "Urban",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=64) "https://en.wikipedia.org/wiki/London#cite_note-urbanpopulation-5",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Metro (2024)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "14,900,000",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Metropolitan_area",
+                Text: (string) (len=5) "Metro",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/London#cite_note-6",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=71) "https://en.wikipedia.org/wiki/London#cite_note-CityPopulation.de_show-7",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Demonyms",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Londoner",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Demonym",
+                Text: (string) (len=8) "Demonyms",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=16) "Ethnicity (2021)",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) (len=13) "Ethnic groups",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=5) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=11) "53.8% White",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=64) "https://en.wikipedia.org/wiki/White_people_in_the_United_Kingdom",
+                    Text: (string) (len=5) "White",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=11) "20.7% Asian",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=44) "https://en.wikipedia.org/wiki/British_Asians",
+                    Text: (string) (len=5) "Asian",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=11) "13.5% Black",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=50) "https://en.wikipedia.org/wiki/Black_British_people",
+                    Text: (string) (len=5) "Black",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "6.3% other",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=65) "https://en.wikipedia.org/wiki/Ethnic_groups_in_the_United_Kingdom",
+                    Text: (string) (len=5) "other",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "5.7% Mixed",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=71) "https://en.wikipedia.org/wiki/Mixed_(United_Kingdom_ethnicity_category)",
+                    Text: (string) (len=5) "Mixed",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=65) "https://en.wikipedia.org/wiki/Ethnic_groups_in_the_United_Kingdom",
+                Text: (string) (len=13) "Ethnic groups",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=15) "Religion (2021)",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=8) {
+          (*parser.Part)({
+            Name: (string) (len=8) "Religion",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=9) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=18) "40.7% Christianity",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=62) "https://en.wikipedia.org/wiki/Religion_in_England#Christianity",
+                    Text: (string) (len=12) "Christianity",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=17) "27.1% no religion",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=62) "https://en.wikipedia.org/wiki/Irreligion_in_the_United_Kingdom",
+                    Text: (string) (len=11) "no religion",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=11) "15.0% Islam",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/Islam_in_England",
+                    Text: (string) (len=5) "Islam",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=13) "5.1% Hinduism",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=49) "https://en.wikipedia.org/wiki/Hinduism_in_England",
+                    Text: (string) (len=8) "Hinduism",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=12) "1.7% Judaism",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=60) "https://en.wikipedia.org/wiki/History_of_the_Jews_in_England",
+                    Text: (string) (len=7) "Judaism",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=12) "1.6% Sikhism",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=48) "https://en.wikipedia.org/wiki/Sikhism_in_England",
+                    Text: (string) (len=7) "Sikhism",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=13) "0.9% Buddhism",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=49) "https://en.wikipedia.org/wiki/Buddhism_in_England",
+                    Text: (string) (len=8) "Buddhism",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=10) "1.0% other",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=49) "https://en.wikipedia.org/wiki/Religion_in_England",
+                    Text: (string) (len=5) "other",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=15) "7.0% not stated",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Religion_in_England",
+                Text: (string) (len=8) "Religion",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Time zone",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "UTC+0 (GMT)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Time_zone",
+                Text: (string) (len=9) "Time zone",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/UTC+0",
+                Text: (string) (len=5) "UTC+0",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Greenwich_Mean_Time",
+                Text: (string) (len=3) "GMT",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Summer (DST)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "UTC+1 (BST)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Daylight_saving_time",
+                Text: (string) (len=3) "DST",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/UTC+1",
+                Text: (string) (len=5) "UTC+1",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/British_Summer_Time",
+                Text: (string) (len=3) "BST",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Postcode areas",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=1) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=83) "E, EC, N, NW, SE, SW, W, WC, BR, CM, CR, DA, EN, HA, IG, KT, RM, SM, UB, WD, TN, TW",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=22) {
+                  (*parser.Link)({
+                    URL: (string) (len=45) "https://en.wikipedia.org/wiki/E_postcode_area",
+                    Text: (string) (len=1) "E",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/EC_postcode_area",
+                    Text: (string) (len=2) "EC",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=45) "https://en.wikipedia.org/wiki/N_postcode_area",
+                    Text: (string) (len=1) "N",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/NW_postcode_area",
+                    Text: (string) (len=2) "NW",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/SE_postcode_area",
+                    Text: (string) (len=2) "SE",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/SW_postcode_area",
+                    Text: (string) (len=2) "SW",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=45) "https://en.wikipedia.org/wiki/W_postcode_area",
+                    Text: (string) (len=1) "W",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/WC_postcode_area",
+                    Text: (string) (len=2) "WC",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/BR_postcode_area",
+                    Text: (string) (len=2) "BR",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/CM_postcode_area",
+                    Text: (string) (len=2) "CM",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/CR_postcode_area",
+                    Text: (string) (len=2) "CR",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/DA_postcode_area",
+                    Text: (string) (len=2) "DA",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/EN_postcode_area",
+                    Text: (string) (len=2) "EN",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/HA_postcode_area",
+                    Text: (string) (len=2) "HA",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/IG_postcode_area",
+                    Text: (string) (len=2) "IG",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/KT_postcode_area",
+                    Text: (string) (len=2) "KT",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/RM_postcode_area",
+                    Text: (string) (len=2) "RM",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/SM_postcode_area",
+                    Text: (string) (len=2) "SM",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/UB_postcode_area",
+                    Text: (string) (len=2) "UB",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/WD_postcode_area",
+                    Text: (string) (len=2) "WD",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/TN_postcode_area",
+                    Text: (string) (len=2) "TN",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/TW_postcode_area",
+                    Text: (string) (len=2) "TW",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=61) "https://en.wikipedia.org/wiki/Postcodes_in_the_United_Kingdom",
+                Text: (string) (len=14) "Postcode areas",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Dialling codes",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=4) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=3) "020",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=33) "https://en.wikipedia.org/wiki/020",
+                    Text: (string) (len=3) "020",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=5) "01689",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=5) "01708",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=5) "01895",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=69) "https://en.wikipedia.org/wiki/Telephone_numbers_in_the_United_Kingdom",
+                Text: (string) (len=14) "Dialling codes",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "GSS code",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=2) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=18) "E12000007 (region)",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=15) "E61000001 (GLA)",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/GSS_coding_system",
+                Text: (string) (len=8) "GSS code",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "GeoTLD",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) ".london",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/GeoTLD",
+                Text: (string) (len=6) "GeoTLD",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/.london",
+                Text: (string) (len=7) ".london",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Website",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "london.gov.uk",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=20) "http://london.gov.uk",
+                Text: (string) (len=13) "london.gov.uk",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

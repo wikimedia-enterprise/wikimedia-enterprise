@@ -1,0 +1,105 @@
+([]*parser.Reference) (len=4) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=6) "auteur": (string) (len=13) "Romain Baheux",
+      (string) (len=12) "consulté le": (string) (len=10) "2023-02-19",
+      (string) (len=4) "date": (string) (len=10) "2023-02-19",
+      (string) (len=6) "langue": (string) (len=2) "fr",
+      (string) (len=4) "site": (string) (len=15) "[[Le Parisien]]",
+      (string) (len=5) "titre": (string) (len=85) "Mondiaux de ski : AJ Ginnis, l’incroyable sensation grecque en argent sur le slalom",
+      (string) (len=3) "url": (string) (len=154) "https://www.leparisien.fr/sports/mondiaux-de-ski-aj-ginnis-lincroyable-sensation-grecque-en-argent-sur-le-slalom-19-02-2023-7UJ6NOKGCJCINFZGD632MRDR2Q.php"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=177) "Romain Baheux, «\u00a0Mondiaux de ski\u00a0: AJ Ginnis, l’incroyable sensation grecque en argent sur le slalom\u00a0», sur Le Parisien, 19 février 2023 (consulté le 19 février 2023).",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=154) "https://www.leparisien.fr/sports/mondiaux-de-ski-aj-ginnis-lincroyable-sensation-grecque-en-argent-sur-le-slalom-19-02-2023-7UJ6NOKGCJCINFZGD632MRDR2Q.php",
+          Text: (string) (len=85) "Mondiaux de ski : AJ Ginnis, l’incroyable sensation grecque en argent sur le slalom",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=41) "https://fr.wikipedia.org/wiki/Le_Parisien",
+          Text: (string) (len=11) "Le Parisien",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=12) "consulté le": (string) (len=15) "5 février 2023",
+      (string) (len=4) "date": (string) (len=15) "4 février 2023",
+      (string) (len=4) "site": (string) (len=18) "www.ledauphine.com",
+      (string) (len=5) "titre": (string) (len=100) "« Irréel », historique, coach chamoniard : qui est AJ Ginnis, le Grec sur le podium à Chamonix ?",
+      (string) (len=3) "url": (string) (len=133) "https://www.ledauphine.com/skichrono/2023/02/04/irreel-historique-coach-chamoniard-qui-est-aj-ginnis-le-grec-sur-le-podium-a-chamonix"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=184) "«\u00a0«\u00a0Irréel\u00a0», historique, coach chamoniard\u00a0: qui est AJ Ginnis, le Grec sur le podium à Chamonix\u00a0?\u00a0», sur www.ledauphine.com, 4 février 2023 (consulté le 5 février 2023)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=133) "https://www.ledauphine.com/skichrono/2023/02/04/irreel-historique-coach-chamoniard-qui-est-aj-ginnis-le-grec-sur-le-podium-a-chamonix",
+          Text: (string) (len=100) "« Irréel », historique, coach chamoniard : qui est AJ Ginnis, le Grec sur le podium à Chamonix ?",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=12) "consulté le": (string) (len=15) "5 février 2023",
+      (string) (len=4) "date": (string) (len=15) "4 février 2023",
+      (string) (len=4) "site": (string) (len=14) "www.bluewin.ch",
+      (string) (len=5) "titre": (string) (len=62) "La sensation grecque AJ Ginnis écrit l’histoire à Chamonix",
+      (string) (len=3) "url": (string) (len=116) "https://www.bluewin.ch/fr/sport/sport-d-hiver/la-sensation-grecque-aj-ginnis-ecrit-lhistoire-a-chamonix-1613748.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=138) "«\u00a0La sensation grecque AJ Ginnis écrit l’histoire à Chamonix\u00a0», sur www.bluewin.ch, 4 février 2023 (consulté le 5 février 2023)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=116) "https://www.bluewin.ch/fr/sport/sport-d-hiver/la-sensation-grecque-aj-ginnis-ecrit-lhistoire-a-chamonix-1613748.html",
+          Text: (string) (len=62) "La sensation grecque AJ Ginnis écrit l’histoire à Chamonix",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=12) "consulté le": (string) (len=16) "20 février 2023",
+      (string) (len=11) "en ligne le": (string) (len=16) "19 février 2023",
+      (string) (len=4) "site": (string) (len=11) "lapresse.ca",
+      (string) (len=5) "titre": (string) (len=63) "AJ Ginnis remporte une toute première médaille pour la Grèce",
+      (string) (len=3) "url": (string) (len=143) "https://www.lapresse.ca/sports/sports-d-hiver/2023-02-19/mondiaux-de-ski-alpin/aj-ginnis-remporte-une-toute-premiere-medaille-pour-la-grece.php"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=138) "«\u00a0AJ Ginnis remporte une toute première médaille pour la Grèce\u00a0», sur lapresse.ca, 19 février 2023 (consulté le 20 février 2023)",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=143) "https://www.lapresse.ca/sports/sports-d-hiver/2023-02-19/mondiaux-de-ski-alpin/aj-ginnis-remporte-une-toute-premiere-medaille-pour-la-grece.php",
+          Text: (string) (len=63) "AJ Ginnis remporte une toute première médaille pour la Grèce",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

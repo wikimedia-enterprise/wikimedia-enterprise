@@ -1,0 +1,670 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=10) {
+          (*parser.Part)({
+            Name: (string) (len=12) "World War II",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=6) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=52) "German Stuka dive bombers on the Eastern Front, 1943",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=43) "https://en.wikipedia.org/wiki/Junkers_Ju_87",
+                    Text: (string) (len=5) "Stuka",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=58) "https://en.wikipedia.org/wiki/Eastern_Front_(World_War_II)",
+                    Text: (string) (len=13) "Eastern Front",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=64) "British Matilda II tanks during the North African campaign, 1941",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=40) "https://en.wikipedia.org/wiki/Matilda_II",
+                    Text: (string) (len=10) "Matilda II",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=52) "https://en.wikipedia.org/wiki/North_African_campaign",
+                    Text: (string) (len=22) "North African campaign",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=46) "U.S. atomic bombing of Nagasaki in Japan, 1945",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=71) "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki",
+                    Text: (string) (len=26) "atomic bombing of Nagasaki",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=47) "Soviet troops at the Battle of Stalingrad, 1943",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=50) "https://en.wikipedia.org/wiki/Battle_of_Stalingrad",
+                    Text: (string) (len=20) "Battle of Stalingrad",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=81) "Soviet soldier raising a flag over the Reichstag after the Battle of Berlin, 1945",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=3) {
+                  (*parser.Link)({
+                    URL: (string) (len=63) "https://en.wikipedia.org/wiki/Raising_a_Flag_over_the_Reichstag",
+                    Text: (string) (len=14) "raising a flag",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=48) "https://en.wikipedia.org/wiki/Reichstag_building",
+                    Text: (string) (len=9) "Reichstag",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=46) "https://en.wikipedia.org/wiki/Battle_of_Berlin",
+                    Text: (string) (len=16) "Battle of Berlin",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=55) "U.S. warships in Lingayen Gulf in the Philippines, 1945",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=55) "https://en.wikipedia.org/wiki/Invasion_of_Lingayen_Gulf",
+                    Text: (string) (len=13) "Lingayen Gulf",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=68) "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Philippines",
+                    Text: (string) (len=11) "Philippines",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) (len=6) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=195) "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg/169px-Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg",
+                Identifier: (string) (len=64) "428b259878610ec174da4e977e44ea1a8205903045550286f3c36f776fb8746b",
+                Name: (string) (len=68) "File:Bundesarchiv_Bild_101I-646-5188-17,_Flugzeuge_Junkers_Ju_87.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 115,
+                Width: (int) 169,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=259) "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Matilda_tanks_on_the_move_outside_the_perimeter_of_Tobruk%2C_Libya%2C_18_November_1941._E6600.jpg/115px-Matilda_tanks_on_the_move_outside_the_perimeter_of_Tobruk%2C_Libya%2C_18_November_1941._E6600.jpg",
+                Identifier: (string) (len=64) "fc0e9a9a82de2b930034072a5f40b37d37333d2c6b585275b145db93ffb2e545",
+                Name: (string) (len=98) "File:Matilda_tanks_on_the_move_outside_the_perimeter_of_Tobruk,_Libya,_18_November_1941._E6600.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 116,
+                Width: (int) 115,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=97) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Nagasakibomb.jpg/103px-Nagasakibomb.jpg",
+                Identifier: (string) (len=64) "f9777b6b397e6c0bfa34ec67796d0e3fef2ceaad70516cf496a39edfc13968d1",
+                Name: (string) (len=21) "File:Nagasakibomb.jpg",
+                AlternativeText: (string) (len=6) "in the",
+                Caption: (string) "",
+                Height: (int) 123,
+                Width: (int) 103,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=211) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Bundesarchiv_Bild_183-R76619%2C_Russland%2C_Kesselschlacht_Stalingrad.jpg/181px-Bundesarchiv_Bild_183-R76619%2C_Russland%2C_Kesselschlacht_Stalingrad.jpg",
+                Identifier: (string) (len=64) "957e9f480dee61f5e333eb0b47f7409bde58871afd3fd8dc9f68849afe49f4e9",
+                Name: (string) (len=74) "File:Bundesarchiv_Bild_183-R76619,_Russland,_Kesselschlacht_Stalingrad.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 123,
+                Width: (int) 181,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=167) "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Raising_a_flag_over_the_Reichstag_-_Restoration.jpg/149px-Raising_a_flag_over_the_Reichstag_-_Restoration.jpg",
+                Identifier: (string) (len=64) "e43955ca6e7ca2b75af854480e6063eaa52eec478636408a0166f8d04280861e",
+                Name: (string) (len=56) "File:Raising_a_flag_over_the_Reichstag_-_Restoration.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 108,
+                Width: (int) 149,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=157) "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/USS_Pennsylvania_moving_into_Lingayen_Gulf.jpg/135px-USS_Pennsylvania_moving_into_Lingayen_Gulf.jpg",
+                Identifier: (string) (len=64) "6caf481c97d69b00b8c14dcf656ed24e69051b38cb9b628da0cac861b02676e2",
+                Name: (string) (len=51) "File:USS_Pennsylvania_moving_into_Lingayen_Gulf.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 108,
+                Width: (int) 135,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=16) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=6) "Europe",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=62) "https://en.wikipedia.org/wiki/European_theatre_of_World_War_II",
+                    Text: (string) (len=6) "Europe",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=7) "Pacific",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=41) "https://en.wikipedia.org/wiki/Pacific_War",
+                    Text: (string) (len=7) "Pacific",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=8) "Atlantic",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=52) "https://en.wikipedia.org/wiki/Battle_of_the_Atlantic",
+                    Text: (string) (len=8) "Atlantic",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=12) "Indian Ocean",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=58) "https://en.wikipedia.org/wiki/Indian_Ocean_in_World_War_II",
+                    Text: (string) (len=12) "Indian Ocean",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=15) "South-East Asia",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=70) "https://en.wikipedia.org/wiki/South-East_Asian_theatre_of_World_War_II",
+                    Text: (string) (len=15) "South-East Asia",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=5) "China",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=54) "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+                    Text: (string) (len=5) "China",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=5) "Japan",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=48) "https://en.wikipedia.org/wiki/Air_raids_on_Japan",
+                    Text: (string) (len=5) "Japan",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=11) "Middle East",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=83) "https://en.wikipedia.org/wiki/Mediterranean_and_Middle_East_theatre_of_World_War_II",
+                    Text: (string) (len=11) "Middle East",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=13) "Mediterranean",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=83) "https://en.wikipedia.org/wiki/Mediterranean_and_Middle_East_theatre_of_World_War_II",
+                    Text: (string) (len=13) "Mediterranean",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=12) "North Africa",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=52) "https://en.wikipedia.org/wiki/North_African_campaign",
+                    Text: (string) (len=12) "North Africa",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=14) "Horn of Africa",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=66) "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_II)",
+                    Text: (string) (len=14) "Horn of Africa",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=14) "Central Africa",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=45) "https://en.wikipedia.org/wiki/Battle_of_Gabon",
+                    Text: (string) (len=14) "Central Africa",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=9) "Australia",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=70) "https://en.wikipedia.org/wiki/Attacks_on_Australia_during_World_War_II",
+                    Text: (string) (len=9) "Australia",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=9) "Caribbean",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=53) "https://en.wikipedia.org/wiki/Battle_of_the_Caribbean",
+                    Text: (string) (len=9) "Caribbean",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=23) "North and South America",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=61) "https://en.wikipedia.org/wiki/American_Theater_(World_War_II)",
+                    Text: (string) (len=23) "North and South America",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=51) "Allied victory (see also aftermath of World War II)",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=52) "https://en.wikipedia.org/wiki/Allies_of_World_War_II",
+                    Text: (string) (len=6) "Allied",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=55) "https://en.wikipedia.org/wiki/Aftermath_of_World_War_II",
+                    Text: (string) (len=25) "aftermath of World War II",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/World_War_II#cite_note-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Theater_(warfare)",
+                Text: (string) (len=8) "theatres",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Date",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=54) "1 September 1939 – 2 September 1945 (6 years, 1 day)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/World_War_II#cite_note-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Location",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "Major theatres",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Theater_(warfare)",
+                Text: (string) (len=8) "theatres",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Result",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Result",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Participants",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/World_War_II_by_country",
+                Text: (string) (len=12) "Participants",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Allies",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "Axis",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Allies_of_World_War_II",
+                Text: (string) (len=6) "Allies",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Axis_powers",
+                Text: (string) (len=4) "Axis",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "Commanders and leaders",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=19) "Main Allied leaders",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "Main Axis leaders",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/Allied_leaders_of_World_War_II",
+                Text: (string) (len=19) "Main Allied leaders",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/Axis_leaders_of_World_War_II",
+                Text: (string) (len=17) "Main Axis leaders",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "Casualties and losses",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) <nil>,
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

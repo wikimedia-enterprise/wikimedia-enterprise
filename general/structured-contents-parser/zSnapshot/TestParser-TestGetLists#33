@@ -1,0 +1,107 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=40) "Foo Camp is an annual hacker convention.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=38) "https://en.wikipedia.org/wiki/Foo_Camp",
+            Text: (string) (len=8) "Foo Camp",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/Hacker_convention",
+            Text: (string) (len=17) "hacker convention",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=64) "BarCamp, an international network of user-generated conferences.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/BarCamp",
+            Text: (string) (len=7) "BarCamp",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=321) "During the United States v. Microsoft Corp. trial, evidence was presented that Microsoft had tried to use the Web Services Interoperability organization (WS-I) as a means to stifle competition, including e-mails in which top executives including Bill Gates and Steve Ballmer referred to the WS-I using the codename \"foo\".",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=5) {
+          (*parser.Link)({
+            URL: (string) (len=69) "https://en.wikipedia.org/wiki/United_States_v._Microsoft_Corp._(2001)",
+            Text: (string) (len=32) "United States v. Microsoft Corp.",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=59) "https://en.wikipedia.org/wiki/Web_Services_Interoperability",
+            Text: (string) (len=29) "Web Services Interoperability",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/Bill_Gates",
+            Text: (string) (len=10) "Bill Gates",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=43) "https://en.wikipedia.org/wiki/Steve_Ballmer",
+            Text: (string) (len=13) "Steve Ballmer",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://en.wikipedia.org/wiki/Foobar#cite_note-12",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=30) "foobar2000 is an audio player.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/Foobar2000",
+            Text: (string) (len=10) "foobar2000",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

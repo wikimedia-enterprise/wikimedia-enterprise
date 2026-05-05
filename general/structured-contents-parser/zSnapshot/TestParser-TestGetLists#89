@@ -1,0 +1,649 @@
+([]*parser.Part) (len=3) {
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=12) "ordered_list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=11) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=23) "Tenerife (904 713 hab.)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=38) "https://es.wikipedia.org/wiki/Tenerife",
+            Text: (string) (len=8) "Tenerife",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=23) "Mallorca (880 113 hab.)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=38) "https://es.wikipedia.org/wiki/Mallorca",
+            Text: (string) (len=8) "Mallorca",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=27) "Gran Canaria (846 717 hab.)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=42) "https://es.wikipedia.org/wiki/Gran_Canaria",
+            Text: (string) (len=12) "Gran Canaria",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=24) "Lanzarote (149 183 hab.)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=39) "https://es.wikipedia.org/wiki/Lanzarote",
+            Text: (string) (len=9) "Lanzarote",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=20) "Ibiza (144 659 hab.)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=42) "https://es.wikipedia.org/wiki/Ibiza_(isla)",
+            Text: (string) (len=5) "Ibiza",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=28) "Fuerteventura (113 275 hab.)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=43) "https://es.wikipedia.org/wiki/Fuerteventura",
+            Text: (string) (len=13) "Fuerteventura",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=21) "Menorca (91 920 hab.)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=37) "https://es.wikipedia.org/wiki/Menorca",
+            Text: (string) (len=7) "Menorca",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=22) "La Palma (81 863 hab.)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=38) "https://es.wikipedia.org/wiki/La_Palma",
+            Text: (string) (len=8) "La Palma",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=23) "La Gomera (21 136 hab.)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=39) "https://es.wikipedia.org/wiki/La_Gomera",
+            Text: (string) (len=9) "La Gomera",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=24) "Formentera (12 216 hab.)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=40) "https://es.wikipedia.org/wiki/Formentera",
+            Text: (string) (len=10) "Formentera",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=23) "El Hierro (10 798 hab.)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=39) "https://es.wikipedia.org/wiki/El_Hierro",
+            Text: (string) (len=9) "El Hierro",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=713) "Catalán o valenciano (9 % de la población), cooficial en Cataluña, las Islas Baleares y la Comunidad Valenciana. Es hablado también en la región oriental de Aragón, conocida como Franja de Aragón. La Ley de Lenguas de 2009 regula el uso, la protección y la promoción del idioma en Aragón, otorgándole derechos como su uso en la educación, así como dirigirse con ella en las administraciones aragonesas, definiéndola como «lengua propia, original e histórica» de la comunidad autónoma, si bien sin llegar a concederle el grado de cooficialidad. Es hablado también, sin estatus de cooficialidad, en la comarca murciana de El Carche. Oficialmente se denomina valenciano en la Comunidad Valenciana.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=13) {
+          (*parser.Link)({
+            URL: (string) (len=45) "https://es.wikipedia.org/wiki/Idioma_catalán",
+            Text: (string) (len=8) "Catalán",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://es.wikipedia.org/wiki/Idioma_valenciano",
+            Text: (string) (len=10) "valenciano",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=66) "https://es.wikipedia.org/wiki/España#cite_note-eurobarómetro-310",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=39) "https://es.wikipedia.org/wiki/Cataluña",
+            Text: (string) (len=9) "Cataluña",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://es.wikipedia.org/wiki/Islas_Baleares",
+            Text: (string) (len=14) "Islas Baleares",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://es.wikipedia.org/wiki/Comunidad_Valenciana",
+            Text: (string) (len=20) "Comunidad Valenciana",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://es.wikipedia.org/wiki/Aragón",
+            Text: (string) (len=7) "Aragón",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://es.wikipedia.org/wiki/Franja_de_Aragón",
+            Text: (string) (len=17) "Franja de Aragón",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=55) "https://es.wikipedia.org/wiki/Ley_de_Lenguas_de_Aragón",
+            Text: (string) (len=14) "Ley de Lenguas",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=63) "https://es.wikipedia.org/wiki/España#cite_note-Ley_10/2009-319",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=47) "https://es.wikipedia.org/wiki/Región_de_Murcia",
+            Text: (string) (len=8) "murciana",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=39) "https://es.wikipedia.org/wiki/El_Carche",
+            Text: (string) (len=9) "El Carche",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=51) "https://es.wikipedia.org/wiki/España#cite_note-320",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=181) "Gallego (5 % de la población), cooficial en Galicia. Es hablado también en algunas zonas fronterizas de Asturias y Castilla y León (León y Zamora), sin estatus de cooficialidad.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=7) {
+          (*parser.Link)({
+            URL: (string) (len=44) "https://es.wikipedia.org/wiki/Idioma_gallego",
+            Text: (string) (len=7) "Gallego",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=66) "https://es.wikipedia.org/wiki/España#cite_note-eurobarómetro-310",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://es.wikipedia.org/wiki/Galicia",
+            Text: (string) (len=7) "Galicia",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=38) "https://es.wikipedia.org/wiki/Asturias",
+            Text: (string) (len=8) "Asturias",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://es.wikipedia.org/wiki/Castilla_y_León",
+            Text: (string) (len=16) "Castilla y León",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://es.wikipedia.org/wiki/Provincia_de_León",
+            Text: (string) (len=5) "León",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://es.wikipedia.org/wiki/Provincia_de_Zamora",
+            Text: (string) (len=6) "Zamora",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=255) "Euskera (1 % de la población), cooficial en el País Vasco y en la zona vascófona de Navarra. Es hablado también en la zona mixta de Navarra (donde, sin ser oficial, goza de cierto reconocimiento) y de forma muy minoritaria en la zona no vascohablante.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=4) {
+          (*parser.Link)({
+            URL: (string) (len=37) "https://es.wikipedia.org/wiki/Euskera",
+            Text: (string) (len=7) "Euskera",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=66) "https://es.wikipedia.org/wiki/España#cite_note-eurobarómetro-310",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=41) "https://es.wikipedia.org/wiki/País_Vasco",
+            Text: (string) (len=11) "País Vasco",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=56) "https://es.wikipedia.org/wiki/Zona_vascófona_de_Navarra",
+            Text: (string) (len=26) "zona vascófona de Navarra",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=117) "Occitano, cooficial en Cataluña. Es hablado, en su variedad aranesa, en los municipios leridanos del Valle de Arán.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=6) {
+          (*parser.Link)({
+            URL: (string) (len=45) "https://es.wikipedia.org/wiki/Idioma_occitano",
+            Text: (string) (len=8) "Occitano",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=39) "https://es.wikipedia.org/wiki/Cataluña",
+            Text: (string) (len=9) "Cataluña",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=51) "https://es.wikipedia.org/wiki/España#cite_note-321",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://es.wikipedia.org/wiki/Idioma_aranés",
+            Text: (string) (len=7) "aranesa",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://es.wikipedia.org/wiki/Provincia_de_Lérida",
+            Text: (string) (len=9) "leridanos",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://es.wikipedia.org/wiki/Valle_de_Arán",
+            Text: (string) (len=14) "Valle de Arán",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=1265) "Asturleonés, hablado principalmente en Asturias, donde es llamado asturiano o bable y está reconocido por medio del artículo cuarto del Estatuto de Autonomía, que promueve su uso y protección. También es hablado, aunque en menor medida, en el norte y oeste de las provincias castellanoleonesas de León y Zamora, donde se conoce por el nombre de leonés, término glotónimo que hace referencia a esta misma lengua —reconocida como «objeto de protección específica» en el artículo quinto del Estatuto de Autonomía —, también hablada en el municipio portugués de Miranda de Duero, donde se denomina mirandés y cuenta con reconocimiento como lengua cooficial. Por otra parte, existen varias hablas de transición entre el castellano y el diasistema lingüístico asturleonés. Entre esas hablas de transición se encuentra en zonas de Cantabria la llamada habla montañesa, y en ciertas áreas de Extremadura y en la comarca de El Rebollar, al sur de Salamanca, el llamado altoextremeño, denominado también habla de El Rebollar. A principios del siglo XX, varios autores, incluían estas hablas de transición dentro del mismo dominio lingüístico, sin embargo actualmente ya no se incluyen dentro del dominio lingüístico nuclear asturleonés.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=21) {
+          (*parser.Link)({
+            URL: (string) (len=42) "https://es.wikipedia.org/wiki/Asturleonés",
+            Text: (string) (len=12) "Asturleonés",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=38) "https://es.wikipedia.org/wiki/Asturias",
+            Text: (string) (len=8) "Asturias",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://es.wikipedia.org/wiki/Idioma_asturiano",
+            Text: (string) (len=17) "asturiano o bable",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=79) "https://es.wikipedia.org/wiki/Estatuto_de_Autonomía_del_Principado_de_Asturias",
+            Text: (string) (len=22) "Estatuto de Autonomía",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://es.wikipedia.org/wiki/Provincia_de_León",
+            Text: (string) (len=5) "León",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://es.wikipedia.org/wiki/Provincia_de_Zamora",
+            Text: (string) (len=6) "Zamora",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://es.wikipedia.org/wiki/Idioma_leonés",
+            Text: (string) (len=7) "leonés",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=80) "https://es.wikipedia.org/wiki/Estatuto_de_Autonomía_de_Castilla_y_León_de_1983",
+            Text: (string) (len=22) "Estatuto de Autonomía",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=57) "https://es.wikipedia.org/wiki/Miranda_de_Duero_(Portugal)",
+            Text: (string) (len=16) "Miranda de Duero",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://es.wikipedia.org/wiki/Idioma_mirandés",
+            Text: (string) (len=9) "mirandés",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=51) "https://es.wikipedia.org/wiki/España#cite_note-322",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=39) "https://es.wikipedia.org/wiki/Cantabria",
+            Text: (string) (len=9) "Cantabria",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=55) "https://es.wikipedia.org/wiki/Cántabro_(lingüística)",
+            Text: (string) (len=16) "habla montañesa",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=51) "https://es.wikipedia.org/wiki/España#cite_note-323",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=41) "https://es.wikipedia.org/wiki/Extremadura",
+            Text: (string) (len=11) "Extremadura",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://es.wikipedia.org/wiki/El_Rebollar_(Salamanca)",
+            Text: (string) (len=11) "El Rebollar",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=52) "https://es.wikipedia.org/wiki/Provincia_de_Salamanca",
+            Text: (string) (len=9) "Salamanca",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=56) "https://es.wikipedia.org/wiki/Extremeño_(lingüística)",
+            Text: (string) (len=14) "altoextremeño",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://es.wikipedia.org/wiki/Habla_de_El_Rebollar",
+            Text: (string) (len=20) "habla de El Rebollar",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=69) "https://es.wikipedia.org/wiki/España#cite_note-PROEL,_extremeño-324",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=51) "https://es.wikipedia.org/wiki/España#cite_note-325",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=430) "Aragonés, es hablado en todo el norte de Aragón. La Ley de Lenguas de 2009 y la Ley de Lenguas de 2013 regulan el uso, la protección y la promoción del aragonés, dando a la lengua derechos como su uso en la educación, así como dirigirse con ella en las administraciones aragonesas. Se define como «lengua propia, original e histórica» de la comunidad autónoma, si bien sin llegar a concederle el grado de cooficialidad.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=5) {
+          (*parser.Link)({
+            URL: (string) (len=46) "https://es.wikipedia.org/wiki/Idioma_aragonés",
+            Text: (string) (len=9) "Aragonés",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://es.wikipedia.org/wiki/Aragón",
+            Text: (string) (len=7) "Aragón",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=55) "https://es.wikipedia.org/wiki/Ley_de_Lenguas_de_Aragón",
+            Text: (string) (len=14) "Ley de Lenguas",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=63) "https://es.wikipedia.org/wiki/España#cite_note-Ley_10/2009-319",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=62) "https://es.wikipedia.org/wiki/Ley_de_Lenguas_de_Aragón_(2013)",
+            Text: (string) (len=14) "Ley de Lenguas",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=569) "Fala, un conjunto de tres variedades de una lengua romance del subgrupo galaico-portugués hablada en los municipios de San Martín de Trevejo, Eljas y Valverde del Fresno, todos ellos en el Valle de Jálama, al noroeste de la provincia de Cáceres (en la frontera portuguesa). Otros nombres con los que se la conoce son Xalimés, Mañegu (o Manhegu), A fala de Xálima, A fala d'acá, A nossa fala y chapurráu (en Valverde) o, por los partidarios de la teoría sobre la relación entre la fala y el idioma gallego, «gallego de Extremadura» o «galaico-extremeño».",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=12) {
+          (*parser.Link)({
+            URL: (string) (len=53) "https://es.wikipedia.org/wiki/Fala_(valle_de_Jálama)",
+            Text: (string) (len=4) "Fala",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://es.wikipedia.org/wiki/Lengua_romance",
+            Text: (string) (len=14) "lengua romance",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=52) "https://es.wikipedia.org/wiki/San_Martín_de_Trevejo",
+            Text: (string) (len=22) "San Martín de Trevejo",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=35) "https://es.wikipedia.org/wiki/Eljas",
+            Text: (string) (len=5) "Eljas",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://es.wikipedia.org/wiki/Valverde_del_Fresno",
+            Text: (string) (len=19) "Valverde del Fresno",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=46) "https://es.wikipedia.org/wiki/Valle_de_Jálama",
+            Text: (string) (len=16) "Valle de Jálama",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=51) "https://es.wikipedia.org/wiki/Provincia_de_Cáceres",
+            Text: (string) (len=21) "provincia de Cáceres",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=38) "https://es.wikipedia.org/wiki/Portugal",
+            Text: (string) (len=10) "portuguesa",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://es.wikipedia.org/wiki/Valverde_del_Fresno",
+            Text: (string) (len=8) "Valverde",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=51) "https://es.wikipedia.org/wiki/España#cite_note-326",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://es.wikipedia.org/wiki/Idioma_gallego",
+            Text: (string) (len=14) "idioma gallego",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=51) "https://es.wikipedia.org/wiki/España#cite_note-327",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

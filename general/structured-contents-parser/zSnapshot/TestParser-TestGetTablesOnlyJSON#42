@@ -1,0 +1,1855 @@
+ISO_IEC_2022
+[
+  {
+    "ID": "code_structure.other_control_functions_table1",
+    "Table": {
+      "headers": [
+        [
+          {
+            "value": "Code"
+          },
+          {
+            "value": "Hex"
+          },
+          {
+            "value": "Abbr."
+          },
+          {
+            "value": "Name"
+          },
+          {
+            "value": "Effect"
+          }
+        ]
+      ],
+      "footers": null,
+      "rows": [
+        [
+          {
+            "value": "ESC `"
+          },
+          {
+            "value": "1B 60"
+          },
+          {
+            "value": "DMI"
+          },
+          {
+            "value": "Disable manual input"
+          },
+          {
+            "value": "Disables some or all of the manual input facilities of the device."
+          }
+        ],
+        [
+          {
+            "value": "ESC a"
+          },
+          {
+            "value": "1B 61"
+          },
+          {
+            "value": "INT"
+          },
+          {
+            "value": "Interrupt"
+          },
+          {
+            "value": "Interrupts the current process."
+          }
+        ],
+        [
+          {
+            "value": "ESC b"
+          },
+          {
+            "value": "1B 62"
+          },
+          {
+            "value": "EMI"
+          },
+          {
+            "value": "Enable manual input"
+          },
+          {
+            "value": "Enables the manual input facilities of the device."
+          }
+        ],
+        [
+          {
+            "value": "ESC c"
+          },
+          {
+            "value": "1B 63"
+          },
+          {
+            "value": "RIS"
+          },
+          {
+            "value": "Reset to initial state"
+          },
+          {
+            "value": "Resets the device to its state after being powered on."
+          }
+        ],
+        [
+          {
+            "value": "ESC d"
+          },
+          {
+            "value": "1B 64"
+          },
+          {
+            "value": "CMD"
+          },
+          {
+            "value": "Coding method delimiter"
+          },
+          {
+            "value": "Used when interacting with an outer coding / representation system, see below."
+          }
+        ],
+        [
+          {
+            "value": "ESC n"
+          },
+          {
+            "value": "1B 6E"
+          },
+          {
+            "value": "LS2"
+          },
+          {
+            "value": "Locking shift two"
+          },
+          {
+            "value": "Shift function, see below."
+          }
+        ],
+        [
+          {
+            "value": "ESC o"
+          },
+          {
+            "value": "1B 6F"
+          },
+          {
+            "value": "LS3"
+          },
+          {
+            "value": "Locking shift three"
+          },
+          {
+            "value": "Shift function, see below."
+          }
+        ],
+        [
+          {
+            "value": "ESC |"
+          },
+          {
+            "value": "1B 7C"
+          },
+          {
+            "value": "LS3R"
+          },
+          {
+            "value": "Locking shift three right"
+          },
+          {
+            "value": "Shift function, see below."
+          }
+        ],
+        [
+          {
+            "value": "ESC }"
+          },
+          {
+            "value": "1B 7D"
+          },
+          {
+            "value": "LS2R"
+          },
+          {
+            "value": "Locking shift two right"
+          },
+          {
+            "value": "Shift function, see below."
+          }
+        ],
+        [
+          {
+            "value": "ESC ~"
+          },
+          {
+            "value": "1B 7E"
+          },
+          {
+            "value": "LS1R"
+          },
+          {
+            "value": "Locking shift one right"
+          },
+          {
+            "value": "Shift function, see below."
+          }
+        ]
+      ],
+      "confidence_score": 1
+    }
+  },
+  {
+    "ID": "code_structure.shift_functions_table1",
+    "Table": {
+      "headers": [
+        [
+          {
+            "value": "Code"
+          },
+          {
+            "value": "Hex"
+          },
+          {
+            "value": "Abbr."
+          },
+          {
+            "value": "Name"
+          },
+          {
+            "value": "Effect"
+          }
+        ]
+      ],
+      "footers": null,
+      "rows": [
+        [
+          {
+            "value": "SI"
+          },
+          {
+            "value": "0F"
+          },
+          {
+            "value": "SI LS0"
+          },
+          {
+            "value": "Shift In Locking shift zero"
+          },
+          {
+            "value": "GL encodes G0 from now on"
+          }
+        ],
+        [
+          {
+            "value": "SO"
+          },
+          {
+            "value": "0E"
+          },
+          {
+            "value": "SO LS1"
+          },
+          {
+            "value": "Shift Out Locking shift one"
+          },
+          {
+            "value": "GL encodes G1 from now on"
+          }
+        ],
+        [
+          {
+            "value": "ESC n"
+          },
+          {
+            "value": "1B 6E"
+          },
+          {
+            "value": "LS2"
+          },
+          {
+            "value": "Locking shift two"
+          },
+          {
+            "value": "GL encodes G2 from now on"
+          }
+        ],
+        [
+          {
+            "value": "ESC o"
+          },
+          {
+            "value": "1B 6F"
+          },
+          {
+            "value": "LS3"
+          },
+          {
+            "value": "Locking shift three"
+          },
+          {
+            "value": "GL encodes G3 from now on"
+          }
+        ],
+        [
+          {
+            "value": "CR area: SS2 Escape code: ESC N"
+          },
+          {
+            "value": "CR area: 8E Escape code: 1B 4E"
+          },
+          {
+            "value": "SS2"
+          },
+          {
+            "value": "Single shift two"
+          },
+          {
+            "value": "GL or GR (see below) encodes G2 for the immediately following character only"
+          }
+        ],
+        [
+          {
+            "value": "CR area: SS3 Escape code: ESC O"
+          },
+          {
+            "value": "CR area: 8F Escape code: 1B 4F"
+          },
+          {
+            "value": "SS3"
+          },
+          {
+            "value": "Single shift three"
+          },
+          {
+            "value": "GL or GR (see below) encodes G3 for the immediately following character only"
+          }
+        ],
+        [
+          {
+            "value": "ESC ~"
+          },
+          {
+            "value": "1B 7E"
+          },
+          {
+            "value": "LS1R"
+          },
+          {
+            "value": "Locking shift one right"
+          },
+          {
+            "value": "GR encodes G1 from now on"
+          }
+        ],
+        [
+          {
+            "value": "ESC }"
+          },
+          {
+            "value": "1B 7D"
+          },
+          {
+            "value": "LS2R"
+          },
+          {
+            "value": "Locking shift two right"
+          },
+          {
+            "value": "GR encodes G2 from now on"
+          }
+        ],
+        [
+          {
+            "value": "ESC |"
+          },
+          {
+            "value": "1B 7C"
+          },
+          {
+            "value": "LS3R"
+          },
+          {
+            "value": "Locking shift three right"
+          },
+          {
+            "value": "GR encodes G3 from now on"
+          }
+        ]
+      ],
+      "confidence_score": 1
+    }
+  },
+  {
+    "ID": "code_structure.character_set_designations_table1",
+    "Table": {
+      "headers": [
+        [
+          {
+            "value": "Code"
+          },
+          {
+            "value": "Hex"
+          },
+          {
+            "value": "Abbr."
+          },
+          {
+            "value": "Name"
+          },
+          {
+            "value": "Effect"
+          },
+          {
+            "value": "Example"
+          }
+        ]
+      ],
+      "footers": null,
+      "rows": [
+        [
+          {
+            "value": "ESC SP F"
+          },
+          {
+            "value": "1B 20 F"
+          },
+          {
+            "value": "ACS"
+          },
+          {
+            "value": "Announce code structure"
+          },
+          {
+            "value": "Specifies code features used, e.g. working sets (see below)."
+          },
+          {
+            "value": "ESC SP L (ISO 4873 level 1)"
+          }
+        ],
+        [
+          {
+            "value": "ESC ! F"
+          },
+          {
+            "value": "1B 21 F"
+          },
+          {
+            "value": "CZD"
+          },
+          {
+            "value": "C0-designate"
+          },
+          {
+            "value": "F selects a C0 control character set to be used."
+          },
+          {
+            "value": "ESC ! @ (ASCII C0 codes)"
+          }
+        ],
+        [
+          {
+            "value": "ESC \" F"
+          },
+          {
+            "value": "1B 22 F"
+          },
+          {
+            "value": "C1D"
+          },
+          {
+            "value": "C1-designate"
+          },
+          {
+            "value": "F selects a C1 control character set to be used."
+          },
+          {
+            "value": "ESC \" C (ISO 6429 C1 codes)"
+          }
+        ],
+        [
+          {
+            "value": "ESC # F"
+          },
+          {
+            "value": "1B 23 F"
+          },
+          {
+            "value": "-"
+          },
+          {
+            "value": "(Single control function)"
+          },
+          {
+            "value": "(Reserved for sequences for control functions, see above.)"
+          },
+          {
+            "value": "ESC # 6 (private use: DEC Double Width Line)"
+          }
+        ],
+        [
+          {
+            "value": "ESC $ F ESC $ ( F"
+          },
+          {
+            "value": "1B 24 F 1B 24 28 F"
+          },
+          {
+            "value": "GZDM4"
+          },
+          {
+            "value": "G0-designate multibyte 94-set"
+          },
+          {
+            "value": "F selects a 94-character set to be used for G0."
+          },
+          {
+            "value": "ESC $ ( C (KS X 1001 in G0)"
+          }
+        ],
+        [
+          {
+            "value": "ESC $ ) F"
+          },
+          {
+            "value": "1B 24 29 F"
+          },
+          {
+            "value": "G1DM4"
+          },
+          {
+            "value": "G1-designate multibyte 94-set"
+          },
+          {
+            "value": "F selects a 94-character set to be used for G1."
+          },
+          {
+            "value": "ESC $ ) A (GB 2312 in G1)"
+          }
+        ],
+        [
+          {
+            "value": "ESC $ * F"
+          },
+          {
+            "value": "1B 24 2A F"
+          },
+          {
+            "value": "G2DM4"
+          },
+          {
+            "value": "G2-designate multibyte 94-set"
+          },
+          {
+            "value": "F selects a 94-character set to be used for G2."
+          },
+          {
+            "value": "ESC $ * B (JIS X 0208 in G2)"
+          }
+        ],
+        [
+          {
+            "value": "ESC $ + F"
+          },
+          {
+            "value": "1B 24 2B F"
+          },
+          {
+            "value": "G3DM4"
+          },
+          {
+            "value": "G3-designate multibyte 94-set"
+          },
+          {
+            "value": "F selects a 94-character set to be used for G3."
+          },
+          {
+            "value": "ESC $ + D (JIS X 0212 in G3)"
+          }
+        ],
+        [
+          {
+            "value": "ESC $ , F"
+          },
+          {
+            "value": "1B 24 2C F"
+          },
+          {
+            "value": "-"
+          },
+          {
+            "value": "(not used)"
+          },
+          {
+            "value": "(not used)"
+          },
+          {
+            "value": "-"
+          }
+        ],
+        [
+          {
+            "value": "ESC $ - F"
+          },
+          {
+            "value": "1B 24 2D F"
+          },
+          {
+            "value": "G1DM6"
+          },
+          {
+            "value": "G1-designate multibyte 96-set"
+          },
+          {
+            "value": "F selects a 96-character set to be used for G1."
+          },
+          {
+            "value": "ESC $ - 1 (private use)"
+          }
+        ],
+        [
+          {
+            "value": "ESC $ . F"
+          },
+          {
+            "value": "1B 24 2E F"
+          },
+          {
+            "value": "G2DM6"
+          },
+          {
+            "value": "G2-designate multibyte 96-set"
+          },
+          {
+            "value": "F selects a 96-character set to be used for G2."
+          },
+          {
+            "value": "ESC $ . 2 (private use)"
+          }
+        ],
+        [
+          {
+            "value": "ESC $ / F"
+          },
+          {
+            "value": "1B 24 2F F"
+          },
+          {
+            "value": "G3DM6"
+          },
+          {
+            "value": "G3-designate multibyte 96-set"
+          },
+          {
+            "value": "F selects a 96-character set to be used for G3."
+          },
+          {
+            "value": "ESC $ / 3 (private use)"
+          }
+        ],
+        [
+          {
+            "value": "ESC % F"
+          },
+          {
+            "value": "1B 25 F"
+          },
+          {
+            "value": "DOCS"
+          },
+          {
+            "value": "Designate other coding system"
+          },
+          {
+            "value": "Switches coding system, see below."
+          },
+          {
+            "value": "ESC % G (UTF-8)"
+          }
+        ],
+        [
+          {
+            "value": "ESC \u0026 F"
+          },
+          {
+            "value": "1B 26 F"
+          },
+          {
+            "value": "IRR"
+          },
+          {
+            "value": "Identify revised registration"
+          },
+          {
+            "value": "Prefixes designation escape to denote revision."
+          },
+          {
+            "value": "ESC \u0026 @ ESC $ B (JIS X 0208:1990 in G0)"
+          }
+        ],
+        [
+          {
+            "value": "ESC ' F"
+          },
+          {
+            "value": "1B 27 F"
+          },
+          {
+            "value": "-"
+          },
+          {
+            "value": "(not used)"
+          },
+          {
+            "value": "(not used)"
+          },
+          {
+            "value": "-"
+          }
+        ],
+        [
+          {
+            "value": "ESC ( F"
+          },
+          {
+            "value": "1B 28 F"
+          },
+          {
+            "value": "GZD4"
+          },
+          {
+            "value": "G0-designate 94-set"
+          },
+          {
+            "value": "F selects a 94-character set to be used for G0."
+          },
+          {
+            "value": "ESC ( B (ASCII in G0)"
+          }
+        ],
+        [
+          {
+            "value": "ESC ) F"
+          },
+          {
+            "value": "1B 29 F"
+          },
+          {
+            "value": "G1D4"
+          },
+          {
+            "value": "G1-designate 94-set"
+          },
+          {
+            "value": "F selects a 94-character set to be used for G1."
+          },
+          {
+            "value": "ESC ) I (JIS X 0201 Kana in G1)"
+          }
+        ],
+        [
+          {
+            "value": "ESC * F"
+          },
+          {
+            "value": "1B 2A F"
+          },
+          {
+            "value": "G2D4"
+          },
+          {
+            "value": "G2-designate 94-set"
+          },
+          {
+            "value": "F selects a 94-character set to be used for G2."
+          },
+          {
+            "value": "ESC * v (ITU T.61 RHS in G2)"
+          }
+        ],
+        [
+          {
+            "value": "ESC + F"
+          },
+          {
+            "value": "1B 2B F"
+          },
+          {
+            "value": "G3D4"
+          },
+          {
+            "value": "G3-designate 94-set"
+          },
+          {
+            "value": "F selects a 94-character set to be used for G3."
+          },
+          {
+            "value": "ESC + D (NATS-SEFI-ADD in G3)"
+          }
+        ],
+        [
+          {
+            "value": "ESC , F"
+          },
+          {
+            "value": "1B 2C F"
+          },
+          {
+            "value": "-"
+          },
+          {
+            "value": "(not used)"
+          },
+          {
+            "value": "(not used)"
+          },
+          {
+            "value": "-"
+          }
+        ],
+        [
+          {
+            "value": "ESC - F"
+          },
+          {
+            "value": "1B 2D F"
+          },
+          {
+            "value": "G1D6"
+          },
+          {
+            "value": "G1-designate 96-set"
+          },
+          {
+            "value": "F selects a 96-character set to be used for G1."
+          },
+          {
+            "value": "ESC - A (ISO 8859-1 RHS in G1)"
+          }
+        ],
+        [
+          {
+            "value": "ESC . F"
+          },
+          {
+            "value": "1B 2E F"
+          },
+          {
+            "value": "G2D6"
+          },
+          {
+            "value": "G2-designate 96-set"
+          },
+          {
+            "value": "F selects a 96-character set to be used for G2."
+          },
+          {
+            "value": "ESC . B (ISO 8859-2 RHS in G2)"
+          }
+        ],
+        [
+          {
+            "value": "ESC / F"
+          },
+          {
+            "value": "1B 2F F"
+          },
+          {
+            "value": "G3D6"
+          },
+          {
+            "value": "G3-designate 96-set"
+          },
+          {
+            "value": "F selects a 96-character set to be used for G3."
+          },
+          {
+            "value": "ESC / b (ISO 8859-15 RHS in G3)"
+          }
+        ]
+      ],
+      "confidence_score": 1
+    }
+  },
+  {
+    "ID": "code_structure.interaction_with_other_coding_systems_table1",
+    "Table": {
+      "headers": [
+        [
+          {
+            "value": "Code"
+          },
+          {
+            "value": "Hex"
+          },
+          {
+            "value": "Abbr."
+          },
+          {
+            "value": "Name"
+          },
+          {
+            "value": "Effect"
+          }
+        ]
+      ],
+      "footers": null,
+      "rows": [
+        [
+          {
+            "value": "ESC % @"
+          },
+          {
+            "value": "1B 25 40"
+          },
+          {
+            "value": "DOCS"
+          },
+          {
+            "value": "Designate other coding system (\"standard return\")"
+          },
+          {
+            "value": "Return to ISO/IEC 2022 from another encoding."
+          }
+        ],
+        [
+          {
+            "value": "ESC % F"
+          },
+          {
+            "value": "1B 25 F"
+          },
+          {
+            "value": "DOCS"
+          },
+          {
+            "value": "Designate other coding system (\"with standard return\")"
+          },
+          {
+            "value": "F selects an 8-bit code; use ESC % @ to return."
+          }
+        ],
+        [
+          {
+            "value": "ESC % / F"
+          },
+          {
+            "value": "1B 25 2F F"
+          },
+          {
+            "value": "DOCS"
+          },
+          {
+            "value": "Designate other coding system (\"without standard return\")"
+          },
+          {
+            "value": "F selects an 8-bit code; there is no standard way to return."
+          }
+        ],
+        [
+          {
+            "value": "ESC d"
+          },
+          {
+            "value": "1B 64"
+          },
+          {
+            "value": "CMD"
+          },
+          {
+            "value": "Coding method delimiter"
+          },
+          {
+            "value": "Denotes the end of an ISO/IEC 2022 coded sequence."
+          }
+        ]
+      ],
+      "confidence_score": 1
+    }
+  },
+  {
+    "ID": "code_structure.interaction_with_other_coding_systems_table2",
+    "Table": {
+      "headers": [
+        [
+          {
+            "value": "Unicode Format"
+          },
+          {
+            "value": "Code(s)"
+          },
+          {
+            "value": "Hex"
+          },
+          {
+            "value": "Deprecated codes"
+          },
+          {
+            "value": "Deprecated hex"
+          }
+        ]
+      ],
+      "footers": null,
+      "rows": [
+        [
+          {
+            "value": "UTF-1"
+          },
+          {
+            "value": "(UTF-1 not in current ISO/IEC 10646.)"
+          },
+          {
+            "value": "(UTF-1 not in current ISO/IEC 10646.)"
+          },
+          {
+            "value": "ESC % B"
+          },
+          {
+            "value": "1B 25 42"
+          }
+        ],
+        [
+          {
+            "value": "UTF-8"
+          },
+          {
+            "value": "ESC % G, ESC % / I"
+          },
+          {
+            "value": "1B 25 47, 1B 25 2F 49"
+          },
+          {
+            "value": "ESC % / G, ESC % / H"
+          },
+          {
+            "value": "1B 25 2F 47, 1B 25 2F 48"
+          }
+        ],
+        [
+          {
+            "value": "UTF-16"
+          },
+          {
+            "value": "ESC % / L"
+          },
+          {
+            "value": "1B 25 2F 4C"
+          },
+          {
+            "value": "ESC % / @, ESC % / C, ESC % / E, ESC % / J, ESC % / K"
+          },
+          {
+            "value": "1B 25 2F 40, 1B 25 2F 43, 1B 25 2F 45, 1B 25 2F 4A, 1B 25 2F 4B"
+          }
+        ],
+        [
+          {
+            "value": "UTF-32"
+          },
+          {
+            "value": "ESC % / F"
+          },
+          {
+            "value": "1B 25 2F 46"
+          },
+          {
+            "value": "ESC % / A, ESC % / D"
+          },
+          {
+            "value": "1B 25 2F 41, 1B 25 2F 44"
+          }
+        ]
+      ],
+      "confidence_score": 1
+    }
+  },
+  {
+    "ID": "code_structure.code_structure_announcements_table1",
+    "Table": {
+      "headers": [
+        [
+          {
+            "value": "Number"
+          },
+          {
+            "value": "Code"
+          },
+          {
+            "value": "Hex"
+          },
+          {
+            "value": "Code version feature announced"
+          }
+        ]
+      ],
+      "footers": null,
+      "rows": [
+        [
+          {
+            "value": "1"
+          },
+          {
+            "value": "ESC SP A"
+          },
+          {
+            "value": "1B 20 41"
+          },
+          {
+            "value": "G0 in GL, GR absent or unused, no locking shifts."
+          }
+        ],
+        [
+          {
+            "value": "2"
+          },
+          {
+            "value": "ESC SP B"
+          },
+          {
+            "value": "1B 20 42"
+          },
+          {
+            "value": "G0 and G1 invoked to GL by locking shifts, GR absent or unused."
+          }
+        ],
+        [
+          {
+            "value": "3"
+          },
+          {
+            "value": "ESC SP C"
+          },
+          {
+            "value": "1B 20 43"
+          },
+          {
+            "value": "G0 in GL, G1 in GR, no locking shifts, requires an 8-bit environment."
+          }
+        ],
+        [
+          {
+            "value": "4"
+          },
+          {
+            "value": "ESC SP D"
+          },
+          {
+            "value": "1B 20 44"
+          },
+          {
+            "value": "G0 in GL, G1 in GR if 8-bit, no locking shifts unless in a 7-bit environment."
+          }
+        ],
+        [
+          {
+            "value": "5"
+          },
+          {
+            "value": "ESC SP E"
+          },
+          {
+            "value": "1B 20 45"
+          },
+          {
+            "value": "Shift functions preserved during 7-bit/8-bit conversion."
+          }
+        ],
+        [
+          {
+            "value": "6"
+          },
+          {
+            "value": "ESC SP F"
+          },
+          {
+            "value": "1B 20 46"
+          },
+          {
+            "value": "C1 controls using escape sequences."
+          }
+        ],
+        [
+          {
+            "value": "7"
+          },
+          {
+            "value": "ESC SP G"
+          },
+          {
+            "value": "1B 20 47"
+          },
+          {
+            "value": "C1 controls in CR region in 8-bit environments, as escape sequences otherwise."
+          }
+        ],
+        [
+          {
+            "value": "8"
+          },
+          {
+            "value": "ESC SP H"
+          },
+          {
+            "value": "1B 20 48"
+          },
+          {
+            "value": "94-character graphical sets only."
+          }
+        ],
+        [
+          {
+            "value": "9"
+          },
+          {
+            "value": "ESC SP I"
+          },
+          {
+            "value": "1B 20 49"
+          },
+          {
+            "value": "94-character and/or 96-character graphical sets."
+          }
+        ],
+        [
+          {
+            "value": "10"
+          },
+          {
+            "value": "ESC SP J"
+          },
+          {
+            "value": "1B 20 4A"
+          },
+          {
+            "value": "Uses a 7-bit code, even if an eighth bit is available for use."
+          }
+        ],
+        [
+          {
+            "value": "11"
+          },
+          {
+            "value": "ESC SP K"
+          },
+          {
+            "value": "1B 20 4B"
+          },
+          {
+            "value": "Requires an 8-bit code."
+          }
+        ],
+        [
+          {
+            "value": "12"
+          },
+          {
+            "value": "ESC SP L"
+          },
+          {
+            "value": "1B 20 4C"
+          },
+          {
+            "value": "Complies to ISO/IEC 4873 (ECMA-43) level 1."
+          }
+        ],
+        [
+          {
+            "value": "13"
+          },
+          {
+            "value": "ESC SP M"
+          },
+          {
+            "value": "1B 20 4D"
+          },
+          {
+            "value": "Complies to ISO/IEC 4873 (ECMA-43) level 2."
+          }
+        ],
+        [
+          {
+            "value": "14"
+          },
+          {
+            "value": "ESC SP N"
+          },
+          {
+            "value": "1B 20 4E"
+          },
+          {
+            "value": "Complies to ISO/IEC 4873 (ECMA-43) level 3."
+          }
+        ],
+        [
+          {
+            "value": "16"
+          },
+          {
+            "value": "ESC SP P"
+          },
+          {
+            "value": "1B 20 50"
+          },
+          {
+            "value": "SI / LS0 used."
+          }
+        ],
+        [
+          {
+            "value": "18"
+          },
+          {
+            "value": "ESC SP R"
+          },
+          {
+            "value": "1B 20 52"
+          },
+          {
+            "value": "SO / LS1 used."
+          }
+        ],
+        [
+          {
+            "value": "19"
+          },
+          {
+            "value": "ESC SP S"
+          },
+          {
+            "value": "1B 20 53"
+          },
+          {
+            "value": "LS1R used in 8-bit environments, SO used in 7-bit environments."
+          }
+        ],
+        [
+          {
+            "value": "20"
+          },
+          {
+            "value": "ESC SP T"
+          },
+          {
+            "value": "1B 20 54"
+          },
+          {
+            "value": "LS2 used."
+          }
+        ],
+        [
+          {
+            "value": "21"
+          },
+          {
+            "value": "ESC SP U"
+          },
+          {
+            "value": "1B 20 55"
+          },
+          {
+            "value": "LS2R used in 8-bit environments, LS2 used in 7-bit environments."
+          }
+        ],
+        [
+          {
+            "value": "22"
+          },
+          {
+            "value": "ESC SP V"
+          },
+          {
+            "value": "1B 20 56"
+          },
+          {
+            "value": "LS3 used."
+          }
+        ],
+        [
+          {
+            "value": "23"
+          },
+          {
+            "value": "ESC SP W"
+          },
+          {
+            "value": "1B 20 57"
+          },
+          {
+            "value": "LS3R used in 8-bit environments, LS3 used in 7-bit environments."
+          }
+        ],
+        [
+          {
+            "value": "26"
+          },
+          {
+            "value": "ESC SP Z"
+          },
+          {
+            "value": "1B 20 5A"
+          },
+          {
+            "value": "SS2 used."
+          }
+        ],
+        [
+          {
+            "value": "27"
+          },
+          {
+            "value": "ESC SP ["
+          },
+          {
+            "value": "1B 20 5B"
+          },
+          {
+            "value": "SS3 used."
+          }
+        ],
+        [
+          {
+            "value": "28"
+          },
+          {
+            "value": "ESC SP \\"
+          },
+          {
+            "value": "1B 20 5C"
+          },
+          {
+            "value": "Single-shifts invoke over GR."
+          }
+        ]
+      ],
+      "confidence_score": 1
+    }
+  },
+  {
+    "ID": "isoiec_2022_code_versions.japanese_e-mail_versions.ibm_japanese_tcp_table1",
+    "Table": {
+      "headers": [
+        [
+          {
+            "value": "Code page / CCSID"
+          },
+          {
+            "value": "ACRI definition number"
+          },
+          {
+            "value": "Escape sequences for ACRI"
+          }
+        ]
+      ],
+      "footers": null,
+      "rows": [
+        [
+          {
+            "value": "956"
+          },
+          {
+            "value": "TCP-01"
+          },
+          {
+            "value": "ESC ( J (JIS X 0201 Roman) ESC $ ( B (JIS X 0208, 1983+, long escape sequence) ESC $ I (JIS X 0201 Katakana) ESC $ ( D"
+          }
+        ],
+        [
+          {
+            "value": "957"
+          },
+          {
+            "value": "TCP-02"
+          },
+          {
+            "value": "ESC ( J (JIS X 0201 Roman) ESC $ ( @ (JIS X 0208, 1978, long escape sequence) ESC $ I (JIS X 0201 Katakana) ESC $ ( D (JIS X 0212)"
+          }
+        ],
+        [
+          {
+            "value": "958"
+          },
+          {
+            "value": "TCP-03"
+          },
+          {
+            "value": "ESC ( A (ASCII) ESC $ ( B (JIS X 0208, 1983+, long escape sequence) ESC $ I (JIS X 0201 Katakana) ESC $ ( D (JIS X 0212)"
+          }
+        ],
+        [
+          {
+            "value": "959"
+          },
+          {
+            "value": "TCP-04"
+          },
+          {
+            "value": "ESC ( A (ASCII) ESC $ ( @ (JIS X 0208, 1978, long escape sequence) ESC $ I (JIS X 0201 Katakana) ESC $ ( D (JIS X 0212)"
+          }
+        ],
+        [
+          {
+            "value": "5052"
+          },
+          {
+            "value": "TCP-05"
+          },
+          {
+            "value": "ESC ( J (JIS X 0201 Roman) ESC $ B (JIS X 0208, 1983+) ESC $ I (JIS X 0201 Katakana) ESC $ ( D (JIS X 0212)"
+          }
+        ],
+        [
+          {
+            "value": "5053"
+          },
+          {
+            "value": "TCP-06"
+          },
+          {
+            "value": "ESC ( J (JIS X 0201 Roman) ESC $ @ (JIS X 0208, 1978) ESC $ I (JIS X 0201 Katakana) ESC $ ( D (JIS X 0212)"
+          }
+        ],
+        [
+          {
+            "value": "5054"
+          },
+          {
+            "value": "TCP-07"
+          },
+          {
+            "value": "ESC ( A (ASCII) ESC $ B (JIS X 0208, 1983+) ESC $ I (JIS X 0201 Katakana) ESC $ ( D (JIS X 0212)"
+          }
+        ],
+        [
+          {
+            "value": "5055"
+          },
+          {
+            "value": "TCP-08"
+          },
+          {
+            "value": "ESC ( A (ASCII) ESC $ @ (JIS X 0208, 1978) ESC $ I (JIS X 0201 Katakana) ESC $ ( D (JIS X 0212)"
+          }
+        ],
+        [
+          {
+            "value": "9148"
+          },
+          {
+            "value": "TCP-16"
+          },
+          {
+            "value": "ESC ( A (ASCII) ESC ( J (JIS X 0201 Roman) ESC $ @ (JIS X 0208, 1978) ESC $ B (JIS X 0208, 1983+)"
+          }
+        ]
+      ],
+      "confidence_score": 1
+    }
+  },
+  {
+    "ID": "isoiec_2022_code_versions.isoiec_4873_table1",
+    "Table": {
+      "headers": [
+        [
+          {
+            "value": "Code"
+          },
+          {
+            "value": "Hex"
+          },
+          {
+            "value": "Announcement"
+          }
+        ]
+      ],
+      "footers": null,
+      "rows": [
+        [
+          {
+            "value": "ESC SP L"
+          },
+          {
+            "value": "1B 20 4C"
+          },
+          {
+            "value": "ISO 4873 Level 1"
+          }
+        ],
+        [
+          {
+            "value": "ESC SP M"
+          },
+          {
+            "value": "1B 20 4D"
+          },
+          {
+            "value": "ISO 4873 Level 2"
+          }
+        ],
+        [
+          {
+            "value": "ESC SP N"
+          },
+          {
+            "value": "1B 20 4E"
+          },
+          {
+            "value": "ISO 4873 Level 3"
+          }
+        ]
+      ],
+      "confidence_score": 1
+    }
+  },
+  {
+    "ID": "isoiec_2022_code_versions.extended_unix_code_table1",
+    "Table": {
+      "headers": [
+        [
+          {
+            "value": "Individual sequence"
+          },
+          {
+            "value": "Hexadecimal"
+          },
+          {
+            "value": "Feature of EUC denoted"
+          }
+        ]
+      ],
+      "footers": null,
+      "rows": [
+        [
+          {
+            "value": "ESC SP C"
+          },
+          {
+            "value": "1B 20 43"
+          },
+          {
+            "value": "ISO-8 (8-bit, G0 in GL, G1 in GR)"
+          }
+        ],
+        [
+          {
+            "value": "ESC SP Z"
+          },
+          {
+            "value": "1B 20 5A"
+          },
+          {
+            "value": "G2 accessed using SS2"
+          }
+        ],
+        [
+          {
+            "value": "ESC SP ["
+          },
+          {
+            "value": "1B 20 5B"
+          },
+          {
+            "value": "G3 accessed using SS3"
+          }
+        ],
+        [
+          {
+            "value": "ESC SP \\"
+          },
+          {
+            "value": "1B 20 5C"
+          },
+          {
+            "value": "Single-shifts invoke over GR"
+          }
+        ]
+      ],
+      "confidence_score": 1
+    }
+  },
+  {
+    "ID": "isoiec_2022_code_versions.compound_text_x11_table1",
+    "Table": {
+      "headers": [
+        [
+          {
+            "value": "Escape sequence type"
+          },
+          {
+            "value": "Final byte"
+          },
+          {
+            "value": "Graphical set"
+          }
+        ]
+      ],
+      "footers": null,
+      "rows": [
+        [
+          {
+            "value": "GZD4, G1D4 (for 94-character sets)"
+          },
+          {
+            "value": "B (0x42)"
+          },
+          {
+            "value": "ASCII"
+          }
+        ],
+        [
+          {
+            "value": "GZD4, G1D4 (for 94-character sets)"
+          },
+          {
+            "value": "I (0x49)"
+          },
+          {
+            "value": "JIS X 0201 katakana"
+          }
+        ],
+        [
+          {
+            "value": "GZD4, G1D4 (for 94-character sets)"
+          },
+          {
+            "value": "J (0x4A)"
+          },
+          {
+            "value": "JIS X 0201 Roman"
+          }
+        ],
+        [
+          {
+            "value": "G1D6 (for 96-character sets)"
+          },
+          {
+            "value": "A (0x41)"
+          },
+          {
+            "value": "ISO-8859-1 high part"
+          }
+        ],
+        [
+          {
+            "value": "G1D6 (for 96-character sets)"
+          },
+          {
+            "value": "B (0x42)"
+          },
+          {
+            "value": "ISO-8859-2 high part"
+          }
+        ],
+        [
+          {
+            "value": "G1D6 (for 96-character sets)"
+          },
+          {
+            "value": "C (0x43)"
+          },
+          {
+            "value": "ISO-8859-3 high part"
+          }
+        ],
+        [
+          {
+            "value": "G1D6 (for 96-character sets)"
+          },
+          {
+            "value": "D (0x44)"
+          },
+          {
+            "value": "ISO-8859-4 high part"
+          }
+        ],
+        [
+          {
+            "value": "G1D6 (for 96-character sets)"
+          },
+          {
+            "value": "F (0x46)"
+          },
+          {
+            "value": "ISO-8859-7 high part"
+          }
+        ],
+        [
+          {
+            "value": "G1D6 (for 96-character sets)"
+          },
+          {
+            "value": "G (0x47)"
+          },
+          {
+            "value": "ISO-8859-6 high part"
+          }
+        ],
+        [
+          {
+            "value": "G1D6 (for 96-character sets)"
+          },
+          {
+            "value": "H (0x48)"
+          },
+          {
+            "value": "ISO-8859-8 high part"
+          }
+        ],
+        [
+          {
+            "value": "G1D6 (for 96-character sets)"
+          },
+          {
+            "value": "L (0x4C)"
+          },
+          {
+            "value": "ISO-8859-5 high part"
+          }
+        ],
+        [
+          {
+            "value": "G1D6 (for 96-character sets)"
+          },
+          {
+            "value": "M (0x4D)"
+          },
+          {
+            "value": "ISO-8859-9 high part"
+          }
+        ],
+        [
+          {
+            "value": "GZDM4, G1DM4 (for 2-byte sets)"
+          },
+          {
+            "value": "A (0x41)"
+          },
+          {
+            "value": "GB 2312"
+          }
+        ],
+        [
+          {
+            "value": "GZDM4, G1DM4 (for 2-byte sets)"
+          },
+          {
+            "value": "B (0x42)"
+          },
+          {
+            "value": "JIS X 0208"
+          }
+        ],
+        [
+          {
+            "value": "GZDM4, G1DM4 (for 2-byte sets)"
+          },
+          {
+            "value": "C (0x43)"
+          },
+          {
+            "value": "KS C 5601"
+          }
+        ]
+      ],
+      "confidence_score": 1
+    }
+  }
+]

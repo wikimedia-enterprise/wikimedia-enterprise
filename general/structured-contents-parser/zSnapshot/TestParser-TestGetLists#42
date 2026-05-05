@@ -1,0 +1,942 @@
+([]*parser.Part) (len=11) {
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=153) "Using 8-bit bytes, but not representing the C1 codes in their single-byte forms specified in ISO 2022 (most UTFs, one exception being the obsolete UTF-1)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/UTF-1",
+            Text: (string) (len=5) "UTF-1",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=95) "Representing all characters, including control codes, with multiple bytes (e.g. UTF-16, UTF-32)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=36) "https://en.wikipedia.org/wiki/UTF-16",
+            Text: (string) (len=6) "UTF-16",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=36) "https://en.wikipedia.org/wiki/UTF-32",
+            Text: (string) (len=6) "UTF-32",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=135) "Mixing bytes with the most significant bit set and unset within the coded representation for a single code point (e.g. UTF-1, GB 18030)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Most_significant_bit",
+            Text: (string) (len=20) "most significant bit",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=38) "https://en.wikipedia.org/wiki/GB_18030",
+            Text: (string) (len=8) "GB 18030",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=5) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=249) "An infrastructure of multiple character sets with particular structures which may be included in a single character encoding system, including multiple graphical character sets and multiple sets of both primary (C0) and secondary (C1) control codes,",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/Character_encoding",
+            Text: (string) (len=18) "character encoding",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=53) "https://en.wikipedia.org/wiki/C0_and_C1_control_codes",
+            Text: (string) (len=45) "primary (C0) and secondary (C1) control codes",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=55) "https://en.wikipedia.org/wiki/ISO/IEC_2022#cite_note-15",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=78) "A format for encoding these sets, assuming that 8 bits are available per byte,",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=55) "https://en.wikipedia.org/wiki/ISO/IEC_2022#cite_note-16",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=203) "A format for encoding these sets in the same encoding system when only 7 bits are available per byte, and a method for transforming any conformant character data to pass through such a 7-bit environment,",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=55) "https://en.wikipedia.org/wiki/ISO/IEC_2022#cite_note-17",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=59) "https://en.wikipedia.org/wiki/ISO/IEC_2022#cite_note-ch11-8",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=47) "The general structure of ANSI escape codes, and",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=47) "https://en.wikipedia.org/wiki/ANSI_escape_codes",
+            Text: (string) (len=17) "ANSI escape codes",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=59) "https://en.wikipedia.org/wiki/ISO/IEC_2022#cite_note-ch13-6",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=203) "Specific escape code formats for identifying individual character sets, for announcing the use of particular encoding features or subsets, and for interacting with or switching to other encoding systems.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=62) "https://en.wikipedia.org/wiki/ISO/IEC_2022#cite_note-ch12_14-7",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=60) "https://en.wikipedia.org/wiki/ISO/IEC_2022#cite_note-ch15-18",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=60) "https://en.wikipedia.org/wiki/ISO/IEC_2022#cite_note-ch15-18",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=48) "ESC (B to switch to ASCII (1 byte per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=85) "ESC (J to switch to JIS X 0201-1976 (ISO/IEC 646:JP) Roman set (1 byte per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0201",
+            Text: (string) (len=15) "JIS X 0201-1976",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=60) "ESC $ @ to switch to JIS X 0208-1978 (2 bytes per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0208",
+            Text: (string) (len=15) "JIS X 0208-1978",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=60) "ESC $ B to switch to JIS X 0208-1983 (2 bytes per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0208",
+            Text: (string) (len=15) "JIS X 0208-1983",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=5) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=57) "ESC $ A to switch to GB 2312-1980 (2 bytes per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/GB_2312",
+            Text: (string) (len=12) "GB 2312-1980",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=60) "ESC $ (C to switch to KS X 1001-1992 (2 bytes per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/KSX1001",
+            Text: (string) (len=14) "KS X 1001-1992",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=61) "ESC $ (D to switch to JIS X 0212-1990 (2 bytes per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0212",
+            Text: (string) (len=15) "JIS X 0212-1990",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=89) "ESC. A to switch to ISO/IEC 8859-1 high part, Extended Latin 1 set (1 byte per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/ISO/IEC_8859-1",
+            Text: (string) (len=14) "ISO/IEC 8859-1",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=84) "ESC. F to switch to ISO/IEC 8859-7 high part, Basic Greek set (1 byte per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/ISO/IEC_8859-7",
+            Text: (string) (len=14) "ISO/IEC 8859-7",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=4) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=67) "ESC (I to switch to JIS X 0201-1976 Kana set (1 byte per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0201",
+            Text: (string) (len=15) "JIS X 0201-1976",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=69) "ESC $ (O to switch to JIS X 0213-2000 Plane 1 (2 bytes per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0213",
+            Text: (string) (len=15) "JIS X 0213-2000",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=69) "ESC $ (P to switch to JIS X 0213-2000 Plane 2 (2 bytes per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0213",
+            Text: (string) (len=15) "JIS X 0213-2000",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=92) "ESC $ (Q to switch to JIS X 0213-2004 Plane 1 (2 bytes per character, ISO-2022-JP-2004 only)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/JIS_X_0213",
+            Text: (string) (len=15) "JIS X 0213-2004",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=58) "ESC $) A to switch to GB 2312-1980 (2 bytes per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/GB_2312",
+            Text: (string) (len=12) "GB 2312-1980",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=68) "ESC $) G to switch to CNS 11643-1992 Plane 1 (2 bytes per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=39) "https://en.wikipedia.org/wiki/CNS_11643",
+            Text: (string) (len=14) "CNS 11643-1992",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=69) "ESC $ * H to switch to CNS 11643-1992 Plane 2 (2 bytes per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=6) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=56) "ESC $) E to switch to ISO-IR-165 (2 bytes per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=40) "https://en.wikipedia.org/wiki/ISO-IR-165",
+            Text: (string) (len=10) "ISO-IR-165",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=69) "ESC $ + I to switch to CNS 11643-1992 Plane 3 (2 bytes per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=69) "ESC $ + J to switch to CNS 11643-1992 Plane 4 (2 bytes per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=69) "ESC $ + K to switch to CNS 11643-1992 Plane 5 (2 bytes per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=69) "ESC $ + L to switch to CNS 11643-1992 Plane 6 (2 bytes per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=69) "ESC $ + M to switch to CNS 11643-1992 Plane 7 (2 bytes per character)",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=14) "GB 12345 in G1",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=1) {
+          (*parser.Link)({
+            URL: (string) (len=38) "https://en.wikipedia.org/wiki/GB_12345",
+            Text: (string) (len=8) "GB 12345",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=25) "GB 7589 or GB 13131 in G2",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=25) "GB 7590 or GB 13132 in G3",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=228) "Level 1, which includes a C0 set, the ASCII G0 set, an optional C1 set and an optional single-byte (94-character or 96-character) G1 set. G0 is invoked over GL, and G1 is invoked over GR. Use of shift functions is not permitted.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=440) "Level 2, which includes a (94-character or 96-character) single-byte G2 and/or G3 set in addition to a mandatory G1 set. Only the single-shift functions SS2 and SS3 are permitted (i.e. locking shifts are forbidden), and they invoke over the GL region (including 0x 20 and 0x7F in the case of a 96-set). SS2 and SS3 must be available in C1 at 0x8E and 0x8F respectively. This minimal required C1 set for ISO 4873 is registered as ISO-IR-105.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=41) "https://en.wikipedia.org/wiki/Hexadecimal",
+            Text: (string) (len=2) "0x",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=77) "https://en.wikipedia.org/wiki/ISO/IEC_2022#cite_note-harvp|ISO-IR-105|1985-73",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=159) "Level 3, which permits the GR locking-shift functions LS1R, LS2R and LS3R in addition to the single shifts, but otherwise has the same restrictions as level 2.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=2) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=496) "As ISO/IEC 2022's entire range of graphical character encodings can be invoked over GL, the available glyphs are not significantly limited by an inability to represent GR and C1, such as in a system limited to 7-bit encodings. It accordingly enables the representation of large set of characters in such a system. Generally, this 7-bit compatibility is not really an advantage, except for backwards compatibility with older systems. The vast majority of modern computers use 8 bits for each byte.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=336) "As compared to Unicode, ISO/IEC 2022 sidesteps Han unification by using sequence codes to switch between discrete encodings for different East Asian languages. This avoids the issues associated with unification, such as difficulty supporting multiple CJK languages with their associated character variants in a single document and font.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=2) {
+          (*parser.Link)({
+            URL: (string) (len=45) "https://en.wikipedia.org/wiki/Han_unification",
+            Text: (string) (len=15) "Han unification",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=44) "https://en.wikipedia.org/wiki/CJK_characters",
+            Text: (string) (len=3) "CJK",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  }),
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=4) "list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=6) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=394) "Since ISO/IEC 2022 is a stateful encoding, a program cannot jump in the middle of a block of text to search, insert or delete characters. This makes manipulation of the text very cumbersome and slow when compared to non-stateful encodings. Any jump in the middle of the text may require a backup to the previous escape sequence before the bytes following the escape sequence can be interpreted.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=419) "Due to the stateful nature of ISO/IEC 2022, an identical and equivalent character may be encoded in different character sets, which may be designated to any of G0 through G3, which may be invoked using single shifts or by using locking shifts to GL or GR. Consequently, characters can be represented in multiple ways, meaning that two visually identical and equivalent strings can not be reliably compared for equality.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=248) "Some systems, like DICOM and several e-mail clients, use a variant of ISO-2022 (e.g. \"ISO 2022 IR 100\") in addition to supporting several other encodings. This type of variation makes it difficult to portably transfer text between computer systems.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/DICOM",
+            Text: (string) (len=5) "DICOM",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=56) "https://en.wikipedia.org/wiki/ISO/IEC_2022#cite_note-163",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=62) "https://en.wikipedia.org/wiki/ISO/IEC_2022#cite_note-DICOM-164",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=296) "UTF-1, the multi-byte Unicode transformation format compatible with ISO/IEC 2022's representation of 8-bit control characters, has various disadvantages in comparison with UTF-8, and switching from or to other charsets, as supported by ISO/IEC 2022, is typically unnecessary in Unicode documents.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=3) {
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/UTF-1",
+            Text: (string) (len=5) "UTF-1",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=37) "https://en.wikipedia.org/wiki/Unicode",
+            Text: (string) (len=7) "Unicode",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/UTF-8",
+            Text: (string) (len=5) "UTF-8",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=596) "Because of its escape sequences, it is possible to construct attack byte sequences in which a malicious string (such as cross-site scripting) is masked until it is decoded to Unicode, which may allow it to bypass sanitisation. Use of this encoding is thus treated as suspicious by malware protection suites, and 7-bit ISO 2022 data (except for ISO-2022-JP) is mapped in its entirety to the replacement character in HTML5 to prevent attacks. Restricted ISO 2022 8-bit code versions which do not use designation escapes or locking shift codes, such as Extended Unix Code, do not share this problem.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=8) {
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Cross-site_scripting",
+            Text: (string) (len=20) "cross-site scripting",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=68) "https://en.wikipedia.org/wiki/ISO/IEC_2022#cite_note-sivonen2018-165",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=56) "https://en.wikipedia.org/wiki/ISO/IEC_2022#cite_note-166",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=51) "https://en.wikipedia.org/wiki/Replacement_character",
+            Text: (string) (len=21) "replacement character",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=35) "https://en.wikipedia.org/wiki/HTML5",
+            Text: (string) (len=5) "HTML5",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=82) "https://en.wikipedia.org/wiki/ISO/IEC_2022#cite_note-whatwg-replacement-labels-120",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=75) "https://en.wikipedia.org/wiki/ISO/IEC_2022#cite_note-whatwg-replacement-121",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=48) "https://en.wikipedia.org/wiki/Extended_Unix_Code",
+            Text: (string) (len=18) "Extended Unix Code",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=9) "list_item",
+        Value: (string) (len=997) "Concatenation can pose issues. Profiles such as ISO-2022-JP specify that the stream starts in the ASCII state and must end in the ASCII state. This is necessary to ensure that characters in concatenated ISO-2022-JP and/or ASCII streams will be interpreted in the correct set. This has the consequence that if a stream that ends in a multi-byte character is concatenated with one that starts with a multi-byte character, a pair of escape codes are generated switching to ASCII and immediately away from it. However, as stipulated in Unicode Technical Report #36 (\"Unicode Security Considerations\"), pairs of ISO 2022 escape sequences with no characters between them should generate a replacement character (\"�\") to prevent them from being used to mask malicious sequences such as cross-site scripting. Implementing this measure, e.g. in Mozilla Thunderbird, has led to interoperability issues, with unexpected \"�\" characters being generated where two ISO-2022-JP streams have been concatenated.",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) (len=6) {
+          (*parser.Link)({
+            URL: (string) (len=64) "https://en.wikipedia.org/wiki/ISO/IEC_2022#cite_note-rfc1468-122",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=51) "https://en.wikipedia.org/wiki/Replacement_character",
+            Text: (string) (len=21) "replacement character",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=50) "https://en.wikipedia.org/wiki/Cross-site_scripting",
+            Text: (string) (len=20) "cross-site scripting",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=56) "https://en.wikipedia.org/wiki/ISO/IEC_2022#cite_note-167",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=49) "https://en.wikipedia.org/wiki/Mozilla_Thunderbird",
+            Text: (string) (len=19) "Mozilla Thunderbird",
+            Images: ([]*parser.Image) <nil>
+          }),
+          (*parser.Link)({
+            URL: (string) (len=68) "https://en.wikipedia.org/wiki/ISO/IEC_2022#cite_note-sivonen2018-165",
+            Text: (string) "",
+            Images: ([]*parser.Image) <nil>
+          })
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

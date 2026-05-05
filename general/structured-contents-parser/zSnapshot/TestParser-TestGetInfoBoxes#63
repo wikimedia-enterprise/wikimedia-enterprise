@@ -1,0 +1,1246 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=18) "Infobox settlement",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=7) {
+      (*parser.Part)({
+        Name: (string) (len=33) "Mumbai Muṁbaī (Marathi) Bombay",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) <nil>,
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=8) "Megacity",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=11) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=156) "Skyline of Mumbai across Back Bay Gateway of India The World Towers Marine Drive Taj Mahal Palace Hotel Chhatrapati Shivaji Terminus Bandra–Worli Sea Link",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=7) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=103) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/BackBay_skyline.jpg/288px-BackBay_skyline.jpg",
+                Identifier: (string) (len=64) "f7a8e9a78f6ee7348a9a62ea09a34dbb37ed6eecb9c2c7a029b78ab4cac85af7",
+                Name: (string) (len=24) "File:BackBay_skyline.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 109,
+                Width: (int) 288,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=140) "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/99px-Mumbai_03-2016_30_Gateway_of_India.jpg",
+                Identifier: (string) (len=64) "a89ee4e14ede1b70ae64554573d7fb8cffa733436df04cf8cc7f5ffd1fb81cdf",
+                Name: (string) (len=43) "File:Mumbai_03-2016_30_Gateway_of_India.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 99,
+                Width: (int) 99,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=118) "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/The_World_Towers_Mumbai.jpg/76px-The_World_Towers_Mumbai.jpg",
+                Identifier: (string) (len=64) "c8363ff77ace74d2f4a42f6d28896f7b9856ad2822189228805c0bee2fd86b11",
+                Name: (string) (len=32) "File:The_World_Towers_Mumbai.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 99,
+                Width: (int) 76,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=113) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Marine_Drive_Skyline.jpg/105px-Marine_Drive_Skyline.jpg",
+                Identifier: (string) (len=64) "3c1b00adbd28bcd2a2f0998006abc2d12724b2a9f8cd248ff3b6de09de165df0",
+                Name: (string) (len=29) "File:Marine_Drive_Skyline.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 98,
+                Width: (int) 105,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=117) "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Taj_Mahal_Palace_Hotel.jpg/139px-Taj_Mahal_Palace_Hotel.jpg",
+                Identifier: (string) (len=64) "ded9139f22bfc87d7112445093d971bff4ada96943ab3311c3ef972d41c94572",
+                Name: (string) (len=31) "File:Taj_Mahal_Palace_Hotel.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 95,
+                Width: (int) 139,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=157) "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Chhatrapati_shivaji_terminus%2C_esterno_01.jpg/145px-Chhatrapati_shivaji_terminus%2C_esterno_01.jpg",
+                Identifier: (string) (len=64) "905e3a0fc12256381c4690098886e651c67b9f61891d0f48f8297d36970cadb1",
+                Name: (string) (len=49) "File:Chhatrapati_shivaji_terminus,_esterno_01.jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 95,
+                Width: (int) 145,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=143) "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Bandra_Worli_Sea-Link_%28cropped%29.jpg/288px-Bandra_Worli_Sea-Link_%28cropped%29.jpg",
+                Identifier: (string) (len=64) "4bb743caa567bc4ef4c906bffe44bf36f12ddba4cf7de4c15bc0f8bd97610e3b",
+                Name: (string) (len=40) "File:Bandra_Worli_Sea-Link_(cropped).jpg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 129,
+                Width: (int) 288,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) (len=8) {
+              (*parser.Link)({
+                URL: (string) (len=65) "https://en.wikipedia.org/wiki/List_of_tallest_buildings_in_Mumbai",
+                Text: (string) (len=17) "Skyline of Mumbai",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Back_Bay_(Mumbai)",
+                Text: (string) (len=8) "Back Bay",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Gateway_of_India",
+                Text: (string) (len=16) "Gateway of India",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/World_One",
+                Text: (string) (len=16) "The World Towers",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Marine_Drive,_Mumbai",
+                Text: (string) (len=12) "Marine Drive",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Taj_Mahal_Palace_Hotel",
+                Text: (string) (len=22) "Taj Mahal Palace Hotel",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Terminus",
+                Text: (string) (len=28) "Chhatrapati Shivaji Terminus",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Bandra–Worli_Sea_Link",
+                Text: (string) (len=23) "Bandra–Worli Sea Link",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "Coat of arms",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=105) "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Emblem_of_Mumbai.png/100px-Emblem_of_Mumbai.png",
+                Identifier: (string) (len=64) "8d3ddd0ea9681616b1d91efa1a47fbff83eba521260503f0404730267ab09a2d",
+                Name: (string) (len=25) "File:Emblem_of_Mumbai.png",
+                AlternativeText: (string) (len=22) "Coat of arms of Mumbai",
+                Caption: (string) (len=22) "Coat of arms of Mumbai",
+                Height: (int) 100,
+                Width: (int) 100,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Coat_of_arms_of_Mumbai",
+                Text: (string) (len=12) "Coat of arms",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=109) "Nickname(s): City of Dreams, City of Seven Islands, Maximum City, The Big Coconut, The City That Never Sleeps",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=9) {
+              (*parser.Link)({
+                URL: (string) (len=61) "https://en.wikipedia.org/wiki/City_of_Dreams_(disambiguation)",
+                Text: (string) (len=14) "City of Dreams",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Seven_Islands_of_Bombay",
+                Text: (string) (len=21) "City of Seven Islands",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Mumbai#cite_note-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Maximum_City",
+                Text: (string) (len=12) "Maximum City",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Mumbai#cite_note-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Coconut",
+                Text: (string) (len=7) "Coconut",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Mumbai#cite_note-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=67) "https://en.wikipedia.org/wiki/The_City_That_Never_Sleeps_(nickname)",
+                Text: (string) (len=26) "The City That Never Sleeps",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Mumbai#cite_note-4",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=3) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=189) "https://maps.wikimedia.org/img/osm-intl,10,19.075833333333,72.8775,300x300.png?lang=en&domain=en.wikipedia.org&title=Mumbai&revid=1270073533&groups=_2d5923559307d168ce295eac32f9a95b31268e9f",
+                Identifier: (string) (len=64) "736edcd8e3b15132b88cdec231df421ef7d98487503102bb0832a5cab7684e4d",
+                Name: (string) "",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 300,
+                Width: (int) 300,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) ""
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=176) "https://maps.wikimedia.org/img/osm-intl,6,18.92,76.68,370x300.png?lang=en&domain=en.wikipedia.org&title=Mumbai&revid=1270073533&groups=_94363be48dab4a84f38d8ad514e309c340ac4525",
+                Identifier: (string) (len=64) "468a1f8c10ee8761e9e8e3228f2a648c3bf569a73c6b35c6bbc1e8cd495c3459",
+                Name: (string) "",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 300,
+                Width: (int) 370,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) ""
+              }),
+              (*parser.Image)({
+                ContentUrl: (string) (len=123) "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Mumbai_area_locator_map.svg/300px-Mumbai_area_locator_map.svg.png",
+                Identifier: (string) (len=64) "15afe122e37433effb0b4c0d9c23ca1aa1a48c2a38012cad1978d750b82a5eea",
+                Name: (string) (len=32) "File:Mumbai_area_locator_map.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 404,
+                Width: (int) 300,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=77) "https://en.wikipedia.org/wiki//wiki/Special:Map/10/19.075833333333/72.8775/en",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=64) "https://en.wikipedia.org/wiki//wiki/Special:Map/6/18.92/76.68/en",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=70) "Coordinates: 19°04′34″N 72°52′39″E / 19.07611°N 72.87750°E",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=121) "https://geohack.toolforge.org/geohack.php?pagename=Mumbai&params=19_04_34_N_72_52_39_E_type:city(12,500,000)_region:IN-MH",
+                Text: (string) (len=57) "19°04′34″N 72°52′39″E / 19.07611°N 72.87750°E",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Country",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=5) "India",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/India",
+                Text: (string) (len=5) "India",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "State",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "Maharashtra",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=114) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Seal_of_Maharashtra.svg/23px-Seal_of_Maharashtra.svg.png",
+                Identifier: (string) (len=64) "9df40411a9946caf08e2234dabc7212b61fd20ca175b9c5b028f927f9a999b03",
+                Name: (string) (len=28) "File:Seal_of_Maharashtra.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 23,
+                Width: (int) 23,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=67) "https://en.wikipedia.org/wiki/States_and_union_territories_of_India",
+                Text: (string) (len=5) "State",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Maharashtra",
+                Text: (string) (len=11) "Maharashtra",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Maharashtra",
+                Text: (string) (len=11) "Maharashtra",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Division",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Konkan",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Divisions_of_Maharashtra",
+                Text: (string) (len=8) "Division",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Konkan_division",
+                Text: (string) (len=6) "Konkan",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "District",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=27) "Mumbai City Mumbai Suburban",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=62) "https://en.wikipedia.org/wiki/List_of_districts_of_Maharashtra",
+                Text: (string) (len=8) "District",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Mumbai_City_district",
+                Text: (string) (len=11) "Mumbai City",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Mumbai_Suburban_District",
+                Text: (string) (len=15) "Mumbai Suburban",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "First settled",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "1507",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Mumbai#cite_note-5",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Named for",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "Mumbadevi",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Namesake",
+                Text: (string) (len=9) "Named for",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Mumbadevi",
+                Text: (string) (len=9) "Mumbadevi",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=10) "Government",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=4) {
+          (*parser.Part)({
+            Name: (string) (len=4) "Type",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "Municipal Corporation",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=61) "https://en.wikipedia.org/wiki/Municipal_Corporations_in_India",
+                Text: (string) (len=21) "Municipal Corporation",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Body",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=34) "Brihanmumbai Municipal Corporation",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=64) "https://en.wikipedia.org/wiki/Brihanmumbai_Municipal_Corporation",
+                Text: (string) (len=34) "Brihanmumbai Municipal Corporation",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Mayor",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Vacant",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Mayor_of_Mumbai",
+                Text: (string) (len=5) "Mayor",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Mumbai#cite_note-6",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Mumbai#cite_note-7",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Administrator",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=20) "Bhushan Gagrani, IAS",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Bhushan_Gagrani",
+                Text: (string) (len=15) "Bhushan Gagrani",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/Indian_Administrative_Services",
+                Text: (string) (len=3) "IAS",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Mumbai#cite_note-8",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=4) "Area",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) (len=8) "Megacity",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "603.4 km 2 (233.0 sq mi)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Megacity",
+                Text: (string) (len=8) "Megacity",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Metro",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=26) "6,328 km 2 (1,681.5 sq mi)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=62) "https://en.wikipedia.org/wiki/Mumbai#cite_note-projectsecoa1-9",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Elevation",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "14 m (46 ft)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=17) "Population (2011)",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) (len=8) "Megacity",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=10) "12,442,373",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Megacity",
+                Text: (string) (len=8) "Megacity",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Rank",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=3) "1st",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=67) "https://en.wikipedia.org/wiki/List_of_most_populous_cities_in_India",
+                Text: (string) (len=3) "1st",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Density",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=26) "21,000/km 2 (53,000/sq mi)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Metro",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=35) "18,414,288 20,748,395 (Extended UA)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Metropolitan_area",
+                Text: (string) (len=5) "Metro",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=66) "https://en.wikipedia.org/wiki/Mumbai#cite_note-extended_UA_2011-11",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Demonym(s)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=31) "Mumbaikar, Bombayite, Mumbaiite",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/Demonym",
+                Text: (string) (len=10) "Demonym(s)",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=64) "https://en.wikipedia.org/wiki/Mumbai#cite_note-MumbaiitesinMH-12",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=3) "GDP",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=12) {
+          (*parser.Part)({
+            Name: (string) (len=3) "PPP",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "$400 billion",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Purchasing_power_parity",
+                Text: (string) (len=3) "PPP",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Mumbai#cite_note-13",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Megacity",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=34) "₹ 7.2 trillion (US$91.6 billion)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Megacity",
+                Text: (string) (len=8) "Megacity",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Indian_rupee",
+                Text: (string) (len=3) "₹",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/Mumbai#cite_note-MumbaiEco-14",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Metro",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "$277 billion",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Metropolitan_area",
+                Text: (string) (len=5) "Metro",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Mumbai#cite_note-15",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Time zone",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "UTC+5:30 (IST)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Time_zone",
+                Text: (string) (len=9) "Time zone",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/UTC+5:30",
+                Text: (string) (len=8) "UTC+5:30",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Indian_Standard_Time",
+                Text: (string) (len=3) "IST",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "PINs",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "400 001 to 400 107",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Postal_Index_Number",
+                Text: (string) (len=4) "PINs",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Area code",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "+91-22",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/Telephone_numbering_plan",
+                Text: (string) (len=9) "Area code",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Telephone_numbers_in_India",
+                Text: (string) (len=6) "+91-22",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=20) "Vehicle registration",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=4) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=17) "MH-01 Mumbai(S/C)",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=15) "MH-02 Mumbai(W)",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=15) "MH-03 Mumbai(E)",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) {
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=14) "MH-47 Borivali",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=49) "https://en.wikipedia.org/wiki/Mumbai#cite_note-16",
+                    Text: (string) "",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Vehicle_registration_plate",
+                Text: (string) (len=20) "Vehicle registration",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=3) "HDI",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "0.841 – very high",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Human_Development_Index",
+                Text: (string) (len=3) "HDI",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=49) "https://en.wikipedia.org/wiki/Mumbai#cite_note-17",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=21) "International airport",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=49) "Chhatrapati Shivaji Maharaj International Airport",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/International_airport",
+                Text: (string) (len=21) "International airport",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=79) "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+                Text: (string) (len=49) "Chhatrapati Shivaji Maharaj International Airport",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Transit",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=86) "Rapid Transit: Mumbai Metro and Mumbai Monorail Commuter rail: Mumbai Suburban Railway",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=6) {
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Transit_system",
+                Text: (string) (len=7) "Transit",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Rapid_Transit",
+                Text: (string) (len=13) "Rapid Transit",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=42) "https://en.wikipedia.org/wiki/Mumbai_Metro",
+                Text: (string) (len=12) "Mumbai Metro",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Mumbai_Monorail",
+                Text: (string) (len=15) "Mumbai Monorail",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=43) "https://en.wikipedia.org/wiki/Commuter_rail",
+                Text: (string) (len=13) "Commuter rail",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Mumbai_Suburban_Railway",
+                Text: (string) (len=23) "Mumbai Suburban Railway",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=17) "Official language",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=7) "Marathi",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Official_language",
+                Text: (string) (len=17) "Official language",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Marathi_language",
+                Text: (string) (len=7) "Marathi",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/Mumbai#cite_note-NCLMreport-18",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=67) "https://en.wikipedia.org/wiki/Mumbai#cite_note-MCGMhistmilestone-19",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Website",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "portal.mcgm.gov.in",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=25) "http://portal.mcgm.gov.in",
+                Text: (string) (len=18) "portal.mcgm.gov.in",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=26) "UNESCO World Heritage Site",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=6) {
+          (*parser.Part)({
+            Name: (string) (len=13) "Official name",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=96) "Elephanta Caves, Chhatrapati Shivaji Terminus, and The Victorian and Art Deco Ensemble of Mumbai",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Elephanta_Caves",
+                Text: (string) (len=15) "Elephanta Caves",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=58) "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Terminus",
+                Text: (string) (len=28) "Chhatrapati Shivaji Terminus",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=75) "https://en.wikipedia.org/wiki/The_Victorian_and_Art_Deco_Ensemble_of_Mumbai",
+                Text: (string) (len=45) "The Victorian and Art Deco Ensemble of Mumbai",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Type",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "Cultural",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Criteria",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=14) "i, ii, iii, iv",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Designated",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=43) "1987, 2004, 2018 (11th, 28th 42nd sessions)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/World_Heritage_Committee",
+                Text: (string) (len=8) "sessions",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Reference no.",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Reference no.",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=34) "https://whc.unesco.org/en/list/244",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://whc.unesco.org/en/list/945",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://whc.unesco.org/en/list/1480",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Region",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=13) "Southern Asia",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=75) "https://en.wikipedia.org/wiki/List_of_World_Heritage_Sites_in_Southern_Asia",
+                Text: (string) (len=13) "Southern Asia",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

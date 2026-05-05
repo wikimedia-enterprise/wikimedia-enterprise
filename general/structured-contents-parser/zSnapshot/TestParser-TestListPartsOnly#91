@@ -1,0 +1,27 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) "",
+    Type: (string) (len=15) "definition_list",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=1) {
+      (*parser.Part)({
+        Name: (string) "",
+        Type: (string) (len=15) "definition_term",
+        Value: (string) (len=18) "Crise humanitária",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) {
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) {
+        },
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

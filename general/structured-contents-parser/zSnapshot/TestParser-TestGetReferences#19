@@ -1,0 +1,435 @@
+([]*parser.Reference) (len=11) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=13) {
+      (string) (len=7) "ctx_ver": (string) (len=11) "Z39.88-2004",
+      (string) (len=8) "is_coins": (string) (len=4) "true",
+      (string) (len=6) "rfr_id": (string) (len=40) "info:sid/en.wikipedia.org:Caryophyllales",
+      (string) (len=10) "rft.atitle": (string) (len=115) "An update of the Angiosperm Phylogeny Group classification for the orders and families of flowering plants: APG III",
+      (string) (len=6) "rft.au": (string) (len=26) "Angiosperm Phylogeny Group",
+      (string) (len=8) "rft.date": (string) (len=4) "2009",
+      (string) (len=9) "rft.genre": (string) (len=7) "article",
+      (string) (len=9) "rft.issue": (string) (len=1) "2",
+      (string) (len=10) "rft.jtitle": (string) (len=40) "Botanical Journal of the Linnean Society",
+      (string) (len=9) "rft.pages": (string) (len=35) "<span class=\"nowrap\">105-</span>121",
+      (string) (len=10) "rft.volume": (string) (len=3) "161",
+      (string) (len=6) "rft_id": (string) (len=50) "https://doi.org/10.1111%2Fj.1095-8339.2009.00996.x",
+      (string) (len=11) "rft_val_fmt": (string) (len=28) "info:ofi/fmt:kev:mtx:journal"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=270) "Angiosperm Phylogeny Group (2009). \"An update of the Angiosperm Phylogeny Group classification for the orders and families of flowering plants: APG III\". Botanical Journal of the Linnean Society. 161 (2): 105–121. doi:10.1111/j.1095-8339.2009.00996.x. hdl:10654/18083.",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=50) "https://doi.org/10.1111%2Fj.1095-8339.2009.00996.x",
+          Text: (string) (len=117) "\"An update of the Angiosperm Phylogeny Group classification for the orders and families of flowering plants: APG III\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://doi.org/10.1111%2Fj.1095-8339.2009.00996.x",
+          Text: (string) (len=32) "10.1111/j.1095-8339.2009.00996.x",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Hdl_(identifier)",
+          Text: (string) (len=3) "hdl",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=36) "https://hdl.handle.net/10654%2F18083",
+          Text: (string) (len=11) "10654/18083",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=6) "first1": (string) (len=3) "Ian",
+      (string) (len=6) "first2": (string) (len=5) "Helen",
+      (string) (len=4) "isbn": (string) (len=17) "978-0-522-85060-4",
+      (string) (len=5) "last1": (string) (len=6) "Clarke",
+      (string) (len=5) "last2": (string) (len=3) "Lee",
+      (string) (len=4) "page": (string) (len=63) "[https://archive.org/details/namethatflowerid00clar/page/56 56]",
+      (string) (len=9) "publisher": (string) (len=31) "Melbourne University Publishing",
+      (string) (len=5) "title": (string) (len=56) "Name that Flower: The Identification of Flowering Plants",
+      (string) (len=3) "url": (string) (len=50) "https://archive.org/details/namethatflowerid00clar",
+      (string) (len=10) "url-access": (string) (len=12) "registration",
+      (string) (len=4) "year": (string) (len=4) "2003"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=155) "Clarke, Ian; Lee, Helen (2003). Name that Flower: The Identification of Flowering Plants. Melbourne University Publishing. p.\u00a056. ISBN\u00a0978-0-522-85060-4.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=50) "https://archive.org/details/namethatflowerid00clar",
+          Text: (string) (len=56) "Name that Flower: The Identification of Flowering Plants",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=58) "https://archive.org/details/namethatflowerid00clar/page/56",
+          Text: (string) (len=2) "56",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-522-85060-4",
+          Text: (string) (len=17) "978-0-522-85060-4",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=4) "date": (string) (len=12) "January 2003",
+      (string) (len=6) "first1": (string) (len=5) "Klaus",
+      (string) (len=6) "first2": (string) (len=7) "Clemens",
+      (string) (len=6) "first3": (string) (len=8) "Philippe",
+      (string) (len=4) "isbn": (string) (len=17) "978-3-642-07680-0",
+      (string) (len=5) "last1": (string) (len=8) "Kubitzki",
+      (string) (len=5) "last2": (string) (len=5) "Bayer",
+      (string) (len=5) "last3": (string) (len=8) "Cuénoud",
+      (string) (len=5) "pages": (string) (len=5) "1–4",
+      (string) (len=9) "publisher": (string) (len=8) "Springer",
+      (string) (len=5) "title": (string) (len=86) "Flowering Plants · Dicotyledons: Malvales, Capparales and Non-betalain Caryophyllales"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=202) "Kubitzki, Klaus; Bayer, Clemens; Cuénoud, Philippe (January 2003). Flowering Plants · Dicotyledons: Malvales, Capparales and Non-betalain Caryophyllales. Springer. pp.\u00a01–4. ISBN\u00a0978-3-642-07680-0.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-3-642-07680-0",
+          Text: (string) (len=17) "978-3-642-07680-0",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=4) "date": (string) (len=4) "2021",
+      (string) (len=3) "doi": (string) (len=23) "10.1002/2211-5463.13255",
+      (string) (len=5) "first": (string) (len=7) "Alberto",
+      (string) (len=5) "issue": (string) (len=1) "9",
+      (string) (len=7) "journal": (string) (len=13) "FEBS Open Bio",
+      (string) (len=4) "last": (string) (len=12) "Dávila-Lara",
+      (string) (len=5) "pages": (string) (len=11) "2576–2585",
+      (string) (len=3) "pmc": (string) (len=7) "8409308",
+      (string) (len=4) "pmid": (string) (len=8) "34289256",
+      (string) (len=5) "title": (string) (len=62) "Proof of anthocyanins in the carnivorous plant genus Nepenthes",
+      (string) (len=6) "volume": (string) (len=2) "11"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=190) "Dávila-Lara, Alberto (2021). \"Proof of anthocyanins in the carnivorous plant genus Nepenthes\". FEBS Open Bio. 11 (9): 2576–2585. doi:10.1002/2211-5463.13255. PMC\u00a08409308. PMID\u00a034289256.",
+      Links: ([]*parser.Link) (len=7) {
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8409308",
+          Text: (string) (len=64) "\"Proof of anthocyanins in the carnivorous plant genus Nepenthes\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=41) "https://doi.org/10.1002%2F2211-5463.13255",
+          Text: (string) (len=23) "10.1002/2211-5463.13255",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/PMC_(identifier)",
+          Text: (string) (len=3) "PMC",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8409308",
+          Text: (string) (len=7) "8409308",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/34289256",
+          Text: (string) (len=8) "34289256",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=3) "cs2",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=7) "author1": (string) (len=16) "Susana Magallón",
+      (string) (len=7) "author2": (string) (len=15) "Amanda Castillo",
+      (string) (len=3) "doi": (string) (len=19) "10.3732/ajb.0800060",
+      (string) (len=5) "issue": (string) (len=1) "1",
+      (string) (len=7) "journal": (string) (len=26) "American Journal of Botany",
+      (string) (len=15) "name-list-style": (string) (len=3) "amp",
+      (string) (len=5) "pages": (string) (len=9) "349–365",
+      (string) (len=4) "pmid": (string) (len=8) "21628193",
+      (string) (len=5) "title": (string) (len=39) "Angiosperm diversification through time",
+      (string) (len=6) "volume": (string) (len=2) "96",
+      (string) (len=4) "year": (string) (len=4) "2009"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=172) "Susana Magallón & Amanda Castillo (2009), \"Angiosperm diversification through time\", American Journal of Botany, 96 (1): 349–365, doi:10.3732/ajb.0800060, PMID\u00a021628193",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=37) "https://doi.org/10.3732%2Fajb.0800060",
+          Text: (string) (len=19) "10.3732/ajb.0800060",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/PMID_(identifier)",
+          Text: (string) (len=4) "PMID",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://pubmed.ncbi.nlm.nih.gov/21628193",
+          Text: (string) (len=8) "21628193",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=5) "title": (string) (len=14) "Caryophyllales",
+      (string) (len=3) "url": (string) (len=70) "http://www.mobot.org/MOBOT/research/APweb/orders/caryophyllalesweb.htm",
+      (string) (len=4) "work": (string) (len=32) "[[Angiosperm Phylogeny Website]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=47) "\"Caryophyllales\". Angiosperm Phylogeny Website.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=70) "http://www.mobot.org/MOBOT/research/APweb/orders/caryophyllalesweb.htm",
+          Text: (string) (len=16) "\"Caryophyllales\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=58) "https://en.wikipedia.org/wiki/Angiosperm_Phylogeny_Website",
+          Text: (string) (len=28) "Angiosperm Phylogeny Website",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=16) {
+      (string) (len=7) "edition": (string) (len=3) "3rd",
+      (string) (len=6) "first1": (string) (len=2) "W.",
+      (string) (len=6) "first2": (string) (len=2) "C.",
+      (string) (len=6) "first3": (string) (len=2) "E.",
+      (string) (len=6) "first4": (string) (len=2) "P.",
+      (string) (len=6) "first5": (string) (len=2) "M.",
+      (string) (len=4) "isbn": (string) (len=17) "978-0-87893-407-2",
+      (string) (len=5) "last1": (string) (len=5) "Judd.",
+      (string) (len=5) "last2": (string) (len=8) "Campbell",
+      (string) (len=5) "last3": (string) (len=7) "Kellogg",
+      (string) (len=5) "last4": (string) (len=7) "Stevens",
+      (string) (len=5) "last5": (string) (len=8) "Donoghue",
+      (string) (len=9) "publisher": (string) (len=13) "W. H. Freeman",
+      (string) (len=5) "title": (string) (len=42) "Plant Systematics: A Phylogenetic Approach",
+      (string) (len=3) "url": (string) (len=46) "https://books.google.com/books?id=kr3uAAAAMAAJ",
+      (string) (len=4) "year": (string) (len=4) "2008"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=166) "Judd., W.; Campbell, C.; Kellogg, E.; Stevens, P.; Donoghue, M. (2008). Plant Systematics: A Phylogenetic Approach (3rd\u00a0ed.). W. H. Freeman. ISBN\u00a0978-0-87893-407-2.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://books.google.com/books?id=kr3uAAAAMAAJ",
+          Text: (string) (len=42) "Plant Systematics: A Phylogenetic Approach",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-0-87893-407-2",
+          Text: (string) (len=17) "978-0-87893-407-2",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=12) "10 June 2020",
+      (string) (len=5) "first": (string) (len=4) "P.F.",
+      (string) (len=4) "last": (string) (len=8) "Stephens",
+      (string) (len=5) "title": (string) (len=28) "Angiosperm Phylogeny Website",
+      (string) (len=3) "url": (string) (len=85) "http://www.mobot.org/MOBOT/Research/APweb/orders/caryophyllalesweb.htm#Caryophyllales",
+      (string) (len=7) "version": (string) (len=10) "Version 14",
+      (string) (len=4) "year": (string) (len=4) "2020"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=90) "Stephens, P.F. (2020). \"Angiosperm Phylogeny Website\". Version 14. Retrieved 10 June 2020.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=85) "http://www.mobot.org/MOBOT/Research/APweb/orders/caryophyllalesweb.htm#Caryophyllales",
+          Text: (string) (len=30) "\"Angiosperm Phylogeny Website\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=16) {
+      (string) (len=4) "date": (string) (len=16) "1 September 2007",
+      (string) (len=3) "doi": (string) (len=32) "10.1111/j.1095-8339.2007.00665.x",
+      (string) (len=10) "doi-access": (string) "",
+      (string) (len=6) "first1": (string) (len=2) "R.",
+      (string) (len=6) "first2": (string) (len=2) "J.",
+      (string) (len=6) "first3": (string) (len=2) "M.",
+      (string) (len=6) "first4": (string) (len=2) "J.",
+      (string) (len=5) "issue": (string) (len=1) "1",
+      (string) (len=7) "journal": (string) (len=40) "Botanical Journal of the Linnean Society",
+      (string) (len=5) "last1": (string) (len=4) "Juan",
+      (string) (len=5) "last2": (string) (len=6) "Pastor",
+      (string) (len=5) "last3": (string) (len=5) "Alaiz",
+      (string) (len=5) "last4": (string) (len=6) "Vioque",
+      (string) (len=5) "pages": (string) (len=7) "57–63",
+      (string) (len=5) "title": (string) (len=99) "Electrophoretic characterization of ''Amaranthus'' L. seed proteins and its systematic implications",
+      (string) (len=6) "volume": (string) (len=3) "155"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=260) "Juan, R.; Pastor, J.; Alaiz, M.; Vioque, J. (1 September 2007). \"Electrophoretic characterization of Amaranthus L. seed proteins and its systematic implications\". Botanical Journal of the Linnean Society. 155 (1): 57–63. doi:10.1111/j.1095-8339.2007.00665.x.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://doi.org/10.1111%2Fj.1095-8339.2007.00665.x",
+          Text: (string) (len=32) "10.1111/j.1095-8339.2007.00665.x",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=5) "first": (string) (len=5) "G.H.M",
+      (string) (len=4) "last": (string) (len=8) "Lawrence",
+      (string) (len=5) "pages": (string) (len=3) "660",
+      (string) (len=9) "publisher": (string) (len=9) "Macmillan",
+      (string) (len=5) "title": (string) (len=27) "Taxonomy of Vascular Plants",
+      (string) (len=4) "year": (string) (len=4) "1960"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=72) "Lawrence, G.H.M (1960). Taxonomy of Vascular Plants. Macmillan. p.\u00a0660.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-11",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=3) "doi": (string) (len=17) "10.1111/boj.12385",
+      (string) (len=10) "doi-access": (string) (len=4) "free",
+      (string) (len=5) "issue": (string) (len=1) "1",
+      (string) (len=7) "journal": (string) (len=40) "Botanical Journal of the Linnean Society",
+      (string) (len=4) "last": (string) (len=26) "Angiosperm Phylogeny Group",
+      (string) (len=5) "pages": (string) (len=6) "1–20",
+      (string) (len=5) "title": (string) (len=114) "An update of the Angiosperm Phylogeny Group classification for the orders and families of flowering plants: APG IV",
+      (string) (len=6) "volume": (string) (len=3) "181",
+      (string) (len=4) "year": (string) (len=4) "2016"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=234) "Angiosperm Phylogeny Group (2016). \"An update of the Angiosperm Phylogeny Group classification for the orders and families of flowering plants: APG IV\". Botanical Journal of the Linnean Society. 181 (1): 1–20. doi:10.1111/boj.12385.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=35) "https://doi.org/10.1111%2Fboj.12385",
+          Text: (string) (len=116) "\"An update of the Angiosperm Phylogeny Group classification for the orders and families of flowering plants: APG IV\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Doi_(identifier)",
+          Text: (string) (len=3) "doi",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=35) "https://doi.org/10.1111%2Fboj.12385",
+          Text: (string) (len=17) "10.1111/boj.12385",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

@@ -1,0 +1,776 @@
+([]*parser.Reference) (len=23) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=10) "2013-05-11",
+      (string) (len=12) "archive-date": (string) (len=10) "2013-05-10",
+      (string) (len=11) "archive-url": (string) (len=63) "https://web.archive.org/web/20130510190713/https://fetlife.com/",
+      (string) (len=5) "title": (string) (len=17) "FetLife Home Page",
+      (string) (len=3) "url": (string) (len=20) "https://fetlife.com/",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=88) "\"FetLife Home Page\". Archived from the original on May 10, 2013. Retrieved May 11, 2013.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=20) "https://fetlife.com/",
+          Text: (string) (len=19) "\"FetLife Home Page\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://web.archive.org/web/20130510190713/https://fetlife.com/",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=11) "May 8, 2024",
+      (string) (len=5) "title": (string) (len=8) "JohnBaku",
+      (string) (len=3) "url": (string) (len=27) "https://fetlife.com/users/1",
+      (string) (len=10) "url-access": (string) (len=12) "registration",
+      (string) (len=4) "work": (string) (len=7) "FetLife"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=43) "\"JohnBaku\". FetLife. Retrieved May 8, 2024.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=27) "https://fetlife.com/users/1",
+          Text: (string) (len=10) "\"JohnBaku\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=12) "archive-date": (string) (len=12) "July 3, 2017",
+      (string) (len=11) "archive-url": (string) (len=154) "https://web.archive.org/web/20170703213659/https://www.dailyxtra.com/what-just-happened-to-kink-social-network-fetlife-is-a-bad-sign-for-web-freedom-72990",
+      (string) (len=4) "date": (string) (len=16) "February 9, 2017",
+      (string) (len=5) "first": (string) (len=4) "Niko",
+      (string) (len=4) "last": (string) (len=4) "Bell",
+      (string) (len=9) "publisher": (string) (len=14) "[[Daily Xtra]]",
+      (string) (len=5) "quote": (string) (len=195) "In an apologetic post to the FetLife community, founder John Kopanas — better known on the site by his username JohnBaku — said the restrictions were the only way out of an existential threat",
+      (string) (len=5) "title": (string) (len=79) "What just happened to kink social network FetLife is a bad sign for web freedom",
+      (string) (len=3) "url": (string) (len=111) "https://www.dailyxtra.com/what-just-happened-to-kink-social-network-fetlife-is-a-bad-sign-for-web-freedom-72990"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=365) "Bell, Niko (February 9, 2017). \"What just happened to kink social network FetLife is a bad sign for web freedom\". Daily Xtra. Archived from the original on July 3, 2017. In an apologetic post to the FetLife community, founder John Kopanas — better known on the site by his username JohnBaku — said the restrictions were the only way out of an existential threat",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=154) "https://web.archive.org/web/20170703213659/https://www.dailyxtra.com/what-just-happened-to-kink-social-network-fetlife-is-a-bad-sign-for-web-freedom-72990",
+          Text: (string) (len=81) "\"What just happened to kink social network FetLife is a bad sign for web freedom\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://en.wikipedia.org/wiki/Daily_Xtra",
+          Text: (string) (len=10) "Daily Xtra",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=111) "https://www.dailyxtra.com/what-just-happened-to-kink-social-network-fetlife-is-a-bad-sign-for-web-freedom-72990",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=10) "2009-10-18",
+      (string) (len=12) "archive-date": (string) (len=10) "2012-06-30",
+      (string) (len=11) "archive-url": (string) (len=95) "https://web.archive.org/web/20120630172329/http://www.montrealmirror.com/2008/090408/news1.html",
+      (string) (len=4) "date": (string) (len=10) "2008-09-04",
+      (string) (len=5) "first": (string) (len=6) "Andrea",
+      (string) (len=4) "last": (string) (len=5) "Zanin",
+      (string) (len=5) "title": (string) (len=83) "Facebook for the kinky: Montreal-based FetLife.com networks fetishists of the world",
+      (string) (len=3) "url": (string) (len=52) "http://www.montrealmirror.com/2008/090408/news1.html",
+      (string) (len=4) "work": (string) (len=19) "[[Montreal Mirror]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=211) "Zanin, Andrea (September 4, 2008). \"Facebook for the kinky: Montreal-based FetLife.com networks fetishists of the world\". Montreal Mirror. Archived from the original on June 30, 2012. Retrieved October 18, 2009.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=95) "https://web.archive.org/web/20120630172329/http://www.montrealmirror.com/2008/090408/news1.html",
+          Text: (string) (len=85) "\"Facebook for the kinky: Montreal-based FetLife.com networks fetishists of the world\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Montreal_Mirror",
+          Text: (string) (len=15) "Montreal Mirror",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "http://www.montrealmirror.com/2008/090408/news1.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=10) "2013-01-02",
+      (string) (len=12) "archive-date": (string) (len=10) "2012-02-28",
+      (string) (len=11) "archive-url": (string) (len=141) "https://web.archive.org/web/20120228192556/http://sexualdeviants20.com/2008/01/10/fetlifecom-launches-the-first-social-network-for-kinksters/",
+      (string) (len=4) "date": (string) (len=10) "2008-01-10",
+      (string) (len=5) "first": (string) (len=4) "John",
+      (string) (len=4) "last": (string) (len=4) "Baku",
+      (string) (len=5) "title": (string) (len=61) "FetLife.com Launches - The First Social Network for Kinksters",
+      (string) (len=3) "url": (string) (len=98) "http://sexualdeviants20.com/2008/01/10/fetlifecom-launches-the-first-social-network-for-kinksters/",
+      (string) (len=4) "work": (string) (len=41) "Sexual Deviants Living In A Web 2.0 World"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=214) "Baku, John (January 10, 2008). \"FetLife.com Launches - The First Social Network for Kinksters\". Sexual Deviants Living In A Web 2.0 World. Archived from the original on February 28, 2012. Retrieved January 2, 2013.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=141) "https://web.archive.org/web/20120228192556/http://sexualdeviants20.com/2008/01/10/fetlifecom-launches-the-first-social-network-for-kinksters/",
+          Text: (string) (len=63) "\"FetLife.com Launches - The First Social Network for Kinksters\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=98) "http://sexualdeviants20.com/2008/01/10/fetlifecom-launches-the-first-social-network-for-kinksters/",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=12) "archive-date": (string) (len=12) "July 4, 2017",
+      (string) (len=11) "archive-url": (string) (len=89) "https://web.archive.org/web/20170704034513/http://jamesgolick.com/2012/9/5/moving-on.html",
+      (string) (len=4) "date": (string) (len=17) "September 5, 2012",
+      (string) (len=5) "first": (string) (len=5) "James",
+      (string) (len=4) "last": (string) (len=6) "Golick",
+      (string) (len=5) "quote": (string) (len=225) "He told me about his growing company, and a month later, the consulting firm I'd been running was closed, our office vacant, and I had joined BitLove (the company that runs FetLife — which was then known as Protose) as CTO.",
+      (string) (len=5) "title": (string) (len=9) "Moving On",
+      (string) (len=3) "url": (string) (len=46) "http://jamesgolick.com/2012/9/5/moving-on.html",
+      (string) (len=4) "work": (string) (len=15) "jamesgolick.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=334) "Golick, James (September 5, 2012). \"Moving On\". jamesgolick.com. Archived from the original on July 4, 2017. He told me about his growing company, and a month later, the consulting firm I'd been running was closed, our office vacant, and I had joined BitLove (the company that runs FetLife — which was then known as Protose) as CTO.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=89) "https://web.archive.org/web/20170704034513/http://jamesgolick.com/2012/9/5/moving-on.html",
+          Text: (string) (len=11) "\"Moving On\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "http://jamesgolick.com/2012/9/5/moving-on.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=10) "2020-12-28",
+      (string) (len=12) "archive-date": (string) (len=10) "2020-12-28",
+      (string) (len=11) "archive-url": (string) (len=103) "https://web.archive.org/web/20201228055005/https://www.theleatherjournal.com/pantheon-awards/recipients",
+      (string) (len=5) "title": (string) (len=68) "Pantheon of Leather Awards All Time Recipients - The Leather Journal",
+      (string) (len=3) "url": (string) (len=60) "https://www.theleatherjournal.com/pantheon-awards/recipients",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=7) "website": (string) (len=25) "www.theleatherjournal.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=176) "\"Pantheon of Leather Awards All Time Recipients - The Leather Journal\". www.theleatherjournal.com. Archived from the original on December 28, 2020. Retrieved December 28, 2020.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=103) "https://web.archive.org/web/20201228055005/https://www.theleatherjournal.com/pantheon-awards/recipients",
+          Text: (string) (len=70) "\"Pantheon of Leather Awards All Time Recipients - The Leather Journal\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://www.theleatherjournal.com/pantheon-awards/recipients",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=11) "access-date": (string) (len=13) "April 9, 2017",
+      (string) (len=12) "archive-date": (string) (len=12) "May 27, 2017",
+      (string) (len=11) "archive-url": (string) (len=155) "https://web.archive.org/web/20170527015433/https://broadly.vice.com/en_us/article/kinky-social-network-fetlife-deletes-thousands-of-fetishes-to-stay-online",
+      (string) (len=4) "date": (string) (len=16) "January 25, 2017",
+      (string) (len=5) "first": (string) (len=5) "Sirin",
+      (string) (len=4) "last": (string) (len=4) "Kale",
+      (string) (len=5) "title": (string) (len=73) "Kinky Social Network Fetlife Deletes Thousands Of Fetishes to Stay Online",
+      (string) (len=3) "url": (string) (len=112) "https://broadly.vice.com/en_us/article/kinky-social-network-fetlife-deletes-thousands-of-fetishes-to-stay-online",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=19) "[[Vice Media|Vice]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=183) "Kale, Sirin (January 25, 2017). \"Kinky Social Network Fetlife Deletes Thousands Of Fetishes to Stay Online\". Vice. Archived from the original on May 27, 2017. Retrieved April 9, 2017.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=112) "https://broadly.vice.com/en_us/article/kinky-social-network-fetlife-deletes-thousands-of-fetishes-to-stay-online",
+          Text: (string) (len=75) "\"Kinky Social Network Fetlife Deletes Thousands Of Fetishes to Stay Online\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://en.wikipedia.org/wiki/Vice_Media",
+          Text: (string) (len=4) "Vice",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=155) "https://web.archive.org/web/20170527015433/https://broadly.vice.com/en_us/article/kinky-social-network-fetlife-deletes-thousands-of-fetishes-to-stay-online",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=4) "date": (string) (len=10) "2013-02-06",
+      (string) (len=5) "first": (string) (len=4) "John",
+      (string) (len=4) "last": (string) (len=4) "Baku",
+      (string) (len=5) "title": (string) (len=29) "The Next Steps - The Big Four",
+      (string) (len=3) "url": (string) (len=50) "https://fetlife.com/groups/311/group_posts/3499822",
+      (string) (len=10) "url-access": (string) (len=12) "registration",
+      (string) (len=4) "work": (string) (len=7) "FetLife"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=72) "Baku, John (February 6, 2013). \"The Next Steps - The Big Four\". FetLife.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=50) "https://fetlife.com/groups/311/group_posts/3499822",
+          Text: (string) (len=31) "\"The Next Steps - The Big Four\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=11) "May 7, 2024",
+      (string) (len=4) "date": (string) (len=14) "March 15, 2017",
+      (string) (len=5) "first": (string) (len=6) "Jeremy",
+      (string) (len=4) "last": (string) (len=7) "Malcolm",
+      (string) (len=5) "title": (string) (len=85) "Payment Processors are Still Policing Your Sex Life, and the Latest Victim is FetLife",
+      (string) (len=3) "url": (string) (len=89) "https://www.eff.org/deeplinks/2017/03/payment-processors-are-still-policing-your-sex-life"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=145) "Malcolm, Jeremy (March 15, 2017). \"Payment Processors are Still Policing Your Sex Life, and the Latest Victim is FetLife\". Retrieved May 7, 2024.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=89) "https://www.eff.org/deeplinks/2017/03/payment-processors-are-still-policing-your-sex-life",
+          Text: (string) (len=87) "\"Payment Processors are Still Policing Your Sex Life, and the Latest Victim is FetLife\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-11",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=12) "June 3, 2024",
+      (string) (len=4) "date": (string) (len=14) "March 22, 2024",
+      (string) (len=5) "first": (string) (len=5) "Maria",
+      (string) (len=4) "last": (string) (len=10) "Montgomery",
+      (string) (len=5) "title": (string) (len=51) "FetLife: How does this social networking site work?",
+      (string) (len=3) "url": (string) (len=94) "https://www.agetimes.co.uk/relationships/sex/fetlife-how-does-this-social-networking-site-work",
+      (string) (len=7) "website": (string) (len=9) "Age Times"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=125) "Montgomery, Maria (March 22, 2024). \"FetLife: How does this social networking site work?\". Age Times. Retrieved June 3, 2024.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=94) "https://www.agetimes.co.uk/relationships/sex/fetlife-how-does-this-social-networking-site-work",
+          Text: (string) (len=53) "\"FetLife: How does this social networking site work?\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-12",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=12) "June 3, 2024",
+      (string) (len=4) "date": (string) (len=17) "February 19, 2024",
+      (string) (len=5) "title": (string) (len=21) "FetLife - Safety Tips",
+      (string) (len=3) "url": (string) (len=59) "https://www.esafety.gov.au/key-topics/esafety-guide/fetlife",
+      (string) (len=7) "website": (string) (len=20) "eSafety Commissioner"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=89) "\"FetLife - Safety Tips\". eSafety Commissioner. February 19, 2024. Retrieved June 3, 2024.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=59) "https://www.esafety.gov.au/key-topics/esafety-guide/fetlife",
+          Text: (string) (len=23) "\"FetLife - Safety Tips\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-13",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=4) "date": (string) (len=4) "2009",
+      (string) (len=5) "first": (string) (len=4) "John",
+      (string) (len=4) "last": (string) (len=4) "Baku",
+      (string) (len=5) "title": (string) (len=33) "FetLife, now with improved search",
+      (string) (len=3) "url": (string) (len=49) "https://fetlife.com/groups/311/group_posts/174256",
+      (string) (len=10) "url-access": (string) (len=12) "registration",
+      (string) (len=4) "work": (string) (len=7) "FetLife"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=64) "Baku, John (2009). \"FetLife, now with improved search\". FetLife.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=49) "https://fetlife.com/groups/311/group_posts/174256",
+          Text: (string) (len=35) "\"FetLife, now with improved search\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-14",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=12) "archive-date": (string) (len=18) "September 26, 2016",
+      (string) (len=11) "archive-url": (string) (len=74) "https://web.archive.org/web/20160926182707/https://fetlife.com/fetlife/tou",
+      (string) (len=4) "date": (string) (len=14) "April 22, 2016",
+      (string) (len=5) "quote": (string) (len=149) "You agree that, while using BitLove’s Products and Services, you will not [...] Make criminal accusations against another member in a public forum.",
+      (string) (len=5) "title": (string) (len=12) "Terms of Use",
+      (string) (len=3) "url": (string) (len=31) "https://fetlife.com/fetlife/tou",
+      (string) (len=4) "work": (string) (len=7) "FetLife"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=238) "\"Terms of Use\". FetLife. April 22, 2016. Archived from the original on September 26, 2016. You agree that, while using BitLove's Products and Services, you will not [...] Make criminal accusations against another member in a public forum.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=74) "https://web.archive.org/web/20160926182707/https://fetlife.com/fetlife/tou",
+          Text: (string) (len=14) "\"Terms of Use\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=31) "https://fetlife.com/fetlife/tou",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-15",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=11) "access-date": (string) (len=10) "2013-01-02",
+      (string) (len=12) "archive-date": (string) (len=10) "2013-01-01",
+      (string) (len=11) "archive-url": (string) (len=92) "https://web.archive.org/web/20130101063859/http://www.salon.com/2012/06/03/a_bdsm_blacklist/",
+      (string) (len=4) "date": (string) (len=10) "2012-06-03",
+      (string) (len=5) "first": (string) (len=5) "Tracy",
+      (string) (len=4) "last": (string) (len=11) "Clark-Flory",
+      (string) (len=5) "title": (string) (len=16) "A BDSM Blacklist",
+      (string) (len=3) "url": (string) (len=49) "http://www.salon.com/2012/06/03/a_bdsm_blacklist/",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=25) "[[Salon (website)|Salon]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=135) "Clark-Flory, Tracy (June 3, 2012). \"A BDSM Blacklist\". Salon. Archived from the original on January 1, 2013. Retrieved January 2, 2013.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=49) "http://www.salon.com/2012/06/03/a_bdsm_blacklist/",
+          Text: (string) (len=18) "\"A BDSM Blacklist\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/Salon_(website)",
+          Text: (string) (len=5) "Salon",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=92) "https://web.archive.org/web/20130101063859/http://www.salon.com/2012/06/03/a_bdsm_blacklist/",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-16",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=11) "access-date": (string) (len=10) "2013-01-07",
+      (string) (len=12) "archive-date": (string) (len=10) "2012-11-10",
+      (string) (len=11) "archive-url": (string) (len=133) "https://web.archive.org/web/20121110193814/http://jezebel.com/5958113/kink-community-tells-sexual-assault-victims-its-all-their-fault",
+      (string) (len=4) "date": (string) (len=10) "2012-11-08",
+      (string) (len=5) "first": (string) (len=5) "Katie",
+      (string) (len=4) "last": (string) (len=10) "J.M. Baker",
+      (string) (len=5) "title": (string) (len=64) "Kink Community Tells Sexual Assault Victims It's All Their Fault",
+      (string) (len=3) "url": (string) (len=90) "http://jezebel.com/5958113/kink-community-tells-sexual-assault-victims-its-all-their-fault",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=29) "[[Jezebel (website)|Jezebel]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=190) "J.M. Baker, Katie (November 8, 2012). \"Kink Community Tells Sexual Assault Victims It's All Their Fault\". Jezebel. Archived from the original on November 10, 2012. Retrieved January 7, 2013.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=90) "http://jezebel.com/5958113/kink-community-tells-sexual-assault-victims-its-all-their-fault",
+          Text: (string) (len=66) "\"Kink Community Tells Sexual Assault Victims It's All Their Fault\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/Jezebel_(website)",
+          Text: (string) (len=7) "Jezebel",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=133) "https://web.archive.org/web/20121110193814/http://jezebel.com/5958113/kink-community-tells-sexual-assault-victims-its-all-their-fault",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-17",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=11) "access-date": (string) (len=10) "2015-02-02",
+      (string) (len=12) "archive-date": (string) (len=10) "2015-02-14",
+      (string) (len=11) "archive-url": (string) (len=169) "https://web.archive.org/web/20150214050430/http://observer.com/2012/11/the-story-of-no-sadomasochistic-sex-clubs-sprout-up-on-ivy-campuses-and-coercion-becomes-an-issue/",
+      (string) (len=4) "date": (string) (len=10) "2012-11-16",
+      (string) (len=5) "first": (string) (len=9) "Rachel R.",
+      (string) (len=4) "last": (string) (len=5) "White",
+      (string) (len=5) "title": (string) (len=89) "The Story of 'No': S&M Sex Clubs Sprout Up on Ivy Campuses, and Coercion Becomes an Issue",
+      (string) (len=3) "url": (string) (len=125) "http://observer.com/2012/11/the-story-of-no-sadomasochistic-sex-clubs-sprout-up-on-ivy-campuses-and-coercion-becomes-an-issue",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=18) "[[Observer Media]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=223) "White, Rachel R. (November 16, 2012). \"The Story of 'No': S&M Sex Clubs Sprout Up on Ivy Campuses, and Coercion Becomes an Issue\". Observer Media. Archived from the original on February 14, 2015. Retrieved February 2, 2015.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=125) "http://observer.com/2012/11/the-story-of-no-sadomasochistic-sex-clubs-sprout-up-on-ivy-campuses-and-coercion-becomes-an-issue",
+          Text: (string) (len=91) "\"The Story of 'No': S&M Sex Clubs Sprout Up on Ivy Campuses, and Coercion Becomes an Issue\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=44) "https://en.wikipedia.org/wiki/Observer_Media",
+          Text: (string) (len=14) "Observer Media",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=169) "https://web.archive.org/web/20150214050430/http://observer.com/2012/11/the-story-of-no-sadomasochistic-sex-clubs-sprout-up-on-ivy-campuses-and-coercion-becomes-an-issue/",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-18",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=11) "access-date": (string) (len=13) "March 7, 2015",
+      (string) (len=12) "archive-date": (string) (len=13) "March 5, 2015",
+      (string) (len=11) "archive-url": (string) (len=157) "https://web.archive.org/web/20150305203855/http://www.theatlantic.com/health/archive/2015/03/how-kinks-largest-social-networking-site-fails-its-users/385586/",
+      (string) (len=4) "date": (string) (len=13) "March 3, 2015",
+      (string) (len=5) "first": (string) (len=8) "David Z.",
+      (string) (len=4) "last": (string) (len=6) "Morris",
+      (string) (len=5) "title": (string) (len=57) "How Kink's Largest Social-Networking Site Fails Its Users",
+      (string) (len=3) "url": (string) (len=115) "https://www.theatlantic.com/health/archive/2015/03/how-kinks-largest-social-networking-site-fails-its-users/385586/",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=16) "[[The Atlantic]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=178) "Morris, David Z. (March 3, 2015). \"How Kink's Largest Social-Networking Site Fails Its Users\". The Atlantic. Archived from the original on March 5, 2015. Retrieved March 7, 2015.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=115) "https://www.theatlantic.com/health/archive/2015/03/how-kinks-largest-social-networking-site-fails-its-users/385586/",
+          Text: (string) (len=59) "\"How Kink's Largest Social-Networking Site Fails Its Users\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://en.wikipedia.org/wiki/The_Atlantic",
+          Text: (string) (len=12) "The Atlantic",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=157) "https://web.archive.org/web/20150305203855/http://www.theatlantic.com/health/archive/2015/03/how-kinks-largest-social-networking-site-fails-its-users/385586/",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-19",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=11) "access-date": (string) (len=10) "2013-01-02",
+      (string) (len=12) "archive-date": (string) (len=10) "2012-12-30",
+      (string) (len=11) "archive-url": (string) (len=97) "https://web.archive.org/web/20121230015525/http://sexandthe405.com/fetlife-is-not-safe-for-users/",
+      (string) (len=4) "date": (string) (len=10) "2011-08-27",
+      (string) (len=5) "first": (string) (len=6) "Anaiis",
+      (string) (len=4) "last": (string) (len=4) "Flox",
+      (string) (len=5) "title": (string) (len=29) "FetLife Is Not Safe For Users",
+      (string) (len=3) "url": (string) (len=54) "http://sexandthe405.com/fetlife-is-not-safe-for-users/",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=4) "work": (string) (len=15) "Sex and the 405"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=157) "Flox, Anaiis (August 27, 2011). \"FetLife Is Not Safe For Users\". Sex and the 405. Archived from the original on December 30, 2012. Retrieved January 2, 2013.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=97) "https://web.archive.org/web/20121230015525/http://sexandthe405.com/fetlife-is-not-safe-for-users/",
+          Text: (string) (len=31) "\"FetLife Is Not Safe For Users\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=54) "http://sexandthe405.com/fetlife-is-not-safe-for-users/",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-20",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=12) {
+      (string) (len=11) "access-date": (string) (len=10) "2017-07-03",
+      (string) (len=12) "archive-date": (string) (len=10) "2018-08-20",
+      (string) (len=11) "archive-url": (string) (len=204) "https://web.archive.org/web/20180820172753/https://books.google.ca/books?id=0t0kDQAAQBAJ&pg=PA71&dq=%22fetlife%22&hl=en&sa=X&ved=0ahUKEwiXvbvFle7UAhUp4YMKHdFiBl8Q6AEIVDAI#v=onepage&q=%22fetlife%22&f=false",
+      (string) (len=4) "date": (string) (len=12) "May 31, 2016",
+      (string) (len=5) "first": (string) (len=7) "Jill D.",
+      (string) (len=4) "isbn": (string) (len=13) "9780520290655",
+      (string) (len=4) "last": (string) (len=8) "Weinberg",
+      (string) (len=5) "pages": (string) (len=7) "71–72",
+      (string) (len=9) "publisher": (string) (len=34) "[[University of California Press]]",
+      (string) (len=5) "title": (string) (len=60) "Consensual Violence: Sex, Sports, and the Politics of Injury",
+      (string) (len=3) "url": (string) (len=70) "https://books.google.com/books?id=0t0kDQAAQBAJ&q=%22fetlife%22&pg=PA71",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=233) "Weinberg, Jill D. (May 31, 2016). Consensual Violence: Sex, Sports, and the Politics of Injury. University of California Press. pp.\u00a071–72. ISBN\u00a09780520290655. Archived from the original on August 20, 2018. Retrieved July 3, 2017.",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=70) "https://books.google.com/books?id=0t0kDQAAQBAJ&q=%22fetlife%22&pg=PA71",
+          Text: (string) (len=60) "Consensual Violence: Sex, Sports, and the Politics of Injury",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "https://en.wikipedia.org/wiki/University_of_California_Press",
+          Text: (string) (len=30) "University of California Press",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9780520290655",
+          Text: (string) (len=13) "9780520290655",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=204) "https://web.archive.org/web/20180820172753/https://books.google.ca/books?id=0t0kDQAAQBAJ&pg=PA71&dq=%22fetlife%22&hl=en&sa=X&ved=0ahUKEwiXvbvFle7UAhUp4YMKHdFiBl8Q6AEIVDAI#v=onepage&q=%22fetlife%22&f=false",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-21",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=12) "July 1, 2017",
+      (string) (len=12) "archive-date": (string) (len=12) "July 1, 2017",
+      (string) (len=11) "archive-url": (string) (len=148) "https://web.archive.org/web/20170701115929/http://www.chicagotribune.com/news/local/breaking/ct-missing-illinois-student-charges-20170630-story.html",
+      (string) (len=4) "date": (string) (len=12) "July 1, 2017",
+      (string) (len=9) "newspaper": (string) (len=23) "[[The Chicago Tribune]]",
+      (string) (len=5) "quote": (string) (len=374) "Authorities also searched Christensen’s home and seized electronics, including his phone, according to the affidavit. The phone’s search history revealed visits to a bondage and sadomasochism fetish website called FetLife and a forum called \"Abduction 101,\" as well as subthreads titled \"Perfect abduction fantasy\" and \"planning a kidnapping,\" according to the affidavit",
+      (string) (len=5) "title": (string) (len=92) "'Nobody saw this coming': Arrest in Chinese scholar's disappearance stuns U. of I. community",
+      (string) (len=3) "url": (string) (len=105) "http://www.chicagotribune.com/news/local/breaking/ct-missing-illinois-student-charges-20170630-story.html",
+      (string) (len=10) "url-status": (string) (len=4) "dead"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=569) "\"'Nobody saw this coming': Arrest in Chinese scholar's disappearance stuns U. of I. community\". The Chicago Tribune. July 1, 2017. Archived from the original on July 1, 2017. Retrieved July 1, 2017. Authorities also searched Christensen's home and seized electronics, including his phone, according to the affidavit. The phone's search history revealed visits to a bondage and sadomasochism fetish website called FetLife and a forum called \"Abduction 101,\" as well as subthreads titled \"Perfect abduction fantasy\" and \"planning a kidnapping,\" according to the affidavit",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=148) "https://web.archive.org/web/20170701115929/http://www.chicagotribune.com/news/local/breaking/ct-missing-illinois-student-charges-20170630-story.html",
+          Text: (string) (len=95) "\" 'Nobody saw this coming': Arrest in Chinese scholar's disappearance stuns U. of I. community\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://en.wikipedia.org/wiki/The_Chicago_Tribune",
+          Text: (string) (len=19) "The Chicago Tribune",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=105) "http://www.chicagotribune.com/news/local/breaking/ct-missing-illinois-student-charges-20170630-story.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-22",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=11) {
+      (string) (len=11) "access-date": (string) (len=12) "July 3, 2017",
+      (string) (len=12) "archive-date": (string) (len=12) "July 3, 2017",
+      (string) (len=11) "archive-url": (string) (len=198) "https://web.archive.org/web/20170703233108/http://www.japantimes.co.jp/news/2017/07/04/world/crime-legal-world/man-tapped-abduction-101-forum-denied-bond-kidnapping-suspected-murder-chinese-scholar/",
+      (string) (len=6) "author": (string) (len=20) "The Associated Press",
+      (string) (len=11) "author-link": (string) (len=20) "The Associated Press",
+      (string) (len=4) "date": (string) (len=12) "July 4, 2017",
+      (string) (len=9) "newspaper": (string) (len=19) "[[The Japan Times]]",
+      (string) (len=5) "quote": (string) (len=152) "FetLife prohibited hundreds of fetish categories this year after it was cited in several criminal cases, Baku said in a February online note to members.",
+      (string) (len=5) "title": (string) (len=99) "Man who tapped 'Abduction 101' forum denied bond in kidnapping, suspected murder of Chinese scholar",
+      (string) (len=3) "url": (string) (len=155) "http://www.japantimes.co.jp/news/2017/07/04/world/crime-legal-world/man-tapped-abduction-101-forum-denied-bond-kidnapping-suspected-murder-chinese-scholar/",
+      (string) (len=10) "url-status": (string) (len=4) "dead"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=377) "The Associated Press (July 4, 2017). \"Man who tapped 'Abduction 101' forum denied bond in kidnapping, suspected murder of Chinese scholar\". The Japan Times. Archived from the original on July 3, 2017. Retrieved July 3, 2017. FetLife prohibited hundreds of fetish categories this year after it was cited in several criminal cases, Baku said in a February online note to members.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=50) "https://en.wikipedia.org/wiki/The_Associated_Press",
+          Text: (string) (len=20) "The Associated Press",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=198) "https://web.archive.org/web/20170703233108/http://www.japantimes.co.jp/news/2017/07/04/world/crime-legal-world/man-tapped-abduction-101-forum-denied-bond-kidnapping-suspected-murder-chinese-scholar/",
+          Text: (string) (len=101) "\"Man who tapped 'Abduction 101' forum denied bond in kidnapping, suspected murder of Chinese scholar\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=45) "https://en.wikipedia.org/wiki/The_Japan_Times",
+          Text: (string) (len=15) "The Japan Times",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=155) "http://www.japantimes.co.jp/news/2017/07/04/world/crime-legal-world/man-tapped-abduction-101-forum-denied-bond-kidnapping-suspected-murder-chinese-scholar/",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-23",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=15) "August 29, 2023",
+      (string) (len=4) "date": (string) (len=16) "October 16, 2020",
+      (string) (len=6) "first1": (string) (len=5) "Fancy",
+      (string) (len=5) "last1": (string) (len=5) "Feast",
+      (string) (len=5) "title": (string) (len=72) "Users On A Site For Kinky People Say The Racism Has Become Unsustainable",
+      (string) (len=3) "url": (string) (len=91) "https://www.buzzfeednews.com/article/fancyfeast/fetlife-racism-kink-alt-right-anti-semitism",
+      (string) (len=7) "website": (string) (len=13) "BuzzFeed News"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=150) "Feast, Fancy (October 16, 2020). \"Users On A Site For Kinky People Say The Racism Has Become Unsustainable\". BuzzFeed News. Retrieved August 29, 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=91) "https://www.buzzfeednews.com/article/fancyfeast/fetlife-racism-kink-alt-right-anti-semitism",
+          Text: (string) (len=74) "\"Users On A Site For Kinky People Say The Racism Has Become Unsustainable\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

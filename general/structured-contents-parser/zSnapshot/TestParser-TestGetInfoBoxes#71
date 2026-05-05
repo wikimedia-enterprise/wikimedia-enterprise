@@ -1,0 +1,956 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=138) "Infobox tennis biography <!-- PLEASE DON'T FORGET TO PLACE THE RELATED DATE IN THE \"UPDATED\" PARAMETER BELOW AFTER EACH UPDATE, THANKS -->",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=10) {
+      (*parser.Part)({
+        Name: (string) (len=13) "Roger Federer",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=10) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=37) "Federer at the 2015 Mutua Madrid Open",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=137) "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Roger_Federer_2015_%28cropped%29.jpg/220px-Roger_Federer_2015_%28cropped%29.jpg",
+                Identifier: (string) (len=64) "06eb6a48718b4a0b86bf8d9c0952aa3e11d1ec4e6ad249c21d724ef946f852bc",
+                Name: (string) (len=37) "File:Roger_Federer_2015_(cropped).jpg",
+                AlternativeText: (string) "",
+                Caption: (string) (len=37) "Federer at the 2015 Mutua Madrid Open",
+                Height: (int) 305,
+                Width: (int) 220,
+                EncodingFormat: (string) (len=10) "image/jpeg",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/2015_Mutua_Madrid_Open",
+                Text: (string) (len=22) "2015 Mutua Madrid Open",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=16) "Country (sports)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=11) "Switzerland",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=142) "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Flag_of_Switzerland_%28Pantone%29.svg/16px-Flag_of_Switzerland_%28Pantone%29.svg.png",
+                Identifier: (string) (len=64) "816b0b1f8b7f2a9a47db5b4173806c887fb71ae06c61d808e14874af42a0c8b5",
+                Name: (string) (len=38) "File:Flag_of_Switzerland_(Pantone).svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 16,
+                Width: (int) 16,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Residence",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=21) "Valbella, Switzerland",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/Valbella,_Vaz/Obervaz",
+                Text: (string) (len=8) "Valbella",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Born",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=32) "8 August 1981 Basel, Switzerland",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/Basel",
+                Text: (string) (len=5) "Basel",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=6) "Height",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "1.85 m (6 ft 1 in)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Roger_Federer#cite_note-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Turned pro",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=4) "1998",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Retired",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=17) "23 September 2022",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=5) "Plays",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=34) "Right-handed (one-handed backhand)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "Prize money",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=1) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=24) "3rd all-time in earnings",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=83) "https://en.wikipedia.org/wiki/Open_Era_tennis_records_–_Men's_singles#Prize_money",
+                    Text: (string) (len=24) "3rd all-time in earnings",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=82) "https://en.wikipedia.org/wiki/Roger_Federer#cite_note-career-prize-money-leaders-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=16) "Official website",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "rogerfederer.com",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=23) "http://rogerfederer.com",
+                Text: (string) (len=16) "rogerfederer.com",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=7) "Singles",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) (len=13) "Career record",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "1251–275 (82.0%)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Career titles",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=25) "103 (2nd in the Open Era)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=61) "https://en.wikipedia.org/wiki/Roger_Federer_career_statistics",
+                Text: (string) (len=3) "103",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=87) "https://en.wikipedia.org/wiki/Open_Era_tennis_records_–_men's_singles#All_tournaments",
+                Text: (string) (len=19) "2nd in the Open Era",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Highest ranking",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "No. 1 (2 February 2004)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=80) "https://en.wikipedia.org/wiki/List_of_ATP_number_1_ranked_singles_tennis_players",
+                Text: (string) (len=5) "No. 1",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=26) "Grand Slam singles results",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=4) {
+          (*parser.Part)({
+            Name: (string) (len=15) "Australian Open",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=38) "W (2004, 2006, 2007, 2010, 2017, 2018)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=7) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Australian_Open",
+                Text: (string) (len=15) "Australian Open",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=68) "https://en.wikipedia.org/wiki/2004_Australian_Open_–_Men's_singles",
+                Text: (string) (len=4) "2004",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=68) "https://en.wikipedia.org/wiki/2006_Australian_Open_–_Men's_singles",
+                Text: (string) (len=4) "2006",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=68) "https://en.wikipedia.org/wiki/2007_Australian_Open_–_Men's_singles",
+                Text: (string) (len=4) "2007",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=68) "https://en.wikipedia.org/wiki/2010_Australian_Open_–_Men's_singles",
+                Text: (string) (len=4) "2010",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=68) "https://en.wikipedia.org/wiki/2017_Australian_Open_–_Men's_singles",
+                Text: (string) (len=4) "2017",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=68) "https://en.wikipedia.org/wiki/2018_Australian_Open_–_Men's_singles",
+                Text: (string) (len=4) "2018",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "French Open",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "W (2009)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/French_Open",
+                Text: (string) (len=11) "French Open",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=64) "https://en.wikipedia.org/wiki/2009_French_Open_–_Men's_singles",
+                Text: (string) (len=4) "2009",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Wimbledon",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=50) "W (2003, 2004, 2005, 2006, 2007, 2009, 2012, 2017)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=9) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Wimbledon_Championships",
+                Text: (string) (len=9) "Wimbledon",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "https://en.wikipedia.org/wiki/2003_Wimbledon_Championships_–_Men's_singles",
+                Text: (string) (len=4) "2003",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "https://en.wikipedia.org/wiki/2004_Wimbledon_Championships_–_Men's_singles",
+                Text: (string) (len=4) "2004",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "https://en.wikipedia.org/wiki/2005_Wimbledon_Championships_–_Men's_singles",
+                Text: (string) (len=4) "2005",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "https://en.wikipedia.org/wiki/2006_Wimbledon_Championships_–_Men's_singles",
+                Text: (string) (len=4) "2006",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "https://en.wikipedia.org/wiki/2007_Wimbledon_Championships_–_Men's_singles",
+                Text: (string) (len=4) "2007",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "https://en.wikipedia.org/wiki/2009_Wimbledon_Championships_–_Men's_singles",
+                Text: (string) (len=4) "2009",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "https://en.wikipedia.org/wiki/2012_Wimbledon_Championships_–_Men's_singles",
+                Text: (string) (len=4) "2012",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "https://en.wikipedia.org/wiki/2017_Wimbledon_Championships_–_Men's_singles",
+                Text: (string) (len=4) "2017",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "US Open",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=32) "W (2004, 2005, 2006, 2007, 2008)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=6) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/US_Open_(tennis)",
+                Text: (string) (len=7) "US Open",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/2004_US_Open_–_Men's_singles",
+                Text: (string) (len=4) "2004",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/2005_US_Open_–_Men's_singles",
+                Text: (string) (len=4) "2005",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/2006_US_Open_–_Men's_singles",
+                Text: (string) (len=4) "2006",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/2007_US_Open_–_Men's_singles",
+                Text: (string) (len=4) "2007",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/2008_US_Open_–_Men's_singles",
+                Text: (string) (len=4) "2008",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=17) "Other tournaments",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) (len=11) "Tour Finals",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=38) "W (2003, 2004, 2006, 2007, 2010, 2011)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=7) {
+              (*parser.Link)({
+                URL: (string) (len=51) "https://en.wikipedia.org/wiki/ATP_World_Tour_Finals",
+                Text: (string) (len=11) "Tour Finals",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=65) "https://en.wikipedia.org/wiki/2003_Tennis_Masters_Cup_–_Singles",
+                Text: (string) (len=4) "2003",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=65) "https://en.wikipedia.org/wiki/2004_Tennis_Masters_Cup_–_Singles",
+                Text: (string) (len=4) "2004",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=65) "https://en.wikipedia.org/wiki/2006_Tennis_Masters_Cup_–_Singles",
+                Text: (string) (len=4) "2006",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=65) "https://en.wikipedia.org/wiki/2007_Tennis_Masters_Cup_–_Singles",
+                Text: (string) (len=4) "2007",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=68) "https://en.wikipedia.org/wiki/2010_ATP_World_Tour_Finals_–_Singles",
+                Text: (string) (len=4) "2010",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=68) "https://en.wikipedia.org/wiki/2011_ATP_World_Tour_Finals_–_Singles",
+                Text: (string) (len=4) "2011",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Olympic Games",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "F (2012)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/Tennis_at_the_Summer_Olympics",
+                Text: (string) (len=13) "Olympic Games",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=82) "https://en.wikipedia.org/wiki/Tennis_at_the_2012_Summer_Olympics_–_Men's_singles",
+                Text: (string) (len=4) "2012",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=7) "Doubles",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) (len=13) "Career record",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=16) "131–93 (58.5%)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Career titles",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=1) "8",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Highest ranking",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=20) "No. 24 (9 June 2003)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=26) "Grand Slam doubles results",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=4) {
+          (*parser.Part)({
+            Name: (string) (len=15) "Australian Open",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "3R (2003)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Australian_Open",
+                Text: (string) (len=15) "Australian Open",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=68) "https://en.wikipedia.org/wiki/2003_Australian_Open_–_Men's_doubles",
+                Text: (string) (len=4) "2003",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "French Open",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "1R (2000)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/French_Open",
+                Text: (string) (len=11) "French Open",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=64) "https://en.wikipedia.org/wiki/2000_French_Open_–_Men's_doubles",
+                Text: (string) (len=4) "2000",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=9) "Wimbledon",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "QF (2000)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=53) "https://en.wikipedia.org/wiki/Wimbledon_Championships",
+                Text: (string) (len=9) "Wimbledon",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=76) "https://en.wikipedia.org/wiki/2000_Wimbledon_Championships_–_Men's_doubles",
+                Text: (string) (len=4) "2000",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "US Open",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=9) "3R (2002)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/US_Open_(tennis)",
+                Text: (string) (len=7) "US Open",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/2002_US_Open_–_Men's_doubles",
+                Text: (string) (len=4) "2002",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=25) "Other doubles tournaments",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) (len=13) "Olympic Games",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "W (2008)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/Tennis_at_the_Summer_Olympics",
+                Text: (string) (len=13) "Olympic Games",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=82) "https://en.wikipedia.org/wiki/Tennis_at_the_2008_Summer_Olympics_–_Men's_doubles",
+                Text: (string) (len=4) "2008",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=17) "Team competitions",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=2) {
+          (*parser.Part)({
+            Name: (string) (len=9) "Davis Cup",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=8) "W (2014)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Davis_Cup",
+                Text: (string) (len=9) "Davis Cup",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/2014_Davis_Cup_World_Group",
+                Text: (string) (len=4) "2014",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Hopman Cup",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=20) "W (2001, 2018, 2019)",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Hopman_Cup",
+                Text: (string) (len=10) "Hopman Cup",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/2001_Hopman_Cup",
+                Text: (string) (len=4) "2001",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/2018_Hopman_Cup",
+                Text: (string) (len=4) "2018",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/2019_Hopman_Cup",
+                Text: (string) (len=4) "2019",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=9) "Signature",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=1) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=133) "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Roger_Federer_Signature_2013.svg/150px-Roger_Federer_Signature_2013.svg.png",
+                Identifier: (string) (len=64) "1d5fabcdf5274543357f3bb25c4d4a997158a8e15b81cf7f978a4a8048346861",
+                Name: (string) (len=37) "File:Roger_Federer_Signature_2013.svg",
+                AlternativeText: (string) "",
+                Caption: (string) "",
+                Height: (int) 95,
+                Width: (int) 150,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=92) "Medal record Representing Switzerland Olympic Games 2008 Beijing Doubles 2012 London Singles",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=3) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "Representing Switzerland",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Switzerland",
+                Text: (string) (len=11) "Switzerland",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Olympic Games",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=20) "2008 Beijing Doubles",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=138) "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gold_medal_icon_%28G_initial%29.svg/16px-Gold_medal_icon_%28G_initial%29.svg.png",
+                Identifier: (string) (len=64) "d8cef1c13d2befc663f4044c31d720737777232a290535ced644b6d5e3afb9fb",
+                Name: (string) (len=36) "File:Gold_medal_icon_(G_initial).svg",
+                AlternativeText: (string) (len=26) "Gold medal – first place",
+                Caption: (string) (len=26) "Gold medal – first place",
+                Height: (int) 16,
+                Width: (int) 16,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/Tennis_at_the_Summer_Olympics",
+                Text: (string) (len=13) "Olympic Games",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/2008_Summer_Olympics",
+                Text: (string) (len=12) "2008 Beijing",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=82) "https://en.wikipedia.org/wiki/Tennis_at_the_2008_Summer_Olympics_–_Men's_doubles",
+                Text: (string) (len=7) "Doubles",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=19) "2012 London Singles",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=142) "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Silver_medal_icon_%28S_initial%29.svg/16px-Silver_medal_icon_%28S_initial%29.svg.png",
+                Identifier: (string) (len=64) "15aad5b1a1db4f37cae8b5d9b1a3602768882430e7932a36ab133128d99f263d",
+                Name: (string) (len=38) "File:Silver_medal_icon_(S_initial).svg",
+                AlternativeText: (string) (len=29) "Silver medal – second place",
+                Caption: (string) (len=29) "Silver medal – second place",
+                Height: (int) 16,
+                Width: (int) 16,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/2012_Summer_Olympics",
+                Text: (string) (len=11) "2012 London",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=82) "https://en.wikipedia.org/wiki/Tennis_at_the_2012_Summer_Olympics_–_Men's_singles",
+                Text: (string) (len=7) "Singles",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

@@ -1,0 +1,45 @@
+([]*parser.Reference) (len=2) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=12) "archive-date": (string) (len=10) "2007-06-27",
+      (string) (len=11) "archive-url": (string) (len=104) "https://web.archive.org/web/20070627073939/http://www.h-net.org/reviews/showrev.cgi?path=249411005252667",
+      (string) (len=8) "language": (string) (len=2) "de",
+      (string) (len=5) "title": (string) (len=116) "Das \"Stahltrust\"-Projekt. Die Gründung der Vereinigte Stahlwerke A.G. und ihre Unternehmensentwicklung 1926-1933/34",
+      (string) (len=3) "url": (string) (len=61) "http://www.h-net.org/reviews/showrev.cgi?path=249411005252667"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=173) "\"Das \"Stahltrust\"-Projekt. Die Gründung der Vereinigte Stahlwerke A.G. und ihre Unternehmensentwicklung 1926-1933/34\" (in German). Archived from the original on 2007-06-27.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=104) "https://web.archive.org/web/20070627073939/http://www.h-net.org/reviews/showrev.cgi?path=249411005252667",
+          Text: (string) (len=118) "\"Das \"Stahltrust\"-Projekt. Die Gründung der Vereinigte Stahlwerke A.G. und ihre Unternehmensentwicklung 1926-1933/34\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=61) "http://www.h-net.org/reviews/showrev.cgi?path=249411005252667",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=68) "Heinrich Brüning, Memoiren 1918–1934, DVA, Stuttgart 1970, S. 531",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

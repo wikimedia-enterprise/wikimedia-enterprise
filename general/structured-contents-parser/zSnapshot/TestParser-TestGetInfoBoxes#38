@@ -1,0 +1,898 @@
+([]*parser.Part) (len=1) {
+  (*parser.Part)({
+    Name: (string) (len=16) "Infobox software",
+    Type: (string) (len=7) "infobox",
+    Value: (string) "",
+    Values: ([]string) <nil>,
+    HasParts: ([]*parser.Part) (len=3) {
+      (*parser.Part)({
+        Name: (string) (len=13) "Google Chrome",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=9) {
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=29) "Logo used since February 2022",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=153) "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/120px-Google_Chrome_icon_%28February_2022%29.svg.png",
+                Identifier: (string) (len=64) "705c9f4c9782ad67aca6e0fc8c0a66ea77704cf14b3730906a15ec4497d4f9cc",
+                Name: (string) (len=22) "File:Google_Chrome.svg",
+                AlternativeText: (string) "",
+                Caption: (string) (len=29) "Logo used since February 2022",
+                Height: (int) 120,
+                Width: (int) 120,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=7) "drawing"
+              })
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) "",
+            Type: (string) (len=5) "image",
+            Value: (string) (len=75) "Screenshot of Google Chrome, showing the Main Page of the English Wikipedia",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) (len=1) {
+              (*parser.Image)({
+                ContentUrl: (string) (len=144) "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Google_Chrome_on_Windows_10_screenshot.png/220px-Google_Chrome_on_Windows_10_screenshot.png",
+                Identifier: (string) (len=64) "7b04f8376e9453d3511d7aa107404c369beb8daef8bd337ebb1218c0c7f2d14b",
+                Name: (string) (len=47) "File:Google_Chrome_on_Windows_10_screenshot.png",
+                AlternativeText: (string) "",
+                Caption: (string) (len=75) "Screenshot of Google Chrome, showing the Main Page of the English Wikipedia",
+                Height: (int) 124,
+                Width: (int) 220,
+                EncodingFormat: (string) (len=9) "image/png",
+                MediaType: (string) (len=6) "bitmap"
+              })
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=39) "https://en.wikipedia.org/wiki/Main_Page",
+                Text: (string) (len=9) "Main Page",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/English_Wikipedia",
+                Text: (string) (len=17) "English Wikipedia",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Developer(s)",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=6) "Google",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/Programmer",
+                Text: (string) (len=12) "Developer(s)",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/Google",
+                Text: (string) (len=6) "Google",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=15) "Initial release",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=171) "Windows Beta / September 2, 2008 Windows 1.0 / December 11, 2008 macOS, Linux Preview / June 4, 2009 macOS, Linux Beta / December 8, 2009 Multi platform 5.0 / May 25, 2010",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Windows",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=24) "Beta / September 2, 2008",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Windows",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "1.0 / December 11, 2008",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "macOS, Linux",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "Preview / June 4, 2009",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "macOS, Linux",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=23) "Beta / December 8, 2009",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=14) "Multi platform",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=18) "5.0 / May 25, 2010",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=17) "Stable release(s)",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=5) {
+          (*parser.Part)({
+            Name: (string) (len=21) "Windows, macOS, Linux",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=34) "132.0.6834.83/84 / 14 January 2025",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=8) {
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-d23674a567b65639fc405699e5ea142049babd36-v18-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-bb3839744d3517c6688452ec721d203b0d74e829-v18-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-7828488bcd5b4eb6e1ac72e0c75c70eef03102cb-v18-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-d23674a567b65639fc405699e5ea142049babd36-v18-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=21) "Windows, macOS, Linux",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=34) "132.0.6834.83/84 / 14 January 2025",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-d23674a567b65639fc405699e5ea142049babd36-v18-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Android",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=31) "132.0.6834.79 / 14 January 2025",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-bb3839744d3517c6688452ec721d203b0d74e829-v18-2",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "iOS, iPadOS",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=30) "132.0.6834.78 / 8 January 2025",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-7828488bcd5b4eb6e1ac72e0c75c70eef03102cb-v18-3",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=24) "Extended Support Release",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=34) "132.0.6834.83/84 / 14 January 2025",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-d23674a567b65639fc405699e5ea142049babd36-v18-1",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      }),
+      (*parser.Part)({
+        Name: (string) (len=18) "Preview release(s)",
+        Type: (string) (len=7) "section",
+        Value: (string) "",
+        Values: ([]string) <nil>,
+        HasParts: ([]*parser.Part) (len=13) {
+          (*parser.Part)({
+            Name: (string) (len=21) "Windows, macOS, Linux",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=31) "133.0.6943.16 / 15 January 2025",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=6) {
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-d84f410a1e1c7ea2343c9bec104ce2a1ce1c07c3-v18-4",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-89b3eb66d84d7f5726bed300ed209c9af6a55a27-v18-5",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-f2aad2b41ed4b8e6fbb2d4268068c4d9b19b2855-v18-6",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=21) "Windows, macOS, Linux",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=31) "133.0.6943.16 / 15 January 2025",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-d84f410a1e1c7ea2343c9bec104ce2a1ce1c07c3-v18-4",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Android",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=31) "133.0.6943.13 / 15 January 2025",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-89b3eb66d84d7f5726bed300ed209c9af6a55a27-v18-5",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=11) "iOS, iPadOS",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=31) "133.0.6943.14 / 15 January 2025",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=2) {
+              (*parser.Link)({
+                URL: (string) (len=109) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-wikidata-f2aad2b41ed4b8e6fbb2d4268068c4d9b19b2855-v18-6",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://www.wikidata.org/wiki/Q777?uselang=en#P348",
+                Text: (string) (len=21) "Edit this on Wikidata",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=10) "Written in",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=67) "C, C++, Assembly, HTML, Java (Android app only), JavaScript, Python",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=10) {
+              (*parser.Link)({
+                URL: (string) (len=54) "https://en.wikipedia.org/wiki/C_(programming_language)",
+                Text: (string) (len=1) "C",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=33) "https://en.wikipedia.org/wiki/C++",
+                Text: (string) (len=3) "C++",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=47) "https://en.wikipedia.org/wiki/Assembly_language",
+                Text: (string) (len=8) "Assembly",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=34) "https://en.wikipedia.org/wiki/HTML",
+                Text: (string) (len=4) "HTML",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=57) "https://en.wikipedia.org/wiki/Java_(programming_language)",
+                Text: (string) (len=4) "Java",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=40) "https://en.wikipedia.org/wiki/JavaScript",
+                Text: (string) (len=10) "JavaScript",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=59) "https://en.wikipedia.org/wiki/Python_(programming_language)",
+                Text: (string) (len=6) "Python",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-7",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-8",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=55) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-9",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Engines",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=50) "Blink (WebKit on iOS/iPadOS), V8 JavaScript engine",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=4) {
+              (*parser.Link)({
+                URL: (string) (len=45) "https://en.wikipedia.org/wiki/Software_engine",
+                Text: (string) (len=7) "Engines",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=52) "https://en.wikipedia.org/wiki/Blink_(browser_engine)",
+                Text: (string) (len=5) "Blink",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/WebKit",
+                Text: (string) (len=6) "WebKit",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/V8_JavaScript_engine",
+                Text: (string) (len=20) "V8 JavaScript engine",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=16) "Operating system",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=7) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=21) "Android Oreo or later",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=42) "https://en.wikipedia.org/wiki/Android_Oreo",
+                    Text: (string) (len=12) "Android Oreo",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=56) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-10",
+                    Text: (string) "",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=8) "ChromeOS",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=38) "https://en.wikipedia.org/wiki/ChromeOS",
+                    Text: (string) (len=8) "ChromeOS",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=15) "iOS 16 or later",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=2) {
+                  (*parser.Link)({
+                    URL: (string) (len=36) "https://en.wikipedia.org/wiki/IOS_16",
+                    Text: (string) (len=6) "iOS 16",
+                    Images: ([]*parser.Image) <nil>
+                  }),
+                  (*parser.Link)({
+                    URL: (string) (len=66) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-iOSlatest-11",
+                    Text: (string) "",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=18) "iPadOS 16 or later",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=39) "https://en.wikipedia.org/wiki/IPadOS_16",
+                    Text: (string) (len=9) "iPadOS 16",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=5) "Linux",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=35) "https://en.wikipedia.org/wiki/Linux",
+                    Text: (string) (len=5) "Linux",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=22) "macOS Big Sur or later",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=43) "https://en.wikipedia.org/wiki/MacOS_Big_Sur",
+                    Text: (string) (len=13) "macOS Big Sur",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=19) "Windows 10 or later",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=40) "https://en.wikipedia.org/wiki/Windows_10",
+                    Text: (string) (len=10) "Windows 10",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Operating_system",
+                Text: (string) (len=16) "Operating system",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=8) "Platform",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=29) "IA-32, x86-64, ARMv7, ARMv8-A",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=48) "https://en.wikipedia.org/wiki/Computing_platform",
+                Text: (string) (len=8) "Platform",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/IA-32",
+                Text: (string) (len=5) "IA-32",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=36) "https://en.wikipedia.org/wiki/X86-64",
+                Text: (string) (len=6) "x86-64",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=35) "https://en.wikipedia.org/wiki/ARMv7",
+                Text: (string) (len=5) "ARMv7",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=37) "https://en.wikipedia.org/wiki/ARMv8-A",
+                Text: (string) (len=7) "ARMv8-A",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=13) "Included with",
+            Type: (string) (len=4) "list",
+            Value: (string) "",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) (len=2) {
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=21) "Android Oreo or later",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=42) "https://en.wikipedia.org/wiki/Android_Oreo",
+                    Text: (string) (len=12) "Android Oreo",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              }),
+              (*parser.Part)({
+                Name: (string) "",
+                Type: (string) (len=9) "list_item",
+                Value: (string) (len=8) "ChromeOS",
+                Values: ([]string) <nil>,
+                HasParts: ([]*parser.Part) <nil>,
+                Images: ([]*parser.Image) <nil>,
+                Links: ([]*parser.Link) (len=1) {
+                  (*parser.Link)({
+                    URL: (string) (len=38) "https://en.wikipedia.org/wiki/ChromeOS",
+                    Text: (string) (len=8) "ChromeOS",
+                    Images: ([]*parser.Image) <nil>
+                  })
+                },
+                Citations: ([]*parser.Citation) <nil>,
+                TableReferences: ([]parser.TableReference) <nil>
+              })
+            },
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) {
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=12) "Available in",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=12) "47 languages",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-12",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=4) "Type",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=27) "Web browser, mobile browser",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=3) {
+              (*parser.Link)({
+                URL: (string) (len=75) "https://en.wikipedia.org/wiki/Software_categories#Categorization_approaches",
+                Text: (string) (len=4) "Type",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=41) "https://en.wikipedia.org/wiki/Web_browser",
+                Text: (string) (len=11) "Web browser",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=44) "https://en.wikipedia.org/wiki/Mobile_browser",
+                Text: (string) (len=14) "mobile browser",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "License",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=53) "Proprietary freeware, based on open source components",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=5) {
+              (*parser.Link)({
+                URL: (string) (len=46) "https://en.wikipedia.org/wiki/Software_license",
+                Text: (string) (len=7) "License",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=50) "https://en.wikipedia.org/wiki/Proprietary_software",
+                Text: (string) (len=11) "Proprietary",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=38) "https://en.wikipedia.org/wiki/Freeware",
+                Text: (string) (len=8) "freeware",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=60) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-TOS-13",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              }),
+              (*parser.Link)({
+                URL: (string) (len=56) "https://en.wikipedia.org/wiki/Google_Chrome#cite_note-14",
+                Text: (string) "",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          }),
+          (*parser.Part)({
+            Name: (string) (len=7) "Website",
+            Type: (string) (len=5) "field",
+            Value: (string) (len=22) "www.google.com/chrome/",
+            Values: ([]string) <nil>,
+            HasParts: ([]*parser.Part) <nil>,
+            Images: ([]*parser.Image) {
+            },
+            Links: ([]*parser.Link) (len=1) {
+              (*parser.Link)({
+                URL: (string) (len=30) "https://www.google.com/chrome/",
+                Text: (string) (len=22) "www.google.com/chrome/",
+                Images: ([]*parser.Image) <nil>
+              })
+            },
+            Citations: ([]*parser.Citation) <nil>,
+            TableReferences: ([]parser.TableReference) <nil>
+          })
+        },
+        Images: ([]*parser.Image) <nil>,
+        Links: ([]*parser.Link) <nil>,
+        Citations: ([]*parser.Citation) <nil>,
+        TableReferences: ([]parser.TableReference) <nil>
+      })
+    },
+    Images: ([]*parser.Image) <nil>,
+    Links: ([]*parser.Link) <nil>,
+    Citations: ([]*parser.Citation) <nil>,
+    TableReferences: ([]parser.TableReference) <nil>
+  })
+}

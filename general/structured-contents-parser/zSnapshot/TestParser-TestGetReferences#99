@@ -1,0 +1,1058 @@
+([]*parser.Reference) (len=30) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=140) "\"Stanley Meltzoff Archives: The 1976 Bell System Telephone Book Cover\" JKL Museum of Telephony (December 19, 2015); retrieved March 16, 2021",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=47) "https://www.jklmuseum.com/tag/stanley-meltzoff/",
+          Text: (string) (len=70) "\"Stanley Meltzoff Archives: The 1976 Bell System Telephone Book Cover\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=53) "https://en.wikipedia.org/wiki/JKL_Museum_of_Telephony",
+          Text: (string) (len=23) "JKL Museum of Telephony",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=10) "2025-08-25",
+      (string) (len=5) "title": (string) (len=17) "George Washington",
+      (string) (len=3) "url": (string) (len=66) "https://localhost:5000/exhibitions/listings/2004/george-washington",
+      (string) (len=7) "website": (string) (len=30) "The Metropolitan Museum of Art"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=74) "\"George Washington\". The Metropolitan Museum of Art. Retrieved 2025-08-25.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=66) "https://localhost:5000/exhibitions/listings/2004/george-washington",
+          Text: (string) (len=19) "\"George Washington\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=5) "first": (string) (len=7) "William",
+      (string) (len=4) "isbn": (string) (len=13) "9780271035796",
+      (string) (len=4) "last": (string) (len=6) "Pencak",
+      (string) (len=4) "page": (string) (len=3) "337",
+      (string) (len=9) "publisher": (string) (len=20) "[[Penn State Press]]",
+      (string) (len=5) "title": (string) (len=25) "Pennsylvania's Revolution",
+      (string) (len=3) "url": (string) (len=55) "https://books.google.com/books?id=UpUkkL7BPUEC&pg=PA337",
+      (string) (len=4) "year": (string) (len=4) "2010"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=96) "Pencak, William (2010). Pennsylvania's Revolution. Penn State Press. p. 337. ISBN 9780271035796.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=55) "https://books.google.com/books?id=UpUkkL7BPUEC&pg=PA337",
+          Text: (string) (len=25) "Pennsylvania's Revolution",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Penn_State_Press",
+          Text: (string) (len=16) "Penn State Press",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9780271035796",
+          Text: (string) (len=13) "9780271035796",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=16) "19 February 2019",
+      (string) (len=4) "date": (string) (len=12) "30 July 2013",
+      (string) (len=5) "title": (string) (len=30) "The Battle Cry of Peace (1915)",
+      (string) (len=3) "url": (string) (len=57) "https://web.stanford.edu/~gdegroat/NT/oldreviews/bcop.htm",
+      (string) (len=4) "work": (string) (len=23) "[[Stanford University]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=96) "\"The Battle Cry of Peace (1915)\". Stanford University. 30 July 2013. Retrieved 19 February 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=57) "https://web.stanford.edu/~gdegroat/NT/oldreviews/bcop.htm",
+          Text: (string) (len=32) "\"The Battle Cry of Peace (1915)\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://en.wikipedia.org/wiki/Stanford_University",
+          Text: (string) (len=19) "Stanford University",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=6) "first1": (string) (len=11) "Sarah Miles",
+      (string) (len=6) "first2": (string) (len=9) "Thomas J.",
+      (string) (len=4) "isbn": (string) (len=13) "9780786424818",
+      (string) (len=5) "last1": (string) (len=5) "Bolam",
+      (string) (len=5) "last2": (string) (len=5) "Bolam",
+      (string) (len=5) "pages": (string) (len=3) "392",
+      (string) (len=9) "publisher": (string) (len=23) "[[McFarland & Company]]",
+      (string) (len=5) "title": (string) (len=106) "The Presidents on Film: A Comprehensive Filmography of Portrayals from George Washington to George W. Bush",
+      (string) (len=3) "url": (string) (len=46) "https://books.google.com/books?id=lvBkAAAAMAAJ",
+      (string) (len=4) "year": (string) (len=4) "2007"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=201) "Bolam, Sarah Miles; Bolam, Thomas J. (2007). The Presidents on Film: A Comprehensive Filmography of Portrayals from George Washington to George W. Bush. McFarland & Company. p. 392. ISBN 9780786424818.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=46) "https://books.google.com/books?id=lvBkAAAAMAAJ",
+          Text: (string) (len=106) "The Presidents on Film: A Comprehensive Filmography of Portrayals from George Washington to George W. Bush",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://en.wikipedia.org/wiki/McFarland_&_Company",
+          Text: (string) (len=19) "McFarland & Company",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9780786424818",
+          Text: (string) (len=13) "9780786424818",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=5) "first": (string) (len=7) "Patrick",
+      (string) (len=4) "isbn": (string) (len=13) "9780851129082",
+      (string) (len=4) "last": (string) (len=9) "Robertson",
+      (string) (len=4) "page": (string) (len=63) "[https://archive.org/details/guinnessmoviefac00robe/page/49 49]",
+      (string) (len=9) "publisher": (string) (len=23) "[[Guinness Publishing]]",
+      (string) (len=5) "title": (string) (len=28) "Guinness Movie Facts & Feats",
+      (string) (len=3) "url": (string) (len=50) "https://archive.org/details/guinnessmoviefac00robe",
+      (string) (len=10) "url-access": (string) (len=12) "registration",
+      (string) (len=4) "year": (string) (len=4) "1991"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=104) "Robertson, Patrick (1991). Guinness Movie Facts & Feats. Guinness Publishing. p. 49. ISBN 9780851129082.",
+      Links: ([]*parser.Link) (len=5) {
+        (*parser.Link)({
+          URL: (string) (len=50) "https://archive.org/details/guinnessmoviefac00robe",
+          Text: (string) (len=28) "Guinness Movie Facts & Feats",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://en.wikipedia.org/wiki/Guinness_Publishing",
+          Text: (string) (len=19) "Guinness Publishing",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=58) "https://archive.org/details/guinnessmoviefac00robe/page/49",
+          Text: (string) (len=2) "49",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9780851129082",
+          Text: (string) (len=13) "9780851129082",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=4) "date": (string) (len=14) "1 January 2009",
+      (string) (len=5) "first": (string) (len=7) "Mark S.",
+      (string) (len=4) "isbn": (string) (len=13) "9780786452613",
+      (string) (len=4) "last": (string) (len=8) "Reinhart",
+      (string) (len=4) "page": (string) (len=2) "46",
+      (string) (len=9) "publisher": (string) (len=24) "[[McFarland Publishing]]",
+      (string) (len=5) "title": (string) (len=86) "Abraham Lincoln on Screen: Fictional and Documentary Portrayals on Film and Television",
+      (string) (len=3) "url": (string) (len=54) "https://books.google.com/books?id=Zio49y0tiE0C&pg=PA46"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=172) "Reinhart, Mark S. (1 January 2009). Abraham Lincoln on Screen: Fictional and Documentary Portrayals on Film and Television. McFarland Publishing. p. 46. ISBN 9780786452613.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=54) "https://books.google.com/books?id=Zio49y0tiE0C&pg=PA46",
+          Text: (string) (len=86) "Abraham Lincoln on Screen: Fictional and Documentary Portrayals on Film and Television",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://en.wikipedia.org/wiki/McFarland_Publishing",
+          Text: (string) (len=20) "McFarland Publishing",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9780786452613",
+          Text: (string) (len=13) "9780786452613",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=4) "date": (string) (len=15) "16 October 2015",
+      (string) (len=5) "first": (string) (len=7) "Michael",
+      (string) (len=4) "isbn": (string) (len=13) "9781442240025",
+      (string) (len=4) "last": (string) (len=6) "Hilger",
+      (string) (len=4) "page": (string) (len=3) "332",
+      (string) (len=9) "publisher": (string) (len=24) "[[Rowman & Littlefield]]",
+      (string) (len=5) "title": (string) (len=75) "Native Americans in the Movies: Portrayals from Silent Films to the Present",
+      (string) (len=3) "url": (string) (len=55) "https://books.google.com/books?id=9PuICgAAQBAJ&pg=PA332"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=161) "Hilger, Michael (16 October 2015). Native Americans in the Movies: Portrayals from Silent Films to the Present. Rowman & Littlefield. p. 332. ISBN 9781442240025.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=55) "https://books.google.com/books?id=9PuICgAAQBAJ&pg=PA332",
+          Text: (string) (len=75) "Native Americans in the Movies: Portrayals from Silent Films to the Present",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://en.wikipedia.org/wiki/Rowman_&_Littlefield",
+          Text: (string) (len=20) "Rowman & Littlefield",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9781442240025",
+          Text: (string) (len=13) "9781442240025",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=4) "date": (string) (len=13) "24 March 2004",
+      (string) (len=5) "first": (string) (len=8) "Peter C.",
+      (string) (len=4) "isbn": (string) (len=13) "9780231508391",
+      (string) (len=4) "last": (string) (len=7) "Rollins",
+      (string) (len=4) "page": (string) (len=3) "201",
+      (string) (len=9) "publisher": (string) (len=29) "[[Columbia University Press]]",
+      (string) (len=5) "title": (string) (len=99) "The Columbia Companion to American History on Film: How the Movies Have Portrayed the American Past",
+      (string) (len=3) "url": (string) (len=55) "https://books.google.com/books?id=iAMb9q7cqAgC&pg=PA201"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=190) "Rollins, Peter C. (24 March 2004). The Columbia Companion to American History on Film: How the Movies Have Portrayed the American Past. Columbia University Press. p. 201. ISBN 9780231508391.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=55) "https://books.google.com/books?id=iAMb9q7cqAgC&pg=PA201",
+          Text: (string) (len=99) "The Columbia Companion to American History on Film: How the Movies Have Portrayed the American Past",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=55) "https://en.wikipedia.org/wiki/Columbia_University_Press",
+          Text: (string) (len=25) "Columbia University Press",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9780231508391",
+          Text: (string) (len=13) "9780231508391",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=4) "date": (string) (len=15) "10 January 2014",
+      (string) (len=5) "first": (string) (len=9) "Robert A.",
+      (string) (len=4) "isbn": (string) (len=13) "9781476601182",
+      (string) (len=4) "last": (string) (len=6) "Nowlan",
+      (string) (len=4) "page": (string) (len=2) "68",
+      (string) (len=9) "publisher": (string) (len=24) "[[McFarland Publishing]]",
+      (string) (len=5) "title": (string) (len=125) "The American Presidents, Washington to Tyler: What They Did, What They Said, What Was Said About Them, with Full Source Notes",
+      (string) (len=3) "url": (string) (len=54) "https://books.google.com/books?id=MlNWU1e9ppUC&pg=PA68"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=212) "Nowlan, Robert A. (10 January 2014). The American Presidents, Washington to Tyler: What They Did, What They Said, What Was Said About Them, with Full Source Notes. McFarland Publishing. p. 68. ISBN 9781476601182.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=54) "https://books.google.com/books?id=MlNWU1e9ppUC&pg=PA68",
+          Text: (string) (len=125) "The American Presidents, Washington to Tyler: What They Did, What They Said, What Was Said About Them, with Full Source Notes",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://en.wikipedia.org/wiki/McFarland_Publishing",
+          Text: (string) (len=20) "McFarland Publishing",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9781476601182",
+          Text: (string) (len=13) "9781476601182",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-11",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=11) "access-date": (string) (len=16) "19 February 2019",
+      (string) (len=12) "archive-date": (string) (len=13) "11 March 2016",
+      (string) (len=11) "archive-url": (string) (len=113) "https://web.archive.org/web/20160311091438/http://articles.latimes.com/1994-09-15/news/mn-38764_1_versatile-actor",
+      (string) (len=4) "date": (string) (len=17) "15 September 1994",
+      (string) (len=5) "first": (string) (len=5) "Myrna",
+      (string) (len=4) "last": (string) (len=6) "Oliver",
+      (string) (len=9) "newspaper": (string) (len=21) "[[Los Angeles Times]]",
+      (string) (len=5) "title": (string) (len=45) "Patrick O'Neal; Versatile Actor, Restaurateur",
+      (string) (len=3) "url": (string) (len=70) "https://www.latimes.com/archives/la-xpm-1994-09-15-mn-38764-story.html",
+      (string) (len=10) "url-status": (string) (len=4) "live"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=175) "Oliver, Myrna (15 September 1994). \"Patrick O'Neal; Versatile Actor, Restaurateur\". Los Angeles Times. Archived from the original on 11 March 2016. Retrieved 19 February 2019.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=70) "https://www.latimes.com/archives/la-xpm-1994-09-15-mn-38764-story.html",
+          Text: (string) (len=47) "\"Patrick O'Neal; Versatile Actor, Restaurateur\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/Los_Angeles_Times",
+          Text: (string) (len=17) "Los Angeles Times",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=113) "https://web.archive.org/web/20160311091438/http://articles.latimes.com/1994-09-15/news/mn-38764_1_versatile-actor",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-12",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=16) "19 February 2019",
+      (string) (len=4) "date": (string) (len=16) "18 February 2019",
+      (string) (len=5) "first": (string) (len=3) "Joe",
+      (string) (len=4) "last": (string) (len=9) "Sommerlad",
+      (string) (len=9) "newspaper": (string) (len=39) "[[Independent (newspaper)|Independent]]",
+      (string) (len=5) "title": (string) (len=128) "President's Day: How the 'leader of the free world' has been played on screen, from conflicted statesmen to heroic action heroes",
+      (string) (len=3) "url": (string) (len=175) "https://www.independent.co.uk/arts-entertainment/films/features/presidents-day-donald-trump-films-lincoln-jfk-nixon-independence-day-west-wing-house-of-cards-snl-a8784406.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=207) "Sommerlad, Joe (18 February 2019). \"President's Day: How the 'leader of the free world' has been played on screen, from conflicted statesmen to heroic action heroes\". Independent. Retrieved 19 February 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=175) "https://www.independent.co.uk/arts-entertainment/films/features/presidents-day-donald-trump-films-lincoln-jfk-nixon-independence-day-west-wing-house-of-cards-snl-a8784406.html",
+          Text: (string) (len=130) "\"President's Day: How the 'leader of the free world' has been played on screen, from conflicted statesmen to heroic action heroes\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=53) "https://en.wikipedia.org/wiki/Independent_(newspaper)",
+          Text: (string) (len=11) "Independent",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-13",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=16) "19 February 2019",
+      (string) (len=4) "date": (string) (len=16) "10 February 2008",
+      (string) (len=5) "first": (string) (len=5) "Frank",
+      (string) (len=7) "journal": (string) (len=26) "[[The Hollywood Reporter]]",
+      (string) (len=4) "last": (string) (len=6) "Scheck",
+      (string) (len=5) "title": (string) (len=17) "An American Carol",
+      (string) (len=3) "url": (string) (len=65) "https://www.hollywoodreporter.com/review/an-american-carol-125391"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=106) "Scheck, Frank (10 February 2008). \"An American Carol\". The Hollywood Reporter. Retrieved 19 February 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=65) "https://www.hollywoodreporter.com/review/an-american-carol-125391",
+          Text: (string) (len=19) "\"An American Carol\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://en.wikipedia.org/wiki/The_Hollywood_Reporter",
+          Text: (string) (len=22) "The Hollywood Reporter",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-14",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=11) "access-date": (string) (len=16) "19 February 2019",
+      (string) (len=12) "archive-date": (string) (len=16) "20 February 2019",
+      (string) (len=11) "archive-url": (string) (len=106) "https://web.archive.org/web/20190220002850/http://www.urchicago.com/reviews/2015/9/17/beyond-the-mask.html",
+      (string) (len=4) "date": (string) (len=17) "17 September 2015",
+      (string) (len=5) "first": (string) (len=6) "Justin",
+      (string) (len=7) "journal": (string) (len=14) "[[UR Chicago]]",
+      (string) (len=4) "last": (string) (len=6) "Tucker",
+      (string) (len=5) "title": (string) (len=27) "Beyond the Mask – REVIEWS",
+      (string) (len=3) "url": (string) (len=63) "http://www.urchicago.com/reviews/2015/9/17/beyond-the-mask.html",
+      (string) (len=10) "url-status": (string) (len=4) "dead"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=154) "Tucker, Justin (17 September 2015). \"Beyond the Mask – REVIEWS\". UR Chicago. Archived from the original on 20 February 2019. Retrieved 19 February 2019.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=106) "https://web.archive.org/web/20190220002850/http://www.urchicago.com/reviews/2015/9/17/beyond-the-mask.html",
+          Text: (string) (len=29) "\"Beyond the Mask – REVIEWS\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=40) "https://en.wikipedia.org/wiki/UR_Chicago",
+          Text: (string) (len=10) "UR Chicago",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "http://www.urchicago.com/reviews/2015/9/17/beyond-the-mask.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-15",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=16) "October 25, 2021",
+      (string) (len=4) "date": (string) (len=13) "June 30, 2021",
+      (string) (len=5) "first": (string) (len=5) "Inkoo",
+      (string) (len=4) "last": (string) (len=4) "Kang",
+      (string) (len=9) "newspaper": (string) (len=23) "[[The Washington Post]]",
+      (string) (len=5) "title": (string) (len=102) "A beefy George Washington avenges Lincoln's death in this cheekily inaccurate and dumb animated comedy",
+      (string) (len=3) "url": (string) (len=144) "https://www.washingtonpost.com/goingoutguide/movies/america-the-motion-picture-review/2021/06/28/394f6d36-d520-11eb-ae54-515e2f63d37d_story.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=183) "Kang, Inkoo (June 30, 2021). \"A beefy George Washington avenges Lincoln's death in this cheekily inaccurate and dumb animated comedy\". The Washington Post. Retrieved October 25, 2021.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=144) "https://www.washingtonpost.com/goingoutguide/movies/america-the-motion-picture-review/2021/06/28/394f6d36-d520-11eb-ae54-515e2f63d37d_story.html",
+          Text: (string) (len=104) "\"A beefy George Washington avenges Lincoln's death in this cheekily inaccurate and dumb animated comedy\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://en.wikipedia.org/wiki/The_Washington_Post",
+          Text: (string) (len=19) "The Washington Post",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-16",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=16) "19 February 2019",
+      (string) (len=4) "date": (string) (len=16) "30 November 1975",
+      (string) (len=5) "first": (string) (len=4) "Paul",
+      (string) (len=4) "last": (string) (len=8) "Henniger",
+      (string) (len=9) "newspaper": (string) (len=33) "[[The San Bernardino County Sun]]",
+      (string) (len=4) "page": (string) (len=2) "50",
+      (string) (len=5) "title": (string) (len=49) "Richard Basehart to star in 'Valley Forg' special",
+      (string) (len=3) "url": (string) (len=76) "https://www.newspapers.com/clip/2754204/richard_basehart_as_washington_1975/",
+      (string) (len=3) "via": (string) (len=18) "[[Newspapers.com]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=176) "Henniger, Paul (30 November 1975). \"Richard Basehart to star in 'Valley Forg' special\". The San Bernardino County Sun. p. 50. Retrieved 19 February 2019 – via Newspapers.com.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=76) "https://www.newspapers.com/clip/2754204/richard_basehart_as_washington_1975/",
+          Text: (string) (len=51) "\"Richard Basehart to star in 'Valley Forg' special\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=59) "https://en.wikipedia.org/wiki/The_San_Bernardino_County_Sun",
+          Text: (string) (len=29) "The San Bernardino County Sun",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=44) "https://en.wikipedia.org/wiki/Newspapers.com",
+          Text: (string) (len=14) "Newspapers.com",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-17",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=16) "19 February 2019",
+      (string) (len=4) "date": (string) (len=11) "26 May 1976",
+      (string) (len=9) "newspaper": (string) (len=18) "[[Salina Journal]]",
+      (string) (len=4) "page": (string) (len=2) "15",
+      (string) (len=5) "title": (string) (len=27) "Goodson attacks \"gimmickry\"",
+      (string) (len=3) "url": (string) (len=61) "https://newspaperarchive.com/salina-journal-may-26-1976-p-15/",
+      (string) (len=3) "via": (string) (len=20) "[[Newspaperarchive]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=119) "\"Goodson attacks \"gimmickry\"\". Salina Journal. 26 May 1976. p. 15. Retrieved 19 February 2019 – via Newspaperarchive.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=61) "https://newspaperarchive.com/salina-journal-may-26-1976-p-15/",
+          Text: (string) (len=30) "\"Goodson attacks \"gimmickry\" \"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=44) "https://en.wikipedia.org/wiki/Salina_Journal",
+          Text: (string) (len=14) "Salina Journal",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "https://en.wikipedia.org/wiki/Newspaperarchive",
+          Text: (string) (len=16) "Newspaperarchive",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-18",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=4) "date": (string) (len=17) "30 September 2008",
+      (string) (len=5) "first": (string) (len=7) "Michael",
+      (string) (len=4) "isbn": (string) (len=13) "9781861895776",
+      (string) (len=4) "last": (string) (len=5) "Coyne",
+      (string) (len=4) "page": (string) (len=2) "60",
+      (string) (len=9) "publisher": (string) (len=18) "[[Reaktion Books]]",
+      (string) (len=5) "title": (string) (len=57) "Hollywood Goes to Washington: American Politics on Screen",
+      (string) (len=3) "url": (string) (len=54) "https://books.google.com/books?id=36mh2mnlxVIC&pg=PT60"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=137) "Coyne, Michael (30 September 2008). Hollywood Goes to Washington: American Politics on Screen. Reaktion Books. p. 60. ISBN 9781861895776.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=54) "https://books.google.com/books?id=36mh2mnlxVIC&pg=PT60",
+          Text: (string) (len=57) "Hollywood Goes to Washington: American Politics on Screen",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=44) "https://en.wikipedia.org/wiki/Reaktion_Books",
+          Text: (string) (len=14) "Reaktion Books",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9781861895776",
+          Text: (string) (len=13) "9781861895776",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-19",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=4) "date": (string) (len=15) "11 October 2012",
+      (string) (len=5) "first": (string) (len=5) "J. F.",
+      (string) (len=4) "isbn": (string) (len=13) "9781409051718",
+      (string) (len=4) "last": (string) (len=7) "Roberts",
+      (string) (len=4) "page": (string) (len=3) "258",
+      (string) (len=9) "publisher": (string) (len=16) "[[Random House]]",
+      (string) (len=5) "title": (string) (len=93) "The True History of the Blackadder: The Unadulterated Tale of the Creation of a Comedy Legend",
+      (string) (len=3) "url": (string) (len=55) "https://books.google.com/books?id=x9C6eIHrKE8C&pg=PA258"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=170) "Roberts, J. F. (11 October 2012). The True History of the Blackadder: The Unadulterated Tale of the Creation of a Comedy Legend. Random House. p. 258. ISBN 9781409051718.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=55) "https://books.google.com/books?id=x9C6eIHrKE8C&pg=PA258",
+          Text: (string) (len=93) "The True History of the Blackadder: The Unadulterated Tale of the Creation of a Comedy Legend",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://en.wikipedia.org/wiki/Random_House",
+          Text: (string) (len=12) "Random House",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9781409051718",
+          Text: (string) (len=13) "9781409051718",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-20",
+    Group: (string) "",
+    Type: (string) (len=7) "journal",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=16) "19 February 2019",
+      (string) (len=4) "date": (string) (len=14) "3 January 2001",
+      (string) (len=5) "first": (string) (len=7) "Michael",
+      (string) (len=7) "journal": (string) (len=30) "[[Variety (magazine)|Variety]]",
+      (string) (len=4) "last": (string) (len=6) "Speier",
+      (string) (len=9) "publisher": (string) (len=31) "[[Penske Business Media, LLC.]]",
+      (string) (len=5) "title": (string) (len=12) "The Crossing",
+      (string) (len=3) "url": (string) (len=62) "https://variety.com/2000/tv/reviews/the-crossing-2-1117775533/"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=114) "Speier, Michael (3 January 2001). \"The Crossing\". Variety. Penske Business Media, LLC. Retrieved 19 February 2019.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=62) "https://variety.com/2000/tv/reviews/the-crossing-2-1117775533/",
+          Text: (string) (len=14) "\"The Crossing\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/Variety_(magazine)",
+          Text: (string) (len=7) "Variety",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=57) "https://en.wikipedia.org/wiki/Penske_Business_Media,_LLC.",
+          Text: (string) (len=27) "Penske Business Media, LLC.",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-21",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=16) "19 February 2019",
+      (string) (len=4) "date": (string) (len=15) "13 January 2003",
+      (string) (len=5) "first": (string) (len=3) "Ron",
+      (string) (len=4) "last": (string) (len=10) "Wertheimer",
+      (string) (len=9) "newspaper": (string) (len=22) "[[The New York Times]]",
+      (string) (len=4) "page": (string) (len=1) "5",
+      (string) (len=5) "title": (string) (len=75) "TELEVISION REVIEW; Is That You, Mr. W., or a Dream Sequence from 'Frasier'?",
+      (string) (len=3) "url": (string) (len=112) "https://www.nytimes.com/2003/01/13/arts/television-review-is-that-you-mr-w-or-a-dream-sequence-from-frasier.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=167) "Wertheimer, Ron (13 January 2003). \"TELEVISION REVIEW; Is That You, Mr. W., or a Dream Sequence from 'Frasier'?\". The New York Times. p. 5. Retrieved 19 February 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=112) "https://www.nytimes.com/2003/01/13/arts/television-review-is-that-you-mr-w-or-a-dream-sequence-from-frasier.html",
+          Text: (string) (len=77) "\"TELEVISION REVIEW; Is That You, Mr. W., or a Dream Sequence from 'Frasier'?\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=48) "https://en.wikipedia.org/wiki/The_New_York_Times",
+          Text: (string) (len=18) "The New York Times",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-22",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=2) {
+      (string) (len=5) "title": (string) (len=17) "George Washington",
+      (string) (len=3) "url": (string) (len=57) "https://www.ibdb.com/broadway-show/george-washington-3818"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=20) "\"George Washington\".",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=57) "https://www.ibdb.com/broadway-show/george-washington-3818",
+          Text: (string) (len=19) "\"George Washington\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-23",
+    Group: (string) "",
+    Type: (string) (len=4) "isbn",
+    Metadata: (map[string]string) (len=1) {
+      (string) (len=1) "1": (string) (len=17) "978-1-44-386234-9"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=123) "Winnerling, Tobias and Kershbaumer, Florian. Early Modernity and Video Games. ISBN 978-1-44-386234-9, p. 70, 106, 148, 160.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=94) "https://books.google.com/books?id=3s8xBwAAQBAJ&dq=George+Washington+is+in+video+games&pg=PA213",
+          Text: (string) (len=31) "Early Modernity and Video Games",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=67) "https://en.wikipedia.org/wiki/Special:BookSources/978-1-44-386234-9",
+          Text: (string) (len=17) "978-1-44-386234-9",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-24",
+    Group: (string) "",
+    Type: (string) (len=4) "book",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=4) "date": (string) (len=11) "9 July 2018",
+      (string) (len=5) "first": (string) (len=5) "Brett",
+      (string) (len=4) "isbn": (string) (len=13) "9780786492312",
+      (string) (len=4) "last": (string) (len=5) "Weiss",
+      (string) (len=4) "page": (string) (len=3) "132",
+      (string) (len=9) "publisher": (string) (len=24) "[[McFarland Publishing]]",
+      (string) (len=5) "title": (string) (len=104) "Classic Home Video Games, 1989–1990: A Complete Guide to Sega Genesis, Neo Geo and TurboGrafx-16 Games",
+      (string) (len=3) "url": (string) (len=55) "https://books.google.com/books?id=lmRjDwAAQBAJ&pg=PA132"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=183) "Weiss, Brett (9 July 2018). Classic Home Video Games, 1989–1990: A Complete Guide to Sega Genesis, Neo Geo and TurboGrafx-16 Games. McFarland Publishing. p. 132. ISBN 9780786492312.",
+      Links: ([]*parser.Link) (len=4) {
+        (*parser.Link)({
+          URL: (string) (len=55) "https://books.google.com/books?id=lmRjDwAAQBAJ&pg=PA132",
+          Text: (string) (len=104) "Classic Home Video Games, 1989–1990: A Complete Guide to Sega Genesis, Neo Geo and TurboGrafx-16 Games",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://en.wikipedia.org/wiki/McFarland_Publishing",
+          Text: (string) (len=20) "McFarland Publishing",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/ISBN_(identifier)",
+          Text: (string) (len=4) "ISBN",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=63) "https://en.wikipedia.org/wiki/Special:BookSources/9780786492312",
+          Text: (string) (len=13) "9780786492312",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-25",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=8) {
+      (string) (len=11) "access-date": (string) (len=16) "27 November 2019",
+      (string) (len=4) "date": (string) (len=11) "8 June 2015",
+      (string) (len=5) "first": (string) (len=4) "Paul",
+      (string) (len=4) "last": (string) (len=8) "Tamburro",
+      (string) (len=9) "publisher": (string) (len=16) "Evolve Media LLC",
+      (string) (len=5) "title": (string) (len=72) "New Prince of Persia Game to be Revealed at E3, According to Voice Actor",
+      (string) (len=3) "url": (string) (len=93) "https://www.mandatory.com/fun/864885-new-prince-persia-game-revealed-e3-according-voice-actor",
+      (string) (len=4) "work": (string) (len=17) "[[Mandatory.com]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=166) "Tamburro, Paul (8 June 2015). \"New Prince of Persia Game to be Revealed at E3, According to Voice Actor\". Mandatory.com. Evolve Media LLC. Retrieved 27 November 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=93) "https://www.mandatory.com/fun/864885-new-prince-persia-game-revealed-e3-according-voice-actor",
+          Text: (string) (len=74) "\"New Prince of Persia Game to be Revealed at E3, According to Voice Actor\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=43) "https://en.wikipedia.org/wiki/Mandatory.com",
+          Text: (string) (len=13) "Mandatory.com",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-26",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=16) "27 November 2019",
+      (string) (len=4) "date": (string) (len=14) "3 October 2012",
+      (string) (len=5) "first": (string) (len=4) "Jeff",
+      (string) (len=4) "last": (string) (len=5) "Grubb",
+      (string) (len=5) "title": (string) (len=76) "George Washington stars as the villain in Assassin's Creed III extra content",
+      (string) (len=3) "url": (string) (len=75) "https://venturebeat.com/2012/10/03/evil-washington-assassins-creed-iii-dlc/",
+      (string) (len=4) "work": (string) (len=16) "[[Venture Beat]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=151) "Grubb, Jeff (3 October 2012). \"George Washington stars as the villain in Assassin's Creed III extra content\". Venture Beat. Retrieved 27 November 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=75) "https://venturebeat.com/2012/10/03/evil-washington-assassins-creed-iii-dlc/",
+          Text: (string) (len=78) "\"George Washington stars as the villain in Assassin's Creed III extra content\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=42) "https://en.wikipedia.org/wiki/Venture_Beat",
+          Text: (string) (len=12) "Venture Beat",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-27",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=15) "27 January 2022",
+      (string) (len=4) "date": (string) (len=13) "22 March 2013",
+      (string) (len=5) "first": (string) (len=4) "Ryan",
+      (string) (len=4) "last": (string) (len=9) "McCaffrey",
+      (string) (len=5) "title": (string) (len=27) "BioShock Infinite PC Review",
+      (string) (len=3) "url": (string) (len=67) "https://www.ign.com/articles/2013/03/22/bioshock-infinite-pc-review",
+      (string) (len=7) "website": (string) (len=7) "[[IGN]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=95) "McCaffrey, Ryan (22 March 2013). \"BioShock Infinite PC Review\". IGN. Retrieved 27 January 2022.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=67) "https://www.ign.com/articles/2013/03/22/bioshock-infinite-pc-review",
+          Text: (string) (len=29) "\"BioShock Infinite PC Review\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=33) "https://en.wikipedia.org/wiki/IGN",
+          Text: (string) (len=3) "IGN",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-28",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=15) "August 16, 2024",
+      (string) (len=6) "author": (string) (len=5) "Valve",
+      (string) (len=5) "title": (string) (len=43) "A Cold Day in Hell - Team Fortress 2 comics",
+      (string) (len=3) "url": (string) (len=64) "https://wiki.teamfortress.com/w/images/b/ba/Acolddayinhell49.jpg"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=80) "Valve. \"A Cold Day in Hell - Team Fortress 2 comics\". Retrieved August 16, 2024.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=64) "https://wiki.teamfortress.com/w/images/b/ba/Acolddayinhell49.jpg",
+          Text: (string) (len=45) "\"A Cold Day in Hell - Team Fortress 2 comics\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-29",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=16) "27 November 2019",
+      (string) (len=4) "date": (string) (len=16) "3 September 2018",
+      (string) (len=5) "first": (string) (len=3) "Jef",
+      (string) (len=4) "last": (string) (len=6) "Rouner",
+      (string) (len=9) "newspaper": (string) (len=17) "[[Houston Press]]",
+      (string) (len=5) "title": (string) (len=60) "The Historically Inaccurate George Washington in The Council",
+      (string) (len=3) "url": (string) (len=98) "https://www.houstonpress.com/arts/the-council-has-a-historically-flawed-george-washington-10801853"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=138) "Rouner, Jef (3 September 2018). \"The Historically Inaccurate George Washington in The Council\". Houston Press. Retrieved 27 November 2019.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=98) "https://www.houstonpress.com/arts/the-council-has-a-historically-flawed-george-washington-10801853",
+          Text: (string) (len=62) "\"The Historically Inaccurate George Washington in The Council\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=43) "https://en.wikipedia.org/wiki/Houston_Press",
+          Text: (string) (len=13) "Houston Press",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-30",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=11) "access-date": (string) (len=13) "11 April 2021",
+      (string) (len=12) "archive-date": (string) (len=10) "2021-12-13",
+      (string) (len=11) "archive-url": (string) (len=62) "https://ghostarchive.org/varchive/youtube/20211213/dl7CLaZFG1c",
+      (string) (len=4) "date": (string) (len=12) "30 June 2014",
+      (string) (len=5) "first": (string) "",
+      (string) (len=4) "last": (string) "",
+      (string) (len=5) "title": (string) (len=65) "George Washington vs William Wallace. Epic Rap Battles of History",
+      (string) (len=3) "url": (string) (len=43) "https://www.youtube.com/watch?v=dl7CLaZFG1c",
+      (string) (len=10) "url-status": (string) (len=4) "live",
+      (string) (len=4) "work": (string) (len=31) "[[Epic Rap Battles of History]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=178) "\"George Washington vs William Wallace. Epic Rap Battles of History\". Epic Rap Battles of History. 30 June 2014. Archived from the original on 2021-12-13. Retrieved 11 April 2021.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=43) "https://www.youtube.com/watch?v=dl7CLaZFG1c",
+          Text: (string) (len=67) "\"George Washington vs William Wallace. Epic Rap Battles of History\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=57) "https://en.wikipedia.org/wiki/Epic_Rap_Battles_of_History",
+          Text: (string) (len=27) "Epic Rap Battles of History",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=62) "https://ghostarchive.org/varchive/youtube/20211213/dl7CLaZFG1c",
+          Text: (string) (len=8) "Archived",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

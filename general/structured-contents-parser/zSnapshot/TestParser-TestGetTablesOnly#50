@@ -1,0 +1,195 @@
+([]*parser.OrderedTable) (len=1) {
+  (*parser.OrderedTable)({
+    ID: (string) (len=11) "__.__table1",
+    Table: (*parser.TableWithHeaders)({
+      Headers: ([][]parser.Cell) (len=1) {
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) "",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=20) "Прокариоти",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=18) "Еукариоти",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      Footers: ([][]parser.Cell) <nil>,
+      Rows: ([][]parser.Cell) (len=12) {
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=66) "Типични организми, в които се срещат",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=42) "бактерия, архебактерии",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=60) "протисти, гъби, растения, животни",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=14) "Размери",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=12) "~ 1 - 10 µm",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=99) "~ 10 - 100 µm (сперматозоидни клетки, без опашката са малки)",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=24) "Тип на ядрото",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=61) "ядрена област; няма същинско ядро",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=58) "същинско ядро с двойна мембрана",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=6) "ДНК",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=49) "пръстеновидна (обикновено)",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=89) "линейни молекули (хромозома) с хистонови белтъци",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=40) "РНК-/синтез на белтъци",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=40) "свързана в цитоплазма",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=98) "РНК - синтез в ядрото белтъци\u00a0– синтез в цитоплазмата",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=16) "рибозоми",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=24) "Големина 50S+30S",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=24) "Големина 60S+40S",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=48) "Структура на цитоплазмата",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=38) "малък брой структури",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=110) "виско структурирана от едномембранни органели и цитоскелет",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=39) "Клетъчно придвижване",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=58) "Флагелум състоящ се от флагелин",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=73) "флагелум и микровили от белтъка тубулин",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=22) "Митохондрия",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=8) "няма",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=39) "от 1 до няколко дузина",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=20) "Хлоропласт",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=8) "няма",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=45) "във водорасли и растения",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=22) "Организация",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=50) "обикновено единични клетки",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=162) "единични клетки, колонии, високо организирани организми с клетки с разнообразни функции",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        },
+        ([]parser.Cell) (len=3) {
+          (parser.Cell) {
+            Value: (string) (len=29) "Клетъчно делене",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=55) "бинарно делене (просто делене)",
+            Inner: (parser.TablesWithHeaders) <nil>
+          },
+          (parser.Cell) {
+            Value: (string) (len=75) "Митоза (делене с делителен апарат) Мейоза",
+            Inner: (parser.TablesWithHeaders) <nil>
+          }
+        }
+      },
+      ConfidenceScore: (float64) 0.9
+    })
+  })
+}

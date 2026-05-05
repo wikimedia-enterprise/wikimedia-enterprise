@@ -1,0 +1,926 @@
+([]*parser.Reference) (len=35) {
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-1",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=7) "ctx_ver": (string) (len=11) "Z39.88-2004",
+      (string) (len=8) "is_coins": (string) (len=4) "true",
+      (string) (len=6) "rfr_id": (string) (len=37) "info:sid/en.wikipedia.org:Gad Elmaleh",
+      (string) (len=10) "rft.atitle": (string) (len=63) "Difficile pour Gad Elmaleh d'obtenir la nationalité française",
+      (string) (len=8) "rft.date": (string) (len=10) "2022-05-30",
+      (string) (len=9) "rft.genre": (string) (len=7) "unknown",
+      (string) (len=10) "rft.jtitle": (string) (len=9) "Bladi.net",
+      (string) (len=6) "rft_id": (string) (len=66) "https://www.bladi.net/gad-elmaleh-nationalite-francaise,93557.html",
+      (string) (len=11) "rft_val_fmt": (string) (len=28) "info:ofi/fmt:kev:mtx:journal"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=130) "\"Difficile pour Gad Elmaleh d'obtenir la nationalité française\". Bladi.net (in French). 30 May 2022. Retrieved 23 December 2023.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=66) "https://www.bladi.net/gad-elmaleh-nationalite-francaise,93557.html",
+          Text: (string) (len=65) "\"Difficile pour Gad Elmaleh d'obtenir la nationalité française\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-2",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=11) "access-date": (string) (len=16) "31 December 2018",
+      (string) (len=8) "language": (string) (len=6) "French",
+      (string) (len=5) "title": (string) (len=11) "Gad Elmaleh",
+      (string) (len=3) "url": (string) (len=45) "https://www.elle.fr/Personnalites/Gad-Elmaleh"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=54) "\"Gad Elmaleh\" (in French). Retrieved 31 December 2018.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=45) "https://www.elle.fr/Personnalites/Gad-Elmaleh",
+          Text: (string) (len=13) "\"Gad Elmaleh\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-3",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=11) "access-date": (string) (len=16) "19 December 2021",
+      (string) (len=6) "author": (string) (len=15) "Hortense Garzon",
+      (string) (len=4) "date": (string) (len=16) "18 December 2021",
+      (string) (len=8) "language": (string) (len=6) "French",
+      (string) (len=5) "title": (string) (len=67) "Gad Elmaleh : pourquoi l'humoriste ne peut-il pas voter en France ?",
+      (string) (len=3) "url": (string) (len=102) "https://www.voici.fr/news-people/gad-elmaleh-pourquoi-lhumoriste-ne-peut-il-pas-voter-en-france-719240"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=148) "Hortense Garzon (18 December 2021). \"Gad Elmaleh\u00a0: pourquoi l'humoriste ne peut-il pas voter en France\u00a0?\" (in French). Retrieved 19 December 2021.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=102) "https://www.voici.fr/news-people/gad-elmaleh-pourquoi-lhumoriste-ne-peut-il-pas-voter-en-france-719240",
+          Text: (string) (len=69) "\"Gad Elmaleh : pourquoi l'humoriste ne peut-il pas voter en France ?\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-4",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=4) "date": (string) (len=12) "26 June 2024",
+      (string) (len=5) "first": (string) (len=6) "Leïla",
+      (string) (len=4) "last": (string) (len=5) "Driss",
+      (string) (len=5) "quote": (string) (len=148) "Gad Elmaleh revient dans cet entretien sur ses croyances et sa pratique de la religion (...) il y a des chants arabes, parce qu’on est séfarades.",
+      (string) (len=5) "title": (string) (len=95) "Gad Elmaleh: «Je suis né au Maroc, je l'assume à 1000%. Je suis juif, je l'assume à 1000%»",
+      (string) (len=11) "trans-quote": (string) (len=137) "In this interview, Gad Elmaleh discusses his beliefs and his practice of religion (...) there are Arabic songs, because we are Sephardic.",
+      (string) (len=11) "trans-title": (string) (len=87) "Gad Elmaleh: \"I was born in Morocco, I accept it 1000%. I am Jewish, I accept it 1000%\"",
+      (string) (len=3) "url": (string) (len=135) "https://fr.le360.ma/people/gad-elmaleh-je-suis-ne-au-maroc-je-lassume-a-1000-je-suis-juif-je-lassume-a-1000_5J6ZEFIGEFDRHDZLSKG7QRCPMQ/",
+      (string) (len=7) "website": (string) (len=5) "Le360"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=512) "Driss, Leïla (26 June 2024). \"Gad Elmaleh: «Je suis né au Maroc, je l'assume à 1000%. Je suis juif, je l'assume à 1000%»\" [Gad Elmaleh: \"I was born in Morocco, I accept it 1000%. I am Jewish, I accept it 1000%\"]. Le360. Gad Elmaleh revient dans cet entretien sur ses croyances et sa pratique de la religion (...) il y a des chants arabes, parce qu'on est séfarades. [In this interview, Gad Elmaleh discusses his beliefs and his practice of religion (...) there are Arabic songs, because we are Sephardic.]",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=135) "https://fr.le360.ma/people/gad-elmaleh-je-suis-ne-au-maroc-je-lassume-a-1000-je-suis-juif-je-lassume-a-1000_5J6ZEFIGEFDRHDZLSKG7QRCPMQ/",
+          Text: (string) (len=97) "\"Gad Elmaleh: «Je suis né au Maroc, je l'assume à 1000%. Je suis juif, je l'assume à 1000%»\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-5",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=16) "24 December 2017",
+      (string) (len=12) "archive-date": (string) (len=15) "29 January 2016",
+      (string) (len=11) "archive-url": (string) (len=176) "https://web.archive.org/web/20160129070121/http://www.cc.com/video-clips/ewd74j/the-daily-show-with-trevor-noah-gad-elmaleh---pandering-to-america-like-a-presidential-candidate",
+      (string) (len=4) "date": (string) (len=15) "26 January 2016",
+      (string) (len=9) "publisher": (string) (len=14) "Comedy Central",
+      (string) (len=5) "title": (string) (len=66) "Gad Elmaleh – Pandering to America Like a Presidential Candidate",
+      (string) (len=3) "url": (string) (len=133) "http://www.cc.com/video-clips/ewd74j/the-daily-show-with-trevor-noah-gad-elmaleh---pandering-to-america-like-a-presidential-candidate",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=7) "website": (string) (len=39) "The Daily Show with Trevor Noah (video)"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=218) "\"Gad Elmaleh – Pandering to America Like a Presidential Candidate\". The Daily Show with Trevor Noah (video). Comedy Central. 26 January 2016. Archived from the original on 29 January 2016. Retrieved 24 December 2017.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=176) "https://web.archive.org/web/20160129070121/http://www.cc.com/video-clips/ewd74j/the-daily-show-with-trevor-noah-gad-elmaleh---pandering-to-america-like-a-presidential-candidate",
+          Text: (string) (len=68) "\"Gad Elmaleh – Pandering to America Like a Presidential Candidate\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=133) "http://www.cc.com/video-clips/ewd74j/the-daily-show-with-trevor-noah-gad-elmaleh---pandering-to-america-like-a-presidential-candidate",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-6",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=16) "24 December 2017",
+      (string) (len=12) "archive-date": (string) (len=15) "8 February 2017",
+      (string) (len=11) "archive-url": (string) (len=123) "https://web.archive.org/web/20170208200452/http://www.esquire.com/entertainment/a52947/gad-elmaleh-oh-my-gad-carnegie-hall/",
+      (string) (len=6) "first1": (string) (len=8) "Danielle",
+      (string) (len=5) "last1": (string) (len=9) "Henderson",
+      (string) (len=5) "title": (string) (len=53) "How This French Comedian Is Living the American Dream",
+      (string) (len=3) "url": (string) (len=80) "http://www.esquire.com/entertainment/a52947/gad-elmaleh-oh-my-gad-carnegie-hall/",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=7) "website": (string) (len=7) "Esquire"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=161) "Henderson, Danielle. \"How This French Comedian Is Living the American Dream\". Esquire. Archived from the original on 8 February 2017. Retrieved 24 December 2017.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=123) "https://web.archive.org/web/20170208200452/http://www.esquire.com/entertainment/a52947/gad-elmaleh-oh-my-gad-carnegie-hall/",
+          Text: (string) (len=55) "\"How This French Comedian Is Living the American Dream\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=80) "http://www.esquire.com/entertainment/a52947/gad-elmaleh-oh-my-gad-carnegie-hall/",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-7",
+    Group: (string) "",
+    Type: (string) (len=8) "magazine",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=11) "29 May 2017",
+      (string) (len=4) "date": (string) (len=15) "26 October 2015",
+      (string) (len=6) "first1": (string) (len=6) "Lauren",
+      (string) (len=5) "last1": (string) (len=7) "Collins",
+      (string) (len=8) "magazine": (string) (len=10) "New Yorker",
+      (string) (len=5) "title": (string) (len=19) "Comédie française",
+      (string) (len=3) "url": (string) (len=63) "https://www.newyorker.com/magazine/2015/10/26/comedie-francaise"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=92) "Collins, Lauren (26 October 2015). \"Comédie française\". New Yorker. Retrieved 29 May 2017.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=63) "https://www.newyorker.com/magazine/2015/10/26/comedie-francaise",
+          Text: (string) (len=21) "\"Comédie française\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-8",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=16) "24 December 2017",
+      (string) (len=12) "archive-date": (string) (len=16) "17 February 2017",
+      (string) (len=11) "archive-url": (string) (len=89) "https://web.archive.org/web/20170217103148/http://www.linternaute.com/cinema/gad-elmaleh/",
+      (string) (len=5) "title": (string) (len=25) "Biographie de Gad Elmaleh",
+      (string) (len=3) "url": (string) (len=46) "http://www.linternaute.com/cinema/gad-elmaleh/",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=7) "website": (string) (len=12) "L'internaute"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=118) "\"Biographie de Gad Elmaleh\". L'internaute. Archived from the original on 17 February 2017. Retrieved 24 December 2017.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=89) "https://web.archive.org/web/20170217103148/http://www.linternaute.com/cinema/gad-elmaleh/",
+          Text: (string) (len=27) "\"Biographie de Gad Elmaleh\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=46) "http://www.linternaute.com/cinema/gad-elmaleh/",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=11) "cite_note-9",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=11) "29 May 2017",
+      (string) (len=4) "date": (string) (len=12) "22 June 2016",
+      (string) (len=6) "first1": (string) (len=4) "Bill",
+      (string) (len=5) "last1": (string) (len=10) "Brownstein",
+      (string) (len=9) "newspaper": (string) (len=16) "Montreal Gazette",
+      (string) (len=5) "title": (string) (len=67) "Just for Laughs: Gad Elmaleh happy to start from scratch in English",
+      (string) (len=3) "url": (string) (len=108) "https://montrealgazette.com/entertainment/just-for-laughs-gad-elmaleh-happy-to-start-from-scratch-in-english"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=144) "Brownstein, Bill (22 June 2016). \"Just for Laughs: Gad Elmaleh happy to start from scratch in English\". Montreal Gazette. Retrieved 29 May 2017.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=108) "https://montrealgazette.com/entertainment/just-for-laughs-gad-elmaleh-happy-to-start-from-scratch-in-english",
+          Text: (string) (len=69) "\"Just for Laughs: Gad Elmaleh happy to start from scratch in English\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-10",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=10) {
+      (string) (len=11) "access-date": (string) (len=11) "30 May 2017",
+      (string) (len=12) "archive-date": (string) (len=14) "23 August 2017",
+      (string) (len=11) "archive-url": (string) (len=136) "https://web.archive.org/web/20170823071500/http://www.huffpostmaghreb.com/2017/05/05/gad-elmaleh-photo-jeunesse-montreal_n_16427816.html",
+      (string) (len=4) "date": (string) (len=10) "5 May 2017",
+      (string) (len=6) "first1": (string) (len=7) "Camille",
+      (string) (len=5) "last1": (string) (len=4) "Bigo",
+      (string) (len=5) "title": (string) (len=82) "Gad Elmaleh partage une photo de jeunesse, clin d'oeil au Festival Juste pour rire",
+      (string) (len=3) "url": (string) (len=93) "http://www.huffpostmaghreb.com/2017/05/05/gad-elmaleh-photo-jeunesse-montreal_n_16427816.html",
+      (string) (len=10) "url-status": (string) (len=7) "usurped",
+      (string) (len=4) "work": (string) (len=8) "HuffPost"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=192) "Bigo, Camille (5 May 2017). \"Gad Elmaleh partage une photo de jeunesse, clin d'oeil au Festival Juste pour rire\". HuffPost. Archived from the original on 23 August 2017. Retrieved 30 May 2017.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=136) "https://web.archive.org/web/20170823071500/http://www.huffpostmaghreb.com/2017/05/05/gad-elmaleh-photo-jeunesse-montreal_n_16427816.html",
+          Text: (string) (len=84) "\"Gad Elmaleh partage une photo de jeunesse, clin d'oeil au Festival Juste pour rire\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-11",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=16) "24 December 2017",
+      (string) (len=4) "date": (string) (len=13) "15 April 2006",
+      (string) (len=6) "first1": (string) (len=1) "O",
+      (string) (len=5) "last1": (string) (len=1) "Z",
+      (string) (len=9) "newspaper": (string) (len=11) "Le Monde.fr",
+      (string) (len=5) "title": (string) (len=26) "La Vie Normale Gad Elmaleh",
+      (string) (len=3) "url": (string) (len=89) "http://www.lemonde.fr/vous/article/2006/04/15/gad-elmaleh-la-vie-normale_761994_3238.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=92) "Z, O (15 April 2006). \"La Vie Normale Gad Elmaleh\". Le Monde.fr. Retrieved 24 December 2017.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=89) "http://www.lemonde.fr/vous/article/2006/04/15/gad-elmaleh-la-vie-normale_761994_3238.html",
+          Text: (string) (len=28) "\"La Vie Normale Gad Elmaleh\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-12",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=4) "date": (string) (len=16) "9 September 2016",
+      (string) (len=9) "publisher": (string) (len=18) "This American Life",
+      (string) (len=5) "title": (string) (len=38) "Act One: Je Suis Ici Toute La Semaine.",
+      (string) (len=3) "url": (string) (len=83) "https://www.thisamericanlife.org/radio-archives/episode/596/becoming-a-badger?act=1"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=78) "\"Act One: Je Suis Ici Toute La Semaine\". This American Life. 9 September 2016.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=83) "https://www.thisamericanlife.org/radio-archives/episode/596/becoming-a-badger?act=1",
+          Text: (string) (len=39) "\"Act One: Je Suis Ici Toute La Semaine\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-13",
+    Group: (string) "",
+    Type: (string) (len=8) "magazine",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=11) "29 May 2017",
+      (string) (len=4) "date": (string) (len=11) "29 May 2017",
+      (string) (len=6) "first1": (string) (len=5) "Derek",
+      (string) (len=5) "last1": (string) (len=8) "Blasberg",
+      (string) (len=8) "magazine": (string) (len=11) "Vanity Fair",
+      (string) (len=5) "title": (string) (len=63) "Happy Hour with Gad Elmaleh, the French-Moroccan Jerry Seinfeld",
+      (string) (len=3) "url": (string) (len=81) "https://www.vanityfair.com/hollywood/2016/08/gad-elmaleh-french-moroccan-comedian"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=133) "Blasberg, Derek (29 May 2017). \"Happy Hour with Gad Elmaleh, the French-Moroccan Jerry Seinfeld\". Vanity Fair. Retrieved 29 May 2017.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=81) "https://www.vanityfair.com/hollywood/2016/08/gad-elmaleh-french-moroccan-comedian",
+          Text: (string) (len=65) "\"Happy Hour with Gad Elmaleh, the French-Moroccan Jerry Seinfeld\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-14",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=11) "29 May 2017",
+      (string) (len=4) "date": (string) (len=15) "4 December 2015",
+      (string) (len=6) "first1": (string) (len=5) "Elise",
+      (string) (len=5) "last1": (string) (len=9) "Cazjowski",
+      (string) (len=9) "newspaper": (string) (len=14) "New York Times",
+      (string) (len=5) "title": (string) (len=48) "Gad Elmaleh: Talking Funny in French and English",
+      (string) (len=3) "url": (string) (len=106) "https://www.nytimes.com/2015/12/05/arts/international/gad-elmaleh-talking-funny-in-french-and-english.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=126) "Cazjowski, Elise (4 December 2015). \"Gad Elmaleh: Talking Funny in French and English\". New York Times. Retrieved 29 May 2017.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=106) "https://www.nytimes.com/2015/12/05/arts/international/gad-elmaleh-talking-funny-in-french-and-english.html",
+          Text: (string) (len=50) "\"Gad Elmaleh: Talking Funny in French and English\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-15",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=4) "date": (string) (len=13) "20 April 2018",
+      (string) (len=6) "first1": (string) (len=4) "Gary",
+      (string) (len=8) "language": (string) (len=2) "fr",
+      (string) (len=5) "last1": (string) (len=9) "Assouline",
+      (string) (len=5) "title": (string) (len=82) "Gad Elmaleh re-launches controversy after W9 re-airs Chinese sketch with Kev Adams",
+      (string) (len=3) "url": (string) (len=155) "https://www.huffingtonpost.fr/2018/04/20/gad-elmaleh-relance-la-polemique-apres-la-rediffusion-sur-w9-dun-sketch-avec-kev-adams-sur-les-chinois_a_23416061/",
+      (string) (len=4) "work": (string) (len=15) "Huffington Post"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=147) "Assouline, Gary (20 April 2018). \"Gad Elmaleh re-launches controversy after W9 re-airs Chinese sketch with Kev Adams\". Huffington Post (in French).",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=155) "https://www.huffingtonpost.fr/2018/04/20/gad-elmaleh-relance-la-polemique-apres-la-rediffusion-sur-w9-dun-sketch-avec-kev-adams-sur-les-chinois_a_23416061/",
+          Text: (string) (len=84) "\"Gad Elmaleh re-launches controversy after W9 re-airs Chinese sketch with Kev Adams\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-16",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=4) {
+      (string) (len=6) "agency": (string) (len=17) "France 24 English",
+      (string) (len=4) "date": (string) (len=12) "26 July 2016",
+      (string) (len=9) "publisher": (string) (len=7) "YouTube",
+      (string) (len=5) "title": (string) (len=62) "'Oh my Gad!' French comedian Gad Elmaleh on his American dream"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=107) "\"'Oh my Gad!' French comedian Gad Elmaleh on his American dream\". YouTube. France 24 English. 26 July 2016.",
+      Links: ([]*parser.Link) {
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-17",
+    Group: (string) "",
+    Type: (string) (len=8) "magazine",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=11) "30 May 2017",
+      (string) (len=4) "date": (string) (len=16) "16 November 2016",
+      (string) (len=6) "first1": (string) (len=5) "Nancy",
+      (string) (len=5) "last1": (string) (len=11) "Tartaglione",
+      (string) (len=8) "magazine": (string) (len=8) "Deadline",
+      (string) (len=5) "title": (string) (len=77) "Gad Elmaleh's 'Gad Gone Wild' Goes To Netflix; English Comedy Special On Deck",
+      (string) (len=3) "url": (string) (len=75) "https://deadline.com/2016/11/gad-elmaleh-netflix-comedy-special-1201855379/"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=152) "Tartaglione, Nancy (16 November 2016). \"Gad Elmaleh's 'Gad Gone Wild' Goes To Netflix; English Comedy Special On Deck\". Deadline. Retrieved 30 May 2017.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=75) "https://deadline.com/2016/11/gad-elmaleh-netflix-comedy-special-1201855379/",
+          Text: (string) (len=79) "\"Gad Elmaleh's 'Gad Gone Wild' Goes To Netflix; English Comedy Special On Deck\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-18",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=7) {
+      (string) (len=11) "access-date": (string) (len=11) "3 June 2009",
+      (string) (len=4) "date": (string) (len=11) "27 May 2009",
+      (string) (len=5) "first": (string) (len=8) "Benjamin",
+      (string) (len=4) "last": (string) (len=4) "Ivry",
+      (string) (len=5) "title": (string) (len=13) "Gadding About",
+      (string) (len=3) "url": (string) (len=39) "http://www.forward.com/articles/106662/",
+      (string) (len=4) "work": (string) (len=20) "Jewish Daily Forward"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=91) "Ivry, Benjamin (27 May 2009). \"Gadding About\". Jewish Daily Forward. Retrieved 3 June 2009.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=39) "http://www.forward.com/articles/106662/",
+          Text: (string) (len=15) "\"Gadding About\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-19",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=75) "French comedians added to Woody Allen cast Hollywood Reporter. 13 July 2010",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=99) "https://www.hollywoodreporter.com/hr/content_display/world/news/e3id62c14caef9dce16a428a8adcb7356ab",
+          Text: (string) (len=42) "French comedians added to Woody Allen cast",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-20",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=10) "6 May 2019",
+      (string) (len=4) "date": (string) (len=15) "1 February 2019",
+      (string) (len=9) "newspaper": (string) (len=9) "L'Express",
+      (string) (len=5) "title": (string) (len=50) "Gad Elmaleh, de lancinantes accusations de plagiat",
+      (string) (len=3) "url": (string) (len=107) "https://www.lexpress.fr/culture/art/l-accusation-de-plagiat-visant-gad-elmaleh-fait-des-remous_2060312.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=103) "\"Gad Elmaleh, de lancinantes accusations de plagiat\". L'Express. 1 February 2019. Retrieved 6 May 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=107) "https://www.lexpress.fr/culture/art/l-accusation-de-plagiat-visant-gad-elmaleh-fait-des-remous_2060312.html",
+          Text: (string) (len=52) "\"Gad Elmaleh, de lancinantes accusations de plagiat\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-21",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=10) "6 May 2019",
+      (string) (len=4) "date": (string) (len=16) "20 February 2019",
+      (string) (len=9) "newspaper": (string) (len=5) "L'OBS",
+      (string) (len=5) "title": (string) (len=46) "Accusé de plagiat, Gad Elmaleh ne rigole plus",
+      (string) (len=3) "url": (string) (len=100) "https://www.nouvelobs.com/culture/20190220.OBS0588/accuse-de-plagiat-gad-elmaleh-ne-rigole-plus.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=96) "\"Accusé de plagiat, Gad Elmaleh ne rigole plus\". L'OBS. 20 February 2019. Retrieved 6 May 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=100) "https://www.nouvelobs.com/culture/20190220.OBS0588/accuse-de-plagiat-gad-elmaleh-ne-rigole-plus.html",
+          Text: (string) (len=48) "\"Accusé de plagiat, Gad Elmaleh ne rigole plus\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-22",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=116) "«\u00a0Gad Elmaleh reconnaît s'être inspiré d'humoristes américains\u00a0», Le Journal du geek.com, 26 September 2019.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=76) "https://www.journaldugeek.com/2019/09/26/gad-elmaleh-plagiat-americains/amp/",
+          Text: (string) (len=70) "« Gad Elmaleh reconnaît s'être inspiré d'humoristes américains »",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-23",
+    Group: (string) "",
+    Type: (string) (len=4) "text",
+    Metadata: (map[string]string) {
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=121) "«\u00a0Accusations de plagiat\u00a0: Gad Elmaleh reconnaît une \"partie de vrai\"\u00a0», 20 minutes.fr avec AFP, 25 September 2019.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=114) "https://www.20minutes.fr/arts-stars/culture/2612663-20190925-accusations-plagiat-gad-elmaleh-reconnait-partie-vrai",
+          Text: (string) (len=74) "« Accusations de plagiat : Gad Elmaleh reconnaît une \"partie de vrai\" »",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=49) "https://en.wikipedia.org/wiki/20_Minutes_(France)",
+          Text: (string) (len=10) "20 minutes",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=50) "https://en.wikipedia.org/wiki/Agence_France-Presse",
+          Text: (string) (len=3) "AFP",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-24",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=12) "archive-date": (string) (len=12) "4 March 2009",
+      (string) (len=11) "archive-url": (string) (len=103) "https://web.archive.org/web/20090304043301/http://www.letintinmovie.com/tintin-movie-who-is-gad-elmaleh",
+      (string) (len=4) "date": (string) (len=16) "19 February 2009",
+      (string) (len=5) "title": (string) (len=19) "Who Is Gad Elmaleh?",
+      (string) (len=3) "url": (string) (len=60) "http://www.letintinmovie.com/tintin-movie-who-is-gad-elmaleh",
+      (string) (len=10) "url-status": (string) (len=4) "dead"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=84) "\"Who Is Gad Elmaleh?\". 19 February 2009. Archived from the original on 4 March 2009.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=103) "https://web.archive.org/web/20090304043301/http://www.letintinmovie.com/tintin-movie-who-is-gad-elmaleh",
+          Text: (string) (len=21) "\"Who Is Gad Elmaleh?\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=60) "http://www.letintinmovie.com/tintin-movie-who-is-gad-elmaleh",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-25",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=4) "date": (string) (len=11) "12 May 2016",
+      (string) (len=5) "title": (string) (len=51) "Gad Elmaleh Confirms Split from Charlotte Casiraghi",
+      (string) (len=3) "url": (string) (len=73) "http://www.people.com/people/package/article/0,,20395222_21006201,00.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=67) "\"Gad Elmaleh Confirms Split from Charlotte Casiraghi\". 12 May 2016.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=73) "http://www.people.com/people/package/article/0,,20395222_21006201,00.html",
+          Text: (string) (len=53) "\"Gad Elmaleh Confirms Split from Charlotte Casiraghi\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-26",
+    Group: (string) "",
+    Type: (string) (len=8) "magazine",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=13) "7 August 2013",
+      (string) (len=12) "archive-date": (string) (len=13) "9 August 2013",
+      (string) (len=11) "archive-url": (string) (len=99) "https://web.archive.org/web/20130809001357/http://www.people.com/people/article/0,,20723526,00.html",
+      (string) (len=6) "author": (string) (len=25) "Peter Mikelbank, Paul Chi",
+      (string) (len=4) "date": (string) (len=13) "6 August 2013",
+      (string) (len=8) "magazine": (string) (len=28) "[[People (magazine)|People]]",
+      (string) (len=5) "title": (string) (len=44) "Charlotte Casiraghi Is Engaged and Expecting",
+      (string) (len=3) "url": (string) (len=56) "http://www.people.com/people/article/0,,20723526,00.html",
+      (string) (len=10) "url-status": (string) (len=4) "dead"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=168) "Peter Mikelbank, Paul Chi (6 August 2013). \"Charlotte Casiraghi Is Engaged and Expecting\". People. Archived from the original on 9 August 2013. Retrieved 7 August 2013.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=99) "https://web.archive.org/web/20130809001357/http://www.people.com/people/article/0,,20723526,00.html",
+          Text: (string) (len=46) "\"Charlotte Casiraghi Is Engaged and Expecting\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=47) "https://en.wikipedia.org/wiki/People_(magazine)",
+          Text: (string) (len=6) "People",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=56) "http://www.people.com/people/article/0,,20723526,00.html",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-27",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=13) "7 August 2013",
+      (string) (len=4) "date": (string) (len=13) "5 August 2013",
+      (string) (len=9) "publisher": (string) (len=15) "Hello! Magazine",
+      (string) (len=5) "title": (string) (len=50) "Charlotte Casiraghi seen shopping for baby clothes",
+      (string) (len=3) "url": (string) (len=90) "http://www.hellomagazine.com/royalty/2013080513953/charlotte-casiraghi-bump-holiday-italy/"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=110) "\"Charlotte Casiraghi seen shopping for baby clothes\". Hello! Magazine. 5 August 2013. Retrieved 7 August 2013.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=90) "http://www.hellomagazine.com/royalty/2013080513953/charlotte-casiraghi-bump-holiday-italy/",
+          Text: (string) (len=52) "\"Charlotte Casiraghi seen shopping for baby clothes\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-28",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=3) {
+      (string) (len=4) "date": (string) (len=16) "18 December 2013",
+      (string) (len=5) "title": (string) (len=74) "Monaco : Charlotte Casiraghi et Gad Elmaleh prénomment leur fils Raphaël",
+      (string) (len=3) "url": (string) (len=145) "http://www.leparisien.fr/laparisienne/familles-royales/monaco-charlotte-casiraghi-et-gad-elmaleh-parents-d-un-petit-garcon-18-12-2013-3420051.php"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=96) "\"Monaco\u00a0: Charlotte Casiraghi et Gad Elmaleh prénomment leur fils Raphaël\". 18 December 2013.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=145) "http://www.leparisien.fr/laparisienne/familles-royales/monaco-charlotte-casiraghi-et-gad-elmaleh-parents-d-un-petit-garcon-18-12-2013-3420051.php",
+          Text: (string) (len=76) "\"Monaco : Charlotte Casiraghi et Gad Elmaleh prénomment leur fils Raphaël\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-29",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=4) "date": (string) (len=16) "November 8, 2022",
+      (string) (len=5) "first": (string) (len=5) "Cnaan",
+      (string) (len=4) "last": (string) (len=8) "Liphshiz",
+      (string) (len=9) "newspaper": (string) (len=29) "[[Jewish Telegraphic Agency]]",
+      (string) (len=5) "title": (string) (len=99) "Gad Elmaleh, popular comedian who has been source of pride for French Jews, converts to Catholicism",
+      (string) (len=3) "url": (string) (len=135) "https://www.jta.org/2022/11/08/global/gad-elmaleh-popular-comedian-who-has-been-source-of-pride-for-french-jews-converts-to-catholicism"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=164) "Liphshiz, Cnaan (8 November 2022). \"Gad Elmaleh, popular comedian who has been source of pride for French Jews, converts to Catholicism\". Jewish Telegraphic Agency.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=135) "https://www.jta.org/2022/11/08/global/gad-elmaleh-popular-comedian-who-has-been-source-of-pride-for-french-jews-converts-to-catholicism",
+          Text: (string) (len=101) "\"Gad Elmaleh, popular comedian who has been source of pride for French Jews, converts to Catholicism\"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=55) "https://en.wikipedia.org/wiki/Jewish_Telegraphic_Agency",
+          Text: (string) (len=25) "Jewish Telegraphic Agency",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-30",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=6) {
+      (string) (len=4) "date": (string) (len=14) "March 24, 2023",
+      (string) (len=5) "first": (string) (len=6) "Hannah",
+      (string) (len=4) "last": (string) (len=5) "Brown",
+      (string) (len=9) "newspaper": (string) (len=18) "[[Jerusalem Post]]",
+      (string) (len=5) "title": (string) (len=58) "Gad Elmaleh laughs at himself and his movie 'Stay with Us'",
+      (string) (len=3) "url": (string) (len=56) "https://www.jpost.com/israel-news/culture/article-735262"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=108) "Brown, Hannah (24 March 2023). \"Gad Elmaleh laughs at himself and his movie 'Stay with Us'\". Jerusalem Post.",
+      Links: ([]*parser.Link) (len=2) {
+        (*parser.Link)({
+          URL: (string) (len=56) "https://www.jpost.com/israel-news/culture/article-735262",
+          Text: (string) (len=61) "\"Gad Elmaleh laughs at himself and his movie 'Stay with Us' \"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=44) "https://en.wikipedia.org/wiki/Jerusalem_Post",
+          Text: (string) (len=14) "Jerusalem Post",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-31",
+    Group: (string) "",
+    Type: (string) (len=8) "magazine",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=11) "29 May 2017",
+      (string) (len=4) "date": (string) (len=13) "23 March 2006",
+      (string) (len=8) "magazine": (string) (len=5) "L'Obs",
+      (string) (len=5) "title": (string) (len=41) "Gad Elmaleh chevalier des Arts et Lettres",
+      (string) (len=3) "url": (string) (len=93) "http://o.nouvelobs.com/people/20060323.OBS1478/gad-elmaleh-chevalier-des-arts-et-lettres.html"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=89) "\"Gad Elmaleh chevalier des Arts et Lettres\". L'Obs. 23 March 2006. Retrieved 29 May 2017.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=93) "http://o.nouvelobs.com/people/20060323.OBS1478/gad-elmaleh-chevalier-des-arts-et-lettres.html",
+          Text: (string) (len=43) "\"Gad Elmaleh chevalier des Arts et Lettres\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-32",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=11) "30 May 2017",
+      (string) (len=4) "date": (string) (len=11) "16 May 2017",
+      (string) (len=5) "title": (string) (len=83) "Gad Elmaleh et Philippe Couillard boivent de l'eau... et changent d'accent (VIDÉO)",
+      (string) (len=3) "url": (string) (len=110) "http://quebec.huffingtonpost.ca/2017/05/16/gad-elmaleh-insigne-chevalier-ordre-national-quebec_n_16646620.html",
+      (string) (len=4) "work": (string) (len=8) "HuffPost"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=132) "\"Gad Elmaleh et Philippe Couillard boivent de l'eau... et changent d'accent (VIDÉO)\". HuffPost. 16 May 2017. Retrieved 30 May 2017.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=110) "http://quebec.huffingtonpost.ca/2017/05/16/gad-elmaleh-insigne-chevalier-ordre-national-quebec_n_16646620.html",
+          Text: (string) (len=85) "\"Gad Elmaleh et Philippe Couillard boivent de l'eau... et changent d'accent (VIDÉO)\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-33",
+    Group: (string) "",
+    Type: (string) (len=4) "news",
+    Metadata: (map[string]string) (len=9) {
+      (string) (len=11) "access-date": (string) (len=15) "27 January 2009",
+      (string) (len=12) "archive-date": (string) (len=15) "31 January 2009",
+      (string) (len=11) "archive-url": (string) (len=135) "https://web.archive.org/web/20090131161003/http://www.hollywoodreporter.com/hr/content_display/news/e3ic323ae8a6486e91c8f3aab35cbff3722",
+      (string) (len=6) "author": (string) (len=27) "Jay A. Fernandez, Borys Kit",
+      (string) (len=4) "date": (string) (len=15) "27 January 2009",
+      (string) (len=5) "title": (string) (len=32) "Daniel Craig to star in \"Tintin\"",
+      (string) (len=3) "url": (string) (len=93) "https://www.hollywoodreporter.com/hr/content_display/news/e3ic323ae8a6486e91c8f3aab35cbff3722",
+      (string) (len=10) "url-status": (string) (len=4) "dead",
+      (string) (len=4) "work": (string) (len=26) "[[The Hollywood Reporter]]"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=180) "Jay A. Fernandez, Borys Kit (27 January 2009). \"Daniel Craig to star in \"Tintin\"\". The Hollywood Reporter. Archived from the original on 31 January 2009. Retrieved 27 January 2009.",
+      Links: ([]*parser.Link) (len=3) {
+        (*parser.Link)({
+          URL: (string) (len=135) "https://web.archive.org/web/20090131161003/http://www.hollywoodreporter.com/hr/content_display/news/e3ic323ae8a6486e91c8f3aab35cbff3722",
+          Text: (string) (len=35) "\"Daniel Craig to star in \"Tintin\" \"",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=52) "https://en.wikipedia.org/wiki/The_Hollywood_Reporter",
+          Text: (string) (len=22) "The Hollywood Reporter",
+          Images: ([]*parser.Image) <nil>
+        }),
+        (*parser.Link)({
+          URL: (string) (len=93) "https://www.hollywoodreporter.com/hr/content_display/news/e3ic323ae8a6486e91c8f3aab35cbff3722",
+          Text: (string) (len=12) "the original",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-34",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=12) "12 July 2015",
+      (string) (len=9) "publisher": (string) (len=11) "Hung Medien",
+      (string) (len=5) "title": (string) (len=23) "Gad Elmaleh discography",
+      (string) (len=3) "url": (string) (len=60) "http://lescharts.com/showinterpret.asp?interpret=Gad+Elmaleh",
+      (string) (len=4) "work": (string) (len=13) "lescharts.com"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=78) "\"Gad Elmaleh discography\". lescharts.com. Hung Medien. Retrieved 12 July 2015.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=60) "http://lescharts.com/showinterpret.asp?interpret=Gad+Elmaleh",
+          Text: (string) (len=25) "\"Gad Elmaleh discography\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  }),
+  (*parser.Reference)({
+    Identifier: (string) (len=12) "cite_note-35",
+    Group: (string) "",
+    Type: (string) (len=3) "web",
+    Metadata: (map[string]string) (len=5) {
+      (string) (len=11) "access-date": (string) (len=12) "12 July 2015",
+      (string) (len=9) "publisher": (string) (len=11) "Hung Medien",
+      (string) (len=5) "title": (string) (len=23) "Gad Elmaleh discography",
+      (string) (len=3) "url": (string) (len=61) "http://ultratop.be/fr/showinterpret.asp?interpret=Gad+Elmaleh",
+      (string) (len=4) "work": (string) (len=15) "ultratop.be/fr/"
+    },
+    Text: (*parser.RawData)({
+      Value: (string) (len=80) "\"Gad Elmaleh discography\". ultratop.be/fr/. Hung Medien. Retrieved 12 July 2015.",
+      Links: ([]*parser.Link) (len=1) {
+        (*parser.Link)({
+          URL: (string) (len=61) "http://ultratop.be/fr/showinterpret.asp?interpret=Gad+Elmaleh",
+          Text: (string) (len=25) "\"Gad Elmaleh discography\"",
+          Images: ([]*parser.Image) <nil>
+        })
+      }
+    }),
+    Source: (*parser.RawData)(<nil>),
+    ParentReference: (string) ""
+  })
+}

@@ -1,0 +1,608 @@
+(map[string]interface {}) (len=2) {
+  (string) (len=8) "sections": ([]*parser.Part) (len=4) {
+    (*parser.Part)({
+      Name: (string) (len=8) "Abstract",
+      Type: (string) (len=7) "section",
+      Value: (string) "",
+      Values: ([]string) <nil>,
+      HasParts: ([]*parser.Part) (len=1) {
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=208) "FetLife is a social networking website that serves people interested in BDSM, fetishism, and kink. It distinguishes itself from competitors by emphasizing itself as a social network rather than a dating site.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=6) {
+            (*parser.Link)({
+              URL: (string) (len=55) "https://en.wikipedia.org/wiki/Social_networking_service",
+              Text: (string) (len=17) "social networking",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=34) "https://en.wikipedia.org/wiki/BDSM",
+              Text: (string) (len=4) "BDSM",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=46) "https://en.wikipedia.org/wiki/Sexual_fetishism",
+              Text: (string) (len=9) "fetishism",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=46) "https://en.wikipedia.org/wiki/Kink_(sexuality)",
+              Text: (string) (len=4) "kink",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=43) "https://en.wikipedia.org/wiki/Online_dating",
+              Text: (string) (len=11) "dating site",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=58) "https://en.wikipedia.org/wiki/FetLife#cite_note-homepage-1",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=1) {
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-1",
+              Group: (string) "",
+              Text: (string) (len=3) "[1]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        })
+      },
+      Images: ([]*parser.Image) <nil>,
+      Links: ([]*parser.Link) <nil>,
+      Citations: ([]*parser.Citation) <nil>,
+      TableReferences: ([]parser.TableReference) <nil>
+    }),
+    (*parser.Part)({
+      Name: (string) (len=7) "History",
+      Type: (string) (len=7) "section",
+      Value: (string) "",
+      Values: ([]string) <nil>,
+      HasParts: ([]*parser.Part) (len=2) {
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=547) "FetLife was launched on January 3, 2008, by John Kopanas (also known by his username John Baku), a software engineer in Montreal, Quebec. Frustrated by attempts to find women who had the same sexual interests as he did, Baku created a website in 2007 called \"FriendsWithFetishes\". While working on release 2.0 of FriendsWithFetishes, Baku decided to launch it as a separate site and named it FetLife. James Golick served as chief technology officer. In 2009 Baku received the Community Choice (Man) Award as part of the Pantheon of Leather Awards.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=11) {
+            (*parser.Link)({
+              URL: (string) (len=47) "https://en.wikipedia.org/wiki/Software_engineer",
+              Text: (string) (len=17) "software engineer",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=38) "https://en.wikipedia.org/wiki/Montreal",
+              Text: (string) (len=8) "Montreal",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=36) "https://en.wikipedia.org/wiki/Quebec",
+              Text: (string) (len=6) "Quebec",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=49) "https://en.wikipedia.org/wiki/FetLife#cite_note-2",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=49) "https://en.wikipedia.org/wiki/FetLife#cite_note-3",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=49) "https://en.wikipedia.org/wiki/FetLife#cite_note-4",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=49) "https://en.wikipedia.org/wiki/FetLife#cite_note-5",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=54) "https://en.wikipedia.org/wiki/Chief_technology_officer",
+              Text: (string) (len=24) "chief technology officer",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=62) "https://en.wikipedia.org/wiki/FetLife#cite_note-James_Golick-6",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=78) "https://en.wikipedia.org/wiki/Pantheon_of_Leather_Awards?action=edit&redlink=1",
+              Text: (string) (len=26) "Pantheon of Leather Awards",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=49) "https://en.wikipedia.org/wiki/FetLife#cite_note-7",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=6) {
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-2",
+              Group: (string) "",
+              Text: (string) (len=3) "[2]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-3",
+              Group: (string) "",
+              Text: (string) (len=3) "[3]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-4",
+              Group: (string) "",
+              Text: (string) (len=3) "[4]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-5",
+              Group: (string) "",
+              Text: (string) (len=3) "[5]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-6",
+              Group: (string) "",
+              Text: (string) (len=3) "[6]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-7",
+              Group: (string) "",
+              Text: (string) (len=3) "[7]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=337) "In January 2017, FetLife deleted hundreds of groups – including anything with the words blood, needles, rape and incest – and temporarily shut down the ability to create new groups following pressure from their payment processor. The action by the payment processor was criticized by the Electronic Frontier Foundation as censorship.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=9) {
+            (*parser.Link)({
+              URL: (string) (len=78) "https://en.wikipedia.org/wiki/Vampire_lifestyle#Sexuality_and_sexual_practices",
+              Text: (string) (len=5) "blood",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=43) "https://en.wikipedia.org/wiki/Play_piercing",
+              Text: (string) (len=7) "needles",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=34) "https://en.wikipedia.org/wiki/Rape",
+              Text: (string) (len=4) "rape",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=52) "https://en.wikipedia.org/wiki/Ageplay#Sexual_ageplay",
+              Text: (string) (len=6) "incest",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=49) "https://en.wikipedia.org/wiki/FetLife#cite_note-8",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=49) "https://en.wikipedia.org/wiki/FetLife#cite_note-9",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=60) "https://en.wikipedia.org/wiki/Electronic_Frontier_Foundation",
+              Text: (string) (len=30) "Electronic Frontier Foundation",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=40) "https://en.wikipedia.org/wiki/Censorship",
+              Text: (string) (len=10) "censorship",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=50) "https://en.wikipedia.org/wiki/FetLife#cite_note-10",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=3) {
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-8",
+              Group: (string) "",
+              Text: (string) (len=3) "[8]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=11) "cite_note-9",
+              Group: (string) "",
+              Text: (string) (len=3) "[9]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=12) "cite_note-10",
+              Group: (string) "",
+              Text: (string) (len=4) "[10]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        })
+      },
+      Images: ([]*parser.Image) <nil>,
+      Links: ([]*parser.Link) <nil>,
+      Citations: ([]*parser.Citation) <nil>,
+      TableReferences: ([]parser.TableReference) <nil>
+    }),
+    (*parser.Part)({
+      Name: (string) (len=8) "Features",
+      Type: (string) (len=7) "section",
+      Value: (string) "",
+      Values: ([]string) <nil>,
+      HasParts: ([]*parser.Part) (len=3) {
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=198) "All members have a personal profile with the option to display one or more sexual orientations, D/s roles and fetishes from respective lists. Profiles can also list relationships with other members.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=4) {
+            (*parser.Link)({
+              URL: (string) (len=42) "https://en.wikipedia.org/wiki/User_profile",
+              Text: (string) (len=16) "personal profile",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=48) "https://en.wikipedia.org/wiki/Sexual_orientation",
+              Text: (string) (len=19) "sexual orientations",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=33) "https://en.wikipedia.org/wiki/D/s",
+              Text: (string) (len=3) "D/s",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=50) "https://en.wikipedia.org/wiki/FetLife#cite_note-11",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=1) {
+            (*parser.Citation)({
+              Identifier: (string) (len=12) "cite_note-11",
+              Group: (string) "",
+              Text: (string) (len=4) "[11]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=324) "Members can create and join groups which function as internet forums, send direct messages to one or more other members and advertise and organize events. Members can also post blog entries, photographs and videos, either publicly or only to members in the poster's friends list, along with comments on other members' posts.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=5) {
+            (*parser.Link)({
+              URL: (string) (len=45) "https://en.wikipedia.org/wiki/Internet_forums",
+              Text: (string) (len=15) "internet forums",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=44) "https://en.wikipedia.org/wiki/Direct_message",
+              Text: (string) (len=15) "direct messages",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=34) "https://en.wikipedia.org/wiki/Blog",
+              Text: (string) (len=4) "blog",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=46) "https://en.wikipedia.org/wiki/Comments_section",
+              Text: (string) (len=8) "comments",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=50) "https://en.wikipedia.org/wiki/FetLife#cite_note-12",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=1) {
+            (*parser.Citation)({
+              Identifier: (string) (len=12) "cite_note-12",
+              Group: (string) "",
+              Text: (string) (len=4) "[12]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=205) "The search feature is deliberately limited to prevent members from finding users with specific characteristics, such as age and gender, and blog posts can only be searched via tags specified by the poster.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=2) {
+            (*parser.Link)({
+              URL: (string) (len=36) "https://en.wikipedia.org/wiki/Gender",
+              Text: (string) (len=6) "gender",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=50) "https://en.wikipedia.org/wiki/FetLife#cite_note-13",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=1) {
+            (*parser.Citation)({
+              Identifier: (string) (len=12) "cite_note-13",
+              Group: (string) "",
+              Text: (string) (len=4) "[13]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        })
+      },
+      Images: ([]*parser.Image) <nil>,
+      Links: ([]*parser.Link) <nil>,
+      Citations: ([]*parser.Citation) <nil>,
+      TableReferences: ([]parser.TableReference) <nil>
+    }),
+    (*parser.Part)({
+      Name: (string) (len=9) "Criticism",
+      Type: (string) (len=7) "section",
+      Value: (string) "",
+      Values: ([]string) <nil>,
+      HasParts: ([]*parser.Part) (len=3) {
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=499) "In 2012, FetLife found itself at the center of a controversy regarding its policy that users pledge not to \"make criminal accusations against another member in a public forum\". This policy has been objected to by users on the basis that censoring posts of sexual assault victims that name predatory users prevents them from warning others. FetLife's reasoning behind this policy is that it allows users to accuse others of a crime, which could be libelous if the allegations are false or unprovable.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=10) {
+            (*parser.Link)({
+              URL: (string) (len=50) "https://en.wikipedia.org/wiki/FetLife#cite_note-14",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=44) "https://en.wikipedia.org/wiki/Sexual_assault",
+              Text: (string) (len=14) "sexual assault",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=45) "https://en.wikipedia.org/wiki/Sexual_predator",
+              Text: (string) (len=9) "predatory",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=64) "https://en.wikipedia.org/wiki/FetLife#cite_note-bdsmblacklist-15",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=50) "https://en.wikipedia.org/wiki/FetLife#cite_note-16",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=50) "https://en.wikipedia.org/wiki/FetLife#cite_note-17",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=50) "https://en.wikipedia.org/wiki/FetLife#cite_note-18",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=40) "https://en.wikipedia.org/wiki/Defamation",
+              Text: (string) (len=8) "libelous",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=57) "https://en.wikipedia.org/wiki/FetLife#cite_note-sex405-19",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=50) "https://en.wikipedia.org/wiki/FetLife#cite_note-20",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=7) {
+            (*parser.Citation)({
+              Identifier: (string) (len=12) "cite_note-14",
+              Group: (string) "",
+              Text: (string) (len=4) "[14]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=12) "cite_note-15",
+              Group: (string) "",
+              Text: (string) (len=4) "[15]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=12) "cite_note-16",
+              Group: (string) "",
+              Text: (string) (len=4) "[16]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=12) "cite_note-17",
+              Group: (string) "",
+              Text: (string) (len=4) "[17]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=12) "cite_note-18",
+              Group: (string) "",
+              Text: (string) (len=4) "[18]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=12) "cite_note-19",
+              Group: (string) "",
+              Text: (string) (len=4) "[19]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=12) "cite_note-20",
+              Group: (string) "",
+              Text: (string) (len=4) "[20]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) "",
+          Type: (string) (len=9) "paragraph",
+          Value: (string) (len=251) "In April 2017, FetLife was accessed by Brendt Christensen, the killer of Yingying Zhang, to explore discussion forums on topics relating to abduction and kidnapping. Following this and other similar incidents, FetLife removed several hundred fetishes.",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) <nil>,
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) (len=3) {
+            (*parser.Link)({
+              URL: (string) (len=54) "https://en.wikipedia.org/wiki/Murder_of_Yingying_Zhang",
+              Text: (string) (len=14) "Yingying Zhang",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=50) "https://en.wikipedia.org/wiki/FetLife#cite_note-21",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            }),
+            (*parser.Link)({
+              URL: (string) (len=50) "https://en.wikipedia.org/wiki/FetLife#cite_note-22",
+              Text: (string) "",
+              Images: ([]*parser.Image) <nil>
+            })
+          },
+          Citations: ([]*parser.Citation) (len=2) {
+            (*parser.Citation)({
+              Identifier: (string) (len=12) "cite_note-21",
+              Group: (string) "",
+              Text: (string) (len=4) "[21]"
+            }),
+            (*parser.Citation)({
+              Identifier: (string) (len=12) "cite_note-22",
+              Group: (string) "",
+              Text: (string) (len=4) "[22]"
+            })
+          },
+          TableReferences: ([]parser.TableReference) <nil>
+        }),
+        (*parser.Part)({
+          Name: (string) (len=18) "Racism controversy",
+          Type: (string) (len=7) "section",
+          Value: (string) "",
+          Values: ([]string) <nil>,
+          HasParts: ([]*parser.Part) (len=1) {
+            (*parser.Part)({
+              Name: (string) "",
+              Type: (string) (len=9) "paragraph",
+              Value: (string) (len=648) "While the site's terms of service prohibit promoting racism or hate, FetLife has faced criticism for not adequately addressing the increasing prevalence of racist content. During the George Floyd protests, members reported an increase in racist hate speech and extremist content, including \" white power \" symbols, posts glorifying Nazi imagery, and discussions promoting white supremacy and antisemitism. Additionally, the inclusion of \" race play \" on the \"official\" fetish list has divided members, with some defending the practice as a consensual exploration of historical trauma and others criticizing it as a form of racism and fetishization.",
+              Values: ([]string) <nil>,
+              HasParts: ([]*parser.Part) <nil>,
+              Images: ([]*parser.Image) <nil>,
+              Links: ([]*parser.Link) (len=12) {
+                (*parser.Link)({
+                  URL: (string) (len=46) "https://en.wikipedia.org/wiki/Terms_of_service",
+                  Text: (string) (len=16) "terms of service",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=36) "https://en.wikipedia.org/wiki/Racism",
+                  Text: (string) (len=6) "racism",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=51) "https://en.wikipedia.org/wiki/George_Floyd_protests",
+                  Text: (string) (len=21) "George Floyd protests",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=41) "https://en.wikipedia.org/wiki/Hate_speech",
+                  Text: (string) (len=11) "hate speech",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=39) "https://en.wikipedia.org/wiki/Extremist",
+                  Text: (string) (len=9) "extremist",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=41) "https://en.wikipedia.org/wiki/White_power",
+                  Text: (string) (len=11) "white power",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=34) "https://en.wikipedia.org/wiki/Nazi",
+                  Text: (string) (len=4) "Nazi",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=45) "https://en.wikipedia.org/wiki/White_supremacy",
+                  Text: (string) (len=15) "white supremacy",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=42) "https://en.wikipedia.org/wiki/Antisemitism",
+                  Text: (string) (len=12) "antisemitism",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=39) "https://en.wikipedia.org/wiki/Race_play",
+                  Text: (string) (len=9) "race play",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=47) "https://en.wikipedia.org/wiki/Historical_trauma",
+                  Text: (string) (len=17) "historical trauma",
+                  Images: ([]*parser.Image) <nil>
+                }),
+                (*parser.Link)({
+                  URL: (string) (len=65) "https://en.wikipedia.org/wiki/FetLife#cite_note-BuzzFeedRacism-23",
+                  Text: (string) "",
+                  Images: ([]*parser.Image) <nil>
+                })
+              },
+              Citations: ([]*parser.Citation) (len=1) {
+                (*parser.Citation)({
+                  Identifier: (string) (len=12) "cite_note-23",
+                  Group: (string) "",
+                  Text: (string) (len=4) "[23]"
+                })
+              },
+              TableReferences: ([]parser.TableReference) <nil>
+            })
+          },
+          Images: ([]*parser.Image) <nil>,
+          Links: ([]*parser.Link) <nil>,
+          Citations: ([]*parser.Citation) <nil>,
+          TableReferences: ([]parser.TableReference) <nil>
+        })
+      },
+      Images: ([]*parser.Image) <nil>,
+      Links: ([]*parser.Link) <nil>,
+      Citations: ([]*parser.Citation) <nil>,
+      TableReferences: ([]parser.TableReference) <nil>
+    })
+  },
+  (string) (len=6) "tables": ([]*parser.OrderedTable) {
+  }
+}
