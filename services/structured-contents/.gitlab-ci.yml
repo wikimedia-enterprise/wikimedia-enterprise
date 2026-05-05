@@ -1,0 +1,83 @@
+include:
+  - project: "wikimedia-enterprise/general/cdtools"
+    ref: main
+    file: "/ci/go_multiple_apps.yml"
+  - project: "wikimedia-enterprise/general/cdtools"
+    ref: main
+    file: "/ci/deploy/prep_argocd.yml"
+
+stages:
+  - test
+  - analyses
+  - build
+  - deploy
+  - app-restart
+
+
+.structuredbulk:
+  variables:
+    ECR_REPO: $ECR_REPO_STRUCTUREDBULK
+    IMAGE_NAME: $IMAGE_NAME_STRUCTUREDBULK
+    SERVICE_NAME: $SERVICE_NAME_STRUCTUREDBULK
+
+.structuredupdate:
+  variables:
+    ECR_REPO: $ECR_REPO_STRUCTUREDUPDATE
+    IMAGE_NAME: $IMAGE_NAME_STRUCTUREDUPDATE
+    SERVICE_NAME: $SERVICE_NAME_STRUCTUREDUPDATE
+
+#-----------------
+# Build Stage Jobs DEV
+#-----------------
+build:dev:structuredbulk:
+  extends:
+    - .structuredbulk
+    - .build_dev 
+
+build:dev:structuredupdate:
+  extends:
+    - .structuredupdate
+    - .build_dev
+
+#-----------------
+# Build Stage Jobs PROD
+#-----------------
+build:prod:structuredbulk:
+  extends:
+    - .structuredbulk
+    - .build_prod
+
+build:prod:structuredupdate:
+  extends:
+    - .structuredupdate
+    - .build_prod
+
+#-----------------
+# Deploy Jobs DEV
+#-----------------
+deploy:dev:structuredbulk:
+  extends:
+    - .structuredbulk
+    - .deploy_dev
+
+deploy:dev:structuredupdate:
+  extends:
+    - .structuredupdate
+    - .deploy_dev
+
+#-----------------
+# Deploy Jobs PROD
+#-----------------
+deploy:prod:structuredbulk:
+  extends:
+    - .structuredbulk
+    - .deploy_prod
+  # needs:
+  # - build:structuredbulk
+
+deploy:prod:structuredupdate:
+  extends:
+    - .structuredupdate
+    - .deploy_prod
+  # needs:
+  # - build:structuredupdate
